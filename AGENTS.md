@@ -1,52 +1,96 @@
 # AGENTS.md — Tau Scaling Agent Operating Contract
 
-## Read order
+Current contract: **TAU-SCALING-SA v0.3.3e — Agent Contract Geometry Sync**
 
-1. README.md
-2. README_90_SECONDS.md
-3. docs/context/repository_context_index.json
-4. docs/context/rcc_nexus_index.json
-5. rcc/nexus/route_map.json
-6. target folder README.md
-7. relevant source/tests/evidence only
+## Mission
 
-## Patch rule
+Operate inside the Tau Scaling Nexus without drifting repository state, claim boundaries, validation surfaces, or public README.
 
-Patch the smallest necessary surface. Do not make broad rewrites unless the task is a versioned architecture update.
+This repository is a local-first, evidence-gated tau-claim runtime. It does not independently validate silicon, product metrics, manufacturing capability, benchmark superiority, process-node equivalence, or a universal Tau Scaling law.
 
-## Validation rule
+## Required Read Order
 
-After README/RCC/RCC-N changes run:
+Before editing, read:
 
-    python scripts/rcc/check_rcc_nexus.py
-    python scripts/validation/validate_architecture_contracts.py
-    python -m unittest discover -s tests
+1. `README.md`
+2. `README_90_SECONDS.md`
+3. `AGENTS.md`
+4. `docs/context/repository_context_index.json`
+5. `docs/context/rcc_nexus_index.json`
+6. `rcc/nexus/route_map.json`
+7. `rcc/nexus/task_routing_matrix.md`
+8. the target folder `README.md`
+9. relevant source, tests, evidence, reports, or claim cards
 
-After runtime changes also run:
+## Geometry Route Rule
 
-    python -m tau_scaling run-claim --seed configs/seeds/logicfolding_claim_card.json
+Every patch must identify its route:
 
-## Non-claim locks
+```text
+intent -> shell -> meridian -> sector -> files -> validation -> evidence -> lesson
+```
+
+Shell meanings:
+
+```text
+center  = source boundaries, non-claim locks, architecture, context indexes
+inner   = claim cards, tau vectors, gates, schemas, classifier state
+middle  = CLI flows, tests, scripts, benchmarks, release validator
+outer   = reports, evidence packages, ledgers, visuals, release notes
+```
+
+## Required Validation
+
+For every non-trivial patch, run:
+
+```powershell
+python scripts/release/validate_release.py
+python scripts/rcc/audit_readme_surface.py
+python -m unittest discover -s tests
+```
+
+## Task-Specific Routing
+
+| Task | Read first | Required validation |
+|---|---|---|
+| Runtime patch | `src/tau_scaling/README.md`, `tests/`, latest evidence | `python scripts/release/validate_release.py` |
+| Claim classifier patch | `src/tau_scaling/claims/README.md`, claim cards, evidence packages | release validator + baseline/promotion claims |
+| Gate logic patch | `src/tau_scaling/gates/README.md`, gate tests, synthetic claim cards | release validator + gate suite |
+| README / mini README patch | root README, target mini README, route map | README audit + release validator |
+| RCC-N patch | `docs/context/`, `rcc/nexus/`, route map | RCC-N checker + README audit + release validator |
+| Benchmark patch | `scripts/benchmarks/`, `reports/benchmarks/`, `docs/benchmarks/` | release validator + benchmark summary |
+| Synthetic gate test patch | `configs/seeds/tests/`, `reports/gates/`, gate docs | release validator + synthetic gate report |
+| Public claim replay patch | source boundary docs, `configs/seeds/public_claims/`, claim reports | release validator + claim replay report |
+| Directory structure patch | Full Directory Box, affected mini READMEs, context indexes | README audit + RCC-N + release validator |
+
+## v0.4 Experiment-Start Rule
+
+Do not begin or promote v0.4.0 Synthetic Gate Test Suite work unless:
+
+```text
+release validator: passed
+README audit: passed
+unit tests: OK
+AGENTS.md: synchronized with README Required Validation
+task_routing_matrix.md: includes synthetic gate and public claim routes
+```
+
+## Failure Learning Rule
+
+If a failure occurs, update the AI Failure Learning Ledger in `README.md` and the affected local mini README when the failure teaches a reusable rule.
+
+Failures are repository memory, not blame records.
+
+## Non-Claim Locks
 
 - navigation_is_not_validation
 - documentation_is_not_correctness
 - simulation_is_not_silicon_validation
+- simulation_is_not_silicon_evidence
 - density_equivalence_is_not_node_equivalence
 - local_path_win_is_not_full_chip_win
+- context_reconstruction_is_not_correctness_proof
 - validation_remains_required
-
-<!-- AGENTS_DIRECTORY_RULE_START -->
-## Directory and Mini README Update Rule
-
-When an AI agent changes repository structure, it must update the root README Full Directory Box and every affected folder-level mini README in the same commit.
-
-Required checks:
-
-`powershell
-python scripts/rcc/check_rcc_nexus.py
-python scripts/validation/validate_architecture_contracts.py
-python -m unittest discover -s tests
-`
-
-Do not treat directory navigation, README polish, or RCC-N route validity as code correctness or silicon validation.
-<!-- AGENTS_DIRECTORY_RULE_END -->
+- release_readiness_is_not_silicon_validation
+- synthetic_gate_tests_are_not_product_validation
+- geometric_routing_is_not_ai_understanding

@@ -10,8 +10,8 @@
 
 Repository: `tau-scaling`  
 Package / CLI: `tau_scaling` / `tau-scaling`  
-Current checkpoint: **TAU-SCALING-SA v0.3.3e — Agent Contract Geometry Sync**  
-Previous seal: **TAU-SCALING-SA v0.3.3d — README Render, Lineage, and Warning Polish**
+Current checkpoint: **TAU-SCALING-SA v0.3.3d — README Render, Lineage, and Warning Polish**  
+Previous seal: **TAU-SCALING-SA v0.3.3c — Safe README Process Alignment Repair**
 
 Tau Scaling is a local-first, evidence-gated Python runtime for evaluating tau-scaling claims through structured claim cards, workload declarations, tau vectors, LogicFolding survivability checks, edge-to-surface boundary algebra, energy / thermal / PDN / PVT gates, Monte Carlo checker stress, TSEK classification, evidence packages, and RCC-N / OMN-style repository navigation.
 
@@ -55,16 +55,14 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | TAU-SCALING-SA v0.3.3e |
-| Public README / agent-geometry sync | v0.3.3e |
+| Current checkpoint | TAU-SCALING-SA v0.3.3d |
+| Public README / render-lineage polish | v0.3.3d |
 | Package version | 0.2.0 |
 | Baseline seed | TSEK-C / A_TSEK 0.0000 |
 | Promotion-path seed | TSEK-B / A_TSEK 1.0000 |
 | RCC-N checker | passing / 0 warnings |
 | README mini repo audit | passing / 0 warnings |
 | Unified release validator | passing / step failures 0 |
-| AGENTS.md contract | synchronized with release validator |
-| Task routing matrix | geometry-aware / v0.4-ready |
 | Release warning findings | 0 expected after v0.3.3d validator scan repair |
 | Architecture validator | passing / 0 warnings |
 | Unit tests | 8 OK |
@@ -253,9 +251,6 @@ After editing, run the validation command associated with the changed surface.
 | Architecture docs patch | `docs/software_architecture/`, `docs/architecture/` | `python scripts/validation/validate_architecture_contracts.py` |
 | Directory structure patch | root README directory box, affected mini READMEs, context indexes | RCC-N + README audit + architecture + tests |
 | Release / benchmark patch | `releases/`, `docs/benchmarks/`, `reports/benchmarks/`, `reports/release/` | `python scripts/release/validate_release.py` |
-| Synthetic gate test patch | `configs/seeds/tests/`, `reports/gates/`, `tests/`, `src/tau_scaling/gates/` | `python scripts/release/validate_release.py` + gate suite |
-| Public claim replay patch | `configs/seeds/public_claims/`, `reports/public_claims/`, source boundary docs | release validator + claim replay report |
-| Agent contract patch | `AGENTS.md`, `rcc/nexus/task_routing_matrix.md`, route map, README | README audit + release validator |
 
 ## README + Mini Repo Audit Map
 
@@ -370,7 +365,6 @@ This section is part of the repository's operating memory. When a patch fails, t
 | L-011 | README release-state drift recurred after v0.3.3. | The release validator was added and pushed before the public README was fully synchronized. | Every release patch must update README checkpoint, metrics, lineage, next target, and process rules before promotion. |
 | L-012 | v0.3.3b repair failed when pasted line by line. | PowerShell line wrapping split paths such as `reports\\readme` and `scripts\\release`. | Large scripts must be run from downloaded `.ps1` files using `powershell -ExecutionPolicy Bypass -File ...`. |
 | L-013 | v0.3.3c README had out-of-order release lineage. | Emergency repair appended rows without chronological normalization. | Release lineage and lesson ledgers must be ordered before push. |
-| L-014 | README contract became more advanced than AGENTS.md and task routing matrix. | Human-facing Nexus evolved faster than agent-facing operating contract. | Agent contracts and routing matrices must be synchronized before experiments begin. |
 
 ### Failure Response Protocol
 
@@ -386,48 +380,6 @@ When a failure occurs:
 ### AI Patch Rule
 
 Any AI patch that causes a failure must update this section before the repair is considered complete. Failure logs are repository memory, not blame records.
-
-## Agent Geometry Layer
-
-v0.3.3e synchronizes the agent-facing contract with the Nexus geometry before v0.4.0 experiments begin.
-
-### Geometry Principle
-
-The repo is treated as a navigable coherence field:
-
-```text
-center  = source boundaries, non-claim locks, architecture, context indexes
-inner   = claim cards, tau vectors, gates, schemas, classifier state
-middle  = CLI flows, tests, scripts, benchmarks, release validator
-outer   = reports, evidence packages, ledgers, visuals, release notes
-```
-
-Every patch must preserve route coherence:
-
-```text
-intent -> shell -> meridian -> sector -> files -> validation -> evidence -> lesson
-```
-
-### Coherence Gate
-
-A patch is coherent only when these surfaces agree:
-
-```text
-README.md
-AGENTS.md
-rcc/nexus/task_routing_matrix.md
-rcc/nexus/route_map.json
-docs/context/repository_context_index.json
-docs/context/rcc_nexus_index.json
-target folder README.md
-latest validation reports
-```
-
-### v0.4 Readiness Rule
-
-Synthetic gate tests may begin only after the agent contract, task routing matrix, release validator, README audit, and unit tests all pass.
-
-Non-claim lock: geometric routing improves repository orientation. It is not AI understanding, code correctness, silicon validation, product validation, manufacturing validation, process-node equivalence, or universal Tau Scaling proof.
 
 ## Process Alignment Layer
 
@@ -703,7 +655,6 @@ validation_remains_required
 | v0.3.3a | Main README release-state synchronization. |
 | v0.3.3c | Safe README process alignment repair after pasted-script path break. |
 | v0.3.3d | README render, lineage, and validator-warning polish. |
-| v0.3.3e | Agent contract geometry sync and v0.4 routing readiness. |
 
 ## Next Recommended Version
 

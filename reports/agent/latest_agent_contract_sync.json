@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-05-26T13:00:18Z",
+  "non_claim_lock": "Agent contract sync is repository coherence only, not validation of silicon/product/universal law.",
+  "schema": "tau-scaling-agent-contract-sync-v0.3.3e",
+  "updated": [
+    "README.md",
+    "AGENTS.md",
+    "rcc/nexus/task_routing_matrix.md",
+    "rcc/nexus/agent_handoff_contract.md",
+    "rcc/nexus/route_map.json"
+  ],
+  "v0_4_ready_routes": [
+    "synthetic_gate_tests",
+    "public_claim_replay"
+  ],
+  "version": "v0.3.3e"
+}

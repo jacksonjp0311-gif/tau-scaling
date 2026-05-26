@@ -1,51 +1,110 @@
 {
-    "schema":  "rcc-nexus-route-map-v1.7",
-    "repository":  "tau-scaling",
-    "generated_at":  "2026-05-26T04:58:39-04:00",
-    "default_read_order":  [
-                               "README.md",
-                               "README_90_SECONDS.md",
-                               "AGENTS.md",
-                               "docs/context/repository_context_index.json",
-                               "docs/context/rcc_nexus_index.json",
-                               "rcc/nexus/route_map.json",
-                               "target folder README.md"
-                           ],
-    "routes":  {
-                   "runtime_change":  [
-                                          "src/tau_scaling",
-                                          "tests",
-                                          "configs/seeds",
-                                          "artifacts/runs/latest"
-                                      ],
-                   "documentation_change":  [
-                                                "README.md",
-                                                "docs/context",
-                                                "rcc/nexus",
-                                                "target folder README.md"
-                                            ],
-                   "evidence_change":  [
-                                           "artifacts/runs/latest",
-                                           "outputs/evidence",
-                                           "outputs/reports",
-                                           "reports/rcc_nexus"
-                                       ],
-                   "release_change":  [
-                                          "docs/release_notes",
-                                          "reports/readiness",
-                                          "scripts/release"
-                                      ],
-                   "rcc_change":  [
-                                      "docs/context",
-                                      "rcc/nexus",
-                                      "scripts/rcc",
-                                      "reports/rcc_nexus"
-                                  ]
-               },
-    "validation":  {
-                       "rcc":  "python scripts/rcc/check_rcc_nexus.py",
-                       "architecture":  "python scripts/validation/validate_architecture_contracts.py",
-                       "tests":  "python -m unittest discover -s tests",
-                       "runtime":  "python -m tau_scaling run-claim --seed configs/seeds/logicfolding_claim_card.json"
-                   }
+  "default_read_order": [
+    "README.md",
+    "README_90_SECONDS.md",
+    "AGENTS.md",
+    "docs/context/repository_context_index.json",
+    "docs/context/rcc_nexus_index.json",
+    "rcc/nexus/route_map.json",
+    "target folder README.md"
+  ],
+  "generated_at": "2026-05-26T04:58:39-04:00",
+  "geometry": {
+    "center": [
+      "README.md",
+      "AGENTS.md",
+      "docs/context",
+      "rcc/nexus"
+    ],
+    "inner": [
+      "configs/seeds",
+      "src/tau_scaling/gates",
+      "src/tau_scaling/claims",
+      "src/tau_scaling/schemas"
+    ],
+    "middle": [
+      "src/tau_scaling",
+      "tests",
+      "scripts",
+      "scripts/release"
+    ],
+    "outer": [
+      "artifacts",
+      "outputs",
+      "reports",
+      "visuals",
+      "releases"
+    ]
+  },
+  "non_claim_lock": "Geometric routing is not code correctness, silicon validation, product validation, AI understanding, or universal Tau Scaling proof.",
+  "repository": "tau-scaling",
+  "routes": {
+    "documentation_change": [
+      "README.md",
+      "docs/context",
+      "rcc/nexus",
+      "target folder README.md"
+    ],
+    "evidence_change": [
+      "artifacts/runs/latest",
+      "outputs/evidence",
+      "outputs/reports",
+      "reports/rcc_nexus"
+    ],
+    "rcc_change": [
+      "docs/context",
+      "rcc/nexus",
+      "scripts/rcc",
+      "reports/rcc_nexus"
+    ],
+    "release_change": [
+      "docs/release_notes",
+      "reports/readiness",
+      "scripts/release"
+    ],
+    "runtime_change": [
+      "src/tau_scaling",
+      "tests",
+      "configs/seeds",
+      "artifacts/runs/latest"
+    ]
+  },
+  "schema": "rcc-nexus-route-map-v1.7",
+  "updated_at": "2026-05-26T13:00:18Z",
+  "v0_4_routes": {
+    "public_claim_replay": {
+      "evidence": [
+        "reports/public_claims/latest_claim_replay_report.md"
+      ],
+      "read_first": [
+        "docs/theory",
+        "configs/seeds/public_claims",
+        "reports/public_claims"
+      ],
+      "validate": [
+        "python scripts/release/validate_release.py"
+      ]
+    },
+    "synthetic_gate_tests": {
+      "evidence": [
+        "reports/gates/latest_synthetic_gate_report.md"
+      ],
+      "read_first": [
+        "configs/seeds/tests",
+        "src/tau_scaling/gates",
+        "tests",
+        "rcc/nexus/task_routing_matrix.md"
+      ],
+      "validate": [
+        "python scripts/release/validate_release.py"
+      ]
+    }
+  },
+  "validation": {
+    "architecture": "python scripts/validation/validate_architecture_contracts.py",
+    "rcc": "python scripts/rcc/check_rcc_nexus.py",
+    "runtime": "python -m tau_scaling run-claim --seed configs/seeds/logicfolding_claim_card.json",
+    "tests": "python -m unittest discover -s tests"
+  },
+  "version": "v0.3.3e"
 }
