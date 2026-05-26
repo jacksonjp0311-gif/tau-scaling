@@ -1,0 +1,51 @@
+{
+    "schema":  "rcc-nexus-route-map-v1.7",
+    "repository":  "tau-scaling",
+    "generated_at":  "2026-05-26T04:58:39-04:00",
+    "default_read_order":  [
+                               "README.md",
+                               "README_90_SECONDS.md",
+                               "AGENTS.md",
+                               "docs/context/repository_context_index.json",
+                               "docs/context/rcc_nexus_index.json",
+                               "rcc/nexus/route_map.json",
+                               "target folder README.md"
+                           ],
+    "routes":  {
+                   "runtime_change":  [
+                                          "src/tau_scaling",
+                                          "tests",
+                                          "configs/seeds",
+                                          "artifacts/runs/latest"
+                                      ],
+                   "documentation_change":  [
+                                                "README.md",
+                                                "docs/context",
+                                                "rcc/nexus",
+                                                "target folder README.md"
+                                            ],
+                   "evidence_change":  [
+                                           "artifacts/runs/latest",
+                                           "outputs/evidence",
+                                           "outputs/reports",
+                                           "reports/rcc_nexus"
+                                       ],
+                   "release_change":  [
+                                          "docs/release_notes",
+                                          "reports/readiness",
+                                          "scripts/release"
+                                      ],
+                   "rcc_change":  [
+                                      "docs/context",
+                                      "rcc/nexus",
+                                      "scripts/rcc",
+                                      "reports/rcc_nexus"
+                                  ]
+               },
+    "validation":  {
+                       "rcc":  "python scripts/rcc/check_rcc_nexus.py",
+                       "architecture":  "python scripts/validation/validate_architecture_contracts.py",
+                       "tests":  "python -m unittest discover -s tests",
+                       "runtime":  "python -m tau_scaling run-claim --seed configs/seeds/logicfolding_claim_card.json"
+                   }
+}

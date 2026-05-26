@@ -1,0 +1,9 @@
+{
+  "schema": "tau-scaling-architecture-contract-validation-v0.2",
+  "generated_at": "2026-05-26T09:11:14.915398+00:00",
+  "passed": true,
+  "errors": 0,
+  "warnings": 0,
+  "findings": [],
+  "boundary": "Architecture validation is not code correctness or silicon validation."
+}

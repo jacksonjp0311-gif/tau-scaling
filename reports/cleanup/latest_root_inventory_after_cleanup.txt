@@ -1,0 +1,12 @@
+
+Name                 Length LastWriteTime       
+----                 ------ -------------       
+.gitignore              469 5/26/2026 4:31:19 AM
+AGENTS.md               981 5/26/2026 4:58:41 AM
+LICENSE                 413 5/26/2026 4:31:19 AM
+pyproject.toml          624 5/26/2026 5:07:28 AM
+README.md             20751 5/26/2026 5:01:09 AM
+README_5_MINUTES.md     906 5/26/2026 4:31:19 AM
+README_90_SECONDS.md    681 5/26/2026 4:58:41 AM
+
+

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="420" viewBox="0 0 980 420">
+  <rect width="980" height="420" fill="#071018"/>
+  <text x="40" y="55" fill="#e7f6ff" font-size="30" font-family="Arial">Tau Scaling Classification Dashboard</text>
+  <text x="40" y="105" fill="#8bdcff" font-size="20" font-family="Arial">Class: TSEK-C</text>
+  <text x="40" y="145" fill="#8bdcff" font-size="20" font-family="Arial">A_TSEK: 0.0000</text>
+  <text x="40" y="185" fill="#8bdcff" font-size="20" font-family="Arial">LogicFolding margin: 9.5000 ps</text>
+  <text x="40" y="225" fill="#8bdcff" font-size="20" font-family="Arial">Gamma_tau_ETP: 1.1991</text>
+  <rect x="40" y="270" width="900" height="70" rx="14" fill="#102436" stroke="#2aa8d8"/>
+  <text x="70" y="313" fill="#ffffff" font-size="20" font-family="Arial">Roadmap coherence is not validation. Simulation is not silicon evidence.</text>
+</svg>

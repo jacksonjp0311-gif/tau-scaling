@@ -1,0 +1,57 @@
+{
+    "schema":  "rcc-nexus-index-v1.7",
+    "repository":  "tau-scaling",
+    "generated_at":  "2026-05-26T04:58:39-04:00",
+    "profile":  "Full",
+    "profile_reason":  "Public claim surface, evidence package runtime, validation gates, and AI-agent maintenance context.",
+    "sphere":  {
+                   "outer":  [
+                                 "artifacts",
+                                 "outputs",
+                                 "reports",
+                                 "visuals"
+                             ],
+                   "center":  [
+                                  "README.md",
+                                  "AGENTS.md",
+                                  "docs/context/repository_context_index.json"
+                              ],
+                   "middle":  [
+                                  "tests",
+                                  "scripts",
+                                  "examples"
+                              ],
+                   "inner":  [
+                                 "src/tau_scaling",
+                                 "configs",
+                                 "schemas"
+                             ]
+               },
+    "meridians":  [
+                      "source",
+                      "validation",
+                      "evidence",
+                      "drift",
+                      "agent",
+                      "safety",
+                      "runtime",
+                      "tau",
+                      "release",
+                      "documentation"
+                  ],
+    "sectors":  [
+                    "core",
+                    "schemas",
+                    "tau",
+                    "runtime",
+                    "validation",
+                    "evidence",
+                    "rcc",
+                    "agent",
+                    "examples",
+                    "release"
+                ],
+    "echo_locations":  [
+
+                       ]
+}

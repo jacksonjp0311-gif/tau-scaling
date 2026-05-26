@@ -1,0 +1,4226 @@
+
+════════════════════════════════════════════════════════════
+ TAU SCALING REPO DUMP
+════════════════════════════════════════════════════════════
+Generated: 2026-05-26T05:03:29-04:00
+RepoRoot: C:\Users\jacks\OneDrive\Desktop\tau-scaling
+IncludeArtifacts: False
+MaxFileChars: 40000
+
+════════════════════════════════════════════════════════════
+ EXPECTED CURRENT CHECKPOINT
+════════════════════════════════════════════════════════════
+Target checkpoint: TAU-SCALING-SA v0.2-RCCN local repo structure
+Expected surfaces:
+- RCC-N checker should pass with warnings 0
+- Architecture validator should pass with warnings 0
+- Unit tests should pass
+- Runtime should emit TSEK-C demo evidence
+- Root README should expose public non-claim locks
+
+════════════════════════════════════════════════════════════
+ GIT STATUS
+════════════════════════════════════════════════════════════
+No .git folder detected.
+
+════════════════════════════════════════════════════════════
+ PYTHON / PACKAGE STATUS
+════════════════════════════════════════════════════════════
+PythonExe: .\.venv\Scripts\python.exe
+Python 3.12.2
+tau_scaling 0.1.0
+
+════════════════════════════════════════════════════════════
+ DIRECTORY TREE
+════════════════════════════════════════════════════════════
+.
+  .github/
+    .github\workflows/
+  artifacts/
+    artifacts\dashboards/
+    artifacts\evidence_packages/
+    artifacts\ledgers/
+    artifacts\reports/
+    artifacts\runs/
+      artifacts\runs\latest/
+        artifacts\runs\latest\ledger/
+        artifacts\runs\latest\reports/
+        artifacts\runs\latest\scoring/
+        artifacts\runs\latest\visuals/
+    artifacts\visuals/
+  configs/
+    configs\seeds/
+  docs/
+    docs\architecture/
+    docs\architecture_changes/
+    docs\benchmarks/
+    docs\context/
+      docs\context\drift/
+    docs\future_architecture/
+    docs\injected_theory/
+    docs\injections/
+    docs\protocols/
+    docs\public_release/
+    docs\release_notes/
+    docs\software_architecture/
+    docs\theory/
+  examples/
+  rcc/
+    rcc\nexus/
+  reports/
+    reports\architecture/
+    reports\rcc_nexus/
+    reports\readiness/
+    reports\readme/
+    reports\repo_dump/
+  scripts/
+    scripts\rcc/
+    scripts\release/
+    scripts\validation/
+  src/
+    src\tau_scaling/
+      src\tau_scaling\claims/
+      src\tau_scaling\core/
+      src\tau_scaling\evidence/
+      src\tau_scaling\gates/
+      src\tau_scaling\schemas/
+      src\tau_scaling\simulation/
+      src\tau_scaling\tau/
+      src\tau_scaling\utils/
+  tests/
+  visuals/
+    visuals\rcc_nexus/
+    visuals\tau_scaling/
+
+════════════════════════════════════════════════════════════
+ FILE INVENTORY
+════════════════════════════════════════════════════════════
+.gitignore	469 bytes	2026-05-26 04:31:19
+AGENTS.md	981 bytes	2026-05-26 04:58:41
+artifacts\dashboards\.gitkeep	0 bytes	2026-05-26 04:31:20
+artifacts\evidence_packages\.gitkeep	0 bytes	2026-05-26 04:31:20
+artifacts\ledgers\.gitkeep	0 bytes	2026-05-26 04:31:20
+artifacts\README.md	2667 bytes	2026-05-26 04:58:42
+artifacts\reports\.gitkeep	0 bytes	2026-05-26 04:31:20
+artifacts\runs\.gitkeep	0 bytes	2026-05-26 04:31:20
+artifacts\runs\latest\evidence_package.json	4152 bytes	2026-05-26 04:59:10
+artifacts\runs\latest\ledger\downgrade_ledger.jsonl	108 bytes	2026-05-26 04:59:10
+artifacts\runs\latest\reports\non_claim_locks.md	96 bytes	2026-05-26 04:59:10
+artifacts\runs\latest\reports\tau_scaling_summary.md	343 bytes	2026-05-26 04:59:10
+artifacts\runs\latest\scoring\admissible_claim.json	279 bytes	2026-05-26 04:59:10
+artifacts\runs\latest\scoring\classifier_result.json	842 bytes	2026-05-26 04:59:10
+artifacts\runs\latest\visuals\classification_dashboard.svg	915 bytes	2026-05-26 04:59:10
+artifacts\visuals\.gitkeep	0 bytes	2026-05-26 04:31:20
+BUILD_STATUS.md	566 bytes	2026-05-26 04:31:42
+configs\README.md	2616 bytes	2026-05-26 04:58:42
+configs\seeds\codex_tau_vector_toy.json	540 bytes	2026-05-26 04:38:16
+configs\seeds\edge_surface_boundary_toy.json	67 bytes	2026-05-26 04:38:16
+configs\seeds\gamma_tau_etp_toy.json	122 bytes	2026-05-26 04:38:16
+configs\seeds\logicfolding_claim_card.json	2823 bytes	2026-05-26 04:38:16
+configs\seeds\monte_carlo_stress_toy.json	511 bytes	2026-05-26 04:38:16
+configs\seeds\README.md	2646 bytes	2026-05-26 04:58:42
+docs\architecture\claim_gate.md	123 bytes	2026-05-26 04:31:19
+docs\architecture\evidence_contract.md	137 bytes	2026-05-26 04:31:19
+docs\architecture\rcc_context_map.md	905 bytes	2026-05-26 04:31:19
+docs\architecture\README.md	2616 bytes	2026-05-26 04:58:42
+docs\architecture\runtime_loop.md	91 bytes	2026-05-26 04:31:19
+docs\architecture\source_boundary.md	150 bytes	2026-05-26 04:31:19
+docs\architecture_changes\tau_scaling_v0_2_architecture_change.md	385 bytes	2026-05-26 04:58:42
+docs\benchmarks\current_public_metrics.md	407 bytes	2026-05-26 04:58:42
+docs\context\drift\latest_rcc_nexus_report.md	346 bytes	2026-05-26 05:01:10
+docs\context\rcc_nexus_index.json	2003 bytes	2026-05-26 04:58:41
+docs\context\README.md	2686 bytes	2026-05-26 04:58:42
+docs\context\repository_context_index.json	2333 bytes	2026-05-26 04:58:41
+docs\context\validation_surface.md	720 bytes	2026-05-26 04:58:41
+docs\injections\README.md	2625 bytes	2026-05-26 04:58:42
+docs\injections\tau_scaling_rcc_n_injection_v0_2.md	674 bytes	2026-05-26 04:58:41
+docs\protocols\non_claim_locks.md	400 bytes	2026-05-26 04:58:42
+docs\protocols\README.md	110 bytes	2026-05-26 04:31:19
+docs\README.md	2683 bytes	2026-05-26 04:58:42
+docs\release_notes\README.md	2632 bytes	2026-05-26 04:58:42
+docs\release_notes\tau_scaling_v0_2_rcc_n_structure_injection.md	435 bytes	2026-05-26 04:58:41
+docs\software_architecture\README.md	2633 bytes	2026-05-26 04:58:42
+docs\software_architecture\tau_scaling_sa_v0_1.md	504 bytes	2026-05-26 04:58:41
+docs\theory\README.md	63 bytes	2026-05-26 04:31:19
+docs\theory\tau_scaling_source_summary.md	326 bytes	2026-05-26 04:58:42
+docs\theory\tsek_v1_3_summary.md	131 bytes	2026-05-26 04:31:19
+examples\edge_surface_boundary_toy.py	218 bytes	2026-05-26 04:31:21
+examples\gamma_tau_etp_toy.py	220 bytes	2026-05-26 04:31:21
+examples\logicfolding_claim_card.py	229 bytes	2026-05-26 04:31:21
+examples\monte_carlo_stress_toy.py	231 bytes	2026-05-26 04:31:21
+examples\README.md	2593 bytes	2026-05-26 04:58:42
+LICENSE	413 bytes	2026-05-26 04:31:19
+pyproject.toml	594 bytes	2026-05-26 04:36:45
+rcc\nexus\agent_handoff_contract.md	229 bytes	2026-05-26 04:58:41
+rcc\nexus\echo_location_template.md	309 bytes	2026-05-26 04:58:41
+rcc\nexus\rcc_nexus_protocol.md	272 bytes	2026-05-26 04:58:41
+rcc\nexus\README.md	2645 bytes	2026-05-26 04:58:42
+rcc\nexus\route_map.json	2654 bytes	2026-05-26 04:58:41
+rcc\nexus\task_routing_matrix.md	548 bytes	2026-05-26 04:58:41
+rcc\README.md	2541 bytes	2026-05-26 04:58:42
+RCC_N_EVOLUTION_STATUS.md	1041 bytes	2026-05-26 04:58:43
+README.md	20751 bytes	2026-05-26 05:01:09
+README_5_MINUTES.md	906 bytes	2026-05-26 04:31:19
+README_90_SECONDS.md	681 bytes	2026-05-26 04:58:41
+README_LOCK_VISIBILITY_REPAIR_STATUS.md	1014 bytes	2026-05-26 05:01:10
+REPAIR_STATUS.md	687 bytes	2026-05-26 04:36:55
+REPAIR_STATUS_V3.md	679 bytes	2026-05-26 04:38:23
+reports\architecture\latest_architecture_contract_validation.json	285 bytes	2026-05-26 05:01:10
+reports\architecture\latest_architecture_contract_validation.md	253 bytes	2026-05-26 05:01:10
+reports\rcc_nexus\latest_rcc_nexus_check.json	382 bytes	2026-05-26 05:01:10
+reports\rcc_nexus\latest_rcc_nexus_check.md	346 bytes	2026-05-26 05:01:10
+reports\rcc_nexus\README.md	2570 bytes	2026-05-26 04:58:42
+reports\README.md	2564 bytes	2026-05-26 04:58:42
+reports\readme\latest_readme_lock_visibility_repair.md	1014 bytes	2026-05-26 05:01:10
+scripts\rcc\check_rcc_nexus.py	5529 bytes	2026-05-26 04:58:42
+scripts\rcc\README.md	2537 bytes	2026-05-26 04:58:42
+scripts\README.md	2558 bytes	2026-05-26 04:58:42
+scripts\run_all_checks.ps1	385 bytes	2026-05-26 04:58:42
+scripts\validation\README.md	2612 bytes	2026-05-26 04:58:42
+scripts\validation\validate_architecture_contracts.py	3081 bytes	2026-05-26 04:58:42
+src\README.md	2504 bytes	2026-05-26 04:58:42
+src\tau_scaling\__init__.py	95 bytes	2026-05-26 04:31:19
+src\tau_scaling\__main__.py	65 bytes	2026-05-26 04:31:19
+src\tau_scaling\claims\__init__.py	0 bytes	2026-05-26 04:33:40
+src\tau_scaling\claims\classifier.py	3952 bytes	2026-05-26 04:31:20
+src\tau_scaling\claims\README.md	2666 bytes	2026-05-26 04:58:42
+src\tau_scaling\cli.py	3534 bytes	2026-05-26 04:31:20
+src\tau_scaling\core\__init__.py	0 bytes	2026-05-26 04:33:40
+src\tau_scaling\core\README.md	2594 bytes	2026-05-26 04:58:42
+src\tau_scaling\core\runtime.py	4302 bytes	2026-05-26 04:31:20
+src\tau_scaling\evidence\__init__.py	0 bytes	2026-05-26 04:33:40
+src\tau_scaling\evidence\package.py	4287 bytes	2026-05-26 04:31:20
+src\tau_scaling\evidence\README.md	2656 bytes	2026-05-26 04:58:42
+src\tau_scaling\gates\__init__.py	0 bytes	2026-05-26 04:33:40
+src\tau_scaling\gates\edge_surface.py	977 bytes	2026-05-26 04:31:19
+src\tau_scaling\gates\gamma_tau_etp.py	642 bytes	2026-05-26 04:31:19
+src\tau_scaling\gates\logicfolding_survivability.py	632 bytes	2026-05-26 04:31:19
+src\tau_scaling\gates\README.md	2675 bytes	2026-05-26 04:58:42
+src\tau_scaling\README.md	2601 bytes	2026-05-26 04:58:42
+src\tau_scaling\schemas\README.md	94 bytes	2026-05-26 04:31:20
+src\tau_scaling\simulation\__init__.py	0 bytes	2026-05-26 04:33:40
+src\tau_scaling\simulation\monte_carlo.py	3059 bytes	2026-05-26 04:31:20
+src\tau_scaling\simulation\README.md	2587 bytes	2026-05-26 04:58:42
+src\tau_scaling\tau\README.md	90 bytes	2026-05-26 04:31:20
+src\tau_scaling\utils\__init__.py	0 bytes	2026-05-26 04:33:40
+src\tau_scaling\utils\README.md	92 bytes	2026-05-26 04:31:20
+src\tau_scaling\utils\safe_json.py	647 bytes	2026-05-26 04:38:16
+tests\README.md	2495 bytes	2026-05-26 04:58:42
+tests\test_classifier.py	2521 bytes	2026-05-26 04:31:21
+tests\test_gates.py	1170 bytes	2026-05-26 04:31:21
+tests\test_runtime.py	790 bytes	2026-05-26 04:31:21
+visuals\README.md	2503 bytes	2026-05-26 04:58:42
+visuals\tau_scaling\classification_dashboard.svg	915 bytes	2026-05-26 04:38:23
+visuals\tau_scaling\README.md	2546 bytes	2026-05-26 04:58:42
+
+════════════════════════════════════════════════════════════
+ VALIDATION SNAPSHOT
+════════════════════════════════════════════════════════════
+
+---- RCC-N checker ----
+{
+  "schema": "tau-scaling-rcc-nexus-check-v0.2",
+  "generated_at": "2026-05-26T09:03:31.285045+00:00",
+  "repository": "tau-scaling",
+  "profile": "Full",
+  "major_dirs_checked": 25,
+  "mini_readme_coverage": 1.0,
+  "errors": 0,
+  "warnings": 0,
+  "passed": true,
+  "findings": [],
+  "non_claim_lock": "RCC-N navigation is not code correctness or silicon validation."
+}
+ExitCode: 0
+
+---- Architecture validator ----
+{
+  "schema": "tau-scaling-architecture-contract-validation-v0.2",
+  "generated_at": "2026-05-26T09:03:31.360645+00:00",
+  "passed": true,
+  "errors": 0,
+  "warnings": 0,
+  "findings": [],
+  "boundary": "Architecture validation is not code correctness or silicon validation."
+}
+ExitCode: 0
+
+---- Unit tests ----
+[VALIDATION ERROR] ......
+
+════════════════════════════════════════════════════════════
+ RUNTIME DEMO SNAPSHOT
+════════════════════════════════════════════════════════════
+TAU-SCALING-SA run complete
+run_id: 20260526T090331Z
+class: TSEK-C
+A_TSEK: 0.0000
+findings: 1
+artifacts: C:\Users\jacks\OneDrive\Desktop\tau-scaling\artifacts\runs\20260526T090331Z
+evidence: C:\Users\jacks\OneDrive\Desktop\tau-scaling\artifacts\runs\20260526T090331Z\evidence_package.json
+ExitCode: 0
+
+════════════════════════════════════════════════════════════
+ PRIORITY FILE CONTENTS
+════════════════════════════════════════════════════════════
+
+════════════════════════════════════════════════════════════
+ FILE: README.md
+════════════════════════════════════════════════════════════
+# Observable Manifold Network
+
+Repository: observable-manifold-network
+Package / CLI: omn
+Architecture: OMN-SA v0.1
+Status: Minimal local runtime scaffold.
+
+## What this is
+
+Observable Manifold Network is a minimal Python runtime for observable-topology dynamical modeling.
+
+It can:
+
+- declare observable nodes
+- compute an interaction matrix
+- build typed graph contracts
+- construct delay/history embeddings
+- run simple node-local generators
+- generate future state
+- validate residuals
+- compare baselines
+- test topology sensitivity
+- attribute residuals
+- gate claims
+- emit evidence JSON, reports, plots, logs, and ledger records
+
+## Source boundary
+
+This repository is aligned with OMN-SA v0.1, derived from OMN v1.0 and OMN v1.1, which are source-bounded extractions from Park et al.'s Generative Manifold Networks paper.
+
+GMN remains Park et al.'s method. OMN is a Codex runtime architecture that preserves the observable-topology spine while adding governance, evidence, and claim-gating layers.
+
+## What this is not
+
+This is not:
+
+- a claim to have invented GMN
+- a full GMN replication
+- empirical validation
+- proof of causality
+- proof of mechanism
+- proof of biological equivalence
+- proof that observable topology is truth
+- proof that OMN outperforms GMN or any baseline
+
+## Quick start
+
+From the repository root:
+
+    $env:PYTHONPATH = "$PWD\src"
+    python -m omn --help
+    python -m omn run --seed synthetic-toy
+    python -m omn run --seed lorenz
+    python -m omn run --seed artifact-graph
+    python -m unittest discover -s tests
+
+## Runtime flow
+
+    input
+    -> observables
+    -> interaction matrix
+    -> typed graph
+    -> delay embeddings
+    -> node generators
+    -> generated state
+    -> validation residuals
+    -> baselines
+    -> topology sensitivity
+    -> residual attribution
+    -> claim gate
+    -> evidence JSON
+
+## Output locations
+
+- outputs/state
+- outputs/evidence
+- outputs/reports
+- outputs/plots
+- outputs/logs
+- outputs/ledger
+
+## AI operating contract
+
+Before modifying this repo, read:
+
+1. README.md
+2. README_90_SECONDS.md
+3. docs/architecture/rcc_context_map.md
+4. the target folder README.md
+5. the relevant tests
+
+Do not weaken source attribution, non-claim locks, evidence gates, graph contracts, or residual validation requirements.
+
+════════════════════════════════════════════════════════════
+ FILE: README_90_SECONDS.md
+════════════════════════════════════════════════════════════
+# OMN in 90 Seconds
+
+OMN is a source-bounded observable-topology runtime inspired by Park et al.'s Generative Manifold Networks.
+
+It does:
+
+- declare observable nodes
+- compute or load interaction matrices
+- build typed graph contracts
+- construct delay/history embeddings
+- run node-local generators
+- generate future state
+- validate residuals
+- compare baselines
+- test topology sensitivity
+- emit evidence JSON
+
+It does not:
+
+- claim to invent GMN
+- prove causality
+- prove mechanism
+- prove biological equivalence
+- prove observable topology is truth
+- replace validation or human review
+
+Core rule:
+
+    No graph contract, no topology claim.
+    No residuals, no evidence.
+    No claim gate, no strong claim.
+
+Run:
+
+    $env:PYTHONPATH = "$PWD\src"
+    python -m omn run --seed synthetic-toy
+    python -m omn run --seed lorenz
+    python -m unittest discover -s tests
+
+════════════════════════════════════════════════════════════
+ FILE: AGENTS.md
+════════════════════════════════════════════════════════════
+[READ ERROR] Exception calling "ReadAllText" with "1" argument(s): "Could not find file 'C:\Users\jacks\AGENTS.md'."
+
+════════════════════════════════════════════════════════════
+ FILE: RCC_N_EVOLUTION_STATUS.md
+════════════════════════════════════════════════════════════
+[READ ERROR] Exception calling "ReadAllText" with "1" argument(s): "Could not find file 'C:\Users\jacks\RCC_N_EVOLUTION_STATUS.md'."
+
+════════════════════════════════════════════════════════════
+ FILE: README_LOCK_VISIBILITY_REPAIR_STATUS.md
+════════════════════════════════════════════════════════════
+[READ ERROR] Exception calling "ReadAllText" with "1" argument(s): "Could not find file 'C:\Users\jacks\README_LOCK_VISIBILITY_REPAIR_STATUS.md'."
+
+════════════════════════════════════════════════════════════
+ FILE: pyproject.toml
+════════════════════════════════════════════════════════════
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "observable-manifold-network"
+version = "0.1.0"
+description = "Minimal OMN-SA v0.1 runtime for observable topology, typed graph contracts, residual validation, and evidence-gated claims."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "James Paul Jackson" }]
+license = { text = "MIT" }
+dependencies = []
+
+[project.scripts]
+omn = "omn.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-dir]
+"" = "src"
+
+════════════════════════════════════════════════════════════
+ FILE: docs\context\repository_context_index.json
+════════════════════════════════════════════════════════════
+[READ ERROR] Exception calling "ReadAllText" with "1" argument(s): "Could not find a part of the path 'C:\Users\jacks\docs\context\repository_context_index.json'."
+
+════════════════════════════════════════════════════════════
+ FILE: docs\context\rcc_nexus_index.json
+════════════════════════════════════════════════════════════
+[READ ERROR] Exception calling "ReadAllText" with "1" argument(s): "Could not find a part of the path 'C:\Users\jacks\docs\context\rcc_nexus_index.json'."
+
+════════════════════════════════════════════════════════════
+ FILE: docs\context\validation_surface.md
+════════════════════════════════════════════════════════════
+[READ ERROR] Exception calling "ReadAllText" with "1" argument(s): "Could not find a part of the path 'C:\Users\jacks\docs\context\validation_surface.md'."
+
+════════════════════════════════════════════════════════════
+ FILE: rcc\nexus\README.md
+════════════════════════════════════════════════════════════
+[READ ERROR] Exception calling "ReadAllText" with "1" argument(s): "Could not find a part of the path 'C:\Users\jacks\rcc\nexus\README.md'."
+
+════════════════════════════════════════════════════════════
+ FILE: rcc\nexus\route_map.json
+════════════════════════════════════════════════════════════
+[READ ERROR] Exception calling "ReadAllText" with "1" argument(s): "Could not find a part of the path 'C:\Users\jacks\rcc\nexus\route_map.json'."
+
+════════════════════════════════════════════════════════════
+ FILE: rcc\nexus\rcc_nexus_protocol.md
+════════════════════════════════════════════════════════════
+[READ ERROR] Exception calling "ReadAllText" with "1" argument(s): "Could not find a part of the path 'C:\Users\jacks\rcc\nexus\rcc_nexus_protocol.md'."
+
+════════════════════════════════════════════════════════════
+ FILE: reports\rcc_nexus\latest_rcc_nexus_check.md
+════════════════════════════════════════════════════════════
+[READ ERROR] Exception calling "ReadAllText" with "1" argument(s): "Could not find a part of the path 'C:\Users\jacks\reports\rcc_nexus\latest_rcc_nexus_check.md'."
+
+════════════════════════════════════════════════════════════
+ FILE: reports\architecture\latest_architecture_contract_validation.md
+════════════════════════════════════════════════════════════
+[READ ERROR] Exception calling "ReadAllText" with "1" argument(s): "Could not find a part of the path 'C:\Users\jacks\reports\architecture\latest_architecture_contract_validation.md'."
+
+════════════════════════════════════════════════════════════
+ FILE: reports\readme\latest_readme_lock_visibility_repair.md
+════════════════════════════════════════════════════════════
+[READ ERROR] Exception calling "ReadAllText" with "1" argument(s): "Could not find a part of the path 'C:\Users\jacks\reports\readme\latest_readme_lock_visibility_repair.md'."
+
+════════════════════════════════════════════════════════════
+ FILE: artifacts\runs\latest\evidence_package.json
+════════════════════════════════════════════════════════════
+[READ ERROR] Exception calling "ReadAllText" with "1" argument(s): "Could not find a part of the path 'C:\Users\jacks\artifacts\runs\latest\evidence_package.json'."
+
+════════════════════════════════════════════════════════════
+ FILE: artifacts\runs\latest\scoring\classifier_result.json
+════════════════════════════════════════════════════════════
+[READ ERROR] Exception calling "ReadAllText" with "1" argument(s): "Could not find a part of the path 'C:\Users\jacks\artifacts\runs\latest\scoring\classifier_result.json'."
+
+════════════════════════════════════════════════════════════
+ FILE: artifacts\runs\latest\ledger\downgrade_ledger.jsonl
+════════════════════════════════════════════════════════════
+[READ ERROR] Exception calling "ReadAllText" with "1" argument(s): "Could not find a part of the path 'C:\Users\jacks\artifacts\runs\latest\ledger\downgrade_ledger.jsonl'."
+
+════════════════════════════════════════════════════════════
+ SOURCE / TEST / SCRIPT CONTENTS
+════════════════════════════════════════════════════════════
+
+════════════════════════════════════════════════════════════
+ FILE: configs\README.md
+════════════════════════════════════════════════════════════
+# configs
+
+## Folder Purpose
+
+Runtime and seed configuration.
+
+## S — Specification
+
+This folder participates in the Tau Scaling runtime, documentation, evidence, or RCC-N navigation surface according to its local role.
+
+## H — Hooks
+
+Inbound hooks:
+
+- README.md
+- AGENTS.md
+- docs/context/repository_context_index.json
+- docs/context/rcc_nexus_index.json
+- rcc/nexus/route_map.json
+
+Outbound hooks:
+
+- configs/seeds
+- validation reports when this folder participates in runtime, documentation, release, or RCC checks
+
+## A — Artifacts
+
+This folder may contain source files, docs, reports, schemas, scripts, visuals, generated state, or validation records depending on its role.
+
+## T — Theory / Basis
+
+Governed by TAU-SCALING-SA v0.1, TSEK v1.3, RCC-N v1.7, and the repository non-claim locks.
+
+## I — Invariants
+
+- Preserve source attribution.
+- Preserve non-claim boundaries.
+- Do not treat navigation as validation.
+- Do not treat documentation as correctness.
+- Do not claim independent silicon validation.
+- Do not claim product performance validation.
+- Keep evidence and validation surfaces inspectable.
+
+## E — Examples
+
+Read this file before editing this folder.
+
+Run relevant validation after changes:
+
+    python -m tau_scaling run-claim --seed configs/seeds/logicfolding_claim_card.json
+    python scripts/rcc/check_rcc_nexus.py
+    python scripts/validation/validate_architecture_contracts.py
+
+## RCC Nexus Echo Location
+
+Sphere Position:
+
+- Shell: middle
+- Meridian(s): runtime, validation
+- Sector: examples
+- Version / TTL: RCC-N-v1.7 / 180 days
+- Last Verified: 2026-05-26
+
+Local Role:
+
+- Runtime and seed configuration.
+
+Evidence Surface:
+
+- configs/seeds
+
+Validation Surface:
+
+    python -m tau_scaling run-claim --seed configs/seeds/logicfolding_claim_card.json
+
+Claim Boundary:
+
+- This mini README improves local navigation and agent orientation. It does not prove code correctness, patch safety, empirical validation, independent silicon validation, product performance, process-node equivalence, AI understanding, or production readiness.
+
+Non-Claim Locks:
+
+- navigation_is_not_validation
+- documentation_is_not_correctness
+- context_reconstruction_is_not_code_quality
+- validation_remains_required
+- simulation_is_not_silicon_validation
+- density_equivalence_is_not_node_equivalence
+- local_path_win_is_not_full_chip_win
+
+Agent Route:
+
+- Read root README, docs/context indexes, route map, then this README before editing.
+
+Update Obligation:
+
+- Update this README and RCC/Nexus records if folder purpose, hooks, evidence surfaces, validation commands, or claim boundaries change.
+
+════════════════════════════════════════════════════════════
+ FILE: configs\seeds\codex_tau_vector_toy.json
+════════════════════════════════════════════════════════════
+{
+  "workload_class": "codex",
+  "tau_units": "relative",
+  "baseline": {
+    "read": 1.0,
+    "locate": 1.0,
+    "validate": 1.0,
+    "propagate": 1.0,
+    "evidence": 1.0,
+    "memory": 1.0
+  },
+  "candidate": {
+    "read": 0.7,
+    "locate": 0.6,
+    "validate": 0.8,
+    "propagate": 0.75,
+    "evidence": 0.65,
+    "memory": 0.7
+  },
+  "weights_declared": true,
+  "dominant_tau_term": "locate",
+  "dominant_tau_improved": true,
+  "non_claim_lock": "Codex tau vector is a governance analogy, not physical semiconductor equivalence."
+}
+
+
+════════════════════════════════════════════════════════════
+ FILE: configs\seeds\edge_surface_boundary_toy.json
+════════════════════════════════════════════════════════════
+{"N":16,"compute_coeff":1.0,"edge_coeff":1.0,"surface_coeff":1.0}
+
+
+════════════════════════════════════════════════════════════
+ FILE: configs\seeds\gamma_tau_etp_toy.json
+════════════════════════════════════════════════════════════
+{"tau_gain":1.22,"energy_ratio_new_over_old":0.95,"thermal_ratio_new_over_old":1.05,"pdn_droop_ratio_new_over_old":1.02}
+
+
+════════════════════════════════════════════════════════════
+ FILE: configs\seeds\logicfolding_claim_card.json
+════════════════════════════════════════════════════════════
+{
+  "source_boundary": {
+    "source_declared": true,
+    "primary_source": "Tingbo He, A Time Scaling Theory for Multi-Layer Electronic Systems",
+    "reported_claims_separated_from_validation": true,
+    "codex_mapping_not_physical_equivalence": true
+  },
+  "claim_card": {
+    "claim_id": "logicfolding-demo-001",
+    "claim_text": "LogicFolding can reduce dominant critical-path delay if wire savings survive full-chip penalties.",
+    "source": "codex",
+    "claim_type": "topology",
+    "tau_layer": "circuit",
+    "independent_validation_claimed": false
+  },
+  "workload_profile": {
+    "workload_class": "mobile_soc",
+    "dominant_tau_term": "circuit",
+    "workload_declared": true
+  },
+  "tau_vector": {
+    "tau_units": "ps",
+    "weights_declared": true,
+    "dominant_tau_improved": true,
+    "baseline": {
+      "circuit": 100.0,
+      "chip": 150.0,
+      "workload": 250.0
+    },
+    "candidate": {
+      "circuit": 82.0,
+      "chip": 132.0,
+      "workload": 220.0
+    }
+  },
+  "baseline_manifest": {
+    "name": "planar-baseline",
+    "declared": true
+  },
+  "candidate_manifest": {
+    "name": "folded-candidate",
+    "declared": true
+  },
+  "logicfolding_survivability": {
+    "rho_critical_paths": 0.75,
+    "expected_wire_savings_ps": 42.0,
+    "expected_vertical_penalty_ps": 8.0,
+    "routing_penalty_ps": 5.0,
+    "sync_penalty_ps": 3.0,
+    "variation_penalty_ps": 2.0,
+    "closure_penalty_ps": 4.0
+  },
+  "edge_surface_boundary": {
+    "N": 16,
+    "compute_coeff": 1.0,
+    "edge_coeff": 1.0,
+    "surface_coeff": 1.0
+  },
+  "energy_thermal_pdn_pvt": {
+    "tau_gain": 1.22,
+    "energy_ratio_new_over_old": 0.95,
+    "thermal_ratio_new_over_old": 1.05,
+    "pdn_droop_ratio_new_over_old": 1.02
+  },
+  "pvt_closure": {
+    "post_route_closure_passed": true,
+    "pvt_variation_passed": true,
+    "pdn_reported": true
+  },
+  "yield_method_disclosure": {
+    "method_disclosed": true,
+    "yield_reported": false
+  },
+  "evidence_disclosure": {
+    "evidence_package_complete": true,
+    "independent_validation_present": false
+  },
+  "monte_carlo_stress": {
+    "runs": 1000,
+    "seed": 777,
+    "rho_critical_paths": [0.65, 0.82],
+    "wire_savings_ps": [32.0, 48.0],
+    "vertical_penalty_ps": [6.0, 10.0],
+    "routing_penalty_ps": [3.0, 7.0],
+    "sync_penalty_ps": [1.0, 4.0],
+    "variation_penalty_ps": [1.0, 4.0],
+    "closure_penalty_ps": [2.0, 6.0],
+    "tau_gain": [1.10, 1.40],
+    "energy_ratio": [0.88, 1.05],
+    "thermal_ratio": [0.95, 1.12],
+    "pdn_ratio": [0.95, 1.10],
+    "post_route_closure_probability": 0.90
+  },
+  "overclaim": 0.0,
+  "non_claim_locks": {
+    "roadmap_coherence_is_not_validation": true,
+    "simulation_is_not_silicon_validation": true,
+    "density_equivalence_is_not_node_equivalence": true,
+    "local_path_win_is_not_full_chip_win": true
+  }
+}
+
+
+════════════════════════════════════════════════════════════
+ FILE: configs\seeds\monte_carlo_stress_toy.json
+════════════════════════════════════════════════════════════
+{
+  "monte_carlo_stress": {
+    "runs": 1000,
+    "seed": 777,
+    "rho_critical_paths": [0.65, 0.82],
+    "wire_savings_ps": [32.0, 48.0],
+    "vertical_penalty_ps": [6.0, 10.0],
+    "routing_penalty_ps": [3.0, 7.0],
+    "sync_penalty_ps": [1.0, 4.0],
+    "variation_penalty_ps": [1.0, 4.0],
+    "closure_penalty_ps": [2.0, 6.0],
+    "tau_gain": [1.10, 1.40],
+    "energy_ratio": [0.88, 1.05],
+    "thermal_ratio": [0.95, 1.12],
+    "pdn_ratio": [0.95, 1.10],
+    "post_route_closure_probability": 0.90
+  }
+}
+
+
+════════════════════════════════════════════════════════════
+ FILE: configs\seeds\README.md
+════════════════════════════════════════════════════════════
+# configs\seeds
+
+## Folder Purpose
+
+Runnable seed claim cards and toy examples.
+
+## S — Specification
+
+This folder participates in the Tau Scaling runtime, documentation, evidence, or RCC-N navigation surface according to its local role.
+
+## H — Hooks
+
+Inbound hooks:
+
+- README.md
+- AGENTS.md
+- docs/context/repository_context_index.json
+- docs/context/rcc_nexus_index.json
+- rcc/nexus/route_map.json
+
+Outbound hooks:
+
+- configs/seeds
+- validation reports when this folder participates in runtime, documentation, release, or RCC checks
+
+## A — Artifacts
+
+This folder may contain source files, docs, reports, schemas, scripts, visuals, generated state, or validation records depending on its role.
+
+## T — Theory / Basis
+
+Governed by TAU-SCALING-SA v0.1, TSEK v1.3, RCC-N v1.7, and the repository non-claim locks.
+
+## I — Invariants
+
+- Preserve source attribution.
+- Preserve non-claim boundaries.
+- Do not treat navigation as validation.
+- Do not treat documentation as correctness.
+- Do not claim independent silicon validation.
+- Do not claim product performance validation.
+- Keep evidence and validation surfaces inspectable.
+
+## E — Examples
+
+Read this file before editing this folder.
+
+Run relevant validation after changes:
+
+    python -m tau_scaling run-claim --seed configs/seeds/logicfolding_claim_card.json
+    python scripts/rcc/check_rcc_nexus.py
+    python scripts/validation/validate_architecture_contracts.py
+
+## RCC Nexus Echo Location
+
+Sphere Position:
+
+- Shell: middle
+- Meridian(s): runtime, validation
+- Sector: examples
+- Version / TTL: RCC-N-v1.7 / 180 days
+- Last Verified: 2026-05-26
+
+Local Role:
+
+- Runnable seed claim cards and toy examples.
+
+Evidence Surface:
+
+- configs/seeds
+
+Validation Surface:
+
+    python -m tau_scaling run-claim --seed configs/seeds/logicfolding_claim_card.json
+
+Claim Boundary:
+
+- This mini README improves local navigation and agent orientation. It does not prove code correctness, patch safety, empirical validation, independent silicon validation, product performance, process-node equivalence, AI understanding, or production readiness.
+
+Non-Claim Locks:
+
+- navigation_is_not_validation
+- documentation_is_not_correctness
+- context_reconstruction_is_not_code_quality
+- validation_remains_required
+- simulation_is_not_silicon_validation
+- density_equivalence_is_not_node_equivalence
+- local_path_win_is_not_full_chip_win
+
+Agent Route:
+
+- Read root README, docs/context indexes, route map, then this README before editing.
+
+Update Obligation:
+
+- Update this README and RCC/Nexus records if folder purpose, hooks, evidence surfaces, validation commands, or claim boundaries change.
+
+════════════════════════════════════════════════════════════
+ FILE: docs\architecture\claim_gate.md
+════════════════════════════════════════════════════════════
+# Claim Gate
+
+No workload, no tau claim. No baseline, no gain. No gates, no validation. No evidence, no strong class.
+
+
+
+════════════════════════════════════════════════════════════
+ FILE: docs\architecture\evidence_contract.md
+════════════════════════════════════════════════════════════
+# Evidence Contract
+
+Each run emits state, validation, simulation, scoring, reports, visuals, ledgers, and a root evidence package.
+
+
+
+════════════════════════════════════════════════════════════
+ FILE: docs\architecture\rcc_context_map.md
+════════════════════════════════════════════════════════════
+# RCC Context Map — Tau Scaling
+
+## Public spine
+
+Tau Scaling runtime converts public or internal scaling claims into structured evidence packages.
+
+## Main code surfaces
+
+| Path | Purpose |
+|---|---|
+| `src/tau_scaling/core/` | runtime orchestration |
+| `src/tau_scaling/claims/` | claim cards, classification, downgrade logic |
+| `src/tau_scaling/gates/` | LogicFolding, edge-surface, gamma tau ETP, PVT, evidence gates |
+| `src/tau_scaling/simulation/` | Monte Carlo checker stress tests |
+| `src/tau_scaling/evidence/` | evidence package writer, reports, visuals |
+| `configs/seeds/` | runnable example inputs |
+| `artifacts/runs/` | emitted runtime outputs |
+
+## Agent rules
+
+1. Do not upgrade TSEK class without evidence.
+2. Do not treat Monte Carlo as silicon validation.
+3. Do not treat density equivalence as node equivalence.
+4. Preserve source boundaries.
+5. Emit evidence for every run.
+
+
+════════════════════════════════════════════════════════════
+ FILE: docs\architecture\README.md
+════════════════════════════════════════════════════════════
+# docs\architecture
+
+## Folder Purpose
+
+Architecture notes and source-boundary docs.
+
+## S — Specification
+
+This folder participates in the Tau Scaling runtime, documentation, evidence, or RCC-N navigation surface according to its local role.
+
+## H — Hooks
+
+Inbound hooks:
+
+- README.md
+- AGENTS.md
+- docs/context/repository_context_index.json
+- docs/context/rcc_nexus_index.json
+- rcc/nexus/route_map.json
+
+Outbound hooks:
+
+- docs/architecture
+- validation reports when this folder participates in runtime, documentation, release, or RCC checks
+
+## A — Artifacts
+
+This folder may contain source files, docs, reports, schemas, scripts, visuals, generated state, or validation records depending on its role.
+
+## T — Theory / Basis
+
+Governed by TAU-SCALING-SA v0.1, TSEK v1.3, RCC-N v1.7, and the repository non-claim locks.
+
+## I — Invariants
+
+- Preserve source attribution.
+- Preserve non-claim boundaries.
+- Do not treat navigation as validation.
+- Do not treat documentation as correctness.
+- Do not claim independent silicon validation.
+- Do not claim product performance validation.
+- Keep evidence and validation surfaces inspectable.
+
+## E — Examples
+
+Read this file before editing this folder.
+
+Run relevant validation after changes:
+
+    python scripts/validation/validate_architecture_contracts.py
+    python scripts/rcc/check_rcc_nexus.py
+    python scripts/validation/validate_architecture_contracts.py
+
+## RCC Nexus Echo Location
+
+Sphere Position:
+
+- Shell: center
+- Meridian(s): source, documentation
+- Sector: core
+- Version / TTL: RCC-N-v1.7 / 180 days
+- Last Verified: 2026-05-26
+
+Local Role:
+
+- Architecture notes and source-boundary docs.
+
+Evidence Surface:
+
+- docs/architecture
+
+Validation Surface:
+
+    python scripts/validation/validate_architecture_contracts.py
+
+Claim Boundary:
+
+- This mini README improves local navigation and agent orientation. It does not prove code correctness, patch safety, empirical validation, independent silicon validation, product performance, process-node equivalence, AI understanding, or production readiness.
+
+Non-Claim Locks:
+
+- navigation_is_not_validation
+- documentation_is_not_correctness
+- context_reconstruction_is_not_code_quality
+- validation_remains_required
+- simulation_is_not_silicon_validation
+- density_equivalence_is_not_node_equivalence
+- local_path_win_is_not_full_chip_win
+
+Agent Route:
+
+- Read root README, docs/context indexes, route map, then this README before editing.
+
+Update Obligation:
+
+- Update this README and RCC/Nexus records if folder purpose, hooks, evidence surfaces, validation commands, or claim boundaries change.
+
+════════════════════════════════════════════════════════════
+ FILE: docs\architecture\runtime_loop.md
+════════════════════════════════════════════════════════════
+# Runtime Loop
+
+Declare -> Vectorize -> Compare -> Gate -> Stress -> Classify -> Emit
+
+
+
+════════════════════════════════════════════════════════════
+ FILE: docs\architecture\source_boundary.md
+════════════════════════════════════════════════════════════
+# Source Boundary
+
+He Tingbo remains source author of the Tau Scaling paper. Huawei public claims must be separated from independent validation.
+
+
+
+════════════════════════════════════════════════════════════
+ FILE: docs\architecture_changes\tau_scaling_v0_2_architecture_change.md
+════════════════════════════════════════════════════════════
+# Architecture Change — Tau Scaling v0.2
+
+Change: add RCC-N / OMN-style repository structure and documentation context.
+
+Runtime behavior: unchanged except validation/checker scripts and mirrored output surfaces.
+
+Required validation:
+
+    python scripts/rcc/check_rcc_nexus.py
+    python scripts/validation/validate_architecture_contracts.py
+    python -m unittest discover -s tests
+
+════════════════════════════════════════════════════════════
+ FILE: docs\benchmarks\current_public_metrics.md
+════════════════════════════════════════════════════════════
+# Current Public Metrics — Tau Scaling
+
+| Surface | Result |
+|---|---:|
+| Latest run id | 20260526T083823Z |
+| Latest TSEK class | TSEK-C |
+| Latest A_TSEK | 0.0 |
+| Latest diagnostic average | 0.9091 |
+| Latest findings | 1 |
+| Runtime tests | run local tests |
+| RCC-N checker | run local checker |
+
+Boundary: metrics describe local runtime/evidence behavior. They do not independently validate silicon.
+
+════════════════════════════════════════════════════════════
+ FILE: docs\context\drift\latest_rcc_nexus_report.md
+════════════════════════════════════════════════════════════
+# Latest RCC Nexus Check
+
+- Generated: 2026-05-26T09:03:31.285045+00:00
+- Profile: Full
+- Mini README coverage: 1.000
+- Errors: 0
+- Warnings: 0
+- Passed: True
+
+## Boundary
+
+RCC-N checks repository navigation and context integrity. They do not prove code correctness or independent silicon validation.
+
+## Findings
+
+- No findings.
+
+
+════════════════════════════════════════════════════════════
+ FILE: docs\context\README.md
+════════════════════════════════════════════════════════════
+# docs\context
+
+## Folder Purpose
+
+Repository context index, Nexus index, validation surface, and drift reports.
+
+## S — Specification
+
+This folder participates in the Tau Scaling runtime, documentation, evidence, or RCC-N navigation surface according to its local role.
+
+## H — Hooks
+
+Inbound hooks:
+
+- README.md
+- AGENTS.md
+- docs/context/repository_context_index.json
+- docs/context/rcc_nexus_index.json
+- rcc/nexus/route_map.json
+
+Outbound hooks:
+
+- docs/context/repository_context_index.json
+- validation reports when this folder participates in runtime, documentation, release, or RCC checks
+
+## A — Artifacts
+
+This folder may contain source files, docs, reports, schemas, scripts, visuals, generated state, or validation records depending on its role.
+
+## T — Theory / Basis
+
+Governed by TAU-SCALING-SA v0.1, TSEK v1.3, RCC-N v1.7, and the repository non-claim locks.
+
+## I — Invariants
+
+- Preserve source attribution.
+- Preserve non-claim boundaries.
+- Do not treat navigation as validation.
+- Do not treat documentation as correctness.
+- Do not claim independent silicon validation.
+- Do not claim product performance validation.
+- Keep evidence and validation surfaces inspectable.
+
+## E — Examples
+
+Read this file before editing this folder.
+
+Run relevant validation after changes:
+
+    python scripts/rcc/check_rcc_nexus.py
+    python scripts/rcc/check_rcc_nexus.py
+    python scripts/validation/validate_architecture_contracts.py
+
+## RCC Nexus Echo Location
+
+Sphere Position:
+
+- Shell: center
+- Meridian(s): agent, evidence, validation
+- Sector: rcc
+- Version / TTL: RCC-N-v1.7 / 180 days
+- Last Verified: 2026-05-26
+
+Local Role:
+
+- Repository context index, Nexus index, validation surface, and drift reports.
+
+Evidence Surface:
+
+- docs/context/repository_context_index.json
+
+Validation Surface:
+
+    python scripts/rcc/check_rcc_nexus.py
+
+Claim Boundary:
+
+- This mini README improves local navigation and agent orientation. It does not prove code correctness, patch safety, empirical validation, independent silicon validation, product performance, process-node equivalence, AI understanding, or production readiness.
+
+Non-Claim Locks:
+
+- navigation_is_not_validation
+- documentation_is_not_correctness
+- context_reconstruction_is_not_code_quality
+- validation_remains_required
+- simulation_is_not_silicon_validation
+- density_equivalence_is_not_node_equivalence
+- local_path_win_is_not_full_chip_win
+
+Agent Route:
+
+- Read root README, docs/context indexes, route map, then this README before editing.
+
+Update Obligation:
+
+- Update this README and RCC/Nexus records if folder purpose, hooks, evidence surfaces, validation commands, or claim boundaries change.
+
+════════════════════════════════════════════════════════════
+ FILE: docs\injections\README.md
+════════════════════════════════════════════════════════════
+# docs\injections
+
+## Folder Purpose
+
+Governance/module/documentation injection records.
+
+## S — Specification
+
+This folder participates in the Tau Scaling runtime, documentation, evidence, or RCC-N navigation surface according to its local role.
+
+## H — Hooks
+
+Inbound hooks:
+
+- README.md
+- AGENTS.md
+- docs/context/repository_context_index.json
+- docs/context/rcc_nexus_index.json
+- rcc/nexus/route_map.json
+
+Outbound hooks:
+
+- docs/injections
+- validation reports when this folder participates in runtime, documentation, release, or RCC checks
+
+## A — Artifacts
+
+This folder may contain source files, docs, reports, schemas, scripts, visuals, generated state, or validation records depending on its role.
+
+## T — Theory / Basis
+
+Governed by TAU-SCALING-SA v0.1, TSEK v1.3, RCC-N v1.7, and the repository non-claim locks.
+
+## I — Invariants
+
+- Preserve source attribution.
+- Preserve non-claim boundaries.
+- Do not treat navigation as validation.
+- Do not treat documentation as correctness.
+- Do not claim independent silicon validation.
+- Do not claim product performance validation.
+- Keep evidence and validation surfaces inspectable.
+
+## E — Examples
+
+Read this file before editing this folder.
+
+Run relevant validation after changes:
+
+    python scripts/validation/validate_architecture_contracts.py
+    python scripts/rcc/check_rcc_nexus.py
+    python scripts/validation/validate_architecture_contracts.py
+
+## RCC Nexus Echo Location
+
+Sphere Position:
+
+- Shell: outer
+- Meridian(s): documentation, release
+- Sector: release
+- Version / TTL: RCC-N-v1.7 / 180 days
+- Last Verified: 2026-05-26
+
+Local Role:
+
+- Governance/module/documentation injection records.
+
+Evidence Surface:
+
+- docs/injections
+
+Validation Surface:
+
+    python scripts/validation/validate_architecture_contracts.py
+
+Claim Boundary:
+
+- This mini README improves local navigation and agent orientation. It does not prove code correctness, patch safety, empirical validation, independent silicon validation, product performance, process-node equivalence, AI understanding, or production readiness.
+
+Non-Claim Locks:
+
+- navigation_is_not_validation
+- documentation_is_not_correctness
+- context_reconstruction_is_not_code_quality
+- validation_remains_required
+- simulation_is_not_silicon_validation
+- density_equivalence_is_not_node_equivalence
+- local_path_win_is_not_full_chip_win
+
+Agent Route:
+
+- Read root README, docs/context indexes, route map, then this README before editing.
+
+Update Obligation:
+
+- Update this README and RCC/Nexus records if folder purpose, hooks, evidence surfaces, validation commands, or claim boundaries change.
+
+════════════════════════════════════════════════════════════
+ FILE: docs\injections\tau_scaling_rcc_n_injection_v0_2.md
+════════════════════════════════════════════════════════════
+# Tau Scaling RCC-N / OMN-Style Repository Injection v0.2
+
+Date: 2026-05-26
+
+## Purpose
+
+Inject OMN-style repository structure, README trisection, RCC-N navigation, mini READMEs, docs/context indexes, route maps, validation surfaces, and version records into the Tau Scaling runtime repo.
+
+## Preserved locks
+
+- No classifier loosening.
+- No independent silicon validation claim.
+- No product endorsement.
+- No process-node equivalence claim.
+- Navigation is not validation.
+- Documentation is not correctness.
+
+## Validation
+
+    python scripts/rcc/check_rcc_nexus.py
+    python scripts/validation/validate_architecture_contracts.py
+    python -m unittest discover -s tests
+
+════════════════════════════════════════════════════════════
+ FILE: docs\protocols\non_claim_locks.md
+════════════════════════════════════════════════════════════
+# Non-Claim Locks
+
+- roadmap_coherence_is_not_validation
+- simulation_is_not_silicon_validation
+- density_equivalence_is_not_node_equivalence
+- local_path_win_is_not_full_chip_win
+- navigation_is_not_validation
+- documentation_is_not_correctness
+- context_reconstruction_is_not_code_quality
+- validation_remains_required
+- tau_vector_is_not_silicon_measurement
+- codex_tau_is_not_physical_equivalence
+
+════════════════════════════════════════════════════════════
+ FILE: docs\protocols\README.md
+════════════════════════════════════════════════════════════
+# docs/protocols/
+
+Operational protocols, non-claim locks, claim cards, tau vectors, and evidence gates.
+
+
+
+════════════════════════════════════════════════════════════
+ FILE: docs\README.md
+════════════════════════════════════════════════════════════
+# docs
+
+## Folder Purpose
+
+Documentation, architecture, protocols, context, release notes, and theory summaries.
+
+## S — Specification
+
+This folder participates in the Tau Scaling runtime, documentation, evidence, or RCC-N navigation surface according to its local role.
+
+## H — Hooks
+
+Inbound hooks:
+
+- README.md
+- AGENTS.md
+- docs/context/repository_context_index.json
+- docs/context/rcc_nexus_index.json
+- rcc/nexus/route_map.json
+
+Outbound hooks:
+
+- docs/context
+- validation reports when this folder participates in runtime, documentation, release, or RCC checks
+
+## A — Artifacts
+
+This folder may contain source files, docs, reports, schemas, scripts, visuals, generated state, or validation records depending on its role.
+
+## T — Theory / Basis
+
+Governed by TAU-SCALING-SA v0.1, TSEK v1.3, RCC-N v1.7, and the repository non-claim locks.
+
+## I — Invariants
+
+- Preserve source attribution.
+- Preserve non-claim boundaries.
+- Do not treat navigation as validation.
+- Do not treat documentation as correctness.
+- Do not claim independent silicon validation.
+- Do not claim product performance validation.
+- Keep evidence and validation surfaces inspectable.
+
+## E — Examples
+
+Read this file before editing this folder.
+
+Run relevant validation after changes:
+
+    python scripts/validation/validate_architecture_contracts.py
+    python scripts/rcc/check_rcc_nexus.py
+    python scripts/validation/validate_architecture_contracts.py
+
+## RCC Nexus Echo Location
+
+Sphere Position:
+
+- Shell: outer
+- Meridian(s): documentation, source
+- Sector: documentation
+- Version / TTL: RCC-N-v1.7 / 180 days
+- Last Verified: 2026-05-26
+
+Local Role:
+
+- Documentation, architecture, protocols, context, release notes, and theory summaries.
+
+Evidence Surface:
+
+- docs/context
+
+Validation Surface:
+
+    python scripts/validation/validate_architecture_contracts.py
+
+Claim Boundary:
+
+- This mini README improves local navigation and agent orientation. It does not prove code correctness, patch safety, empirical validation, independent silicon validation, product performance, process-node equivalence, AI understanding, or production readiness.
+
+Non-Claim Locks:
+
+- navigation_is_not_validation
+- documentation_is_not_correctness
+- context_reconstruction_is_not_code_quality
+- validation_remains_required
+- simulation_is_not_silicon_validation
+- density_equivalence_is_not_node_equivalence
+- local_path_win_is_not_full_chip_win
+
+Agent Route:
+
+- Read root README, docs/context indexes, route map, then this README before editing.
+
+Update Obligation:
+
+- Update this README and RCC/Nexus records if folder purpose, hooks, evidence surfaces, validation commands, or claim boundaries change.
+
+════════════════════════════════════════════════════════════
+ FILE: docs\release_notes\README.md
+════════════════════════════════════════════════════════════
+# docs\release_notes
+
+## Folder Purpose
+
+Version continuity records and release summaries.
+
+## S — Specification
+
+This folder participates in the Tau Scaling runtime, documentation, evidence, or RCC-N navigation surface according to its local role.
+
+## H — Hooks
+
+Inbound hooks:
+
+- README.md
+- AGENTS.md
+- docs/context/repository_context_index.json
+- docs/context/rcc_nexus_index.json
+- rcc/nexus/route_map.json
+
+Outbound hooks:
+
+- docs/release_notes
+- validation reports when this folder participates in runtime, documentation, release, or RCC checks
+
+## A — Artifacts
+
+This folder may contain source files, docs, reports, schemas, scripts, visuals, generated state, or validation records depending on its role.
+
+## T — Theory / Basis
+
+Governed by TAU-SCALING-SA v0.1, TSEK v1.3, RCC-N v1.7, and the repository non-claim locks.
+
+## I — Invariants
+
+- Preserve source attribution.
+- Preserve non-claim boundaries.
+- Do not treat navigation as validation.
+- Do not treat documentation as correctness.
+- Do not claim independent silicon validation.
+- Do not claim product performance validation.
+- Keep evidence and validation surfaces inspectable.
+
+## E — Examples
+
+Read this file before editing this folder.
+
+Run relevant validation after changes:
+
+    python scripts/validation/validate_architecture_contracts.py
+    python scripts/rcc/check_rcc_nexus.py
+    python scripts/validation/validate_architecture_contracts.py
+
+## RCC Nexus Echo Location
+
+Sphere Position:
+
+- Shell: outer
+- Meridian(s): release, documentation
+- Sector: release
+- Version / TTL: RCC-N-v1.7 / 180 days
+- Last Verified: 2026-05-26
+
+Local Role:
+
+- Version continuity records and release summaries.
+
+Evidence Surface:
+
+- docs/release_notes
+
+Validation Surface:
+
+    python scripts/validation/validate_architecture_contracts.py
+
+Claim Boundary:
+
+- This mini README improves local navigation and agent orientation. It does not prove code correctness, patch safety, empirical validation, independent silicon validation, product performance, process-node equivalence, AI understanding, or production readiness.
+
+Non-Claim Locks:
+
+- navigation_is_not_validation
+- documentation_is_not_correctness
+- context_reconstruction_is_not_code_quality
+- validation_remains_required
+- simulation_is_not_silicon_validation
+- density_equivalence_is_not_node_equivalence
+- local_path_win_is_not_full_chip_win
+
+Agent Route:
+
+- Read root README, docs/context indexes, route map, then this README before editing.
+
+Update Obligation:
+
+- Update this README and RCC/Nexus records if folder purpose, hooks, evidence surfaces, validation commands, or claim boundaries change.
+
+════════════════════════════════════════════════════════════
+ FILE: docs\release_notes\tau_scaling_v0_2_rcc_n_structure_injection.md
+════════════════════════════════════════════════════════════
+# Tau Scaling v0.2 — RCC-N / OMN-Style Repository Structure Injection
+
+## Summary
+
+Adds OMN-style root README trisection, AGENTS.md, README_90_SECONDS.md, docs/context, rcc/nexus, route maps, folder mini READMEs, validation scripts, and evidence-surface mirrors.
+
+## Boundary
+
+This release improves repository navigation, evidence readability, and AI-agent orientation. It does not loosen TSEK gates or validate semiconductor claims.
+
+════════════════════════════════════════════════════════════
+ FILE: docs\software_architecture\README.md
+════════════════════════════════════════════════════════════
+# docs\software_architecture
+
+## Folder Purpose
+
+TAU-SCALING-SA software architecture lane.
+
+## S — Specification
+
+This folder participates in the Tau Scaling runtime, documentation, evidence, or RCC-N navigation surface according to its local role.
+
+## H — Hooks
+
+Inbound hooks:
+
+- README.md
+- AGENTS.md
+- docs/context/repository_context_index.json
+- docs/context/rcc_nexus_index.json
+- rcc/nexus/route_map.json
+
+Outbound hooks:
+
+- docs/software_architecture
+- validation reports when this folder participates in runtime, documentation, release, or RCC checks
+
+## A — Artifacts
+
+This folder may contain source files, docs, reports, schemas, scripts, visuals, generated state, or validation records depending on its role.
+
+## T — Theory / Basis
+
+Governed by TAU-SCALING-SA v0.1, TSEK v1.3, RCC-N v1.7, and the repository non-claim locks.
+
+## I — Invariants
+
+- Preserve source attribution.
+- Preserve non-claim boundaries.
+- Do not treat navigation as validation.
+- Do not treat documentation as correctness.
+- Do not claim independent silicon validation.
+- Do not claim product performance validation.
+- Keep evidence and validation surfaces inspectable.
+
+## E — Examples
+
+Read this file before editing this folder.
+
+Run relevant validation after changes:
+
+    python scripts/validation/validate_architecture_contracts.py
+    python scripts/rcc/check_rcc_nexus.py
+    python scripts/validation/validate_architecture_contracts.py
+
+## RCC Nexus Echo Location
+
+Sphere Position:
+
+- Shell: center
+- Meridian(s): source, runtime
+- Sector: core
+- Version / TTL: RCC-N-v1.7 / 180 days
+- Last Verified: 2026-05-26
+
+Local Role:
+
+- TAU-SCALING-SA software architecture lane.
+
+Evidence Surface:
+
+- docs/software_architecture
+
+Validation Surface:
+
+    python scripts/validation/validate_architecture_contracts.py
+
+Claim Boundary:
+
+- This mini README improves local navigation and agent orientation. It does not prove code correctness, patch safety, empirical validation, independent silicon validation, product performance, process-node equivalence, AI understanding, or production readiness.
+
+Non-Claim Locks:
+
+- navigation_is_not_validation
+- documentation_is_not_correctness
+- context_reconstruction_is_not_code_quality
+- validation_remains_required
+- simulation_is_not_silicon_validation
+- density_equivalence_is_not_node_equivalence
+- local_path_win_is_not_full_chip_win
+
+Agent Route:
+
+- Read root README, docs/context indexes, route map, then this README before editing.
+
+Update Obligation:
+
+- Update this README and RCC/Nexus records if folder purpose, hooks, evidence surfaces, validation commands, or claim boundaries change.
+
+════════════════════════════════════════════════════════════
+ FILE: docs\software_architecture\tau_scaling_sa_v0_1.md
+════════════════════════════════════════════════════════════
+# TAU-SCALING-SA v0.1 — Software Architecture Placeholder
+
+This file anchors the software architecture lane for the Tau Scaling runtime.
+
+Canonical implementation target:
+
+    claim → source boundary → claim card → workload profile → tau vector → gates → Monte Carlo → TSEK class → evidence package
+
+Current repo implements the minimal runtime and RCC-N / OMN-style repository structure.
+
+Boundary: architecture documents do not prove code correctness or independent silicon validation.
+
+════════════════════════════════════════════════════════════
+ FILE: docs\theory\README.md
+════════════════════════════════════════════════════════════
+# docs/theory/
+
+TSEK summaries and source-boundary notes.
+
+
+
+════════════════════════════════════════════════════════════
+ FILE: docs\theory\tau_scaling_source_summary.md
+════════════════════════════════════════════════════════════
+# Tau Scaling Source Summary
+
+Primary source boundary:
+
+- Tingbo He, A Time Scaling Theory for Multi-Layer Electronic Systems.
+- Huawei public Tau Scaling / LogicFolding announcement.
+- TSEK v1.3 is the Codex extraction and evidence-governance layer.
+
+Boundary: this repo evaluates claims. It does not prove the source claims.
+
+════════════════════════════════════════════════════════════
+ FILE: docs\theory\tsek_v1_3_summary.md
+════════════════════════════════════════════════════════════
+# TSEK v1.3 Summary
+
+Tau scaling is boundary-time minimization under energy, thermal, PDN, PVT, workload, and evidence gates.
+
+
+
+════════════════════════════════════════════════════════════
+ FILE: examples\edge_surface_boundary_toy.py
+════════════════════════════════════════════════════════════
+from tau_scaling.gates.edge_surface import edge_surface_ratio
+from tau_scaling.utils.safe_json import read_json
+
+record = read_json("configs/seeds/edge_surface_boundary_toy.json")
+print(edge_surface_ratio(record))
+
+
+════════════════════════════════════════════════════════════
+ FILE: examples\gamma_tau_etp_toy.py
+════════════════════════════════════════════════════════════
+from tau_scaling.gates.gamma_tau_etp import gamma_tau_etp
+from tau_scaling.utils.safe_json import read_json
+
+record = read_json("configs/seeds/gamma_tau_etp_toy.json")
+print({"gamma_tau_ETP": gamma_tau_etp(record)})
+
+
+════════════════════════════════════════════════════════════
+ FILE: examples\logicfolding_claim_card.py
+════════════════════════════════════════════════════════════
+from tau_scaling.core.runtime import TauScalingRuntime
+from tau_scaling.utils.safe_json import read_json
+
+seed = read_json("configs/seeds/logicfolding_claim_card.json")
+result = TauScalingRuntime(".").run(seed)
+print(result)
+
+
+════════════════════════════════════════════════════════════
+ FILE: examples\monte_carlo_stress_toy.py
+════════════════════════════════════════════════════════════
+from tau_scaling.simulation.monte_carlo import run_monte_carlo
+from tau_scaling.utils.safe_json import read_json
+
+seed = read_json("configs/seeds/monte_carlo_stress_toy.json")
+print(run_monte_carlo(seed["monte_carlo_stress"]))
+
+
+════════════════════════════════════════════════════════════
+ FILE: examples\README.md
+════════════════════════════════════════════════════════════
+# examples
+
+## Folder Purpose
+
+Runnable example entry points.
+
+## S — Specification
+
+This folder participates in the Tau Scaling runtime, documentation, evidence, or RCC-N navigation surface according to its local role.
+
+## H — Hooks
+
+Inbound hooks:
+
+- README.md
+- AGENTS.md
+- docs/context/repository_context_index.json
+- docs/context/rcc_nexus_index.json
+- rcc/nexus/route_map.json
+
+Outbound hooks:
+
+- examples
+- validation reports when this folder participates in runtime, documentation, release, or RCC checks
+
+## A — Artifacts
+
+This folder may contain source files, docs, reports, schemas, scripts, visuals, generated state, or validation records depending on its role.
+
+## T — Theory / Basis
+
+Governed by TAU-SCALING-SA v0.1, TSEK v1.3, RCC-N v1.7, and the repository non-claim locks.
+
+## I — Invariants
+
+- Preserve source attribution.
+- Preserve non-claim boundaries.
+- Do not treat navigation as validation.
+- Do not treat documentation as correctness.
+- Do not claim independent silicon validation.
+- Do not claim product performance validation.
+- Keep evidence and validation surfaces inspectable.
+
+## E — Examples
+
+Read this file before editing this folder.
+
+Run relevant validation after changes:
+
+    python -m tau_scaling run-claim --seed configs/seeds/logicfolding_claim_card.json
+    python scripts/rcc/check_rcc_nexus.py
+    python scripts/validation/validate_architecture_contracts.py
+
+## RCC Nexus Echo Location
+
+Sphere Position:
+
+- Shell: middle
+- Meridian(s): runtime
+- Sector: examples
+- Version / TTL: RCC-N-v1.7 / 180 days
+- Last Verified: 2026-05-26
+
+Local Role:
+
+- Runnable example entry points.
+
+Evidence Surface:
+
+- examples
+
+Validation Surface:
+
+    python -m tau_scaling run-claim --seed configs/seeds/logicfolding_claim_card.json
+
+Claim Boundary:
+
+- This mini README improves local navigation and agent orientation. It does not prove code correctness, patch safety, empirical validation, independent silicon validation, product performance, process-node equivalence, AI understanding, or production readiness.
+
+Non-Claim Locks:
+
+- navigation_is_not_validation
+- documentation_is_not_correctness
+- context_reconstruction_is_not_code_quality
+- validation_remains_required
+- simulation_is_not_silicon_validation
+- density_equivalence_is_not_node_equivalence
+- local_path_win_is_not_full_chip_win
+
+Agent Route:
+
+- Read root README, docs/context indexes, route map, then this README before editing.
+
+Update Obligation:
+
+- Update this README and RCC/Nexus records if folder purpose, hooks, evidence surfaces, validation commands, or claim boundaries change.
+
+════════════════════════════════════════════════════════════
+ FILE: rcc\nexus\agent_handoff_contract.md
+════════════════════════════════════════════════════════════
+# Agent Handoff Contract
+
+Before handoff, record:
+
+- changed files,
+- validation commands run,
+- evidence surfaces touched,
+- claim boundaries preserved,
+- next recommended version step.
+
+Do not claim validation that was not run.
+
+════════════════════════════════════════════════════════════
+ FILE: rcc\nexus\echo_location_template.md
+════════════════════════════════════════════════════════════
+# RCC Nexus Echo Location Template
+
+Sphere Position:
+
+- Shell:
+- Meridian(s):
+- Sector:
+- Version / TTL: RCC-N-v1.7 / 180 days
+- Last Verified: 2026-05-26
+
+Local Role:
+
+Inbound Hooks:
+
+Outbound Hooks:
+
+Evidence Surface:
+
+Validation Surface:
+
+Claim Boundary:
+
+Non-Claim Locks:
+
+Agent Route:
+
+Update Obligation:
+
+════════════════════════════════════════════════════════════
+ FILE: rcc\nexus\task_routing_matrix.md
+════════════════════════════════════════════════════════════
+# Task Routing Matrix
+
+| Task | Read first | Validate |
+|---|---|---|
+| Runtime patch | src/tau_scaling README + tests | python -m unittest discover -s tests |
+| Claim classifier patch | src/tau_scaling/claims README + evidence | python -m tau_scaling run-claim --seed configs/seeds/logicfolding_claim_card.json |
+| RCC docs patch | README + docs/context + rcc/nexus | python scripts/rcc/check_rcc_nexus.py |
+| Architecture docs patch | docs/software_architecture + docs/architecture | python scripts/validation/validate_architecture_contracts.py |
+
+════════════════════════════════════════════════════════════
+ FILE: rcc\README.md
+════════════════════════════════════════════════════════════
+# rcc
+
+## Folder Purpose
+
+RCC-N repository navigation shell.
+
+## S — Specification
+
+This folder participates in the Tau Scaling runtime, documentation, evidence, or RCC-N navigation surface according to its local role.
+
+## H — Hooks
+
+Inbound hooks:
+
+- README.md
+- AGENTS.md
+- docs/context/repository_context_index.json
+- docs/context/rcc_nexus_index.json
+- rcc/nexus/route_map.json
+
+Outbound hooks:
+
+- rcc/nexus/route_map.json
+- validation reports when this folder participates in runtime, documentation, release, or RCC checks
+
+## A — Artifacts
+
+This folder may contain source files, docs, reports, schemas, scripts, visuals, generated state, or validation records depending on its role.
+
+## T — Theory / Basis
+
+Governed by TAU-SCALING-SA v0.1, TSEK v1.3, RCC-N v1.7, and the repository non-claim locks.
+
+## I — Invariants
+
+- Preserve source attribution.
+- Preserve non-claim boundaries.
+- Do not treat navigation as validation.
+- Do not treat documentation as correctness.
+- Do not claim independent silicon validation.
+- Do not claim product performance validation.
+- Keep evidence and validation surfaces inspectable.
+
+## E — Examples
+
+Read this file before editing this folder.
+
+Run relevant validation after changes:
+
+    python scripts/rcc/check_rcc_nexus.py
+    python scripts/rcc/check_rcc_nexus.py
+    python scripts/validation/validate_architecture_contracts.py
+
+## RCC Nexus Echo Location
+
+Sphere Position:
+
+- Shell: center
+- Meridian(s): agent, safety
+- Sector: rcc
+- Version / TTL: RCC-N-v1.7 / 180 days
+- Last Verified: 2026-05-26
+
+Local Role:
+
+- RCC-N repository navigation shell.
+
+Evidence Surface:
+
+- rcc/nexus/route_map.json
+
+Validation Surface:
+
+    python scripts/rcc/check_rcc_nexus.py
+
+Claim Boundary:
+
+- This mini README improves local navigation and agent orientation. It does not prove code correctness, patch safety, empirical validation, independent silicon validation, product performance, process-node equivalence, AI understanding, or production readiness.
+
+Non-Claim Locks:
+
+- navigation_is_not_validation
+- documentation_is_not_correctness
+- context_reconstruction_is_not_code_quality
+- validation_remains_required
+- simulation_is_not_silicon_validation
+- density_equivalence_is_not_node_equivalence
+- local_path_win_is_not_full_chip_win
+
+Agent Route:
+
+- Read root README, docs/context indexes, route map, then this README before editing.
+
+Update Obligation:
+
+- Update this README and RCC/Nexus records if folder purpose, hooks, evidence surfaces, validation commands, or claim boundaries change.
+
+════════════════════════════════════════════════════════════
+ FILE: scripts\rcc\check_rcc_nexus.py
+════════════════════════════════════════════════════════════
+from __future__ import annotations
+
+import json
+from pathlib import Path
+from datetime import datetime, timezone
+
+ROOT = Path(__file__).resolve().parents[2]
+
+REQUIRED_FILES = [
+    "README.md",
+    "README_90_SECONDS.md",
+    "AGENTS.md",
+    "docs/context/repository_context_index.json",
+    "docs/context/rcc_nexus_index.json",
+    "docs/context/validation_surface.md",
+    "rcc/nexus/route_map.json",
+    "rcc/nexus/rcc_nexus_protocol.md",
+    "rcc/nexus/task_routing_matrix.md",
+    "rcc/nexus/echo_location_template.md",
+    "rcc/nexus/agent_handoff_contract.md",
+]
+
+MAJOR_DIRS = [
+    "configs",
+    "docs",
+    "docs/context",
+    "docs/software_architecture",
+    "docs/injections",
+    "rcc",
+    "rcc/nexus",
+    "src",
+    "src/tau_scaling",
+    "src/tau_scaling/core",
+    "src/tau_scaling/claims",
+    "src/tau_scaling/gates",
+    "src/tau_scaling/simulation",
+    "src/tau_scaling/evidence",
+    "examples",
+    "tests",
+    "artifacts",
+    "outputs",
+    "reports",
+    "reports/rcc_nexus",
+    "scripts",
+    "scripts/rcc",
+    "scripts/validation",
+    "visuals",
+    "visuals/tau_scaling",
+]
+
+LOCKS = [
+    "navigation_is_not_validation",
+    "documentation_is_not_correctness",
+    "simulation_is_not_silicon_validation",
+    "density_equivalence_is_not_node_equivalence",
+    "local_path_win_is_not_full_chip_win",
+    "validation_remains_required",
+]
+
+
+def read_text(path: Path) -> str:
+    return path.read_text(encoding="utf-8-sig", errors="replace")
+
+
+def main() -> int:
+    findings = []
+
+    for rel in REQUIRED_FILES:
+        p = ROOT / rel
+        if not p.exists():
+            findings.append({"severity": "error", "code": "missing_required_file", "path": rel})
+
+    missing_readmes = []
+    weak_readmes = []
+    for rel in MAJOR_DIRS:
+        p = ROOT / rel / "README.md"
+        if not p.exists():
+            missing_readmes.append(rel)
+        else:
+            text = read_text(p)
+            needed = ["Folder Purpose", "RCC Nexus Echo Location", "Non-Claim Locks", "Validation Surface"]
+            missing_sections = [s for s in needed if s not in text]
+            if missing_sections:
+                weak_readmes.append({"path": rel, "missing_sections": missing_sections})
+
+    if missing_readmes:
+        findings.append({"severity": "error", "code": "missing_mini_readmes", "paths": missing_readmes})
+
+    if weak_readmes:
+        findings.append({"severity": "warning", "code": "weak_mini_readmes", "items": weak_readmes})
+
+    root = ROOT / "README.md"
+    if root.exists():
+        text = read_text(root)
+        for section in ["PART I - Human README", "PART II - RCC Nexus README", "PART III - AI Agent README"]:
+            if section not in text:
+                findings.append({"severity": "error", "code": "readme_trisection_missing", "section": section})
+        for lock in LOCKS:
+            if lock not in text and lock.replace("_", " ") not in text.lower():
+                findings.append({"severity": "warning", "code": "lock_not_visible_in_root_readme", "lock": lock})
+
+    for rel in ["docs/context/repository_context_index.json", "docs/context/rcc_nexus_index.json", "rcc/nexus/route_map.json"]:
+        p = ROOT / rel
+        if p.exists():
+            try:
+                json.loads(read_text(p))
+            except Exception as exc:
+                findings.append({"severity": "error", "code": "invalid_json", "path": rel, "error": str(exc)})
+
+    error_count = sum(1 for f in findings if f["severity"] == "error")
+    warning_count = sum(1 for f in findings if f["severity"] == "warning")
+
+    report = {
+        "schema": "tau-scaling-rcc-nexus-check-v0.2",
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "repository": "tau-scaling",
+        "profile": "Full",
+        "major_dirs_checked": len(MAJOR_DIRS),
+        "mini_readme_coverage": (len(MAJOR_DIRS) - len(missing_readmes)) / len(MAJOR_DIRS),
+        "errors": error_count,
+        "warnings": warning_count,
+        "passed": error_count == 0,
+        "findings": findings,
+        "non_claim_lock": "RCC-N navigation is not code correctness or silicon validation."
+    }
+
+    out_dir = ROOT / "reports" / "rcc_nexus"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    (out_dir / "latest_rcc_nexus_check.json").write_text(json.dumps(report, indent=2), encoding="utf-8")
+
+    md = [
+        "# Latest RCC Nexus Check",
+        "",
+        f"- Generated: {report['generated_at']}",
+        f"- Profile: {report['profile']}",
+        f"- Mini README coverage: {report['mini_readme_coverage']:.3f}",
+        f"- Errors: {error_count}",
+        f"- Warnings: {warning_count}",
+        f"- Passed: {report['passed']}",
+        "",
+        "## Boundary",
+        "",
+        "RCC-N checks repository navigation and context integrity. They do not prove code correctness or independent silicon validation.",
+        "",
+        "## Findings",
+        "",
+    ]
+    if findings:
+        for f in findings:
+            md.append(f"- `{f['severity']}` `{f['code']}`: `{json.dumps(f, ensure_ascii=False)}`")
+    else:
+        md.append("- No findings.")
+    (out_dir / "latest_rcc_nexus_check.md").write_text("\n".join(md) + "\n", encoding="utf-8")
+
+    drift_dir = ROOT / "docs" / "context" / "drift"
+    drift_dir.mkdir(parents=True, exist_ok=True)
+    (drift_dir / "latest_rcc_nexus_report.md").write_text("\n".join(md) + "\n", encoding="utf-8")
+
+    print(json.dumps(report, indent=2))
+    return 0 if error_count == 0 else 1
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
+
+════════════════════════════════════════════════════════════
+ FILE: scripts\rcc\README.md
+════════════════════════════════════════════════════════════
+# scripts\rcc
+
+## Folder Purpose
+
+RCC-N checker and repair scripts.
+
+## S — Specification
+
+This folder participates in the Tau Scaling runtime, documentation, evidence, or RCC-N navigation surface according to its local role.
+
+## H — Hooks
+
+Inbound hooks:
+
+- README.md
+- AGENTS.md
+- docs/context/repository_context_index.json
+- docs/context/rcc_nexus_index.json
+- rcc/nexus/route_map.json
+
+Outbound hooks:
+
+- reports/rcc_nexus
+- validation reports when this folder participates in runtime, documentation, release, or RCC checks
+
+## A — Artifacts
+
+This folder may contain source files, docs, reports, schemas, scripts, visuals, generated state, or validation records depending on its role.
+
+## T — Theory / Basis
+
+Governed by TAU-SCALING-SA v0.1, TSEK v1.3, RCC-N v1.7, and the repository non-claim locks.
+
+## I — Invariants
+
+- Preserve source attribution.
+- Preserve non-claim boundaries.
+- Do not treat navigation as validation.
+- Do not treat documentation as correctness.
+- Do not claim independent silicon validation.
+- Do not claim product performance validation.
+- Keep evidence and validation surfaces inspectable.
+
+## E — Examples
+
+Read this file before editing this folder.
+
+Run relevant validation after changes:
+
+    python scripts/rcc/check_rcc_nexus.py
+    python scripts/rcc/check_rcc_nexus.py
+    python scripts/validation/validate_architecture_contracts.py
+
+## RCC Nexus Echo Location
+
+Sphere Position:
+
+- Shell: middle
+- Meridian(s): agent, validation
+- Sector: rcc
+- Version / TTL: RCC-N-v1.7 / 180 days
+- Last Verified: 2026-05-26
+
+Local Role:
+
+- RCC-N checker and repair scripts.
+
+Evidence Surface:
+
+- reports/rcc_nexus
+
+Validation Surface:
+
+    python scripts/rcc/check_rcc_nexus.py
+
+Claim Boundary:
+
+- This mini README improves local navigation and agent orientation. It does not prove code correctness, patch safety, empirical validation, independent silicon validation, product performance, process-node equivalence, AI understanding, or production readiness.
+
+Non-Claim Locks:
+
+- navigation_is_not_validation
+- documentation_is_not_correctness
+- context_reconstruction_is_not_code_quality
+- validation_remains_required
+- simulation_is_not_silicon_validation
+- density_equivalence_is_not_node_equivalence
+- local_path_win_is_not_full_chip_win
+
+Agent Route:
+
+- Read root README, docs/context indexes, route map, then this README before editing.
+
+Update Obligation:
+
+- Update this README and RCC/Nexus records if folder purpose, hooks, evidence surfaces, validation commands, or claim boundaries change.
+
+════════════════════════════════════════════════════════════
+ FILE: scripts\README.md
+════════════════════════════════════════════════════════════
+# scripts
+
+## Folder Purpose
+
+Automation, validation, release, and RCC-N scripts.
+
+## S — Specification
+
+This folder participates in the Tau Scaling runtime, documentation, evidence, or RCC-N navigation surface according to its local role.
+
+## H — Hooks
+
+Inbound hooks:
+
+- README.md
+- AGENTS.md
+- docs/context/repository_context_index.json
+- docs/context/rcc_nexus_index.json
+- rcc/nexus/route_map.json
+
+Outbound hooks:
+
+- reports
+- validation reports when this folder participates in runtime, documentation, release, or RCC checks
+
+## A — Artifacts
+
+This folder may contain source files, docs, reports, schemas, scripts, visuals, generated state, or validation records depending on its role.
+
+## T — Theory / Basis
+
+Governed by TAU-SCALING-SA v0.1, TSEK v1.3, RCC-N v1.7, and the repository non-claim locks.
+
+## I — Invariants
+
+- Preserve source attribution.
+- Preserve non-claim boundaries.
+- Do not treat navigation as validation.
+- Do not treat documentation as correctness.
+- Do not claim independent silicon validation.
+- Do not claim product performance validation.
+- Keep evidence and validation surfaces inspectable.
+
+## E — Examples
+
+Read this file before editing this folder.
+
+Run relevant validation after changes:
+
+    python scripts/rcc/check_rcc_nexus.py
+    python scripts/rcc/check_rcc_nexus.py
+    python scripts/validation/validate_architecture_contracts.py
+
+## RCC Nexus Echo Location
+
+Sphere Position:
+
+- Shell: middle
+- Meridian(s): validation, release
+- Sector: validation
+- Version / TTL: RCC-N-v1.7 / 180 days
+- Last Verified: 2026-05-26
+
+Local Role:
+
+- Automation, validation, release, and RCC-N scripts.
+
+Evidence Surface:
+
+- reports
+
+Validation Surface:
+
+    python scripts/rcc/check_rcc_nexus.py
+
+Claim Boundary:
+
+- This mini README improves local navigation and agent orientation. It does not prove code correctness, patch safety, empirical validation, independent silicon validation, product performance, process-node equivalence, AI understanding, or production readiness.
+
+Non-Claim Locks:
+
+- navigation_is_not_validation
+- documentation_is_not_correctness
+- context_reconstruction_is_not_code_quality
+- validation_remains_required
+- simulation_is_not_silicon_validation
+- density_equivalence_is_not_node_equivalence
+- local_path_win_is_not_full_chip_win
+
+Agent Route:
+
+- Read root README, docs/context indexes, route map, then this README before editing.
+
+Update Obligation:
+
+- Update this README and RCC/Nexus records if folder purpose, hooks, evidence surfaces, validation commands, or claim boundaries change.
+
+════════════════════════════════════════════════════════════
+ FILE: scripts\run_all_checks.ps1
+════════════════════════════════════════════════════════════
+$ErrorActionPreference = "Stop"
+
+Write-Host "Running Tau Scaling checks..." -ForegroundColor Cyan
+python scripts/rcc/check_rcc_nexus.py
+python scripts/validation/validate_architecture_contracts.py
+python -m unittest discover -s tests
+python -m tau_scaling run-claim --seed configs/seeds/logicfolding_claim_card.json
+Write-Host "All Tau Scaling checks completed." -ForegroundColor Green
+
+════════════════════════════════════════════════════════════
+ FILE: scripts\validation\README.md
+════════════════════════════════════════════════════════════
+# scripts\validation
+
+## Folder Purpose
+
+Architecture contract validation scripts.
+
+## S — Specification
+
+This folder participates in the Tau Scaling runtime, documentation, evidence, or RCC-N navigation surface according to its local role.
+
+## H — Hooks
+
+Inbound hooks:
+
+- README.md
+- AGENTS.md
+- docs/context/repository_context_index.json
+- docs/context/rcc_nexus_index.json
+- rcc/nexus/route_map.json
+
+Outbound hooks:
+
+- reports/architecture
+- validation reports when this folder participates in runtime, documentation, release, or RCC checks
+
+## A — Artifacts
+
+This folder may contain source files, docs, reports, schemas, scripts, visuals, generated state, or validation records depending on its role.
+
+## T — Theory / Basis
+
+Governed by TAU-SCALING-SA v0.1, TSEK v1.3, RCC-N v1.7, and the repository non-claim locks.
+
+## I — Invariants
+
+- Preserve source attribution.
+- Preserve non-claim boundaries.
+- Do not treat navigation as validation.
+- Do not treat documentation as correctness.
+- Do not claim independent silicon validation.
+- Do not claim product performance validation.
+- Keep evidence and validation surfaces inspectable.
+
+## E — Examples
+
+Read this file before editing this folder.
+
+Run relevant validation after changes:
+
+    python scripts/validation/validate_architecture_contracts.py
+    python scripts/rcc/check_rcc_nexus.py
+    python scripts/validation/validate_architecture_contracts.py
+
+## RCC Nexus Echo Location
+
+Sphere Position:
+
+- Shell: middle
+- Meridian(s): validation
+- Sector: validation
+- Version / TTL: RCC-N-v1.7 / 180 days
+- Last Verified: 2026-05-26
+
+Local Role:
+
+- Architecture contract validation scripts.
+
+Evidence Surface:
+
+- reports/architecture
+
+Validation Surface:
+
+    python scripts/validation/validate_architecture_contracts.py
+
+Claim Boundary:
+
+- This mini README improves local navigation and agent orientation. It does not prove code correctness, patch safety, empirical validation, independent silicon validation, product performance, process-node equivalence, AI understanding, or production readiness.
+
+Non-Claim Locks:
+
+- navigation_is_not_validation
+- documentation_is_not_correctness
+- context_reconstruction_is_not_code_quality
+- validation_remains_required
+- simulation_is_not_silicon_validation
+- density_equivalence_is_not_node_equivalence
+- local_path_win_is_not_full_chip_win
+
+Agent Route:
+
+- Read root README, docs/context indexes, route map, then this README before editing.
+
+Update Obligation:
+
+- Update this README and RCC/Nexus records if folder purpose, hooks, evidence surfaces, validation commands, or claim boundaries change.
+
+════════════════════════════════════════════════════════════
+ FILE: scripts\validation\validate_architecture_contracts.py
+════════════════════════════════════════════════════════════
+from __future__ import annotations
+
+import json
+from pathlib import Path
+from datetime import datetime, timezone
+
+ROOT = Path(__file__).resolve().parents[2]
+
+REQUIRED = [
+    "docs/software_architecture/tau_scaling_sa_v0_1.md",
+    "docs/injections/tau_scaling_rcc_n_injection_v0_2.md",
+    "docs/release_notes/tau_scaling_v0_2_rcc_n_structure_injection.md",
+    "docs/context/repository_context_index.json",
+    "docs/context/rcc_nexus_index.json",
+    "rcc/nexus/route_map.json",
+    "README.md",
+    "AGENTS.md",
+]
+
+REQUIRED_PHRASES = {
+    "README.md": [
+        "PART I - Human README",
+        "PART II - RCC Nexus README",
+        "PART III - AI Agent README",
+        "Roadmap coherence is not validation",
+        "Simulation is not silicon evidence",
+    ],
+    "docs/software_architecture/tau_scaling_sa_v0_1.md": [
+        "claim",
+        "tau vector",
+        "evidence package",
+    ],
+}
+
+
+def read(path: Path) -> str:
+    return path.read_text(encoding="utf-8-sig", errors="replace")
+
+
+def main() -> int:
+    findings = []
+    for rel in REQUIRED:
+        if not (ROOT / rel).exists():
+            findings.append({"severity": "error", "code": "missing_required_architecture_surface", "path": rel})
+
+    for rel, phrases in REQUIRED_PHRASES.items():
+        p = ROOT / rel
+        if p.exists():
+            text = read(p)
+            for phrase in phrases:
+                if phrase not in text:
+                    findings.append({"severity": "warning", "code": "required_phrase_missing", "path": rel, "phrase": phrase})
+
+    errors = sum(1 for f in findings if f["severity"] == "error")
+    report = {
+        "schema": "tau-scaling-architecture-contract-validation-v0.2",
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "passed": errors == 0,
+        "errors": errors,
+        "warnings": sum(1 for f in findings if f["severity"] == "warning"),
+        "findings": findings,
+        "boundary": "Architecture validation is not code correctness or silicon validation."
+    }
+
+    out_dir = ROOT / "reports" / "architecture"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    (out_dir / "latest_architecture_contract_validation.json").write_text(json.dumps(report, indent=2), encoding="utf-8")
+    md = [
+        "# Latest Architecture Contract Validation",
+        "",
+        f"- Generated: {report['generated_at']}",
+        f"- Passed: {report['passed']}",
+        f"- Errors: {report['errors']}",
+        f"- Warnings: {report['warnings']}",
+        "",
+        "Boundary: architecture validation is not code correctness or silicon validation.",
+        "",
+        "## Findings",
+        "",
+    ]
+    if findings:
+        for f in findings:
+            md.append(f"- `{f['severity']}` `{f['code']}`: `{json.dumps(f, ensure_ascii=False)}`")
+    else:
+        md.append("- No findings.")
+    (out_dir / "latest_architecture_contract_validation.md").write_text("\n".join(md) + "\n", encoding="utf-8")
+
+    print(json.dumps(report, indent=2))
+    return 0 if errors == 0 else 1
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
+
+════════════════════════════════════════════════════════════
+ FILE: src\README.md
+════════════════════════════════════════════════════════════
+# src
+
+## Folder Purpose
+
+Python package source root.
+
+## S — Specification
+
+This folder participates in the Tau Scaling runtime, documentation, evidence, or RCC-N navigation surface according to its local role.
+
+## H — Hooks
+
+Inbound hooks:
+
+- README.md
+- AGENTS.md
+- docs/context/repository_context_index.json
+- docs/context/rcc_nexus_index.json
+- rcc/nexus/route_map.json
+
+Outbound hooks:
+
+- src/tau_scaling
+- validation reports when this folder participates in runtime, documentation, release, or RCC checks
+
+## A — Artifacts
+
+This folder may contain source files, docs, reports, schemas, scripts, visuals, generated state, or validation records depending on its role.
+
+## T — Theory / Basis
+
+Governed by TAU-SCALING-SA v0.1, TSEK v1.3, RCC-N v1.7, and the repository non-claim locks.
+
+## I — Invariants
+
+- Preserve source attribution.
+- Preserve non-claim boundaries.
+- Do not treat navigation as validation.
+- Do not treat documentation as correctness.
+- Do not claim independent silicon validation.
+- Do not claim product performance validation.
+- Keep evidence and validation surfaces inspectable.
+
+## E — Examples
+
+Read this file before editing this folder.
+
+Run relevant validation after changes:
+
+    python -m unittest discover -s tests
+    python scripts/rcc/check_rcc_nexus.py
+    python scripts/validation/validate_architecture_contracts.py
+
+## RCC Nexus Echo Location
+
+Sphere Position:
+
+- Shell: inner
+- Meridian(s): runtime
+- Sector: runtime
+- Version / TTL: RCC-N-v1.7 / 180 days
+- Last Verified: 2026-05-26
+
+Local Role:
+
+- Python package source root.
+
+Evidence Surface:
+
+- src/tau_scaling
+
+Validation Surface:
+
+    python -m unittest discover -s tests
+
+Claim Boundary:
+
+- This mini README improves local navigation and agent orientation. It does not prove code correctness, patch safety, empirical validation, independent silicon validation, product performance, process-node equivalence, AI understanding, or production readiness.
+
+Non-Claim Locks:
+
+- navigation_is_not_validation
+- documentation_is_not_correctness
+- context_reconstruction_is_not_code_quality
+- validation_remains_required
+- simulation_is_not_silicon_validation
+- density_equivalence_is_not_node_equivalence
+- local_path_win_is_not_full_chip_win
+
+Agent Route:
+
+- Read root README, docs/context indexes, route map, then this README before editing.
+
+Update Obligation:
+
+- Update this README and RCC/Nexus records if folder purpose, hooks, evidence surfaces, validation commands, or claim boundaries change.
+
+════════════════════════════════════════════════════════════
+ FILE: src\tau_scaling\__init__.py
+════════════════════════════════════════════════════════════
+"""Tau Scaling Runtime — evidence-gated TSEK claim classifier."""
+
+__version__ = "0.1.0"
+
+
+════════════════════════════════════════════════════════════
+ FILE: src\tau_scaling\__main__.py
+════════════════════════════════════════════════════════════
+from .cli import main
+
+if __name__ == "__main__":
+    main()
+
+
+════════════════════════════════════════════════════════════
+ FILE: src\tau_scaling\claims\__init__.py
+════════════════════════════════════════════════════════════
+
+
+════════════════════════════════════════════════════════════
+ FILE: src\tau_scaling\claims\classifier.py
+════════════════════════════════════════════════════════════
+from __future__ import annotations
+
+from typing import Any
+
+
+def clamp01(x: Any) -> float:
+    try:
+        return max(0.0, min(1.0, float(x)))
+    except Exception:
+        return 0.0
+
+
+def _bool_gate(value: Any) -> float:
+    return 1.0 if bool(value) else 0.0
+
+
+def classify_tsek(record: dict[str, Any]) -> dict[str, Any]:
+    findings: list[dict[str, str]] = []
+
+    source = record.get("source_boundary", {})
+    claim = record.get("claim_card", {})
+    workload = record.get("workload_profile", {})
+    tau_vector = record.get("tau_vector", {})
+    pvt = record.get("pvt_closure", {})
+    method = record.get("yield_method_disclosure", {})
+    evidence = record.get("evidence_disclosure", {})
+    overclaim = clamp01(record.get("overclaim", 0.0))
+
+    B_source = _bool_gate(source.get("source_declared") and source.get("reported_claims_separated_from_validation"))
+    B_metric = _bool_gate(claim.get("claim_text") and claim.get("claim_type"))
+    B_baseline = _bool_gate(tau_vector.get("baseline") and tau_vector.get("candidate"))
+    B_method = _bool_gate(method.get("method_disclosed"))
+    B_workload = _bool_gate(workload.get("workload_class") and workload.get("dominant_tau_term"))
+    B_tau = _bool_gate(tau_vector.get("weights_declared") and tau_vector.get("dominant_tau_improved"))
+    B_LF = _bool_gate(record.get("logicfolding_margin", 0.0) > 0)
+    B_ETP = _bool_gate(record.get("gamma_tau_ETP", 0.0) > 1.0)
+    B_PVT = _bool_gate(pvt.get("post_route_closure_passed") and pvt.get("pvt_variation_passed") and pvt.get("pdn_reported"))
+    B_yield = _bool_gate(method.get("yield_reported"))
+    B_evidence = _bool_gate(evidence.get("evidence_package_complete"))
+
+    hard_gates = {
+        "B_source": B_source,
+        "B_metric": B_metric,
+        "B_baseline": B_baseline,
+        "B_method": B_method,
+        "B_workload": B_workload,
+        "B_tau": B_tau,
+        "B_LF": B_LF,
+        "B_ETP": B_ETP,
+        "B_PVT": B_PVT,
+        "B_yield": B_yield,
+        "B_evidence": B_evidence,
+    }
+
+    for gate, value in hard_gates.items():
+        if value == 0:
+            findings.append({
+                "code": f"TSEK_{gate}_MISSING",
+                "severity": "warning",
+                "message": f"{gate} failed or was not disclosed."
+            })
+
+    if claim.get("independent_validation_claimed") and not evidence.get("independent_validation_present"):
+        findings.append({
+            "code": "TSEK_OVERCLAIM_INDEPENDENT_VALIDATION",
+            "severity": "blocking",
+            "message": "Independent validation was claimed but not provided."
+        })
+        overclaim = max(overclaim, 1.0)
+
+    product = 1.0
+    for value in hard_gates.values():
+        product *= value
+
+    average_score = sum(hard_gates.values()) / len(hard_gates)
+    A_TSEK = round(product * (1.0 - overclaim), 4)
+
+    has_blocking = any(f["severity"] == "blocking" for f in findings)
+
+    if has_blocking or overclaim >= 1.0:
+        klass = "TSEK-E"
+    elif evidence.get("independent_validation_present") and A_TSEK >= 0.95:
+        klass = "TSEK-A"
+    elif A_TSEK >= 0.75:
+        klass = "TSEK-B"
+    elif average_score >= 0.45 and not has_blocking:
+        klass = "TSEK-C"
+    elif average_score >= 0.20:
+        klass = "TSEK-D"
+    else:
+        klass = "TSEK-E"
+
+    return {
+        "schema": "TAU-SCALING-SA-v0.1-classification-result",
+        "class": klass,
+        "admissible": klass in {"TSEK-A", "TSEK-B"},
+        "admissible_claim": {
+            **hard_gates,
+            "O": overclaim,
+            "A_TSEK": A_TSEK,
+            "diagnostic_average": round(average_score, 4),
+        },
+        "findings": findings,
+        "non_claim_locks": {
+            "roadmap_coherence_is_not_validation": True,
+            "simulation_is_not_silicon_validation": True,
+            "density_equivalence_is_not_node_equivalence": True,
+            "local_path_win_is_not_full_chip_win": True,
+        }
+    }
+
+
+════════════════════════════════════════════════════════════
+ FILE: src\tau_scaling\claims\README.md
+════════════════════════════════════════════════════════════
+# src\tau_scaling\claims
+
+## Folder Purpose
+
+Claim cards, classifier, downgrade, and overclaim logic.
+
+## S — Specification
+
+This folder participates in the Tau Scaling runtime, documentation, evidence, or RCC-N navigation surface according to its local role.
+
+## H — Hooks
+
+Inbound hooks:
+
+- README.md
+- AGENTS.md
+- docs/context/repository_context_index.json
+- docs/context/rcc_nexus_index.json
+- rcc/nexus/route_map.json
+
+Outbound hooks:
+
+- artifacts/runs/latest/scoring/classifier_result.json
+- validation reports when this folder participates in runtime, documentation, release, or RCC checks
+
+## A — Artifacts
+
+This folder may contain source files, docs, reports, schemas, scripts, visuals, generated state, or validation records depending on its role.
+
+## T — Theory / Basis
+
+Governed by TAU-SCALING-SA v0.1, TSEK v1.3, RCC-N v1.7, and the repository non-claim locks.
+
+## I — Invariants
+
+- Preserve source attribution.
+- Preserve non-claim boundaries.
+- Do not treat navigation as validation.
+- Do not treat documentation as correctness.
+- Do not claim independent silicon validation.
+- Do not claim product performance validation.
+- Keep evidence and validation surfaces inspectable.
+
+## E — Examples
+
+Read this file before editing this folder.
+
+Run relevant validation after changes:
+
+    python -m unittest discover -s tests
+    python scripts/rcc/check_rcc_nexus.py
+    python scripts/validation/validate_architecture_contracts.py
+
+## RCC Nexus Echo Location
+
+Sphere Position:
+
+- Shell: inner
+- Meridian(s): runtime, safety
+- Sector: validation
+- Version / TTL: RCC-N-v1.7 / 180 days
+- Last Verified: 2026-05-26
+
+Local Role:
+
+- Claim cards, classifier, downgrade, and overclaim logic.
+
+Evidence Surface:
+
+- artifacts/runs/latest/scoring/classifier_result.json
+
+Validation Surface:
+
+    python -m unittest discover -s tests
+
+Claim Boundary:
+
+- This mini README improves local navigation and agent orientation. It does not prove code correctness, patch safety, empirical validation, independent silicon validation, product performance, process-node equivalence, AI understanding, or production readiness.
+
+Non-Claim Locks:
+
+- navigation_is_not_validation
+- documentation_is_not_correctness
+- context_reconstruction_is_not_code_quality
+- validation_remains_required
+- simulation_is_not_silicon_validation
+- density_equivalence_is_not_node_equivalence
+- local_path_win_is_not_full_chip_win
+
+Agent Route:
+
+- Read root README, docs/context indexes, route map, then this README before editing.
+
+Update Obligation:
+
+- Update this README and RCC/Nexus records if folder purpose, hooks, evidence surfaces, validation commands, or claim boundaries change.
+
+════════════════════════════════════════════════════════════
+ FILE: src\tau_scaling\cli.py
+════════════════════════════════════════════════════════════
+from __future__ import annotations
+
+import argparse
+from pathlib import Path
+
+from tau_scaling.core.runtime import TauScalingRuntime
+from tau_scaling.claims.classifier import classify_tsek
+from tau_scaling.gates.logicfolding_survivability import logicfolding_margin
+from tau_scaling.gates.gamma_tau_etp import gamma_tau_etp
+from tau_scaling.gates.edge_surface import edge_surface_ratio
+from tau_scaling.simulation.monte_carlo import run_monte_carlo
+from tau_scaling.utils.safe_json import read_json
+
+
+def cmd_init(args: argparse.Namespace) -> None:
+    Path("artifacts/runs").mkdir(parents=True, exist_ok=True)
+    print("Tau Scaling runtime initialized.")
+
+
+def cmd_run_claim(args: argparse.Namespace) -> None:
+    seed = read_json(args.seed)
+    result = TauScalingRuntime(".").run(seed)
+    print("TAU-SCALING-SA run complete")
+    print(f"run_id: {result.run_id}")
+    print(f"class: {result.classification}")
+    print(f"A_TSEK: {result.admissible_score:.4f}")
+    print(f"findings: {result.findings_count}")
+    print(f"artifacts: {result.run_dir}")
+    print(f"evidence: {result.evidence_path}")
+
+
+def cmd_classify(args: argparse.Namespace) -> None:
+    evidence = read_json(args.evidence)
+    record = {
+        "source_boundary": evidence.get("source_boundary", {}),
+        "claim_card": evidence.get("claim_card", {}),
+        "workload_profile": evidence.get("workload_profile", {}),
+        "tau_vector": evidence.get("tau_vector", {}),
+        "logicfolding_margin": evidence.get("logicfolding_survivability", {}).get("logicfolding_margin", 0.0),
+        "gamma_tau_ETP": evidence.get("energy_thermal_pdn_pvt", {}).get("gamma_tau_ETP", 0.0),
+        "pvt_closure": evidence.get("pvt_closure", {}),
+        "yield_method_disclosure": evidence.get("yield_method_disclosure", {}),
+        "evidence_disclosure": {"evidence_package_complete": True},
+        "overclaim": 0.0,
+    }
+    print(classify_tsek(record))
+
+
+def cmd_check_logicfolding(args: argparse.Namespace) -> None:
+    print({"logicfolding_margin": logicfolding_margin(read_json(args.record))})
+
+
+def cmd_gamma_etp(args: argparse.Namespace) -> None:
+    print({"gamma_tau_ETP": gamma_tau_etp(read_json(args.record))})
+
+
+def cmd_edge_surface(args: argparse.Namespace) -> None:
+    print(edge_surface_ratio(read_json(args.record)))
+
+
+def cmd_monte_carlo(args: argparse.Namespace) -> None:
+    seed = read_json(args.seed)
+    config = seed.get("monte_carlo_stress", seed)
+    print(run_monte_carlo(config))
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(prog="tau_scaling")
+    sub = parser.add_subparsers(dest="cmd", required=True)
+
+    p = sub.add_parser("init")
+    p.set_defaults(func=cmd_init)
+
+    p = sub.add_parser("run-claim")
+    p.add_argument("--seed", required=True)
+    p.set_defaults(func=cmd_run_claim)
+
+    p = sub.add_parser("classify")
+    p.add_argument("--evidence", required=True)
+    p.set_defaults(func=cmd_classify)
+
+    p = sub.add_parser("check-logicfolding")
+    p.add_argument("--record", required=True)
+    p.set_defaults(func=cmd_check_logicfolding)
+
+    p = sub.add_parser("gamma-etp")
+    p.add_argument("--record", required=True)
+    p.set_defaults(func=cmd_gamma_etp)
+
+    p = sub.add_parser("edge-surface")
+    p.add_argument("--record", required=True)
+    p.set_defaults(func=cmd_edge_surface)
+
+    p = sub.add_parser("monte-carlo")
+    p.add_argument("--seed", required=True)
+    p.set_defaults(func=cmd_monte_carlo)
+
+    args = parser.parse_args()
+    args.func(args)
+
+
+if __name__ == "__main__":
+    main()
+
+
+════════════════════════════════════════════════════════════
+ FILE: src\tau_scaling\core\__init__.py
+════════════════════════════════════════════════════════════
+
+
+════════════════════════════════════════════════════════════
+ FILE: src\tau_scaling\core\README.md
+════════════════════════════════════════════════════════════
+# src\tau_scaling\core
+
+## Folder Purpose
+
+Runtime orchestration and state flow.
+
+## S — Specification
+
+This folder participates in the Tau Scaling runtime, documentation, evidence, or RCC-N navigation surface according to its local role.
+
+## H — Hooks
+
+Inbound hooks:
+
+- README.md
+- AGENTS.md
+- docs/context/repository_context_index.json
+- docs/context/rcc_nexus_index.json
+- rcc/nexus/route_map.json
+
+Outbound hooks:
+
+- artifacts/runs/latest/evidence_package.json
+- validation reports when this folder participates in runtime, documentation, release, or RCC checks
+
+## A — Artifacts
+
+This folder may contain source files, docs, reports, schemas, scripts, visuals, generated state, or validation records depending on its role.
+
+## T — Theory / Basis
+
+Governed by TAU-SCALING-SA v0.1, TSEK v1.3, RCC-N v1.7, and the repository non-claim locks.
+
+## I — Invariants
+
+- Preserve source attribution.
+- Preserve non-claim boundaries.
+- Do not treat navigation as validation.
+- Do not treat documentation as correctness.
+- Do not claim independent silicon validation.
+- Do not claim product performance validation.
+- Keep evidence and validation surfaces inspectable.
+
+## E — Examples
+
+Read this file before editing this folder.
+
+Run relevant validation after changes:
+
+    python -m unittest discover -s tests
+    python scripts/rcc/check_rcc_nexus.py
+    python scripts/validation/validate_architecture_contracts.py
+
+## RCC Nexus Echo Location
+
+Sphere Position:
+
+- Shell: inner
+- Meridian(s): runtime
+- Sector: core
+- Version / TTL: RCC-N-v1.7 / 180 days
+- Last Verified: 2026-05-26
+
+Local Role:
+
+- Runtime orchestration and state flow.
+
+Evidence Surface:
+
+- artifacts/runs/latest/evidence_package.json
+
+Validation Surface:
+
+    python -m unittest discover -s tests
+
+Claim Boundary:
+
+- This mini README improves local navigation and agent orientation. It does not prove code correctness, patch safety, empirical validation, independent silicon validation, product performance, process-node equivalence, AI understanding, or production readiness.
+
+Non-Claim Locks:
+
+- navigation_is_not_validation
+- documentation_is_not_correctness
+- context_reconstruction_is_not_code_quality
+- validation_remains_required
+- simulation_is_not_silicon_validation
+- density_equivalence_is_not_node_equivalence
+- local_path_win_is_not_full_chip_win
+
+Agent Route:
+
+- Read root README, docs/context indexes, route map, then this README before editing.
+
+Update Obligation:
+
+- Update this README and RCC/Nexus records if folder purpose, hooks, evidence surfaces, validation commands, or claim boundaries change.
+
+════════════════════════════════════════════════════════════
+ FILE: src\tau_scaling\core\runtime.py
+════════════════════════════════════════════════════════════
+from __future__ import annotations
+
+from dataclasses import dataclass
+from datetime import datetime, timezone
+from pathlib import Path
+from typing import Any
+
+from tau_scaling.claims.classifier import classify_tsek
+from tau_scaling.gates.logicfolding_survivability import logicfolding_margin
+from tau_scaling.gates.gamma_tau_etp import gamma_tau_etp
+from tau_scaling.gates.edge_surface import edge_surface_ratio
+from tau_scaling.simulation.monte_carlo import run_monte_carlo
+from tau_scaling.evidence.package import emit_evidence_package
+
+
+@dataclass
+class TauScalingRunResult:
+    run_id: str
+    run_dir: str
+    evidence_path: str
+    classification: str
+    admissible_score: float
+    findings_count: int
+
+
+class TauScalingRuntime:
+    def __init__(self, repo_root: str | Path = ".") -> None:
+        self.repo_root = Path(repo_root).resolve()
+
+    def run(self, seed: dict[str, Any]) -> TauScalingRunResult:
+        run_id = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+        run_dir = self.repo_root / "artifacts" / "runs" / run_id
+
+        logicfolding = seed.get("logicfolding_survivability", {})
+        normalization = seed.get("energy_thermal_pdn_pvt", {})
+
+        lf_margin = logicfolding_margin(logicfolding)
+        gamma = gamma_tau_etp(normalization)
+        beta = edge_surface_ratio(seed.get("edge_surface_boundary", {}))
+        stress = run_monte_carlo(seed.get("monte_carlo_stress", {}))
+
+        gate_record = {
+            "source_boundary": seed.get("source_boundary", {}),
+            "claim_card": seed.get("claim_card", {}),
+            "workload_profile": seed.get("workload_profile", {}),
+            "tau_vector": seed.get("tau_vector", {}),
+            "logicfolding_margin": lf_margin,
+            "gamma_tau_ETP": gamma,
+            "edge_surface": beta,
+            "pvt_closure": seed.get("pvt_closure", {}),
+            "yield_method_disclosure": seed.get("yield_method_disclosure", {}),
+            "evidence_disclosure": seed.get("evidence_disclosure", {}),
+            "overclaim": seed.get("overclaim", 0.0),
+            "monte_carlo_stress": stress,
+        }
+
+        classification = classify_tsek(gate_record)
+
+        evidence = {
+            "schema": "TAU-SCALING-SA-v0.1-evidence-package",
+            "run_id": run_id,
+            "source_boundary": seed.get("source_boundary", {}),
+            "claim_card": seed.get("claim_card", {}),
+            "workload_profile": seed.get("workload_profile", {}),
+            "tau_vector": seed.get("tau_vector", {}),
+            "baseline_manifest": seed.get("baseline_manifest", {}),
+            "candidate_manifest": seed.get("candidate_manifest", {}),
+            "logicfolding_survivability": {
+                **logicfolding,
+                "logicfolding_margin": lf_margin,
+                "passed": lf_margin > 0,
+            },
+            "edge_surface_boundary": beta,
+            "energy_thermal_pdn_pvt": {
+                **normalization,
+                "gamma_tau_ETP": gamma,
+                "passed": gamma > 1,
+            },
+            "pvt_closure": seed.get("pvt_closure", {}),
+            "yield_method_disclosure": seed.get("yield_method_disclosure", {}),
+            "monte_carlo_stress": stress,
+            "admissible_claim": classification["admissible_claim"],
+            "classification": classification,
+            "non_claim_locks": seed.get("non_claim_locks", {}),
+        }
+
+        evidence_path = emit_evidence_package(run_dir, evidence)
+
+        latest = self.repo_root / "artifacts" / "runs" / "latest"
+        if latest.exists() and latest.is_dir():
+            import shutil
+            shutil.rmtree(latest)
+        latest.mkdir(parents=True, exist_ok=True)
+
+        import shutil
+        for item in run_dir.iterdir():
+            dest = latest / item.name
+            if item.is_dir():
+                shutil.copytree(item, dest, dirs_exist_ok=True)
+            else:
+                shutil.copy2(item, dest)
+
+        return TauScalingRunResult(
+            run_id=run_id,
+            run_dir=str(run_dir),
+            evidence_path=str(evidence_path),
+            classification=classification["class"],
+            admissible_score=classification["admissible_claim"]["A_TSEK"],
+            findings_count=len(classification["findings"]),
+        )
+
+
+════════════════════════════════════════════════════════════
+ FILE: src\tau_scaling\evidence\__init__.py
+════════════════════════════════════════════════════════════
+
+
+════════════════════════════════════════════════════════════
+ FILE: src\tau_scaling\evidence\package.py
+════════════════════════════════════════════════════════════
+from __future__ import annotations
+
+from pathlib import Path
+from typing import Any
+
+from tau_scaling.utils.safe_json import write_json, write_text
+
+
+def _dashboard_svg(class_name: str, score: float, margin: float, gamma: float) -> str:
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="980" height="420" viewBox="0 0 980 420">
+  <rect width="980" height="420" fill="#071018"/>
+  <text x="40" y="55" fill="#e7f6ff" font-size="30" font-family="Arial">Tau Scaling Classification Dashboard</text>
+  <text x="40" y="105" fill="#8bdcff" font-size="20" font-family="Arial">Class: {class_name}</text>
+  <text x="40" y="145" fill="#8bdcff" font-size="20" font-family="Arial">A_TSEK: {score:.4f}</text>
+  <text x="40" y="185" fill="#8bdcff" font-size="20" font-family="Arial">LogicFolding margin: {margin:.4f} ps</text>
+  <text x="40" y="225" fill="#8bdcff" font-size="20" font-family="Arial">Gamma_tau_ETP: {gamma:.4f}</text>
+  <rect x="40" y="270" width="900" height="70" rx="14" fill="#102436" stroke="#2aa8d8"/>
+  <text x="70" y="313" fill="#ffffff" font-size="20" font-family="Arial">Roadmap coherence is not validation. Simulation is not silicon evidence.</text>
+</svg>
+"""
+
+
+def emit_evidence_package(run_dir: str | Path, evidence: dict[str, Any]) -> Path:
+    run_dir = Path(run_dir)
+    state_dir = run_dir / "state"
+    validation_dir = run_dir / "validation"
+    simulation_dir = run_dir / "simulation"
+    scoring_dir = run_dir / "scoring"
+    reports_dir = run_dir / "reports"
+    visuals_dir = run_dir / "visuals"
+    ledgers_dir = run_dir / "ledger"
+
+    for d in [state_dir, validation_dir, simulation_dir, scoring_dir, reports_dir, visuals_dir, ledgers_dir]:
+        d.mkdir(parents=True, exist_ok=True)
+
+    write_json(state_dir / "source_boundary.json", evidence.get("source_boundary", {}))
+    write_json(state_dir / "claim_card.json", evidence.get("claim_card", {}))
+    write_json(state_dir / "workload_profile.json", evidence.get("workload_profile", {}))
+    write_json(state_dir / "tau_vector.json", evidence.get("tau_vector", {}))
+
+    write_json(validation_dir / "logicfolding_survivability.json", evidence.get("logicfolding_survivability", {}))
+    write_json(validation_dir / "edge_surface_boundary.json", evidence.get("edge_surface_boundary", {}))
+    write_json(validation_dir / "gamma_tau_etp.json", evidence.get("energy_thermal_pdn_pvt", {}))
+    write_json(validation_dir / "pvt_closure.json", evidence.get("pvt_closure", {}))
+    write_json(validation_dir / "yield_method_disclosure.json", evidence.get("yield_method_disclosure", {}))
+
+    write_json(simulation_dir / "monte_carlo_summary.json", evidence.get("monte_carlo_stress", {}))
+    write_json(scoring_dir / "admissible_claim.json", evidence.get("admissible_claim", {}))
+    write_json(scoring_dir / "classifier_result.json", evidence.get("classification", {}))
+
+    findings = evidence.get("classification", {}).get("findings", [])
+    import json
+    ledger_lines = "\n".join(json.dumps(f, ensure_ascii=False) for f in findings)
+    write_text(ledgers_dir / "downgrade_ledger.jsonl", ledger_lines + ("\n" if ledger_lines else ""))
+
+    class_name = evidence.get("classification", {}).get("class", "UNKNOWN")
+    score = float(evidence.get("admissible_claim", {}).get("A_TSEK", 0.0))
+    margin = float(evidence.get("logicfolding_survivability", {}).get("logicfolding_margin", 0.0))
+    gamma = float(evidence.get("energy_thermal_pdn_pvt", {}).get("gamma_tau_ETP", 0.0))
+
+    report = f"""# Tau Scaling Run Summary
+
+## Classification
+
+- Class: `{class_name}`
+- A_TSEK: `{score:.4f}`
+- LogicFolding margin: `{margin:.4f} ps`
+- Gamma_tau_ETP: `{gamma:.4f}`
+
+## Non-claim locks
+
+- Roadmap coherence is not validation.
+- Simulation is not silicon evidence.
+- Density equivalence is not node equivalence.
+- Local path win is not full-chip win.
+"""
+    write_text(reports_dir / "tau_scaling_summary.md", report)
+    write_text(reports_dir / "non_claim_locks.md", "# Non-Claim Locks\n\nRoadmap coherence is not validation.\nSimulation is not silicon evidence.\n")
+    write_text(visuals_dir / "classification_dashboard.svg", _dashboard_svg(class_name, score, margin, gamma))
+
+    evidence_path = run_dir / "evidence_package.json"
+    write_json(evidence_path, evidence)
+    return evidence_path
+
+
+════════════════════════════════════════════════════════════
+ FILE: src\tau_scaling\evidence\README.md
+════════════════════════════════════════════════════════════
+# src\tau_scaling\evidence
+
+## Folder Purpose
+
+Evidence package writer, reports, visuals, and ledger emission.
+
+## S — Specification
+
+This folder participates in the Tau Scaling runtime, documentation, evidence, or RCC-N navigation surface according to its local role.
+
+## H — Hooks
+
+Inbound hooks:
+
+- README.md
+- AGENTS.md
+- docs/context/repository_context_index.json
+- docs/context/rcc_nexus_index.json
+- rcc/nexus/route_map.json
+
+Outbound hooks:
+
+- artifacts/runs/latest/evidence_package.json
+- validation reports when this folder participates in runtime, documentation, release, or RCC checks
+
+## A — Artifacts
+
+This folder may contain source files, docs, reports, schemas, scripts, visuals, generated state, or validation records depending on its role.
+
+## T — Theory / Basis
+
+Governed by TAU-SCALING-SA v0.1, TSEK v1.3, RCC-N v1.7, and the repository non-claim locks.
+
+## I — Invariants
+
+- Preserve source attribution.
+- Preserve non-claim boundaries.
+- Do not treat navigation as validation.
+- Do not treat documentation as correctness.
+- Do not claim independent silicon validation.
+- Do not claim product performance validation.
+- Keep evidence and validation surfaces inspectable.
+
+## E — Examples
+
+Read this file before editing this folder.
+
+Run relevant validation after changes:
+
+    python -m unittest discover -s tests
+    python scripts/rcc/check_rcc_nexus.py
+    python scripts/validation/validate_architecture_contracts.py
+
+## RCC Nexus Echo Location
+
+Sphere Position:
+
+- Shell: middle
+- Meridian(s): evidence
+- Sector: evidence
+- Version / TTL: RCC-N-v1.7 / 180 days
+- Last Verified: 2026-05-26
+
+Local Role:
+
+- Evidence package writer, reports, visuals, and ledger emission.
+
+Evidence Surface:
+
+- artifacts/runs/latest/evidence_package.json
+
+Validation Surface:
+
+    python -m unittest discover -s tests
+
+Claim Boundary:
+
+- This mini README improves local navigation and agent orientation. It does not prove code correctness, patch safety, empirical validation, independent silicon validation, product performance, process-node equivalence, AI understanding, or production readiness.
+
+Non-Claim Locks:
+
+- navigation_is_not_validation
+- documentation_is_not_correctness
+- context_reconstruction_is_not_code_quality
+- validation_remains_required
+- simulation_is_not_silicon_validation
+- density_equivalence_is_not_node_equivalence
+- local_path_win_is_not_full_chip_win
+
+Agent Route:
+
+- Read root README, docs/context indexes, route map, then this README before editing.
+
+Update Obligation:
+
+- Update this README and RCC/Nexus records if folder purpose, hooks, evidence surfaces, validation commands, or claim boundaries change.
+
+════════════════════════════════════════════════════════════
+ FILE: src\tau_scaling\gates\__init__.py
+════════════════════════════════════════════════════════════
+
+
+════════════════════════════════════════════════════════════
+ FILE: src\tau_scaling\gates\edge_surface.py
+════════════════════════════════════════════════════════════
+from __future__ import annotations
+
+from typing import Any
+
+
+def _f(x: Any, default: float = 1.0) -> float:
+    try:
+        return float(x)
+    except Exception:
+        return default
+
+
+def edge_surface_ratio(record: dict[str, Any]) -> dict[str, float | str | bool]:
+    n = max(1.0, _f(record.get("N"), 10.0))
+    compute_coeff = _f(record.get("compute_coeff"), 1.0)
+    edge_coeff = _f(record.get("edge_coeff"), 1.0)
+    surface_coeff = _f(record.get("surface_coeff"), 1.0)
+
+    compute = compute_coeff * (n ** 2)
+    edge_resource = edge_coeff * n
+    surface_resource = surface_coeff * (n ** 2)
+
+    beta_edge = edge_resource / compute if compute else 0.0
+    beta_surface = surface_resource / compute if compute else 0.0
+
+    return {
+        "N": n,
+        "beta_edge": round(beta_edge, 6),
+        "beta_surface": round(beta_surface, 6),
+        "edge_starvation_detected": beta_edge < beta_surface,
+        "model": "beta_edge ~ N^-1; beta_surface ~ O(1)"
+    }
+
+
+════════════════════════════════════════════════════════════
+ FILE: src\tau_scaling\gates\gamma_tau_etp.py
+════════════════════════════════════════════════════════════
+from __future__ import annotations
+
+from typing import Any
+
+
+def _f(x: Any, default: float = 1.0) -> float:
+    try:
+        return float(x)
+    except Exception:
+        return default
+
+
+def gamma_tau_etp(record: dict[str, Any]) -> float:
+    tau_gain = _f(record.get("tau_gain"), 0.0)
+    e_ratio = _f(record.get("energy_ratio_new_over_old"), 1.0)
+    thermal_ratio = _f(record.get("thermal_ratio_new_over_old"), 1.0)
+    pdn_ratio = _f(record.get("pdn_droop_ratio_new_over_old"), 1.0)
+    if e_ratio <= 0 or thermal_ratio <= 0 or pdn_ratio <= 0:
+        return 0.0
+    return round(tau_gain / (e_ratio * thermal_ratio * pdn_ratio), 6)
+
+
+════════════════════════════════════════════════════════════
+ FILE: src\tau_scaling\gates\logicfolding_survivability.py
+════════════════════════════════════════════════════════════
+from __future__ import annotations
+
+from typing import Any
+
+
+def _f(x: Any, default: float = 0.0) -> float:
+    try:
+        return float(x)
+    except Exception:
+        return default
+
+
+def logicfolding_margin(record: dict[str, Any]) -> float:
+    rho = max(0.0, min(1.0, _f(record.get("rho_critical_paths"))))
+    wire = _f(record.get("expected_wire_savings_ps"))
+    penalties = sum(_f(record.get(k)) for k in [
+        "expected_vertical_penalty_ps",
+        "routing_penalty_ps",
+        "sync_penalty_ps",
+        "variation_penalty_ps",
+        "closure_penalty_ps",
+    ])
+    return round((rho * wire) - penalties, 6)
+
+
+════════════════════════════════════════════════════════════
+ FILE: src\tau_scaling\gates\README.md
+════════════════════════════════════════════════════════════
+# src\tau_scaling\gates
+
+## Folder Purpose
+
+LogicFolding, edge/surface, gamma_tau_ETP, PVT, PDN, yield, and evidence gates.
+
+## S — Specification
+
+This folder participates in the Tau Scaling runtime, documentation, evidence, or RCC-N navigation surface according to its local role.
+
+## H — Hooks
+
+Inbound hooks:
+
+- README.md
+- AGENTS.md
+- docs/context/repository_context_index.json
+- docs/context/rcc_nexus_index.json
+- rcc/nexus/route_map.json
+
+Outbound hooks:
+
+- artifacts/runs/latest/validation
+- validation reports when this folder participates in runtime, documentation, release, or RCC checks
+
+## A — Artifacts
+
+This folder may contain source files, docs, reports, schemas, scripts, visuals, generated state, or validation records depending on its role.
+
+## T — Theory / Basis
+
+Governed by TAU-SCALING-SA v0.1, TSEK v1.3, RCC-N v1.7, and the repository non-claim locks.
+
+## I — Invariants
+
+- Preserve source attribution.
+- Preserve non-claim boundaries.
+- Do not treat navigation as validation.
+- Do not treat documentation as correctness.
+- Do not claim independent silicon validation.
+- Do not claim product performance validation.
+- Keep evidence and validation surfaces inspectable.
+
+## E — Examples
+
+Read this file before editing this folder.
+
+Run relevant validation after changes:
+
+    python -m unittest discover -s tests
+    python scripts/rcc/check_rcc_nexus.py
+    python scripts/validation/validate_architecture_contracts.py
+
+## RCC Nexus Echo Location
+
+Sphere Position:
+
+- Shell: inner
+- Meridian(s): runtime, validation
+- Sector: validation
+- Version / TTL: RCC-N-v1.7 / 180 days
+- Last Verified: 2026-05-26
+
+Local Role:
+
+- LogicFolding, edge/surface, gamma_tau_ETP, PVT, PDN, yield, and evidence gates.
+
+Evidence Surface:
+
+- artifacts/runs/latest/validation
+
+Validation Surface:
+
+    python -m unittest discover -s tests
+
+Claim Boundary:
+
+- This mini README improves local navigation and agent orientation. It does not prove code correctness, patch safety, empirical validation, independent silicon validation, product performance, process-node equivalence, AI understanding, or production readiness.
+
+Non-Claim Locks:
+
+- navigation_is_not_validation
+- documentation_is_not_correctness
+- context_reconstruction_is_not_code_quality
+- validation_remains_required
+- simulation_is_not_silicon_validation
+- density_equivalence_is_not_node_equivalence
+- local_path_win_is_not_full_chip_win
+
+Agent Route:
+
+- Read root README, docs/context indexes, route map, then this README before editing.
+
+Update Obligation:
+
+- Update this README and RCC/Nexus records if folder purpose, hooks, evidence surfaces, validation commands, or claim boundaries change.
+
+════════════════════════════════════════════════════════════
+ FILE: src\tau_scaling\README.md
+════════════════════════════════════════════════════════════
+# src\tau_scaling
+
+## Folder Purpose
+
+Executable Tau Scaling runtime package.
+
+## S — Specification
+
+This folder participates in the Tau Scaling runtime, documentation, evidence, or RCC-N navigation surface according to its local role.
+
+## H — Hooks
+
+Inbound hooks:
+
+- README.md
+- AGENTS.md
+- docs/context/repository_context_index.json
+- docs/context/rcc_nexus_index.json
+- rcc/nexus/route_map.json
+
+Outbound hooks:
+
+- artifacts/runs/latest/evidence_package.json
+- validation reports when this folder participates in runtime, documentation, release, or RCC checks
+
+## A — Artifacts
+
+This folder may contain source files, docs, reports, schemas, scripts, visuals, generated state, or validation records depending on its role.
+
+## T — Theory / Basis
+
+Governed by TAU-SCALING-SA v0.1, TSEK v1.3, RCC-N v1.7, and the repository non-claim locks.
+
+## I — Invariants
+
+- Preserve source attribution.
+- Preserve non-claim boundaries.
+- Do not treat navigation as validation.
+- Do not treat documentation as correctness.
+- Do not claim independent silicon validation.
+- Do not claim product performance validation.
+- Keep evidence and validation surfaces inspectable.
+
+## E — Examples
+
+Read this file before editing this folder.
+
+Run relevant validation after changes:
+
+    python -m unittest discover -s tests
+    python scripts/rcc/check_rcc_nexus.py
+    python scripts/validation/validate_architecture_contracts.py
+
+## RCC Nexus Echo Location
+
+Sphere Position:
+
+- Shell: inner
+- Meridian(s): runtime, tau
+- Sector: runtime
+- Version / TTL: RCC-N-v1.7 / 180 days
+- Last Verified: 2026-05-26
+
+Local Role:
+
+- Executable Tau Scaling runtime package.
+
+Evidence Surface:
+
+- artifacts/runs/latest/evidence_package.json
+
+Validation Surface:
+
+    python -m unittest discover -s tests
+
+Claim Boundary:
+
+- This mini README improves local navigation and agent orientation. It does not prove code correctness, patch safety, empirical validation, independent silicon validation, product performance, process-node equivalence, AI understanding, or production readiness.
+
+Non-Claim Locks:
+
+- navigation_is_not_validation
+- documentation_is_not_correctness
+- context_reconstruction_is_not_code_quality
+- validation_remains_required
+- simulation_is_not_silicon_validation
+- density_equivalence_is_not_node_equivalence
+- local_path_win_is_not_full_chip_win
+
+Agent Route:
+
+- Read root README, docs/context indexes, route map, then this README before editing.
+
+Update Obligation:
+
+- Update this README and RCC/Nexus records if folder purpose, hooks, evidence surfaces, validation commands, or claim boundaries change.
+
+════════════════════════════════════════════════════════════
+ FILE: src\tau_scaling\schemas\README.md
+════════════════════════════════════════════════════════════
+# schemas/
+
+Mini README for RCC/AI context. Preserve non-claim locks and evidence gates.
+
+
+
+════════════════════════════════════════════════════════════
+ FILE: src\tau_scaling\simulation\__init__.py
+════════════════════════════════════════════════════════════
+
+
+════════════════════════════════════════════════════════════
+ FILE: src\tau_scaling\simulation\monte_carlo.py
+════════════════════════════════════════════════════════════
+from __future__ import annotations
+
+import random
+from statistics import mean
+from typing import Any
+
+
+def _uniform_pair(bounds: list[float] | tuple[float, float], default=(0.0, 1.0)) -> tuple[float, float]:
+    try:
+        lo, hi = float(bounds[0]), float(bounds[1])
+        return lo, hi
+    except Exception:
+        return default
+
+
+def run_monte_carlo(config: dict[str, Any]) -> dict[str, Any]:
+    n = int(config.get("runs", 1000))
+    if n < 1:
+        n = 1
+    seed = int(config.get("seed", 777))
+    random.seed(seed)
+
+    rho_b = _uniform_pair(config.get("rho_critical_paths", [0.40, 0.80]))
+    wire_b = _uniform_pair(config.get("wire_savings_ps", [20.0, 45.0]))
+    vertical_b = _uniform_pair(config.get("vertical_penalty_ps", [5.0, 15.0]))
+    route_b = _uniform_pair(config.get("routing_penalty_ps", [2.0, 10.0]))
+    sync_b = _uniform_pair(config.get("sync_penalty_ps", [1.0, 5.0]))
+    variation_b = _uniform_pair(config.get("variation_penalty_ps", [1.0, 5.0]))
+    closure_b = _uniform_pair(config.get("closure_penalty_ps", [2.0, 10.0]))
+
+    tau_gain_b = _uniform_pair(config.get("tau_gain", [1.0, 1.5]))
+    energy_b = _uniform_pair(config.get("energy_ratio", [0.9, 1.2]))
+    thermal_b = _uniform_pair(config.get("thermal_ratio", [0.9, 1.2]))
+    pdn_b = _uniform_pair(config.get("pdn_ratio", [0.9, 1.2]))
+    closure_probability = float(config.get("post_route_closure_probability", 0.75))
+
+    margins = []
+    gammas = []
+    b_candidates = 0
+    margin_pass = 0
+    gamma_pass = 0
+    closure_pass_count = 0
+
+    for _ in range(n):
+        rho = random.uniform(*rho_b)
+        wire = random.uniform(*wire_b)
+        penalties = (
+            random.uniform(*vertical_b)
+            + random.uniform(*route_b)
+            + random.uniform(*sync_b)
+            + random.uniform(*variation_b)
+            + random.uniform(*closure_b)
+        )
+        margin = (rho * wire) - penalties
+        tau_gain = random.uniform(*tau_gain_b)
+        energy = random.uniform(*energy_b)
+        thermal = random.uniform(*thermal_b)
+        pdn = random.uniform(*pdn_b)
+        gamma = tau_gain / (energy * thermal * pdn) if energy > 0 and thermal > 0 and pdn > 0 else 0.0
+        closure_pass = random.random() <= closure_probability
+
+        margins.append(margin)
+        gammas.append(gamma)
+
+        if margin > 0:
+            margin_pass += 1
+        if gamma > 1:
+            gamma_pass += 1
+        if closure_pass:
+            closure_pass_count += 1
+        if margin > 0 and gamma > 1 and closure_pass:
+            b_candidates += 1
+
+    return {
+        "schema": "TAU-SCALING-SA-v0.1-monte-carlo-summary",
+        "simulation_not_validation": True,
+        "runs": n,
+        "seed": seed,
+        "mean_margin_ps": round(mean(margins), 6),
+        "mean_gamma_tau_ETP": round(mean(gammas), 6),
+        "p_margin_pass": round(margin_pass / n, 6),
+        "p_gamma_pass": round(gamma_pass / n, 6),
+        "p_post_route_closure_pass": round(closure_pass_count / n, 6),
+        "p_tsek_b_candidate": round(b_candidates / n, 6),
+    }
+
+
+════════════════════════════════════════════════════════════
+ FILE: src\tau_scaling\simulation\README.md
+════════════════════════════════════════════════════════════
+# src\tau_scaling\simulation
+
+## Folder Purpose
+
+Monte Carlo checker stress tests.
+
+## S — Specification
+
+This folder participates in the Tau Scaling runtime, documentation, evidence, or RCC-N navigation surface according to its local role.
+
+## H — Hooks
+
+Inbound hooks:
+
+- README.md
+- AGENTS.md
+- docs/context/repository_context_index.json
+- docs/context/rcc_nexus_index.json
+- rcc/nexus/route_map.json
+
+Outbound hooks:
+
+- artifacts/runs/latest/simulation
+- validation reports when this folder participates in runtime, documentation, release, or RCC checks
+
+## A — Artifacts
+
+This folder may contain source files, docs, reports, schemas, scripts, visuals, generated state, or validation records depending on its role.
+
+## T — Theory / Basis
+
+Governed by TAU-SCALING-SA v0.1, TSEK v1.3, RCC-N v1.7, and the repository non-claim locks.
+
+## I — Invariants
+
+- Preserve source attribution.
+- Preserve non-claim boundaries.
+- Do not treat navigation as validation.
+- Do not treat documentation as correctness.
+- Do not claim independent silicon validation.
+- Do not claim product performance validation.
+- Keep evidence and validation surfaces inspectable.
+
+## E — Examples
+
+Read this file before editing this folder.
+
+Run relevant validation after changes:
+
+    python -m unittest discover -s tests
+    python scripts/rcc/check_rcc_nexus.py
+    python scripts/validation/validate_architecture_contracts.py
+
+## RCC Nexus Echo Location
+
+Sphere Position:
+
+- Shell: middle
+- Meridian(s): runtime, evidence
+- Sector: validation
+- Version / TTL: RCC-N-v1.7 / 180 days
+- Last Verified: 2026-05-26
+
+Local Role:
+
+- Monte Carlo checker stress tests.
+
+Evidence Surface:
+
+- artifacts/runs/latest/simulation
+
+Validation Surface:
+
+    python -m unittest discover -s tests
+
+Claim Boundary:
+
+- This mini README improves local navigation and agent orientation. It does not prove code correctness, patch safety, empirical validation, independent silicon validation, product performance, process-node equivalence, AI understanding, or production readiness.
+
+Non-Claim Locks:
+
+- navigation_is_not_validation
+- documentation_is_not_correctness
+- context_reconstruction_is_not_code_quality
+- validation_remains_required
+- simulation_is_not_silicon_validation
+- density_equivalence_is_not_node_equivalence
+- local_path_win_is_not_full_chip_win
+
+Agent Route:
+
+- Read root README, docs/context indexes, route map, then this README before editing.
+
+Update Obligation:
+
+- Update this README and RCC/Nexus records if folder purpose, hooks, evidence surfaces, validation commands, or claim boundaries change.
+
+════════════════════════════════════════════════════════════
+ FILE: src\tau_scaling\tau\README.md
+════════════════════════════════════════════════════════════
+# tau/
+
+Mini README for RCC/AI context. Preserve non-claim locks and evidence gates.
+
+
+
+════════════════════════════════════════════════════════════
+ FILE: src\tau_scaling\utils\__init__.py
+════════════════════════════════════════════════════════════
+
+
+════════════════════════════════════════════════════════════
+ FILE: src\tau_scaling\utils\README.md
+════════════════════════════════════════════════════════════
+# utils/
+
+Mini README for RCC/AI context. Preserve non-claim locks and evidence gates.
+
+
+
+════════════════════════════════════════════════════════════
+ FILE: src\tau_scaling\utils\safe_json.py
+════════════════════════════════════════════════════════════
+from __future__ import annotations
+
+import json
+from pathlib import Path
+from typing import Any
+
+
+def read_json(path: str | Path) -> dict[str, Any]:
+    p = Path(path)
+    with p.open("r", encoding="utf-8-sig") as f:
+        return json.load(f)
+
+
+def write_json(path: str | Path, data: Any) -> None:
+    p = Path(path)
+    p.parent.mkdir(parents=True, exist_ok=True)
+    with p.open("w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2, ensure_ascii=False, sort_keys=True)
+
+
+def write_text(path: str | Path, text: str) -> None:
+    p = Path(path)
+    p.parent.mkdir(parents=True, exist_ok=True)
+    p.write_text(text, encoding="utf-8")
+
+════════════════════════════════════════════════════════════
+ FILE: tests\README.md
+════════════════════════════════════════════════════════════
+# tests
+
+## Folder Purpose
+
+Implementation-health tests.
+
+## S — Specification
+
+This folder participates in the Tau Scaling runtime, documentation, evidence, or RCC-N navigation surface according to its local role.
+
+## H — Hooks
+
+Inbound hooks:
+
+- README.md
+- AGENTS.md
+- docs/context/repository_context_index.json
+- docs/context/rcc_nexus_index.json
+- rcc/nexus/route_map.json
+
+Outbound hooks:
+
+- tests
+- validation reports when this folder participates in runtime, documentation, release, or RCC checks
+
+## A — Artifacts
+
+This folder may contain source files, docs, reports, schemas, scripts, visuals, generated state, or validation records depending on its role.
+
+## T — Theory / Basis
+
+Governed by TAU-SCALING-SA v0.1, TSEK v1.3, RCC-N v1.7, and the repository non-claim locks.
+
+## I — Invariants
+
+- Preserve source attribution.
+- Preserve non-claim boundaries.
+- Do not treat navigation as validation.
+- Do not treat documentation as correctness.
+- Do not claim independent silicon validation.
+- Do not claim product performance validation.
+- Keep evidence and validation surfaces inspectable.
+
+## E — Examples
+
+Read this file before editing this folder.
+
+Run relevant validation after changes:
+
+    python -m unittest discover -s tests
+    python scripts/rcc/check_rcc_nexus.py
+    python scripts/validation/validate_architecture_contracts.py
+
+## RCC Nexus Echo Location
+
+Sphere Position:
+
+- Shell: middle
+- Meridian(s): validation
+- Sector: validation
+- Version / TTL: RCC-N-v1.7 / 180 days
+- Last Verified: 2026-05-26
+
+Local Role:
+
+- Implementation-health tests.
+
+Evidence Surface:
+
+- tests
+
+Validation Surface:
+
+    python -m unittest discover -s tests
+
+Claim Boundary:
+
+- This mini README improves local navigation and agent orientation. It does not prove code correctness, patch safety, empirical validation, independent silicon validation, product performance, process-node equivalence, AI understanding, or production readiness.
+
+Non-Claim Locks:
+
+- navigation_is_not_validation
+- documentation_is_not_correctness
+- context_reconstruction_is_not_code_quality
+- validation_remains_required
+- simulation_is_not_silicon_validation
+- density_equivalence_is_not_node_equivalence
+- local_path_win_is_not_full_chip_win
+
+Agent Route:
+
+- Read root README, docs/context indexes, route map, then this README before editing.
+
+Update Obligation:
+
+- Update this README and RCC/Nexus records if folder purpose, hooks, evidence surfaces, validation commands, or claim boundaries change.
+
+════════════════════════════════════════════════════════════
+ FILE: tests\test_classifier.py
+════════════════════════════════════════════════════════════
+import unittest
+
+from tau_scaling.claims.classifier import classify_tsek
+
+
+class TestClassifier(unittest.TestCase):
+    def test_overclaim_blocks(self):
+        record = {
+            "source_boundary": {
+                "source_declared": True,
+                "reported_claims_separated_from_validation": True
+            },
+            "claim_card": {
+                "claim_text": "validated chip",
+                "claim_type": "reported_metric",
+                "independent_validation_claimed": True
+            },
+            "workload_profile": {"workload_class": "mobile_soc", "dominant_tau_term": "circuit"},
+            "tau_vector": {"baseline": {"circuit": 1}, "candidate": {"circuit": 0.8}, "weights_declared": True, "dominant_tau_improved": True},
+            "logicfolding_margin": 1.0,
+            "gamma_tau_ETP": 1.2,
+            "pvt_closure": {"post_route_closure_passed": True, "pvt_variation_passed": True, "pdn_reported": True},
+            "yield_method_disclosure": {"method_disclosed": True, "yield_reported": True},
+            "evidence_disclosure": {"evidence_package_complete": True, "independent_validation_present": False},
+            "overclaim": 0.0,
+        }
+        result = classify_tsek(record)
+        self.assertEqual(result["class"], "TSEK-E")
+
+    def test_partial_public_claim_is_c(self):
+        record = {
+            "source_boundary": {
+                "source_declared": True,
+                "reported_claims_separated_from_validation": True
+            },
+            "claim_card": {
+                "claim_text": "reported roadmap",
+                "claim_type": "roadmap",
+                "independent_validation_claimed": False
+            },
+            "workload_profile": {"workload_class": "mobile_soc", "dominant_tau_term": "circuit"},
+            "tau_vector": {"baseline": {"circuit": 1}, "candidate": {"circuit": 0.8}, "weights_declared": True, "dominant_tau_improved": True},
+            "logicfolding_margin": 1.0,
+            "gamma_tau_ETP": 1.2,
+            "pvt_closure": {"post_route_closure_passed": True, "pvt_variation_passed": True, "pdn_reported": True},
+            "yield_method_disclosure": {"method_disclosed": True, "yield_reported": False},
+            "evidence_disclosure": {"evidence_package_complete": True, "independent_validation_present": False},
+            "overclaim": 0.0,
+        }
+        result = classify_tsek(record)
+        self.assertEqual(result["class"], "TSEK-C")
+
+
+if __name__ == "__main__":
+    unittest.main()
+
+
+════════════════════════════════════════════════════════════
+ FILE: tests\test_gates.py
+════════════════════════════════════════════════════════════
+import unittest
+
+from tau_scaling.gates.logicfolding_survivability import logicfolding_margin
+from tau_scaling.gates.gamma_tau_etp import gamma_tau_etp
+from tau_scaling.gates.edge_surface import edge_surface_ratio
+
+
+class TestGates(unittest.TestCase):
+    def test_logicfolding_margin_positive(self):
+        record = {
+            "rho_critical_paths": 0.75,
+            "expected_wire_savings_ps": 42,
+            "expected_vertical_penalty_ps": 8,
+            "routing_penalty_ps": 5,
+            "sync_penalty_ps": 3,
+            "variation_penalty_ps": 2,
+            "closure_penalty_ps": 4,
+        }
+        self.assertGreater(logicfolding_margin(record), 0)
+
+    def test_gamma_tau_etp(self):
+        record = {
+            "tau_gain": 1.22,
+            "energy_ratio_new_over_old": 0.95,
+            "thermal_ratio_new_over_old": 1.05,
+            "pdn_droop_ratio_new_over_old": 1.02,
+        }
+        self.assertGreater(gamma_tau_etp(record), 1.0)
+
+    def test_edge_surface_ratio(self):
+        result = edge_surface_ratio({"N": 16})
+        self.assertLess(result["beta_edge"], result["beta_surface"])
+
+
+if __name__ == "__main__":
+    unittest.main()
+
+
+════════════════════════════════════════════════════════════
+ FILE: tests\test_runtime.py
+════════════════════════════════════════════════════════════
+import json
+import unittest
+from pathlib import Path
+from tempfile import TemporaryDirectory
+
+from tau_scaling.core.runtime import TauScalingRuntime
+
+
+class TestRuntime(unittest.TestCase):
+    def test_runtime_emits_evidence(self):
+        seed_path = Path("configs/seeds/logicfolding_claim_card.json")
+        seed = json.loads(seed_path.read_text(encoding="utf-8"))
+        with TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / "artifacts" / "runs").mkdir(parents=True, exist_ok=True)
+            result = TauScalingRuntime(root).run(seed)
+            self.assertTrue(Path(result.evidence_path).exists())
+            self.assertIn(result.classification, {"TSEK-A", "TSEK-B", "TSEK-C", "TSEK-D", "TSEK-E"})
+
+
+if __name__ == "__main__":
+    unittest.main()
+
+
+════════════════════════════════════════════════════════════
+ DUMP COMPLETION
+════════════════════════════════════════════════════════════
+ReportPath: C:\Users\jacks\OneDrive\Desktop\tau-scaling\reports\repo_dump\tau_scaling_repo_dump_20260526_050329.txt
+Boundary:
+This dump is repository inspection only. It does not prove code correctness, silicon validation, Tau Scaling truth, node equivalence, production readiness, or product performance.

@@ -1,0 +1,13 @@
+{
+  "schema": "tau-scaling-rcc-nexus-check-v0.2",
+  "generated_at": "2026-05-26T09:11:14.830432+00:00",
+  "repository": "tau-scaling",
+  "profile": "Full",
+  "major_dirs_checked": 25,
+  "mini_readme_coverage": 1.0,
+  "errors": 0,
+  "warnings": 0,
+  "passed": true,
+  "findings": [],
+  "non_claim_lock": "RCC-N navigation is not code correctness or silicon validation."
+}

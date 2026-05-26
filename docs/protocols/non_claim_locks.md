@@ -1,0 +1,12 @@
+# Non-Claim Locks
+
+- roadmap_coherence_is_not_validation
+- simulation_is_not_silicon_validation
+- density_equivalence_is_not_node_equivalence
+- local_path_win_is_not_full_chip_win
+- navigation_is_not_validation
+- documentation_is_not_correctness
+- context_reconstruction_is_not_code_quality
+- validation_remains_required
+- tau_vector_is_not_silicon_measurement
+- codex_tau_is_not_physical_equivalence

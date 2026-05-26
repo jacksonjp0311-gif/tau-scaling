@@ -1,0 +1,101 @@
+{
+  "source_boundary": {
+    "source_declared": true,
+    "primary_source": "Tingbo He, A Time Scaling Theory for Multi-Layer Electronic Systems",
+    "reported_claims_separated_from_validation": true,
+    "codex_mapping_not_physical_equivalence": true
+  },
+  "claim_card": {
+    "claim_id": "logicfolding-demo-001",
+    "claim_text": "LogicFolding can reduce dominant critical-path delay if wire savings survive full-chip penalties.",
+    "source": "codex",
+    "claim_type": "topology",
+    "tau_layer": "circuit",
+    "independent_validation_claimed": false
+  },
+  "workload_profile": {
+    "workload_class": "mobile_soc",
+    "dominant_tau_term": "circuit",
+    "workload_declared": true
+  },
+  "tau_vector": {
+    "tau_units": "ps",
+    "weights_declared": true,
+    "dominant_tau_improved": true,
+    "baseline": {
+      "circuit": 100.0,
+      "chip": 150.0,
+      "workload": 250.0
+    },
+    "candidate": {
+      "circuit": 82.0,
+      "chip": 132.0,
+      "workload": 220.0
+    }
+  },
+  "baseline_manifest": {
+    "name": "planar-baseline",
+    "declared": true
+  },
+  "candidate_manifest": {
+    "name": "folded-candidate",
+    "declared": true
+  },
+  "logicfolding_survivability": {
+    "rho_critical_paths": 0.75,
+    "expected_wire_savings_ps": 42.0,
+    "expected_vertical_penalty_ps": 8.0,
+    "routing_penalty_ps": 5.0,
+    "sync_penalty_ps": 3.0,
+    "variation_penalty_ps": 2.0,
+    "closure_penalty_ps": 4.0
+  },
+  "edge_surface_boundary": {
+    "N": 16,
+    "compute_coeff": 1.0,
+    "edge_coeff": 1.0,
+    "surface_coeff": 1.0
+  },
+  "energy_thermal_pdn_pvt": {
+    "tau_gain": 1.22,
+    "energy_ratio_new_over_old": 0.95,
+    "thermal_ratio_new_over_old": 1.05,
+    "pdn_droop_ratio_new_over_old": 1.02
+  },
+  "pvt_closure": {
+    "post_route_closure_passed": true,
+    "pvt_variation_passed": true,
+    "pdn_reported": true
+  },
+  "yield_method_disclosure": {
+    "method_disclosed": true,
+    "yield_reported": false
+  },
+  "evidence_disclosure": {
+    "evidence_package_complete": true,
+    "independent_validation_present": false
+  },
+  "monte_carlo_stress": {
+    "runs": 1000,
+    "seed": 777,
+    "rho_critical_paths": [0.65, 0.82],
+    "wire_savings_ps": [32.0, 48.0],
+    "vertical_penalty_ps": [6.0, 10.0],
+    "routing_penalty_ps": [3.0, 7.0],
+    "sync_penalty_ps": [1.0, 4.0],
+    "variation_penalty_ps": [1.0, 4.0],
+    "closure_penalty_ps": [2.0, 6.0],
+    "tau_gain": [1.10, 1.40],
+    "energy_ratio": [0.88, 1.05],
+    "thermal_ratio": [0.95, 1.12],
+    "pdn_ratio": [0.95, 1.10],
+    "post_route_closure_probability": 0.90
+  },
+  "overclaim": 0.0,
+  "non_claim_locks": {
+    "roadmap_coherence_is_not_validation": true,
+    "simulation_is_not_silicon_validation": true,
+    "density_equivalence_is_not_node_equivalence": true,
+    "local_path_win_is_not_full_chip_win": true
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "admissible_claim": {
+    "A_TSEK": 0.0,
+    "B_ETP": 1.0,
+    "B_LF": 1.0,
+    "B_PVT": 1.0,
+    "B_baseline": 1.0,
+    "B_evidence": 1.0,
+    "B_method": 1.0,
+    "B_metric": 1.0,
+    "B_source": 1.0,
+    "B_tau": 1.0,
+    "B_workload": 1.0,
+    "B_yield": 0.0,
+    "O": 0.0,
+    "diagnostic_average": 0.9091
+  },
+  "baseline_manifest": {
+    "declared": true,
+    "name": "planar-baseline"
+  },
+  "candidate_manifest": {
+    "declared": true,
+    "name": "folded-candidate"
+  },
+  "claim_card": {
+    "claim_id": "logicfolding-demo-001",
+    "claim_text": "LogicFolding can reduce dominant critical-path delay if wire savings survive full-chip penalties.",
+    "claim_type": "topology",
+    "independent_validation_claimed": false,
+    "source": "codex",
+    "tau_layer": "circuit"
+  },
+  "classification": {
+    "admissible": false,
+    "admissible_claim": {
+      "A_TSEK": 0.0,
+      "B_ETP": 1.0,
+      "B_LF": 1.0,
+      "B_PVT": 1.0,
+      "B_baseline": 1.0,
+      "B_evidence": 1.0,
+      "B_method": 1.0,
+      "B_metric": 1.0,
+      "B_source": 1.0,
+      "B_tau": 1.0,
+      "B_workload": 1.0,
+      "B_yield": 0.0,
+      "O": 0.0,
+      "diagnostic_average": 0.9091
+    },
+    "class": "TSEK-C",
+    "findings": [
+      {
+        "code": "TSEK_B_yield_MISSING",
+        "message": "B_yield failed or was not disclosed.",
+        "severity": "warning"
+      }
+    ],
+    "non_claim_locks": {
+      "density_equivalence_is_not_node_equivalence": true,
+      "local_path_win_is_not_full_chip_win": true,
+      "roadmap_coherence_is_not_validation": true,
+      "simulation_is_not_silicon_validation": true
+    },
+    "schema": "TAU-SCALING-SA-v0.1-classification-result"
+  },
+  "edge_surface_boundary": {
+    "N": 16.0,
+    "beta_edge": 0.0625,
+    "beta_surface": 1.0,
+    "edge_starvation_detected": true,
+    "model": "beta_edge ~ N^-1; beta_surface ~ O(1)"
+  },
+  "energy_thermal_pdn_pvt": {
+    "energy_ratio_new_over_old": 0.95,
+    "gamma_tau_ETP": 1.199076,
+    "passed": true,
+    "pdn_droop_ratio_new_over_old": 1.02,
+    "tau_gain": 1.22,
+    "thermal_ratio_new_over_old": 1.05
+  },
+  "logicfolding_survivability": {
+    "closure_penalty_ps": 4.0,
+    "expected_vertical_penalty_ps": 8.0,
+    "expected_wire_savings_ps": 42.0,
+    "logicfolding_margin": 9.5,
+    "passed": true,
+    "rho_critical_paths": 0.75,
+    "routing_penalty_ps": 5.0,
+    "sync_penalty_ps": 3.0,
+    "variation_penalty_ps": 2.0
+  },
+  "monte_carlo_stress": {
+    "mean_gamma_tau_ETP": 1.221765,
+    "mean_margin_ps": 7.566622,
+    "p_gamma_pass": 0.97,
+    "p_margin_pass": 0.96,
+    "p_post_route_closure_pass": 0.908,
+    "p_tsek_b_candidate": 0.85,
+    "runs": 1000,
+    "schema": "TAU-SCALING-SA-v0.1-monte-carlo-summary",
+    "seed": 777,
+    "simulation_not_validation": true
+  },
+  "non_claim_locks": {
+    "density_equivalence_is_not_node_equivalence": true,
+    "local_path_win_is_not_full_chip_win": true,
+    "roadmap_coherence_is_not_validation": true,
+    "simulation_is_not_silicon_validation": true
+  },
+  "pvt_closure": {
+    "pdn_reported": true,
+    "post_route_closure_passed": true,
+    "pvt_variation_passed": true
+  },
+  "run_id": "20260526T083823Z",
+  "schema": "TAU-SCALING-SA-v0.1-evidence-package",
+  "source_boundary": {
+    "codex_mapping_not_physical_equivalence": true,
+    "primary_source": "Tingbo He, A Time Scaling Theory for Multi-Layer Electronic Systems",
+    "reported_claims_separated_from_validation": true,
+    "source_declared": true
+  },
+  "tau_vector": {
+    "baseline": {
+      "chip": 150.0,
+      "circuit": 100.0,
+      "workload": 250.0
+    },
+    "candidate": {
+      "chip": 132.0,
+      "circuit": 82.0,
+      "workload": 220.0
+    },
+    "dominant_tau_improved": true,
+    "tau_units": "ps",
+    "weights_declared": true
+  },
+  "workload_profile": {
+    "dominant_tau_term": "circuit",
+    "workload_class": "mobile_soc",
+    "workload_declared": true
+  },
+  "yield_method_disclosure": {
+    "method_disclosed": true,
+    "yield_reported": false
+  }
+}

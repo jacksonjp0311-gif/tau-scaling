@@ -1,0 +1,24 @@
+{
+  "workload_class": "codex",
+  "tau_units": "relative",
+  "baseline": {
+    "read": 1.0,
+    "locate": 1.0,
+    "validate": 1.0,
+    "propagate": 1.0,
+    "evidence": 1.0,
+    "memory": 1.0
+  },
+  "candidate": {
+    "read": 0.7,
+    "locate": 0.6,
+    "validate": 0.8,
+    "propagate": 0.75,
+    "evidence": 0.65,
+    "memory": 0.7
+  },
+  "weights_declared": true,
+  "dominant_tau_term": "locate",
+  "dominant_tau_improved": true,
+  "non_claim_lock": "Codex tau vector is a governance analogy, not physical semiconductor equivalence."
+}

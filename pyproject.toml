@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tau-scaling"
+version = "0.2.0"
+description = "Evidence-gated Tau Scaling claim-governance runtime with TSEK claim cards, tau vectors, LogicFolding gates, Monte Carlo stress tests, evidence packages, and RCC-N repository navigation."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  { name = "James Paul Jackson" }
+]
+license = { text = "MIT" }
+dependencies = []
+
+[project.optional-dependencies]
+dev = []
+
+[project.scripts]
+tau-scaling = "tau_scaling.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,18 @@
+{
+  "monte_carlo_stress": {
+    "runs": 1000,
+    "seed": 777,
+    "rho_critical_paths": [0.65, 0.82],
+    "wire_savings_ps": [32.0, 48.0],
+    "vertical_penalty_ps": [6.0, 10.0],
+    "routing_penalty_ps": [3.0, 7.0],
+    "sync_penalty_ps": [1.0, 4.0],
+    "variation_penalty_ps": [1.0, 4.0],
+    "closure_penalty_ps": [2.0, 6.0],
+    "tau_gain": [1.10, 1.40],
+    "energy_ratio": [0.88, 1.05],
+    "thermal_ratio": [0.95, 1.12],
+    "pdn_ratio": [0.95, 1.10],
+    "post_route_closure_probability": 0.90
+  }
+}

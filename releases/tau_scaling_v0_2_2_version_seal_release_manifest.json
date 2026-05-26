@@ -1,0 +1,87 @@
+{
+    "schema":  "tau-scaling-release-manifest-v0.2.2",
+    "generated_at":  "2026-05-26T09:11:14Z",
+    "repository":  "tau-scaling",
+    "package":  "tau_scaling",
+    "cli":  [
+                "tau-scaling",
+                "python -m tau_scaling"
+            ],
+    "release_version":  "TAU-SCALING-SA v0.2.2",
+    "package_version":  "0.2.0",
+    "checkpoint_name":  "Version Seal / Release Manifest Layer",
+    "previous_checkpoint":  "TAU-SCALING-SA v0.2.1 — Root-Clean RCC-N Checkpoint",
+    "status":  "sealed-local-checkpoint",
+    "classification":  {
+                           "latest_A_TSEK":  0,
+                           "admissible_strong_claim":  false,
+                           "findings":  1,
+                           "latest_run_id":  "20260526T091115Z",
+                           "expected_downgrade_reason":  "yield evidence / independent validation incomplete",
+                           "latest_tsek_class":  "TSEK-C",
+                           "diagnostic_average":  0.9091
+                       },
+    "validation":  {
+                       "architecture_contracts":  {
+                                                      "errors":  0,
+                                                      "warnings":  0,
+                                                      "passed":  true
+                                                  },
+                       "rcc_nexus":  {
+                                         "major_dirs_checked":  25,
+                                         "errors":  0,
+                                         "warnings":  0,
+                                         "mini_readme_coverage":  1,
+                                         "passed":  true
+                                     },
+                       "runtime_demo":  {
+                                            "evidence_path":  "artifacts/runs/latest/evidence_package.json",
+                                            "seed":  "configs/seeds/logicfolding_claim_card.json",
+                                            "class":  "TSEK-C"
+                                        },
+                       "unit_tests":  "6 OK"
+                   },
+    "root_hygiene":  {
+                         "root_clean":  true,
+                         "loose_status_files_moved":  true,
+                         "root_files":  [
+                                            ".gitignore",
+                                            "AGENTS.md",
+                                            "LICENSE",
+                                            "pyproject.toml",
+                                            "README.md",
+                                            "README_5_MINUTES.md",
+                                            "README_90_SECONDS.md"
+                                        ]
+                     },
+    "evidence_surfaces":  {
+                              "classifier_result":  "artifacts/runs/latest/scoring/classifier_result.json",
+                              "cleanup_report":  "reports/cleanup/latest_root_cleanup_status.md",
+                              "architecture_report":  "reports/architecture/latest_architecture_contract_validation.md",
+                              "rcc_report":  "reports/rcc_nexus/latest_rcc_nexus_check.md",
+                              "downgrade_ledger":  "artifacts/runs/latest/ledger/downgrade_ledger.jsonl",
+                              "latest_evidence":  "artifacts/runs/latest/evidence_package.json"
+                          },
+    "documentation_surfaces":  {
+                                   "ninety_second_readme":  "README_90_SECONDS.md",
+                                   "route_map":  "rcc/nexus/route_map.json",
+                                   "rcc_nexus_index":  "docs/context/rcc_nexus_index.json",
+                                   "release_note":  "docs\\release_notes\\tau_scaling_v0_2_2_version_seal_release_manifest.md",
+                                   "context_index":  "docs/context/repository_context_index.json",
+                                   "agent_contract":  "AGENTS.md",
+                                   "validation_surface":  "docs/context/validation_surface.md",
+                                   "root_readme":  "README.md",
+                                   "software_architecture":  "docs/software_architecture/tau_scaling_sa_v0_1.md"
+                               },
+    "non_claim_locks":  [
+                            "roadmap_coherence_is_not_validation",
+                            "simulation_is_not_silicon_validation",
+                            "documentation_is_not_correctness",
+                            "navigation_is_not_validation",
+                            "context_reconstruction_is_not_correctness_proof",
+                            "density_equivalence_is_not_node_equivalence",
+                            "local_path_win_is_not_full_chip_win",
+                            "validation_remains_required"
+                        ],
+    "boundary":  "This release seal records local runtime, repository structure, RCC-N navigation, documentation alignment, and evidence emission. It does not independently validate silicon, product metrics, manufacturing capability, benchmark superiority, process-node equivalence, or universal physical law."
+}

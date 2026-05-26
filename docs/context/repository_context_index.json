@@ -1,0 +1,41 @@
+{
+    "schema":  "tau-scaling-repository-context-index-v0.2",
+    "repository":  "tau-scaling",
+    "generated_at":  "2026-05-26T04:58:39-04:00",
+    "current_software_layer":  "TAU-SCALING-SA v0.1.0",
+    "current_repository_layer":  "RCC-N / OMN-style structure injection v0.2",
+    "package":  "tau_scaling",
+    "purpose":  "Governed Tau Scaling claim-evaluation runtime and evidence-emitting workbench.",
+    "source_boundary":  {
+                            "primary_source":  "Tingbo He, A Time Scaling Theory for Multi-Layer Electronic Systems",
+                            "boundary":  "Public claims separated from independent validation",
+                            "public_claims":  "Huawei Tau Scaling / LogicFolding public disclosure"
+                        },
+    "evidence_surfaces":  [
+                              "artifacts/runs/latest/evidence_package.json",
+                              "outputs/evidence/latest_evidence_package.json",
+                              "outputs/reports/latest_tau_scaling_summary.md",
+                              "reports/rcc_nexus/latest_rcc_nexus_check.md"
+                          ],
+    "validation_commands":  [
+                                "python -m unittest discover -s tests",
+                                "python -m tau_scaling run-claim --seed configs/seeds/logicfolding_claim_card.json",
+                                "python scripts/rcc/check_rcc_nexus.py",
+                                "python scripts/validation/validate_architecture_contracts.py"
+                            ],
+    "non_claim_locks":  [
+                            "roadmap_coherence_is_not_validation",
+                            "simulation_is_not_silicon_validation",
+                            "density_equivalence_is_not_node_equivalence",
+                            "local_path_win_is_not_full_chip_win",
+                            "navigation_is_not_validation",
+                            "documentation_is_not_correctness",
+                            "validation_remains_required"
+                        ],
+    "route_files":  [
+                        "README.md",
+                        "README_90_SECONDS.md",
+                        "AGENTS.md",
+                        "rcc/nexus/route_map.json"
+                    ]
+}
