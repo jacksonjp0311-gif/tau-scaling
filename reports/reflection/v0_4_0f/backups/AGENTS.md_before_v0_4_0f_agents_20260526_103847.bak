@@ -1,6 +1,6 @@
 # AGENTS.md — Tau Scaling Agent Operating Contract
 
-Current contract: **TAU-SCALING-SA v0.4.0f - Coherence Reflection and Agent Contract Re-Sync**
+Current contract: **TAU-SCALING-SA v0.3.3e — Agent Contract Geometry Sync**
 
 ## Mission
 
@@ -61,22 +61,19 @@ python -m unittest discover -s tests
 | RCC-N patch | `docs/context/`, `rcc/nexus/`, route map | RCC-N checker + README audit + release validator |
 | Benchmark patch | `scripts/benchmarks/`, `reports/benchmarks/`, `docs/benchmarks/` | release validator + benchmark summary |
 | Synthetic gate test patch | `configs/seeds/tests/`, `reports/gates/`, gate docs | release validator + synthetic gate report |
-| Sensitivity sweep patch | `configs/seeds/sweeps/`, `reports/sensitivity/`, `visuals/sensitivity/` | release validator + sensitivity report + benchmark atlas update |
 | Public claim replay patch | source boundary docs, `configs/seeds/public_claims/`, claim reports | release validator + claim replay report |
 | Directory structure patch | Full Directory Box, affected mini READMEs, context indexes | README audit + RCC-N + release validator |
 
-## v0.4.1 Sensitivity-Sweep Start Rule
+## v0.4 Experiment-Start Rule
 
-Do not begin or promote v0.4.1 Synthetic Gate Sensitivity Sweep work unless:
+Do not begin or promote v0.4.0 Synthetic Gate Test Suite work unless:
 
 ```text
 release validator: passed
 README audit: passed
 unit tests: OK
 AGENTS.md: synchronized with README Required Validation
-task_routing_matrix.md: includes synthetic gate, sensitivity sweep, benchmark atlas, and public claim routes
-benchmark atlas: current
-reflection layer: current
+task_routing_matrix.md: includes synthetic gate and public claim routes
 ```
 
 ## Failure Learning Rule
@@ -103,18 +100,3 @@ Failures are repository memory, not blame records.
 ## Synthetic Gate Charts
 
 v0.4.0 requires benchmark and finding charts under `visuals/benchmarks/v0_4_0/` and `visuals/findings/v0_4_0/` whenever synthetic gate behavior changes.
-
-
-## Reflection Rule
-
-After any release-like README, benchmark, chart, or route evolution, update:
-
-```text
-README.md
-AGENTS.md
-rcc/nexus/task_routing_matrix.md
-docs/reflection/
-reports/reflection/
-```
-
-Non-claim lock: reflection improves continuity and routing only. It is not external validation.

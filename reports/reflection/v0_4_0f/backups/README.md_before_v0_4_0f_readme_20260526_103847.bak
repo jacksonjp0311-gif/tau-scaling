@@ -10,8 +10,8 @@
 
 Repository: `tau-scaling`  
 Package / CLI: `tau_scaling` / `tau-scaling`  
-Current checkpoint: **TAU-SCALING-SA v0.4.0f - Coherence Reflection and Agent Contract Re-Sync**  
-Previous seal: **TAU-SCALING-SA v0.4.0e - Exact Mini README Audit Anchor Repair**
+Current checkpoint: **TAU-SCALING-SA v0.4.0e - Exact Mini README Audit Anchor Repair**  
+Previous seal: **TAU-SCALING-SA v0.4.0d - Benchmark Mini README AI/RCC Warning Repair**
 
 Tau Scaling is a local-first, evidence-gated Python runtime for evaluating tau-scaling claims through structured claim cards, workload declarations, tau vectors, LogicFolding survivability checks, edge-to-surface boundary algebra, energy / thermal / PDN / PVT gates, Monte Carlo checker stress, TSEK classification, evidence packages, and RCC-N / OMN-style repository navigation.
 
@@ -55,7 +55,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | TAU-SCALING-SA v0.4.0f |
+| Current checkpoint | TAU-SCALING-SA v0.4.0e |
 | Synthetic gate suite | v0.4.0 / benchmark + finding charts |
 | Package version | 0.2.0 |
 | Baseline seed | TSEK-C / A_TSEK 0.0000 |
@@ -77,8 +77,6 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 | Benchmark mini README AI/RCC guidance | repaired / expected 0 warnings |
 | Mini README audit warnings | exact anchor repair / expected 0 warnings |
 | Benchmark chart registry | `visuals/benchmarks/v0_4_0/` + `visuals/findings/v0_4_0/` |
-| Reflection layer | `docs/reflection/tau_scaling_reflection_v0_4_0f.md` |
-| Agent contract version sync | v0.4.0f / updated from v0.3.3e |
 | Release readiness report | `reports/release/latest_release_readiness.md` |
 | Collision-proof run identity | passed |
 | Mini README coverage | 1.0 |
@@ -387,7 +385,6 @@ This section is part of the repository's operating memory. When a patch fails, t
 | L-017 | Benchmark charts existed, but the README did not yet provide a versioned chart/finding atlas. | Visual evidence was distributed across reports and visuals folders without one public navigation surface per version. | Every benchmark version must maintain a benchmark atlas with chart registry, finding registry, version ledger, and non-claim boundary. |
 | L-018 | v0.4.0c benchmark atlas passed but README audit found two warnings. | `docs/benchmarks/README.md` and `reports/benchmarks/README.md` lacked explicit AI/RCC update guidance. | Every benchmark mini README must include an AI/RCC update rule when benchmark charts, reports, or interpretation surfaces change. |
 | L-019 | v0.4.0d attempted AI/RCC mini README repair but audit still reported two warnings. | The audit script searches exact tokens such as `README Update Rule`; the added heading `AI / RCC Update Rule` was semantically correct but not audit-recognized. | Mini README repair patches must use exact audit-visible anchor phrases, not merely equivalent wording. |
-| L-020 | After v0.4.0e, README checkpoint advanced while AGENTS.md and task_routing_matrix.md still identified v0.3.3e. | Fast benchmark/readme repair layers advanced human-facing state faster than agent-facing contracts. | Every release-like change must re-sync AGENTS.md, task_routing_matrix.md, and route surfaces to the current checkpoint before the next experiment. |
 
 ### Failure Response Protocol
 
@@ -445,33 +442,6 @@ latest validation reports
 Synthetic gate tests may begin only after the agent contract, task routing matrix, release validator, README audit, and unit tests all pass.
 
 Non-claim lock: geometric routing improves repository orientation. It is not AI understanding, code correctness, silicon validation, product validation, manufacturing validation, process-node equivalence, or universal Tau Scaling proof.
-
-## Coherence Reflection Layer v0.4.0f
-
-v0.4.0f pauses after the benchmark/chart/mini-README repair sequence and turns the repo's operational history into a forward plan.
-
-Primary reflection surfaces:
-
-```text
-docs/reflection/tau_scaling_reflection_v0_4_0f.md
-reports/reflection/latest_system_reflection.md
-reports/reflection/latest_system_reflection.json
-visuals/reflection/v0_4_0f/
-```
-
-Current reflection finding:
-
-```text
-The repo is clean at the validation layer, but agent-facing contracts can still lag behind the root README after fast benchmark evolution.
-```
-
-New rule:
-
-```text
-Every release-like README or benchmark evolution must check AGENTS.md and rcc/nexus/task_routing_matrix.md for current-version alignment.
-```
-
-Boundary: reflection improves repository coherence and experiment planning only. It is not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.
 
 ## Process Alignment Layer
 
@@ -579,7 +549,6 @@ tau-scaling/
     protocols/
     public_release/
     release_notes/
-    reflection/
     software_architecture/
     theory/
   examples/
@@ -602,7 +571,6 @@ tau-scaling/
     readme/
       backups/
     release/
-    reflection/
     repo_dump/
     runtime/
     status/
@@ -612,7 +580,6 @@ tau-scaling/
     maintenance/
     rcc/
     release/
-    reflection/
     validation/
   src/
     tau_scaling/
@@ -626,7 +593,6 @@ tau-scaling/
       utils/
   tests/
   visuals/
-    reflection/
     rcc_nexus/
     tau_scaling/
 ```
@@ -845,7 +811,6 @@ validation_remains_required
 | v0.4.0c | Benchmark atlas and per-version chart/finding registry. |
 | v0.4.0d | Benchmark mini README AI/RCC warning repair. |
 | v0.4.0e | Exact mini README audit-anchor repair for benchmark docs. |
-| v0.4.0f | Coherence reflection and agent contract re-sync after benchmark atlas sequence. |
 
 ## Next Recommended Version
 
@@ -857,5 +822,4 @@ Recommended goals:
 - Emit threshold curves for LogicFolding margin and gamma_tau_ETP.
 - Add stability bands for A_TSEK and diagnostic average.
 - Add benchmark atlas row and charts for v0.4.1.
-- Add sensitivity-specific mini READMEs and route-map entries.
 - Preserve non-claim locks: synthetic sweeps are local runtime sensitivity diagnostics only.

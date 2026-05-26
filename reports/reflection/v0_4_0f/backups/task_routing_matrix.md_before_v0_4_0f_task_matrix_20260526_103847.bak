@@ -1,6 +1,6 @@
 # Task Routing Matrix
 
-Current contract: **TAU-SCALING-SA v0.4.0f - Coherence Reflection and Agent Contract Re-Sync**
+Current contract: **TAU-SCALING-SA v0.3.3e — Agent Contract Geometry Sync**
 
 ## Geometry Route
 
@@ -19,10 +19,8 @@ intent -> shell -> meridian -> sector -> files -> validation -> evidence -> less
 | Directory structure patch | center | drift | rcc | Full Directory Box, context indexes, affected mini READMEs | README audit + RCC-N + release validator | README + context index diffs |
 | Release / benchmark patch | outer | release | evidence | `releases/`, `docs/benchmarks/`, `reports/benchmarks/`, `reports/release/` | `python scripts/release/validate_release.py` | `reports/release/latest_release_readiness.md` |
 | Synthetic gate test patch | inner | validation | tau | `configs/seeds/tests/`, `src/tau_scaling/gates/`, `tests/` | release validator + synthetic gate report | `reports/gates/latest_synthetic_gate_report.md` |
-| Sensitivity sweep patch | inner | validation | tau | `configs/seeds/sweeps/`, gate formulas, benchmark atlas | release validator + sensitivity sweep report | `reports/sensitivity/latest_sensitivity_sweep.md` |
 | Public claim replay patch | outer | evidence | release | source boundary docs, `configs/seeds/public_claims/` | release validator + claim replay report | `reports/public_claims/latest_claim_replay_report.md` |
 | Agent contract patch | center | agent | rcc | `AGENTS.md`, route map, task matrix, README | README audit + release validator | `reports/agent/latest_agent_contract_sync.md` |
-| Reflection patch | center | drift | documentation | `docs/reflection/`, `reports/reflection/`, README, AGENTS | README audit + release validator | `reports/reflection/latest_system_reflection.md` |
 
 ## Non-Claim Lock
 

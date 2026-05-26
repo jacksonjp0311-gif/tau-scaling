@@ -1,0 +1,21 @@
+{
+  "clean_seal": {
+    "chart_count": 18,
+    "rcc_n_warnings": 0,
+    "readme_audit_warnings": 0,
+    "release_validator_passed": true,
+    "synthetic_gate_passed": true,
+    "synthetic_gate_passed_scenarios": 10,
+    "synthetic_gate_total_scenarios": 10,
+    "unit_tests": "8 OK"
+  },
+  "generated_at": "2026-05-26T14:38:46.270447+00:00",
+  "new_lessons": [
+    "Agent contracts can lag behind README evolution after benchmark and atlas work.",
+    "Every release-like documentation evolution needs a post-release contract sync check.",
+    "Sensitivity sweeps should come after discrete synthetic gate scenarios are sealed."
+  ],
+  "next_target": "TAU-SCALING-SA v0.4.1 - Synthetic Gate Sensitivity Sweep",
+  "non_claim_lock": "Reflection improves repository coherence only; it is not external validation.",
+  "schema": "tau-scaling-system-reflection-v0.4.0f"
+}
