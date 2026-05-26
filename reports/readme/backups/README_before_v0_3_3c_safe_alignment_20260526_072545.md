@@ -10,8 +10,8 @@
 
 Repository: `tau-scaling`  
 Package / CLI: `tau_scaling` / `tau-scaling`  
-Current checkpoint: **TAU-SCALING-SA v0.3.3c — Safe README Process Alignment Repair**  
-Previous seal: **TAU-SCALING-SA v0.3.3a — Main README Release-State Sync**
+Current checkpoint: **TAU-SCALING-SA v0.3.3 — Unified Release Validator**  
+Previous seal: **TAU-SCALING-SA v0.3.2h — README Mojibake Cleanup + Audit Surface Consolidation**
 
 Tau Scaling is a local-first, evidence-gated Python runtime for evaluating tau-scaling claims through structured claim cards, workload declarations, tau vectors, LogicFolding survivability checks, edge-to-surface boundary algebra, energy / thermal / PDN / PVT gates, Monte Carlo checker stress, TSEK classification, evidence packages, and RCC-N / OMN-style repository navigation.
 
@@ -55,8 +55,8 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | TAU-SCALING-SA v0.3.3c |
-| Public README / process alignment | v0.3.3c |
+| Current checkpoint | TAU-SCALING-SA v0.3.3 |
+| Public README / release sync | v0.3.3a |
 | Package version | 0.2.0 |
 | Baseline seed | TSEK-C / A_TSEK 0.0000 |
 | Promotion-path seed | TSEK-B / A_TSEK 1.0000 |
@@ -89,7 +89,6 @@ python scripts/rcc/audit_readme_surface.py
 python scripts/validation/validate_architecture_contracts.py
 python -m unittest discover -s tests
 python scripts/benchmarks/run_tau_scaling_benchmarks.py
-python scripts/release/validate_release.py
 ```
 
 ## Repository Layers
@@ -249,7 +248,7 @@ After editing, run the validation command associated with the changed surface.
 | README / mini README patch | `README.md`, target mini README, route maps | `python scripts/rcc/audit_readme_surface.py` |
 | Architecture docs patch | `docs/software_architecture/`, `docs/architecture/` | `python scripts/validation/validate_architecture_contracts.py` |
 | Directory structure patch | root README directory box, affected mini READMEs, context indexes | RCC-N + README audit + architecture + tests |
-| Release / benchmark patch | `releases/`, `docs/benchmarks/`, `reports/benchmarks/`, `reports/release/` | `python scripts/release/validate_release.py` |
+| Release / benchmark patch | `releases/`, `docs/benchmarks/`, `reports/benchmarks/` | full validation set |
 
 ## README + Mini Repo Audit Map
 
@@ -274,7 +273,7 @@ A patch is incomplete if it changes code, folders, benchmarks, reports, claim se
 | 7 | `rcc/nexus/task_routing_matrix.md` | Human-readable task routing. |
 | 8 | Target folder `README.md` | Local folder role, inputs, outputs, and validation command. |
 | 9 | Sibling mini READMEs | Adjacent surfaces if routing or folder meaning changed. |
-| 10 | Latest reports | `reports/rcc_nexus/`, `reports/architecture/`, `reports/readme/`, `reports/benchmarks/`, and `reports/release/`. |
+| 10 | Latest reports | `reports/rcc_nexus/`, `reports/architecture/`, `reports/readme/`, and `reports/benchmarks/`. |
 
 ### Gap Classes the AI Must Detect
 
@@ -340,7 +339,6 @@ python -m unittest discover -s tests
 python scripts/benchmarks/run_tau_scaling_benchmarks.py
 python -m tau_scaling run-claim --seed configs/seeds/logicfolding_claim_card.json
 python -m tau_scaling run-claim --seed configs/seeds/logicfolding_promotion_path_claim_card.json
-python scripts/release/validate_release.py
 ```
 
 ## AI Failure Learning Ledger
@@ -361,8 +359,6 @@ This section is part of the repository's operating memory. When a patch fails, t
 | L-008 | README audit failed on a visually correct AI Rule heading. | The heading used the wrong dash/encoding variant. | Audit-visible anchors must be written with exact expected Unicode or ASCII tokens. |
 | L-009 | README became mojibake-contaminated after repeated Unicode patching. | Mixed console encodings and repeated copy/paste repair passes corrupted Unicode arrows/dashes/code blocks. | Public README should prefer ASCII-safe syntax except for explicitly audited Unicode anchors. |
 | L-010 | v0.3.3 release validator passed with one non-blocking finding. | Release readiness can be true while warning-level readability/risk findings remain. | Passing release readiness must still be inspected before the next experimental layer. |
-| L-012 | v0.3.3b repair failed when pasted line by line. | PowerShell line wrapping split paths such as `reports\readme` and `scripts\release`. | Large scripts must be run from downloaded `.ps1` files using `powershell -ExecutionPolicy Bypass -File ...`. |
-| L-011 | README release-state drift recurred after v0.3.3. | The release validator was added and pushed before the public README was fully synchronized. | Every release patch must update README checkpoint, metrics, lineage, next target, and process rules before promotion. |
 
 ### Failure Response Protocol
 
@@ -378,39 +374,6 @@ When a failure occurs:
 ### AI Patch Rule
 
 Any AI patch that causes a failure must update this section before the repair is considered complete. Failure logs are repository memory, not blame records.
-
-## Process Alignment Layer
-
-This layer keeps the repository synchronized after every evolution step.
-
-### Alignment Rules
-
-| Rule | Requirement |
-|---|---|
-| Version-state rule | After every commit that changes runtime, reports, validators, or public docs, the main README current checkpoint must be updated. |
-| Release-readiness rule | `python scripts/release/validate_release.py` is the final local gate before commit/push. |
-| Warning-inspection rule | A passing validator with warnings is not ignored; warning findings must be inspected and either repaired or explicitly classified as non-blocking. |
-| Directory-box rule | The Full Directory Box must not contain duplicate top-level or durable child entries. |
-| File-run rule | Large repair scripts must be run with `powershell -File`, not pasted line by line. |
-| Experiment-start rule | No v0.4+ Tau Scaling experiment starts until release readiness, README audit, and unit tests pass. |
-| Boundary rule | Process alignment is repository hygiene. It is not silicon validation, product validation, manufacturing validation, process-node equivalence, or universal-law proof. |
-
-### Pre-Experiment Checklist
-
-```powershell
-python scripts/release/validate_release.py
-python scripts/rcc/audit_readme_surface.py
-python -m unittest discover -s tests
-```
-
-Expected minimum state:
-
-```text
-release_readiness: passed
-step_failures: 0
-README audit: passed
-unit_tests: OK
-```
 
 ## AI Rule — Directory Box and Mini README Synchronization
 
@@ -500,6 +463,7 @@ tau-scaling/
       legacy_root_status/
   scripts/
     benchmarks/
+    release/
     maintenance/
     rcc/
     release/
@@ -637,8 +601,6 @@ validation_remains_required
 | v0.3.2g | Exact Unicode README anchor repair. |
 | v0.3.2h | README mojibake cleanup and audit surface consolidation. |
 | v0.3.3 | Unified release validator and release-readiness reports. |
-| v0.3.3c | Safe README process alignment repair after pasted-script path break. |
-| v0.3.3a | Main README release-state synchronization. |
 
 ## Next Recommended Version
 
