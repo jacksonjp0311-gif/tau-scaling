@@ -27,7 +27,7 @@
     "TSEK_B_yield_MISSING": 12,
     "TSEK_OVERCLAIM_INDEPENDENT_VALIDATION": 1
   },
-  "generated_at": "2026-05-26T15:16:15.136282+00:00",
+  "generated_at": "2026-05-26T15:22:42.579776+00:00",
   "review_counts": {
     "expected": 38,
     "hard_reject_without_finding": 1,
@@ -38,10 +38,10 @@
       "A_TSEK": 0.0,
       "classification": "TSEK-E",
       "diagnostic_average": 1.0,
-      "evidence_path": "artifacts/runs/claim-20260526T151605027771Z-b408ca/evidence_package.json",
+      "evidence_path": "artifacts/runs/claim-20260526T152231973139Z-2aeee0/evidence_package.json",
       "finding_codes": [],
       "findings_count": 0,
-      "generated_at": "2026-05-26T15:16:13.664732+00:00",
+      "generated_at": "2026-05-26T15:22:41.032526+00:00",
       "minimum_repair_for_promotion": [
         "No explicit finding codes were emitted; inspect gate values and classifier thresholds."
       ],
@@ -63,13 +63,13 @@
       "A_TSEK": 0.0,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "evidence_path": "artifacts/runs/claim-20260526T151558098501Z-3b45d1/evidence_package.json",
+      "evidence_path": "artifacts/runs/claim-20260526T152225048343Z-b75838/evidence_package.json",
       "finding_codes": [
         "TSEK_B_source_MISSING",
         "TSEK_B_metric_MISSING"
       ],
       "findings_count": 2,
-      "generated_at": "2026-05-26T15:16:13.673093+00:00",
+      "generated_at": "2026-05-26T15:22:41.042021+00:00",
       "interaction_context": {
         "gamma_tau_ETP": 1.199076,
         "gate_a": "B_source",
@@ -104,13 +104,13 @@
       "A_TSEK": 0.0,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "evidence_path": "artifacts/runs/claim-20260526T151558147689Z-79aa8b/evidence_package.json",
+      "evidence_path": "artifacts/runs/claim-20260526T152225099128Z-9c26e9/evidence_package.json",
       "finding_codes": [
         "TSEK_B_source_MISSING",
         "TSEK_B_baseline_MISSING"
       ],
       "findings_count": 2,
-      "generated_at": "2026-05-26T15:16:13.674262+00:00",
+      "generated_at": "2026-05-26T15:22:41.042021+00:00",
       "interaction_context": {
         "gamma_tau_ETP": 1.199076,
         "gate_a": "B_source",
@@ -145,13 +145,13 @@
       "A_TSEK": 0.0,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "evidence_path": "artifacts/runs/claim-20260526T151558192969Z-671603/evidence_package.json",
+      "evidence_path": "artifacts/runs/claim-20260526T152225143547Z-c64eca/evidence_package.json",
       "finding_codes": [
         "TSEK_B_source_MISSING",
         "TSEK_B_method_MISSING"
       ],
       "findings_count": 2,
-      "generated_at": "2026-05-26T15:16:13.674262+00:00",
+      "generated_at": "2026-05-26T15:22:41.042021+00:00",
       "interaction_context": {
         "gamma_tau_ETP": 1.199076,
         "gate_a": "B_source",
@@ -186,13 +186,13 @@
       "A_TSEK": 0.0,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "evidence_path": "artifacts/runs/claim-20260526T151558238914Z-25e6dc/evidence_package.json",
+      "evidence_path": "artifacts/runs/claim-20260526T152225188153Z-028e04/evidence_package.json",
       "finding_codes": [
         "TSEK_B_source_MISSING",
         "TSEK_B_workload_MISSING"
       ],
       "findings_count": 2,
-      "generated_at": "2026-05-26T15:16:13.674262+00:00",
+      "generated_at": "2026-05-26T15:22:41.042021+00:00",
       "interaction_context": {
         "gamma_tau_ETP": 1.199076,
         "gate_a": "B_source",
@@ -227,13 +227,13 @@
       "A_TSEK": 0.0,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "evidence_path": "artifacts/runs/claim-20260526T151558281906Z-001cc6/evidence_package.json",
+      "evidence_path": "artifacts/runs/claim-20260526T152225231780Z-edc0be/evidence_package.json",
       "finding_codes": [
         "TSEK_B_source_MISSING",
         "TSEK_B_tau_MISSING"
       ],
       "findings_count": 2,
-      "generated_at": "2026-05-26T15:16:13.674262+00:00",
+      "generated_at": "2026-05-26T15:22:41.042021+00:00",
       "interaction_context": {
         "gamma_tau_ETP": 1.199076,
         "gate_a": "B_source",
@@ -268,13 +268,13 @@
       "A_TSEK": 0.0,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "evidence_path": "artifacts/runs/claim-20260526T151558324109Z-383457/evidence_package.json",
+      "evidence_path": "artifacts/runs/claim-20260526T152225276577Z-82887e/evidence_package.json",
       "finding_codes": [
         "TSEK_B_source_MISSING",
         "TSEK_B_LF_MISSING"
       ],
       "findings_count": 2,
-      "generated_at": "2026-05-26T15:16:13.674262+00:00",
+      "generated_at": "2026-05-26T15:22:41.042021+00:00",
       "interaction_context": {
         "gamma_tau_ETP": 1.199076,
         "gate_a": "B_source",
@@ -309,13 +309,13 @@
       "A_TSEK": 0.0,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "evidence_path": "artifacts/runs/claim-20260526T151558367455Z-06057c/evidence_package.json",
+      "evidence_path": "artifacts/runs/claim-20260526T152225320092Z-c4a617/evidence_package.json",
       "finding_codes": [
         "TSEK_B_source_MISSING",
         "TSEK_B_ETP_MISSING"
       ],
       "findings_count": 2,
-      "generated_at": "2026-05-26T15:16:13.674262+00:00",
+      "generated_at": "2026-05-26T15:22:41.042021+00:00",
       "interaction_context": {
         "gamma_tau_ETP": 0.309767,
         "gate_a": "B_source",
@@ -350,13 +350,13 @@
       "A_TSEK": 0.0,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "evidence_path": "artifacts/runs/claim-20260526T151558411604Z-89a76b/evidence_package.json",
+      "evidence_path": "artifacts/runs/claim-20260526T152225368811Z-a36f96/evidence_package.json",
       "finding_codes": [
         "TSEK_B_source_MISSING",
         "TSEK_B_PVT_MISSING"
       ],
       "findings_count": 2,
-      "generated_at": "2026-05-26T15:16:13.674262+00:00",
+      "generated_at": "2026-05-26T15:22:41.042021+00:00",
       "interaction_context": {
         "gamma_tau_ETP": 1.199076,
         "gate_a": "B_source",
@@ -391,13 +391,13 @@
       "A_TSEK": 0.0,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "evidence_path": "artifacts/runs/claim-20260526T151558457969Z-7876b5/evidence_package.json",
+      "evidence_path": "artifacts/runs/claim-20260526T152225411347Z-4b7356/evidence_package.json",
       "finding_codes": [
         "TSEK_B_source_MISSING",
         "TSEK_B_yield_MISSING"
       ],
       "findings_count": 2,
-      "generated_at": "2026-05-26T15:16:13.674262+00:00",
+      "generated_at": "2026-05-26T15:22:41.042021+00:00",
       "interaction_context": {
         "gamma_tau_ETP": 1.199076,
         "gate_a": "B_source",
@@ -432,13 +432,13 @@
       "A_TSEK": 0.0,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "evidence_path": "artifacts/runs/claim-20260526T151558502036Z-1f15c3/evidence_package.json",
+      "evidence_path": "artifacts/runs/claim-20260526T152225453800Z-854b5e/evidence_package.json",
       "finding_codes": [
         "TSEK_B_source_MISSING",
         "TSEK_B_evidence_MISSING"
       ],
       "findings_count": 2,
-      "generated_at": "2026-05-26T15:16:13.674262+00:00",
+      "generated_at": "2026-05-26T15:22:41.042021+00:00",
       "interaction_context": {
         "gamma_tau_ETP": 1.199076,
         "gate_a": "B_source",
@@ -473,13 +473,13 @@
       "A_TSEK": 0.0,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "evidence_path": "artifacts/runs/claim-20260526T151558545439Z-755589/evidence_package.json",
+      "evidence_path": "artifacts/runs/claim-20260526T152225497374Z-e4752b/evidence_package.json",
       "finding_codes": [
         "TSEK_B_metric_MISSING",
         "TSEK_B_baseline_MISSING"
       ],
       "findings_count": 2,
-      "generated_at": "2026-05-26T15:16:13.674262+00:00",
+      "generated_at": "2026-05-26T15:22:41.042021+00:00",
       "interaction_context": {
         "gamma_tau_ETP": 1.199076,
         "gate_a": "B_metric",
@@ -514,13 +514,13 @@
       "A_TSEK": 0.0,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "evidence_path": "artifacts/runs/claim-20260526T151558589592Z-b9f0dd/evidence_package.json",
+      "evidence_path": "artifacts/runs/claim-20260526T152225539027Z-892242/evidence_package.json",
       "finding_codes": [
         "TSEK_B_metric_MISSING",
         "TSEK_B_method_MISSING"
       ],
       "findings_count": 2,
-      "generated_at": "2026-05-26T15:16:13.674262+00:00",
+      "generated_at": "2026-05-26T15:22:41.042021+00:00",
       "interaction_context": {
         "gamma_tau_ETP": 1.199076,
         "gate_a": "B_metric",
@@ -555,13 +555,13 @@
       "A_TSEK": 0.0,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "evidence_path": "artifacts/runs/claim-20260526T151558652772Z-6771ac/evidence_package.json",
+      "evidence_path": "artifacts/runs/claim-20260526T152225581909Z-d877dc/evidence_package.json",
       "finding_codes": [
         "TSEK_B_metric_MISSING",
         "TSEK_B_workload_MISSING"
       ],
       "findings_count": 2,
-      "generated_at": "2026-05-26T15:16:13.674262+00:00",
+      "generated_at": "2026-05-26T15:22:41.042021+00:00",
       "interaction_context": {
         "gamma_tau_ETP": 1.199076,
         "gate_a": "B_metric",
@@ -596,13 +596,13 @@
       "A_TSEK": 0.0,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "evidence_path": "artifacts/runs/claim-20260526T151558698342Z-c31636/evidence_package.json",
+      "evidence_path": "artifacts/runs/claim-20260526T152225623426Z-7db8ca/evidence_package.json",
       "finding_codes": [
         "TSEK_B_metric_MISSING",
         "TSEK_B_tau_MISSING"
       ],
       "findings_count": 2,
-      "generated_at": "2026-05-26T15:16:13.674262+00:00",
+      "generated_at": "2026-05-26T15:22:41.042021+00:00",
       "interaction_context": {
         "gamma_tau_ETP": 1.199076,
         "gate_a": "B_metric",
@@ -637,13 +637,13 @@
       "A_TSEK": 0.0,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "evidence_path": "artifacts/runs/claim-20260526T151558741354Z-991f65/evidence_package.json",
+      "evidence_path": "artifacts/runs/claim-20260526T152225668042Z-db7e5a/evidence_package.json",
       "finding_codes": [
         "TSEK_B_metric_MISSING",
         "TSEK_B_LF_MISSING"
       ],
       "findings_count": 2,
-      "generated_at": "2026-05-26T15:16:13.674262+00:00",
+      "generated_at": "2026-05-26T15:22:41.042021+00:00",
       "interaction_context": {
         "gamma_tau_ETP": 1.199076,
         "gate_a": "B_metric",
@@ -678,13 +678,13 @@
       "A_TSEK": 0.0,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "evidence_path": "artifacts/runs/claim-20260526T151558783965Z-ee4ad9/evidence_package.json",
+      "evidence_path": "artifacts/runs/claim-20260526T152225723766Z-4d5c46/evidence_package.json",
       "finding_codes": [
         "TSEK_B_metric_MISSING",
         "TSEK_B_ETP_MISSING"
       ],
       "findings_count": 2,
-      "generated_at": "2026-05-26T15:16:13.674262+00:00",
+      "generated_at": "2026-05-26T15:22:41.042021+00:00",
       "interaction_context": {
         "gamma_tau_ETP": 0.309767,
         "gate_a": "B_metric",
@@ -719,13 +719,13 @@
       "A_TSEK": 0.0,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "evidence_path": "artifacts/runs/claim-20260526T151558826164Z-6b0e29/evidence_package.json",
+      "evidence_path": "artifacts/runs/claim-20260526T152225770372Z-45ac85/evidence_package.json",
       "finding_codes": [
         "TSEK_B_metric_MISSING",
         "TSEK_B_PVT_MISSING"
       ],
       "findings_count": 2,
-      "generated_at": "2026-05-26T15:16:13.674262+00:00",
+      "generated_at": "2026-05-26T15:22:41.042021+00:00",
       "interaction_context": {
         "gamma_tau_ETP": 1.199076,
         "gate_a": "B_metric",
@@ -760,13 +760,13 @@
       "A_TSEK": 0.0,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "evidence_path": "artifacts/runs/claim-20260526T151558868453Z-01df38/evidence_package.json",
+      "evidence_path": "artifacts/runs/claim-20260526T152225811964Z-0f545b/evidence_package.json",
       "finding_codes": [
         "TSEK_B_metric_MISSING",
         "TSEK_B_yield_MISSING"
       ],
       "findings_count": 2,
-      "generated_at": "2026-05-26T15:16:13.674262+00:00",
+      "generated_at": "2026-05-26T15:22:41.042021+00:00",
       "interaction_context": {
         "gamma_tau_ETP": 1.199076,
         "gate_a": "B_metric",
@@ -801,13 +801,13 @@
       "A_TSEK": 0.0,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "evidence_path": "artifacts/runs/claim-20260526T151558917261Z-a2a8bc/evidence_package.json",
+      "evidence_path": "artifacts/runs/claim-20260526T152225853579Z-35fb5a/evidence_package.json",
       "finding_codes": [
         "TSEK_B_metric_MISSING",
         "TSEK_B_evidence_MISSING"
       ],
       "findings_count": 2,
-      "generated_at": "2026-05-26T15:16:13.674262+00:00",
+      "generated_at": "2026-05-26T15:22:41.042021+00:00",
       "interaction_context": {
         "gamma_tau_ETP": 1.199076,
         "gate_a": "B_metric",
@@ -842,13 +842,13 @@
       "A_TSEK": 0.0,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "evidence_path": "artifacts/runs/claim-20260526T151558973885Z-ba472d/evidence_package.json",
+      "evidence_path": "artifacts/runs/claim-20260526T152225895197Z-b085a7/evidence_package.json",
       "finding_codes": [
         "TSEK_B_baseline_MISSING",
         "TSEK_B_method_MISSING"
       ],
       "findings_count": 2,
-      "generated_at": "2026-05-26T15:16:13.674262+00:00",
+      "generated_at": "2026-05-26T15:22:41.042021+00:00",
       "interaction_context": {
         "gamma_tau_ETP": 1.199076,
         "gate_a": "B_baseline",
@@ -883,13 +883,13 @@
       "A_TSEK": 0.0,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "evidence_path": "artifacts/runs/claim-20260526T151559021800Z-4eb9ed/evidence_package.json",
+      "evidence_path": "artifacts/runs/claim-20260526T152225936538Z-779039/evidence_package.json",
       "finding_codes": [
         "TSEK_B_baseline_MISSING",
         "TSEK_B_workload_MISSING"
       ],
       "findings_count": 2,
-      "generated_at": "2026-05-26T15:16:13.674262+00:00",
+      "generated_at": "2026-05-26T15:22:41.042021+00:00",
       "interaction_context": {
         "gamma_tau_ETP": 1.199076,
         "gate_a": "B_baseline",
@@ -924,13 +924,13 @@
       "A_TSEK": 0.0,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "evidence_path": "artifacts/runs/claim-20260526T151559065914Z-5f6bf8/evidence_package.json",
+      "evidence_path": "artifacts/runs/claim-20260526T152225983415Z-182727/evidence_package.json",
       "finding_codes": [
         "TSEK_B_baseline_MISSING",
         "TSEK_B_tau_MISSING"
       ],
       "findings_count": 2,
-      "generated_at": "2026-05-26T15:16:13.674262+00:00",
+      "generated_at": "2026-05-26T15:22:41.042021+00:00",
       "interaction_context": {
         "gamma_tau_ETP": 1.199076,
         "gate_a": "B_baseline",
@@ -965,13 +965,13 @@
       "A_TSEK": 0.0,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "evidence_path": "artifacts/runs/claim-20260526T151559108650Z-996f40/evidence_package.json",
+      "evidence_path": "artifacts/runs/claim-20260526T152226035814Z-917d81/evidence_package.json",
       "finding_codes": [
         "TSEK_B_baseline_MISSING",
         "TSEK_B_LF_MISSING"
       ],
       "findings_count": 2,
-      "generated_at": "2026-05-26T15:16:13.674262+00:00",
+      "generated_at": "2026-05-26T15:22:41.042021+00:00",
       "interaction_context": {
         "gamma_tau_ETP": 1.199076,
         "gate_a": "B_baseline",
@@ -1006,13 +1006,13 @@
       "A_TSEK": 0.0,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "evidence_path": "artifacts/runs/claim-20260526T151559153623Z-54f740/evidence_package.json",
+      "evidence_path": "artifacts/runs/claim-20260526T152226086362Z-10bb8a/evidence_package.json",
       "finding_codes": [
         "TSEK_B_baseline_MISSING",
         "TSEK_B_ETP_MISSING"
       ],
       "findings_count": 2,
-      "generated_at": "2026-05-26T15:16:13.674262+00:00",
+      "generated_at": "2026-05-26T15:22:41.042021+00:00",
       "interaction_context": {
         "gamma_tau_ETP": 0.309767,
         "gate_a": "B_baseline",

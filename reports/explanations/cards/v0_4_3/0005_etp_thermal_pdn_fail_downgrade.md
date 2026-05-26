@@ -1,6 +1,6 @@
 # Explanation Card — etp_thermal_pdn_fail_downgrade
 
-Generated: `2026-05-26T15:16:13.656544+00:00`
+Generated: `2026-05-26T15:22:41.024325+00:00`
 
 | Field | Value |
 |---|---|
@@ -26,7 +26,7 @@ Downgraded to TSEK-C because one or more required evidence gates are missing whi
 ## Evidence Path
 
 ```text
-artifacts/runs/claim-20260526T151608105903Z-890dbe/evidence_package.json
+artifacts/runs/claim-20260526T152235176662Z-4eca06/evidence_package.json
 ```
 
 ## Boundary

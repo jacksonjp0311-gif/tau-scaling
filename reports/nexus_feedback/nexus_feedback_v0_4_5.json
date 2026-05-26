@@ -5,7 +5,7 @@
     "visuals/nexus_feedback/v0_4_5/nexus_feedback_severity_counts.png",
     "visuals/nexus_feedback/v0_4_5/nexus_priority_stack.png"
   ],
-  "generated_at": "2026-05-26T15:16:17.100232+00:00",
+  "generated_at": "2026-05-26T15:22:46.515887+00:00",
   "health": {
     "checks": {
       "explanation_cards": true,

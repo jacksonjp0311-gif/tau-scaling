@@ -1,6 +1,6 @@
 # Explanation Card — yield_missing_downgrade
 
-Generated: `2026-05-26T15:16:13.656544+00:00`
+Generated: `2026-05-26T15:22:41.024325+00:00`
 
 | Field | Value |
 |---|---|
@@ -26,7 +26,7 @@ Downgraded to TSEK-C because one or more required evidence gates are missing whi
 ## Evidence Path
 
 ```text
-artifacts/runs/claim-20260526T151607925458Z-69a8be/evidence_package.json
+artifacts/runs/claim-20260526T152234976747Z-85e0a5/evidence_package.json
 ```
 
 ## Boundary

@@ -1,6 +1,6 @@
 # Explanation Card — multi_gate_stress_low_disclosure
 
-Generated: `2026-05-26T15:16:13.656544+00:00`
+Generated: `2026-05-26T15:22:41.024325+00:00`
 
 | Field | Value |
 |---|---|
@@ -44,7 +44,7 @@ Rejected or severe downgrade to TSEK-E because classifier support collapsed. A_T
 ## Evidence Path
 
 ```text
-artifacts/runs/claim-20260526T151608294210Z-152d1c/evidence_package.json
+artifacts/runs/claim-20260526T152235392607Z-9273aa/evidence_package.json
 ```
 
 ## Boundary

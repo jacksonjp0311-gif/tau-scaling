@@ -1,6 +1,6 @@
 # Explanation Card — logicfolding_vertical_penalty:vertical_penalty_ps=24.0
 
-Generated: `2026-05-26T15:16:13.664732+00:00`
+Generated: `2026-05-26T15:22:41.032526+00:00`
 
 | Field | Value |
 |---|---|
@@ -26,7 +26,7 @@ Downgraded to TSEK-C because one or more required evidence gates are missing whi
 ## Evidence Path
 
 ```text
-artifacts/runs/claim-20260526T151604004519Z-9fd8dc/evidence_package.json
+artifacts/runs/claim-20260526T152231005220Z-6feb3c/evidence_package.json
 ```
 
 ## Boundary

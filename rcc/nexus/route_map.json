@@ -70,8 +70,28 @@
     ]
   },
   "schema": "rcc-nexus-route-map-v1.7",
-  "updated_at": "2026-05-26T15:15:57.849365+00:00",
+  "updated_at": "2026-05-26T15:22:24.792237+00:00",
   "v0_4_routes": {
+    "feedback_health_ordering_repair": {
+      "evidence": [
+        "reports/nexus_feedback/latest_nexus_feedback.md",
+        "reports/nexus_feedback/v0_4_5a/latest_v0_4_5a_status.md"
+      ],
+      "mutation_lock": "Does not change classifier behavior; repairs feedback ordering only.",
+      "read_first": [
+        "reports/nexus_feedback/latest_nexus_feedback.json",
+        "reports/release/latest_release_readiness.json",
+        "reports/readme/latest_readme_mini_repo_audit.json",
+        "reports/rcc_nexus/latest_rcc_nexus_check.json"
+      ],
+      "validate": [
+        "python scripts/release/validate_release.py",
+        "python scripts/rcc/audit_readme_surface.py",
+        "python scripts/rcc/check_rcc_nexus.py",
+        "python scripts/feedback/run_nexus_feedback.py",
+        "python scripts/release/validate_release.py"
+      ]
+    },
     "gate_interaction_matrix": {
       "evidence": [
         "reports/interactions/latest_gate_interaction_matrix.md",
@@ -210,5 +230,5 @@
     "runtime": "python -m tau_scaling run-claim --seed configs/seeds/logicfolding_claim_card.json",
     "tests": "python -m unittest discover -s tests"
   },
-  "version": "v0.4.5"
+  "version": "v0.4.5a"
 }

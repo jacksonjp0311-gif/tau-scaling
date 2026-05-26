@@ -1,6 +1,6 @@
 # AGENTS.md — Tau Scaling Agent Operating Contract
 
-Current contract: **TAU-SCALING-SA v0.4.5 - Nexus Reflective Feedback Loop**
+Current contract: **TAU-SCALING-SA v0.4.5a - Feedback Health Ordering Repair**
 
 ## Mission
 
@@ -127,3 +127,23 @@ reports/reflection/
 ```
 
 Non-claim lock: reflection improves continuity and routing only. It is not external validation.
+
+
+## Feedback Ordering Rule
+
+Reflective feedback must read fresh validation surfaces.
+
+Required order for feedback-layer patches:
+
+```powershell
+python scripts/release/validate_release.py
+python scripts/rcc/audit_readme_surface.py
+python scripts/rcc/check_rcc_nexus.py
+python scripts/feedback/run_nexus_feedback.py
+python scripts/release/validate_release.py
+python scripts/rcc/audit_readme_surface.py
+python scripts/rcc/check_rcc_nexus.py
+python -m unittest discover -s tests
+```
+
+Non-claim lock: feedback health is repository self-observation, not external validation.

@@ -2,13 +2,13 @@
   "A_TSEK": 0.0,
   "classification": "TSEK-C",
   "diagnostic_average": 0.8182,
-  "evidence_path": "artifacts/runs/claim-20260526T151559285503Z-6a3586/evidence_package.json",
+  "evidence_path": "artifacts/runs/claim-20260526T152226215704Z-c31c60/evidence_package.json",
   "finding_codes": [
     "TSEK_B_baseline_MISSING",
     "TSEK_B_evidence_MISSING"
   ],
   "findings_count": 2,
-  "generated_at": "2026-05-26T15:16:13.674262+00:00",
+  "generated_at": "2026-05-26T15:22:41.042021+00:00",
   "interaction_context": {
     "gamma_tau_ETP": 1.199076,
     "gate_a": "B_baseline",
