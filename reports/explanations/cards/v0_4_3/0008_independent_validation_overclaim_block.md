@@ -1,6 +1,6 @@
 # Explanation Card — independent_validation_overclaim_block
 
-Generated: `2026-05-26T15:06:53.036502+00:00`
+Generated: `2026-05-26T15:16:13.656544+00:00`
 
 | Field | Value |
 |---|---|
@@ -26,7 +26,7 @@ Rejected to TSEK-E because an independent-validation claim was made without corr
 ## Evidence Path
 
 ```text
-artifacts/runs/claim-20260526T150647551625Z-44caa3/evidence_package.json
+artifacts/runs/claim-20260526T151608243330Z-5b48c9/evidence_package.json
 ```
 
 ## Boundary

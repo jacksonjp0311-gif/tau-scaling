@@ -1,0 +1,149 @@
+{
+  "boundary": "Nexus feedback is repository self-observation and improvement prioritization only. It does not mutate classifier behavior and does not validate silicon, products, manufacturing, process nodes, benchmark superiority, AI understanding, or universal Tau Scaling law.",
+  "chart_paths": [
+    "visuals/nexus_feedback/v0_4_5/nexus_validation_health.png",
+    "visuals/nexus_feedback/v0_4_5/nexus_feedback_severity_counts.png",
+    "visuals/nexus_feedback/v0_4_5/nexus_priority_stack.png"
+  ],
+  "generated_at": "2026-05-26T15:16:17.100232+00:00",
+  "health": {
+    "checks": {
+      "explanation_cards": true,
+      "gate_interactions": true,
+      "policy_review": true,
+      "rcc_nexus": true,
+      "readme_audit": true,
+      "release_readiness": false,
+      "sensitivity_sweep": false,
+      "synthetic_suite": true
+    },
+    "passed": false,
+    "score": 0.75
+  },
+  "inputs": {
+    "gate_interaction_matrix": "reports/interactions/latest_gate_interaction_matrix.json",
+    "pair_policy_review": "reports/policy/latest_pair_policy_review.json",
+    "rcc_nexus": "reports/rcc_nexus/latest_rcc_nexus_check.json",
+    "readme_audit": "reports/readme/latest_readme_mini_repo_audit.json",
+    "release_readiness": "reports/release/latest_release_readiness.json",
+    "sensitivity_sweep": "reports/sensitivity/latest_sensitivity_sweep.json",
+    "synthetic_gate_suite": "reports/benchmarks/latest_synthetic_gate_suite.json",
+    "threshold_explanations": "reports/explanations/latest_threshold_explanation_cards.json"
+  },
+  "priorities": [
+    {
+      "id": "NF-001",
+      "rank": 1,
+      "recommendation": "Run a dry-run simulator before enforcing pair-policy changes.",
+      "severity": "high",
+      "signal": "pair_policy_escalation_pressure",
+      "surface": "pair_policy",
+      "target_next": "TAU-SCALING-SA v0.4.6 - Pair Policy Dry-Run Simulator"
+    },
+    {
+      "id": "NF-002",
+      "rank": 2,
+      "recommendation": "Add explicit finding provenance for any TSEK-E collapse path that currently emits no finding code.",
+      "severity": "medium",
+      "signal": "hard_reject_without_finding",
+      "surface": "explanations",
+      "target_next": "Diagnostic finding provenance repair"
+    },
+    {
+      "id": "NF-003",
+      "rank": 3,
+      "recommendation": "Generalize the AGENTS experiment-start rule so future layers do not carry stale version-specific language.",
+      "severity": "low",
+      "signal": "agent_contract_current",
+      "surface": "agent_contract",
+      "target_next": "Agent contract feedback sync"
+    },
+    {
+      "id": "NF-004",
+      "rank": 4,
+      "recommendation": "Keep a route-map entry for Nexus feedback so agents know where reflective reports live.",
+      "severity": "low",
+      "signal": "feedback_route_present",
+      "surface": "rcc_nexus",
+      "target_next": "Route-map feedback continuity"
+    },
+    {
+      "id": "NF-005",
+      "rank": 5,
+      "recommendation": "Expose Nexus feedback as a first-class README command.",
+      "severity": "low",
+      "signal": "feedback_command_present",
+      "surface": "readme",
+      "target_next": "README feedback command sync"
+    }
+  ],
+  "schema": "tau-scaling-nexus-reflective-feedback-v0.4.5",
+  "signals": [
+    {
+      "evidence": {
+        "escalation_ratio": 0.1636,
+        "pair_count": 55,
+        "policy_counts": {
+          "HUMAN_REVIEW": 3,
+          "TSEK-C_RETAIN": 46,
+          "TSEK-D_CANDIDATE": 6
+        }
+      },
+      "id": "NF-001",
+      "recommendation": "Run a dry-run simulator before enforcing pair-policy changes.",
+      "severity": "high",
+      "signal": "pair_policy_escalation_pressure",
+      "surface": "pair_policy",
+      "target_next": "TAU-SCALING-SA v0.4.6 - Pair Policy Dry-Run Simulator"
+    },
+    {
+      "evidence": {
+        "count": 1,
+        "review_counts": {
+          "expected": 38,
+          "hard_reject_without_finding": 1,
+          "review_pair_policy": 55
+        }
+      },
+      "id": "NF-002",
+      "recommendation": "Add explicit finding provenance for any TSEK-E collapse path that currently emits no finding code.",
+      "severity": "medium",
+      "signal": "hard_reject_without_finding",
+      "surface": "explanations",
+      "target_next": "Diagnostic finding provenance repair"
+    },
+    {
+      "evidence": {
+        "found_v0_4_1_specific_rule": false
+      },
+      "id": "NF-003",
+      "recommendation": "Generalize the AGENTS experiment-start rule so future layers do not carry stale version-specific language.",
+      "severity": "low",
+      "signal": "agent_contract_current",
+      "surface": "agent_contract",
+      "target_next": "Agent contract feedback sync"
+    },
+    {
+      "evidence": {
+        "route_exists": true
+      },
+      "id": "NF-004",
+      "recommendation": "Keep a route-map entry for Nexus feedback so agents know where reflective reports live.",
+      "severity": "low",
+      "signal": "feedback_route_present",
+      "surface": "rcc_nexus",
+      "target_next": "Route-map feedback continuity"
+    },
+    {
+      "evidence": {
+        "command_present": true
+      },
+      "id": "NF-005",
+      "recommendation": "Expose Nexus feedback as a first-class README command.",
+      "severity": "low",
+      "signal": "feedback_command_present",
+      "surface": "readme",
+      "target_next": "README feedback command sync"
+    }
+  ]
+}

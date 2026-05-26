@@ -1,6 +1,6 @@
 # Explanation Card — pvt_closure_fail_downgrade
 
-Generated: `2026-05-26T15:06:53.036502+00:00`
+Generated: `2026-05-26T15:16:13.656544+00:00`
 
 | Field | Value |
 |---|---|
@@ -26,7 +26,7 @@ Downgraded to TSEK-C because one or more required evidence gates are missing whi
 ## Evidence Path
 
 ```text
-artifacts/runs/claim-20260526T150647462072Z-d8eb6c/evidence_package.json
+artifacts/runs/claim-20260526T151608150059Z-983aed/evidence_package.json
 ```
 
 ## Boundary

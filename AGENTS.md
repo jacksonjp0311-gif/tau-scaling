@@ -1,6 +1,6 @@
 # AGENTS.md — Tau Scaling Agent Operating Contract
 
-Current contract: **TAU-SCALING-SA v0.4.4 - Pair Policy Review Gate**
+Current contract: **TAU-SCALING-SA v0.4.5 - Nexus Reflective Feedback Loop**
 
 ## Mission
 
@@ -51,6 +51,7 @@ python scripts/benchmarks/run_sensitivity_sweep.py
 python scripts/benchmarks/run_gate_interaction_matrix.py
 python scripts/benchmarks/generate_threshold_explanation_cards.py
 python scripts/benchmarks/run_pair_policy_review.py
+python scripts/feedback/run_nexus_feedback.py
 python -m unittest discover -s tests
 ```
 
@@ -69,12 +70,13 @@ python -m unittest discover -s tests
 | Gate interaction patch | `configs/seeds/interactions/`, `reports/interactions/`, `visuals/interactions/` | release validator + interaction matrix report + benchmark atlas update |
 | Explanation card patch | `reports/explanations/`, `visuals/explanations/`, classifier reports | release validator + explanation card report |
 | Pair policy patch | `reports/policy/`, `visuals/policy/`, explanation cards | release validator + policy review report; no classifier mutation |
+| Nexus feedback patch | `scripts/feedback/`, `reports/nexus_feedback/`, `visuals/nexus_feedback/` | release validator + Nexus feedback report; no classifier mutation |
 | Public claim replay patch | source boundary docs, `configs/seeds/public_claims/`, claim reports | release validator + claim replay report |
 | Directory structure patch | Full Directory Box, affected mini READMEs, context indexes | README audit + RCC-N + release validator |
 
-## v0.4.1 Sensitivity-Sweep Start Rule
+## v0.4+ Experiment Start Rule
 
-Do not begin or promote v0.4.1 Synthetic Gate Sensitivity Sweep work unless:
+Do not begin or promote any v0.4+ experimental layer unless:
 
 ```text
 release validator: passed

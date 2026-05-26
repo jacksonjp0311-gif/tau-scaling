@@ -70,7 +70,7 @@
     ]
   },
   "schema": "rcc-nexus-route-map-v1.7",
-  "updated_at": "2026-05-26T15:06:37.139557+00:00",
+  "updated_at": "2026-05-26T15:15:57.849365+00:00",
   "v0_4_routes": {
     "gate_interaction_matrix": {
       "evidence": [
@@ -85,6 +85,27 @@
       ],
       "validate": [
         "python scripts/benchmarks/run_gate_interaction_matrix.py",
+        "python scripts/release/validate_release.py"
+      ]
+    },
+    "nexus_feedback": {
+      "evidence": [
+        "reports/nexus_feedback/latest_nexus_feedback.md",
+        "visuals/nexus_feedback/v0_4_5/"
+      ],
+      "mutation_lock": "Does not change classifier behavior; emits improvement priorities only.",
+      "read_first": [
+        "reports/release/latest_release_readiness.json",
+        "reports/readme/latest_readme_mini_repo_audit.json",
+        "reports/rcc_nexus/latest_rcc_nexus_check.json",
+        "reports/benchmarks/latest_synthetic_gate_suite.json",
+        "reports/sensitivity/latest_sensitivity_sweep.json",
+        "reports/interactions/latest_gate_interaction_matrix.json",
+        "reports/explanations/latest_threshold_explanation_cards.json",
+        "reports/policy/latest_pair_policy_review.json"
+      ],
+      "validate": [
+        "python scripts/feedback/run_nexus_feedback.py",
         "python scripts/release/validate_release.py"
       ]
     },
@@ -189,5 +210,5 @@
     "runtime": "python -m tau_scaling run-claim --seed configs/seeds/logicfolding_claim_card.json",
     "tests": "python -m unittest discover -s tests"
   },
-  "version": "v0.4.4"
+  "version": "v0.4.5"
 }

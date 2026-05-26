@@ -2,7 +2,7 @@
   "A_TSEK": 0.0,
   "classification": "TSEK-E",
   "diagnostic_average": 0.0909,
-  "evidence_path": "artifacts/runs/claim-20260526T150647595446Z-4062cb/evidence_package.json",
+  "evidence_path": "artifacts/runs/claim-20260526T151608294210Z-152d1c/evidence_package.json",
   "finding_codes": [
     "TSEK_B_metric_MISSING",
     "TSEK_B_baseline_MISSING",
@@ -16,7 +16,7 @@
     "TSEK_B_evidence_MISSING"
   ],
   "findings_count": 10,
-  "generated_at": "2026-05-26T15:06:53.036502+00:00",
+  "generated_at": "2026-05-26T15:16:13.656544+00:00",
   "minimum_repair_for_promotion": [
     "Add a measurable claim text/type and metric definition.",
     "Add explicit baseline manifest and baseline tau vector.",

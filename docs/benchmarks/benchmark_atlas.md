@@ -21,6 +21,7 @@ This atlas gives humans and AI agents one stable place to understand benchmark e
 | v0.4.2 | Gate interaction matrix | `python scripts/benchmarks/run_gate_interaction_matrix.py` | Pairwise gate-failure interaction matrix across hard gates | `reports/interactions/latest_gate_interaction_matrix.md` | `visuals/interactions/v0_4_2/` |
 | v0.4.3 | Threshold explanation cards | `python scripts/benchmarks/generate_threshold_explanation_cards.py` | Class explanations, repair hints, and review labels across synthetic/sensitivity/interaction results | `reports/explanations/latest_threshold_explanation_cards.md` | `visuals/explanations/v0_4_3/` |
 | v0.4.4 | Pair policy review gate | `python scripts/benchmarks/run_pair_policy_review.py` | Non-enforcing pair-policy table based on explanation-card review labels | `reports/policy/latest_pair_policy_review.md` | `visuals/policy/v0_4_4/` |
+| v0.4.5 | Nexus reflective feedback | `python scripts/feedback/run_nexus_feedback.py` | Synthesizes latest reports into ranked improvement signals | `reports/nexus_feedback/latest_nexus_feedback.md` | `visuals/nexus_feedback/v0_4_5/` |
 
 ## Current Synthetic Suite Summary
 

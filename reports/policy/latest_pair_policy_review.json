@@ -18,7 +18,7 @@
     "B_workload": 1,
     "B_yield": 1
   },
-  "generated_at": "2026-05-26T15:06:56.339146+00:00",
+  "generated_at": "2026-05-26T15:16:16.757519+00:00",
   "inputs": {
     "explanation_card_count": 94,
     "explanation_cards": "reports/explanations/latest_threshold_explanation_cards.json",

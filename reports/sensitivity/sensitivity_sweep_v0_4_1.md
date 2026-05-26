@@ -1,11 +1,11 @@
 # Tau Scaling v0.4.1 Synthetic Gate Sensitivity Sweep
 
-Generated: `2026-05-26T15:06:46.901673+00:00`
+Generated: `2026-05-26T15:16:07.627088+00:00`
 
 ## Result
 
 - Total sweep points: `29`
-- Mean elapsed ms: `36.1025`
+- Mean elapsed ms: `38.4834`
 - Chart count: `10`
 
 ## Sweep Summary

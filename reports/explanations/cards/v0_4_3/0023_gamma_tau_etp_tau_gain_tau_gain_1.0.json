@@ -2,12 +2,12 @@
   "A_TSEK": 0.0,
   "classification": "TSEK-C",
   "diagnostic_average": 0.9091,
-  "evidence_path": "artifacts/runs/claim-20260526T150643669045Z-f44517/evidence_package.json",
+  "evidence_path": "artifacts/runs/claim-20260526T151604326976Z-ca57db/evidence_package.json",
   "finding_codes": [
     "TSEK_B_ETP_MISSING"
   ],
   "findings_count": 1,
-  "generated_at": "2026-05-26T15:06:53.044626+00:00",
+  "generated_at": "2026-05-26T15:16:13.664732+00:00",
   "minimum_repair_for_promotion": [
     "Improve energy/thermal/PDN-normalized tau gain above threshold."
   ],

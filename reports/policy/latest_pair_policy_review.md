@@ -1,6 +1,6 @@
 # Tau Scaling v0.4.4 Pair Policy Review Gate
 
-Generated: `2026-05-26T15:06:56.339146+00:00`
+Generated: `2026-05-26T15:16:16.757519+00:00`
 
 ## Result
 

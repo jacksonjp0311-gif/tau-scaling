@@ -10,8 +10,8 @@
 
 Repository: `tau-scaling`  
 Package / CLI: `tau_scaling` / `tau-scaling`  
-Current checkpoint: **TAU-SCALING-SA v0.4.4 - Pair Policy Review Gate**  
-Previous seal: **TAU-SCALING-SA v0.4.3 - Threshold Explanation Cards**
+Current checkpoint: **TAU-SCALING-SA v0.4.5 - Nexus Reflective Feedback Loop**  
+Previous seal: **TAU-SCALING-SA v0.4.4 - Pair Policy Review Gate**
 
 Tau Scaling is a local-first, evidence-gated Python runtime for evaluating tau-scaling claims through structured claim cards, workload declarations, tau vectors, LogicFolding survivability checks, edge-to-surface boundary algebra, energy / thermal / PDN / PVT gates, Monte Carlo checker stress, TSEK classification, evidence packages, and RCC-N / OMN-style repository navigation.
 
@@ -55,7 +55,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | TAU-SCALING-SA v0.4.4 |
+| Current checkpoint | TAU-SCALING-SA v0.4.5 |
 | Synthetic gate suite | v0.4.0 / benchmark + finding charts |
 | Package version | 0.2.0 |
 | Baseline seed | TSEK-C / A_TSEK 0.0000 |
@@ -86,6 +86,8 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 | Explanation charts | `visuals/explanations/v0_4_3/` |
 | Pair policy review | `reports/policy/latest_pair_policy_review.md` |
 | Pair policy charts | `visuals/policy/v0_4_4/` |
+| Nexus feedback report | `reports/nexus_feedback/latest_nexus_feedback.md` |
+| Nexus feedback charts | `visuals/nexus_feedback/v0_4_5/` |
 | Agent contract version sync | v0.4.0f / updated from v0.3.3e |
 | Release readiness report | `reports/release/latest_release_readiness.md` |
 | Collision-proof run identity | passed |
@@ -115,6 +117,7 @@ python scripts/benchmarks/run_sensitivity_sweep.py
 python scripts/benchmarks/run_gate_interaction_matrix.py
 python scripts/benchmarks/generate_threshold_explanation_cards.py
 python scripts/benchmarks/run_pair_policy_review.py
+python scripts/feedback/run_nexus_feedback.py
 python scripts/release/validate_release.py
 ```
 
@@ -402,6 +405,7 @@ This section is part of the repository's operating memory. When a patch fails, t
 | L-020 | After v0.4.0e, README checkpoint advanced while AGENTS.md and task_routing_matrix.md still identified v0.3.3e. | Fast benchmark/readme repair layers advanced human-facing state faster than agent-facing contracts. | Every release-like change must re-sync AGENTS.md, task_routing_matrix.md, and route surfaces to the current checkpoint before the next experiment. |
 | L-021 | v0.4.2 showed every paired hard-gate failure classified as TSEK-C. | The current classifier treats paired missing gates as controlled downgrade unless overclaim or severe collapse forces TSEK-E. | Do not harden classifier thresholds until explanation cards classify whether pair-policy behavior is expected, suspicious, or promotion-repairable. |
 | L-022 | v0.4.3 produced 55 `review_pair_policy` cards and 1 `hard_reject_without_finding` card. | Explanation cards successfully exposed classifier-policy questions without mutating classifier behavior. | Pair-policy changes must pass through a non-enforcing policy review layer and then a dry-run simulator before classifier enforcement. |
+| L-023 | v0.4.4 created policy candidates but the repo still needed a way to turn outputs into improvement priorities. | Validation, benchmark, explanation, and policy reports were readable, but not yet synthesized into a feedback surface for the next agent. | Every mature runtime should emit a Nexus feedback report that ranks improvement targets without mutating classifier behavior. |
 
 ### Failure Response Protocol
 
@@ -582,6 +586,7 @@ tau-scaling/
   configs/
     seeds/
   docs/
+    feedback/
     architecture/
     architecture_changes/
     benchmarks/
@@ -608,6 +613,7 @@ tau-scaling/
     nexus/
   releases/
   reports/
+    nexus_feedback/
     policy/
     explanations/
     interactions/
@@ -625,6 +631,7 @@ tau-scaling/
     status/
       legacy_root_status/
   scripts/
+    feedback/
     benchmarks/
     maintenance/
     rcc/
@@ -643,6 +650,7 @@ tau-scaling/
       utils/
   tests/
   visuals/
+    nexus_feedback/
     policy/
     explanations/
     interactions/
@@ -725,6 +733,50 @@ per-finding scenario presence
 ### Boundary
 
 Synthetic gate charts show local runtime behavior only. They are not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.
+
+## Nexus Reflective Feedback Loop v0.4.5
+
+v0.4.5 lets the repository read its own latest outputs and emit improvement priorities.
+
+Primary command:
+
+```powershell
+python scripts/feedback/run_nexus_feedback.py
+```
+
+Primary outputs:
+
+```text
+reports/nexus_feedback/latest_nexus_feedback.json
+reports/nexus_feedback/latest_nexus_feedback.md
+visuals/nexus_feedback/v0_4_5/
+```
+
+The feedback loop reads:
+
+```text
+release readiness
+README audit
+RCC-N checker
+synthetic gate suite
+sensitivity sweep
+gate interaction matrix
+threshold explanation cards
+pair policy review
+```
+
+The purpose is to answer:
+
+```text
+What is healthy?
+What is producing policy pressure?
+What should be improved next?
+What should not be mutated yet?
+```
+
+This creates a reflective Nexus surface: the system does not merely generate reports; it turns its reports into ranked improvement signals.
+
+Boundary: Nexus feedback is repository self-observation and improvement prioritization only. It does not mutate classifier behavior and does not validate silicon, products, manufacturing, process nodes, benchmark superiority, AI understanding, or universal Tau Scaling law.
 
 ## Pair Policy Review Gate v0.4.4
 
@@ -1006,10 +1058,11 @@ validation_remains_required
 | v0.4.2 | Gate interaction matrix and paired gate-failure heatmaps. |
 | v0.4.3 | Threshold explanation cards and promotion-repair hints. |
 | v0.4.4 | Pair policy review gate for non-enforcing classifier-governance candidates. |
+| v0.4.5 | Nexus reflective feedback loop for ranked improvement signals. |
 
 ## Next Recommended Version
 
-**TAU-SCALING-SA v0.4.5 - Pair Policy Dry-Run Simulator**
+**TAU-SCALING-SA v0.4.6 - Pair Policy Dry-Run Simulator**
 
 Recommended goals:
 
