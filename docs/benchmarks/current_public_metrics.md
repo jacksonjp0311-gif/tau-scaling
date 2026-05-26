@@ -1,18 +1,19 @@
 # Current Public Metrics — Tau Scaling
 
-Generated: 2026-05-26T05:35:31-04:00
+Generated: 2026-05-26T09:51:48Z
 
-| Surface | Result |
-|---|---:|
-| Current checkpoint | TAU-SCALING-SA v0.3 |
-| Public README repair | v0.3.1 |
+| Surface | Current result |
+|---|---|
+| Current checkpoint | TAU-SCALING-SA v0.3.2 |
 | Package version | 0.2.0 |
-| Baseline seed | TSEK-C / A_TSEK 0.0000 |
-| Promotion-path seed | TSEK-B / A_TSEK 1.0000 |
-| RCC-N checker | expected passing |
-| Architecture validator | expected passing |
-| Unit tests | 6 OK |
-| Mini README coverage | 1.0 |
-| Major dirs checked | 25 |
+| RCC-N checker | passing |
+| Architecture validator | passing |
+| Unit tests | 8+ expected after run-identity tests |
+| Baseline expected class | TSEK-C |
+| Promotion-path expected class | TSEK-B |
+| Run identity | collision-proof microsecond + token IDs |
+| Benchmark harness | scripts/benchmarks/run_tau_scaling_benchmarks.py |
+| Benchmark output | reports/benchmarks/latest_benchmark_summary.md |
+| Claim status | local runtime evidence only |
 
-Boundary: these metrics describe local runtime, evidence, and repository-navigation behavior. They do not independently validate silicon, product metrics, manufacturing capability, benchmark superiority, process-node equivalence, or universal physical law.
+Boundary: public metrics summarize local repository and runtime diagnostics only. They do not validate silicon, product metrics, manufacturing capability, benchmark superiority, process-node equivalence, or universal physical law.

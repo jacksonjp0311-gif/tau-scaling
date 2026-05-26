@@ -403,3 +403,21 @@ Recommended goals:
 - Preserve separate artifacts for rapid sequential baseline / promotion runs.
 - Add a regression test for run-ID uniqueness.
 - Update release metrics without overwriting current evidence surfaces.
+## v0.3.2 Benchmark Learning Layer
+
+v0.3.2 adds collision-proof run identity and a local benchmark loop.
+
+Primary benchmark command:
+
+`powershell
+python scripts/benchmarks/run_tau_scaling_benchmarks.py
+`
+
+Benchmark outputs:
+
+`	ext
+reports/benchmarks/latest_benchmark_summary.json
+reports/benchmarks/latest_benchmark_summary.md
+`
+
+Boundary: benchmark stability is local-runtime evidence only. It is not silicon validation, product validation, manufacturing validation, process-node equivalence, or universal-law proof.

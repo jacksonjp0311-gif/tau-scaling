@@ -29,8 +29,7 @@ class TauScalingRuntime:
         self.repo_root = Path(repo_root).resolve()
 
     def run(self, seed: dict[str, Any]) -> TauScalingRunResult:
-        runs_base = self.repo_root / "artifacts" / "runs"
-        run_id, run_dir = ensure_unique_run_dir(runs_base, generate_run_id("claim"))
+        runs_base = self.repo_root / "artifacts" / "runs"`n        run_id, run_dir = ensure_unique_run_dir(runs_base, generate_run_id("claim"))
 
         logicfolding = seed.get("logicfolding_survivability", {})
         normalization = seed.get("energy_thermal_pdn_pvt", {})
