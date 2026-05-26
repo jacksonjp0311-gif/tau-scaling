@@ -1,0 +1,141 @@
+{
+  "baseline_manifest": {
+    "declared": true,
+    "name": "planar-baseline"
+  },
+  "candidate_manifest": {
+    "declared": true,
+    "name": "folded-candidate"
+  },
+  "claim_card": {
+    "claim_id": "interaction-B-metric-B-yield",
+    "claim_text": "Gate interaction matrix scenario: B_metric + B_yield.",
+    "claim_type": "",
+    "independent_validation_claimed": false,
+    "source": "codex",
+    "tau_layer": "circuit"
+  },
+  "edge_surface_boundary": {
+    "N": 16,
+    "compute_coeff": 1.0,
+    "edge_coeff": 1.0,
+    "surface_coeff": 1.0
+  },
+  "energy_thermal_pdn_pvt": {
+    "energy_ratio_new_over_old": 0.95,
+    "pdn_droop_ratio_new_over_old": 1.02,
+    "tau_gain": 1.22,
+    "thermal_ratio_new_over_old": 1.05
+  },
+  "evidence_disclosure": {
+    "evidence_package_complete": true,
+    "independent_validation_present": false
+  },
+  "logicfolding_survivability": {
+    "closure_penalty_ps": 4.0,
+    "expected_vertical_penalty_ps": 8.0,
+    "expected_wire_savings_ps": 42.0,
+    "rho_critical_paths": 0.75,
+    "routing_penalty_ps": 5.0,
+    "sync_penalty_ps": 3.0,
+    "variation_penalty_ps": 2.0
+  },
+  "metadata": {
+    "interaction_gates": [
+      "B_metric",
+      "B_yield"
+    ],
+    "non_claim_lock": "Synthetic interaction scenario; local runtime diagnostic only."
+  },
+  "monte_carlo_stress": {
+    "closure_penalty_ps": [
+      2.0,
+      6.0
+    ],
+    "energy_ratio": [
+      0.88,
+      1.05
+    ],
+    "pdn_ratio": [
+      0.95,
+      1.1
+    ],
+    "post_route_closure_probability": 0.9,
+    "rho_critical_paths": [
+      0.65,
+      0.82
+    ],
+    "routing_penalty_ps": [
+      3.0,
+      7.0
+    ],
+    "runs": 1000,
+    "seed": 777,
+    "sync_penalty_ps": [
+      1.0,
+      4.0
+    ],
+    "tau_gain": [
+      1.1,
+      1.4
+    ],
+    "thermal_ratio": [
+      0.95,
+      1.12
+    ],
+    "variation_penalty_ps": [
+      1.0,
+      4.0
+    ],
+    "vertical_penalty_ps": [
+      6.0,
+      10.0
+    ],
+    "wire_savings_ps": [
+      32.0,
+      48.0
+    ]
+  },
+  "non_claim_locks": {
+    "density_equivalence_is_not_node_equivalence": true,
+    "local_path_win_is_not_full_chip_win": true,
+    "roadmap_coherence_is_not_validation": true,
+    "simulation_is_not_silicon_validation": true
+  },
+  "overclaim": 0.0,
+  "pvt_closure": {
+    "pdn_reported": true,
+    "post_route_closure_passed": true,
+    "pvt_variation_passed": true
+  },
+  "source_boundary": {
+    "codex_mapping_not_physical_equivalence": true,
+    "primary_source": "Tingbo He, A Time Scaling Theory for Multi-Layer Electronic Systems",
+    "reported_claims_separated_from_validation": true,
+    "source_declared": true
+  },
+  "tau_vector": {
+    "baseline": {
+      "chip": 150.0,
+      "circuit": 100.0,
+      "workload": 250.0
+    },
+    "candidate": {
+      "chip": 132.0,
+      "circuit": 82.0,
+      "workload": 220.0
+    },
+    "dominant_tau_improved": true,
+    "tau_units": "ps",
+    "weights_declared": true
+  },
+  "workload_profile": {
+    "dominant_tau_term": "circuit",
+    "workload_class": "mobile_soc",
+    "workload_declared": true
+  },
+  "yield_method_disclosure": {
+    "method_disclosed": true,
+    "yield_reported": false
+  }
+}

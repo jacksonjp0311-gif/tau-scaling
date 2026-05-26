@@ -18,6 +18,7 @@ This atlas gives humans and AI agents one stable place to understand benchmark e
 | v0.4.0b | Expectation calibration | `python scripts/benchmarks/run_synthetic_gate_suite.py` | 10/10 scenarios passed; suite complete true | `reports/benchmarks/latest_synthetic_gate_suite.md` | 18 charts |
 | v0.4.0c | Benchmark atlas | `python scripts/release/validate_release.py` | Adds benchmark/finding navigation and per-version chart registry | `docs/benchmarks/benchmark_atlas.md` | indexed charts |
 | v0.4.1 | Sensitivity sweep | `python scripts/benchmarks/run_sensitivity_sweep.py` | Threshold curves for LogicFolding, gamma_tau_ETP, and overclaim pressure | `reports/sensitivity/latest_sensitivity_sweep.md` | `visuals/sensitivity/v0_4_1/` |
+| v0.4.2 | Gate interaction matrix | `python scripts/benchmarks/run_gate_interaction_matrix.py` | Pairwise gate-failure interaction matrix across hard gates | `reports/interactions/latest_gate_interaction_matrix.md` | `visuals/interactions/v0_4_2/` |
 
 ## Current Synthetic Suite Summary
 

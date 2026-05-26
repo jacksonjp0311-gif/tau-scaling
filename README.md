@@ -10,8 +10,8 @@
 
 Repository: `tau-scaling`  
 Package / CLI: `tau_scaling` / `tau-scaling`  
-Current checkpoint: **TAU-SCALING-SA v0.4.1 - Synthetic Gate Sensitivity Sweep**  
-Previous seal: **TAU-SCALING-SA v0.4.0f - Coherence Reflection and Agent Contract Re-Sync**
+Current checkpoint: **TAU-SCALING-SA v0.4.2 - Gate Interaction Matrix**  
+Previous seal: **TAU-SCALING-SA v0.4.1 - Synthetic Gate Sensitivity Sweep**
 
 Tau Scaling is a local-first, evidence-gated Python runtime for evaluating tau-scaling claims through structured claim cards, workload declarations, tau vectors, LogicFolding survivability checks, edge-to-surface boundary algebra, energy / thermal / PDN / PVT gates, Monte Carlo checker stress, TSEK classification, evidence packages, and RCC-N / OMN-style repository navigation.
 
@@ -55,7 +55,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | TAU-SCALING-SA v0.4.1 |
+| Current checkpoint | TAU-SCALING-SA v0.4.2 |
 | Synthetic gate suite | v0.4.0 / benchmark + finding charts |
 | Package version | 0.2.0 |
 | Baseline seed | TSEK-C / A_TSEK 0.0000 |
@@ -80,6 +80,8 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 | Reflection layer | `docs/reflection/tau_scaling_reflection_v0_4_0f.md` |
 | Sensitivity sweep | `reports/sensitivity/latest_sensitivity_sweep.md` |
 | Sensitivity charts | `visuals/sensitivity/v0_4_1/` |
+| Gate interaction matrix | `reports/interactions/latest_gate_interaction_matrix.md` |
+| Interaction charts | `visuals/interactions/v0_4_2/` |
 | Agent contract version sync | v0.4.0f / updated from v0.3.3e |
 | Release readiness report | `reports/release/latest_release_readiness.md` |
 | Collision-proof run identity | passed |
@@ -106,6 +108,7 @@ python -m unittest discover -s tests
 python scripts/benchmarks/run_tau_scaling_benchmarks.py
 python scripts/benchmarks/run_synthetic_gate_suite.py
 python scripts/benchmarks/run_sensitivity_sweep.py
+python scripts/benchmarks/run_gate_interaction_matrix.py
 python scripts/release/validate_release.py
 ```
 
@@ -597,6 +600,7 @@ tau-scaling/
     nexus/
   releases/
   reports/
+    interactions/
     architecture/
     benchmarks/
     cleanup/
@@ -629,6 +633,7 @@ tau-scaling/
       utils/
   tests/
   visuals/
+    interactions/
     reflection/
     rcc_nexus/
     tau_scaling/
@@ -708,6 +713,36 @@ per-finding scenario presence
 ### Boundary
 
 Synthetic gate charts show local runtime behavior only. They are not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.
+
+## Gate Interaction Matrix v0.4.2
+
+v0.4.2 moves from single-gate threshold curves to paired gate-failure interactions.
+
+Primary command:
+
+```powershell
+python scripts/benchmarks/run_gate_interaction_matrix.py
+```
+
+Primary outputs:
+
+```text
+configs/seeds/interactions/gate_interaction_manifest_v0_4_2.json
+reports/interactions/latest_gate_interaction_matrix.json
+reports/interactions/latest_gate_interaction_matrix.md
+visuals/interactions/v0_4_2/
+```
+
+The purpose is to answer:
+
+```text
+Which gates compound each other?
+Which paired failures force hard downgrades?
+Which pairs remain diagnostic rather than catastrophic?
+Which pairings reveal classifier brittleness?
+```
+
+Boundary: interaction matrices are synthetic local runtime diagnostics only. They are not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.
 
 ## Synthetic Gate Sensitivity Sweep v0.4.1
 
@@ -888,15 +923,16 @@ validation_remains_required
 | v0.4.0e | Exact mini README audit-anchor repair for benchmark docs. |
 | v0.4.0f | Coherence reflection and agent contract re-sync after benchmark atlas sequence. |
 | v0.4.1 | Synthetic gate sensitivity sweep and threshold curves. |
+| v0.4.2 | Gate interaction matrix and paired gate-failure heatmaps. |
 
 ## Next Recommended Version
 
-**TAU-SCALING-SA v0.4.2 - Gate Interaction Matrix**
+**TAU-SCALING-SA v0.4.3 - Threshold Explanation Cards**
 
 Recommended goals:
 
-- Test paired gate failures.
-- Emit gate-pair heatmaps.
-- Identify compounding failures.
-- Add benchmark atlas row and charts for v0.4.2.
-- Preserve non-claim locks: interaction sweeps are local runtime diagnostics only.
+- Generate explanation cards for class transitions.
+- Explain why each claim is TSEK-B/C/D/E.
+- Identify the minimum evidence repair needed for promotion.
+- Add benchmark atlas row and explanation reports.
+- Preserve non-claim locks: explanation cards are local classifier explanations only.
