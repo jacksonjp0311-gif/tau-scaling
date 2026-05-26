@@ -142,17 +142,66 @@ def check_expected_artifacts() -> list[dict[str, str]]:
 def inspect_readme_for_mojibake() -> list[dict[str, str]]:
     path = REPO_ROOT / "README.md"
     text = path.read_text(encoding="utf-8", errors="replace") if path.exists() else ""
-    bad_tokens = ["Ã", "Â", "â€", " ", "\ncc/nexus", "\neports/", "\nests/"]
+
     findings: list[dict[str, str]] = []
-    for token in bad_tokens:
+
+    mojibake_tokens = {
+        "Ã": "latin1_mojibake_A_tilde",
+        "Â": "latin1_mojibake_A_circumflex",
+        "â€": "utf8_quote_dash_mojibake",
+        "\ufffd": "replacement_character",
+    }
+    for token, label in mojibake_tokens.items():
         if token in text:
-            display = token.encode("unicode_escape").decode("ascii")
             findings.append({
                 "severity": "warning",
-                "code": "possible_mojibake_or_path_break",
+                "code": "possible_mojibake",
                 "path": "README.md",
-                "detail": f"Found token: {display}",
+                "detail": f"{label}: {token.encode('unicode_escape').decode('ascii')}",
             })
+
+    broken_path_patterns = {
+        r"(?m)^\s*cc/nexus/": "missing leading r in rcc/nexus/",
+        r"(?m)^\s*eports/": "missing leading r in reports/",
+        r"(?m)^\s*ests/": "missing leading t in tests/",
+        r"(?m)^\s*rtifacts/": "missing leading a in artifacts/",
+        r"(?m)^\s*isuals/": "missing leading v in visuals/",
+    }
+    for pattern, detail in broken_path_patterns.items():
+        if re.search(pattern, text):
+            findings.append({
+                "severity": "warning",
+                "code": "possible_path_break",
+                "path": "README.md",
+                "detail": detail,
+            })
+
+    duplicate_scripts_release = (
+        "  scripts/\n"
+        "    benchmarks/\n"
+        "    release/\n"
+        "    maintenance/\n"
+        "    rcc/\n"
+        "    release/\n"
+        "    validation/"
+    )
+    if duplicate_scripts_release in text:
+        findings.append({
+            "severity": "warning",
+            "code": "duplicate_directory_box_entry",
+            "path": "README.md",
+            "detail": "scripts/release appears twice in Full Directory Box",
+        })
+
+    if "| v0.3.3c |" in text and "| v0.3.3a |" in text:
+        if text.find("| v0.3.3c |") < text.find("| v0.3.3a |"):
+            findings.append({
+                "severity": "warning",
+                "code": "release_lineage_out_of_order",
+                "path": "README.md",
+                "detail": "v0.3.3c appears before v0.3.3a",
+            })
+
     return findings
 
 

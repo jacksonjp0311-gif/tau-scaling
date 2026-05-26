@@ -10,8 +10,8 @@
 
 Repository: `tau-scaling`  
 Package / CLI: `tau_scaling` / `tau-scaling`  
-Current checkpoint: **TAU-SCALING-SA v0.3.3d — README Render, Lineage, and Warning Polish**  
-Previous seal: **TAU-SCALING-SA v0.3.3c — Safe README Process Alignment Repair**
+Current checkpoint: **TAU-SCALING-SA v0.3.3c — Safe README Process Alignment Repair**  
+Previous seal: **TAU-SCALING-SA v0.3.3a — Main README Release-State Sync**
 
 Tau Scaling is a local-first, evidence-gated Python runtime for evaluating tau-scaling claims through structured claim cards, workload declarations, tau vectors, LogicFolding survivability checks, edge-to-surface boundary algebra, energy / thermal / PDN / PVT gates, Monte Carlo checker stress, TSEK classification, evidence packages, and RCC-N / OMN-style repository navigation.
 
@@ -55,15 +55,14 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | TAU-SCALING-SA v0.3.3d |
-| Public README / render-lineage polish | v0.3.3d |
+| Current checkpoint | TAU-SCALING-SA v0.3.3c |
+| Public README / process alignment | v0.3.3c |
 | Package version | 0.2.0 |
 | Baseline seed | TSEK-C / A_TSEK 0.0000 |
 | Promotion-path seed | TSEK-B / A_TSEK 1.0000 |
 | RCC-N checker | passing / 0 warnings |
 | README mini repo audit | passing / 0 warnings |
 | Unified release validator | passing / step failures 0 |
-| Release warning findings | 0 expected after v0.3.3d validator scan repair |
 | Architecture validator | passing / 0 warnings |
 | Unit tests | 8 OK |
 | Benchmark harness | 12 runs / 12 unique IDs / 0 duplicates |
@@ -362,9 +361,8 @@ This section is part of the repository's operating memory. When a patch fails, t
 | L-008 | README audit failed on a visually correct AI Rule heading. | The heading used the wrong dash/encoding variant. | Audit-visible anchors must be written with exact expected Unicode or ASCII tokens. |
 | L-009 | README became mojibake-contaminated after repeated Unicode patching. | Mixed console encodings and repeated copy/paste repair passes corrupted Unicode arrows/dashes/code blocks. | Public README should prefer ASCII-safe syntax except for explicitly audited Unicode anchors. |
 | L-010 | v0.3.3 release validator passed with one non-blocking finding. | Release readiness can be true while warning-level readability/risk findings remain. | Passing release readiness must still be inspected before the next experimental layer. |
+| L-012 | v0.3.3b repair failed when pasted line by line. | PowerShell line wrapping split paths such as `reports\readme` and `scripts\release`. | Large scripts must be run from downloaded `.ps1` files using `powershell -ExecutionPolicy Bypass -File ...`. |
 | L-011 | README release-state drift recurred after v0.3.3. | The release validator was added and pushed before the public README was fully synchronized. | Every release patch must update README checkpoint, metrics, lineage, next target, and process rules before promotion. |
-| L-012 | v0.3.3b repair failed when pasted line by line. | PowerShell line wrapping split paths such as `reports\\readme` and `scripts\\release`. | Large scripts must be run from downloaded `.ps1` files using `powershell -ExecutionPolicy Bypass -File ...`. |
-| L-013 | v0.3.3c README had out-of-order release lineage. | Emergency repair appended rows without chronological normalization. | Release lineage and lesson ledgers must be ordered before push. |
 
 ### Failure Response Protocol
 
@@ -396,19 +394,6 @@ This layer keeps the repository synchronized after every evolution step.
 | File-run rule | Large repair scripts must be run with `powershell -File`, not pasted line by line. |
 | Experiment-start rule | No v0.4+ Tau Scaling experiment starts until release readiness, README audit, and unit tests pass. |
 | Boundary rule | Process alignment is repository hygiene. It is not silicon validation, product validation, manufacturing validation, process-node equivalence, or universal-law proof. |
-
-### Render and Ordering Discipline
-
-Before push, inspect the public README for:
-
-```text
-- current checkpoint matches latest commit intent
-- release lineage is chronological
-- failure lessons are numerically ordered
-- directory box has no duplicate durable entries
-- Quick Start includes the release validator
-- next recommended version points to the actual next layer
-```
 
 ### Pre-Experiment Checklist
 
@@ -652,9 +637,8 @@ validation_remains_required
 | v0.3.2g | Exact Unicode README anchor repair. |
 | v0.3.2h | README mojibake cleanup and audit surface consolidation. |
 | v0.3.3 | Unified release validator and release-readiness reports. |
-| v0.3.3a | Main README release-state synchronization. |
 | v0.3.3c | Safe README process alignment repair after pasted-script path break. |
-| v0.3.3d | README render, lineage, and validator-warning polish. |
+| v0.3.3a | Main README release-state synchronization. |
 
 ## Next Recommended Version
 
