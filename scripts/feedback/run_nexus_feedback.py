@@ -38,6 +38,17 @@ def write_text(path: Path, text: str) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(text, encoding="utf-8")
 
+def count_items(value: Any) -> int:
+    if value is None:
+        return 0
+    if isinstance(value, list):
+        return len(value)
+    if isinstance(value, dict):
+        return len(value)
+    if isinstance(value, (int, float)):
+        return int(value)
+    return 1
+
 def bool_pass(payload: dict[str, Any]) -> bool:
     return bool(payload.get("passed") is True) and not payload.get("_missing_or_invalid")
 
@@ -203,7 +214,7 @@ def generate_charts(summary: dict[str, Any]) -> list[str]:
 
 def render_markdown(summary: dict[str, Any]) -> str:
     lines = [
-        "# Tau Scaling v0.4.5 Nexus Reflective Feedback Loop",
+        "# Tau Scaling v0.4.5b Nexus Feedback Health Schema Alignment",
         "",
         f"Generated: `{summary['generated_at']}`",
         "",
@@ -261,7 +272,7 @@ def main() -> None:
     health = health_score(inputs)
     signals = feedback_signals(inputs)
     summary = {
-        "schema": "tau-scaling-nexus-reflective-feedback-v0.4.5",
+        "schema": "tau-scaling-nexus-reflective-feedback-v0.4.5b",
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "inputs": {k: str(v.relative_to(REPO_ROOT)).replace("\\", "/") for k, v in INPUTS.items()},
         "health": health,

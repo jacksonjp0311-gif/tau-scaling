@@ -1,6 +1,6 @@
 # Task Routing Matrix
 
-Current contract: **TAU-SCALING-SA v0.4.5a - Feedback Health Ordering Repair**
+Current contract: **TAU-SCALING-SA v0.4.5b - Nexus Feedback Health Schema Alignment**
 
 ## Geometry Route
 
@@ -25,6 +25,7 @@ intent -> shell -> meridian -> sector -> files -> validation -> evidence -> less
 | Pair policy patch | outer | validation | governance | `reports/policy/`, explanation cards, interaction matrix | release validator + policy review report | `reports/policy/latest_pair_policy_review.md` |
 | Nexus feedback patch | outer | drift | agent | `scripts/feedback/`, `reports/nexus_feedback/`, latest reports | release validator + feedback report | `reports/nexus_feedback/latest_nexus_feedback.md` |
 | Feedback health ordering repair | outer | drift | agent | validation reports, feedback report, AGENTS ordering rule | validators before feedback + feedback + validators after | `reports/nexus_feedback/latest_nexus_feedback.md` |
+| Feedback health schema alignment | outer | drift | agent | feedback runner, release report, sensitivity report | feedback health score 1.0 + validators | `reports/nexus_feedback/latest_nexus_feedback.md` |
 | Public claim replay patch | outer | evidence | release | source boundary docs, `configs/seeds/public_claims/` | release validator + claim replay report | `reports/public_claims/latest_claim_replay_report.md` |
 | Agent contract patch | center | agent | rcc | `AGENTS.md`, route map, task matrix, README | README audit + release validator | `reports/agent/latest_agent_contract_sync.md` |
 | Reflection patch | center | drift | documentation | `docs/reflection/`, `reports/reflection/`, README, AGENTS | README audit + release validator | `reports/reflection/latest_system_reflection.md` |

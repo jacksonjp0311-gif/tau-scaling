@@ -1,6 +1,6 @@
 # AGENTS.md — Tau Scaling Agent Operating Contract
 
-Current contract: **TAU-SCALING-SA v0.4.5a - Feedback Health Ordering Repair**
+Current contract: **TAU-SCALING-SA v0.4.5b - Nexus Feedback Health Schema Alignment**
 
 ## Mission
 
@@ -147,3 +147,18 @@ python -m unittest discover -s tests
 ```
 
 Non-claim lock: feedback health is repository self-observation, not external validation.
+
+
+## Feedback Schema Normalization Rule
+
+Feedback health checks must normalize report schemas before scoring.
+
+Examples:
+
+```text
+findings: [] == 0 findings
+step_failures: [] == 0 step failures
+sensitivity_points = total_points if present else len(results)
+```
+
+Non-claim lock: schema-normalized health is repository self-observation, not external validation.

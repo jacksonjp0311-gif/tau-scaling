@@ -13,15 +13,15 @@
     "TSEK-C": 55
   },
   "gate_count": 11,
-  "generated_at": "2026-05-26T15:22:30.414746+00:00",
+  "generated_at": "2026-05-26T15:26:44.819494+00:00",
   "least_severe_pairs": [
     {
       "A_TSEK": 0.0,
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 42.1026,
-      "evidence_path": "artifacts/runs/claim-20260526T152225048343Z-b75838/evidence_package.json",
+      "elapsed_ms": 41.963,
+      "evidence_path": "artifacts/runs/claim-20260526T152639393793Z-c12e74/evidence_package.json",
       "finding_codes": [
         "TSEK_B_source_MISSING",
         "TSEK_B_metric_MISSING"
@@ -44,7 +44,7 @@
         "B_yield": 1.0
       },
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T152225048343Z-b75838",
+      "run_id": "claim-20260526T152639393793Z-c12e74",
       "scenario_passed": true
     },
     {
@@ -52,8 +52,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 36.675,
-      "evidence_path": "artifacts/runs/claim-20260526T152225099128Z-9c26e9/evidence_package.json",
+      "elapsed_ms": 38.1188,
+      "evidence_path": "artifacts/runs/claim-20260526T152639444288Z-77f3cc/evidence_package.json",
       "finding_codes": [
         "TSEK_B_source_MISSING",
         "TSEK_B_baseline_MISSING"
@@ -76,7 +76,7 @@
         "B_yield": 1.0
       },
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T152225099128Z-9c26e9",
+      "run_id": "claim-20260526T152639444288Z-77f3cc",
       "scenario_passed": true
     },
     {
@@ -84,8 +84,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 36.8092,
-      "evidence_path": "artifacts/runs/claim-20260526T152225143547Z-c64eca/evidence_package.json",
+      "elapsed_ms": 36.794,
+      "evidence_path": "artifacts/runs/claim-20260526T152639488994Z-0c2da3/evidence_package.json",
       "finding_codes": [
         "TSEK_B_source_MISSING",
         "TSEK_B_method_MISSING"
@@ -108,7 +108,7 @@
         "B_yield": 1.0
       },
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T152225143547Z-c64eca",
+      "run_id": "claim-20260526T152639488994Z-0c2da3",
       "scenario_passed": true
     },
     {
@@ -116,8 +116,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 36.2567,
-      "evidence_path": "artifacts/runs/claim-20260526T152225188153Z-028e04/evidence_package.json",
+      "elapsed_ms": 35.4266,
+      "evidence_path": "artifacts/runs/claim-20260526T152639534486Z-c9b0a7/evidence_package.json",
       "finding_codes": [
         "TSEK_B_source_MISSING",
         "TSEK_B_workload_MISSING"
@@ -140,7 +140,7 @@
         "B_yield": 1.0
       },
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T152225188153Z-028e04",
+      "run_id": "claim-20260526T152639534486Z-c9b0a7",
       "scenario_passed": true
     },
     {
@@ -148,8 +148,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 37.0127,
-      "evidence_path": "artifacts/runs/claim-20260526T152225231780Z-edc0be/evidence_package.json",
+      "elapsed_ms": 35.0583,
+      "evidence_path": "artifacts/runs/claim-20260526T152639577432Z-91f7f2/evidence_package.json",
       "finding_codes": [
         "TSEK_B_source_MISSING",
         "TSEK_B_tau_MISSING"
@@ -172,7 +172,7 @@
         "B_yield": 1.0
       },
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T152225231780Z-edc0be",
+      "run_id": "claim-20260526T152639577432Z-91f7f2",
       "scenario_passed": true
     },
     {
@@ -180,8 +180,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 35.8433,
-      "evidence_path": "artifacts/runs/claim-20260526T152225276577Z-82887e/evidence_package.json",
+      "elapsed_ms": 35.2461,
+      "evidence_path": "artifacts/runs/claim-20260526T152639621483Z-ba75da/evidence_package.json",
       "finding_codes": [
         "TSEK_B_source_MISSING",
         "TSEK_B_LF_MISSING"
@@ -204,7 +204,7 @@
         "B_yield": 1.0
       },
       "logicfolding_margin": -133.5,
-      "run_id": "claim-20260526T152225276577Z-82887e",
+      "run_id": "claim-20260526T152639621483Z-ba75da",
       "scenario_passed": true
     },
     {
@@ -212,8 +212,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 40.6994,
-      "evidence_path": "artifacts/runs/claim-20260526T152225320092Z-c4a617/evidence_package.json",
+      "elapsed_ms": 34.2962,
+      "evidence_path": "artifacts/runs/claim-20260526T152639663726Z-cd9b47/evidence_package.json",
       "finding_codes": [
         "TSEK_B_source_MISSING",
         "TSEK_B_ETP_MISSING"
@@ -236,7 +236,7 @@
         "B_yield": 1.0
       },
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T152225320092Z-c4a617",
+      "run_id": "claim-20260526T152639663726Z-cd9b47",
       "scenario_passed": true
     },
     {
@@ -244,8 +244,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 34.4889,
-      "evidence_path": "artifacts/runs/claim-20260526T152225368811Z-a36f96/evidence_package.json",
+      "elapsed_ms": 35.8109,
+      "evidence_path": "artifacts/runs/claim-20260526T152639708187Z-74cf05/evidence_package.json",
       "finding_codes": [
         "TSEK_B_source_MISSING",
         "TSEK_B_PVT_MISSING"
@@ -268,7 +268,7 @@
         "B_yield": 1.0
       },
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T152225368811Z-a36f96",
+      "run_id": "claim-20260526T152639708187Z-74cf05",
       "scenario_passed": true
     },
     {
@@ -276,8 +276,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 33.82,
-      "evidence_path": "artifacts/runs/claim-20260526T152225411347Z-4b7356/evidence_package.json",
+      "elapsed_ms": 36.8855,
+      "evidence_path": "artifacts/runs/claim-20260526T152639751856Z-c36a2e/evidence_package.json",
       "finding_codes": [
         "TSEK_B_source_MISSING",
         "TSEK_B_yield_MISSING"
@@ -300,7 +300,7 @@
         "B_yield": 0.0
       },
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T152225411347Z-4b7356",
+      "run_id": "claim-20260526T152639751856Z-c36a2e",
       "scenario_passed": true
     },
     {
@@ -308,8 +308,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 34.9884,
-      "evidence_path": "artifacts/runs/claim-20260526T152225453800Z-854b5e/evidence_package.json",
+      "elapsed_ms": 34.6,
+      "evidence_path": "artifacts/runs/claim-20260526T152639796573Z-da8a01/evidence_package.json",
       "finding_codes": [
         "TSEK_B_source_MISSING",
         "TSEK_B_evidence_MISSING"
@@ -332,13 +332,13 @@
         "B_yield": 1.0
       },
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T152225453800Z-854b5e",
+      "run_id": "claim-20260526T152639796573Z-da8a01",
       "scenario_passed": true
     }
   ],
   "mean_A_TSEK": 0.0,
   "mean_diagnostic_average": 0.8182,
-  "mean_elapsed_ms": 36.0943,
+  "mean_elapsed_ms": 36.6636,
   "pair_count": 55,
   "results": [
     {
@@ -346,8 +346,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 42.1026,
-      "evidence_path": "artifacts/runs/claim-20260526T152225048343Z-b75838/evidence_package.json",
+      "elapsed_ms": 41.963,
+      "evidence_path": "artifacts/runs/claim-20260526T152639393793Z-c12e74/evidence_package.json",
       "finding_codes": [
         "TSEK_B_source_MISSING",
         "TSEK_B_metric_MISSING"
@@ -370,7 +370,7 @@
         "B_yield": 1.0
       },
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T152225048343Z-b75838",
+      "run_id": "claim-20260526T152639393793Z-c12e74",
       "scenario_passed": true
     },
     {
@@ -378,8 +378,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 36.675,
-      "evidence_path": "artifacts/runs/claim-20260526T152225099128Z-9c26e9/evidence_package.json",
+      "elapsed_ms": 38.1188,
+      "evidence_path": "artifacts/runs/claim-20260526T152639444288Z-77f3cc/evidence_package.json",
       "finding_codes": [
         "TSEK_B_source_MISSING",
         "TSEK_B_baseline_MISSING"
@@ -402,7 +402,7 @@
         "B_yield": 1.0
       },
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T152225099128Z-9c26e9",
+      "run_id": "claim-20260526T152639444288Z-77f3cc",
       "scenario_passed": true
     },
     {
@@ -410,8 +410,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 36.8092,
-      "evidence_path": "artifacts/runs/claim-20260526T152225143547Z-c64eca/evidence_package.json",
+      "elapsed_ms": 36.794,
+      "evidence_path": "artifacts/runs/claim-20260526T152639488994Z-0c2da3/evidence_package.json",
       "finding_codes": [
         "TSEK_B_source_MISSING",
         "TSEK_B_method_MISSING"
@@ -434,7 +434,7 @@
         "B_yield": 1.0
       },
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T152225143547Z-c64eca",
+      "run_id": "claim-20260526T152639488994Z-0c2da3",
       "scenario_passed": true
     },
     {
@@ -442,8 +442,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 36.2567,
-      "evidence_path": "artifacts/runs/claim-20260526T152225188153Z-028e04/evidence_package.json",
+      "elapsed_ms": 35.4266,
+      "evidence_path": "artifacts/runs/claim-20260526T152639534486Z-c9b0a7/evidence_package.json",
       "finding_codes": [
         "TSEK_B_source_MISSING",
         "TSEK_B_workload_MISSING"
@@ -466,7 +466,7 @@
         "B_yield": 1.0
       },
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T152225188153Z-028e04",
+      "run_id": "claim-20260526T152639534486Z-c9b0a7",
       "scenario_passed": true
     },
     {
@@ -474,8 +474,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 37.0127,
-      "evidence_path": "artifacts/runs/claim-20260526T152225231780Z-edc0be/evidence_package.json",
+      "elapsed_ms": 35.0583,
+      "evidence_path": "artifacts/runs/claim-20260526T152639577432Z-91f7f2/evidence_package.json",
       "finding_codes": [
         "TSEK_B_source_MISSING",
         "TSEK_B_tau_MISSING"
@@ -498,7 +498,7 @@
         "B_yield": 1.0
       },
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T152225231780Z-edc0be",
+      "run_id": "claim-20260526T152639577432Z-91f7f2",
       "scenario_passed": true
     },
     {
@@ -506,8 +506,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 35.8433,
-      "evidence_path": "artifacts/runs/claim-20260526T152225276577Z-82887e/evidence_package.json",
+      "elapsed_ms": 35.2461,
+      "evidence_path": "artifacts/runs/claim-20260526T152639621483Z-ba75da/evidence_package.json",
       "finding_codes": [
         "TSEK_B_source_MISSING",
         "TSEK_B_LF_MISSING"
@@ -530,7 +530,7 @@
         "B_yield": 1.0
       },
       "logicfolding_margin": -133.5,
-      "run_id": "claim-20260526T152225276577Z-82887e",
+      "run_id": "claim-20260526T152639621483Z-ba75da",
       "scenario_passed": true
     },
     {
@@ -538,8 +538,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 40.6994,
-      "evidence_path": "artifacts/runs/claim-20260526T152225320092Z-c4a617/evidence_package.json",
+      "elapsed_ms": 34.2962,
+      "evidence_path": "artifacts/runs/claim-20260526T152639663726Z-cd9b47/evidence_package.json",
       "finding_codes": [
         "TSEK_B_source_MISSING",
         "TSEK_B_ETP_MISSING"
@@ -562,7 +562,7 @@
         "B_yield": 1.0
       },
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T152225320092Z-c4a617",
+      "run_id": "claim-20260526T152639663726Z-cd9b47",
       "scenario_passed": true
     },
     {
@@ -570,8 +570,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 34.4889,
-      "evidence_path": "artifacts/runs/claim-20260526T152225368811Z-a36f96/evidence_package.json",
+      "elapsed_ms": 35.8109,
+      "evidence_path": "artifacts/runs/claim-20260526T152639708187Z-74cf05/evidence_package.json",
       "finding_codes": [
         "TSEK_B_source_MISSING",
         "TSEK_B_PVT_MISSING"
@@ -594,7 +594,7 @@
         "B_yield": 1.0
       },
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T152225368811Z-a36f96",
+      "run_id": "claim-20260526T152639708187Z-74cf05",
       "scenario_passed": true
     },
     {
@@ -602,8 +602,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 33.82,
-      "evidence_path": "artifacts/runs/claim-20260526T152225411347Z-4b7356/evidence_package.json",
+      "elapsed_ms": 36.8855,
+      "evidence_path": "artifacts/runs/claim-20260526T152639751856Z-c36a2e/evidence_package.json",
       "finding_codes": [
         "TSEK_B_source_MISSING",
         "TSEK_B_yield_MISSING"
@@ -626,7 +626,7 @@
         "B_yield": 0.0
       },
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T152225411347Z-4b7356",
+      "run_id": "claim-20260526T152639751856Z-c36a2e",
       "scenario_passed": true
     },
     {
@@ -634,8 +634,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 34.9884,
-      "evidence_path": "artifacts/runs/claim-20260526T152225453800Z-854b5e/evidence_package.json",
+      "elapsed_ms": 34.6,
+      "evidence_path": "artifacts/runs/claim-20260526T152639796573Z-da8a01/evidence_package.json",
       "finding_codes": [
         "TSEK_B_source_MISSING",
         "TSEK_B_evidence_MISSING"
@@ -658,7 +658,7 @@
         "B_yield": 1.0
       },
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T152225453800Z-854b5e",
+      "run_id": "claim-20260526T152639796573Z-da8a01",
       "scenario_passed": true
     },
     {
@@ -666,8 +666,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 34.5866,
-      "evidence_path": "artifacts/runs/claim-20260526T152225497374Z-e4752b/evidence_package.json",
+      "elapsed_ms": 36.9991,
+      "evidence_path": "artifacts/runs/claim-20260526T152639839044Z-c7f8c2/evidence_package.json",
       "finding_codes": [
         "TSEK_B_metric_MISSING",
         "TSEK_B_baseline_MISSING"
@@ -690,7 +690,7 @@
         "B_yield": 1.0
       },
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T152225497374Z-e4752b",
+      "run_id": "claim-20260526T152639839044Z-c7f8c2",
       "scenario_passed": true
     },
     {
@@ -698,8 +698,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 34.6842,
-      "evidence_path": "artifacts/runs/claim-20260526T152225539027Z-892242/evidence_package.json",
+      "elapsed_ms": 35.8263,
+      "evidence_path": "artifacts/runs/claim-20260526T152639885034Z-4826c4/evidence_package.json",
       "finding_codes": [
         "TSEK_B_metric_MISSING",
         "TSEK_B_method_MISSING"
@@ -722,7 +722,7 @@
         "B_yield": 1.0
       },
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T152225539027Z-892242",
+      "run_id": "claim-20260526T152639885034Z-4826c4",
       "scenario_passed": true
     },
     {
@@ -730,8 +730,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 34.031,
-      "evidence_path": "artifacts/runs/claim-20260526T152225581909Z-d877dc/evidence_package.json",
+      "elapsed_ms": 44.4495,
+      "evidence_path": "artifacts/runs/claim-20260526T152639929715Z-0caa0a/evidence_package.json",
       "finding_codes": [
         "TSEK_B_metric_MISSING",
         "TSEK_B_workload_MISSING"
@@ -754,7 +754,7 @@
         "B_yield": 1.0
       },
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T152225581909Z-d877dc",
+      "run_id": "claim-20260526T152639929715Z-0caa0a",
       "scenario_passed": true
     },
     {
@@ -762,8 +762,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 36.6231,
-      "evidence_path": "artifacts/runs/claim-20260526T152225623426Z-7db8ca/evidence_package.json",
+      "elapsed_ms": 41.7222,
+      "evidence_path": "artifacts/runs/claim-20260526T152639983256Z-a2211a/evidence_package.json",
       "finding_codes": [
         "TSEK_B_metric_MISSING",
         "TSEK_B_tau_MISSING"
@@ -786,7 +786,7 @@
         "B_yield": 1.0
       },
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T152225623426Z-7db8ca",
+      "run_id": "claim-20260526T152639983256Z-a2211a",
       "scenario_passed": true
     },
     {
@@ -794,8 +794,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 45.7048,
-      "evidence_path": "artifacts/runs/claim-20260526T152225668042Z-db7e5a/evidence_package.json",
+      "elapsed_ms": 34.4507,
+      "evidence_path": "artifacts/runs/claim-20260526T152640032927Z-61729e/evidence_package.json",
       "finding_codes": [
         "TSEK_B_metric_MISSING",
         "TSEK_B_LF_MISSING"
@@ -818,7 +818,7 @@
         "B_yield": 1.0
       },
       "logicfolding_margin": -133.5,
-      "run_id": "claim-20260526T152225668042Z-db7e5a",
+      "run_id": "claim-20260526T152640032927Z-61729e",
       "scenario_passed": true
     },
     {
@@ -826,8 +826,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 38.3851,
-      "evidence_path": "artifacts/runs/claim-20260526T152225723766Z-4d5c46/evidence_package.json",
+      "elapsed_ms": 35.6047,
+      "evidence_path": "artifacts/runs/claim-20260526T152640075423Z-cfa8bd/evidence_package.json",
       "finding_codes": [
         "TSEK_B_metric_MISSING",
         "TSEK_B_ETP_MISSING"
@@ -850,7 +850,7 @@
         "B_yield": 1.0
       },
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T152225723766Z-4d5c46",
+      "run_id": "claim-20260526T152640075423Z-cfa8bd",
       "scenario_passed": true
     },
     {
@@ -858,8 +858,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 33.8914,
-      "evidence_path": "artifacts/runs/claim-20260526T152225770372Z-45ac85/evidence_package.json",
+      "elapsed_ms": 34.1057,
+      "evidence_path": "artifacts/runs/claim-20260526T152640119046Z-9b0648/evidence_package.json",
       "finding_codes": [
         "TSEK_B_metric_MISSING",
         "TSEK_B_PVT_MISSING"
@@ -882,7 +882,7 @@
         "B_yield": 1.0
       },
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T152225770372Z-45ac85",
+      "run_id": "claim-20260526T152640119046Z-9b0648",
       "scenario_passed": true
     },
     {
@@ -890,8 +890,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 34.0166,
-      "evidence_path": "artifacts/runs/claim-20260526T152225811964Z-0f545b/evidence_package.json",
+      "elapsed_ms": 34.4549,
+      "evidence_path": "artifacts/runs/claim-20260526T152640160546Z-9755bb/evidence_package.json",
       "finding_codes": [
         "TSEK_B_metric_MISSING",
         "TSEK_B_yield_MISSING"
@@ -914,7 +914,7 @@
         "B_yield": 0.0
       },
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T152225811964Z-0f545b",
+      "run_id": "claim-20260526T152640160546Z-9755bb",
       "scenario_passed": true
     },
     {
@@ -922,8 +922,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 34.4506,
-      "evidence_path": "artifacts/runs/claim-20260526T152225853579Z-35fb5a/evidence_package.json",
+      "elapsed_ms": 39.5847,
+      "evidence_path": "artifacts/runs/claim-20260526T152640203453Z-543fb5/evidence_package.json",
       "finding_codes": [
         "TSEK_B_metric_MISSING",
         "TSEK_B_evidence_MISSING"
@@ -946,7 +946,7 @@
         "B_yield": 1.0
       },
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T152225853579Z-35fb5a",
+      "run_id": "claim-20260526T152640203453Z-543fb5",
       "scenario_passed": true
     },
     {
@@ -954,8 +954,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 33.7146,
-      "evidence_path": "artifacts/runs/claim-20260526T152225895197Z-b085a7/evidence_package.json",
+      "elapsed_ms": 46.0029,
+      "evidence_path": "artifacts/runs/claim-20260526T152640252468Z-94a5d9/evidence_package.json",
       "finding_codes": [
         "TSEK_B_baseline_MISSING",
         "TSEK_B_method_MISSING"
@@ -978,7 +978,7 @@
         "B_yield": 1.0
       },
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T152225895197Z-b085a7",
+      "run_id": "claim-20260526T152640252468Z-94a5d9",
       "scenario_passed": true
     },
     {
@@ -986,8 +986,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 36.4491,
-      "evidence_path": "artifacts/runs/claim-20260526T152225936538Z-779039/evidence_package.json",
+      "elapsed_ms": 39.1846,
+      "evidence_path": "artifacts/runs/claim-20260526T152640308968Z-b416ad/evidence_package.json",
       "finding_codes": [
         "TSEK_B_baseline_MISSING",
         "TSEK_B_workload_MISSING"
@@ -1010,7 +1010,7 @@
         "B_yield": 1.0
       },
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T152225936538Z-779039",
+      "run_id": "claim-20260526T152640308968Z-b416ad",
       "scenario_passed": true
     },
     {
@@ -1018,8 +1018,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 43.4347,
-      "evidence_path": "artifacts/runs/claim-20260526T152225983415Z-182727/evidence_package.json",
+      "elapsed_ms": 37.0535,
+      "evidence_path": "artifacts/runs/claim-20260526T152640355971Z-790cec/evidence_package.json",
       "finding_codes": [
         "TSEK_B_baseline_MISSING",
         "TSEK_B_tau_MISSING"
@@ -1042,7 +1042,7 @@
         "B_yield": 1.0
       },
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T152225983415Z-182727",
+      "run_id": "claim-20260526T152640355971Z-790cec",
       "scenario_passed": true
     },
     {
@@ -1050,8 +1050,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 41.5566,
-      "evidence_path": "artifacts/runs/claim-20260526T152226035814Z-917d81/evidence_package.json",
+      "elapsed_ms": 36.2206,
+      "evidence_path": "artifacts/runs/claim-20260526T152640401708Z-dc4634/evidence_package.json",
       "finding_codes": [
         "TSEK_B_baseline_MISSING",
         "TSEK_B_LF_MISSING"
@@ -1074,7 +1074,7 @@
         "B_yield": 1.0
       },
       "logicfolding_margin": -133.5,
-      "run_id": "claim-20260526T152226035814Z-917d81",
+      "run_id": "claim-20260526T152640401708Z-dc4634",
       "scenario_passed": true
     },
     {
@@ -1082,8 +1082,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 37.0163,
-      "evidence_path": "artifacts/runs/claim-20260526T152226086362Z-10bb8a/evidence_package.json",
+      "elapsed_ms": 33.1124,
+      "evidence_path": "artifacts/runs/claim-20260526T152640443992Z-c89e17/evidence_package.json",
       "finding_codes": [
         "TSEK_B_baseline_MISSING",
         "TSEK_B_ETP_MISSING"
@@ -1106,7 +1106,7 @@
         "B_yield": 1.0
       },
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T152226086362Z-10bb8a",
+      "run_id": "claim-20260526T152640443992Z-c89e17",
       "scenario_passed": true
     },
     {
@@ -1114,8 +1114,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 34.1562,
-      "evidence_path": "artifacts/runs/claim-20260526T152226131571Z-ff1457/evidence_package.json",
+      "elapsed_ms": 34.2698,
+      "evidence_path": "artifacts/runs/claim-20260526T152640485001Z-3f74bd/evidence_package.json",
       "finding_codes": [
         "TSEK_B_baseline_MISSING",
         "TSEK_B_PVT_MISSING"
@@ -1138,7 +1138,7 @@
         "B_yield": 1.0
       },
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T152226131571Z-ff1457",
+      "run_id": "claim-20260526T152640485001Z-3f74bd",
       "scenario_passed": true
     },
     {
@@ -1146,8 +1146,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 34.1899,
-      "evidence_path": "artifacts/runs/claim-20260526T152226173802Z-28bfca/evidence_package.json",
+      "elapsed_ms": 35.6133,
+      "evidence_path": "artifacts/runs/claim-20260526T152640527447Z-a2abcf/evidence_package.json",
       "finding_codes": [
         "TSEK_B_baseline_MISSING",
         "TSEK_B_yield_MISSING"
@@ -1170,7 +1170,7 @@
         "B_yield": 0.0
       },
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T152226173802Z-28bfca",
+      "run_id": "claim-20260526T152640527447Z-a2abcf",
       "scenario_passed": true
     },
     {
@@ -1178,8 +1178,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 34.7408,
-      "evidence_path": "artifacts/runs/claim-20260526T152226215704Z-c31c60/evidence_package.json",
+      "elapsed_ms": 58.466,
+      "evidence_path": "artifacts/runs/claim-20260526T152640570863Z-94e34b/evidence_package.json",
       "finding_codes": [
         "TSEK_B_baseline_MISSING",
         "TSEK_B_evidence_MISSING"
@@ -1202,7 +1202,7 @@
         "B_yield": 1.0
       },
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T152226215704Z-c31c60",
+      "run_id": "claim-20260526T152640570863Z-94e34b",
       "scenario_passed": true
     },
     {
@@ -1210,8 +1210,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 34.4233,
-      "evidence_path": "artifacts/runs/claim-20260526T152226260568Z-44258b/evidence_package.json",
+      "elapsed_ms": 34.5584,
+      "evidence_path": "artifacts/runs/claim-20260526T152640637103Z-b02ec5/evidence_package.json",
       "finding_codes": [
         "TSEK_B_method_MISSING",
         "TSEK_B_workload_MISSING"
@@ -1234,7 +1234,7 @@
         "B_yield": 1.0
       },
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T152226260568Z-44258b",
+      "run_id": "claim-20260526T152640637103Z-b02ec5",
       "scenario_passed": true
     },
     {
@@ -1242,8 +1242,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 34.1986,
-      "evidence_path": "artifacts/runs/claim-20260526T152226302997Z-95d86e/evidence_package.json",
+      "elapsed_ms": 35.0573,
+      "evidence_path": "artifacts/runs/claim-20260526T152640680324Z-f29144/evidence_package.json",
       "finding_codes": [
         "TSEK_B_method_MISSING",
         "TSEK_B_tau_MISSING"
@@ -1266,7 +1266,7 @@
         "B_yield": 1.0
       },
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T152226302997Z-95d86e",
+      "run_id": "claim-20260526T152640680324Z-f29144",
       "scenario_passed": true
     },
     {
@@ -1274,8 +1274,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 33.3423,
-      "evidence_path": "artifacts/runs/claim-20260526T152226344943Z-fd5c39/evidence_package.json",
+      "elapsed_ms": 36.0561,
+      "evidence_path": "artifacts/runs/claim-20260526T152640722120Z-17da0f/evidence_package.json",
       "finding_codes": [
         "TSEK_B_method_MISSING",
         "TSEK_B_LF_MISSING"
@@ -1298,7 +1298,7 @@
         "B_yield": 1.0
       },
       "logicfolding_margin": -133.5,
-      "run_id": "claim-20260526T152226344943Z-fd5c39",
+      "run_id": "claim-20260526T152640722120Z-17da0f",
       "scenario_passed": true
     },
     {
@@ -1306,8 +1306,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 33.511,
-      "evidence_path": "artifacts/runs/claim-20260526T152226385928Z-b34add/evidence_package.json",
+      "elapsed_ms": 34.6127,
+      "evidence_path": "artifacts/runs/claim-20260526T152640766332Z-9ed8b5/evidence_package.json",
       "finding_codes": [
         "TSEK_B_method_MISSING",
         "TSEK_B_ETP_MISSING"
@@ -1330,7 +1330,7 @@
         "B_yield": 1.0
       },
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T152226385928Z-b34add",
+      "run_id": "claim-20260526T152640766332Z-9ed8b5",
       "scenario_passed": true
     },
     {
@@ -1338,8 +1338,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 33.145,
-      "evidence_path": "artifacts/runs/claim-20260526T152226427001Z-e9ced8/evidence_package.json",
+      "elapsed_ms": 39.7522,
+      "evidence_path": "artifacts/runs/claim-20260526T152640807981Z-61468a/evidence_package.json",
       "finding_codes": [
         "TSEK_B_method_MISSING",
         "TSEK_B_PVT_MISSING"
@@ -1362,7 +1362,7 @@
         "B_yield": 1.0
       },
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T152226427001Z-e9ced8",
+      "run_id": "claim-20260526T152640807981Z-61468a",
       "scenario_passed": true
     },
     {
@@ -1370,8 +1370,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 33.948,
-      "evidence_path": "artifacts/runs/claim-20260526T152226467469Z-b3510b/evidence_package.json",
+      "elapsed_ms": 33.271,
+      "evidence_path": "artifacts/runs/claim-20260526T152640855736Z-4be515/evidence_package.json",
       "finding_codes": [
         "TSEK_B_method_MISSING",
         "TSEK_B_yield_MISSING"
@@ -1394,7 +1394,7 @@
         "B_yield": 0.0
       },
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T152226467469Z-b3510b",
+      "run_id": "claim-20260526T152640855736Z-4be515",
       "scenario_passed": true
     },
     {
@@ -1402,8 +1402,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 34.6919,
-      "evidence_path": "artifacts/runs/claim-20260526T152226508775Z-ba0736/evidence_package.json",
+      "elapsed_ms": 33.32,
+      "evidence_path": "artifacts/runs/claim-20260526T152640896150Z-6c0c1b/evidence_package.json",
       "finding_codes": [
         "TSEK_B_method_MISSING",
         "TSEK_B_evidence_MISSING"
@@ -1426,7 +1426,7 @@
         "B_yield": 1.0
       },
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T152226508775Z-ba0736",
+      "run_id": "claim-20260526T152640896150Z-6c0c1b",
       "scenario_passed": true
     },
     {
@@ -1434,8 +1434,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 33.8902,
-      "evidence_path": "artifacts/runs/claim-20260526T152226550971Z-e3a692/evidence_package.json",
+      "elapsed_ms": 34.9617,
+      "evidence_path": "artifacts/runs/claim-20260526T152640937815Z-eacc88/evidence_package.json",
       "finding_codes": [
         "TSEK_B_workload_MISSING",
         "TSEK_B_tau_MISSING"
@@ -1458,7 +1458,7 @@
         "B_yield": 1.0
       },
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T152226550971Z-e3a692",
+      "run_id": "claim-20260526T152640937815Z-eacc88",
       "scenario_passed": true
     },
     {
@@ -1466,8 +1466,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 65.5422,
-      "evidence_path": "artifacts/runs/claim-20260526T152226592153Z-adeebe/evidence_package.json",
+      "elapsed_ms": 33.9873,
+      "evidence_path": "artifacts/runs/claim-20260526T152640980257Z-2ad304/evidence_package.json",
       "finding_codes": [
         "TSEK_B_workload_MISSING",
         "TSEK_B_LF_MISSING"
@@ -1490,7 +1490,7 @@
         "B_yield": 1.0
       },
       "logicfolding_margin": -133.5,
-      "run_id": "claim-20260526T152226592153Z-adeebe",
+      "run_id": "claim-20260526T152640980257Z-2ad304",
       "scenario_passed": true
     },
     {
@@ -1498,8 +1498,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 34.2256,
-      "evidence_path": "artifacts/runs/claim-20260526T152226665887Z-716802/evidence_package.json",
+      "elapsed_ms": 33.6418,
+      "evidence_path": "artifacts/runs/claim-20260526T152641022318Z-477041/evidence_package.json",
       "finding_codes": [
         "TSEK_B_workload_MISSING",
         "TSEK_B_ETP_MISSING"
@@ -1522,7 +1522,7 @@
         "B_yield": 1.0
       },
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T152226665887Z-716802",
+      "run_id": "claim-20260526T152641022318Z-477041",
       "scenario_passed": true
     },
     {
@@ -1530,8 +1530,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 40.6417,
-      "evidence_path": "artifacts/runs/claim-20260526T152226708183Z-607def/evidence_package.json",
+      "elapsed_ms": 33.5022,
+      "evidence_path": "artifacts/runs/claim-20260526T152641063819Z-f926f9/evidence_package.json",
       "finding_codes": [
         "TSEK_B_workload_MISSING",
         "TSEK_B_PVT_MISSING"
@@ -1554,7 +1554,7 @@
         "B_yield": 1.0
       },
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T152226708183Z-607def",
+      "run_id": "claim-20260526T152641063819Z-f926f9",
       "scenario_passed": true
     },
     {
@@ -1562,8 +1562,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 35.4817,
-      "evidence_path": "artifacts/runs/claim-20260526T152226756243Z-7978fd/evidence_package.json",
+      "elapsed_ms": 34.0916,
+      "evidence_path": "artifacts/runs/claim-20260526T152641104721Z-c9875a/evidence_package.json",
       "finding_codes": [
         "TSEK_B_workload_MISSING",
         "TSEK_B_yield_MISSING"
@@ -1586,7 +1586,7 @@
         "B_yield": 0.0
       },
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T152226756243Z-7978fd",
+      "run_id": "claim-20260526T152641104721Z-c9875a",
       "scenario_passed": true
     },
     {
@@ -1594,8 +1594,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 34.495,
-      "evidence_path": "artifacts/runs/claim-20260526T152226799393Z-089a93/evidence_package.json",
+      "elapsed_ms": 34.7341,
+      "evidence_path": "artifacts/runs/claim-20260526T152641146412Z-984f9b/evidence_package.json",
       "finding_codes": [
         "TSEK_B_workload_MISSING",
         "TSEK_B_evidence_MISSING"
@@ -1618,7 +1618,7 @@
         "B_yield": 1.0
       },
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T152226799393Z-089a93",
+      "run_id": "claim-20260526T152641146412Z-984f9b",
       "scenario_passed": true
     },
     {
@@ -1626,8 +1626,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 35.0362,
-      "evidence_path": "artifacts/runs/claim-20260526T152226841370Z-6013da/evidence_package.json",
+      "elapsed_ms": 34.7602,
+      "evidence_path": "artifacts/runs/claim-20260526T152641189596Z-66d217/evidence_package.json",
       "finding_codes": [
         "TSEK_B_tau_MISSING",
         "TSEK_B_LF_MISSING"
@@ -1650,7 +1650,7 @@
         "B_yield": 1.0
       },
       "logicfolding_margin": -133.5,
-      "run_id": "claim-20260526T152226841370Z-6013da",
+      "run_id": "claim-20260526T152641189596Z-66d217",
       "scenario_passed": true
     },
     {
@@ -1658,8 +1658,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 33.8919,
-      "evidence_path": "artifacts/runs/claim-20260526T152226884145Z-2d7991/evidence_package.json",
+      "elapsed_ms": 35.0219,
+      "evidence_path": "artifacts/runs/claim-20260526T152641230966Z-7edc9b/evidence_package.json",
       "finding_codes": [
         "TSEK_B_tau_MISSING",
         "TSEK_B_ETP_MISSING"
@@ -1682,7 +1682,7 @@
         "B_yield": 1.0
       },
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T152226884145Z-2d7991",
+      "run_id": "claim-20260526T152641230966Z-7edc9b",
       "scenario_passed": true
     },
     {
@@ -1690,8 +1690,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 34.4254,
-      "evidence_path": "artifacts/runs/claim-20260526T152226926077Z-4eef05/evidence_package.json",
+      "elapsed_ms": 35.0045,
+      "evidence_path": "artifacts/runs/claim-20260526T152641274855Z-79cb87/evidence_package.json",
       "finding_codes": [
         "TSEK_B_tau_MISSING",
         "TSEK_B_PVT_MISSING"
@@ -1714,7 +1714,7 @@
         "B_yield": 1.0
       },
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T152226926077Z-4eef05",
+      "run_id": "claim-20260526T152641274855Z-79cb87",
       "scenario_passed": true
     },
     {
@@ -1722,8 +1722,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 35.4037,
-      "evidence_path": "artifacts/runs/claim-20260526T152226967796Z-40a9c5/evidence_package.json",
+      "elapsed_ms": 34.6621,
+      "evidence_path": "artifacts/runs/claim-20260526T152641317214Z-41e480/evidence_package.json",
       "finding_codes": [
         "TSEK_B_tau_MISSING",
         "TSEK_B_yield_MISSING"
@@ -1746,7 +1746,7 @@
         "B_yield": 0.0
       },
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T152226967796Z-40a9c5",
+      "run_id": "claim-20260526T152641317214Z-41e480",
       "scenario_passed": true
     },
     {
@@ -1754,8 +1754,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 34.0452,
-      "evidence_path": "artifacts/runs/claim-20260526T152227011032Z-aa426e/evidence_package.json",
+      "elapsed_ms": 35.0182,
+      "evidence_path": "artifacts/runs/claim-20260526T152641361067Z-d03308/evidence_package.json",
       "finding_codes": [
         "TSEK_B_tau_MISSING",
         "TSEK_B_evidence_MISSING"
@@ -1778,7 +1778,7 @@
         "B_yield": 1.0
       },
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T152227011032Z-aa426e",
+      "run_id": "claim-20260526T152641361067Z-d03308",
       "scenario_passed": true
     },
     {
@@ -1786,8 +1786,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 33.0535,
-      "evidence_path": "artifacts/runs/claim-20260526T152227051910Z-2fcdc9/evidence_package.json",
+      "elapsed_ms": 35.1979,
+      "evidence_path": "artifacts/runs/claim-20260526T152641403045Z-26eab3/evidence_package.json",
       "finding_codes": [
         "TSEK_B_LF_MISSING",
         "TSEK_B_ETP_MISSING"
@@ -1810,7 +1810,7 @@
         "B_yield": 1.0
       },
       "logicfolding_margin": -133.5,
-      "run_id": "claim-20260526T152227051910Z-2fcdc9",
+      "run_id": "claim-20260526T152641403045Z-26eab3",
       "scenario_passed": true
     },
     {
@@ -1818,8 +1818,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 32.9129,
-      "evidence_path": "artifacts/runs/claim-20260526T152227093597Z-eed861/evidence_package.json",
+      "elapsed_ms": 36.4682,
+      "evidence_path": "artifacts/runs/claim-20260526T152641446633Z-e17534/evidence_package.json",
       "finding_codes": [
         "TSEK_B_LF_MISSING",
         "TSEK_B_PVT_MISSING"
@@ -1842,7 +1842,7 @@
         "B_yield": 1.0
       },
       "logicfolding_margin": -133.5,
-      "run_id": "claim-20260526T152227093597Z-eed861",
+      "run_id": "claim-20260526T152641446633Z-e17534",
       "scenario_passed": true
     },
     {
@@ -1850,8 +1850,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 33.3223,
-      "evidence_path": "artifacts/runs/claim-20260526T152227134654Z-1d8998/evidence_package.json",
+      "elapsed_ms": 36.2387,
+      "evidence_path": "artifacts/runs/claim-20260526T152641490900Z-f88665/evidence_package.json",
       "finding_codes": [
         "TSEK_B_LF_MISSING",
         "TSEK_B_yield_MISSING"
@@ -1874,7 +1874,7 @@
         "B_yield": 0.0
       },
       "logicfolding_margin": -133.5,
-      "run_id": "claim-20260526T152227134654Z-1d8998",
+      "run_id": "claim-20260526T152641490900Z-f88665",
       "scenario_passed": true
     },
     {
@@ -1882,8 +1882,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 33.4857,
-      "evidence_path": "artifacts/runs/claim-20260526T152227175381Z-d1aaf7/evidence_package.json",
+      "elapsed_ms": 36.3538,
+      "evidence_path": "artifacts/runs/claim-20260526T152641534220Z-17034a/evidence_package.json",
       "finding_codes": [
         "TSEK_B_LF_MISSING",
         "TSEK_B_evidence_MISSING"
@@ -1906,7 +1906,7 @@
         "B_yield": 1.0
       },
       "logicfolding_margin": -133.5,
-      "run_id": "claim-20260526T152227175381Z-d1aaf7",
+      "run_id": "claim-20260526T152641534220Z-17034a",
       "scenario_passed": true
     },
     {
@@ -1914,8 +1914,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 33.9076,
-      "evidence_path": "artifacts/runs/claim-20260526T152227215478Z-8ca7d9/evidence_package.json",
+      "elapsed_ms": 35.1937,
+      "evidence_path": "artifacts/runs/claim-20260526T152641579002Z-b52e05/evidence_package.json",
       "finding_codes": [
         "TSEK_B_ETP_MISSING",
         "TSEK_B_PVT_MISSING"
@@ -1938,7 +1938,7 @@
         "B_yield": 1.0
       },
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T152227215478Z-8ca7d9",
+      "run_id": "claim-20260526T152641579002Z-b52e05",
       "scenario_passed": true
     },
     {
@@ -1946,8 +1946,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 34.6911,
-      "evidence_path": "artifacts/runs/claim-20260526T152227259072Z-ab0a70/evidence_package.json",
+      "elapsed_ms": 37.8047,
+      "evidence_path": "artifacts/runs/claim-20260526T152641621998Z-6309db/evidence_package.json",
       "finding_codes": [
         "TSEK_B_ETP_MISSING",
         "TSEK_B_yield_MISSING"
@@ -1970,7 +1970,7 @@
         "B_yield": 0.0
       },
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T152227259072Z-ab0a70",
+      "run_id": "claim-20260526T152641621998Z-6309db",
       "scenario_passed": true
     },
     {
@@ -1978,8 +1978,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 33.7934,
-      "evidence_path": "artifacts/runs/claim-20260526T152227300976Z-441181/evidence_package.json",
+      "elapsed_ms": 36.7189,
+      "evidence_path": "artifacts/runs/claim-20260526T152641667983Z-0e20a8/evidence_package.json",
       "finding_codes": [
         "TSEK_B_ETP_MISSING",
         "TSEK_B_evidence_MISSING"
@@ -2002,7 +2002,7 @@
         "B_yield": 1.0
       },
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T152227300976Z-441181",
+      "run_id": "claim-20260526T152641667983Z-0e20a8",
       "scenario_passed": true
     },
     {
@@ -2010,8 +2010,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 34.6653,
-      "evidence_path": "artifacts/runs/claim-20260526T152227342389Z-af9246/evidence_package.json",
+      "elapsed_ms": 37.8305,
+      "evidence_path": "artifacts/runs/claim-20260526T152641712152Z-f1b672/evidence_package.json",
       "finding_codes": [
         "TSEK_B_PVT_MISSING",
         "TSEK_B_yield_MISSING"
@@ -2034,7 +2034,7 @@
         "B_yield": 0.0
       },
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T152227342389Z-af9246",
+      "run_id": "claim-20260526T152641712152Z-f1b672",
       "scenario_passed": true
     },
     {
@@ -2042,8 +2042,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 35.5051,
-      "evidence_path": "artifacts/runs/claim-20260526T152227385046Z-fe3396/evidence_package.json",
+      "elapsed_ms": 37.2217,
+      "evidence_path": "artifacts/runs/claim-20260526T152641757310Z-c1f5c0/evidence_package.json",
       "finding_codes": [
         "TSEK_B_PVT_MISSING",
         "TSEK_B_evidence_MISSING"
@@ -2066,7 +2066,7 @@
         "B_yield": 1.0
       },
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T152227385046Z-fe3396",
+      "run_id": "claim-20260526T152641757310Z-c1f5c0",
       "scenario_passed": true
     },
     {
@@ -2074,8 +2074,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 35.1824,
-      "evidence_path": "artifacts/runs/claim-20260526T152227428375Z-15789c/evidence_package.json",
+      "elapsed_ms": 40.1382,
+      "evidence_path": "artifacts/runs/claim-20260526T152641802759Z-40e2dd/evidence_package.json",
       "finding_codes": [
         "TSEK_B_yield_MISSING",
         "TSEK_B_evidence_MISSING"
@@ -2098,7 +2098,7 @@
         "B_yield": 0.0
       },
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T152227428375Z-15789c",
+      "run_id": "claim-20260526T152641802759Z-40e2dd",
       "scenario_passed": true
     }
   ],
@@ -2109,8 +2109,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 42.1026,
-      "evidence_path": "artifacts/runs/claim-20260526T152225048343Z-b75838/evidence_package.json",
+      "elapsed_ms": 41.963,
+      "evidence_path": "artifacts/runs/claim-20260526T152639393793Z-c12e74/evidence_package.json",
       "finding_codes": [
         "TSEK_B_source_MISSING",
         "TSEK_B_metric_MISSING"
@@ -2133,7 +2133,7 @@
         "B_yield": 1.0
       },
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T152225048343Z-b75838",
+      "run_id": "claim-20260526T152639393793Z-c12e74",
       "scenario_passed": true
     },
     {
@@ -2141,8 +2141,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 36.675,
-      "evidence_path": "artifacts/runs/claim-20260526T152225099128Z-9c26e9/evidence_package.json",
+      "elapsed_ms": 38.1188,
+      "evidence_path": "artifacts/runs/claim-20260526T152639444288Z-77f3cc/evidence_package.json",
       "finding_codes": [
         "TSEK_B_source_MISSING",
         "TSEK_B_baseline_MISSING"
@@ -2165,7 +2165,7 @@
         "B_yield": 1.0
       },
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T152225099128Z-9c26e9",
+      "run_id": "claim-20260526T152639444288Z-77f3cc",
       "scenario_passed": true
     },
     {
@@ -2173,8 +2173,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 36.8092,
-      "evidence_path": "artifacts/runs/claim-20260526T152225143547Z-c64eca/evidence_package.json",
+      "elapsed_ms": 36.794,
+      "evidence_path": "artifacts/runs/claim-20260526T152639488994Z-0c2da3/evidence_package.json",
       "finding_codes": [
         "TSEK_B_source_MISSING",
         "TSEK_B_method_MISSING"
@@ -2197,7 +2197,7 @@
         "B_yield": 1.0
       },
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T152225143547Z-c64eca",
+      "run_id": "claim-20260526T152639488994Z-0c2da3",
       "scenario_passed": true
     },
     {
@@ -2205,8 +2205,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 36.2567,
-      "evidence_path": "artifacts/runs/claim-20260526T152225188153Z-028e04/evidence_package.json",
+      "elapsed_ms": 35.4266,
+      "evidence_path": "artifacts/runs/claim-20260526T152639534486Z-c9b0a7/evidence_package.json",
       "finding_codes": [
         "TSEK_B_source_MISSING",
         "TSEK_B_workload_MISSING"
@@ -2229,7 +2229,7 @@
         "B_yield": 1.0
       },
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T152225188153Z-028e04",
+      "run_id": "claim-20260526T152639534486Z-c9b0a7",
       "scenario_passed": true
     },
     {
@@ -2237,8 +2237,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 37.0127,
-      "evidence_path": "artifacts/runs/claim-20260526T152225231780Z-edc0be/evidence_package.json",
+      "elapsed_ms": 35.0583,
+      "evidence_path": "artifacts/runs/claim-20260526T152639577432Z-91f7f2/evidence_package.json",
       "finding_codes": [
         "TSEK_B_source_MISSING",
         "TSEK_B_tau_MISSING"
@@ -2261,7 +2261,7 @@
         "B_yield": 1.0
       },
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T152225231780Z-edc0be",
+      "run_id": "claim-20260526T152639577432Z-91f7f2",
       "scenario_passed": true
     },
     {
@@ -2269,8 +2269,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 35.8433,
-      "evidence_path": "artifacts/runs/claim-20260526T152225276577Z-82887e/evidence_package.json",
+      "elapsed_ms": 35.2461,
+      "evidence_path": "artifacts/runs/claim-20260526T152639621483Z-ba75da/evidence_package.json",
       "finding_codes": [
         "TSEK_B_source_MISSING",
         "TSEK_B_LF_MISSING"
@@ -2293,7 +2293,7 @@
         "B_yield": 1.0
       },
       "logicfolding_margin": -133.5,
-      "run_id": "claim-20260526T152225276577Z-82887e",
+      "run_id": "claim-20260526T152639621483Z-ba75da",
       "scenario_passed": true
     },
     {
@@ -2301,8 +2301,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 40.6994,
-      "evidence_path": "artifacts/runs/claim-20260526T152225320092Z-c4a617/evidence_package.json",
+      "elapsed_ms": 34.2962,
+      "evidence_path": "artifacts/runs/claim-20260526T152639663726Z-cd9b47/evidence_package.json",
       "finding_codes": [
         "TSEK_B_source_MISSING",
         "TSEK_B_ETP_MISSING"
@@ -2325,7 +2325,7 @@
         "B_yield": 1.0
       },
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T152225320092Z-c4a617",
+      "run_id": "claim-20260526T152639663726Z-cd9b47",
       "scenario_passed": true
     },
     {
@@ -2333,8 +2333,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 34.4889,
-      "evidence_path": "artifacts/runs/claim-20260526T152225368811Z-a36f96/evidence_package.json",
+      "elapsed_ms": 35.8109,
+      "evidence_path": "artifacts/runs/claim-20260526T152639708187Z-74cf05/evidence_package.json",
       "finding_codes": [
         "TSEK_B_source_MISSING",
         "TSEK_B_PVT_MISSING"
@@ -2357,7 +2357,7 @@
         "B_yield": 1.0
       },
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T152225368811Z-a36f96",
+      "run_id": "claim-20260526T152639708187Z-74cf05",
       "scenario_passed": true
     },
     {
@@ -2365,8 +2365,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 33.82,
-      "evidence_path": "artifacts/runs/claim-20260526T152225411347Z-4b7356/evidence_package.json",
+      "elapsed_ms": 36.8855,
+      "evidence_path": "artifacts/runs/claim-20260526T152639751856Z-c36a2e/evidence_package.json",
       "finding_codes": [
         "TSEK_B_source_MISSING",
         "TSEK_B_yield_MISSING"
@@ -2389,7 +2389,7 @@
         "B_yield": 0.0
       },
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T152225411347Z-4b7356",
+      "run_id": "claim-20260526T152639751856Z-c36a2e",
       "scenario_passed": true
     },
     {
@@ -2397,8 +2397,8 @@
       "class_index": 2,
       "classification": "TSEK-C",
       "diagnostic_average": 0.8182,
-      "elapsed_ms": 34.9884,
-      "evidence_path": "artifacts/runs/claim-20260526T152225453800Z-854b5e/evidence_package.json",
+      "elapsed_ms": 34.6,
+      "evidence_path": "artifacts/runs/claim-20260526T152639796573Z-da8a01/evidence_package.json",
       "finding_codes": [
         "TSEK_B_source_MISSING",
         "TSEK_B_evidence_MISSING"
@@ -2421,7 +2421,7 @@
         "B_yield": 1.0
       },
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T152225453800Z-854b5e",
+      "run_id": "claim-20260526T152639796573Z-da8a01",
       "scenario_passed": true
     }
   ]

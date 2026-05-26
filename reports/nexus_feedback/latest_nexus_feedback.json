@@ -5,7 +5,7 @@
     "visuals/nexus_feedback/v0_4_5/nexus_feedback_severity_counts.png",
     "visuals/nexus_feedback/v0_4_5/nexus_priority_stack.png"
   ],
-  "generated_at": "2026-05-26T15:22:46.515887+00:00",
+  "generated_at": "2026-05-26T15:27:00.877371+00:00",
   "health": {
     "checks": {
       "explanation_cards": true,
@@ -77,7 +77,7 @@
       "target_next": "README feedback command sync"
     }
   ],
-  "schema": "tau-scaling-nexus-reflective-feedback-v0.4.5",
+  "schema": "tau-scaling-nexus-reflective-feedback-v0.4.5b",
   "signals": [
     {
       "evidence": {

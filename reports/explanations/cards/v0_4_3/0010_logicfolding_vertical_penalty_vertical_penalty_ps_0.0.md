@@ -1,6 +1,6 @@
 # Explanation Card — logicfolding_vertical_penalty:vertical_penalty_ps=0.0
 
-Generated: `2026-05-26T15:22:41.032526+00:00`
+Generated: `2026-05-26T15:26:55.366928+00:00`
 
 | Field | Value |
 |---|---|
@@ -26,7 +26,7 @@ None
 ## Evidence Path
 
 ```text
-artifacts/runs/claim-20260526T152230720536Z-441c92/evidence_package.json
+artifacts/runs/claim-20260526T152645113827Z-23c184/evidence_package.json
 ```
 
 ## Boundary
