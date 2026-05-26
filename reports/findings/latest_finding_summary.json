@@ -25,7 +25,7 @@
     "TSEK_B_yield_MISSING": 2,
     "TSEK_OVERCLAIM_INDEPENDENT_VALIDATION": 1
   },
-  "generated_at": "2026-05-26T13:13:37.508894+00:00",
+  "generated_at": "2026-05-26T13:22:31.264895+00:00",
   "non_claim_lock": "Synthetic gate suite validates local runtime downgrade behavior only. It is not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.",
   "schema": "tau-scaling-finding-summary-v0.4.0"
 }

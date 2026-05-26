@@ -1,14 +1,14 @@
 # Tau Scaling v0.4.0 Synthetic Gate Suite
 
-Generated: `2026-05-26T13:13:37.508894+00:00`
+Generated: `2026-05-26T13:22:31.264895+00:00`
 
 ## Result
 
 - Total scenarios: `10`
-- Passed scenarios: `9`
-- Failed scenarios: `1`
-- All scenarios passed: `False`
-- Mean elapsed ms: `40.6205`
+- Passed scenarios: `10`
+- Failed scenarios: `0`
+- All scenarios passed: `True`
+- Mean elapsed ms: `37.3734`
 
 ## Benchmark Charts
 
@@ -39,7 +39,7 @@ Generated: `2026-05-26T13:13:37.508894+00:00`
 | `pvt_closure_fail_downgrade` | TSEK-C | TSEK-C | 0.0 | 0.9091 | 1 | True |
 | `evidence_package_missing_downgrade` | TSEK-C | TSEK-C | 0.0 | 0.9091 | 1 | True |
 | `independent_validation_overclaim_block` | TSEK-E | TSEK-E | 0.0 | 1.0 | 1 | True |
-| `multi_gate_stress_low_disclosure` | TSEK-D | TSEK-E | 0.0 | 0.0909 | 10 | False |
+| `multi_gate_stress_low_disclosure` | TSEK-E | TSEK-E | 0.0 | 0.0909 | 10 | True |
 
 ## Finding Code Frequency
 

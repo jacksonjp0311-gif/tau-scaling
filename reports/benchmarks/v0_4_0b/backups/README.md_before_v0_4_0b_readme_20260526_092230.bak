@@ -10,8 +10,8 @@
 
 Repository: `tau-scaling`  
 Package / CLI: `tau_scaling` / `tau-scaling`  
-Current checkpoint: **TAU-SCALING-SA v0.4.0b - Synthetic Gate Expectation Calibration**  
-Previous seal: **TAU-SCALING-SA v0.4.0a - Synthetic Gate Report Link Repair**
+Current checkpoint: **TAU-SCALING-SA v0.4.0a - Synthetic Gate Report Link Repair**  
+Previous seal: **TAU-SCALING-SA v0.4.0 - Synthetic Gate Test Suite + Benchmark Finding Charts**
 
 Tau Scaling is a local-first, evidence-gated Python runtime for evaluating tau-scaling claims through structured claim cards, workload declarations, tau vectors, LogicFolding survivability checks, edge-to-surface boundary algebra, energy / thermal / PDN / PVT gates, Monte Carlo checker stress, TSEK classification, evidence packages, and RCC-N / OMN-style repository navigation.
 
@@ -55,7 +55,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | TAU-SCALING-SA v0.4.0b |
+| Current checkpoint | TAU-SCALING-SA v0.4.0a |
 | Synthetic gate suite | v0.4.0 / benchmark + finding charts |
 | Package version | 0.2.0 |
 | Baseline seed | TSEK-C / A_TSEK 0.0000 |
@@ -71,7 +71,6 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 | Benchmark harness | 12 runs / 12 unique IDs / 0 duplicates |
 | Synthetic gate report | `reports/gates/latest_synthetic_gate_report.md` |
 | Synthetic gate report links | repaired / v0.4.0a |
-| Synthetic gate suite | expected 10/10 after v0.4.0b calibration |
 | Finding charts | `reports/findings/latest_finding_charts.md` |
 | Release readiness report | `reports/release/latest_release_readiness.md` |
 | Collision-proof run identity | passed |
@@ -377,7 +376,6 @@ This section is part of the repository's operating memory. When a patch fails, t
 | L-013 | v0.3.3c README had out-of-order release lineage. | Emergency repair appended rows without chronological normalization. | Release lineage and lesson ledgers must be ordered before push. |
 | L-014 | README contract became more advanced than AGENTS.md and task routing matrix. | Human-facing Nexus evolved faster than agent-facing operating contract. | Agent contracts and routing matrices must be synchronized before experiments begin. |
 | L-015 | v0.4.0 synthetic suite generated charts but failed Markdown rendering. | The report renderer tried to make visual paths relative to `reports/benchmarks/v0_4_0`, although visuals live outside that subtree. | Benchmark reports must use repo-root-safe relative links for visuals, and failed synthetic-suite runs must be repaired before being treated as complete. |
-| L-016 | v0.4.0a synthetic suite completed reports but one scenario failed. | The multi-gate stress seed expected TSEK-D even though the classifier correctly returns TSEK-E when only one of eleven hard gates survives. | Synthetic test expectations must be calibrated to the classifier algebra; incomplete suites must exit non-zero. |
 
 ### Failure Response Protocol
 
@@ -754,7 +752,6 @@ validation_remains_required
 | v0.3.3e | Agent contract geometry sync and v0.4 routing readiness. |
 | v0.4.0 | Synthetic gate suite with benchmark charts and finding charts. |
 | v0.4.0a | Synthetic gate report link repair and complete report regeneration. |
-| v0.4.0b | Synthetic gate expectation calibration and hard-fail incomplete suite semantics. |
 
 ## Next Recommended Version
 

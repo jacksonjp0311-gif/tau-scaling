@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-26T13:13:37.021040+00:00",
+  "generated_at": "2026-05-26T13:22:30.811339+00:00",
   "non_claim_lock": "Synthetic gate seeds test local runtime downgrade behavior only; they are not silicon/product validation.",
   "scenarios": [
     {
@@ -83,7 +83,7 @@
     },
     {
       "description": "Multiple disclosure and gate surfaces fail together; expect broad downgrade.",
-      "expected_class": "TSEK-D",
+      "expected_class": "TSEK-E",
       "expected_codes": [
         "TSEK_B_metric_MISSING",
         "TSEK_B_baseline_MISSING",

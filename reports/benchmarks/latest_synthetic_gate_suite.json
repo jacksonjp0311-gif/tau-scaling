@@ -1,5 +1,5 @@
 {
-  "all_scenarios_passed": false,
+  "all_scenarios_passed": true,
   "boundary": "Synthetic gate suite validates local runtime downgrade behavior only. It is not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.",
   "chart_paths": [
     "visuals/benchmarks/v0_4_0/class_distribution.png",
@@ -26,7 +26,7 @@
     "TSEK-C": 7,
     "TSEK-E": 2
   },
-  "failed_scenarios": 1,
+  "failed_scenarios": 0,
   "finding_counts": {
     "TSEK_B_ETP_MISSING": 2,
     "TSEK_B_LF_MISSING": 2,
@@ -53,9 +53,9 @@
     "B_workload": 2,
     "B_yield": 2
   },
-  "generated_at": "2026-05-26T13:13:37.508894+00:00",
-  "mean_elapsed_ms": 40.6205,
-  "passed_scenarios": 9,
+  "generated_at": "2026-05-26T13:22:31.264895+00:00",
+  "mean_elapsed_ms": 37.3734,
+  "passed_scenarios": 10,
   "results": [
     {
       "A_TSEK": 1.0,
@@ -70,8 +70,8 @@
         "edge_starvation_detected": true,
         "model": "beta_edge ~ N^-1; beta_surface ~ O(1)"
       },
-      "elapsed_ms": 45.4658,
-      "evidence_path": "artifacts/runs/claim-20260526T131337022044Z-b3a682/evidence_package.json",
+      "elapsed_ms": 42.8213,
+      "evidence_path": "artifacts/runs/claim-20260526T132230812338Z-12e58a/evidence_package.json",
       "expected_class": "TSEK-B",
       "expected_codes": [],
       "expected_findings_present": true,
@@ -93,7 +93,7 @@
       },
       "id": "control_all_disclosed_promotable",
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T131337022044Z-b3a682",
+      "run_id": "claim-20260526T132230812338Z-12e58a",
       "scenario_passed": true,
       "unexpected_missing_expected_codes": []
     },
@@ -110,8 +110,8 @@
         "edge_starvation_detected": true,
         "model": "beta_edge ~ N^-1; beta_surface ~ O(1)"
       },
-      "elapsed_ms": 39.0247,
-      "evidence_path": "artifacts/runs/claim-20260526T131337076426Z-20c844/evidence_package.json",
+      "elapsed_ms": 37.6898,
+      "evidence_path": "artifacts/runs/claim-20260526T132230863673Z-63c150/evidence_package.json",
       "expected_class": "TSEK-C",
       "expected_codes": [
         "TSEK_B_yield_MISSING"
@@ -137,7 +137,7 @@
       },
       "id": "yield_missing_downgrade",
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T131337076426Z-20c844",
+      "run_id": "claim-20260526T132230863673Z-63c150",
       "scenario_passed": true,
       "unexpected_missing_expected_codes": []
     },
@@ -154,8 +154,8 @@
         "edge_starvation_detected": true,
         "model": "beta_edge ~ N^-1; beta_surface ~ O(1)"
       },
-      "elapsed_ms": 42.5367,
-      "evidence_path": "artifacts/runs/claim-20260526T131337122983Z-8af833/evidence_package.json",
+      "elapsed_ms": 35.9876,
+      "evidence_path": "artifacts/runs/claim-20260526T132230908276Z-1f724a/evidence_package.json",
       "expected_class": "TSEK-C",
       "expected_codes": [
         "TSEK_B_workload_MISSING"
@@ -181,7 +181,7 @@
       },
       "id": "missing_workload_downgrade",
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T131337122983Z-8af833",
+      "run_id": "claim-20260526T132230908276Z-1f724a",
       "scenario_passed": true,
       "unexpected_missing_expected_codes": []
     },
@@ -198,8 +198,8 @@
         "edge_starvation_detected": true,
         "model": "beta_edge ~ N^-1; beta_surface ~ O(1)"
       },
-      "elapsed_ms": 40.0768,
-      "evidence_path": "artifacts/runs/claim-20260526T131337173780Z-1ddbcb/evidence_package.json",
+      "elapsed_ms": 37.904,
+      "evidence_path": "artifacts/runs/claim-20260526T132230953121Z-76a279/evidence_package.json",
       "expected_class": "TSEK-C",
       "expected_codes": [
         "TSEK_B_baseline_MISSING"
@@ -225,7 +225,7 @@
       },
       "id": "missing_baseline_downgrade",
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T131337173780Z-1ddbcb",
+      "run_id": "claim-20260526T132230953121Z-76a279",
       "scenario_passed": true,
       "unexpected_missing_expected_codes": []
     },
@@ -242,8 +242,8 @@
         "edge_starvation_detected": true,
         "model": "beta_edge ~ N^-1; beta_surface ~ O(1)"
       },
-      "elapsed_ms": 40.7419,
-      "evidence_path": "artifacts/runs/claim-20260526T131337221166Z-7d0c76/evidence_package.json",
+      "elapsed_ms": 35.884,
+      "evidence_path": "artifacts/runs/claim-20260526T132230999687Z-9e217b/evidence_package.json",
       "expected_class": "TSEK-C",
       "expected_codes": [
         "TSEK_B_LF_MISSING"
@@ -269,7 +269,7 @@
       },
       "id": "logicfolding_high_vertical_penalty_downgrade",
       "logicfolding_margin": -128.5,
-      "run_id": "claim-20260526T131337221166Z-7d0c76",
+      "run_id": "claim-20260526T132230999687Z-9e217b",
       "scenario_passed": true,
       "unexpected_missing_expected_codes": []
     },
@@ -286,8 +286,8 @@
         "edge_starvation_detected": true,
         "model": "beta_edge ~ N^-1; beta_surface ~ O(1)"
       },
-      "elapsed_ms": 39.9554,
-      "evidence_path": "artifacts/runs/claim-20260526T131337270288Z-e50d66/evidence_package.json",
+      "elapsed_ms": 36.5074,
+      "evidence_path": "artifacts/runs/claim-20260526T132231042364Z-f3e2d0/evidence_package.json",
       "expected_class": "TSEK-C",
       "expected_codes": [
         "TSEK_B_ETP_MISSING"
@@ -313,7 +313,7 @@
       },
       "id": "etp_thermal_pdn_fail_downgrade",
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T131337270288Z-e50d66",
+      "run_id": "claim-20260526T132231042364Z-f3e2d0",
       "scenario_passed": true,
       "unexpected_missing_expected_codes": []
     },
@@ -330,8 +330,8 @@
         "edge_starvation_detected": true,
         "model": "beta_edge ~ N^-1; beta_surface ~ O(1)"
       },
-      "elapsed_ms": 40.1131,
-      "evidence_path": "artifacts/runs/claim-20260526T131337317929Z-9f6ca6/evidence_package.json",
+      "elapsed_ms": 36.221,
+      "evidence_path": "artifacts/runs/claim-20260526T132231087357Z-31be52/evidence_package.json",
       "expected_class": "TSEK-C",
       "expected_codes": [
         "TSEK_B_PVT_MISSING"
@@ -357,7 +357,7 @@
       },
       "id": "pvt_closure_fail_downgrade",
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T131337317929Z-9f6ca6",
+      "run_id": "claim-20260526T132231087357Z-31be52",
       "scenario_passed": true,
       "unexpected_missing_expected_codes": []
     },
@@ -374,8 +374,8 @@
         "edge_starvation_detected": true,
         "model": "beta_edge ~ N^-1; beta_surface ~ O(1)"
       },
-      "elapsed_ms": 39.92,
-      "evidence_path": "artifacts/runs/claim-20260526T131337365947Z-ae7084/evidence_package.json",
+      "elapsed_ms": 36.5903,
+      "evidence_path": "artifacts/runs/claim-20260526T132231130482Z-60aadf/evidence_package.json",
       "expected_class": "TSEK-C",
       "expected_codes": [
         "TSEK_B_evidence_MISSING"
@@ -401,7 +401,7 @@
       },
       "id": "evidence_package_missing_downgrade",
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T131337365947Z-ae7084",
+      "run_id": "claim-20260526T132231130482Z-60aadf",
       "scenario_passed": true,
       "unexpected_missing_expected_codes": []
     },
@@ -418,8 +418,8 @@
         "edge_starvation_detected": true,
         "model": "beta_edge ~ N^-1; beta_surface ~ O(1)"
       },
-      "elapsed_ms": 39.7745,
-      "evidence_path": "artifacts/runs/claim-20260526T131337412742Z-dcec5c/evidence_package.json",
+      "elapsed_ms": 37.8456,
+      "evidence_path": "artifacts/runs/claim-20260526T132231174730Z-a19fc7/evidence_package.json",
       "expected_class": "TSEK-E",
       "expected_codes": [
         "TSEK_OVERCLAIM_INDEPENDENT_VALIDATION"
@@ -445,13 +445,13 @@
       },
       "id": "independent_validation_overclaim_block",
       "logicfolding_margin": 9.5,
-      "run_id": "claim-20260526T131337412742Z-dcec5c",
+      "run_id": "claim-20260526T132231174730Z-a19fc7",
       "scenario_passed": true,
       "unexpected_missing_expected_codes": []
     },
     {
       "A_TSEK": 0.0,
-      "class_passed": false,
+      "class_passed": true,
       "classification": "TSEK-E",
       "description": "Multiple disclosure and gate surfaces fail together; expect broad downgrade.",
       "diagnostic_average": 0.0909,
@@ -462,9 +462,9 @@
         "edge_starvation_detected": true,
         "model": "beta_edge ~ N^-1; beta_surface ~ O(1)"
       },
-      "elapsed_ms": 38.5959,
-      "evidence_path": "artifacts/runs/claim-20260526T131337460423Z-771a6c/evidence_package.json",
-      "expected_class": "TSEK-D",
+      "elapsed_ms": 36.2825,
+      "evidence_path": "artifacts/runs/claim-20260526T132231219796Z-65e8a3/evidence_package.json",
+      "expected_class": "TSEK-E",
       "expected_codes": [
         "TSEK_B_metric_MISSING",
         "TSEK_B_baseline_MISSING",
@@ -507,8 +507,8 @@
       },
       "id": "multi_gate_stress_low_disclosure",
       "logicfolding_margin": -92.5,
-      "run_id": "claim-20260526T131337460423Z-771a6c",
-      "scenario_passed": false,
+      "run_id": "claim-20260526T132231219796Z-65e8a3",
+      "scenario_passed": true,
       "unexpected_missing_expected_codes": []
     }
   ],
