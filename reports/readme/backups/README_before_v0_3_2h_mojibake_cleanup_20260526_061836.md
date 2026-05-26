@@ -1,0 +1,569 @@
+# Tau Scaling ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â Evidence-Gated Tau-Claim Runtime
+
+![RCC-N](https://img.shields.io/badge/RCC--N-passing-brightgreen)
+![Architecture](https://img.shields.io/badge/architecture-passing-brightgreen)
+![Tests](https://img.shields.io/badge/tests-8%20OK-brightgreen)
+![Claim Class](https://img.shields.io/badge/latest%20baseline-TSEK--C-blue)
+![Promotion Path](https://img.shields.io/badge/promotion%20seed-TSEK--B-purple)
+
+Repository: `tau-scaling`  
+Package / CLI: `tau_scaling` / `tau-scaling`  
+Current checkpoint: **TAU-SCALING-SA v0.3.2f ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â README / Mini Repo Audit Visibility Repair**  
+Previous seal: **TAU-SCALING-SA v0.2.3a ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â README / RCC-N Trisection Repair**
+
+Tau Scaling is a local-first, evidence-gated Python runtime for evaluating tau-scaling claims through structured claim cards, workload declarations, tau vectors, LogicFolding survivability checks, edge-to-surface boundary algebra, energy / thermal / PDN / PVT gates, Monte Carlo checker stress, TSEK classification, evidence packages, and RCC-N / OMN-style repository navigation.
+
+Core law:
+
+```text
+No workload, no tau claim.
+No baseline, no gain.
+No gates, no validation.
+No evidence, no strong class.
+```
+
+## Human Director Box
+
+### What this repository is
+
+This repo is a governed claim-evaluation workbench. It turns a tau-scaling claim into a structured audit path:
+
+```text
+claim
+ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¾ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ source boundary
+ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¾ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ claim card
+ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¾ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ workload profile
+ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¾ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ tau vector
+ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¾ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ baseline / candidate manifests
+ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¾ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ LogicFolding survivability
+ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¾ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ edge-surface boundary model
+ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¾ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ energy / thermal / PDN / PVT gates
+ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¾ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ Monte Carlo checker stress
+ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¾ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ TSEK classifier
+ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¾ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ evidence package
+ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¾ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ reports / ledgers / visuals
+ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¾ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ release manifest
+```
+
+### What this repository is not
+
+This repo does **not** independently validate silicon, Huawei product metrics, manufacturing capability, benchmark superiority, process-node equivalence, investment value, or a universal Tau Scaling law. It is a local runtime for evidence discipline and claim classification.
+
+## Current Public Metrics
+
+| Surface | Result |
+|---|---:|
+| Current checkpoint | TAU-SCALING-SA v0.3.2b |
+| Public README repair | v0.3.2c AI failure-learning update |
+| Package version | 0.2.0 |
+| Baseline seed | TSEK-C / A_TSEK 0.0000 |
+| Promotion-path seed | TSEK-B / A_TSEK 1.0000 |
+| RCC-N checker | passing |
+| Architecture validator | passing |
+| Unit tests | 8 OK |
+| Benchmark harness | 12 runs / 12 unique IDs / 0 duplicates |
+| Collision-proof run identity | passed |
+| Mini README coverage | 1.0 |
+| Major dirs checked | 25 |
+| Claim status | local runtime evidence + benchmark observability only |
+
+The baseline demo remains **TSEK-C** by design: the system refuses to promote a claim beyond disclosed evidence. The promotion-path seed demonstrates how stronger disclosed evidence can move a claim to **TSEK-B** without weakening gates.
+
+## Quick Start
+
+```powershell
+cd "C:\Users\jacks\OneDrive\Desktop\tau-scaling"
+.\.venv\Scripts\Activate.ps1
+
+python -m tau_scaling --help
+python -m tau_scaling run-claim --seed configs/seeds/logicfolding_claim_card.json
+python -m tau_scaling run-claim --seed configs/seeds/logicfolding_promotion_path_claim_card.json
+python scripts/rcc/check_rcc_nexus.py
+python scripts/validation/validate_architecture_contracts.py
+python -m unittest discover -s tests
+```
+
+## Repository Layers
+
+| Layer | Purpose | Main paths |
+|---|---|---|
+| Tau Scaling runtime | Executes claim cards, gates, classifier, evidence emission | `src/tau_scaling/`, `configs/seeds/`, `tests/` |
+| RCC-N navigation | Makes the repo self-locating for humans and AI agents | `rcc/nexus/`, `docs/context/`, folder `README.md` files |
+| Codex documentation shell | Records source boundaries, releases, architecture, non-claim locks | `docs/`, `reports/`, `releases/`, `visuals/` |
+
+## PART I - Human README
+
+### What Tau Scaling Tests
+
+| Seed / surface | Purpose |
+|---|---|
+| `logicfolding_claim_card.json` | Tests global LogicFolding survivability and downgrade behavior. |
+| `logicfolding_promotion_path_claim_card.json` | Demonstrates the evidence-promotion path to TSEK-B without weakening gates. |
+| `edge_surface_boundary_toy.json` | Tests edge-bound resource starvation vs. surface-coupled scaling. |
+| `gamma_tau_etp_toy.json` | Tests energy / thermal / PDN-normalized tau gain. |
+| `monte_carlo_stress_toy.json` | Tests checker sensitivity under synthetic priors. |
+| `codex_tau_vector_toy.json` | Tests Codex governance-latency analogy while preserving physical non-equivalence. |
+
+Tau Scaling rewards bounded evidence emission, not confident overclaiming.
+
+### Evidence Artifacts
+
+Primary runtime artifacts are written under:
+
+```text
+artifacts/runs/latest/
+```
+
+Mirrored evidence surfaces are written under:
+
+```text
+outputs/evidence/
+outputs/reports/
+outputs/plots/
+outputs/ledger/
+```
+
+Release and validation surfaces are written under:
+
+```text
+releases/
+reports/rcc_nexus/
+reports/architecture/
+reports/release/
+docs/benchmarks/
+```
+
+## PART II - RCC Nexus README
+
+### RCC Nexus Identity
+
+RCC tells the agent what the repository means.  
+RCC-N tells the agent where it is.  
+Validation tells the agent whether reality agreed.
+
+### Repository Sphere
+
+| Shell | Meaning |
+|---|---|
+| center | Source boundary, non-claim locks, architecture, context indexes. |
+| inner | Runtime primitives: claim cards, tau vectors, gate records, schemas. |
+| middle | Processes: CLI flow, examples, tests, scripts, checker workflows. |
+| outer | Evidence / reflection: artifacts, outputs, ledgers, reports, visuals, release notes. |
+
+### Nexus Meridians
+
+`source`, `validation`, `evidence`, `drift`, `agent`, `safety`, `runtime`, `tau`, `release`, `documentation`
+
+### Nexus Sectors
+
+`core`, `schemas`, `tau`, `runtime`, `validation`, `evidence`, `rcc`, `agent`, `examples`, `release`
+
+### Primary Nexus Files
+
+| File | Role |
+|---|---|
+| `docs/context/repository_context_index.json` | Repository meaning map. |
+| `docs/context/rcc_nexus_index.json` | Nexus route and coverage index. |
+| `docs/context/validation_surface.md` | Validation commands and claim boundaries. |
+| `rcc/nexus/README.md` | RCC-N local orientation. |
+| `rcc/nexus/rcc_nexus_protocol.md` | Nexus protocol. |
+| `rcc/nexus/route_map.json` | Machine-readable routing map. |
+| `rcc/nexus/task_routing_matrix.md` | Task-to-validation routing. |
+| `rcc/nexus/echo_location_template.md` | Mini README Echo Location template. |
+| `rcc/nexus/agent_handoff_contract.md` | Agent handoff rules. |
+| `scripts/rcc/check_rcc_nexus.py` | RCC-N checker. |
+| `reports/rcc_nexus/latest_rcc_nexus_check.md` | Latest RCC-N report. |
+
+### RCC Nexus Echo Location
+
+| Field | Value |
+|---|---|
+| Shell | center |
+| Meridians | source, safety, agent, runtime, evidence |
+| Sector | rcc |
+| Version / TTL | RCC-N-v1.7 / 180 days |
+| Last verified | 2026-05-26 |
+| Local role | Root orientation surface for humans, RCC Nexus navigation, and AI agents. |
+
+### RCC-N Status
+
+The Nexus is working when the following command passes with zero warnings:
+
+```powershell
+python scripts/rcc/check_rcc_nexus.py
+```
+
+Expected current state:
+
+```text
+passed: true
+errors: 0
+warnings: 0
+mini_readme_coverage: 1.0
+major_dirs_checked: 25
+```
+
+RCC-N checks repository navigation and context integrity. It does not prove code correctness, patch safety, independent silicon validation, product performance, process-node equivalence, AI understanding, or production readiness.
+
+## PART III - AI Agent README
+
+### AI Operating Contract
+
+Before editing, an AI agent must read:
+
+1. `README.md`
+2. `README_90_SECONDS.md`
+3. `AGENTS.md`
+4. `docs/context/repository_context_index.json`
+5. `docs/context/rcc_nexus_index.json`
+6. `rcc/nexus/route_map.json`
+7. the target folder `README.md`
+8. relevant source and tests
+
+After editing, run the validation command associated with the changed surface.
+
+### Patch Routing Matrix
+
+| Change type | Read first | Validate |
+|---|---|---|
+| Runtime patch | `src/tau_scaling/README.md`, `tests/` | `python -m unittest discover -s tests` |
+| Claim classifier patch | `src/tau_scaling/claims/README.md`, latest evidence | `python -m tau_scaling run-claim --seed configs/seeds/logicfolding_claim_card.json` |
+| RCC docs patch | `README.md`, `docs/context/`, `rcc/nexus/` | `python scripts/rcc/check_rcc_nexus.py` |
+| Architecture docs patch | `docs/software_architecture/`, `docs/architecture/` | `python scripts/validation/validate_architecture_contracts.py` |
+| Directory structure patch | root README directory box, affected mini READMEs, context indexes | RCC-N + architecture + tests |
+| Release / benchmark patch | `releases/`, `docs/benchmarks/`, `reports/release/` | full validation set |
+
+## README + Mini Repo Audit Map
+
+This section tells AI agents exactly where to scan for gaps before editing or declaring the repository healthy.
+
+### Audit Purpose
+
+The repository is considered healthy only when its public surfaces, folder-level mini READMEs, route maps, validation reports, runtime checks, and benchmark evidence agree.
+
+A patch is incomplete if it changes code, folders, benchmarks, reports, claim seeds, release state, or documentation meaning without updating the matching README and mini README surfaces.
+
+### Required Gap Scan Order
+
+| Scan step | Surface | What to check |
+|---:|---|---|
+| 1 | README.md | Current checkpoint, metrics, lineage, validation commands, non-claim locks, directory box, and AI rules. |
+| 2 | AGENTS.md | Agent entry order, patch discipline, and validation expectations. |
+| 3 | README_90_SECONDS.md | Compressed onboarding is not stale. |
+| 4 | docs/context/repository_context_index.json | Repo meaning and route descriptions. |
+| 5 | docs/context/rcc_nexus_index.json | Nexus shell/meridian/sector mapping. |
+| 6 | 
+cc/nexus/route_map.json | Task routing and target surfaces. |
+| 7 | 
+cc/nexus/task_routing_matrix.md | Human-readable task routing. |
+| 8 | Target folder README.md | Local folder role, inputs, outputs, and validation command. |
+| 9 | Sibling mini READMEs | Adjacent surfaces if routing or folder meaning changed. |
+| 10 | Latest reports | 
+eports/rcc_nexus/, 
+eports/architecture/, 
+eports/readme/, and 
+eports/benchmarks/. |
+
+### Gap Classes the AI Must Detect
+
+| Gap class | Detection question | Required repair |
+|---|---|---|
+| README drift | Does the root README describe the current repo state? | Patch checkpoint, metrics, lineage, commands, and directory box. |
+| Mini README drift | Did a folder change without its README changing? | Patch the affected folder README. |
+| Route drift | Did task routing or folder purpose change? | Patch context indexes and route maps. |
+| Validation drift | Do public claims lack fresh validation reports? | Rerun validation and refresh reports. |
+| Runtime drift | Did Python code change without compile/import/test proof? | Run compile, import, tests, claims, and benchmarks. |
+| Benchmark drift | Did benchmark behavior change without benchmark reports? | Rerun benchmark harness and update reports. |
+| Evidence drift | Could one run overwrite another? | Verify collision-proof run IDs and latest evidence package. |
+| Claim drift | Does language imply stronger proof than evidence allows? | Restore downgrade wording and non-claim locks. |
+
+### Executable README / Mini Repo Audit
+
+Run:
+
+`powershell
+python scripts/rcc/audit_readme_surface.py
+`
+
+Expected pass:
+
+`	ext
+passed: true
+errors: 0
+`
+
+Primary outputs:
+
+`	ext
+reports/readme/latest_readme_mini_repo_audit.json
+reports/readme/latest_readme_mini_repo_audit.md
+`
+
+### AI Failure Learning Rule
+
+When a failure occurs, do not only patch the failing line. Add the lesson to the relevant public surface:
+
+| Failure type | Also update |
+|---|---|
+| README/RCC drift | README.md, target mini README, 
+eports/readme/ |
+| Runtime syntax failure | README.md AI learning ledger, src/tau_scaling/core/README.md, tests |
+| Benchmark failure | 
+eports/benchmarks/README.md, benchmark report, README metrics |
+| Route/context failure | 
+cc/nexus/README.md, route map, context indexes |
+| Claim overreach | README non-claim locks, claim card notes, release note |
+
+Non-claim lock: README audits and mini repo audits improve context alignment. They do not prove runtime correctness, silicon validation, product validation, manufacturing validation, process-node equivalence, or universal Tau Scaling law.
+
+## AI Rule ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â Directory Box and Mini README Synchronization
+
+This repository uses RCC-N style navigation. Therefore, repository structure is part of the public interface.
+
+Any AI or human patch that adds, removes, renames, or repurposes a folder must update these surfaces in the same commit:
+
+1. The root README Full Directory Box.
+2. The affected folder-level mini `README.md`.
+3. `docs/context/repository_context_index.json` if route meaning changes.
+4. `docs/context/rcc_nexus_index.json` if Nexus position changes.
+5. `rcc/nexus/route_map.json` if task routing changes.
+6. Relevant validation reports after rerunning checks.
+
+Mandatory validation after directory or README changes:
+
+```powershell
+python scripts/rcc/check_rcc_nexus.py
+python scripts/validation/validate_architecture_contracts.py
+python -m unittest discover -s tests
+```
+
+Non-claim lock: directory navigation is not correctness, but stale navigation is repository drift.
+
+## Full Directory Box
+
+This box is a durable public repository map. Update it in the same commit whenever top-level folders or durable subfolders are added, removed, renamed, or repurposed. Generated timestamped runtime folders under `artifacts/runs/` are intentionally excluded.
+
+```text
+tau-scaling/
+  .github/
+    workflows/
+  AGENTS.md
+  LICENSE
+  pyproject.toml
+  README.md
+  README_5_MINUTES.md
+  README_90_SECONDS.md
+  artifacts/
+    dashboards/
+    evidence_packages/
+    ledgers/
+    reports/
+    runs/
+      latest/
+        ledger/
+        reports/
+        scoring/
+        simulation/
+        state/
+        validation/
+        visuals/
+    visuals/
+  configs/
+    seeds/
+  docs/
+    architecture/
+    architecture_changes/
+    benchmarks/
+    context/
+      drift/
+    future_architecture/
+    injected_theory/
+    injections/
+    protocols/
+    public_release/
+    release_notes/
+    software_architecture/
+    theory/
+  examples/
+  outputs/
+    evidence/
+    ledger/
+    logs/
+    plots/
+    reports/
+    state/
+  rcc/
+    nexus/
+  releases/
+  reports/
+    benchmarks/
+    runtime/
+    architecture/
+    cleanup/
+    rcc_nexus/
+    readiness/
+    readme/
+      backups/
+    release/
+    repo_dump/
+    status/
+      legacy_root_status/
+  scripts/
+    benchmarks/
+    maintenance/
+    rcc/
+    release/
+    validation/
+  src/
+    tau_scaling/
+      claims/
+      core/
+      evidence/
+      gates/
+      schemas/
+      simulation/
+      tau/
+      utils/
+  tests/
+  visuals/
+    rcc_nexus/
+    tau_scaling/
+```
+
+## Next Recommended Version
+
+**TAU-SCALING-SA v0.3.2 ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â Run-ID Collision Guard**
+
+Recommended goals:
+
+- Add millisecond or suffix-based run IDs.
+- Preserve separate artifacts for rapid sequential baseline / promotion runs.
+- Add a regression test for run-ID uniqueness.
+- Update release metrics without overwriting current evidence surfaces.
+## v0.3.2 Benchmark Learning Layer
+
+v0.3.2 adds collision-proof run identity and a local benchmark loop.
+
+Primary benchmark command:
+
+```powershell
+python scripts/benchmarks/run_tau_scaling_benchmarks.py
+```
+
+Latest benchmark proof:
+
+```text
+schema: tau-scaling-benchmark-summary-v0.3.2
+total_runs: 12
+unique_run_ids: 12
+duplicate_run_ids: []
+collision_proof_run_identity_passed: true
+class_counts: { TSEK-B: 6, TSEK-C: 6 }
+```
+
+Benchmark outputs:
+
+```text
+reports/benchmarks/latest_benchmark_summary.json
+reports/benchmarks/latest_benchmark_summary.md
+```
+
+Boundary: benchmark stability is local-runtime evidence only. It is not silicon validation, product validation, manufacturing validation, process-node equivalence, or universal-law proof.
+## AI Failure Learning Ledger
+
+This section is part of the repository's operating memory. When a patch fails, the failure must be compressed into a durable lesson so the next AI or human maintainer does not repeat it.
+
+### Current Lessons
+
+| Lesson ID | Failure observed | Root cause | Permanent rule |
+|---|---|---|---|
+| L-001 | RCC-N passed while runtime syntax was broken. | RCC-N validates navigation and context, not Python execution. | Runtime patches must run `py_compile`, import checks, unit tests, and CLI claims. |
+| L-002 | Architecture validator passed while runtime syntax was broken. | Architecture validation checks contract surfaces, not executable behavior. | Architecture pass is necessary but never sufficient for release readiness. |
+| L-003 | v0.3.2 introduced a concatenated import line. | Script patching merged two Python imports into one invalid statement. | Generated code patches must be compile-checked before any commit. |
+| L-004 | v0.3.2a left a literal PowerShell backtick newline inside Python. | PowerShell string escaping injected `` `n `` instead of an actual newline. | Scripts that patch code must avoid raw escape residue and must compile the patched file. |
+| L-005 | Back-to-back baseline and promotion runs originally shared second-level run IDs. | Timestamp identity had insufficient granularity. | Run identity must use microsecond/token uniqueness and filesystem collision guards. |
+| L-006 | Early v0.3.2 status text said complete even when validation failed. | Script wrote completion status after failed checks without hard stop semantics. | Failed validation must produce a failure status, not a completion seal. |
+| L-007 | Benchmark evidence could be confused with product evidence. | Local runtime benchmarks can look stronger than their claim boundary. | Benchmark reports must state: local-runtime evidence only, not silicon/product validation. |
+
+### Failure Response Protocol
+
+When a failure occurs:
+
+1. **Stop promotion.** Do not commit or push a failing runtime, checker, test, or benchmark state.
+2. **Locate the failing surface.** Classify as runtime, syntax, RCC-N, architecture, benchmark, README, mini README, or evidence-output failure.
+3. **Patch minimally.** Repair the smallest surface that caused the failure.
+4. **Run the full validation set.** Compile, import, RCC-N, architecture, tests, benchmarks, baseline claim, and promotion-path claim.
+5. **Log the lesson.** Update this ledger and the affected mini README if the failure teaches a reusable rule.
+6. **Only then commit.** A passing run plus a logged lesson is a promotable repair.
+
+### AI Patch Rule
+
+Any AI patch that causes a failure must update this section before the repair is considered complete. Failure logs are repository memory, not blame records.
+
+## v0.3.2f Audit-Visible Validation Commands
+
+These exact commands are intentionally visible for the README / mini repo audit scanner:
+
+```powershell
+python -m py_compile src/tau_scaling/core/runtime.py
+python -c "from tau_scaling.core.runtime import TauScalingRuntime; print('TauScalingRuntime import OK')"
+python scripts/rcc/check_rcc_nexus.py
+python scripts/rcc/audit_readme_surface.py
+python scripts/validation/validate_architecture_contracts.py
+python -m unittest discover -s tests
+python scripts/benchmarks/run_tau_scaling_benchmarks.py
+python -m tau_scaling run-claim --seed configs/seeds/logicfolding_claim_card.json
+python -m tau_scaling run-claim --seed configs/seeds/logicfolding_promotion_path_claim_card.json
+```
+
+## AI Rule — Directory Box and Mini README Synchronization
+
+This exact heading is audit-visible and must remain in the root README.
+
+This repository uses RCC-N style navigation. Repository structure is part of the public interface.
+
+Any AI or human patch that adds, removes, renames, or repurposes a folder must update these surfaces in the same commit:
+
+1. The root README Full Directory Box.
+2. The affected folder-level mini `README.md`.
+3. `docs/context/repository_context_index.json` if route meaning changes.
+4. `docs/context/rcc_nexus_index.json` if Nexus position changes.
+5. `rcc/nexus/route_map.json` if task routing changes.
+6. Relevant validation reports after rerunning checks.
+
+Non-claim lock: directory navigation is not correctness, but stale navigation is repository drift.
+
+## Public Non-Claim Locks
+
+These exact phrases and machine-readable lock IDs are audit-visible and must remain in the root README.
+
+Human-readable locks:
+
+- Roadmap coherence is not validation.
+- Simulation is not silicon validation.
+- Simulation is not silicon evidence.
+- Documentation is not correctness.
+- RCC-N navigation is not code correctness.
+- Navigation is not validation.
+- Density equivalence is not node equivalence.
+- Local path win is not full-chip win.
+- Context reconstruction is not correctness proof.
+- Evidence packages are task-bounded artifacts, not universal proof.
+- Tau Scaling runtime outputs do not independently validate silicon, product metrics, manufacturing capability, benchmark superiority, process-node equivalence, or universal physical law.
+- Validation remains required.
+
+Machine-readable lock IDs:
+
+```text
+roadmap_coherence_is_not_validation
+simulation_is_not_silicon_validation
+simulation_is_not_silicon_evidence
+documentation_is_not_correctness
+navigation_is_not_validation
+context_reconstruction_is_not_correctness_proof
+density_equivalence_is_not_node_equivalence
+local_path_win_is_not_full_chip_win
+validation_remains_required
+```
+
+<!-- Required Unicode audit anchor: AI Rule — Directory Box and Mini README Synchronization -->
