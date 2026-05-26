@@ -1,34 +1,13 @@
 {
   "schema": "tau-scaling-rcc-nexus-check-v0.2",
-  "generated_at": "2026-05-26T09:17:41.942150+00:00",
+  "generated_at": "2026-05-26T09:30:39.727798+00:00",
   "repository": "tau-scaling",
   "profile": "Full",
   "major_dirs_checked": 25,
   "mini_readme_coverage": 1.0,
-  "errors": 3,
-  "warnings": 1,
-  "passed": false,
-  "findings": [
-    {
-      "severity": "error",
-      "code": "readme_trisection_missing",
-      "section": "PART I - Human README"
-    },
-    {
-      "severity": "error",
-      "code": "readme_trisection_missing",
-      "section": "PART II - RCC Nexus README"
-    },
-    {
-      "severity": "error",
-      "code": "readme_trisection_missing",
-      "section": "PART III - AI Agent README"
-    },
-    {
-      "severity": "warning",
-      "code": "lock_not_visible_in_root_readme",
-      "lock": "simulation_is_not_silicon_validation"
-    }
-  ],
+  "errors": 0,
+  "warnings": 0,
+  "passed": true,
+  "findings": [],
   "non_claim_lock": "RCC-N navigation is not code correctness or silicon validation."
 }

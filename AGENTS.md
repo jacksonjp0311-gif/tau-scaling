@@ -34,3 +34,19 @@ After runtime changes also run:
 - density_equivalence_is_not_node_equivalence
 - local_path_win_is_not_full_chip_win
 - validation_remains_required
+
+<!-- AGENTS_DIRECTORY_RULE_START -->
+## Directory and Mini README Update Rule
+
+When an AI agent changes repository structure, it must update the root README Full Directory Box and every affected folder-level mini README in the same commit.
+
+Required checks:
+
+`powershell
+python scripts/rcc/check_rcc_nexus.py
+python scripts/validation/validate_architecture_contracts.py
+python -m unittest discover -s tests
+`
+
+Do not treat directory navigation, README polish, or RCC-N route validity as code correctness or silicon validation.
+<!-- AGENTS_DIRECTORY_RULE_END -->

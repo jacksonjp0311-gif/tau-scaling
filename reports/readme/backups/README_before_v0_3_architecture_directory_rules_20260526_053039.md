@@ -342,7 +342,7 @@ Human-readable equivalents:
 - Validation remains required.
 
 <!-- TAU_AI_MINI_README_RULE_START -->
-## AI Rule â€” Directory Box and Mini README Synchronization
+## AI Rule — Directory Box and Mini README Synchronization
 
 This repository uses RCC-N style navigation. Therefore, repository structure is part of the public interface.
 
@@ -451,14 +451,6 @@ tau-scaling/
         artifacts/runs/20260526T092526Z/state/
         artifacts/runs/20260526T092526Z/validation/
         artifacts/runs/20260526T092526Z/visuals/
-      artifacts/runs/20260526T093040Z/
-        artifacts/runs/20260526T093040Z/ledger/
-        artifacts/runs/20260526T093040Z/reports/
-        artifacts/runs/20260526T093040Z/scoring/
-        artifacts/runs/20260526T093040Z/simulation/
-        artifacts/runs/20260526T093040Z/state/
-        artifacts/runs/20260526T093040Z/validation/
-        artifacts/runs/20260526T093040Z/visuals/
       artifacts/runs/latest/
         artifacts/runs/latest/ledger/
         artifacts/runs/latest/reports/
