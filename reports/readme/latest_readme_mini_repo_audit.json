@@ -1,0 +1,24 @@
+{
+  "durable_dirs_checked": 38,
+  "errors": 0,
+  "findings": [],
+  "generated_at": "2026-05-26T10:13:00.731676+00:00",
+  "non_claim_lock": "README/mini-repo audit is context alignment, not code correctness or silicon validation.",
+  "passed": true,
+  "repository": "tau-scaling",
+  "required_root_sections": [
+    "# Tau Scaling",
+    "PART I - Human README",
+    "PART II - RCC Nexus README",
+    "PART III - AI Agent README",
+    "AI Operating Contract",
+    "Patch Routing Matrix",
+    "README + Mini Repo Audit Map",
+    "AI Failure Learning Ledger",
+    "AI Rule \u2014 Directory Box and Mini README Synchronization",
+    "Full Directory Box",
+    "Public Non-Claim Locks"
+  ],
+  "schema": "tau-scaling-readme-mini-repo-audit-v0.3.2d",
+  "warnings": 0
+}
