@@ -1,0 +1,517 @@
+{
+  "all_scenarios_passed": false,
+  "boundary": "Synthetic gate suite validates local runtime downgrade behavior only. It is not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.",
+  "chart_paths": [
+    "visuals/benchmarks/v0_4_0/class_distribution.png",
+    "visuals/benchmarks/v0_4_0/a_tsek_by_scenario.png",
+    "visuals/benchmarks/v0_4_0/finding_count_by_scenario.png",
+    "visuals/benchmarks/v0_4_0/diagnostic_average_by_scenario.png",
+    "visuals/benchmarks/v0_4_0/elapsed_ms_by_scenario.png",
+    "visuals/benchmarks/v0_4_0/gate_heatmap.png",
+    "visuals/benchmarks/v0_4_0/finding_code_frequency.png",
+    "visuals/findings/v0_4_0/finding_b-etp-missing.png",
+    "visuals/findings/v0_4_0/finding_b-lf-missing.png",
+    "visuals/findings/v0_4_0/finding_b-pvt-missing.png",
+    "visuals/findings/v0_4_0/finding_b-baseline-missing.png",
+    "visuals/findings/v0_4_0/finding_b-evidence-missing.png",
+    "visuals/findings/v0_4_0/finding_b-method-missing.png",
+    "visuals/findings/v0_4_0/finding_b-metric-missing.png",
+    "visuals/findings/v0_4_0/finding_b-tau-missing.png",
+    "visuals/findings/v0_4_0/finding_b-workload-missing.png",
+    "visuals/findings/v0_4_0/finding_b-yield-missing.png",
+    "visuals/findings/v0_4_0/finding_overclaim-independent-validation.png"
+  ],
+  "class_counts": {
+    "TSEK-B": 1,
+    "TSEK-C": 7,
+    "TSEK-E": 2
+  },
+  "failed_scenarios": 1,
+  "finding_counts": {
+    "TSEK_B_ETP_MISSING": 2,
+    "TSEK_B_LF_MISSING": 2,
+    "TSEK_B_PVT_MISSING": 2,
+    "TSEK_B_baseline_MISSING": 2,
+    "TSEK_B_evidence_MISSING": 2,
+    "TSEK_B_method_MISSING": 1,
+    "TSEK_B_metric_MISSING": 1,
+    "TSEK_B_tau_MISSING": 1,
+    "TSEK_B_workload_MISSING": 2,
+    "TSEK_B_yield_MISSING": 2,
+    "TSEK_OVERCLAIM_INDEPENDENT_VALIDATION": 1
+  },
+  "gate_failure_counts": {
+    "B_ETP": 2,
+    "B_LF": 2,
+    "B_PVT": 2,
+    "B_baseline": 2,
+    "B_evidence": 2,
+    "B_method": 1,
+    "B_metric": 1,
+    "B_source": 0,
+    "B_tau": 1,
+    "B_workload": 2,
+    "B_yield": 2
+  },
+  "generated_at": "2026-05-26T13:09:01.056840+00:00",
+  "mean_elapsed_ms": 38.886,
+  "passed_scenarios": 9,
+  "results": [
+    {
+      "A_TSEK": 1.0,
+      "class_passed": true,
+      "classification": "TSEK-B",
+      "description": "All hard gates disclosed; expected promotion-path TSEK-B without independent validation.",
+      "diagnostic_average": 1.0,
+      "edge_surface": {
+        "N": 16.0,
+        "beta_edge": 0.0625,
+        "beta_surface": 1.0,
+        "edge_starvation_detected": true,
+        "model": "beta_edge ~ N^-1; beta_surface ~ O(1)"
+      },
+      "elapsed_ms": 43.2205,
+      "evidence_path": "artifacts/runs/claim-20260526T130900588134Z-4897a3/evidence_package.json",
+      "expected_class": "TSEK-B",
+      "expected_codes": [],
+      "expected_findings_present": true,
+      "finding_codes": [],
+      "findings_count": 0,
+      "gamma_tau_ETP": 1.199076,
+      "gate_values": {
+        "B_ETP": 1.0,
+        "B_LF": 1.0,
+        "B_PVT": 1.0,
+        "B_baseline": 1.0,
+        "B_evidence": 1.0,
+        "B_method": 1.0,
+        "B_metric": 1.0,
+        "B_source": 1.0,
+        "B_tau": 1.0,
+        "B_workload": 1.0,
+        "B_yield": 1.0
+      },
+      "id": "control_all_disclosed_promotable",
+      "logicfolding_margin": 9.5,
+      "run_id": "claim-20260526T130900588134Z-4897a3",
+      "scenario_passed": true,
+      "unexpected_missing_expected_codes": []
+    },
+    {
+      "A_TSEK": 0.0,
+      "class_passed": true,
+      "classification": "TSEK-C",
+      "description": "Yield is not reported; expect B_yield downgrade.",
+      "diagnostic_average": 0.9091,
+      "edge_surface": {
+        "N": 16.0,
+        "beta_edge": 0.0625,
+        "beta_surface": 1.0,
+        "edge_starvation_detected": true,
+        "model": "beta_edge ~ N^-1; beta_surface ~ O(1)"
+      },
+      "elapsed_ms": 37.732,
+      "evidence_path": "artifacts/runs/claim-20260526T130900639672Z-056bd5/evidence_package.json",
+      "expected_class": "TSEK-C",
+      "expected_codes": [
+        "TSEK_B_yield_MISSING"
+      ],
+      "expected_findings_present": true,
+      "finding_codes": [
+        "TSEK_B_yield_MISSING"
+      ],
+      "findings_count": 1,
+      "gamma_tau_ETP": 1.199076,
+      "gate_values": {
+        "B_ETP": 1.0,
+        "B_LF": 1.0,
+        "B_PVT": 1.0,
+        "B_baseline": 1.0,
+        "B_evidence": 1.0,
+        "B_method": 1.0,
+        "B_metric": 1.0,
+        "B_source": 1.0,
+        "B_tau": 1.0,
+        "B_workload": 1.0,
+        "B_yield": 0.0
+      },
+      "id": "yield_missing_downgrade",
+      "logicfolding_margin": 9.5,
+      "run_id": "claim-20260526T130900639672Z-056bd5",
+      "scenario_passed": true,
+      "unexpected_missing_expected_codes": []
+    },
+    {
+      "A_TSEK": 0.0,
+      "class_passed": true,
+      "classification": "TSEK-C",
+      "description": "Workload class and dominant tau term missing; expect B_workload downgrade.",
+      "diagnostic_average": 0.9091,
+      "edge_surface": {
+        "N": 16.0,
+        "beta_edge": 0.0625,
+        "beta_surface": 1.0,
+        "edge_starvation_detected": true,
+        "model": "beta_edge ~ N^-1; beta_surface ~ O(1)"
+      },
+      "elapsed_ms": 39.7126,
+      "evidence_path": "artifacts/runs/claim-20260526T130900685682Z-180864/evidence_package.json",
+      "expected_class": "TSEK-C",
+      "expected_codes": [
+        "TSEK_B_workload_MISSING"
+      ],
+      "expected_findings_present": true,
+      "finding_codes": [
+        "TSEK_B_workload_MISSING"
+      ],
+      "findings_count": 1,
+      "gamma_tau_ETP": 1.199076,
+      "gate_values": {
+        "B_ETP": 1.0,
+        "B_LF": 1.0,
+        "B_PVT": 1.0,
+        "B_baseline": 1.0,
+        "B_evidence": 1.0,
+        "B_method": 1.0,
+        "B_metric": 1.0,
+        "B_source": 1.0,
+        "B_tau": 1.0,
+        "B_workload": 0.0,
+        "B_yield": 1.0
+      },
+      "id": "missing_workload_downgrade",
+      "logicfolding_margin": 9.5,
+      "run_id": "claim-20260526T130900685682Z-180864",
+      "scenario_passed": true,
+      "unexpected_missing_expected_codes": []
+    },
+    {
+      "A_TSEK": 0.0,
+      "class_passed": true,
+      "classification": "TSEK-C",
+      "description": "Tau vector baseline missing; expect B_baseline downgrade.",
+      "diagnostic_average": 0.9091,
+      "edge_surface": {
+        "N": 16.0,
+        "beta_edge": 0.0625,
+        "beta_surface": 1.0,
+        "edge_starvation_detected": true,
+        "model": "beta_edge ~ N^-1; beta_surface ~ O(1)"
+      },
+      "elapsed_ms": 36.5709,
+      "evidence_path": "artifacts/runs/claim-20260526T130900732830Z-41b007/evidence_package.json",
+      "expected_class": "TSEK-C",
+      "expected_codes": [
+        "TSEK_B_baseline_MISSING"
+      ],
+      "expected_findings_present": true,
+      "finding_codes": [
+        "TSEK_B_baseline_MISSING"
+      ],
+      "findings_count": 1,
+      "gamma_tau_ETP": 1.199076,
+      "gate_values": {
+        "B_ETP": 1.0,
+        "B_LF": 1.0,
+        "B_PVT": 1.0,
+        "B_baseline": 0.0,
+        "B_evidence": 1.0,
+        "B_method": 1.0,
+        "B_metric": 1.0,
+        "B_source": 1.0,
+        "B_tau": 1.0,
+        "B_workload": 1.0,
+        "B_yield": 1.0
+      },
+      "id": "missing_baseline_downgrade",
+      "logicfolding_margin": 9.5,
+      "run_id": "claim-20260526T130900732830Z-41b007",
+      "scenario_passed": true,
+      "unexpected_missing_expected_codes": []
+    },
+    {
+      "A_TSEK": 0.0,
+      "class_passed": true,
+      "classification": "TSEK-C",
+      "description": "Vertical and closure penalties erase LogicFolding margin; expect B_LF downgrade.",
+      "diagnostic_average": 0.9091,
+      "edge_surface": {
+        "N": 16.0,
+        "beta_edge": 0.0625,
+        "beta_surface": 1.0,
+        "edge_starvation_detected": true,
+        "model": "beta_edge ~ N^-1; beta_surface ~ O(1)"
+      },
+      "elapsed_ms": 37.6653,
+      "evidence_path": "artifacts/runs/claim-20260526T130900776770Z-39b62b/evidence_package.json",
+      "expected_class": "TSEK-C",
+      "expected_codes": [
+        "TSEK_B_LF_MISSING"
+      ],
+      "expected_findings_present": true,
+      "finding_codes": [
+        "TSEK_B_LF_MISSING"
+      ],
+      "findings_count": 1,
+      "gamma_tau_ETP": 1.199076,
+      "gate_values": {
+        "B_ETP": 1.0,
+        "B_LF": 0.0,
+        "B_PVT": 1.0,
+        "B_baseline": 1.0,
+        "B_evidence": 1.0,
+        "B_method": 1.0,
+        "B_metric": 1.0,
+        "B_source": 1.0,
+        "B_tau": 1.0,
+        "B_workload": 1.0,
+        "B_yield": 1.0
+      },
+      "id": "logicfolding_high_vertical_penalty_downgrade",
+      "logicfolding_margin": -128.5,
+      "run_id": "claim-20260526T130900776770Z-39b62b",
+      "scenario_passed": true,
+      "unexpected_missing_expected_codes": []
+    },
+    {
+      "A_TSEK": 0.0,
+      "class_passed": true,
+      "classification": "TSEK-C",
+      "description": "Energy/thermal/PDN normalization overwhelms tau gain; expect B_ETP downgrade.",
+      "diagnostic_average": 0.9091,
+      "edge_surface": {
+        "N": 16.0,
+        "beta_edge": 0.0625,
+        "beta_surface": 1.0,
+        "edge_starvation_detected": true,
+        "model": "beta_edge ~ N^-1; beta_surface ~ O(1)"
+      },
+      "elapsed_ms": 36.7902,
+      "evidence_path": "artifacts/runs/claim-20260526T130900822538Z-7ed6ee/evidence_package.json",
+      "expected_class": "TSEK-C",
+      "expected_codes": [
+        "TSEK_B_ETP_MISSING"
+      ],
+      "expected_findings_present": true,
+      "finding_codes": [
+        "TSEK_B_ETP_MISSING"
+      ],
+      "findings_count": 1,
+      "gamma_tau_ETP": 0.478632,
+      "gate_values": {
+        "B_ETP": 0.0,
+        "B_LF": 1.0,
+        "B_PVT": 1.0,
+        "B_baseline": 1.0,
+        "B_evidence": 1.0,
+        "B_method": 1.0,
+        "B_metric": 1.0,
+        "B_source": 1.0,
+        "B_tau": 1.0,
+        "B_workload": 1.0,
+        "B_yield": 1.0
+      },
+      "id": "etp_thermal_pdn_fail_downgrade",
+      "logicfolding_margin": 9.5,
+      "run_id": "claim-20260526T130900822538Z-7ed6ee",
+      "scenario_passed": true,
+      "unexpected_missing_expected_codes": []
+    },
+    {
+      "A_TSEK": 0.0,
+      "class_passed": true,
+      "classification": "TSEK-C",
+      "description": "Post-route and PVT closure fail; expect B_PVT downgrade.",
+      "diagnostic_average": 0.9091,
+      "edge_surface": {
+        "N": 16.0,
+        "beta_edge": 0.0625,
+        "beta_surface": 1.0,
+        "edge_starvation_detected": true,
+        "model": "beta_edge ~ N^-1; beta_surface ~ O(1)"
+      },
+      "elapsed_ms": 38.6854,
+      "evidence_path": "artifacts/runs/claim-20260526T130900866399Z-40d3e9/evidence_package.json",
+      "expected_class": "TSEK-C",
+      "expected_codes": [
+        "TSEK_B_PVT_MISSING"
+      ],
+      "expected_findings_present": true,
+      "finding_codes": [
+        "TSEK_B_PVT_MISSING"
+      ],
+      "findings_count": 1,
+      "gamma_tau_ETP": 1.199076,
+      "gate_values": {
+        "B_ETP": 1.0,
+        "B_LF": 1.0,
+        "B_PVT": 0.0,
+        "B_baseline": 1.0,
+        "B_evidence": 1.0,
+        "B_method": 1.0,
+        "B_metric": 1.0,
+        "B_source": 1.0,
+        "B_tau": 1.0,
+        "B_workload": 1.0,
+        "B_yield": 1.0
+      },
+      "id": "pvt_closure_fail_downgrade",
+      "logicfolding_margin": 9.5,
+      "run_id": "claim-20260526T130900866399Z-40d3e9",
+      "scenario_passed": true,
+      "unexpected_missing_expected_codes": []
+    },
+    {
+      "A_TSEK": 0.0,
+      "class_passed": true,
+      "classification": "TSEK-C",
+      "description": "Evidence package marked incomplete; expect B_evidence downgrade.",
+      "diagnostic_average": 0.9091,
+      "edge_surface": {
+        "N": 16.0,
+        "beta_edge": 0.0625,
+        "beta_surface": 1.0,
+        "edge_starvation_detected": true,
+        "model": "beta_edge ~ N^-1; beta_surface ~ O(1)"
+      },
+      "elapsed_ms": 39.6547,
+      "evidence_path": "artifacts/runs/claim-20260526T130900913742Z-fe7b0e/evidence_package.json",
+      "expected_class": "TSEK-C",
+      "expected_codes": [
+        "TSEK_B_evidence_MISSING"
+      ],
+      "expected_findings_present": true,
+      "finding_codes": [
+        "TSEK_B_evidence_MISSING"
+      ],
+      "findings_count": 1,
+      "gamma_tau_ETP": 1.199076,
+      "gate_values": {
+        "B_ETP": 1.0,
+        "B_LF": 1.0,
+        "B_PVT": 1.0,
+        "B_baseline": 1.0,
+        "B_evidence": 0.0,
+        "B_method": 1.0,
+        "B_metric": 1.0,
+        "B_source": 1.0,
+        "B_tau": 1.0,
+        "B_workload": 1.0,
+        "B_yield": 1.0
+      },
+      "id": "evidence_package_missing_downgrade",
+      "logicfolding_margin": 9.5,
+      "run_id": "claim-20260526T130900913742Z-fe7b0e",
+      "scenario_passed": true,
+      "unexpected_missing_expected_codes": []
+    },
+    {
+      "A_TSEK": 0.0,
+      "class_passed": true,
+      "classification": "TSEK-E",
+      "description": "Independent validation is claimed without evidence; expect TSEK-E blocking overclaim.",
+      "diagnostic_average": 1.0,
+      "edge_surface": {
+        "N": 16.0,
+        "beta_edge": 0.0625,
+        "beta_surface": 1.0,
+        "edge_starvation_detected": true,
+        "model": "beta_edge ~ N^-1; beta_surface ~ O(1)"
+      },
+      "elapsed_ms": 40.6784,
+      "evidence_path": "artifacts/runs/claim-20260526T130900960569Z-a2f7bc/evidence_package.json",
+      "expected_class": "TSEK-E",
+      "expected_codes": [
+        "TSEK_OVERCLAIM_INDEPENDENT_VALIDATION"
+      ],
+      "expected_findings_present": true,
+      "finding_codes": [
+        "TSEK_OVERCLAIM_INDEPENDENT_VALIDATION"
+      ],
+      "findings_count": 1,
+      "gamma_tau_ETP": 1.199076,
+      "gate_values": {
+        "B_ETP": 1.0,
+        "B_LF": 1.0,
+        "B_PVT": 1.0,
+        "B_baseline": 1.0,
+        "B_evidence": 1.0,
+        "B_method": 1.0,
+        "B_metric": 1.0,
+        "B_source": 1.0,
+        "B_tau": 1.0,
+        "B_workload": 1.0,
+        "B_yield": 1.0
+      },
+      "id": "independent_validation_overclaim_block",
+      "logicfolding_margin": 9.5,
+      "run_id": "claim-20260526T130900960569Z-a2f7bc",
+      "scenario_passed": true,
+      "unexpected_missing_expected_codes": []
+    },
+    {
+      "A_TSEK": 0.0,
+      "class_passed": false,
+      "classification": "TSEK-E",
+      "description": "Multiple disclosure and gate surfaces fail together; expect broad downgrade.",
+      "diagnostic_average": 0.0909,
+      "edge_surface": {
+        "N": 16.0,
+        "beta_edge": 0.0625,
+        "beta_surface": 1.0,
+        "edge_starvation_detected": true,
+        "model": "beta_edge ~ N^-1; beta_surface ~ O(1)"
+      },
+      "elapsed_ms": 38.1495,
+      "evidence_path": "artifacts/runs/claim-20260526T130901009329Z-1a33cf/evidence_package.json",
+      "expected_class": "TSEK-D",
+      "expected_codes": [
+        "TSEK_B_metric_MISSING",
+        "TSEK_B_baseline_MISSING",
+        "TSEK_B_method_MISSING",
+        "TSEK_B_workload_MISSING",
+        "TSEK_B_tau_MISSING",
+        "TSEK_B_LF_MISSING",
+        "TSEK_B_ETP_MISSING",
+        "TSEK_B_PVT_MISSING",
+        "TSEK_B_yield_MISSING",
+        "TSEK_B_evidence_MISSING"
+      ],
+      "expected_findings_present": true,
+      "finding_codes": [
+        "TSEK_B_metric_MISSING",
+        "TSEK_B_baseline_MISSING",
+        "TSEK_B_method_MISSING",
+        "TSEK_B_workload_MISSING",
+        "TSEK_B_tau_MISSING",
+        "TSEK_B_LF_MISSING",
+        "TSEK_B_ETP_MISSING",
+        "TSEK_B_PVT_MISSING",
+        "TSEK_B_yield_MISSING",
+        "TSEK_B_evidence_MISSING"
+      ],
+      "findings_count": 10,
+      "gamma_tau_ETP": 0.291545,
+      "gate_values": {
+        "B_ETP": 0.0,
+        "B_LF": 0.0,
+        "B_PVT": 0.0,
+        "B_baseline": 0.0,
+        "B_evidence": 0.0,
+        "B_method": 0.0,
+        "B_metric": 0.0,
+        "B_source": 1.0,
+        "B_tau": 0.0,
+        "B_workload": 0.0,
+        "B_yield": 0.0
+      },
+      "id": "multi_gate_stress_low_disclosure",
+      "logicfolding_margin": -92.5,
+      "run_id": "claim-20260526T130901009329Z-1a33cf",
+      "scenario_passed": false,
+      "unexpected_missing_expected_codes": []
+    }
+  ],
+  "schema": "tau-scaling-synthetic-gate-suite-v0.4.0",
+  "total_scenarios": 10
+}

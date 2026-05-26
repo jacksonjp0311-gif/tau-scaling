@@ -10,8 +10,8 @@
 
 Repository: `tau-scaling`  
 Package / CLI: `tau_scaling` / `tau-scaling`  
-Current checkpoint: **TAU-SCALING-SA v0.4.0 - Synthetic Gate Test Suite + Benchmark Finding Charts**  
-Previous seal: **TAU-SCALING-SA v0.3.3e - Agent Contract Geometry Sync**
+Current checkpoint: **TAU-SCALING-SA v0.3.3e — Agent Contract Geometry Sync**  
+Previous seal: **TAU-SCALING-SA v0.3.3d — README Render, Lineage, and Warning Polish**
 
 Tau Scaling is a local-first, evidence-gated Python runtime for evaluating tau-scaling claims through structured claim cards, workload declarations, tau vectors, LogicFolding survivability checks, edge-to-surface boundary algebra, energy / thermal / PDN / PVT gates, Monte Carlo checker stress, TSEK classification, evidence packages, and RCC-N / OMN-style repository navigation.
 
@@ -55,8 +55,8 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | TAU-SCALING-SA v0.4.0 |
-| Synthetic gate suite | v0.4.0 / benchmark + finding charts |
+| Current checkpoint | TAU-SCALING-SA v0.3.3e |
+| Public README / agent-geometry sync | v0.3.3e |
 | Package version | 0.2.0 |
 | Baseline seed | TSEK-C / A_TSEK 0.0000 |
 | Promotion-path seed | TSEK-B / A_TSEK 1.0000 |
@@ -69,8 +69,6 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 | Architecture validator | passing / 0 warnings |
 | Unit tests | 8 OK |
 | Benchmark harness | 12 runs / 12 unique IDs / 0 duplicates |
-| Synthetic gate report | `reports/gates/latest_synthetic_gate_report.md` |
-| Finding charts | `reports/findings/latest_finding_charts.md` |
 | Release readiness report | `reports/release/latest_release_readiness.md` |
 | Collision-proof run identity | passed |
 | Mini README coverage | 1.0 |
@@ -94,7 +92,6 @@ python scripts/rcc/audit_readme_surface.py
 python scripts/validation/validate_architecture_contracts.py
 python -m unittest discover -s tests
 python scripts/benchmarks/run_tau_scaling_benchmarks.py
-python scripts/benchmarks/run_synthetic_gate_suite.py
 python scripts/release/validate_release.py
 ```
 
@@ -620,47 +617,6 @@ The release validator checks compile, import, RCC-N, README audit, architecture 
 
 Non-claim lock: release readiness validates repository/runtime hygiene only. It is not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.
 
-## Synthetic Gate Suite v0.4.0
-
-v0.4.0 adds controlled gate-isolation scenarios and charted benchmark/finding reports.
-
-Primary command:
-
-```powershell
-python scripts/benchmarks/run_synthetic_gate_suite.py
-```
-
-Primary outputs:
-
-```text
-configs/seeds/tests/synthetic_gate_manifest_v0_4_0.json
-reports/benchmarks/latest_synthetic_gate_suite.json
-reports/benchmarks/latest_synthetic_gate_suite.md
-reports/gates/latest_synthetic_gate_report.md
-reports/findings/latest_finding_charts.md
-visuals/benchmarks/v0_4_0/
-visuals/findings/v0_4_0/
-```
-
-### Benchmark and Finding Charts
-
-The suite emits charts for:
-
-```text
-class distribution
-A_TSEK by scenario
-finding count by scenario
-diagnostic average by scenario
-elapsed ms by scenario
-gate pass/fail heatmap
-finding code frequency
-per-finding scenario presence
-```
-
-### Boundary
-
-Synthetic gate charts show local runtime behavior only. They are not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.
-
 ## Benchmark Learning Layer
 
 v0.3.2+ adds collision-proof run identity and a local benchmark loop.
@@ -748,15 +704,26 @@ validation_remains_required
 | v0.3.3c | Safe README process alignment repair after pasted-script path break. |
 | v0.3.3d | README render, lineage, and validator-warning polish. |
 | v0.3.3e | Agent contract geometry sync and v0.4 routing readiness. |
-| v0.4.0 | Synthetic gate suite with benchmark charts and finding charts. |
 
 ## Next Recommended Version
 
-**TAU-SCALING-SA v0.4.1 - Synthetic Gate Sensitivity Sweep**
+**TAU-SCALING-SA v0.4.0 — Synthetic Gate Test Suite**
 
 Recommended goals:
 
-- Sweep gate parameters around pass/fail thresholds.
-- Emit threshold curves for LogicFolding margin and gamma_tau_ETP.
-- Add stability bands for A_TSEK and diagnostic average.
-- Preserve non-claim locks: synthetic sweeps are local runtime sensitivity diagnostics only.
+- Add synthetic claim cards that isolate each gate.
+- Prove downgrade behavior for missing yield, missing workload, thermal/PDN/PVT failures, edge/surface starvation, and LogicFolding survivability failures.
+- Emit gate-test reports under `reports/gates/`.
+- Preserve non-claim locks: synthetic gate tests are runtime behavior tests, not silicon/product validation.
+
+Initial target seeds:
+
+```text
+configs/seeds/tests/tau_compute_only_pass.json
+configs/seeds/tests/tau_wire_dominant_pass.json
+configs/seeds/tests/tau_memory_dominant_fail.json
+configs/seeds/tests/logicfolding_high_vertical_penalty_fail.json
+configs/seeds/tests/edge_surface_starvation_fail.json
+configs/seeds/tests/gamma_tau_etp_thermal_fail.json
+configs/seeds/tests/yield_missing_disclosure_downgrade.json
+```

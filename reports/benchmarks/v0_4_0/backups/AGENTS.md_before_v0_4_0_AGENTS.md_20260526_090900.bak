@@ -46,7 +46,6 @@ For every non-trivial patch, run:
 ```powershell
 python scripts/release/validate_release.py
 python scripts/rcc/audit_readme_surface.py
-python scripts/benchmarks/run_synthetic_gate_suite.py
 python -m unittest discover -s tests
 ```
 
@@ -95,8 +94,3 @@ Failures are repository memory, not blame records.
 - release_readiness_is_not_silicon_validation
 - synthetic_gate_tests_are_not_product_validation
 - geometric_routing_is_not_ai_understanding
-
-
-## Synthetic Gate Charts
-
-v0.4.0 requires benchmark and finding charts under `visuals/benchmarks/v0_4_0/` and `visuals/findings/v0_4_0/` whenever synthetic gate behavior changes.
