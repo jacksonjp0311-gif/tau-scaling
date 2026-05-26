@@ -2,12 +2,12 @@
   "A_TSEK": 0.0,
   "classification": "TSEK-C",
   "diagnostic_average": 0.9091,
-  "evidence_path": "artifacts/runs/claim-20260526T150226434789Z-def829/evidence_package.json",
+  "evidence_path": "artifacts/runs/claim-20260526T150647462072Z-d8eb6c/evidence_package.json",
   "finding_codes": [
     "TSEK_B_PVT_MISSING"
   ],
   "findings_count": 1,
-  "generated_at": "2026-05-26T15:02:32.005418+00:00",
+  "generated_at": "2026-05-26T15:06:53.036502+00:00",
   "minimum_repair_for_promotion": [
     "Provide closure, PVT, and PDN evidence."
   ],

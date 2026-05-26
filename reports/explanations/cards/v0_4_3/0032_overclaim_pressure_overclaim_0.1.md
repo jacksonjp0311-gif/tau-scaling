@@ -1,6 +1,6 @@
 # Explanation Card — overclaim_pressure:overclaim=0.1
 
-Generated: `2026-05-26T15:02:32.015878+00:00`
+Generated: `2026-05-26T15:06:53.044626+00:00`
 
 | Field | Value |
 |---|---|
@@ -26,7 +26,7 @@ None
 ## Evidence Path
 
 ```text
-artifacts/runs/claim-20260526T150223091481Z-d9aa77/evidence_package.json
+artifacts/runs/claim-20260526T150644071112Z-f74231/evidence_package.json
 ```
 
 ## Boundary

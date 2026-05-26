@@ -2,12 +2,12 @@
   "A_TSEK": 0.0,
   "classification": "TSEK-C",
   "diagnostic_average": 0.9091,
-  "evidence_path": "artifacts/runs/claim-20260526T150226477478Z-d5578a/evidence_package.json",
+  "evidence_path": "artifacts/runs/claim-20260526T150647506905Z-6ed11e/evidence_package.json",
   "finding_codes": [
     "TSEK_B_evidence_MISSING"
   ],
   "findings_count": 1,
-  "generated_at": "2026-05-26T15:02:32.005418+00:00",
+  "generated_at": "2026-05-26T15:06:53.036502+00:00",
   "minimum_repair_for_promotion": [
     "Complete the evidence package."
   ],

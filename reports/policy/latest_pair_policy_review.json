@@ -1,0 +1,978 @@
+{
+  "boundary": "Pair policy review proposes classifier-governance candidates only. It does not change classifier behavior and does not validate silicon, products, manufacturing, process nodes, benchmark superiority, or universal Tau Scaling law.",
+  "chart_paths": [
+    "visuals/policy/v0_4_4/pair_policy_class_counts.png",
+    "visuals/policy/v0_4_4/pair_policy_severity_matrix.png",
+    "visuals/policy/v0_4_4/escalation_candidate_frequency_by_gate.png"
+  ],
+  "gate_escalation_counts": {
+    "B_ETP": 1,
+    "B_LF": 1,
+    "B_PVT": 1,
+    "B_baseline": 2,
+    "B_evidence": 4,
+    "B_method": 1,
+    "B_metric": 1,
+    "B_source": 3,
+    "B_tau": 2,
+    "B_workload": 1,
+    "B_yield": 1
+  },
+  "generated_at": "2026-05-26T15:06:56.339146+00:00",
+  "inputs": {
+    "explanation_card_count": 94,
+    "explanation_cards": "reports/explanations/latest_threshold_explanation_cards.json",
+    "interaction_matrix": "reports/interactions/latest_gate_interaction_matrix.json",
+    "review_counts": {
+      "expected": 38,
+      "hard_reject_without_finding": 1,
+      "review_pair_policy": 55
+    }
+  },
+  "next_recommendation": "v0.4.5 should add a dry-run policy simulator before changing classifier output.",
+  "pair_count": 55,
+  "policy_counts": {
+    "HUMAN_REVIEW": 3,
+    "TSEK-C_RETAIN": 46,
+    "TSEK-D_CANDIDATE": 6
+  },
+  "policy_enforced": false,
+  "policy_rows": [
+    {
+      "current_A_TSEK": 0.0,
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "finding_codes": [
+        "TSEK_B_source_MISSING",
+        "TSEK_B_metric_MISSING"
+      ],
+      "findings_count": 2,
+      "gate_a": "B_source",
+      "gate_b": "B_metric",
+      "non_claim_lock": "Pair policy review is classifier governance only; it does not validate silicon or product claims.",
+      "policy_class": "HUMAN_REVIEW",
+      "policy_enforced": false,
+      "reason": "Source-boundary failures affect interpretability of the entire claim.",
+      "recommended_action": "Require human review before promotion because source boundary is paired with metric/baseline/evidence failure."
+    },
+    {
+      "current_A_TSEK": 0.0,
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "finding_codes": [
+        "TSEK_B_source_MISSING",
+        "TSEK_B_baseline_MISSING"
+      ],
+      "findings_count": 2,
+      "gate_a": "B_source",
+      "gate_b": "B_baseline",
+      "non_claim_lock": "Pair policy review is classifier governance only; it does not validate silicon or product claims.",
+      "policy_class": "HUMAN_REVIEW",
+      "policy_enforced": false,
+      "reason": "Source-boundary failures affect interpretability of the entire claim.",
+      "recommended_action": "Require human review before promotion because source boundary is paired with metric/baseline/evidence failure."
+    },
+    {
+      "current_A_TSEK": 0.0,
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "finding_codes": [
+        "TSEK_B_source_MISSING",
+        "TSEK_B_method_MISSING"
+      ],
+      "findings_count": 2,
+      "gate_a": "B_source",
+      "gate_b": "B_method",
+      "non_claim_lock": "Pair policy review is classifier governance only; it does not validate silicon or product claims.",
+      "policy_class": "TSEK-C_RETAIN",
+      "policy_enforced": false,
+      "reason": "Paired failure is controlled and interpretable; no overclaim or hard rejection condition detected.",
+      "recommended_action": "Retain TSEK-C under current policy, but keep pair visible in explanation cards."
+    },
+    {
+      "current_A_TSEK": 0.0,
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "finding_codes": [
+        "TSEK_B_source_MISSING",
+        "TSEK_B_workload_MISSING"
+      ],
+      "findings_count": 2,
+      "gate_a": "B_source",
+      "gate_b": "B_workload",
+      "non_claim_lock": "Pair policy review is classifier governance only; it does not validate silicon or product claims.",
+      "policy_class": "TSEK-C_RETAIN",
+      "policy_enforced": false,
+      "reason": "Paired failure is controlled and interpretable; no overclaim or hard rejection condition detected.",
+      "recommended_action": "Retain TSEK-C under current policy, but keep pair visible in explanation cards."
+    },
+    {
+      "current_A_TSEK": 0.0,
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "finding_codes": [
+        "TSEK_B_source_MISSING",
+        "TSEK_B_tau_MISSING"
+      ],
+      "findings_count": 2,
+      "gate_a": "B_source",
+      "gate_b": "B_tau",
+      "non_claim_lock": "Pair policy review is classifier governance only; it does not validate silicon or product claims.",
+      "policy_class": "TSEK-C_RETAIN",
+      "policy_enforced": false,
+      "reason": "Paired failure is controlled and interpretable; no overclaim or hard rejection condition detected.",
+      "recommended_action": "Retain TSEK-C under current policy, but keep pair visible in explanation cards."
+    },
+    {
+      "current_A_TSEK": 0.0,
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "finding_codes": [
+        "TSEK_B_source_MISSING",
+        "TSEK_B_LF_MISSING"
+      ],
+      "findings_count": 2,
+      "gate_a": "B_source",
+      "gate_b": "B_LF",
+      "non_claim_lock": "Pair policy review is classifier governance only; it does not validate silicon or product claims.",
+      "policy_class": "TSEK-C_RETAIN",
+      "policy_enforced": false,
+      "reason": "Paired failure is controlled and interpretable; no overclaim or hard rejection condition detected.",
+      "recommended_action": "Retain TSEK-C under current policy, but keep pair visible in explanation cards."
+    },
+    {
+      "current_A_TSEK": 0.0,
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "finding_codes": [
+        "TSEK_B_source_MISSING",
+        "TSEK_B_ETP_MISSING"
+      ],
+      "findings_count": 2,
+      "gate_a": "B_source",
+      "gate_b": "B_ETP",
+      "non_claim_lock": "Pair policy review is classifier governance only; it does not validate silicon or product claims.",
+      "policy_class": "TSEK-C_RETAIN",
+      "policy_enforced": false,
+      "reason": "Paired failure is controlled and interpretable; no overclaim or hard rejection condition detected.",
+      "recommended_action": "Retain TSEK-C under current policy, but keep pair visible in explanation cards."
+    },
+    {
+      "current_A_TSEK": 0.0,
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "finding_codes": [
+        "TSEK_B_source_MISSING",
+        "TSEK_B_PVT_MISSING"
+      ],
+      "findings_count": 2,
+      "gate_a": "B_source",
+      "gate_b": "B_PVT",
+      "non_claim_lock": "Pair policy review is classifier governance only; it does not validate silicon or product claims.",
+      "policy_class": "TSEK-C_RETAIN",
+      "policy_enforced": false,
+      "reason": "Paired failure is controlled and interpretable; no overclaim or hard rejection condition detected.",
+      "recommended_action": "Retain TSEK-C under current policy, but keep pair visible in explanation cards."
+    },
+    {
+      "current_A_TSEK": 0.0,
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "finding_codes": [
+        "TSEK_B_source_MISSING",
+        "TSEK_B_yield_MISSING"
+      ],
+      "findings_count": 2,
+      "gate_a": "B_source",
+      "gate_b": "B_yield",
+      "non_claim_lock": "Pair policy review is classifier governance only; it does not validate silicon or product claims.",
+      "policy_class": "TSEK-C_RETAIN",
+      "policy_enforced": false,
+      "reason": "Paired failure is controlled and interpretable; no overclaim or hard rejection condition detected.",
+      "recommended_action": "Retain TSEK-C under current policy, but keep pair visible in explanation cards."
+    },
+    {
+      "current_A_TSEK": 0.0,
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "finding_codes": [
+        "TSEK_B_source_MISSING",
+        "TSEK_B_evidence_MISSING"
+      ],
+      "findings_count": 2,
+      "gate_a": "B_source",
+      "gate_b": "B_evidence",
+      "non_claim_lock": "Pair policy review is classifier governance only; it does not validate silicon or product claims.",
+      "policy_class": "HUMAN_REVIEW",
+      "policy_enforced": false,
+      "reason": "Source-boundary failures affect interpretability of the entire claim.",
+      "recommended_action": "Require human review before promotion because source boundary is paired with metric/baseline/evidence failure."
+    },
+    {
+      "current_A_TSEK": 0.0,
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "finding_codes": [
+        "TSEK_B_metric_MISSING",
+        "TSEK_B_baseline_MISSING"
+      ],
+      "findings_count": 2,
+      "gate_a": "B_metric",
+      "gate_b": "B_baseline",
+      "non_claim_lock": "Pair policy review is classifier governance only; it does not validate silicon or product claims.",
+      "policy_class": "TSEK-C_RETAIN",
+      "policy_enforced": false,
+      "reason": "Paired failure is controlled and interpretable; no overclaim or hard rejection condition detected.",
+      "recommended_action": "Retain TSEK-C under current policy, but keep pair visible in explanation cards."
+    },
+    {
+      "current_A_TSEK": 0.0,
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "finding_codes": [
+        "TSEK_B_metric_MISSING",
+        "TSEK_B_method_MISSING"
+      ],
+      "findings_count": 2,
+      "gate_a": "B_metric",
+      "gate_b": "B_method",
+      "non_claim_lock": "Pair policy review is classifier governance only; it does not validate silicon or product claims.",
+      "policy_class": "TSEK-C_RETAIN",
+      "policy_enforced": false,
+      "reason": "Paired failure is controlled and interpretable; no overclaim or hard rejection condition detected.",
+      "recommended_action": "Retain TSEK-C under current policy, but keep pair visible in explanation cards."
+    },
+    {
+      "current_A_TSEK": 0.0,
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "finding_codes": [
+        "TSEK_B_metric_MISSING",
+        "TSEK_B_workload_MISSING"
+      ],
+      "findings_count": 2,
+      "gate_a": "B_metric",
+      "gate_b": "B_workload",
+      "non_claim_lock": "Pair policy review is classifier governance only; it does not validate silicon or product claims.",
+      "policy_class": "TSEK-C_RETAIN",
+      "policy_enforced": false,
+      "reason": "Paired failure is controlled and interpretable; no overclaim or hard rejection condition detected.",
+      "recommended_action": "Retain TSEK-C under current policy, but keep pair visible in explanation cards."
+    },
+    {
+      "current_A_TSEK": 0.0,
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "finding_codes": [
+        "TSEK_B_metric_MISSING",
+        "TSEK_B_tau_MISSING"
+      ],
+      "findings_count": 2,
+      "gate_a": "B_metric",
+      "gate_b": "B_tau",
+      "non_claim_lock": "Pair policy review is classifier governance only; it does not validate silicon or product claims.",
+      "policy_class": "TSEK-C_RETAIN",
+      "policy_enforced": false,
+      "reason": "Paired failure is controlled and interpretable; no overclaim or hard rejection condition detected.",
+      "recommended_action": "Retain TSEK-C under current policy, but keep pair visible in explanation cards."
+    },
+    {
+      "current_A_TSEK": 0.0,
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "finding_codes": [
+        "TSEK_B_metric_MISSING",
+        "TSEK_B_LF_MISSING"
+      ],
+      "findings_count": 2,
+      "gate_a": "B_metric",
+      "gate_b": "B_LF",
+      "non_claim_lock": "Pair policy review is classifier governance only; it does not validate silicon or product claims.",
+      "policy_class": "TSEK-C_RETAIN",
+      "policy_enforced": false,
+      "reason": "Paired failure is controlled and interpretable; no overclaim or hard rejection condition detected.",
+      "recommended_action": "Retain TSEK-C under current policy, but keep pair visible in explanation cards."
+    },
+    {
+      "current_A_TSEK": 0.0,
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "finding_codes": [
+        "TSEK_B_metric_MISSING",
+        "TSEK_B_ETP_MISSING"
+      ],
+      "findings_count": 2,
+      "gate_a": "B_metric",
+      "gate_b": "B_ETP",
+      "non_claim_lock": "Pair policy review is classifier governance only; it does not validate silicon or product claims.",
+      "policy_class": "TSEK-C_RETAIN",
+      "policy_enforced": false,
+      "reason": "Paired failure is controlled and interpretable; no overclaim or hard rejection condition detected.",
+      "recommended_action": "Retain TSEK-C under current policy, but keep pair visible in explanation cards."
+    },
+    {
+      "current_A_TSEK": 0.0,
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "finding_codes": [
+        "TSEK_B_metric_MISSING",
+        "TSEK_B_PVT_MISSING"
+      ],
+      "findings_count": 2,
+      "gate_a": "B_metric",
+      "gate_b": "B_PVT",
+      "non_claim_lock": "Pair policy review is classifier governance only; it does not validate silicon or product claims.",
+      "policy_class": "TSEK-C_RETAIN",
+      "policy_enforced": false,
+      "reason": "Paired failure is controlled and interpretable; no overclaim or hard rejection condition detected.",
+      "recommended_action": "Retain TSEK-C under current policy, but keep pair visible in explanation cards."
+    },
+    {
+      "current_A_TSEK": 0.0,
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "finding_codes": [
+        "TSEK_B_metric_MISSING",
+        "TSEK_B_yield_MISSING"
+      ],
+      "findings_count": 2,
+      "gate_a": "B_metric",
+      "gate_b": "B_yield",
+      "non_claim_lock": "Pair policy review is classifier governance only; it does not validate silicon or product claims.",
+      "policy_class": "TSEK-C_RETAIN",
+      "policy_enforced": false,
+      "reason": "Paired failure is controlled and interpretable; no overclaim or hard rejection condition detected.",
+      "recommended_action": "Retain TSEK-C under current policy, but keep pair visible in explanation cards."
+    },
+    {
+      "current_A_TSEK": 0.0,
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "finding_codes": [
+        "TSEK_B_metric_MISSING",
+        "TSEK_B_evidence_MISSING"
+      ],
+      "findings_count": 2,
+      "gate_a": "B_metric",
+      "gate_b": "B_evidence",
+      "non_claim_lock": "Pair policy review is classifier governance only; it does not validate silicon or product claims.",
+      "policy_class": "TSEK-C_RETAIN",
+      "policy_enforced": false,
+      "reason": "Paired failure is controlled and interpretable; no overclaim or hard rejection condition detected.",
+      "recommended_action": "Retain TSEK-C under current policy, but keep pair visible in explanation cards."
+    },
+    {
+      "current_A_TSEK": 0.0,
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "finding_codes": [
+        "TSEK_B_baseline_MISSING",
+        "TSEK_B_method_MISSING"
+      ],
+      "findings_count": 2,
+      "gate_a": "B_baseline",
+      "gate_b": "B_method",
+      "non_claim_lock": "Pair policy review is classifier governance only; it does not validate silicon or product claims.",
+      "policy_class": "TSEK-C_RETAIN",
+      "policy_enforced": false,
+      "reason": "Paired failure is controlled and interpretable; no overclaim or hard rejection condition detected.",
+      "recommended_action": "Retain TSEK-C under current policy, but keep pair visible in explanation cards."
+    },
+    {
+      "current_A_TSEK": 0.0,
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "finding_codes": [
+        "TSEK_B_baseline_MISSING",
+        "TSEK_B_workload_MISSING"
+      ],
+      "findings_count": 2,
+      "gate_a": "B_baseline",
+      "gate_b": "B_workload",
+      "non_claim_lock": "Pair policy review is classifier governance only; it does not validate silicon or product claims.",
+      "policy_class": "TSEK-C_RETAIN",
+      "policy_enforced": false,
+      "reason": "Paired failure is controlled and interpretable; no overclaim or hard rejection condition detected.",
+      "recommended_action": "Retain TSEK-C under current policy, but keep pair visible in explanation cards."
+    },
+    {
+      "current_A_TSEK": 0.0,
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "finding_codes": [
+        "TSEK_B_baseline_MISSING",
+        "TSEK_B_tau_MISSING"
+      ],
+      "findings_count": 2,
+      "gate_a": "B_baseline",
+      "gate_b": "B_tau",
+      "non_claim_lock": "Pair policy review is classifier governance only; it does not validate silicon or product claims.",
+      "policy_class": "TSEK-D_CANDIDATE",
+      "policy_enforced": false,
+      "reason": "Tau improvements are not interpretable without workload and baseline context.",
+      "recommended_action": "Candidate downgrade below TSEK-C until tau vector, workload, and baseline are simultaneously repaired."
+    },
+    {
+      "current_A_TSEK": 0.0,
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "finding_codes": [
+        "TSEK_B_baseline_MISSING",
+        "TSEK_B_LF_MISSING"
+      ],
+      "findings_count": 2,
+      "gate_a": "B_baseline",
+      "gate_b": "B_LF",
+      "non_claim_lock": "Pair policy review is classifier governance only; it does not validate silicon or product claims.",
+      "policy_class": "TSEK-C_RETAIN",
+      "policy_enforced": false,
+      "reason": "Paired failure is controlled and interpretable; no overclaim or hard rejection condition detected.",
+      "recommended_action": "Retain TSEK-C under current policy, but keep pair visible in explanation cards."
+    },
+    {
+      "current_A_TSEK": 0.0,
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "finding_codes": [
+        "TSEK_B_baseline_MISSING",
+        "TSEK_B_ETP_MISSING"
+      ],
+      "findings_count": 2,
+      "gate_a": "B_baseline",
+      "gate_b": "B_ETP",
+      "non_claim_lock": "Pair policy review is classifier governance only; it does not validate silicon or product claims.",
+      "policy_class": "TSEK-C_RETAIN",
+      "policy_enforced": false,
+      "reason": "Paired failure is controlled and interpretable; no overclaim or hard rejection condition detected.",
+      "recommended_action": "Retain TSEK-C under current policy, but keep pair visible in explanation cards."
+    },
+    {
+      "current_A_TSEK": 0.0,
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "finding_codes": [
+        "TSEK_B_baseline_MISSING",
+        "TSEK_B_PVT_MISSING"
+      ],
+      "findings_count": 2,
+      "gate_a": "B_baseline",
+      "gate_b": "B_PVT",
+      "non_claim_lock": "Pair policy review is classifier governance only; it does not validate silicon or product claims.",
+      "policy_class": "TSEK-C_RETAIN",
+      "policy_enforced": false,
+      "reason": "Paired failure is controlled and interpretable; no overclaim or hard rejection condition detected.",
+      "recommended_action": "Retain TSEK-C under current policy, but keep pair visible in explanation cards."
+    },
+    {
+      "current_A_TSEK": 0.0,
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "finding_codes": [
+        "TSEK_B_baseline_MISSING",
+        "TSEK_B_yield_MISSING"
+      ],
+      "findings_count": 2,
+      "gate_a": "B_baseline",
+      "gate_b": "B_yield",
+      "non_claim_lock": "Pair policy review is classifier governance only; it does not validate silicon or product claims.",
+      "policy_class": "TSEK-C_RETAIN",
+      "policy_enforced": false,
+      "reason": "Paired failure is controlled and interpretable; no overclaim or hard rejection condition detected.",
+      "recommended_action": "Retain TSEK-C under current policy, but keep pair visible in explanation cards."
+    },
+    {
+      "current_A_TSEK": 0.0,
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "finding_codes": [
+        "TSEK_B_baseline_MISSING",
+        "TSEK_B_evidence_MISSING"
+      ],
+      "findings_count": 2,
+      "gate_a": "B_baseline",
+      "gate_b": "B_evidence",
+      "non_claim_lock": "Pair policy review is classifier governance only; it does not validate silicon or product claims.",
+      "policy_class": "TSEK-C_RETAIN",
+      "policy_enforced": false,
+      "reason": "Paired failure is controlled and interpretable; no overclaim or hard rejection condition detected.",
+      "recommended_action": "Retain TSEK-C under current policy, but keep pair visible in explanation cards."
+    },
+    {
+      "current_A_TSEK": 0.0,
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "finding_codes": [
+        "TSEK_B_method_MISSING",
+        "TSEK_B_workload_MISSING"
+      ],
+      "findings_count": 2,
+      "gate_a": "B_method",
+      "gate_b": "B_workload",
+      "non_claim_lock": "Pair policy review is classifier governance only; it does not validate silicon or product claims.",
+      "policy_class": "TSEK-C_RETAIN",
+      "policy_enforced": false,
+      "reason": "Paired failure is controlled and interpretable; no overclaim or hard rejection condition detected.",
+      "recommended_action": "Retain TSEK-C under current policy, but keep pair visible in explanation cards."
+    },
+    {
+      "current_A_TSEK": 0.0,
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "finding_codes": [
+        "TSEK_B_method_MISSING",
+        "TSEK_B_tau_MISSING"
+      ],
+      "findings_count": 2,
+      "gate_a": "B_method",
+      "gate_b": "B_tau",
+      "non_claim_lock": "Pair policy review is classifier governance only; it does not validate silicon or product claims.",
+      "policy_class": "TSEK-C_RETAIN",
+      "policy_enforced": false,
+      "reason": "Paired failure is controlled and interpretable; no overclaim or hard rejection condition detected.",
+      "recommended_action": "Retain TSEK-C under current policy, but keep pair visible in explanation cards."
+    },
+    {
+      "current_A_TSEK": 0.0,
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "finding_codes": [
+        "TSEK_B_method_MISSING",
+        "TSEK_B_LF_MISSING"
+      ],
+      "findings_count": 2,
+      "gate_a": "B_method",
+      "gate_b": "B_LF",
+      "non_claim_lock": "Pair policy review is classifier governance only; it does not validate silicon or product claims.",
+      "policy_class": "TSEK-C_RETAIN",
+      "policy_enforced": false,
+      "reason": "Paired failure is controlled and interpretable; no overclaim or hard rejection condition detected.",
+      "recommended_action": "Retain TSEK-C under current policy, but keep pair visible in explanation cards."
+    },
+    {
+      "current_A_TSEK": 0.0,
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "finding_codes": [
+        "TSEK_B_method_MISSING",
+        "TSEK_B_ETP_MISSING"
+      ],
+      "findings_count": 2,
+      "gate_a": "B_method",
+      "gate_b": "B_ETP",
+      "non_claim_lock": "Pair policy review is classifier governance only; it does not validate silicon or product claims.",
+      "policy_class": "TSEK-C_RETAIN",
+      "policy_enforced": false,
+      "reason": "Paired failure is controlled and interpretable; no overclaim or hard rejection condition detected.",
+      "recommended_action": "Retain TSEK-C under current policy, but keep pair visible in explanation cards."
+    },
+    {
+      "current_A_TSEK": 0.0,
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "finding_codes": [
+        "TSEK_B_method_MISSING",
+        "TSEK_B_PVT_MISSING"
+      ],
+      "findings_count": 2,
+      "gate_a": "B_method",
+      "gate_b": "B_PVT",
+      "non_claim_lock": "Pair policy review is classifier governance only; it does not validate silicon or product claims.",
+      "policy_class": "TSEK-C_RETAIN",
+      "policy_enforced": false,
+      "reason": "Paired failure is controlled and interpretable; no overclaim or hard rejection condition detected.",
+      "recommended_action": "Retain TSEK-C under current policy, but keep pair visible in explanation cards."
+    },
+    {
+      "current_A_TSEK": 0.0,
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "finding_codes": [
+        "TSEK_B_method_MISSING",
+        "TSEK_B_yield_MISSING"
+      ],
+      "findings_count": 2,
+      "gate_a": "B_method",
+      "gate_b": "B_yield",
+      "non_claim_lock": "Pair policy review is classifier governance only; it does not validate silicon or product claims.",
+      "policy_class": "TSEK-C_RETAIN",
+      "policy_enforced": false,
+      "reason": "Paired failure is controlled and interpretable; no overclaim or hard rejection condition detected.",
+      "recommended_action": "Retain TSEK-C under current policy, but keep pair visible in explanation cards."
+    },
+    {
+      "current_A_TSEK": 0.0,
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "finding_codes": [
+        "TSEK_B_method_MISSING",
+        "TSEK_B_evidence_MISSING"
+      ],
+      "findings_count": 2,
+      "gate_a": "B_method",
+      "gate_b": "B_evidence",
+      "non_claim_lock": "Pair policy review is classifier governance only; it does not validate silicon or product claims.",
+      "policy_class": "TSEK-D_CANDIDATE",
+      "policy_enforced": false,
+      "reason": "Evidence plus physical-disclosure failure weakens auditability beyond ordinary single-gate downgrade.",
+      "recommended_action": "Candidate downgrade below TSEK-C unless evidence package, yield/method, and closure disclosures are repaired."
+    },
+    {
+      "current_A_TSEK": 0.0,
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "finding_codes": [
+        "TSEK_B_workload_MISSING",
+        "TSEK_B_tau_MISSING"
+      ],
+      "findings_count": 2,
+      "gate_a": "B_workload",
+      "gate_b": "B_tau",
+      "non_claim_lock": "Pair policy review is classifier governance only; it does not validate silicon or product claims.",
+      "policy_class": "TSEK-D_CANDIDATE",
+      "policy_enforced": false,
+      "reason": "Tau improvements are not interpretable without workload and baseline context.",
+      "recommended_action": "Candidate downgrade below TSEK-C until tau vector, workload, and baseline are simultaneously repaired."
+    },
+    {
+      "current_A_TSEK": 0.0,
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "finding_codes": [
+        "TSEK_B_workload_MISSING",
+        "TSEK_B_LF_MISSING"
+      ],
+      "findings_count": 2,
+      "gate_a": "B_workload",
+      "gate_b": "B_LF",
+      "non_claim_lock": "Pair policy review is classifier governance only; it does not validate silicon or product claims.",
+      "policy_class": "TSEK-C_RETAIN",
+      "policy_enforced": false,
+      "reason": "Paired failure is controlled and interpretable; no overclaim or hard rejection condition detected.",
+      "recommended_action": "Retain TSEK-C under current policy, but keep pair visible in explanation cards."
+    },
+    {
+      "current_A_TSEK": 0.0,
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "finding_codes": [
+        "TSEK_B_workload_MISSING",
+        "TSEK_B_ETP_MISSING"
+      ],
+      "findings_count": 2,
+      "gate_a": "B_workload",
+      "gate_b": "B_ETP",
+      "non_claim_lock": "Pair policy review is classifier governance only; it does not validate silicon or product claims.",
+      "policy_class": "TSEK-C_RETAIN",
+      "policy_enforced": false,
+      "reason": "Paired failure is controlled and interpretable; no overclaim or hard rejection condition detected.",
+      "recommended_action": "Retain TSEK-C under current policy, but keep pair visible in explanation cards."
+    },
+    {
+      "current_A_TSEK": 0.0,
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "finding_codes": [
+        "TSEK_B_workload_MISSING",
+        "TSEK_B_PVT_MISSING"
+      ],
+      "findings_count": 2,
+      "gate_a": "B_workload",
+      "gate_b": "B_PVT",
+      "non_claim_lock": "Pair policy review is classifier governance only; it does not validate silicon or product claims.",
+      "policy_class": "TSEK-C_RETAIN",
+      "policy_enforced": false,
+      "reason": "Paired failure is controlled and interpretable; no overclaim or hard rejection condition detected.",
+      "recommended_action": "Retain TSEK-C under current policy, but keep pair visible in explanation cards."
+    },
+    {
+      "current_A_TSEK": 0.0,
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "finding_codes": [
+        "TSEK_B_workload_MISSING",
+        "TSEK_B_yield_MISSING"
+      ],
+      "findings_count": 2,
+      "gate_a": "B_workload",
+      "gate_b": "B_yield",
+      "non_claim_lock": "Pair policy review is classifier governance only; it does not validate silicon or product claims.",
+      "policy_class": "TSEK-C_RETAIN",
+      "policy_enforced": false,
+      "reason": "Paired failure is controlled and interpretable; no overclaim or hard rejection condition detected.",
+      "recommended_action": "Retain TSEK-C under current policy, but keep pair visible in explanation cards."
+    },
+    {
+      "current_A_TSEK": 0.0,
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "finding_codes": [
+        "TSEK_B_workload_MISSING",
+        "TSEK_B_evidence_MISSING"
+      ],
+      "findings_count": 2,
+      "gate_a": "B_workload",
+      "gate_b": "B_evidence",
+      "non_claim_lock": "Pair policy review is classifier governance only; it does not validate silicon or product claims.",
+      "policy_class": "TSEK-C_RETAIN",
+      "policy_enforced": false,
+      "reason": "Paired failure is controlled and interpretable; no overclaim or hard rejection condition detected.",
+      "recommended_action": "Retain TSEK-C under current policy, but keep pair visible in explanation cards."
+    },
+    {
+      "current_A_TSEK": 0.0,
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "finding_codes": [
+        "TSEK_B_tau_MISSING",
+        "TSEK_B_LF_MISSING"
+      ],
+      "findings_count": 2,
+      "gate_a": "B_tau",
+      "gate_b": "B_LF",
+      "non_claim_lock": "Pair policy review is classifier governance only; it does not validate silicon or product claims.",
+      "policy_class": "TSEK-C_RETAIN",
+      "policy_enforced": false,
+      "reason": "Paired failure is controlled and interpretable; no overclaim or hard rejection condition detected.",
+      "recommended_action": "Retain TSEK-C under current policy, but keep pair visible in explanation cards."
+    },
+    {
+      "current_A_TSEK": 0.0,
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "finding_codes": [
+        "TSEK_B_tau_MISSING",
+        "TSEK_B_ETP_MISSING"
+      ],
+      "findings_count": 2,
+      "gate_a": "B_tau",
+      "gate_b": "B_ETP",
+      "non_claim_lock": "Pair policy review is classifier governance only; it does not validate silicon or product claims.",
+      "policy_class": "TSEK-C_RETAIN",
+      "policy_enforced": false,
+      "reason": "Paired failure is controlled and interpretable; no overclaim or hard rejection condition detected.",
+      "recommended_action": "Retain TSEK-C under current policy, but keep pair visible in explanation cards."
+    },
+    {
+      "current_A_TSEK": 0.0,
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "finding_codes": [
+        "TSEK_B_tau_MISSING",
+        "TSEK_B_PVT_MISSING"
+      ],
+      "findings_count": 2,
+      "gate_a": "B_tau",
+      "gate_b": "B_PVT",
+      "non_claim_lock": "Pair policy review is classifier governance only; it does not validate silicon or product claims.",
+      "policy_class": "TSEK-C_RETAIN",
+      "policy_enforced": false,
+      "reason": "Paired failure is controlled and interpretable; no overclaim or hard rejection condition detected.",
+      "recommended_action": "Retain TSEK-C under current policy, but keep pair visible in explanation cards."
+    },
+    {
+      "current_A_TSEK": 0.0,
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "finding_codes": [
+        "TSEK_B_tau_MISSING",
+        "TSEK_B_yield_MISSING"
+      ],
+      "findings_count": 2,
+      "gate_a": "B_tau",
+      "gate_b": "B_yield",
+      "non_claim_lock": "Pair policy review is classifier governance only; it does not validate silicon or product claims.",
+      "policy_class": "TSEK-C_RETAIN",
+      "policy_enforced": false,
+      "reason": "Paired failure is controlled and interpretable; no overclaim or hard rejection condition detected.",
+      "recommended_action": "Retain TSEK-C under current policy, but keep pair visible in explanation cards."
+    },
+    {
+      "current_A_TSEK": 0.0,
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "finding_codes": [
+        "TSEK_B_tau_MISSING",
+        "TSEK_B_evidence_MISSING"
+      ],
+      "findings_count": 2,
+      "gate_a": "B_tau",
+      "gate_b": "B_evidence",
+      "non_claim_lock": "Pair policy review is classifier governance only; it does not validate silicon or product claims.",
+      "policy_class": "TSEK-C_RETAIN",
+      "policy_enforced": false,
+      "reason": "Paired failure is controlled and interpretable; no overclaim or hard rejection condition detected.",
+      "recommended_action": "Retain TSEK-C under current policy, but keep pair visible in explanation cards."
+    },
+    {
+      "current_A_TSEK": 0.0,
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "finding_codes": [
+        "TSEK_B_LF_MISSING",
+        "TSEK_B_ETP_MISSING"
+      ],
+      "findings_count": 2,
+      "gate_a": "B_LF",
+      "gate_b": "B_ETP",
+      "non_claim_lock": "Pair policy review is classifier governance only; it does not validate silicon or product claims.",
+      "policy_class": "TSEK-D_CANDIDATE",
+      "policy_enforced": false,
+      "reason": "LogicFolding viability and normalized tau gain are both central to the runtime claim path.",
+      "recommended_action": "Candidate downgrade below TSEK-C because survivability and energy/thermal/PDN gain fail together."
+    },
+    {
+      "current_A_TSEK": 0.0,
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "finding_codes": [
+        "TSEK_B_LF_MISSING",
+        "TSEK_B_PVT_MISSING"
+      ],
+      "findings_count": 2,
+      "gate_a": "B_LF",
+      "gate_b": "B_PVT",
+      "non_claim_lock": "Pair policy review is classifier governance only; it does not validate silicon or product claims.",
+      "policy_class": "TSEK-C_RETAIN",
+      "policy_enforced": false,
+      "reason": "Paired failure is controlled and interpretable; no overclaim or hard rejection condition detected.",
+      "recommended_action": "Retain TSEK-C under current policy, but keep pair visible in explanation cards."
+    },
+    {
+      "current_A_TSEK": 0.0,
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "finding_codes": [
+        "TSEK_B_LF_MISSING",
+        "TSEK_B_yield_MISSING"
+      ],
+      "findings_count": 2,
+      "gate_a": "B_LF",
+      "gate_b": "B_yield",
+      "non_claim_lock": "Pair policy review is classifier governance only; it does not validate silicon or product claims.",
+      "policy_class": "TSEK-C_RETAIN",
+      "policy_enforced": false,
+      "reason": "Paired failure is controlled and interpretable; no overclaim or hard rejection condition detected.",
+      "recommended_action": "Retain TSEK-C under current policy, but keep pair visible in explanation cards."
+    },
+    {
+      "current_A_TSEK": 0.0,
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "finding_codes": [
+        "TSEK_B_LF_MISSING",
+        "TSEK_B_evidence_MISSING"
+      ],
+      "findings_count": 2,
+      "gate_a": "B_LF",
+      "gate_b": "B_evidence",
+      "non_claim_lock": "Pair policy review is classifier governance only; it does not validate silicon or product claims.",
+      "policy_class": "TSEK-C_RETAIN",
+      "policy_enforced": false,
+      "reason": "Paired failure is controlled and interpretable; no overclaim or hard rejection condition detected.",
+      "recommended_action": "Retain TSEK-C under current policy, but keep pair visible in explanation cards."
+    },
+    {
+      "current_A_TSEK": 0.0,
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "finding_codes": [
+        "TSEK_B_ETP_MISSING",
+        "TSEK_B_PVT_MISSING"
+      ],
+      "findings_count": 2,
+      "gate_a": "B_ETP",
+      "gate_b": "B_PVT",
+      "non_claim_lock": "Pair policy review is classifier governance only; it does not validate silicon or product claims.",
+      "policy_class": "TSEK-C_RETAIN",
+      "policy_enforced": false,
+      "reason": "Paired failure is controlled and interpretable; no overclaim or hard rejection condition detected.",
+      "recommended_action": "Retain TSEK-C under current policy, but keep pair visible in explanation cards."
+    },
+    {
+      "current_A_TSEK": 0.0,
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "finding_codes": [
+        "TSEK_B_ETP_MISSING",
+        "TSEK_B_yield_MISSING"
+      ],
+      "findings_count": 2,
+      "gate_a": "B_ETP",
+      "gate_b": "B_yield",
+      "non_claim_lock": "Pair policy review is classifier governance only; it does not validate silicon or product claims.",
+      "policy_class": "TSEK-C_RETAIN",
+      "policy_enforced": false,
+      "reason": "Paired failure is controlled and interpretable; no overclaim or hard rejection condition detected.",
+      "recommended_action": "Retain TSEK-C under current policy, but keep pair visible in explanation cards."
+    },
+    {
+      "current_A_TSEK": 0.0,
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "finding_codes": [
+        "TSEK_B_ETP_MISSING",
+        "TSEK_B_evidence_MISSING"
+      ],
+      "findings_count": 2,
+      "gate_a": "B_ETP",
+      "gate_b": "B_evidence",
+      "non_claim_lock": "Pair policy review is classifier governance only; it does not validate silicon or product claims.",
+      "policy_class": "TSEK-C_RETAIN",
+      "policy_enforced": false,
+      "reason": "Paired failure is controlled and interpretable; no overclaim or hard rejection condition detected.",
+      "recommended_action": "Retain TSEK-C under current policy, but keep pair visible in explanation cards."
+    },
+    {
+      "current_A_TSEK": 0.0,
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "finding_codes": [
+        "TSEK_B_PVT_MISSING",
+        "TSEK_B_yield_MISSING"
+      ],
+      "findings_count": 2,
+      "gate_a": "B_PVT",
+      "gate_b": "B_yield",
+      "non_claim_lock": "Pair policy review is classifier governance only; it does not validate silicon or product claims.",
+      "policy_class": "TSEK-C_RETAIN",
+      "policy_enforced": false,
+      "reason": "Paired failure is controlled and interpretable; no overclaim or hard rejection condition detected.",
+      "recommended_action": "Retain TSEK-C under current policy, but keep pair visible in explanation cards."
+    },
+    {
+      "current_A_TSEK": 0.0,
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "finding_codes": [
+        "TSEK_B_PVT_MISSING",
+        "TSEK_B_evidence_MISSING"
+      ],
+      "findings_count": 2,
+      "gate_a": "B_PVT",
+      "gate_b": "B_evidence",
+      "non_claim_lock": "Pair policy review is classifier governance only; it does not validate silicon or product claims.",
+      "policy_class": "TSEK-D_CANDIDATE",
+      "policy_enforced": false,
+      "reason": "Evidence plus physical-disclosure failure weakens auditability beyond ordinary single-gate downgrade.",
+      "recommended_action": "Candidate downgrade below TSEK-C unless evidence package, yield/method, and closure disclosures are repaired."
+    },
+    {
+      "current_A_TSEK": 0.0,
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "finding_codes": [
+        "TSEK_B_yield_MISSING",
+        "TSEK_B_evidence_MISSING"
+      ],
+      "findings_count": 2,
+      "gate_a": "B_yield",
+      "gate_b": "B_evidence",
+      "non_claim_lock": "Pair policy review is classifier governance only; it does not validate silicon or product claims.",
+      "policy_class": "TSEK-D_CANDIDATE",
+      "policy_enforced": false,
+      "reason": "Evidence plus physical-disclosure failure weakens auditability beyond ordinary single-gate downgrade.",
+      "recommended_action": "Candidate downgrade below TSEK-C unless evidence package, yield/method, and closure disclosures are repaired."
+    }
+  ],
+  "schema": "tau-scaling-pair-policy-review-gate-v0.4.4"
+}

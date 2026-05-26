@@ -1,6 +1,6 @@
 # AGENTS.md — Tau Scaling Agent Operating Contract
 
-Current contract: **TAU-SCALING-SA v0.4.3 - Threshold Explanation Cards**
+Current contract: **TAU-SCALING-SA v0.4.4 - Pair Policy Review Gate**
 
 ## Mission
 
@@ -50,6 +50,7 @@ python scripts/benchmarks/run_synthetic_gate_suite.py
 python scripts/benchmarks/run_sensitivity_sweep.py
 python scripts/benchmarks/run_gate_interaction_matrix.py
 python scripts/benchmarks/generate_threshold_explanation_cards.py
+python scripts/benchmarks/run_pair_policy_review.py
 python -m unittest discover -s tests
 ```
 
@@ -67,6 +68,7 @@ python -m unittest discover -s tests
 | Sensitivity sweep patch | `configs/seeds/sweeps/`, `reports/sensitivity/`, `visuals/sensitivity/` | release validator + sensitivity report + benchmark atlas update |
 | Gate interaction patch | `configs/seeds/interactions/`, `reports/interactions/`, `visuals/interactions/` | release validator + interaction matrix report + benchmark atlas update |
 | Explanation card patch | `reports/explanations/`, `visuals/explanations/`, classifier reports | release validator + explanation card report |
+| Pair policy patch | `reports/policy/`, `visuals/policy/`, explanation cards | release validator + policy review report; no classifier mutation |
 | Public claim replay patch | source boundary docs, `configs/seeds/public_claims/`, claim reports | release validator + claim replay report |
 | Directory structure patch | Full Directory Box, affected mini READMEs, context indexes | README audit + RCC-N + release validator |
 
