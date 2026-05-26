@@ -10,8 +10,8 @@
 
 Repository: `tau-scaling`  
 Package / CLI: `tau_scaling` / `tau-scaling`  
-Current checkpoint: **TAU-SCALING-SA v0.4.2 - Gate Interaction Matrix**  
-Previous seal: **TAU-SCALING-SA v0.4.1 - Synthetic Gate Sensitivity Sweep**
+Current checkpoint: **TAU-SCALING-SA v0.4.3 - Threshold Explanation Cards**  
+Previous seal: **TAU-SCALING-SA v0.4.2 - Gate Interaction Matrix**
 
 Tau Scaling is a local-first, evidence-gated Python runtime for evaluating tau-scaling claims through structured claim cards, workload declarations, tau vectors, LogicFolding survivability checks, edge-to-surface boundary algebra, energy / thermal / PDN / PVT gates, Monte Carlo checker stress, TSEK classification, evidence packages, and RCC-N / OMN-style repository navigation.
 
@@ -55,7 +55,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | TAU-SCALING-SA v0.4.2 |
+| Current checkpoint | TAU-SCALING-SA v0.4.3 |
 | Synthetic gate suite | v0.4.0 / benchmark + finding charts |
 | Package version | 0.2.0 |
 | Baseline seed | TSEK-C / A_TSEK 0.0000 |
@@ -82,6 +82,8 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 | Sensitivity charts | `visuals/sensitivity/v0_4_1/` |
 | Gate interaction matrix | `reports/interactions/latest_gate_interaction_matrix.md` |
 | Interaction charts | `visuals/interactions/v0_4_2/` |
+| Threshold explanation cards | `reports/explanations/latest_threshold_explanation_cards.md` |
+| Explanation charts | `visuals/explanations/v0_4_3/` |
 | Agent contract version sync | v0.4.0f / updated from v0.3.3e |
 | Release readiness report | `reports/release/latest_release_readiness.md` |
 | Collision-proof run identity | passed |
@@ -109,6 +111,7 @@ python scripts/benchmarks/run_tau_scaling_benchmarks.py
 python scripts/benchmarks/run_synthetic_gate_suite.py
 python scripts/benchmarks/run_sensitivity_sweep.py
 python scripts/benchmarks/run_gate_interaction_matrix.py
+python scripts/benchmarks/generate_threshold_explanation_cards.py
 python scripts/release/validate_release.py
 ```
 
@@ -394,6 +397,7 @@ This section is part of the repository's operating memory. When a patch fails, t
 | L-018 | v0.4.0c benchmark atlas passed but README audit found two warnings. | `docs/benchmarks/README.md` and `reports/benchmarks/README.md` lacked explicit AI/RCC update guidance. | Every benchmark mini README must include an AI/RCC update rule when benchmark charts, reports, or interpretation surfaces change. |
 | L-019 | v0.4.0d attempted AI/RCC mini README repair but audit still reported two warnings. | The audit script searches exact tokens such as `README Update Rule`; the added heading `AI / RCC Update Rule` was semantically correct but not audit-recognized. | Mini README repair patches must use exact audit-visible anchor phrases, not merely equivalent wording. |
 | L-020 | After v0.4.0e, README checkpoint advanced while AGENTS.md and task_routing_matrix.md still identified v0.3.3e. | Fast benchmark/readme repair layers advanced human-facing state faster than agent-facing contracts. | Every release-like change must re-sync AGENTS.md, task_routing_matrix.md, and route surfaces to the current checkpoint before the next experiment. |
+| L-021 | v0.4.2 showed every paired hard-gate failure classified as TSEK-C. | The current classifier treats paired missing gates as controlled downgrade unless overclaim or severe collapse forces TSEK-E. | Do not harden classifier thresholds until explanation cards classify whether pair-policy behavior is expected, suspicious, or promotion-repairable. |
 
 ### Failure Response Protocol
 
@@ -600,6 +604,7 @@ tau-scaling/
     nexus/
   releases/
   reports/
+    explanations/
     interactions/
     architecture/
     benchmarks/
@@ -633,6 +638,7 @@ tau-scaling/
       utils/
   tests/
   visuals/
+    explanations/
     interactions/
     reflection/
     rcc_nexus/
@@ -713,6 +719,43 @@ per-finding scenario presence
 ### Boundary
 
 Synthetic gate charts show local runtime behavior only. They are not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.
+
+## Threshold Explanation Cards v0.4.3
+
+v0.4.3 turns classifier outputs into explanation cards.
+
+Primary command:
+
+```powershell
+python scripts/benchmarks/generate_threshold_explanation_cards.py
+```
+
+Primary outputs:
+
+```text
+reports/explanations/latest_threshold_explanation_cards.json
+reports/explanations/latest_threshold_explanation_cards.md
+reports/explanations/cards/v0_4_3/
+visuals/explanations/v0_4_3/
+```
+
+The purpose is to answer:
+
+```text
+Why did this claim receive its class?
+Which gates caused downgrade?
+What minimum repair would promote it?
+Which classifier behaviors should be reviewed before hardening?
+```
+
+Current design question:
+
+```text
+v0.4.2 showed all paired gate failures remained TSEK-C.
+v0.4.3 marks those cases as review_pair_policy instead of changing classifier rules prematurely.
+```
+
+Boundary: explanation cards explain local classifier behavior only. They are not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.
 
 ## Gate Interaction Matrix v0.4.2
 
@@ -924,15 +967,15 @@ validation_remains_required
 | v0.4.0f | Coherence reflection and agent contract re-sync after benchmark atlas sequence. |
 | v0.4.1 | Synthetic gate sensitivity sweep and threshold curves. |
 | v0.4.2 | Gate interaction matrix and paired gate-failure heatmaps. |
+| v0.4.3 | Threshold explanation cards and promotion-repair hints. |
 
 ## Next Recommended Version
 
-**TAU-SCALING-SA v0.4.3 - Threshold Explanation Cards**
+**TAU-SCALING-SA v0.4.4 - Pair Policy Review Gate**
 
 Recommended goals:
 
-- Generate explanation cards for class transitions.
-- Explain why each claim is TSEK-B/C/D/E.
-- Identify the minimum evidence repair needed for promotion.
-- Add benchmark atlas row and explanation reports.
-- Preserve non-claim locks: explanation cards are local classifier explanations only.
+- Convert explanation-card review labels into explicit policy checks.
+- Decide whether some paired failures should become TSEK-D or TSEK-E.
+- Add a policy table for gate-pair severity.
+- Preserve non-claim locks: pair policy is local classifier governance only.

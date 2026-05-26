@@ -1,6 +1,6 @@
 # Task Routing Matrix
 
-Current contract: **TAU-SCALING-SA v0.4.2 - Gate Interaction Matrix**
+Current contract: **TAU-SCALING-SA v0.4.3 - Threshold Explanation Cards**
 
 ## Geometry Route
 
@@ -21,6 +21,7 @@ intent -> shell -> meridian -> sector -> files -> validation -> evidence -> less
 | Synthetic gate test patch | inner | validation | tau | `configs/seeds/tests/`, `src/tau_scaling/gates/`, `tests/` | release validator + synthetic gate report | `reports/gates/latest_synthetic_gate_report.md` |
 | Sensitivity sweep patch | inner | validation | tau | `configs/seeds/sweeps/`, gate formulas, benchmark atlas | release validator + sensitivity sweep report | `reports/sensitivity/latest_sensitivity_sweep.md` |
 | Gate interaction patch | inner | validation | tau | `configs/seeds/interactions/`, gate formulas, classifier, benchmark atlas | release validator + interaction matrix report | `reports/interactions/latest_gate_interaction_matrix.md` |
+| Explanation card patch | outer | evidence | validation | `reports/explanations/`, interaction/sensitivity reports, classifier | release validator + explanation report | `reports/explanations/latest_threshold_explanation_cards.md` |
 | Public claim replay patch | outer | evidence | release | source boundary docs, `configs/seeds/public_claims/` | release validator + claim replay report | `reports/public_claims/latest_claim_replay_report.md` |
 | Agent contract patch | center | agent | rcc | `AGENTS.md`, route map, task matrix, README | README audit + release validator | `reports/agent/latest_agent_contract_sync.md` |
 | Reflection patch | center | drift | documentation | `docs/reflection/`, `reports/reflection/`, README, AGENTS | README audit + release validator | `reports/reflection/latest_system_reflection.md` |

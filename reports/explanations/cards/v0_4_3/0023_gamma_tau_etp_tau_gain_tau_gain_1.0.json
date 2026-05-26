@@ -1,0 +1,27 @@
+{
+  "A_TSEK": 0.0,
+  "classification": "TSEK-C",
+  "diagnostic_average": 0.9091,
+  "evidence_path": "artifacts/runs/claim-20260526T150222689933Z-5b1608/evidence_package.json",
+  "finding_codes": [
+    "TSEK_B_ETP_MISSING"
+  ],
+  "findings_count": 1,
+  "generated_at": "2026-05-26T15:02:32.015878+00:00",
+  "minimum_repair_for_promotion": [
+    "Improve energy/thermal/PDN-normalized tau gain above threshold."
+  ],
+  "non_claim_lock": "Explanation cards explain local classifier behavior only. They are not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.",
+  "review_label": "expected",
+  "schema": "tau-scaling-threshold-explanation-card-v0.4.3",
+  "source": "sensitivity_sweep",
+  "subject_id": "gamma_tau_etp_tau_gain:tau_gain=1.0",
+  "threshold_context": {
+    "gamma_tau_ETP": 0.982849,
+    "logicfolding_margin": 9.5,
+    "sweep": "gamma_tau_etp_tau_gain",
+    "x_name": "tau_gain",
+    "x_value": 1.0
+  },
+  "why_this_class": "Downgraded to TSEK-C because one or more required evidence gates are missing while the claim remains interpretable. A_TSEK=0.0, diagnostic_average=0.9091."
+}

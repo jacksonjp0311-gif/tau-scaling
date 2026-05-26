@@ -1,0 +1,27 @@
+{
+  "A_TSEK": 0.0,
+  "classification": "TSEK-C",
+  "diagnostic_average": 0.9091,
+  "evidence_path": "artifacts/runs/claim-20260526T150222397650Z-aa182e/evidence_package.json",
+  "finding_codes": [
+    "TSEK_B_LF_MISSING"
+  ],
+  "findings_count": 1,
+  "generated_at": "2026-05-26T15:02:32.015878+00:00",
+  "minimum_repair_for_promotion": [
+    "Restore positive LogicFolding survivability margin."
+  ],
+  "non_claim_lock": "Explanation cards explain local classifier behavior only. They are not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.",
+  "review_label": "expected",
+  "schema": "tau-scaling-threshold-explanation-card-v0.4.3",
+  "source": "sensitivity_sweep",
+  "subject_id": "logicfolding_vertical_penalty:vertical_penalty_ps=28.0",
+  "threshold_context": {
+    "gamma_tau_ETP": 1.199076,
+    "logicfolding_margin": -10.5,
+    "sweep": "logicfolding_vertical_penalty",
+    "x_name": "vertical_penalty_ps",
+    "x_value": 28.0
+  },
+  "why_this_class": "Downgraded to TSEK-C because one or more required evidence gates are missing while the claim remains interpretable. A_TSEK=0.0, diagnostic_average=0.9091."
+}

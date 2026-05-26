@@ -1,0 +1,1053 @@
+{
+  "boundary": "Explanation cards explain local classifier behavior only. They are not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.",
+  "card_count": 94,
+  "card_directory": "reports/explanations/cards/v0_4_3",
+  "chart_paths": [
+    "visuals/explanations/v0_4_3/explanation_class_counts.png",
+    "visuals/explanations/v0_4_3/explanation_review_labels.png",
+    "visuals/explanations/v0_4_3/explanation_source_counts.png",
+    "visuals/explanations/v0_4_3/explanation_finding_frequency.png"
+  ],
+  "class_counts": {
+    "TSEK-B": 16,
+    "TSEK-C": 75,
+    "TSEK-E": 3
+  },
+  "finding_counts": {
+    "TSEK_B_ETP_MISSING": 16,
+    "TSEK_B_LF_MISSING": 17,
+    "TSEK_B_PVT_MISSING": 12,
+    "TSEK_B_baseline_MISSING": 12,
+    "TSEK_B_evidence_MISSING": 12,
+    "TSEK_B_method_MISSING": 11,
+    "TSEK_B_metric_MISSING": 11,
+    "TSEK_B_source_MISSING": 10,
+    "TSEK_B_tau_MISSING": 11,
+    "TSEK_B_workload_MISSING": 12,
+    "TSEK_B_yield_MISSING": 12,
+    "TSEK_OVERCLAIM_INDEPENDENT_VALIDATION": 1
+  },
+  "generated_at": "2026-05-26T15:02:33.533191+00:00",
+  "review_counts": {
+    "expected": 38,
+    "hard_reject_without_finding": 1,
+    "review_pair_policy": 55
+  },
+  "review_examples": [
+    {
+      "A_TSEK": 0.0,
+      "classification": "TSEK-E",
+      "diagnostic_average": 1.0,
+      "evidence_path": "artifacts/runs/claim-20260526T150223341555Z-3af6f6/evidence_package.json",
+      "finding_codes": [],
+      "findings_count": 0,
+      "generated_at": "2026-05-26T15:02:32.015878+00:00",
+      "minimum_repair_for_promotion": [
+        "No explicit finding codes were emitted; inspect gate values and classifier thresholds."
+      ],
+      "non_claim_lock": "Explanation cards explain local classifier behavior only. They are not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.",
+      "review_label": "hard_reject_without_finding",
+      "schema": "tau-scaling-threshold-explanation-card-v0.4.3",
+      "source": "sensitivity_sweep",
+      "subject_id": "overclaim_pressure:overclaim=1.0",
+      "threshold_context": {
+        "gamma_tau_ETP": 1.199076,
+        "logicfolding_margin": 9.5,
+        "sweep": "overclaim_pressure",
+        "x_name": "overclaim",
+        "x_value": 1.0
+      },
+      "why_this_class": "Rejected or severe downgrade to TSEK-E because classifier support collapsed. A_TSEK=0.0, diagnostic_average=1.0."
+    },
+    {
+      "A_TSEK": 0.0,
+      "classification": "TSEK-C",
+      "diagnostic_average": 0.8182,
+      "evidence_path": "artifacts/runs/claim-20260526T150216453662Z-e47a33/evidence_package.json",
+      "finding_codes": [
+        "TSEK_B_source_MISSING",
+        "TSEK_B_metric_MISSING"
+      ],
+      "findings_count": 2,
+      "generated_at": "2026-05-26T15:02:32.026591+00:00",
+      "interaction_context": {
+        "gamma_tau_ETP": 1.199076,
+        "gate_a": "B_source",
+        "gate_b": "B_metric",
+        "gate_values": {
+          "B_ETP": 1.0,
+          "B_LF": 1.0,
+          "B_PVT": 1.0,
+          "B_baseline": 1.0,
+          "B_evidence": 1.0,
+          "B_method": 1.0,
+          "B_metric": 0.0,
+          "B_source": 0.0,
+          "B_tau": 1.0,
+          "B_workload": 1.0,
+          "B_yield": 1.0
+        },
+        "logicfolding_margin": 9.5
+      },
+      "minimum_repair_for_promotion": [
+        "Declare source boundary and separate reported claims from validation.",
+        "Add a measurable claim text/type and metric definition."
+      ],
+      "non_claim_lock": "Explanation cards explain local classifier behavior only. They are not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.",
+      "review_label": "review_pair_policy",
+      "schema": "tau-scaling-threshold-explanation-card-v0.4.3",
+      "source": "gate_interaction_matrix",
+      "subject_id": "B_source+B_metric",
+      "why_this_class": "Downgraded to TSEK-C because one or more required evidence gates are missing while the claim remains interpretable. A_TSEK=0.0, diagnostic_average=0.8182."
+    },
+    {
+      "A_TSEK": 0.0,
+      "classification": "TSEK-C",
+      "diagnostic_average": 0.8182,
+      "evidence_path": "artifacts/runs/claim-20260526T150216501279Z-3c74e6/evidence_package.json",
+      "finding_codes": [
+        "TSEK_B_source_MISSING",
+        "TSEK_B_baseline_MISSING"
+      ],
+      "findings_count": 2,
+      "generated_at": "2026-05-26T15:02:32.026591+00:00",
+      "interaction_context": {
+        "gamma_tau_ETP": 1.199076,
+        "gate_a": "B_source",
+        "gate_b": "B_baseline",
+        "gate_values": {
+          "B_ETP": 1.0,
+          "B_LF": 1.0,
+          "B_PVT": 1.0,
+          "B_baseline": 0.0,
+          "B_evidence": 1.0,
+          "B_method": 1.0,
+          "B_metric": 1.0,
+          "B_source": 0.0,
+          "B_tau": 1.0,
+          "B_workload": 1.0,
+          "B_yield": 1.0
+        },
+        "logicfolding_margin": 9.5
+      },
+      "minimum_repair_for_promotion": [
+        "Declare source boundary and separate reported claims from validation.",
+        "Add explicit baseline manifest and baseline tau vector."
+      ],
+      "non_claim_lock": "Explanation cards explain local classifier behavior only. They are not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.",
+      "review_label": "review_pair_policy",
+      "schema": "tau-scaling-threshold-explanation-card-v0.4.3",
+      "source": "gate_interaction_matrix",
+      "subject_id": "B_source+B_baseline",
+      "why_this_class": "Downgraded to TSEK-C because one or more required evidence gates are missing while the claim remains interpretable. A_TSEK=0.0, diagnostic_average=0.8182."
+    },
+    {
+      "A_TSEK": 0.0,
+      "classification": "TSEK-C",
+      "diagnostic_average": 0.8182,
+      "evidence_path": "artifacts/runs/claim-20260526T150216545414Z-6a57ec/evidence_package.json",
+      "finding_codes": [
+        "TSEK_B_source_MISSING",
+        "TSEK_B_method_MISSING"
+      ],
+      "findings_count": 2,
+      "generated_at": "2026-05-26T15:02:32.026591+00:00",
+      "interaction_context": {
+        "gamma_tau_ETP": 1.199076,
+        "gate_a": "B_source",
+        "gate_b": "B_method",
+        "gate_values": {
+          "B_ETP": 1.0,
+          "B_LF": 1.0,
+          "B_PVT": 1.0,
+          "B_baseline": 1.0,
+          "B_evidence": 1.0,
+          "B_method": 0.0,
+          "B_metric": 1.0,
+          "B_source": 0.0,
+          "B_tau": 1.0,
+          "B_workload": 1.0,
+          "B_yield": 1.0
+        },
+        "logicfolding_margin": 9.5
+      },
+      "minimum_repair_for_promotion": [
+        "Declare source boundary and separate reported claims from validation.",
+        "Disclose method and yield methodology."
+      ],
+      "non_claim_lock": "Explanation cards explain local classifier behavior only. They are not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.",
+      "review_label": "review_pair_policy",
+      "schema": "tau-scaling-threshold-explanation-card-v0.4.3",
+      "source": "gate_interaction_matrix",
+      "subject_id": "B_source+B_method",
+      "why_this_class": "Downgraded to TSEK-C because one or more required evidence gates are missing while the claim remains interpretable. A_TSEK=0.0, diagnostic_average=0.8182."
+    },
+    {
+      "A_TSEK": 0.0,
+      "classification": "TSEK-C",
+      "diagnostic_average": 0.8182,
+      "evidence_path": "artifacts/runs/claim-20260526T150216589518Z-809dfd/evidence_package.json",
+      "finding_codes": [
+        "TSEK_B_source_MISSING",
+        "TSEK_B_workload_MISSING"
+      ],
+      "findings_count": 2,
+      "generated_at": "2026-05-26T15:02:32.026591+00:00",
+      "interaction_context": {
+        "gamma_tau_ETP": 1.199076,
+        "gate_a": "B_source",
+        "gate_b": "B_workload",
+        "gate_values": {
+          "B_ETP": 1.0,
+          "B_LF": 1.0,
+          "B_PVT": 1.0,
+          "B_baseline": 1.0,
+          "B_evidence": 1.0,
+          "B_method": 1.0,
+          "B_metric": 1.0,
+          "B_source": 0.0,
+          "B_tau": 1.0,
+          "B_workload": 0.0,
+          "B_yield": 1.0
+        },
+        "logicfolding_margin": 9.5
+      },
+      "minimum_repair_for_promotion": [
+        "Declare source boundary and separate reported claims from validation.",
+        "Declare workload class and dominant tau term."
+      ],
+      "non_claim_lock": "Explanation cards explain local classifier behavior only. They are not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.",
+      "review_label": "review_pair_policy",
+      "schema": "tau-scaling-threshold-explanation-card-v0.4.3",
+      "source": "gate_interaction_matrix",
+      "subject_id": "B_source+B_workload",
+      "why_this_class": "Downgraded to TSEK-C because one or more required evidence gates are missing while the claim remains interpretable. A_TSEK=0.0, diagnostic_average=0.8182."
+    },
+    {
+      "A_TSEK": 0.0,
+      "classification": "TSEK-C",
+      "diagnostic_average": 0.8182,
+      "evidence_path": "artifacts/runs/claim-20260526T150216632974Z-e6a9f3/evidence_package.json",
+      "finding_codes": [
+        "TSEK_B_source_MISSING",
+        "TSEK_B_tau_MISSING"
+      ],
+      "findings_count": 2,
+      "generated_at": "2026-05-26T15:02:32.026591+00:00",
+      "interaction_context": {
+        "gamma_tau_ETP": 1.199076,
+        "gate_a": "B_source",
+        "gate_b": "B_tau",
+        "gate_values": {
+          "B_ETP": 1.0,
+          "B_LF": 1.0,
+          "B_PVT": 1.0,
+          "B_baseline": 1.0,
+          "B_evidence": 1.0,
+          "B_method": 1.0,
+          "B_metric": 1.0,
+          "B_source": 0.0,
+          "B_tau": 0.0,
+          "B_workload": 1.0,
+          "B_yield": 1.0
+        },
+        "logicfolding_margin": 9.5
+      },
+      "minimum_repair_for_promotion": [
+        "Declare source boundary and separate reported claims from validation.",
+        "Declare tau weights and dominant tau improvement."
+      ],
+      "non_claim_lock": "Explanation cards explain local classifier behavior only. They are not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.",
+      "review_label": "review_pair_policy",
+      "schema": "tau-scaling-threshold-explanation-card-v0.4.3",
+      "source": "gate_interaction_matrix",
+      "subject_id": "B_source+B_tau",
+      "why_this_class": "Downgraded to TSEK-C because one or more required evidence gates are missing while the claim remains interpretable. A_TSEK=0.0, diagnostic_average=0.8182."
+    },
+    {
+      "A_TSEK": 0.0,
+      "classification": "TSEK-C",
+      "diagnostic_average": 0.8182,
+      "evidence_path": "artifacts/runs/claim-20260526T150216674584Z-b71c75/evidence_package.json",
+      "finding_codes": [
+        "TSEK_B_source_MISSING",
+        "TSEK_B_LF_MISSING"
+      ],
+      "findings_count": 2,
+      "generated_at": "2026-05-26T15:02:32.026591+00:00",
+      "interaction_context": {
+        "gamma_tau_ETP": 1.199076,
+        "gate_a": "B_source",
+        "gate_b": "B_LF",
+        "gate_values": {
+          "B_ETP": 1.0,
+          "B_LF": 0.0,
+          "B_PVT": 1.0,
+          "B_baseline": 1.0,
+          "B_evidence": 1.0,
+          "B_method": 1.0,
+          "B_metric": 1.0,
+          "B_source": 0.0,
+          "B_tau": 1.0,
+          "B_workload": 1.0,
+          "B_yield": 1.0
+        },
+        "logicfolding_margin": -133.5
+      },
+      "minimum_repair_for_promotion": [
+        "Declare source boundary and separate reported claims from validation.",
+        "Restore positive LogicFolding survivability margin."
+      ],
+      "non_claim_lock": "Explanation cards explain local classifier behavior only. They are not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.",
+      "review_label": "review_pair_policy",
+      "schema": "tau-scaling-threshold-explanation-card-v0.4.3",
+      "source": "gate_interaction_matrix",
+      "subject_id": "B_source+B_LF",
+      "why_this_class": "Downgraded to TSEK-C because one or more required evidence gates are missing while the claim remains interpretable. A_TSEK=0.0, diagnostic_average=0.8182."
+    },
+    {
+      "A_TSEK": 0.0,
+      "classification": "TSEK-C",
+      "diagnostic_average": 0.8182,
+      "evidence_path": "artifacts/runs/claim-20260526T150216722321Z-8aa5ac/evidence_package.json",
+      "finding_codes": [
+        "TSEK_B_source_MISSING",
+        "TSEK_B_ETP_MISSING"
+      ],
+      "findings_count": 2,
+      "generated_at": "2026-05-26T15:02:32.026591+00:00",
+      "interaction_context": {
+        "gamma_tau_ETP": 0.309767,
+        "gate_a": "B_source",
+        "gate_b": "B_ETP",
+        "gate_values": {
+          "B_ETP": 0.0,
+          "B_LF": 1.0,
+          "B_PVT": 1.0,
+          "B_baseline": 1.0,
+          "B_evidence": 1.0,
+          "B_method": 1.0,
+          "B_metric": 1.0,
+          "B_source": 0.0,
+          "B_tau": 1.0,
+          "B_workload": 1.0,
+          "B_yield": 1.0
+        },
+        "logicfolding_margin": 9.5
+      },
+      "minimum_repair_for_promotion": [
+        "Declare source boundary and separate reported claims from validation.",
+        "Improve energy/thermal/PDN-normalized tau gain above threshold."
+      ],
+      "non_claim_lock": "Explanation cards explain local classifier behavior only. They are not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.",
+      "review_label": "review_pair_policy",
+      "schema": "tau-scaling-threshold-explanation-card-v0.4.3",
+      "source": "gate_interaction_matrix",
+      "subject_id": "B_source+B_ETP",
+      "why_this_class": "Downgraded to TSEK-C because one or more required evidence gates are missing while the claim remains interpretable. A_TSEK=0.0, diagnostic_average=0.8182."
+    },
+    {
+      "A_TSEK": 0.0,
+      "classification": "TSEK-C",
+      "diagnostic_average": 0.8182,
+      "evidence_path": "artifacts/runs/claim-20260526T150216767715Z-553fa2/evidence_package.json",
+      "finding_codes": [
+        "TSEK_B_source_MISSING",
+        "TSEK_B_PVT_MISSING"
+      ],
+      "findings_count": 2,
+      "generated_at": "2026-05-26T15:02:32.026591+00:00",
+      "interaction_context": {
+        "gamma_tau_ETP": 1.199076,
+        "gate_a": "B_source",
+        "gate_b": "B_PVT",
+        "gate_values": {
+          "B_ETP": 1.0,
+          "B_LF": 1.0,
+          "B_PVT": 0.0,
+          "B_baseline": 1.0,
+          "B_evidence": 1.0,
+          "B_method": 1.0,
+          "B_metric": 1.0,
+          "B_source": 0.0,
+          "B_tau": 1.0,
+          "B_workload": 1.0,
+          "B_yield": 1.0
+        },
+        "logicfolding_margin": 9.5
+      },
+      "minimum_repair_for_promotion": [
+        "Declare source boundary and separate reported claims from validation.",
+        "Provide closure, PVT, and PDN evidence."
+      ],
+      "non_claim_lock": "Explanation cards explain local classifier behavior only. They are not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.",
+      "review_label": "review_pair_policy",
+      "schema": "tau-scaling-threshold-explanation-card-v0.4.3",
+      "source": "gate_interaction_matrix",
+      "subject_id": "B_source+B_PVT",
+      "why_this_class": "Downgraded to TSEK-C because one or more required evidence gates are missing while the claim remains interpretable. A_TSEK=0.0, diagnostic_average=0.8182."
+    },
+    {
+      "A_TSEK": 0.0,
+      "classification": "TSEK-C",
+      "diagnostic_average": 0.8182,
+      "evidence_path": "artifacts/runs/claim-20260526T150216812146Z-a539d3/evidence_package.json",
+      "finding_codes": [
+        "TSEK_B_source_MISSING",
+        "TSEK_B_yield_MISSING"
+      ],
+      "findings_count": 2,
+      "generated_at": "2026-05-26T15:02:32.026591+00:00",
+      "interaction_context": {
+        "gamma_tau_ETP": 1.199076,
+        "gate_a": "B_source",
+        "gate_b": "B_yield",
+        "gate_values": {
+          "B_ETP": 1.0,
+          "B_LF": 1.0,
+          "B_PVT": 1.0,
+          "B_baseline": 1.0,
+          "B_evidence": 1.0,
+          "B_method": 1.0,
+          "B_metric": 1.0,
+          "B_source": 0.0,
+          "B_tau": 1.0,
+          "B_workload": 1.0,
+          "B_yield": 0.0
+        },
+        "logicfolding_margin": 9.5
+      },
+      "minimum_repair_for_promotion": [
+        "Declare source boundary and separate reported claims from validation.",
+        "Report yield or downgrade the claim."
+      ],
+      "non_claim_lock": "Explanation cards explain local classifier behavior only. They are not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.",
+      "review_label": "review_pair_policy",
+      "schema": "tau-scaling-threshold-explanation-card-v0.4.3",
+      "source": "gate_interaction_matrix",
+      "subject_id": "B_source+B_yield",
+      "why_this_class": "Downgraded to TSEK-C because one or more required evidence gates are missing while the claim remains interpretable. A_TSEK=0.0, diagnostic_average=0.8182."
+    },
+    {
+      "A_TSEK": 0.0,
+      "classification": "TSEK-C",
+      "diagnostic_average": 0.8182,
+      "evidence_path": "artifacts/runs/claim-20260526T150216856407Z-c72cd5/evidence_package.json",
+      "finding_codes": [
+        "TSEK_B_source_MISSING",
+        "TSEK_B_evidence_MISSING"
+      ],
+      "findings_count": 2,
+      "generated_at": "2026-05-26T15:02:32.026591+00:00",
+      "interaction_context": {
+        "gamma_tau_ETP": 1.199076,
+        "gate_a": "B_source",
+        "gate_b": "B_evidence",
+        "gate_values": {
+          "B_ETP": 1.0,
+          "B_LF": 1.0,
+          "B_PVT": 1.0,
+          "B_baseline": 1.0,
+          "B_evidence": 0.0,
+          "B_method": 1.0,
+          "B_metric": 1.0,
+          "B_source": 0.0,
+          "B_tau": 1.0,
+          "B_workload": 1.0,
+          "B_yield": 1.0
+        },
+        "logicfolding_margin": 9.5
+      },
+      "minimum_repair_for_promotion": [
+        "Declare source boundary and separate reported claims from validation.",
+        "Complete the evidence package."
+      ],
+      "non_claim_lock": "Explanation cards explain local classifier behavior only. They are not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.",
+      "review_label": "review_pair_policy",
+      "schema": "tau-scaling-threshold-explanation-card-v0.4.3",
+      "source": "gate_interaction_matrix",
+      "subject_id": "B_source+B_evidence",
+      "why_this_class": "Downgraded to TSEK-C because one or more required evidence gates are missing while the claim remains interpretable. A_TSEK=0.0, diagnostic_average=0.8182."
+    },
+    {
+      "A_TSEK": 0.0,
+      "classification": "TSEK-C",
+      "diagnostic_average": 0.8182,
+      "evidence_path": "artifacts/runs/claim-20260526T150216903039Z-816cc3/evidence_package.json",
+      "finding_codes": [
+        "TSEK_B_metric_MISSING",
+        "TSEK_B_baseline_MISSING"
+      ],
+      "findings_count": 2,
+      "generated_at": "2026-05-26T15:02:32.026591+00:00",
+      "interaction_context": {
+        "gamma_tau_ETP": 1.199076,
+        "gate_a": "B_metric",
+        "gate_b": "B_baseline",
+        "gate_values": {
+          "B_ETP": 1.0,
+          "B_LF": 1.0,
+          "B_PVT": 1.0,
+          "B_baseline": 0.0,
+          "B_evidence": 1.0,
+          "B_method": 1.0,
+          "B_metric": 0.0,
+          "B_source": 1.0,
+          "B_tau": 1.0,
+          "B_workload": 1.0,
+          "B_yield": 1.0
+        },
+        "logicfolding_margin": 9.5
+      },
+      "minimum_repair_for_promotion": [
+        "Add a measurable claim text/type and metric definition.",
+        "Add explicit baseline manifest and baseline tau vector."
+      ],
+      "non_claim_lock": "Explanation cards explain local classifier behavior only. They are not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.",
+      "review_label": "review_pair_policy",
+      "schema": "tau-scaling-threshold-explanation-card-v0.4.3",
+      "source": "gate_interaction_matrix",
+      "subject_id": "B_metric+B_baseline",
+      "why_this_class": "Downgraded to TSEK-C because one or more required evidence gates are missing while the claim remains interpretable. A_TSEK=0.0, diagnostic_average=0.8182."
+    },
+    {
+      "A_TSEK": 0.0,
+      "classification": "TSEK-C",
+      "diagnostic_average": 0.8182,
+      "evidence_path": "artifacts/runs/claim-20260526T150216958644Z-bab5ac/evidence_package.json",
+      "finding_codes": [
+        "TSEK_B_metric_MISSING",
+        "TSEK_B_method_MISSING"
+      ],
+      "findings_count": 2,
+      "generated_at": "2026-05-26T15:02:32.026591+00:00",
+      "interaction_context": {
+        "gamma_tau_ETP": 1.199076,
+        "gate_a": "B_metric",
+        "gate_b": "B_method",
+        "gate_values": {
+          "B_ETP": 1.0,
+          "B_LF": 1.0,
+          "B_PVT": 1.0,
+          "B_baseline": 1.0,
+          "B_evidence": 1.0,
+          "B_method": 0.0,
+          "B_metric": 0.0,
+          "B_source": 1.0,
+          "B_tau": 1.0,
+          "B_workload": 1.0,
+          "B_yield": 1.0
+        },
+        "logicfolding_margin": 9.5
+      },
+      "minimum_repair_for_promotion": [
+        "Add a measurable claim text/type and metric definition.",
+        "Disclose method and yield methodology."
+      ],
+      "non_claim_lock": "Explanation cards explain local classifier behavior only. They are not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.",
+      "review_label": "review_pair_policy",
+      "schema": "tau-scaling-threshold-explanation-card-v0.4.3",
+      "source": "gate_interaction_matrix",
+      "subject_id": "B_metric+B_method",
+      "why_this_class": "Downgraded to TSEK-C because one or more required evidence gates are missing while the claim remains interpretable. A_TSEK=0.0, diagnostic_average=0.8182."
+    },
+    {
+      "A_TSEK": 0.0,
+      "classification": "TSEK-C",
+      "diagnostic_average": 0.8182,
+      "evidence_path": "artifacts/runs/claim-20260526T150217003238Z-2307d8/evidence_package.json",
+      "finding_codes": [
+        "TSEK_B_metric_MISSING",
+        "TSEK_B_workload_MISSING"
+      ],
+      "findings_count": 2,
+      "generated_at": "2026-05-26T15:02:32.026591+00:00",
+      "interaction_context": {
+        "gamma_tau_ETP": 1.199076,
+        "gate_a": "B_metric",
+        "gate_b": "B_workload",
+        "gate_values": {
+          "B_ETP": 1.0,
+          "B_LF": 1.0,
+          "B_PVT": 1.0,
+          "B_baseline": 1.0,
+          "B_evidence": 1.0,
+          "B_method": 1.0,
+          "B_metric": 0.0,
+          "B_source": 1.0,
+          "B_tau": 1.0,
+          "B_workload": 0.0,
+          "B_yield": 1.0
+        },
+        "logicfolding_margin": 9.5
+      },
+      "minimum_repair_for_promotion": [
+        "Add a measurable claim text/type and metric definition.",
+        "Declare workload class and dominant tau term."
+      ],
+      "non_claim_lock": "Explanation cards explain local classifier behavior only. They are not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.",
+      "review_label": "review_pair_policy",
+      "schema": "tau-scaling-threshold-explanation-card-v0.4.3",
+      "source": "gate_interaction_matrix",
+      "subject_id": "B_metric+B_workload",
+      "why_this_class": "Downgraded to TSEK-C because one or more required evidence gates are missing while the claim remains interpretable. A_TSEK=0.0, diagnostic_average=0.8182."
+    },
+    {
+      "A_TSEK": 0.0,
+      "classification": "TSEK-C",
+      "diagnostic_average": 0.8182,
+      "evidence_path": "artifacts/runs/claim-20260526T150217045254Z-621f3a/evidence_package.json",
+      "finding_codes": [
+        "TSEK_B_metric_MISSING",
+        "TSEK_B_tau_MISSING"
+      ],
+      "findings_count": 2,
+      "generated_at": "2026-05-26T15:02:32.026591+00:00",
+      "interaction_context": {
+        "gamma_tau_ETP": 1.199076,
+        "gate_a": "B_metric",
+        "gate_b": "B_tau",
+        "gate_values": {
+          "B_ETP": 1.0,
+          "B_LF": 1.0,
+          "B_PVT": 1.0,
+          "B_baseline": 1.0,
+          "B_evidence": 1.0,
+          "B_method": 1.0,
+          "B_metric": 0.0,
+          "B_source": 1.0,
+          "B_tau": 0.0,
+          "B_workload": 1.0,
+          "B_yield": 1.0
+        },
+        "logicfolding_margin": 9.5
+      },
+      "minimum_repair_for_promotion": [
+        "Add a measurable claim text/type and metric definition.",
+        "Declare tau weights and dominant tau improvement."
+      ],
+      "non_claim_lock": "Explanation cards explain local classifier behavior only. They are not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.",
+      "review_label": "review_pair_policy",
+      "schema": "tau-scaling-threshold-explanation-card-v0.4.3",
+      "source": "gate_interaction_matrix",
+      "subject_id": "B_metric+B_tau",
+      "why_this_class": "Downgraded to TSEK-C because one or more required evidence gates are missing while the claim remains interpretable. A_TSEK=0.0, diagnostic_average=0.8182."
+    },
+    {
+      "A_TSEK": 0.0,
+      "classification": "TSEK-C",
+      "diagnostic_average": 0.8182,
+      "evidence_path": "artifacts/runs/claim-20260526T150217092714Z-50ef95/evidence_package.json",
+      "finding_codes": [
+        "TSEK_B_metric_MISSING",
+        "TSEK_B_LF_MISSING"
+      ],
+      "findings_count": 2,
+      "generated_at": "2026-05-26T15:02:32.026591+00:00",
+      "interaction_context": {
+        "gamma_tau_ETP": 1.199076,
+        "gate_a": "B_metric",
+        "gate_b": "B_LF",
+        "gate_values": {
+          "B_ETP": 1.0,
+          "B_LF": 0.0,
+          "B_PVT": 1.0,
+          "B_baseline": 1.0,
+          "B_evidence": 1.0,
+          "B_method": 1.0,
+          "B_metric": 0.0,
+          "B_source": 1.0,
+          "B_tau": 1.0,
+          "B_workload": 1.0,
+          "B_yield": 1.0
+        },
+        "logicfolding_margin": -133.5
+      },
+      "minimum_repair_for_promotion": [
+        "Add a measurable claim text/type and metric definition.",
+        "Restore positive LogicFolding survivability margin."
+      ],
+      "non_claim_lock": "Explanation cards explain local classifier behavior only. They are not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.",
+      "review_label": "review_pair_policy",
+      "schema": "tau-scaling-threshold-explanation-card-v0.4.3",
+      "source": "gate_interaction_matrix",
+      "subject_id": "B_metric+B_LF",
+      "why_this_class": "Downgraded to TSEK-C because one or more required evidence gates are missing while the claim remains interpretable. A_TSEK=0.0, diagnostic_average=0.8182."
+    },
+    {
+      "A_TSEK": 0.0,
+      "classification": "TSEK-C",
+      "diagnostic_average": 0.8182,
+      "evidence_path": "artifacts/runs/claim-20260526T150217136167Z-aace51/evidence_package.json",
+      "finding_codes": [
+        "TSEK_B_metric_MISSING",
+        "TSEK_B_ETP_MISSING"
+      ],
+      "findings_count": 2,
+      "generated_at": "2026-05-26T15:02:32.026591+00:00",
+      "interaction_context": {
+        "gamma_tau_ETP": 0.309767,
+        "gate_a": "B_metric",
+        "gate_b": "B_ETP",
+        "gate_values": {
+          "B_ETP": 0.0,
+          "B_LF": 1.0,
+          "B_PVT": 1.0,
+          "B_baseline": 1.0,
+          "B_evidence": 1.0,
+          "B_method": 1.0,
+          "B_metric": 0.0,
+          "B_source": 1.0,
+          "B_tau": 1.0,
+          "B_workload": 1.0,
+          "B_yield": 1.0
+        },
+        "logicfolding_margin": 9.5
+      },
+      "minimum_repair_for_promotion": [
+        "Add a measurable claim text/type and metric definition.",
+        "Improve energy/thermal/PDN-normalized tau gain above threshold."
+      ],
+      "non_claim_lock": "Explanation cards explain local classifier behavior only. They are not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.",
+      "review_label": "review_pair_policy",
+      "schema": "tau-scaling-threshold-explanation-card-v0.4.3",
+      "source": "gate_interaction_matrix",
+      "subject_id": "B_metric+B_ETP",
+      "why_this_class": "Downgraded to TSEK-C because one or more required evidence gates are missing while the claim remains interpretable. A_TSEK=0.0, diagnostic_average=0.8182."
+    },
+    {
+      "A_TSEK": 0.0,
+      "classification": "TSEK-C",
+      "diagnostic_average": 0.8182,
+      "evidence_path": "artifacts/runs/claim-20260526T150217178665Z-8719ec/evidence_package.json",
+      "finding_codes": [
+        "TSEK_B_metric_MISSING",
+        "TSEK_B_PVT_MISSING"
+      ],
+      "findings_count": 2,
+      "generated_at": "2026-05-26T15:02:32.026591+00:00",
+      "interaction_context": {
+        "gamma_tau_ETP": 1.199076,
+        "gate_a": "B_metric",
+        "gate_b": "B_PVT",
+        "gate_values": {
+          "B_ETP": 1.0,
+          "B_LF": 1.0,
+          "B_PVT": 0.0,
+          "B_baseline": 1.0,
+          "B_evidence": 1.0,
+          "B_method": 1.0,
+          "B_metric": 0.0,
+          "B_source": 1.0,
+          "B_tau": 1.0,
+          "B_workload": 1.0,
+          "B_yield": 1.0
+        },
+        "logicfolding_margin": 9.5
+      },
+      "minimum_repair_for_promotion": [
+        "Add a measurable claim text/type and metric definition.",
+        "Provide closure, PVT, and PDN evidence."
+      ],
+      "non_claim_lock": "Explanation cards explain local classifier behavior only. They are not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.",
+      "review_label": "review_pair_policy",
+      "schema": "tau-scaling-threshold-explanation-card-v0.4.3",
+      "source": "gate_interaction_matrix",
+      "subject_id": "B_metric+B_PVT",
+      "why_this_class": "Downgraded to TSEK-C because one or more required evidence gates are missing while the claim remains interpretable. A_TSEK=0.0, diagnostic_average=0.8182."
+    },
+    {
+      "A_TSEK": 0.0,
+      "classification": "TSEK-C",
+      "diagnostic_average": 0.8182,
+      "evidence_path": "artifacts/runs/claim-20260526T150217232433Z-2f4917/evidence_package.json",
+      "finding_codes": [
+        "TSEK_B_metric_MISSING",
+        "TSEK_B_yield_MISSING"
+      ],
+      "findings_count": 2,
+      "generated_at": "2026-05-26T15:02:32.026591+00:00",
+      "interaction_context": {
+        "gamma_tau_ETP": 1.199076,
+        "gate_a": "B_metric",
+        "gate_b": "B_yield",
+        "gate_values": {
+          "B_ETP": 1.0,
+          "B_LF": 1.0,
+          "B_PVT": 1.0,
+          "B_baseline": 1.0,
+          "B_evidence": 1.0,
+          "B_method": 1.0,
+          "B_metric": 0.0,
+          "B_source": 1.0,
+          "B_tau": 1.0,
+          "B_workload": 1.0,
+          "B_yield": 0.0
+        },
+        "logicfolding_margin": 9.5
+      },
+      "minimum_repair_for_promotion": [
+        "Add a measurable claim text/type and metric definition.",
+        "Report yield or downgrade the claim."
+      ],
+      "non_claim_lock": "Explanation cards explain local classifier behavior only. They are not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.",
+      "review_label": "review_pair_policy",
+      "schema": "tau-scaling-threshold-explanation-card-v0.4.3",
+      "source": "gate_interaction_matrix",
+      "subject_id": "B_metric+B_yield",
+      "why_this_class": "Downgraded to TSEK-C because one or more required evidence gates are missing while the claim remains interpretable. A_TSEK=0.0, diagnostic_average=0.8182."
+    },
+    {
+      "A_TSEK": 0.0,
+      "classification": "TSEK-C",
+      "diagnostic_average": 0.8182,
+      "evidence_path": "artifacts/runs/claim-20260526T150217288226Z-7b40e6/evidence_package.json",
+      "finding_codes": [
+        "TSEK_B_metric_MISSING",
+        "TSEK_B_evidence_MISSING"
+      ],
+      "findings_count": 2,
+      "generated_at": "2026-05-26T15:02:32.026591+00:00",
+      "interaction_context": {
+        "gamma_tau_ETP": 1.199076,
+        "gate_a": "B_metric",
+        "gate_b": "B_evidence",
+        "gate_values": {
+          "B_ETP": 1.0,
+          "B_LF": 1.0,
+          "B_PVT": 1.0,
+          "B_baseline": 1.0,
+          "B_evidence": 0.0,
+          "B_method": 1.0,
+          "B_metric": 0.0,
+          "B_source": 1.0,
+          "B_tau": 1.0,
+          "B_workload": 1.0,
+          "B_yield": 1.0
+        },
+        "logicfolding_margin": 9.5
+      },
+      "minimum_repair_for_promotion": [
+        "Add a measurable claim text/type and metric definition.",
+        "Complete the evidence package."
+      ],
+      "non_claim_lock": "Explanation cards explain local classifier behavior only. They are not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.",
+      "review_label": "review_pair_policy",
+      "schema": "tau-scaling-threshold-explanation-card-v0.4.3",
+      "source": "gate_interaction_matrix",
+      "subject_id": "B_metric+B_evidence",
+      "why_this_class": "Downgraded to TSEK-C because one or more required evidence gates are missing while the claim remains interpretable. A_TSEK=0.0, diagnostic_average=0.8182."
+    },
+    {
+      "A_TSEK": 0.0,
+      "classification": "TSEK-C",
+      "diagnostic_average": 0.8182,
+      "evidence_path": "artifacts/runs/claim-20260526T150217332026Z-4be19d/evidence_package.json",
+      "finding_codes": [
+        "TSEK_B_baseline_MISSING",
+        "TSEK_B_method_MISSING"
+      ],
+      "findings_count": 2,
+      "generated_at": "2026-05-26T15:02:32.026591+00:00",
+      "interaction_context": {
+        "gamma_tau_ETP": 1.199076,
+        "gate_a": "B_baseline",
+        "gate_b": "B_method",
+        "gate_values": {
+          "B_ETP": 1.0,
+          "B_LF": 1.0,
+          "B_PVT": 1.0,
+          "B_baseline": 0.0,
+          "B_evidence": 1.0,
+          "B_method": 0.0,
+          "B_metric": 1.0,
+          "B_source": 1.0,
+          "B_tau": 1.0,
+          "B_workload": 1.0,
+          "B_yield": 1.0
+        },
+        "logicfolding_margin": 9.5
+      },
+      "minimum_repair_for_promotion": [
+        "Add explicit baseline manifest and baseline tau vector.",
+        "Disclose method and yield methodology."
+      ],
+      "non_claim_lock": "Explanation cards explain local classifier behavior only. They are not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.",
+      "review_label": "review_pair_policy",
+      "schema": "tau-scaling-threshold-explanation-card-v0.4.3",
+      "source": "gate_interaction_matrix",
+      "subject_id": "B_baseline+B_method",
+      "why_this_class": "Downgraded to TSEK-C because one or more required evidence gates are missing while the claim remains interpretable. A_TSEK=0.0, diagnostic_average=0.8182."
+    },
+    {
+      "A_TSEK": 0.0,
+      "classification": "TSEK-C",
+      "diagnostic_average": 0.8182,
+      "evidence_path": "artifacts/runs/claim-20260526T150217375592Z-66bda7/evidence_package.json",
+      "finding_codes": [
+        "TSEK_B_baseline_MISSING",
+        "TSEK_B_workload_MISSING"
+      ],
+      "findings_count": 2,
+      "generated_at": "2026-05-26T15:02:32.026591+00:00",
+      "interaction_context": {
+        "gamma_tau_ETP": 1.199076,
+        "gate_a": "B_baseline",
+        "gate_b": "B_workload",
+        "gate_values": {
+          "B_ETP": 1.0,
+          "B_LF": 1.0,
+          "B_PVT": 1.0,
+          "B_baseline": 0.0,
+          "B_evidence": 1.0,
+          "B_method": 1.0,
+          "B_metric": 1.0,
+          "B_source": 1.0,
+          "B_tau": 1.0,
+          "B_workload": 0.0,
+          "B_yield": 1.0
+        },
+        "logicfolding_margin": 9.5
+      },
+      "minimum_repair_for_promotion": [
+        "Add explicit baseline manifest and baseline tau vector.",
+        "Declare workload class and dominant tau term."
+      ],
+      "non_claim_lock": "Explanation cards explain local classifier behavior only. They are not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.",
+      "review_label": "review_pair_policy",
+      "schema": "tau-scaling-threshold-explanation-card-v0.4.3",
+      "source": "gate_interaction_matrix",
+      "subject_id": "B_baseline+B_workload",
+      "why_this_class": "Downgraded to TSEK-C because one or more required evidence gates are missing while the claim remains interpretable. A_TSEK=0.0, diagnostic_average=0.8182."
+    },
+    {
+      "A_TSEK": 0.0,
+      "classification": "TSEK-C",
+      "diagnostic_average": 0.8182,
+      "evidence_path": "artifacts/runs/claim-20260526T150217416989Z-3be938/evidence_package.json",
+      "finding_codes": [
+        "TSEK_B_baseline_MISSING",
+        "TSEK_B_tau_MISSING"
+      ],
+      "findings_count": 2,
+      "generated_at": "2026-05-26T15:02:32.026591+00:00",
+      "interaction_context": {
+        "gamma_tau_ETP": 1.199076,
+        "gate_a": "B_baseline",
+        "gate_b": "B_tau",
+        "gate_values": {
+          "B_ETP": 1.0,
+          "B_LF": 1.0,
+          "B_PVT": 1.0,
+          "B_baseline": 0.0,
+          "B_evidence": 1.0,
+          "B_method": 1.0,
+          "B_metric": 1.0,
+          "B_source": 1.0,
+          "B_tau": 0.0,
+          "B_workload": 1.0,
+          "B_yield": 1.0
+        },
+        "logicfolding_margin": 9.5
+      },
+      "minimum_repair_for_promotion": [
+        "Add explicit baseline manifest and baseline tau vector.",
+        "Declare tau weights and dominant tau improvement."
+      ],
+      "non_claim_lock": "Explanation cards explain local classifier behavior only. They are not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.",
+      "review_label": "review_pair_policy",
+      "schema": "tau-scaling-threshold-explanation-card-v0.4.3",
+      "source": "gate_interaction_matrix",
+      "subject_id": "B_baseline+B_tau",
+      "why_this_class": "Downgraded to TSEK-C because one or more required evidence gates are missing while the claim remains interpretable. A_TSEK=0.0, diagnostic_average=0.8182."
+    },
+    {
+      "A_TSEK": 0.0,
+      "classification": "TSEK-C",
+      "diagnostic_average": 0.8182,
+      "evidence_path": "artifacts/runs/claim-20260526T150217457023Z-2a974d/evidence_package.json",
+      "finding_codes": [
+        "TSEK_B_baseline_MISSING",
+        "TSEK_B_LF_MISSING"
+      ],
+      "findings_count": 2,
+      "generated_at": "2026-05-26T15:02:32.026591+00:00",
+      "interaction_context": {
+        "gamma_tau_ETP": 1.199076,
+        "gate_a": "B_baseline",
+        "gate_b": "B_LF",
+        "gate_values": {
+          "B_ETP": 1.0,
+          "B_LF": 0.0,
+          "B_PVT": 1.0,
+          "B_baseline": 0.0,
+          "B_evidence": 1.0,
+          "B_method": 1.0,
+          "B_metric": 1.0,
+          "B_source": 1.0,
+          "B_tau": 1.0,
+          "B_workload": 1.0,
+          "B_yield": 1.0
+        },
+        "logicfolding_margin": -133.5
+      },
+      "minimum_repair_for_promotion": [
+        "Add explicit baseline manifest and baseline tau vector.",
+        "Restore positive LogicFolding survivability margin."
+      ],
+      "non_claim_lock": "Explanation cards explain local classifier behavior only. They are not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.",
+      "review_label": "review_pair_policy",
+      "schema": "tau-scaling-threshold-explanation-card-v0.4.3",
+      "source": "gate_interaction_matrix",
+      "subject_id": "B_baseline+B_LF",
+      "why_this_class": "Downgraded to TSEK-C because one or more required evidence gates are missing while the claim remains interpretable. A_TSEK=0.0, diagnostic_average=0.8182."
+    },
+    {
+      "A_TSEK": 0.0,
+      "classification": "TSEK-C",
+      "diagnostic_average": 0.8182,
+      "evidence_path": "artifacts/runs/claim-20260526T150217497246Z-125174/evidence_package.json",
+      "finding_codes": [
+        "TSEK_B_baseline_MISSING",
+        "TSEK_B_ETP_MISSING"
+      ],
+      "findings_count": 2,
+      "generated_at": "2026-05-26T15:02:32.026591+00:00",
+      "interaction_context": {
+        "gamma_tau_ETP": 0.309767,
+        "gate_a": "B_baseline",
+        "gate_b": "B_ETP",
+        "gate_values": {
+          "B_ETP": 0.0,
+          "B_LF": 1.0,
+          "B_PVT": 1.0,
+          "B_baseline": 0.0,
+          "B_evidence": 1.0,
+          "B_method": 1.0,
+          "B_metric": 1.0,
+          "B_source": 1.0,
+          "B_tau": 1.0,
+          "B_workload": 1.0,
+          "B_yield": 1.0
+        },
+        "logicfolding_margin": 9.5
+      },
+      "minimum_repair_for_promotion": [
+        "Add explicit baseline manifest and baseline tau vector.",
+        "Improve energy/thermal/PDN-normalized tau gain above threshold."
+      ],
+      "non_claim_lock": "Explanation cards explain local classifier behavior only. They are not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.",
+      "review_label": "review_pair_policy",
+      "schema": "tau-scaling-threshold-explanation-card-v0.4.3",
+      "source": "gate_interaction_matrix",
+      "subject_id": "B_baseline+B_ETP",
+      "why_this_class": "Downgraded to TSEK-C because one or more required evidence gates are missing while the claim remains interpretable. A_TSEK=0.0, diagnostic_average=0.8182."
+    }
+  ],
+  "schema": "tau-scaling-threshold-explanation-cards-v0.4.3",
+  "source_counts": {
+    "gate_interaction_matrix": 55,
+    "sensitivity_sweep": 29,
+    "synthetic_gate_suite": 10
+  }
+}

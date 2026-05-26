@@ -1,0 +1,25 @@
+{
+  "A_TSEK": 0.3,
+  "classification": "TSEK-C",
+  "diagnostic_average": 1.0,
+  "evidence_path": "artifacts/runs/claim-20260526T150223217502Z-aefa7e/evidence_package.json",
+  "finding_codes": [],
+  "findings_count": 0,
+  "generated_at": "2026-05-26T15:02:32.015878+00:00",
+  "minimum_repair_for_promotion": [
+    "No explicit finding codes were emitted; inspect gate values and classifier thresholds."
+  ],
+  "non_claim_lock": "Explanation cards explain local classifier behavior only. They are not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.",
+  "review_label": "expected",
+  "schema": "tau-scaling-threshold-explanation-card-v0.4.3",
+  "source": "sensitivity_sweep",
+  "subject_id": "overclaim_pressure:overclaim=0.7",
+  "threshold_context": {
+    "gamma_tau_ETP": 1.199076,
+    "logicfolding_margin": 9.5,
+    "sweep": "overclaim_pressure",
+    "x_name": "overclaim",
+    "x_value": 0.7
+  },
+  "why_this_class": "Downgraded to TSEK-C because one or more required evidence gates are missing while the claim remains interpretable. A_TSEK=0.3, diagnostic_average=1.0."
+}

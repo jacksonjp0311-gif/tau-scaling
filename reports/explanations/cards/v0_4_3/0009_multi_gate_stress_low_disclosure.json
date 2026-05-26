@@ -1,0 +1,38 @@
+{
+  "A_TSEK": 0.0,
+  "classification": "TSEK-E",
+  "diagnostic_average": 0.0909,
+  "evidence_path": "artifacts/runs/claim-20260526T150226569556Z-3d170c/evidence_package.json",
+  "finding_codes": [
+    "TSEK_B_metric_MISSING",
+    "TSEK_B_baseline_MISSING",
+    "TSEK_B_method_MISSING",
+    "TSEK_B_workload_MISSING",
+    "TSEK_B_tau_MISSING",
+    "TSEK_B_LF_MISSING",
+    "TSEK_B_ETP_MISSING",
+    "TSEK_B_PVT_MISSING",
+    "TSEK_B_yield_MISSING",
+    "TSEK_B_evidence_MISSING"
+  ],
+  "findings_count": 10,
+  "generated_at": "2026-05-26T15:02:32.005418+00:00",
+  "minimum_repair_for_promotion": [
+    "Add a measurable claim text/type and metric definition.",
+    "Add explicit baseline manifest and baseline tau vector.",
+    "Disclose method and yield methodology.",
+    "Declare workload class and dominant tau term.",
+    "Declare tau weights and dominant tau improvement.",
+    "Restore positive LogicFolding survivability margin.",
+    "Improve energy/thermal/PDN-normalized tau gain above threshold.",
+    "Provide closure, PVT, and PDN evidence.",
+    "Report yield or downgrade the claim.",
+    "Complete the evidence package."
+  ],
+  "non_claim_lock": "Explanation cards explain local classifier behavior only. They are not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.",
+  "review_label": "expected",
+  "schema": "tau-scaling-threshold-explanation-card-v0.4.3",
+  "source": "synthetic_gate_suite",
+  "subject_id": "multi_gate_stress_low_disclosure",
+  "why_this_class": "Rejected or severe downgrade to TSEK-E because classifier support collapsed. A_TSEK=0.0, diagnostic_average=0.0909."
+}

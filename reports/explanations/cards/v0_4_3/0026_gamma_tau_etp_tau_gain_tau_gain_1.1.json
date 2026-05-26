@@ -1,0 +1,25 @@
+{
+  "A_TSEK": 1.0,
+  "classification": "TSEK-B",
+  "diagnostic_average": 1.0,
+  "evidence_path": "artifacts/runs/claim-20260526T150222821861Z-743b87/evidence_package.json",
+  "finding_codes": [],
+  "findings_count": 0,
+  "generated_at": "2026-05-26T15:02:32.015878+00:00",
+  "minimum_repair_for_promotion": [
+    "Independent validation would be required for TSEK-A promotion."
+  ],
+  "non_claim_lock": "Explanation cards explain local classifier behavior only. They are not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.",
+  "review_label": "expected",
+  "schema": "tau-scaling-threshold-explanation-card-v0.4.3",
+  "source": "sensitivity_sweep",
+  "subject_id": "gamma_tau_etp_tau_gain:tau_gain=1.1",
+  "threshold_context": {
+    "gamma_tau_ETP": 1.081134,
+    "logicfolding_margin": 9.5,
+    "sweep": "gamma_tau_etp_tau_gain",
+    "x_name": "tau_gain",
+    "x_value": 1.1
+  },
+  "why_this_class": "Promoted to TSEK-B because all local hard gates are disclosed and no independent-validation claim is made. TSEK-A remains blocked without independent validation."
+}

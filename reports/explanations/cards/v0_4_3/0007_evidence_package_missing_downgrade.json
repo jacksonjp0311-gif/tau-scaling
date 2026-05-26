@@ -1,0 +1,20 @@
+{
+  "A_TSEK": 0.0,
+  "classification": "TSEK-C",
+  "diagnostic_average": 0.9091,
+  "evidence_path": "artifacts/runs/claim-20260526T150226477478Z-d5578a/evidence_package.json",
+  "finding_codes": [
+    "TSEK_B_evidence_MISSING"
+  ],
+  "findings_count": 1,
+  "generated_at": "2026-05-26T15:02:32.005418+00:00",
+  "minimum_repair_for_promotion": [
+    "Complete the evidence package."
+  ],
+  "non_claim_lock": "Explanation cards explain local classifier behavior only. They are not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.",
+  "review_label": "expected",
+  "schema": "tau-scaling-threshold-explanation-card-v0.4.3",
+  "source": "synthetic_gate_suite",
+  "subject_id": "evidence_package_missing_downgrade",
+  "why_this_class": "Downgraded to TSEK-C because one or more required evidence gates are missing while the claim remains interpretable. A_TSEK=0.0, diagnostic_average=0.9091."
+}
