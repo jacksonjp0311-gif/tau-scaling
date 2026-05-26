@@ -10,8 +10,8 @@
 
 Repository: `tau-scaling`  
 Package / CLI: `tau_scaling` / `tau-scaling`  
-Current checkpoint: **TAU-SCALING-SA v0.4.0e - Exact Mini README Audit Anchor Repair**  
-Previous seal: **TAU-SCALING-SA v0.4.0d - Benchmark Mini README AI/RCC Warning Repair**
+Current checkpoint: **TAU-SCALING-SA v0.4.0d - Benchmark Mini README AI/RCC Warning Repair**  
+Previous seal: **TAU-SCALING-SA v0.4.0c - Benchmark Atlas and Chart Index**
 
 Tau Scaling is a local-first, evidence-gated Python runtime for evaluating tau-scaling claims through structured claim cards, workload declarations, tau vectors, LogicFolding survivability checks, edge-to-surface boundary algebra, energy / thermal / PDN / PVT gates, Monte Carlo checker stress, TSEK classification, evidence packages, and RCC-N / OMN-style repository navigation.
 
@@ -55,7 +55,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | TAU-SCALING-SA v0.4.0e |
+| Current checkpoint | TAU-SCALING-SA v0.4.0d |
 | Synthetic gate suite | v0.4.0 / benchmark + finding charts |
 | Package version | 0.2.0 |
 | Baseline seed | TSEK-C / A_TSEK 0.0000 |
@@ -75,7 +75,6 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 | Finding charts | `reports/findings/latest_finding_charts.md` |
 | Benchmark atlas | `docs/benchmarks/benchmark_atlas.md` |
 | Benchmark mini README AI/RCC guidance | repaired / expected 0 warnings |
-| Mini README audit warnings | exact anchor repair / expected 0 warnings |
 | Benchmark chart registry | `visuals/benchmarks/v0_4_0/` + `visuals/findings/v0_4_0/` |
 | Release readiness report | `reports/release/latest_release_readiness.md` |
 | Collision-proof run identity | passed |
@@ -384,7 +383,6 @@ This section is part of the repository's operating memory. When a patch fails, t
 | L-016 | v0.4.0a synthetic suite completed reports but one scenario failed. | The multi-gate stress seed expected TSEK-D even though the classifier correctly returns TSEK-E when only one of eleven hard gates survives. | Synthetic test expectations must be calibrated to the classifier algebra; incomplete suites must exit non-zero. |
 | L-017 | Benchmark charts existed, but the README did not yet provide a versioned chart/finding atlas. | Visual evidence was distributed across reports and visuals folders without one public navigation surface per version. | Every benchmark version must maintain a benchmark atlas with chart registry, finding registry, version ledger, and non-claim boundary. |
 | L-018 | v0.4.0c benchmark atlas passed but README audit found two warnings. | `docs/benchmarks/README.md` and `reports/benchmarks/README.md` lacked explicit AI/RCC update guidance. | Every benchmark mini README must include an AI/RCC update rule when benchmark charts, reports, or interpretation surfaces change. |
-| L-019 | v0.4.0d attempted AI/RCC mini README repair but audit still reported two warnings. | The audit script searches exact tokens such as `README Update Rule`; the added heading `AI / RCC Update Rule` was semantically correct but not audit-recognized. | Mini README repair patches must use exact audit-visible anchor phrases, not merely equivalent wording. |
 
 ### Failure Response Protocol
 
@@ -810,7 +808,6 @@ validation_remains_required
 | v0.4.0b | Synthetic gate expectation calibration and hard-fail incomplete suite semantics. |
 | v0.4.0c | Benchmark atlas and per-version chart/finding registry. |
 | v0.4.0d | Benchmark mini README AI/RCC warning repair. |
-| v0.4.0e | Exact mini README audit-anchor repair for benchmark docs. |
 
 ## Next Recommended Version
 

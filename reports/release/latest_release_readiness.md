@@ -1,6 +1,6 @@
 # Tau Scaling Unified Release Readiness
 
-Generated: `2026-05-26T14:19:41.869618+00:00`
+Generated: `2026-05-26T14:21:36.165931+00:00`
 
 Passed: `true`
 Step count: `9`
@@ -11,15 +11,15 @@ Findings: `0`
 
 | Step | Passed | Exit | Elapsed ms |
 |---|---:|---:|---:|
-| `compile_runtime` | `true` | `0` | `75.258` |
-| `import_runtime` | `true` | `0` | `106.746` |
-| `rcc_nexus_check` | `true` | `0` | `82.387` |
-| `readme_mini_repo_audit` | `true` | `0` | `102.767` |
-| `architecture_contract_validation` | `true` | `0` | `72.189` |
-| `unit_tests` | `true` | `0` | `236.644` |
-| `benchmark_harness` | `true` | `0` | `609.683` |
-| `baseline_claim` | `true` | `0` | `181.288` |
-| `promotion_path_claim` | `true` | `0` | `182.26` |
+| `compile_runtime` | `true` | `0` | `75.224` |
+| `import_runtime` | `true` | `0` | `114.111` |
+| `rcc_nexus_check` | `true` | `0` | `80.269` |
+| `readme_mini_repo_audit` | `true` | `0` | `104.426` |
+| `architecture_contract_validation` | `true` | `0` | `63.832` |
+| `unit_tests` | `true` | `0` | `209.604` |
+| `benchmark_harness` | `true` | `0` | `537.283` |
+| `baseline_claim` | `true` | `0` | `167.668` |
+| `promotion_path_claim` | `true` | `0` | `157.986` |
 
 ## Claim Summary
 
@@ -28,11 +28,11 @@ Findings: `0`
 ```json
 {
   "A_TSEK": 0.0,
-  "artifacts": "C:\\Users\\jacks\\OneDrive\\Desktop\\tau-scaling\\artifacts\\runs\\claim-20260526T141941602647Z-26bd10",
+  "artifacts": "C:\\Users\\jacks\\OneDrive\\Desktop\\tau-scaling\\artifacts\\runs\\claim-20260526T142135924609Z-f2ca47",
   "class": "TSEK-C",
-  "evidence": "C:\\Users\\jacks\\OneDrive\\Desktop\\tau-scaling\\artifacts\\runs\\claim-20260526T141941602647Z-26bd10\\evidence_package.json",
+  "evidence": "C:\\Users\\jacks\\OneDrive\\Desktop\\tau-scaling\\artifacts\\runs\\claim-20260526T142135924609Z-f2ca47\\evidence_package.json",
   "findings": 1,
-  "run_id": "claim-20260526T141941602647Z-26bd10"
+  "run_id": "claim-20260526T142135924609Z-f2ca47"
 }
 ```
 
@@ -41,11 +41,11 @@ Findings: `0`
 ```json
 {
   "A_TSEK": 1.0,
-  "artifacts": "C:\\Users\\jacks\\OneDrive\\Desktop\\tau-scaling\\artifacts\\runs\\claim-20260526T141941765206Z-1c3aee",
+  "artifacts": "C:\\Users\\jacks\\OneDrive\\Desktop\\tau-scaling\\artifacts\\runs\\claim-20260526T142136087336Z-4b06c7",
   "class": "TSEK-B",
-  "evidence": "C:\\Users\\jacks\\OneDrive\\Desktop\\tau-scaling\\artifacts\\runs\\claim-20260526T141941765206Z-1c3aee\\evidence_package.json",
+  "evidence": "C:\\Users\\jacks\\OneDrive\\Desktop\\tau-scaling\\artifacts\\runs\\claim-20260526T142136087336Z-4b06c7\\evidence_package.json",
   "findings": 0,
-  "run_id": "claim-20260526T141941765206Z-1c3aee"
+  "run_id": "claim-20260526T142136087336Z-4b06c7"
 }
 ```
 
@@ -65,9 +65,9 @@ Findings: `0`
       "findings_values": [
         1
       ],
-      "max_elapsed_ms": 47.1047,
-      "mean_elapsed_ms": 38.9275,
-      "min_elapsed_ms": 35.135,
+      "max_elapsed_ms": 39.0355,
+      "mean_elapsed_ms": 35.816,
+      "min_elapsed_ms": 33.1256,
       "runs": 6
     },
     "configs/seeds/logicfolding_promotion_path_claim_card.json": {
@@ -80,9 +80,9 @@ Findings: `0`
       "findings_values": [
         0
       ],
-      "max_elapsed_ms": 40.1373,
-      "mean_elapsed_ms": 37.3677,
-      "min_elapsed_ms": 34.6889,
+      "max_elapsed_ms": 36.7423,
+      "mean_elapsed_ms": 34.2319,
+      "min_elapsed_ms": 32.0846,
       "runs": 6
     }
   },
@@ -92,131 +92,131 @@ Findings: `0`
   },
   "collision_proof_run_identity_passed": true,
   "duplicate_run_ids": [],
-  "generated_at": "2026-05-26T14:19:40.991122+00:00",
+  "generated_at": "2026-05-26T14:21:35.368085+00:00",
   "iterations_per_seed": 6,
-  "max_elapsed_ms": 47.1047,
-  "mean_elapsed_ms": 38.1476,
-  "median_elapsed_ms": 37.7103,
-  "min_elapsed_ms": 34.6889,
+  "max_elapsed_ms": 39.0355,
+  "mean_elapsed_ms": 35.024,
+  "median_elapsed_ms": 34.5917,
+  "min_elapsed_ms": 32.0846,
   "results": [
     {
       "A_TSEK": 0.0,
       "classification": "TSEK-C",
-      "elapsed_ms": 47.1047,
-      "evidence_path": "artifacts/runs/claim-20260526T141940992122Z-9ace4c/evidence_package.json",
+      "elapsed_ms": 39.0355,
+      "evidence_path": "artifacts/runs/claim-20260526T142135368085Z-353b8f/evidence_package.json",
       "findings_count": 1,
       "iteration": 1,
-      "run_id": "claim-20260526T141940992122Z-9ace4c",
+      "run_id": "claim-20260526T142135368085Z-353b8f",
       "seed": "configs/seeds/logicfolding_claim_card.json"
     },
     {
       "A_TSEK": 0.0,
       "classification": "TSEK-C",
-      "elapsed_ms": 39.5726,
-      "evidence_path": "artifacts/runs/claim-20260526T141941039337Z-4056ea/evidence_package.json",
+      "elapsed_ms": 35.2398,
+      "evidence_path": "artifacts/runs/claim-20260526T142135407396Z-d62dea/evidence_package.json",
       "findings_count": 1,
       "iteration": 2,
-      "run_id": "claim-20260526T141941039337Z-4056ea",
+      "run_id": "claim-20260526T142135407396Z-d62dea",
       "seed": "configs/seeds/logicfolding_claim_card.json"
     },
     {
       "A_TSEK": 0.0,
       "classification": "TSEK-C",
-      "elapsed_ms": 35.8603,
-      "evidence_path": "artifacts/runs/claim-20260526T141941078556Z-69e08b/evidence_package.json",
+      "elapsed_ms": 38.2565,
+      "evidence_path": "artifacts/runs/claim-20260526T142135442856Z-92cd65/evidence_package.json",
       "findings_count": 1,
       "iteration": 3,
-      "run_id": "claim-20260526T141941078556Z-69e08b",
+      "run_id": "claim-20260526T142135442856Z-92cd65",
       "seed": "configs/seeds/logicfolding_claim_card.json"
     },
     {
       "A_TSEK": 0.0,
       "classification": "TSEK-C",
-      "elapsed_ms": 35.135,
-      "evidence_path": "artifacts/runs/claim-20260526T141941114828Z-8d5eb6/evidence_package.json",
+      "elapsed_ms": 34.7484,
+      "evidence_path": "artifacts/runs/claim-20260526T142135481105Z-4c4492/evidence_package.json",
       "findings_count": 1,
       "iteration": 4,
-      "run_id": "claim-20260526T141941114828Z-8d5eb6",
+      "run_id": "claim-20260526T142135481105Z-4c4492",
       "seed": "configs/seeds/logicfolding_claim_card.json"
     },
     {
       "A_TSEK": 0.0,
       "classification": "TSEK-C",
-      "elapsed_ms": 37.2814,
-      "evidence_path": "artifacts/runs/claim-20260526T141941149762Z-424b86/evidence_package.json",
+      "elapsed_ms": 34.4905,
+      "evidence_path": "artifacts/runs/claim-20260526T142135516238Z-f3eaa2/evidence_package.json",
       "findings_count": 1,
       "iteration": 5,
-      "run_id": "claim-20260526T141941149762Z-424b86",
+      "run_id": "claim-20260526T142135516238Z-f3eaa2",
       "seed": "configs/seeds/logicfolding_claim_card.json"
     },
     {
       "A_TSEK": 0.0,
       "classification": "TSEK-C",
-      "elapsed_ms": 38.611,
-      "evidence_path": "artifacts/runs/claim-20260526T141941187398Z-1fb73d/evidence_package.json",
+      "elapsed_ms": 33.1256,
+      "evidence_path": "artifacts/runs/claim-20260526T142135550700Z-8707b9/evidence_package.json",
       "findings_count": 1,
       "iteration": 6,
-      "run_id": "claim-20260526T141941187398Z-1fb73d",
+      "run_id": "claim-20260526T142135550700Z-8707b9",
       "seed": "configs/seeds/logicfolding_claim_card.json"
     },
     {
       "A_TSEK": 1.0,
       "classification": "TSEK-B",
-      "elapsed_ms": 39.3621,
-      "evidence_path": "artifacts/runs/claim-20260526T141941226951Z-fa49d6/evidence_package.json",
+      "elapsed_ms": 36.7423,
+      "evidence_path": "artifacts/runs/claim-20260526T142135583966Z-c7d10d/evidence_package.json",
       "findings_count": 0,
       "iteration": 1,
-      "run_id": "claim-20260526T141941226951Z-fa49d6",
+      "run_id": "claim-20260526T142135583966Z-c7d10d",
       "seed": "configs/seeds/logicfolding_promotion_path_claim_card.json"
     },
     {
       "A_TSEK": 1.0,
       "classification": "TSEK-B",
-      "elapsed_ms": 36.1524,
-      "evidence_path": "artifacts/runs/claim-20260526T141941265876Z-ea4aa2/evidence_package.json",
+      "elapsed_ms": 34.2894,
+      "evidence_path": "artifacts/runs/claim-20260526T142135620915Z-d60bd8/evidence_package.json",
       "findings_count": 0,
       "iteration": 2,
-      "run_id": "claim-20260526T141941265876Z-ea4aa2",
+      "run_id": "claim-20260526T142135620915Z-d60bd8",
       "seed": "configs/seeds/logicfolding_promotion_path_claim_card.json"
     },
     {
       "A_TSEK": 1.0,
       "classification": "TSEK-B",
-      "elapsed_ms": 38.1393,
-      "evidence_path": "artifacts/runs/claim-20260526T141941302765Z-0e2816/evidence_package.json",
+      "elapsed_ms": 32.0846,
+      "evidence_path": "artifacts/runs/claim-20260526T142135656037Z-83705a/evidence_package.json",
       "findings_count": 0,
       "iteration": 3,
-      "run_id": "claim-20260526T141941302765Z-0e2816",
+      "run_id": "claim-20260526T142135656037Z-83705a",
       "seed": "configs/seeds/logicfolding_promotion_path_claim_card.json"
     },
     {
       "A_TSEK": 1.0,
       "classification": "TSEK-B",
-      "elapsed_ms": 35.7262,
-      "evidence_path": "artifacts/runs/claim-20260526T141941341289Z-981cd7/evidence_package.json",
+      "elapsed_ms": 34.0339,
+      "evidence_path": "artifacts/runs/claim-20260526T142135688378Z-c8f1e1/evidence_package.json",
       "findings_count": 0,
       "iteration": 4,
-      "run_id": "claim-20260526T141941341289Z-981cd7",
+      "run_id": "claim-20260526T142135688378Z-c8f1e1",
       "seed": "configs/seeds/logicfolding_promotion_path_claim_card.json"
     },
     {
       "A_TSEK": 1.0,
       "classification": "TSEK-B",
-      "elapsed_ms": 34.6889,
-      "evidence_path": "artifacts/runs/claim-20260526T141941377107Z-dda662/evidence_package.json",
+      "elapsed_ms": 33.5482,
+      "evidence_path": "artifacts/runs/claim-20260526T142135722320Z-95dbc1/evidence_package.json",
       "findings_count": 0,
       "iteration": 5,
-      "run_id": "claim-20260526T141941377107Z-dda662",
+      "run_id": "claim-20260526T142135722320Z-95dbc1",
       "seed": "configs/seeds/logicfolding_promotion_path_claim_card.json"
     },
     {
       "A_TSEK": 1.0,
       "classification": "TSEK-B",
-      "elapsed_ms": 40.1373,
-      "evidence_path": "artifacts/runs/claim-20260526T141941412021Z-33e180/evidence_package.json",
+      "elapsed_ms": 34.6928,
+      "evidence_path": "artifacts/runs/claim-20260526T142135755627Z-8807e8/evidence_package.json",
       "findings_count": 0,
       "iteration": 6,
-      "run_id": "claim-20260526T141941412021Z-33e180",
+      "run_id": "claim-20260526T142135755627Z-8807e8",
       "seed": "configs/seeds/logicfolding_promotion_path_claim_card.json"
     }
   ],

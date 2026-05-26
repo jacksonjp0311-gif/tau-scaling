@@ -36,3 +36,28 @@ python scripts/release/validate_release.py
 ```
 
 Non-claim lock: AI/RCC update guidance improves navigation and context alignment only. It is not code correctness, silicon validation, product validation, benchmark superiority proof, or universal Tau Scaling proof.
+
+## README Update Rule
+
+This mini README must be updated whenever benchmark commands, benchmark reports, chart folders, chart registries, benchmark interpretation, or non-claim boundary language changes.
+
+Required synchronized surfaces:
+
+```text
+README.md
+docs/benchmarks/benchmark_atlas.md
+reports/benchmarks/README.md
+reports/benchmarks/benchmark_chart_registry_v0_4_0c.json
+visuals/benchmarks/README.md
+visuals/findings/README.md
+rcc/nexus/route_map.json
+```
+
+Required validation:
+
+```powershell
+python scripts/rcc/audit_readme_surface.py
+python scripts/release/validate_release.py
+```
+
+Non-claim lock: README update guidance improves repository context alignment only. It is not code correctness, silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.
