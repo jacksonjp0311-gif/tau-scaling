@@ -1,3 +1,57 @@
+# Tau Scaling Unified Release Readiness
+
+Generated: `2026-05-26T11:02:51.706200+00:00`
+
+Passed: `true`
+Step count: `9`
+Step failures: `0`
+Findings: `1`
+
+## Step Summary
+
+| Step | Passed | Exit | Elapsed ms |
+|---|---:|---:|---:|
+| `compile_runtime` | `true` | `0` | `78.256` |
+| `import_runtime` | `true` | `0` | `110.798` |
+| `rcc_nexus_check` | `true` | `0` | `73.73` |
+| `readme_mini_repo_audit` | `true` | `0` | `88.719` |
+| `architecture_contract_validation` | `true` | `0` | `65.776` |
+| `unit_tests` | `true` | `0` | `223.877` |
+| `benchmark_harness` | `true` | `0` | `594.36` |
+| `baseline_claim` | `true` | `0` | `202.396` |
+| `promotion_path_claim` | `true` | `0` | `159.84` |
+
+## Claim Summary
+
+### baseline_claim
+
+```json
+{
+  "A_TSEK": 0.0,
+  "artifacts": "C:\\Users\\jacks\\OneDrive\\Desktop\\tau-scaling\\artifacts\\runs\\claim-20260526T110251450974Z-a78e3a",
+  "class": "TSEK-C",
+  "evidence": "C:\\Users\\jacks\\OneDrive\\Desktop\\tau-scaling\\artifacts\\runs\\claim-20260526T110251450974Z-a78e3a\\evidence_package.json",
+  "findings": 1,
+  "run_id": "claim-20260526T110251450974Z-a78e3a"
+}
+```
+
+### promotion_path_claim
+
+```json
+{
+  "A_TSEK": 1.0,
+  "artifacts": "C:\\Users\\jacks\\OneDrive\\Desktop\\tau-scaling\\artifacts\\runs\\claim-20260526T110251620810Z-261977",
+  "class": "TSEK-B",
+  "evidence": "C:\\Users\\jacks\\OneDrive\\Desktop\\tau-scaling\\artifacts\\runs\\claim-20260526T110251620810Z-261977\\evidence_package.json",
+  "findings": 0,
+  "run_id": "claim-20260526T110251620810Z-261977"
+}
+```
+
+## Benchmark Summary
+
+```json
 {
   "boundary": "Benchmark timing and class stability are local-runtime diagnostics only. They are not silicon validation, product validation, or universal Tau Scaling proof.",
   "by_seed": {
@@ -170,3 +224,14 @@
   "total_runs": 12,
   "unique_run_ids": 12
 }
+```
+
+## Findings
+
+| Severity | Code | Path | Detail |
+|---|---|---|---|
+| warning | `possible_mojibake_or_path_break` | `README.md` | Found token:   |
+
+## Non-Claim Lock
+
+Release readiness validates repository/runtime hygiene only. It is not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.
