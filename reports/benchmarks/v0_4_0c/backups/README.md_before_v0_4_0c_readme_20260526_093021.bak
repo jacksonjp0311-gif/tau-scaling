@@ -10,8 +10,8 @@
 
 Repository: `tau-scaling`  
 Package / CLI: `tau_scaling` / `tau-scaling`  
-Current checkpoint: **TAU-SCALING-SA v0.4.0c - Benchmark Atlas and Chart Index**  
-Previous seal: **TAU-SCALING-SA v0.4.0b - Synthetic Gate Expectation Calibration**
+Current checkpoint: **TAU-SCALING-SA v0.4.0b - Synthetic Gate Expectation Calibration**  
+Previous seal: **TAU-SCALING-SA v0.4.0a - Synthetic Gate Report Link Repair**
 
 Tau Scaling is a local-first, evidence-gated Python runtime for evaluating tau-scaling claims through structured claim cards, workload declarations, tau vectors, LogicFolding survivability checks, edge-to-surface boundary algebra, energy / thermal / PDN / PVT gates, Monte Carlo checker stress, TSEK classification, evidence packages, and RCC-N / OMN-style repository navigation.
 
@@ -55,7 +55,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | TAU-SCALING-SA v0.4.0c |
+| Current checkpoint | TAU-SCALING-SA v0.4.0b |
 | Synthetic gate suite | v0.4.0 / benchmark + finding charts |
 | Package version | 0.2.0 |
 | Baseline seed | TSEK-C / A_TSEK 0.0000 |
@@ -73,8 +73,6 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 | Synthetic gate report links | repaired / v0.4.0a |
 | Synthetic gate suite | expected 10/10 after v0.4.0b calibration |
 | Finding charts | `reports/findings/latest_finding_charts.md` |
-| Benchmark atlas | `docs/benchmarks/benchmark_atlas.md` |
-| Benchmark chart registry | `visuals/benchmarks/v0_4_0/` + `visuals/findings/v0_4_0/` |
 | Release readiness report | `reports/release/latest_release_readiness.md` |
 | Collision-proof run identity | passed |
 | Mini README coverage | 1.0 |
@@ -380,7 +378,6 @@ This section is part of the repository's operating memory. When a patch fails, t
 | L-014 | README contract became more advanced than AGENTS.md and task routing matrix. | Human-facing Nexus evolved faster than agent-facing operating contract. | Agent contracts and routing matrices must be synchronized before experiments begin. |
 | L-015 | v0.4.0 synthetic suite generated charts but failed Markdown rendering. | The report renderer tried to make visual paths relative to `reports/benchmarks/v0_4_0`, although visuals live outside that subtree. | Benchmark reports must use repo-root-safe relative links for visuals, and failed synthetic-suite runs must be repaired before being treated as complete. |
 | L-016 | v0.4.0a synthetic suite completed reports but one scenario failed. | The multi-gate stress seed expected TSEK-D even though the classifier correctly returns TSEK-E when only one of eleven hard gates survives. | Synthetic test expectations must be calibrated to the classifier algebra; incomplete suites must exit non-zero. |
-| L-017 | Benchmark charts existed, but the README did not yet provide a versioned chart/finding atlas. | Visual evidence was distributed across reports and visuals folders without one public navigation surface per version. | Every benchmark version must maintain a benchmark atlas with chart registry, finding registry, version ledger, and non-claim boundary. |
 
 ### Failure Response Protocol
 
@@ -668,52 +665,6 @@ per-finding scenario presence
 
 Synthetic gate charts show local runtime behavior only. They are not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.
 
-## Benchmark and Finding Atlas
-
-v0.4.0c adds a stable benchmark atlas so every benchmark layer has a public chart/finding registry.
-
-Primary atlas:
-
-```text
-docs/benchmarks/benchmark_atlas.md
-```
-
-Atlas surfaces:
-
-```text
-reports/benchmarks/README.md
-reports/benchmarks/v0_4_0/README.md
-reports/gates/README.md
-reports/findings/README.md
-visuals/benchmarks/README.md
-visuals/benchmarks/v0_4_0/README.md
-visuals/findings/README.md
-visuals/findings/v0_4_0/README.md
-```
-
-Current synthetic-suite seal:
-
-```text
-total_scenarios: 10
-passed_scenarios: 10
-failed_scenarios: 0
-suite_complete: true
-chart_count: 18
-class_counts: TSEK-B=1, TSEK-C=7, TSEK-E=2
-```
-
-Every future benchmark version must add or update:
-
-```text
-benchmark summary
-finding summary
-chart registry
-version ledger row
-boundary statement
-```
-
-Boundary: benchmark charts are local runtime diagnostics only. They are not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.
-
 ## Benchmark Learning Layer
 
 v0.3.2+ adds collision-proof run identity and a local benchmark loop.
@@ -804,7 +755,6 @@ validation_remains_required
 | v0.4.0 | Synthetic gate suite with benchmark charts and finding charts. |
 | v0.4.0a | Synthetic gate report link repair and complete report regeneration. |
 | v0.4.0b | Synthetic gate expectation calibration and hard-fail incomplete suite semantics. |
-| v0.4.0c | Benchmark atlas and per-version chart/finding registry. |
 
 ## Next Recommended Version
 
@@ -815,5 +765,4 @@ Recommended goals:
 - Sweep gate parameters around pass/fail thresholds.
 - Emit threshold curves for LogicFolding margin and gamma_tau_ETP.
 - Add stability bands for A_TSEK and diagnostic average.
-- Add benchmark atlas row and charts for v0.4.1.
 - Preserve non-claim locks: synthetic sweeps are local runtime sensitivity diagnostics only.

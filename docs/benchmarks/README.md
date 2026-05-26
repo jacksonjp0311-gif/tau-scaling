@@ -1,19 +1,25 @@
-# docs\benchmarks\README.md
+# Benchmark Documentation
 
-Local orientation surface for this Tau Scaling repository folder.
+Current layer: **TAU-SCALING-SA v0.4.0c - Benchmark Atlas and Chart Index**
 
+## Purpose
 
-## AI Failure Learning Note
+This folder records benchmark interpretation, chart registries, and non-claim boundaries.
 
-If a patch touching this folder fails validation, record the reusable lesson in the root README `AI Failure Learning Ledger` and update this mini README when the local rule changes.
+## Primary Files
 
-Minimum repair discipline:
+| File | Role |
+|---|---|
+| `benchmark_atlas.md` | Versioned benchmark/finding/chart registry. |
 
-```powershell
-python -m py_compile src/tau_scaling/core/runtime.py
-python -c "from tau_scaling.core.runtime import TauScalingRuntime; print('TauScalingRuntime import OK')"
-python -m unittest discover -s tests
-python scripts/benchmarks/run_tau_scaling_benchmarks.py
-```
+## Current Findings
 
-Boundary: passing local runtime checks improves repository confidence but does not validate silicon, product performance, manufacturing capability, process-node equivalence, or a universal Tau Scaling law.
+- v0.3.2 established collision-proof benchmark identity.
+- v0.4.0 generated synthetic gate charts but exposed a Markdown path bug.
+- v0.4.0a repaired chart report links but exposed one expectation mismatch.
+- v0.4.0b calibrated expectations and achieved 10/10 synthetic scenarios.
+- v0.4.0c adds this atlas/index layer.
+
+## Boundary
+
+Benchmark documentation is local-runtime interpretation only. It is not silicon validation or product validation.

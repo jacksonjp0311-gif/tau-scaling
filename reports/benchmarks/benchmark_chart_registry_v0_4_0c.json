@@ -1,0 +1,51 @@
+{
+  "benchmark_chart_paths": [
+    "visuals/benchmarks/v0_4_0/a_tsek_by_scenario.png",
+    "visuals/benchmarks/v0_4_0/class_distribution.png",
+    "visuals/benchmarks/v0_4_0/diagnostic_average_by_scenario.png",
+    "visuals/benchmarks/v0_4_0/elapsed_ms_by_scenario.png",
+    "visuals/benchmarks/v0_4_0/finding_code_frequency.png",
+    "visuals/benchmarks/v0_4_0/finding_count_by_scenario.png",
+    "visuals/benchmarks/v0_4_0/gate_heatmap.png"
+  ],
+  "class_counts": {
+    "TSEK-B": 1,
+    "TSEK-C": 7,
+    "TSEK-E": 2
+  },
+  "finding_chart_paths": [
+    "visuals/findings/v0_4_0/finding_b-baseline-missing.png",
+    "visuals/findings/v0_4_0/finding_b-etp-missing.png",
+    "visuals/findings/v0_4_0/finding_b-evidence-missing.png",
+    "visuals/findings/v0_4_0/finding_b-lf-missing.png",
+    "visuals/findings/v0_4_0/finding_b-method-missing.png",
+    "visuals/findings/v0_4_0/finding_b-metric-missing.png",
+    "visuals/findings/v0_4_0/finding_b-pvt-missing.png",
+    "visuals/findings/v0_4_0/finding_b-tau-missing.png",
+    "visuals/findings/v0_4_0/finding_b-workload-missing.png",
+    "visuals/findings/v0_4_0/finding_b-yield-missing.png",
+    "visuals/findings/v0_4_0/finding_overclaim-independent-validation.png"
+  ],
+  "finding_counts": {
+    "TSEK_B_ETP_MISSING": 2,
+    "TSEK_B_LF_MISSING": 2,
+    "TSEK_B_PVT_MISSING": 2,
+    "TSEK_B_baseline_MISSING": 2,
+    "TSEK_B_evidence_MISSING": 2,
+    "TSEK_B_method_MISSING": 1,
+    "TSEK_B_metric_MISSING": 1,
+    "TSEK_B_tau_MISSING": 1,
+    "TSEK_B_workload_MISSING": 2,
+    "TSEK_B_yield_MISSING": 2,
+    "TSEK_OVERCLAIM_INDEPENDENT_VALIDATION": 1
+  },
+  "generated_at": "2026-05-26T13:30:21.550530+00:00",
+  "non_claim_lock": "Benchmark chart registry is local runtime observability only, not silicon/product validation.",
+  "schema": "tau-scaling-benchmark-chart-registry-v0.4.0c",
+  "suite_summary": {
+    "all_scenarios_passed": true,
+    "failed_scenarios": 0,
+    "passed_scenarios": 10,
+    "total_scenarios": 10
+  }
+}

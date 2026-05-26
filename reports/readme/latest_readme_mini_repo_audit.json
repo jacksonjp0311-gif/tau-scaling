@@ -1,8 +1,21 @@
 {
   "durable_dirs_checked": 38,
   "errors": 0,
-  "findings": [],
-  "generated_at": "2026-05-26T13:22:38.354359+00:00",
+  "findings": [
+    {
+      "code": "mini_readme_lacks_ai_update_rule",
+      "detail": "Mini README lacks explicit AI/RCC update guidance.",
+      "path": "docs\\benchmarks\\README.md",
+      "severity": "warning"
+    },
+    {
+      "code": "mini_readme_lacks_ai_update_rule",
+      "detail": "Mini README lacks explicit AI/RCC update guidance.",
+      "path": "reports\\benchmarks\\README.md",
+      "severity": "warning"
+    }
+  ],
+  "generated_at": "2026-05-26T13:30:29.476101+00:00",
   "non_claim_lock": "README/mini-repo audit is context alignment, not code correctness or silicon validation.",
   "passed": true,
   "repository": "tau-scaling",
@@ -20,5 +33,5 @@
     "Public Non-Claim Locks"
   ],
   "schema": "tau-scaling-readme-mini-repo-audit-v0.3.2d",
-  "warnings": 0
+  "warnings": 2
 }
