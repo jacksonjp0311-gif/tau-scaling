@@ -92,7 +92,8 @@ This repo combines three layers:
 
 ---
 
-# PART I - Human README
+# PART I — Human README
+
 ## What Tau Scaling Tests
 
 | Seed / surface | Purpose |
@@ -156,7 +157,8 @@ docs/benchmarks/
 
 ---
 
-# PART II - RCC Nexus README
+# PART II — RCC Nexus README
+
 ## RCC Nexus Identity
 
 RCC tells the agent what the repository means.  
@@ -229,7 +231,8 @@ RCC-N checks repository navigation and context integrity. It does not prove code
 
 ---
 
-# PART III - AI Agent README
+# PART III — AI Agent README
+
 ## AI Operating Contract
 
 Before editing, an AI agent must read:
@@ -317,26 +320,3 @@ Recommended goals:
 - Add a release/checkpoint validator.
 - Add a public metrics refresh command.
 - Preserve strict downgrade behavior: do not promote claims by weakening gates.
-## RCC-N Validator-Visible Lock IDs
-
-- roadmap_coherence_is_not_validation
-- simulation_is_not_silicon_validation
-- simulation_is_not_silicon_evidence
-- documentation_is_not_correctness
-- navigation_is_not_validation
-- context_reconstruction_is_not_correctness_proof
-- density_equivalence_is_not_node_equivalence
-- local_path_win_is_not_full_chip_win
-- validation_remains_required
-
-Human-readable equivalents:
-
-- Roadmap coherence is not validation.
-- Simulation is not silicon validation.
-- Simulation is not silicon evidence.
-- Documentation is not correctness.
-- RCC-N navigation is not code correctness.
-- Density equivalence is not node equivalence.
-- Local path win is not full-chip win.
-- Context reconstruction is not correctness proof.
-- Validation remains required.
