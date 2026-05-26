@@ -10,8 +10,8 @@
 
 Repository: `tau-scaling`  
 Package / CLI: `tau_scaling` / `tau-scaling`  
-Current checkpoint: **TAU-SCALING-SA v0.3.3 — Unified Release Validator**  
-Previous seal: **TAU-SCALING-SA v0.3.2h — README Mojibake Cleanup + Audit Surface Consolidation**
+Current checkpoint: **TAU-SCALING-SA v0.3.2h — README Mojibake Cleanup + Audit Surface Consolidation**  
+Previous seal: **TAU-SCALING-SA v0.3.2g — Exact Unicode README Anchor Repair**
 
 Tau Scaling is a local-first, evidence-gated Python runtime for evaluating tau-scaling claims through structured claim cards, workload declarations, tau vectors, LogicFolding survivability checks, edge-to-surface boundary algebra, energy / thermal / PDN / PVT gates, Monte Carlo checker stress, TSEK classification, evidence packages, and RCC-N / OMN-style repository navigation.
 
@@ -55,18 +55,16 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | TAU-SCALING-SA v0.3.3 |
-| Public README / release sync | v0.3.3a |
+| Current checkpoint | TAU-SCALING-SA v0.3.2h |
+| Public README / learning repair | v0.3.2h |
 | Package version | 0.2.0 |
 | Baseline seed | TSEK-C / A_TSEK 0.0000 |
 | Promotion-path seed | TSEK-B / A_TSEK 1.0000 |
 | RCC-N checker | passing / 0 warnings |
 | README mini repo audit | passing / 0 warnings |
-| Unified release validator | passing / step failures 0 |
 | Architecture validator | passing / 0 warnings |
 | Unit tests | 8 OK |
 | Benchmark harness | 12 runs / 12 unique IDs / 0 duplicates |
-| Release readiness report | `reports/release/latest_release_readiness.md` |
 | Collision-proof run identity | passed |
 | Mini README coverage | 1.0 |
 | Major dirs checked | 25 |
@@ -98,7 +96,6 @@ python scripts/benchmarks/run_tau_scaling_benchmarks.py
 | Tau Scaling runtime | Executes claim cards, gates, classifier, evidence emission | `src/tau_scaling/`, `configs/seeds/`, `tests/` |
 | RCC-N navigation | Makes the repo self-locating for humans and AI agents | `rcc/nexus/`, `docs/context/`, folder `README.md` files |
 | Benchmark and evidence observability | Runs local benchmark loops and evidence package checks | `scripts/benchmarks/`, `reports/benchmarks/`, `artifacts/runs/` |
-| Unified release readiness | Runs the full release gate before experiments | `scripts/release/`, `reports/release/` |
 | Codex documentation shell | Records source boundaries, releases, architecture, non-claim locks | `docs/`, `reports/`, `releases/`, `visuals/` |
 
 ## PART I - Human README
@@ -185,10 +182,8 @@ Validation tells the agent whether reality agreed.
 | `rcc/nexus/agent_handoff_contract.md` | Agent handoff rules. |
 | `scripts/rcc/check_rcc_nexus.py` | RCC-N checker. |
 | `scripts/rcc/audit_readme_surface.py` | README / mini repo audit scanner. |
-| `scripts/release/validate_release.py` | Unified release-readiness validator. |
 | `reports/rcc_nexus/latest_rcc_nexus_check.md` | Latest RCC-N report. |
 | `reports/readme/latest_readme_mini_repo_audit.md` | Latest README / mini repo audit report. |
-| `reports/release/latest_release_readiness.md` | Latest unified release-readiness report. |
 
 ### RCC Nexus Echo Location
 
@@ -358,7 +353,6 @@ This section is part of the repository's operating memory. When a patch fails, t
 | L-007 | Benchmark evidence could be confused with product evidence. | Local runtime benchmarks can look stronger than their claim boundary. | Benchmark reports must state: local-runtime evidence only, not silicon/product validation. |
 | L-008 | README audit failed on a visually correct AI Rule heading. | The heading used the wrong dash/encoding variant. | Audit-visible anchors must be written with exact expected Unicode or ASCII tokens. |
 | L-009 | README became mojibake-contaminated after repeated Unicode patching. | Mixed console encodings and repeated copy/paste repair passes corrupted Unicode arrows/dashes/code blocks. | Public README should prefer ASCII-safe syntax except for explicitly audited Unicode anchors. |
-| L-010 | v0.3.3 release validator passed with one non-blocking finding. | Release readiness can be true while warning-level readability/risk findings remain. | Passing release readiness must still be inspected before the next experimental layer. |
 
 ### Failure Response Protocol
 
@@ -463,7 +457,6 @@ tau-scaling/
       legacy_root_status/
   scripts/
     benchmarks/
-    release/
     maintenance/
     rcc/
     release/
@@ -483,40 +476,6 @@ tau-scaling/
     rcc_nexus/
     tau_scaling/
 ```
-
-## Unified Release Readiness Layer
-
-v0.3.3 adds one authoritative local release gate before deeper Tau Scaling experiments.
-
-Primary command:
-
-```powershell
-python scripts/release/validate_release.py
-```
-
-Primary outputs:
-
-```text
-reports/release/latest_release_readiness.json
-reports/release/latest_release_readiness.md
-```
-
-Current expected state:
-
-```text
-schema: tau-scaling-unified-release-readiness-v0.3.3
-passed: true
-step_failures: 0
-baseline_claim: TSEK-C / A_TSEK 0.0000
-promotion_path_claim: TSEK-B / A_TSEK 1.0000
-benchmark_runs: 12
-unique_run_ids: 12
-duplicate_run_ids: []
-```
-
-The release validator checks compile, import, RCC-N, README audit, architecture validation, unit tests, benchmark harness, baseline claim, promotion-path claim, expected artifact existence, and README encoding/path-break risk.
-
-Non-claim lock: release readiness validates repository/runtime hygiene only. It is not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.
 
 ## Benchmark Learning Layer
 
@@ -600,27 +559,15 @@ validation_remains_required
 | v0.3.2f | README / mini repo audit visibility repair. |
 | v0.3.2g | Exact Unicode README anchor repair. |
 | v0.3.2h | README mojibake cleanup and audit surface consolidation. |
-| v0.3.3 | Unified release validator and release-readiness reports. |
 
 ## Next Recommended Version
 
-**TAU-SCALING-SA v0.4.0 — Synthetic Gate Test Suite**
+**TAU-SCALING-SA v0.3.3 — Unified Release Validator**
 
 Recommended goals:
 
-- Add synthetic claim cards that isolate each gate.
-- Prove downgrade behavior for missing yield, missing workload, thermal/PDN/PVT failures, edge/surface starvation, and LogicFolding survivability failures.
-- Emit gate-test reports under `reports/gates/`.
-- Preserve non-claim locks: synthetic gate tests are runtime behavior tests, not silicon/product validation.
-
-Initial target seeds:
-
-```text
-configs/seeds/tests/tau_compute_only_pass.json
-configs/seeds/tests/tau_wire_dominant_pass.json
-configs/seeds/tests/tau_memory_dominant_fail.json
-configs/seeds/tests/logicfolding_high_vertical_penalty_fail.json
-configs/seeds/tests/edge_surface_starvation_fail.json
-configs/seeds/tests/gamma_tau_etp_thermal_fail.json
-configs/seeds/tests/yield_missing_disclosure_downgrade.json
-```
+- One command for compile, import, RCC-N, README audit, architecture validation, tests, benchmarks, baseline claim, and promotion-path claim.
+- One JSON + Markdown release-readiness report.
+- Hard failure if any required surface fails.
+- Explicit non-claim boundary in the release readiness report.
+- Optional GitHub Action after local validator stabilizes.
