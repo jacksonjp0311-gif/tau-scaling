@@ -1,0 +1,181 @@
+{
+  "generated_at": "2026-05-26T14:52:14.117663+00:00",
+  "non_claim_lock": "Sensitivity sweep seeds are synthetic local runtime diagnostics only.",
+  "scenarios": [
+    {
+      "path": "configs/seeds/sweeps/logicfolding_vertical_penalty__vertical_penalty_ps__0_0.json",
+      "sweep": "logicfolding_vertical_penalty",
+      "x_name": "vertical_penalty_ps",
+      "x_value": 0.0
+    },
+    {
+      "path": "configs/seeds/sweeps/logicfolding_vertical_penalty__vertical_penalty_ps__4_0.json",
+      "sweep": "logicfolding_vertical_penalty",
+      "x_name": "vertical_penalty_ps",
+      "x_value": 4.0
+    },
+    {
+      "path": "configs/seeds/sweeps/logicfolding_vertical_penalty__vertical_penalty_ps__8_0.json",
+      "sweep": "logicfolding_vertical_penalty",
+      "x_name": "vertical_penalty_ps",
+      "x_value": 8.0
+    },
+    {
+      "path": "configs/seeds/sweeps/logicfolding_vertical_penalty__vertical_penalty_ps__12_0.json",
+      "sweep": "logicfolding_vertical_penalty",
+      "x_name": "vertical_penalty_ps",
+      "x_value": 12.0
+    },
+    {
+      "path": "configs/seeds/sweeps/logicfolding_vertical_penalty__vertical_penalty_ps__16_0.json",
+      "sweep": "logicfolding_vertical_penalty",
+      "x_name": "vertical_penalty_ps",
+      "x_value": 16.0
+    },
+    {
+      "path": "configs/seeds/sweeps/logicfolding_vertical_penalty__vertical_penalty_ps__20_0.json",
+      "sweep": "logicfolding_vertical_penalty",
+      "x_name": "vertical_penalty_ps",
+      "x_value": 20.0
+    },
+    {
+      "path": "configs/seeds/sweeps/logicfolding_vertical_penalty__vertical_penalty_ps__24_0.json",
+      "sweep": "logicfolding_vertical_penalty",
+      "x_name": "vertical_penalty_ps",
+      "x_value": 24.0
+    },
+    {
+      "path": "configs/seeds/sweeps/logicfolding_vertical_penalty__vertical_penalty_ps__28_0.json",
+      "sweep": "logicfolding_vertical_penalty",
+      "x_name": "vertical_penalty_ps",
+      "x_value": 28.0
+    },
+    {
+      "path": "configs/seeds/sweeps/logicfolding_vertical_penalty__vertical_penalty_ps__32_0.json",
+      "sweep": "logicfolding_vertical_penalty",
+      "x_name": "vertical_penalty_ps",
+      "x_value": 32.0
+    },
+    {
+      "path": "configs/seeds/sweeps/logicfolding_vertical_penalty__vertical_penalty_ps__40_0.json",
+      "sweep": "logicfolding_vertical_penalty",
+      "x_name": "vertical_penalty_ps",
+      "x_value": 40.0
+    },
+    {
+      "path": "configs/seeds/sweeps/gamma_tau_etp_tau_gain__tau_gain__0_7.json",
+      "sweep": "gamma_tau_etp_tau_gain",
+      "x_name": "tau_gain",
+      "x_value": 0.7
+    },
+    {
+      "path": "configs/seeds/sweeps/gamma_tau_etp_tau_gain__tau_gain__0_85.json",
+      "sweep": "gamma_tau_etp_tau_gain",
+      "x_name": "tau_gain",
+      "x_value": 0.85
+    },
+    {
+      "path": "configs/seeds/sweeps/gamma_tau_etp_tau_gain__tau_gain__0_95.json",
+      "sweep": "gamma_tau_etp_tau_gain",
+      "x_name": "tau_gain",
+      "x_value": 0.95
+    },
+    {
+      "path": "configs/seeds/sweeps/gamma_tau_etp_tau_gain__tau_gain__1_0.json",
+      "sweep": "gamma_tau_etp_tau_gain",
+      "x_name": "tau_gain",
+      "x_value": 1.0
+    },
+    {
+      "path": "configs/seeds/sweeps/gamma_tau_etp_tau_gain__tau_gain__1_02.json",
+      "sweep": "gamma_tau_etp_tau_gain",
+      "x_name": "tau_gain",
+      "x_value": 1.02
+    },
+    {
+      "path": "configs/seeds/sweeps/gamma_tau_etp_tau_gain__tau_gain__1_05.json",
+      "sweep": "gamma_tau_etp_tau_gain",
+      "x_name": "tau_gain",
+      "x_value": 1.05
+    },
+    {
+      "path": "configs/seeds/sweeps/gamma_tau_etp_tau_gain__tau_gain__1_1.json",
+      "sweep": "gamma_tau_etp_tau_gain",
+      "x_name": "tau_gain",
+      "x_value": 1.1
+    },
+    {
+      "path": "configs/seeds/sweeps/gamma_tau_etp_tau_gain__tau_gain__1_22.json",
+      "sweep": "gamma_tau_etp_tau_gain",
+      "x_name": "tau_gain",
+      "x_value": 1.22
+    },
+    {
+      "path": "configs/seeds/sweeps/gamma_tau_etp_tau_gain__tau_gain__1_35.json",
+      "sweep": "gamma_tau_etp_tau_gain",
+      "x_name": "tau_gain",
+      "x_value": 1.35
+    },
+    {
+      "path": "configs/seeds/sweeps/gamma_tau_etp_tau_gain__tau_gain__1_5.json",
+      "sweep": "gamma_tau_etp_tau_gain",
+      "x_name": "tau_gain",
+      "x_value": 1.5
+    },
+    {
+      "path": "configs/seeds/sweeps/overclaim_pressure__overclaim__0_0.json",
+      "sweep": "overclaim_pressure",
+      "x_name": "overclaim",
+      "x_value": 0.0
+    },
+    {
+      "path": "configs/seeds/sweeps/overclaim_pressure__overclaim__0_05.json",
+      "sweep": "overclaim_pressure",
+      "x_name": "overclaim",
+      "x_value": 0.05
+    },
+    {
+      "path": "configs/seeds/sweeps/overclaim_pressure__overclaim__0_1.json",
+      "sweep": "overclaim_pressure",
+      "x_name": "overclaim",
+      "x_value": 0.1
+    },
+    {
+      "path": "configs/seeds/sweeps/overclaim_pressure__overclaim__0_25.json",
+      "sweep": "overclaim_pressure",
+      "x_name": "overclaim",
+      "x_value": 0.25
+    },
+    {
+      "path": "configs/seeds/sweeps/overclaim_pressure__overclaim__0_5.json",
+      "sweep": "overclaim_pressure",
+      "x_name": "overclaim",
+      "x_value": 0.5
+    },
+    {
+      "path": "configs/seeds/sweeps/overclaim_pressure__overclaim__0_7.json",
+      "sweep": "overclaim_pressure",
+      "x_name": "overclaim",
+      "x_value": 0.7
+    },
+    {
+      "path": "configs/seeds/sweeps/overclaim_pressure__overclaim__0_9.json",
+      "sweep": "overclaim_pressure",
+      "x_name": "overclaim",
+      "x_value": 0.9
+    },
+    {
+      "path": "configs/seeds/sweeps/overclaim_pressure__overclaim__0_99.json",
+      "sweep": "overclaim_pressure",
+      "x_name": "overclaim",
+      "x_value": 0.99
+    },
+    {
+      "path": "configs/seeds/sweeps/overclaim_pressure__overclaim__1_0.json",
+      "sweep": "overclaim_pressure",
+      "x_name": "overclaim",
+      "x_value": 1.0
+    }
+  ],
+  "schema": "tau-scaling-sensitivity-sweep-manifest-v0.4.1"
+}

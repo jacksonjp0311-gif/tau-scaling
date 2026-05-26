@@ -10,8 +10,8 @@
 
 Repository: `tau-scaling`  
 Package / CLI: `tau_scaling` / `tau-scaling`  
-Current checkpoint: **TAU-SCALING-SA v0.4.0f - Coherence Reflection and Agent Contract Re-Sync**  
-Previous seal: **TAU-SCALING-SA v0.4.0e - Exact Mini README Audit Anchor Repair**
+Current checkpoint: **TAU-SCALING-SA v0.4.1 - Synthetic Gate Sensitivity Sweep**  
+Previous seal: **TAU-SCALING-SA v0.4.0f - Coherence Reflection and Agent Contract Re-Sync**
 
 Tau Scaling is a local-first, evidence-gated Python runtime for evaluating tau-scaling claims through structured claim cards, workload declarations, tau vectors, LogicFolding survivability checks, edge-to-surface boundary algebra, energy / thermal / PDN / PVT gates, Monte Carlo checker stress, TSEK classification, evidence packages, and RCC-N / OMN-style repository navigation.
 
@@ -55,7 +55,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | TAU-SCALING-SA v0.4.0f |
+| Current checkpoint | TAU-SCALING-SA v0.4.1 |
 | Synthetic gate suite | v0.4.0 / benchmark + finding charts |
 | Package version | 0.2.0 |
 | Baseline seed | TSEK-C / A_TSEK 0.0000 |
@@ -78,6 +78,8 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 | Mini README audit warnings | exact anchor repair / expected 0 warnings |
 | Benchmark chart registry | `visuals/benchmarks/v0_4_0/` + `visuals/findings/v0_4_0/` |
 | Reflection layer | `docs/reflection/tau_scaling_reflection_v0_4_0f.md` |
+| Sensitivity sweep | `reports/sensitivity/latest_sensitivity_sweep.md` |
+| Sensitivity charts | `visuals/sensitivity/v0_4_1/` |
 | Agent contract version sync | v0.4.0f / updated from v0.3.3e |
 | Release readiness report | `reports/release/latest_release_readiness.md` |
 | Collision-proof run identity | passed |
@@ -103,6 +105,7 @@ python scripts/validation/validate_architecture_contracts.py
 python -m unittest discover -s tests
 python scripts/benchmarks/run_tau_scaling_benchmarks.py
 python scripts/benchmarks/run_synthetic_gate_suite.py
+python scripts/benchmarks/run_sensitivity_sweep.py
 python scripts/release/validate_release.py
 ```
 
@@ -706,6 +709,44 @@ per-finding scenario presence
 
 Synthetic gate charts show local runtime behavior only. They are not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.
 
+## Synthetic Gate Sensitivity Sweep v0.4.1
+
+v0.4.1 moves from discrete synthetic pass/fail scenarios to threshold curves.
+
+Primary command:
+
+```powershell
+python scripts/benchmarks/run_sensitivity_sweep.py
+```
+
+Primary outputs:
+
+```text
+configs/seeds/sweeps/sensitivity_sweep_manifest_v0_4_1.json
+reports/sensitivity/latest_sensitivity_sweep.json
+reports/sensitivity/latest_sensitivity_sweep.md
+visuals/sensitivity/v0_4_1/
+```
+
+Current sweep families:
+
+```text
+logicfolding_vertical_penalty
+gamma_tau_etp_tau_gain
+overclaim_pressure
+```
+
+The purpose is to answer:
+
+```text
+Where does the gate flip?
+Where does A_TSEK collapse?
+Where does diagnostic_average remain stable?
+Where does the class transition occur?
+```
+
+Boundary: sensitivity sweeps are synthetic local runtime diagnostics only. They are not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.
+
 ## Benchmark and Finding Atlas
 
 v0.4.0c adds a stable benchmark atlas so every benchmark layer has a public chart/finding registry.
@@ -846,16 +887,16 @@ validation_remains_required
 | v0.4.0d | Benchmark mini README AI/RCC warning repair. |
 | v0.4.0e | Exact mini README audit-anchor repair for benchmark docs. |
 | v0.4.0f | Coherence reflection and agent contract re-sync after benchmark atlas sequence. |
+| v0.4.1 | Synthetic gate sensitivity sweep and threshold curves. |
 
 ## Next Recommended Version
 
-**TAU-SCALING-SA v0.4.1 - Synthetic Gate Sensitivity Sweep**
+**TAU-SCALING-SA v0.4.2 - Gate Interaction Matrix**
 
 Recommended goals:
 
-- Sweep gate parameters around pass/fail thresholds.
-- Emit threshold curves for LogicFolding margin and gamma_tau_ETP.
-- Add stability bands for A_TSEK and diagnostic average.
-- Add benchmark atlas row and charts for v0.4.1.
-- Add sensitivity-specific mini READMEs and route-map entries.
-- Preserve non-claim locks: synthetic sweeps are local runtime sensitivity diagnostics only.
+- Test paired gate failures.
+- Emit gate-pair heatmaps.
+- Identify compounding failures.
+- Add benchmark atlas row and charts for v0.4.2.
+- Preserve non-claim locks: interaction sweeps are local runtime diagnostics only.

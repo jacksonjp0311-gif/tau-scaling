@@ -1,6 +1,6 @@
 # AGENTS.md — Tau Scaling Agent Operating Contract
 
-Current contract: **TAU-SCALING-SA v0.4.0f - Coherence Reflection and Agent Contract Re-Sync**
+Current contract: **TAU-SCALING-SA v0.4.1 - Synthetic Gate Sensitivity Sweep**
 
 ## Mission
 
@@ -47,6 +47,7 @@ For every non-trivial patch, run:
 python scripts/release/validate_release.py
 python scripts/rcc/audit_readme_surface.py
 python scripts/benchmarks/run_synthetic_gate_suite.py
+python scripts/benchmarks/run_sensitivity_sweep.py
 python -m unittest discover -s tests
 ```
 

@@ -1,6 +1,6 @@
 # Task Routing Matrix
 
-Current contract: **TAU-SCALING-SA v0.4.0f - Coherence Reflection and Agent Contract Re-Sync**
+Current contract: **TAU-SCALING-SA v0.4.1 - Synthetic Gate Sensitivity Sweep**
 
 ## Geometry Route
 

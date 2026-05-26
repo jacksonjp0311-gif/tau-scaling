@@ -1,0 +1,540 @@
+{
+  "boundary": "Sensitivity sweeps are synthetic local runtime diagnostics only. They are not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.",
+  "chart_paths": [
+    "visuals/sensitivity/v0_4_1/gamma_tau_etp_tau_gain_a_tsek_curve.png",
+    "visuals/sensitivity/v0_4_1/gamma_tau_etp_tau_gain_diagnostic_average_curve.png",
+    "visuals/sensitivity/v0_4_1/gamma_tau_etp_tau_gain_class_transition_curve.png",
+    "visuals/sensitivity/v0_4_1/logicfolding_vertical_penalty_a_tsek_curve.png",
+    "visuals/sensitivity/v0_4_1/logicfolding_vertical_penalty_diagnostic_average_curve.png",
+    "visuals/sensitivity/v0_4_1/logicfolding_vertical_penalty_class_transition_curve.png",
+    "visuals/sensitivity/v0_4_1/overclaim_pressure_a_tsek_curve.png",
+    "visuals/sensitivity/v0_4_1/overclaim_pressure_diagnostic_average_curve.png",
+    "visuals/sensitivity/v0_4_1/overclaim_pressure_class_transition_curve.png",
+    "visuals/sensitivity/v0_4_1/sensitivity_class_transition_heatmap.png"
+  ],
+  "generated_at": "2026-05-26T14:52:17.969502+00:00",
+  "mean_elapsed_ms": 36.4222,
+  "results": [
+    {
+      "A_TSEK": 1.0,
+      "classification": "TSEK-B",
+      "diagnostic_average": 1.0,
+      "elapsed_ms": 44.0599,
+      "evidence_path": "artifacts/runs/claim-20260526T145214119003Z-78a806/evidence_package.json",
+      "finding_codes": [],
+      "findings_count": 0,
+      "gamma_tau_ETP": 1.199076,
+      "logicfolding_margin": 17.5,
+      "run_id": "claim-20260526T145214119003Z-78a806",
+      "sweep": "logicfolding_vertical_penalty",
+      "x_name": "vertical_penalty_ps",
+      "x_value": 0.0
+    },
+    {
+      "A_TSEK": 1.0,
+      "classification": "TSEK-B",
+      "diagnostic_average": 1.0,
+      "elapsed_ms": 41.1308,
+      "evidence_path": "artifacts/runs/claim-20260526T145214172222Z-d45709/evidence_package.json",
+      "finding_codes": [],
+      "findings_count": 0,
+      "gamma_tau_ETP": 1.199076,
+      "logicfolding_margin": 13.5,
+      "run_id": "claim-20260526T145214172222Z-d45709",
+      "sweep": "logicfolding_vertical_penalty",
+      "x_name": "vertical_penalty_ps",
+      "x_value": 4.0
+    },
+    {
+      "A_TSEK": 1.0,
+      "classification": "TSEK-B",
+      "diagnostic_average": 1.0,
+      "elapsed_ms": 34.0741,
+      "evidence_path": "artifacts/runs/claim-20260526T145214221173Z-37d5ac/evidence_package.json",
+      "finding_codes": [],
+      "findings_count": 0,
+      "gamma_tau_ETP": 1.199076,
+      "logicfolding_margin": 9.5,
+      "run_id": "claim-20260526T145214221173Z-37d5ac",
+      "sweep": "logicfolding_vertical_penalty",
+      "x_name": "vertical_penalty_ps",
+      "x_value": 8.0
+    },
+    {
+      "A_TSEK": 1.0,
+      "classification": "TSEK-B",
+      "diagnostic_average": 1.0,
+      "elapsed_ms": 34.6732,
+      "evidence_path": "artifacts/runs/claim-20260526T145214263549Z-3c56b8/evidence_package.json",
+      "finding_codes": [],
+      "findings_count": 0,
+      "gamma_tau_ETP": 1.199076,
+      "logicfolding_margin": 5.5,
+      "run_id": "claim-20260526T145214263549Z-3c56b8",
+      "sweep": "logicfolding_vertical_penalty",
+      "x_name": "vertical_penalty_ps",
+      "x_value": 12.0
+    },
+    {
+      "A_TSEK": 1.0,
+      "classification": "TSEK-B",
+      "diagnostic_average": 1.0,
+      "elapsed_ms": 34.2207,
+      "evidence_path": "artifacts/runs/claim-20260526T145214304965Z-e1b3ed/evidence_package.json",
+      "finding_codes": [],
+      "findings_count": 0,
+      "gamma_tau_ETP": 1.199076,
+      "logicfolding_margin": 1.5,
+      "run_id": "claim-20260526T145214304965Z-e1b3ed",
+      "sweep": "logicfolding_vertical_penalty",
+      "x_name": "vertical_penalty_ps",
+      "x_value": 16.0
+    },
+    {
+      "A_TSEK": 0.0,
+      "classification": "TSEK-C",
+      "diagnostic_average": 0.9091,
+      "elapsed_ms": 36.4816,
+      "evidence_path": "artifacts/runs/claim-20260526T145214346919Z-7a7218/evidence_package.json",
+      "finding_codes": [
+        "TSEK_B_LF_MISSING"
+      ],
+      "findings_count": 1,
+      "gamma_tau_ETP": 1.199076,
+      "logicfolding_margin": -2.5,
+      "run_id": "claim-20260526T145214346919Z-7a7218",
+      "sweep": "logicfolding_vertical_penalty",
+      "x_name": "vertical_penalty_ps",
+      "x_value": 20.0
+    },
+    {
+      "A_TSEK": 0.0,
+      "classification": "TSEK-C",
+      "diagnostic_average": 0.9091,
+      "elapsed_ms": 37.0871,
+      "evidence_path": "artifacts/runs/claim-20260526T145214391889Z-ac0eaa/evidence_package.json",
+      "finding_codes": [
+        "TSEK_B_LF_MISSING"
+      ],
+      "findings_count": 1,
+      "gamma_tau_ETP": 1.199076,
+      "logicfolding_margin": -6.5,
+      "run_id": "claim-20260526T145214391889Z-ac0eaa",
+      "sweep": "logicfolding_vertical_penalty",
+      "x_name": "vertical_penalty_ps",
+      "x_value": 24.0
+    },
+    {
+      "A_TSEK": 0.0,
+      "classification": "TSEK-C",
+      "diagnostic_average": 0.9091,
+      "elapsed_ms": 42.7945,
+      "evidence_path": "artifacts/runs/claim-20260526T145214438742Z-ee0086/evidence_package.json",
+      "finding_codes": [
+        "TSEK_B_LF_MISSING"
+      ],
+      "findings_count": 1,
+      "gamma_tau_ETP": 1.199076,
+      "logicfolding_margin": -10.5,
+      "run_id": "claim-20260526T145214438742Z-ee0086",
+      "sweep": "logicfolding_vertical_penalty",
+      "x_name": "vertical_penalty_ps",
+      "x_value": 28.0
+    },
+    {
+      "A_TSEK": 0.0,
+      "classification": "TSEK-C",
+      "diagnostic_average": 0.9091,
+      "elapsed_ms": 42.0614,
+      "evidence_path": "artifacts/runs/claim-20260526T145214490724Z-b2dbcc/evidence_package.json",
+      "finding_codes": [
+        "TSEK_B_LF_MISSING"
+      ],
+      "findings_count": 1,
+      "gamma_tau_ETP": 1.199076,
+      "logicfolding_margin": -14.5,
+      "run_id": "claim-20260526T145214490724Z-b2dbcc",
+      "sweep": "logicfolding_vertical_penalty",
+      "x_name": "vertical_penalty_ps",
+      "x_value": 32.0
+    },
+    {
+      "A_TSEK": 0.0,
+      "classification": "TSEK-C",
+      "diagnostic_average": 0.9091,
+      "elapsed_ms": 37.6588,
+      "evidence_path": "artifacts/runs/claim-20260526T145214541293Z-8bfb69/evidence_package.json",
+      "finding_codes": [
+        "TSEK_B_LF_MISSING"
+      ],
+      "findings_count": 1,
+      "gamma_tau_ETP": 1.199076,
+      "logicfolding_margin": -22.5,
+      "run_id": "claim-20260526T145214541293Z-8bfb69",
+      "sweep": "logicfolding_vertical_penalty",
+      "x_name": "vertical_penalty_ps",
+      "x_value": 40.0
+    },
+    {
+      "A_TSEK": 0.0,
+      "classification": "TSEK-C",
+      "diagnostic_average": 0.9091,
+      "elapsed_ms": 35.9404,
+      "evidence_path": "artifacts/runs/claim-20260526T145214586548Z-283537/evidence_package.json",
+      "finding_codes": [
+        "TSEK_B_ETP_MISSING"
+      ],
+      "findings_count": 1,
+      "gamma_tau_ETP": 0.687994,
+      "logicfolding_margin": 9.5,
+      "run_id": "claim-20260526T145214586548Z-283537",
+      "sweep": "gamma_tau_etp_tau_gain",
+      "x_name": "tau_gain",
+      "x_value": 0.7
+    },
+    {
+      "A_TSEK": 0.0,
+      "classification": "TSEK-C",
+      "diagnostic_average": 0.9091,
+      "elapsed_ms": 39.9073,
+      "evidence_path": "artifacts/runs/claim-20260526T145214629428Z-843ce5/evidence_package.json",
+      "finding_codes": [
+        "TSEK_B_ETP_MISSING"
+      ],
+      "findings_count": 1,
+      "gamma_tau_ETP": 0.835422,
+      "logicfolding_margin": 9.5,
+      "run_id": "claim-20260526T145214629428Z-843ce5",
+      "sweep": "gamma_tau_etp_tau_gain",
+      "x_name": "tau_gain",
+      "x_value": 0.85
+    },
+    {
+      "A_TSEK": 0.0,
+      "classification": "TSEK-C",
+      "diagnostic_average": 0.9091,
+      "elapsed_ms": 35.1937,
+      "evidence_path": "artifacts/runs/claim-20260526T145214678468Z-76d7bd/evidence_package.json",
+      "finding_codes": [
+        "TSEK_B_ETP_MISSING"
+      ],
+      "findings_count": 1,
+      "gamma_tau_ETP": 0.933707,
+      "logicfolding_margin": 9.5,
+      "run_id": "claim-20260526T145214678468Z-76d7bd",
+      "sweep": "gamma_tau_etp_tau_gain",
+      "x_name": "tau_gain",
+      "x_value": 0.95
+    },
+    {
+      "A_TSEK": 0.0,
+      "classification": "TSEK-C",
+      "diagnostic_average": 0.9091,
+      "elapsed_ms": 36.0092,
+      "evidence_path": "artifacts/runs/claim-20260526T145214720077Z-31116f/evidence_package.json",
+      "finding_codes": [
+        "TSEK_B_ETP_MISSING"
+      ],
+      "findings_count": 1,
+      "gamma_tau_ETP": 0.982849,
+      "logicfolding_margin": 9.5,
+      "run_id": "claim-20260526T145214720077Z-31116f",
+      "sweep": "gamma_tau_etp_tau_gain",
+      "x_name": "tau_gain",
+      "x_value": 1.0
+    },
+    {
+      "A_TSEK": 1.0,
+      "classification": "TSEK-B",
+      "diagnostic_average": 1.0,
+      "elapsed_ms": 36.0151,
+      "evidence_path": "artifacts/runs/claim-20260526T145214765374Z-6a60c8/evidence_package.json",
+      "finding_codes": [],
+      "findings_count": 0,
+      "gamma_tau_ETP": 1.002506,
+      "logicfolding_margin": 9.5,
+      "run_id": "claim-20260526T145214765374Z-6a60c8",
+      "sweep": "gamma_tau_etp_tau_gain",
+      "x_name": "tau_gain",
+      "x_value": 1.02
+    },
+    {
+      "A_TSEK": 1.0,
+      "classification": "TSEK-B",
+      "diagnostic_average": 1.0,
+      "elapsed_ms": 35.1363,
+      "evidence_path": "artifacts/runs/claim-20260526T145214808336Z-15462d/evidence_package.json",
+      "finding_codes": [],
+      "findings_count": 0,
+      "gamma_tau_ETP": 1.031992,
+      "logicfolding_margin": 9.5,
+      "run_id": "claim-20260526T145214808336Z-15462d",
+      "sweep": "gamma_tau_etp_tau_gain",
+      "x_name": "tau_gain",
+      "x_value": 1.05
+    },
+    {
+      "A_TSEK": 1.0,
+      "classification": "TSEK-B",
+      "diagnostic_average": 1.0,
+      "elapsed_ms": 36.0664,
+      "evidence_path": "artifacts/runs/claim-20260526T145214850857Z-c8a32a/evidence_package.json",
+      "finding_codes": [],
+      "findings_count": 0,
+      "gamma_tau_ETP": 1.081134,
+      "logicfolding_margin": 9.5,
+      "run_id": "claim-20260526T145214850857Z-c8a32a",
+      "sweep": "gamma_tau_etp_tau_gain",
+      "x_name": "tau_gain",
+      "x_value": 1.1
+    },
+    {
+      "A_TSEK": 1.0,
+      "classification": "TSEK-B",
+      "diagnostic_average": 1.0,
+      "elapsed_ms": 35.0231,
+      "evidence_path": "artifacts/runs/claim-20260526T145214895295Z-83f1b0/evidence_package.json",
+      "finding_codes": [],
+      "findings_count": 0,
+      "gamma_tau_ETP": 1.199076,
+      "logicfolding_margin": 9.5,
+      "run_id": "claim-20260526T145214895295Z-83f1b0",
+      "sweep": "gamma_tau_etp_tau_gain",
+      "x_name": "tau_gain",
+      "x_value": 1.22
+    },
+    {
+      "A_TSEK": 1.0,
+      "classification": "TSEK-B",
+      "diagnostic_average": 1.0,
+      "elapsed_ms": 35.4545,
+      "evidence_path": "artifacts/runs/claim-20260526T145214938108Z-d2cc5c/evidence_package.json",
+      "finding_codes": [],
+      "findings_count": 0,
+      "gamma_tau_ETP": 1.326847,
+      "logicfolding_margin": 9.5,
+      "run_id": "claim-20260526T145214938108Z-d2cc5c",
+      "sweep": "gamma_tau_etp_tau_gain",
+      "x_name": "tau_gain",
+      "x_value": 1.35
+    },
+    {
+      "A_TSEK": 1.0,
+      "classification": "TSEK-B",
+      "diagnostic_average": 1.0,
+      "elapsed_ms": 34.9366,
+      "evidence_path": "artifacts/runs/claim-20260526T145214981977Z-b84c77/evidence_package.json",
+      "finding_codes": [],
+      "findings_count": 0,
+      "gamma_tau_ETP": 1.474274,
+      "logicfolding_margin": 9.5,
+      "run_id": "claim-20260526T145214981977Z-b84c77",
+      "sweep": "gamma_tau_etp_tau_gain",
+      "x_name": "tau_gain",
+      "x_value": 1.5
+    },
+    {
+      "A_TSEK": 1.0,
+      "classification": "TSEK-B",
+      "diagnostic_average": 1.0,
+      "elapsed_ms": 34.5769,
+      "evidence_path": "artifacts/runs/claim-20260526T145215025255Z-786b34/evidence_package.json",
+      "finding_codes": [],
+      "findings_count": 0,
+      "gamma_tau_ETP": 1.199076,
+      "logicfolding_margin": 9.5,
+      "run_id": "claim-20260526T145215025255Z-786b34",
+      "sweep": "overclaim_pressure",
+      "x_name": "overclaim",
+      "x_value": 0.0
+    },
+    {
+      "A_TSEK": 0.95,
+      "classification": "TSEK-B",
+      "diagnostic_average": 1.0,
+      "elapsed_ms": 34.4726,
+      "evidence_path": "artifacts/runs/claim-20260526T145215066867Z-987f96/evidence_package.json",
+      "finding_codes": [],
+      "findings_count": 0,
+      "gamma_tau_ETP": 1.199076,
+      "logicfolding_margin": 9.5,
+      "run_id": "claim-20260526T145215066867Z-987f96",
+      "sweep": "overclaim_pressure",
+      "x_name": "overclaim",
+      "x_value": 0.05
+    },
+    {
+      "A_TSEK": 0.9,
+      "classification": "TSEK-B",
+      "diagnostic_average": 1.0,
+      "elapsed_ms": 35.1117,
+      "evidence_path": "artifacts/runs/claim-20260526T145215109677Z-12575c/evidence_package.json",
+      "finding_codes": [],
+      "findings_count": 0,
+      "gamma_tau_ETP": 1.199076,
+      "logicfolding_margin": 9.5,
+      "run_id": "claim-20260526T145215109677Z-12575c",
+      "sweep": "overclaim_pressure",
+      "x_name": "overclaim",
+      "x_value": 0.1
+    },
+    {
+      "A_TSEK": 0.75,
+      "classification": "TSEK-B",
+      "diagnostic_average": 1.0,
+      "elapsed_ms": 34.6875,
+      "evidence_path": "artifacts/runs/claim-20260526T145215151919Z-fab255/evidence_package.json",
+      "finding_codes": [],
+      "findings_count": 0,
+      "gamma_tau_ETP": 1.199076,
+      "logicfolding_margin": 9.5,
+      "run_id": "claim-20260526T145215151919Z-fab255",
+      "sweep": "overclaim_pressure",
+      "x_name": "overclaim",
+      "x_value": 0.25
+    },
+    {
+      "A_TSEK": 0.5,
+      "classification": "TSEK-C",
+      "diagnostic_average": 1.0,
+      "elapsed_ms": 35.6064,
+      "evidence_path": "artifacts/runs/claim-20260526T145215194689Z-2f0694/evidence_package.json",
+      "finding_codes": [],
+      "findings_count": 0,
+      "gamma_tau_ETP": 1.199076,
+      "logicfolding_margin": 9.5,
+      "run_id": "claim-20260526T145215194689Z-2f0694",
+      "sweep": "overclaim_pressure",
+      "x_name": "overclaim",
+      "x_value": 0.5
+    },
+    {
+      "A_TSEK": 0.3,
+      "classification": "TSEK-C",
+      "diagnostic_average": 1.0,
+      "elapsed_ms": 34.668,
+      "evidence_path": "artifacts/runs/claim-20260526T145215237558Z-238567/evidence_package.json",
+      "finding_codes": [],
+      "findings_count": 0,
+      "gamma_tau_ETP": 1.199076,
+      "logicfolding_margin": 9.5,
+      "run_id": "claim-20260526T145215237558Z-238567",
+      "sweep": "overclaim_pressure",
+      "x_name": "overclaim",
+      "x_value": 0.7
+    },
+    {
+      "A_TSEK": 0.1,
+      "classification": "TSEK-C",
+      "diagnostic_average": 1.0,
+      "elapsed_ms": 34.3951,
+      "evidence_path": "artifacts/runs/claim-20260526T145215280787Z-f28d74/evidence_package.json",
+      "finding_codes": [],
+      "findings_count": 0,
+      "gamma_tau_ETP": 1.199076,
+      "logicfolding_margin": 9.5,
+      "run_id": "claim-20260526T145215280787Z-f28d74",
+      "sweep": "overclaim_pressure",
+      "x_name": "overclaim",
+      "x_value": 0.9
+    },
+    {
+      "A_TSEK": 0.01,
+      "classification": "TSEK-C",
+      "diagnostic_average": 1.0,
+      "elapsed_ms": 34.4589,
+      "evidence_path": "artifacts/runs/claim-20260526T145215322534Z-40bfdc/evidence_package.json",
+      "finding_codes": [],
+      "findings_count": 0,
+      "gamma_tau_ETP": 1.199076,
+      "logicfolding_margin": 9.5,
+      "run_id": "claim-20260526T145215322534Z-40bfdc",
+      "sweep": "overclaim_pressure",
+      "x_name": "overclaim",
+      "x_value": 0.99
+    },
+    {
+      "A_TSEK": 0.0,
+      "classification": "TSEK-E",
+      "diagnostic_average": 1.0,
+      "elapsed_ms": 34.3428,
+      "evidence_path": "artifacts/runs/claim-20260526T145215364343Z-7e1042/evidence_package.json",
+      "finding_codes": [],
+      "findings_count": 0,
+      "gamma_tau_ETP": 1.199076,
+      "logicfolding_margin": 9.5,
+      "run_id": "claim-20260526T145215364343Z-7e1042",
+      "sweep": "overclaim_pressure",
+      "x_name": "overclaim",
+      "x_value": 1.0
+    }
+  ],
+  "schema": "tau-scaling-sensitivity-sweep-v0.4.1",
+  "sweeps": {
+    "gamma_tau_etp_tau_gain": {
+      "classes": {
+        "TSEK-B": 6,
+        "TSEK-C": 4
+      },
+      "max_A_TSEK": 1.0,
+      "max_diagnostic_average": 1.0,
+      "min_A_TSEK": 0.0,
+      "min_diagnostic_average": 0.9091,
+      "points": 10,
+      "transitions": [
+        {
+          "from_class": "TSEK-C",
+          "from_x": 1.0,
+          "to_class": "TSEK-B",
+          "to_x": 1.02
+        }
+      ]
+    },
+    "logicfolding_vertical_penalty": {
+      "classes": {
+        "TSEK-B": 5,
+        "TSEK-C": 5
+      },
+      "max_A_TSEK": 1.0,
+      "max_diagnostic_average": 1.0,
+      "min_A_TSEK": 0.0,
+      "min_diagnostic_average": 0.9091,
+      "points": 10,
+      "transitions": [
+        {
+          "from_class": "TSEK-B",
+          "from_x": 16.0,
+          "to_class": "TSEK-C",
+          "to_x": 20.0
+        }
+      ]
+    },
+    "overclaim_pressure": {
+      "classes": {
+        "TSEK-B": 4,
+        "TSEK-C": 4,
+        "TSEK-E": 1
+      },
+      "max_A_TSEK": 1.0,
+      "max_diagnostic_average": 1.0,
+      "min_A_TSEK": 0.0,
+      "min_diagnostic_average": 1.0,
+      "points": 9,
+      "transitions": [
+        {
+          "from_class": "TSEK-B",
+          "from_x": 0.25,
+          "to_class": "TSEK-C",
+          "to_x": 0.5
+        },
+        {
+          "from_class": "TSEK-C",
+          "from_x": 0.99,
+          "to_class": "TSEK-E",
+          "to_x": 1.0
+        }
+      ]
+    }
+  },
+  "total_points": 29
+}

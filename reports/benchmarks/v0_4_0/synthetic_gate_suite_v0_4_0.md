@@ -1,6 +1,6 @@
 # Tau Scaling v0.4.0 Synthetic Gate Suite
 
-Generated: `2026-05-26T14:38:48.087417+00:00`
+Generated: `2026-05-26T14:52:18.695336+00:00`
 
 ## Result
 
@@ -8,7 +8,7 @@ Generated: `2026-05-26T14:38:48.087417+00:00`
 - Passed scenarios: `10`
 - Failed scenarios: `0`
 - All scenarios passed: `True`
-- Mean elapsed ms: `38.0503`
+- Mean elapsed ms: `37.2098`
 
 ## Benchmark Charts
 
