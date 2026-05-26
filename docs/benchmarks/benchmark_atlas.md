@@ -24,6 +24,7 @@ This atlas gives humans and AI agents one stable place to understand benchmark e
 | v0.4.5 | Nexus reflective feedback | `python scripts/feedback/run_nexus_feedback.py` | Synthesizes latest reports into ranked improvement signals | `reports/nexus_feedback/latest_nexus_feedback.md` | `visuals/nexus_feedback/v0_4_5/` |
 | v0.4.5a | Feedback health ordering repair | validators -> feedback -> validators | Ensures Nexus feedback reads fresh validation surfaces before health scoring | `reports/nexus_feedback/latest_nexus_feedback.md` | `reports/nexus_feedback/v0_4_5a/` |
 | v0.4.5b | Nexus feedback health schema alignment | `python scripts/feedback/run_nexus_feedback.py` | Normalizes list-valued findings/step_failures and derives sensitivity points from results | `reports/nexus_feedback/latest_nexus_feedback.md` | `reports/nexus_feedback/v0_4_5b/` |
+| v0.4.5c | Nexus feedback function-block repair | function-body assertion + feedback run | Ensures health scorer executable logic actually changed | `reports/nexus_feedback/latest_nexus_feedback.md` | `reports/nexus_feedback/v0_4_5c/` |
 
 ## Current Synthetic Suite Summary
 

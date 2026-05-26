@@ -1,6 +1,6 @@
 # Explanation Card — evidence_package_missing_downgrade
 
-Generated: `2026-05-26T15:26:55.358370+00:00`
+Generated: `2026-05-26T15:31:34.566767+00:00`
 
 | Field | Value |
 |---|---|
@@ -26,7 +26,7 @@ Downgraded to TSEK-C because one or more required evidence gates are missing whi
 ## Evidence Path
 
 ```text
-artifacts/runs/claim-20260526T152649805283Z-0b647d/evidence_package.json
+artifacts/runs/claim-20260526T153129120867Z-ceb99e/evidence_package.json
 ```
 
 ## Boundary

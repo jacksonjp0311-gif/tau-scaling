@@ -2,12 +2,12 @@
   "A_TSEK": 0.0,
   "classification": "TSEK-E",
   "diagnostic_average": 1.0,
-  "evidence_path": "artifacts/runs/claim-20260526T152649852308Z-ca7939/evidence_package.json",
+  "evidence_path": "artifacts/runs/claim-20260526T153129169957Z-5b0a94/evidence_package.json",
   "finding_codes": [
     "TSEK_OVERCLAIM_INDEPENDENT_VALIDATION"
   ],
   "findings_count": 1,
-  "generated_at": "2026-05-26T15:26:55.358370+00:00",
+  "generated_at": "2026-05-26T15:31:34.566767+00:00",
   "minimum_repair_for_promotion": [
     "Remove independent-validation claim or provide independent validation evidence."
   ],

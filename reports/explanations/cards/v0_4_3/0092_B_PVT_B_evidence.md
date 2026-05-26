@@ -1,6 +1,6 @@
 # Explanation Card — B_PVT+B_evidence
 
-Generated: `2026-05-26T15:26:55.378730+00:00`
+Generated: `2026-05-26T15:31:34.585843+00:00`
 
 | Field | Value |
 |---|---|
@@ -28,7 +28,7 @@ Downgraded to TSEK-C because one or more required evidence gates are missing whi
 ## Evidence Path
 
 ```text
-artifacts/runs/claim-20260526T152641757310Z-c1f5c0/evidence_package.json
+artifacts/runs/claim-20260526T153121146490Z-337d46/evidence_package.json
 ```
 
 ## Boundary

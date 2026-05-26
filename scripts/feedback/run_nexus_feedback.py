@@ -49,6 +49,7 @@ def count_items(value: Any) -> int:
         return int(value)
     return 1
 
+
 def bool_pass(payload: dict[str, Any]) -> bool:
     return bool(payload.get("passed") is True) and not payload.get("_missing_or_invalid")
 
@@ -62,19 +63,39 @@ def health_score(inputs: dict[str, dict[str, Any]]) -> dict[str, Any]:
     explanations = inputs["threshold_explanations"]
     policy = inputs["pair_policy_review"]
 
+    sensitivity_points = int(sensitivity.get("total_points", 0) or len(sensitivity.get("results", [])))
+    release_findings_count = count_items(release.get("findings", 0))
+    release_step_failures_count = count_items(release.get("step_failures", 0))
+    readme_warnings_count = count_items(readme.get("warnings", 0))
+    readme_errors_count = count_items(readme.get("errors", 0))
+    rcc_warnings_count = count_items(rcc.get("warnings", 0))
+    rcc_errors_count = count_items(rcc.get("errors", 0))
+
     validations = {
-        "release_readiness": bool_pass(release) and release.get("step_failures", 0) == 0 and release.get("findings", 0) == 0,
-        "readme_audit": bool_pass(readme) and readme.get("warnings", 0) == 0 and readme.get("errors", 0) == 0,
-        "rcc_nexus": bool_pass(rcc) and rcc.get("warnings", 0) == 0 and rcc.get("errors", 0) == 0,
-        "synthetic_suite": synthetic.get("all_scenarios_passed") is True and synthetic.get("failed_scenarios", 1) == 0,
-        "sensitivity_sweep": sensitivity.get("total_points", 0) >= 29 and sensitivity.get("chart_count", 0) >= 10,
-        "gate_interactions": interactions.get("all_pairs_executed") is True and interactions.get("pair_count", 0) == 55,
-        "explanation_cards": explanations.get("card_count", 0) >= 94,
-        "policy_review": policy.get("pair_count", 0) == 55 and policy.get("policy_enforced") is False,
+        "release_readiness": bool_pass(release) and release_step_failures_count == 0 and release_findings_count == 0,
+        "readme_audit": bool_pass(readme) and readme_warnings_count == 0 and readme_errors_count == 0,
+        "rcc_nexus": bool_pass(rcc) and rcc_warnings_count == 0 and rcc_errors_count == 0,
+        "synthetic_suite": synthetic.get("all_scenarios_passed") is True and int(synthetic.get("failed_scenarios", 1)) == 0,
+        "sensitivity_sweep": sensitivity_points >= 29 and int(sensitivity.get("chart_count", 0)) >= 10,
+        "gate_interactions": interactions.get("all_pairs_executed") is True and int(interactions.get("pair_count", 0)) == 55,
+        "explanation_cards": int(explanations.get("card_count", 0)) >= 94,
+        "policy_review": int(policy.get("pair_count", 0)) == 55 and policy.get("policy_enforced") is False,
+    }
+
+    details = {
+        "release_findings_count": release_findings_count,
+        "release_step_failures_count": release_step_failures_count,
+        "readme_warnings_count": readme_warnings_count,
+        "readme_errors_count": readme_errors_count,
+        "rcc_warnings_count": rcc_warnings_count,
+        "rcc_errors_count": rcc_errors_count,
+        "sensitivity_points": sensitivity_points,
+        "sensitivity_chart_count": int(sensitivity.get("chart_count", 0)),
+        "schema_alignment": "v0.4.5c function-block replacement active",
     }
 
     score = sum(1 for v in validations.values() if v) / len(validations)
-    return {"score": round(score, 4), "checks": validations, "passed": score == 1.0}
+    return {"score": round(score, 4), "checks": validations, "details": details, "passed": score == 1.0}
 
 def feedback_signals(inputs: dict[str, dict[str, Any]]) -> list[dict[str, Any]]:
     signals: list[dict[str, Any]] = []
@@ -214,7 +235,7 @@ def generate_charts(summary: dict[str, Any]) -> list[str]:
 
 def render_markdown(summary: dict[str, Any]) -> str:
     lines = [
-        "# Tau Scaling v0.4.5b Nexus Feedback Health Schema Alignment",
+        "# Tau Scaling v0.4.5c Nexus Feedback Function-Block Repair",
         "",
         f"Generated: `{summary['generated_at']}`",
         "",
@@ -272,7 +293,7 @@ def main() -> None:
     health = health_score(inputs)
     signals = feedback_signals(inputs)
     summary = {
-        "schema": "tau-scaling-nexus-reflective-feedback-v0.4.5b",
+        "schema": "tau-scaling-nexus-reflective-feedback-v0.4.5c",
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "inputs": {k: str(v.relative_to(REPO_ROOT)).replace("\\", "/") for k, v in INPUTS.items()},
         "health": health,

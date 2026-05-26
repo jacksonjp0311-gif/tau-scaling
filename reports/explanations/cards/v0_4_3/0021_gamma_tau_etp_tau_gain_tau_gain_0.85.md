@@ -1,6 +1,6 @@
 # Explanation Card — gamma_tau_etp_tau_gain:tau_gain=0.85
 
-Generated: `2026-05-26T15:26:55.368385+00:00`
+Generated: `2026-05-26T15:31:34.577260+00:00`
 
 | Field | Value |
 |---|---|
@@ -26,7 +26,7 @@ Downgraded to TSEK-C because one or more required evidence gates are missing whi
 ## Evidence Path
 
 ```text
-artifacts/runs/claim-20260526T152645642880Z-2bb9e0/evidence_package.json
+artifacts/runs/claim-20260526T153124980815Z-bc274a/evidence_package.json
 ```
 
 ## Boundary

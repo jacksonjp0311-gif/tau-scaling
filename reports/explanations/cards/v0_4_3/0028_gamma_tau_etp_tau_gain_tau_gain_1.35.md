@@ -1,6 +1,6 @@
 # Explanation Card — gamma_tau_etp_tau_gain:tau_gain=1.35
 
-Generated: `2026-05-26T15:26:55.368385+00:00`
+Generated: `2026-05-26T15:31:34.577260+00:00`
 
 | Field | Value |
 |---|---|
@@ -26,7 +26,7 @@ None
 ## Evidence Path
 
 ```text
-artifacts/runs/claim-20260526T152645980225Z-4a4f90/evidence_package.json
+artifacts/runs/claim-20260526T153125303727Z-738839/evidence_package.json
 ```
 
 ## Boundary

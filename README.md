@@ -10,8 +10,8 @@
 
 Repository: `tau-scaling`  
 Package / CLI: `tau_scaling` / `tau-scaling`  
-Current checkpoint: **TAU-SCALING-SA v0.4.5b - Nexus Feedback Health Schema Alignment**  
-Previous seal: **TAU-SCALING-SA v0.4.5a - Feedback Health Ordering Repair**
+Current checkpoint: **TAU-SCALING-SA v0.4.5c - Nexus Feedback Function-Block Repair**  
+Previous seal: **TAU-SCALING-SA v0.4.5b - Nexus Feedback Health Schema Alignment**
 
 Tau Scaling is a local-first, evidence-gated Python runtime for evaluating tau-scaling claims through structured claim cards, workload declarations, tau vectors, LogicFolding survivability checks, edge-to-surface boundary algebra, energy / thermal / PDN / PVT gates, Monte Carlo checker stress, TSEK classification, evidence packages, and RCC-N / OMN-style repository navigation.
 
@@ -55,7 +55,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | TAU-SCALING-SA v0.4.5b |
+| Current checkpoint | TAU-SCALING-SA v0.4.5c |
 | Synthetic gate suite | v0.4.0 / benchmark + finding charts |
 | Package version | 0.2.0 |
 | Baseline seed | TSEK-C / A_TSEK 0.0000 |
@@ -408,6 +408,7 @@ This section is part of the repository's operating memory. When a patch fails, t
 | L-023 | v0.4.4 created policy candidates but the repo still needed a way to turn outputs into improvement priorities. | Validation, benchmark, explanation, and policy reports were readable, but not yet synthesized into a feedback surface for the next agent. | Every mature runtime should emit a Nexus feedback report that ranks improvement targets without mutating classifier behavior. |
 | L-024 | v0.4.5 feedback emitted correct priorities but `health_passed` was false because it read validation surfaces before the final validators refreshed. | Reflective feedback can be logically correct while its health score is stale relative to the final seal. | Run prerequisite validators before Nexus feedback, then run Nexus feedback, then run final validators again before commit/push. |
 | L-025 | v0.4.5a proved ordering was correct but `health_passed` stayed false. | The feedback scorer expected numeric `findings`, numeric `step_failures`, and top-level `total_points`, while actual reports used lists and `results`. | Feedback health checks must normalize report schemas before scoring; schema mismatch is not validation failure. |
+| L-026 | v0.4.5b changed the feedback schema label but `health_score` still used the old comparisons. | Regex patching did not replace the intended function body, so labels advanced faster than executable logic. | Function repairs must verify the target function body changed, not just schema strings or docs. |
 
 ### Failure Response Protocol
 
@@ -735,6 +736,36 @@ per-finding scenario presence
 ### Boundary
 
 Synthetic gate charts show local runtime behavior only. They are not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.
+
+## Nexus Feedback Function-Block Repair v0.4.5c
+
+v0.4.5c repairs the actual `health_score` function body.
+
+Cause found:
+
+```text
+v0.4.5b updated schema labels and docs,
+but the old health_score logic remained active.
+```
+
+Repair:
+
+```text
+replace health_score by explicit function block
+normalize list-valued findings and step_failures
+derive sensitivity_points from total_points or len(results)
+emit health.details for auditability
+```
+
+Expected result:
+
+```text
+health_score: 1.0
+health_passed: true
+schema: tau-scaling-nexus-reflective-feedback-v0.4.5c
+```
+
+Boundary: feedback function repair is repository self-observation only. It does not mutate classifier behavior and does not validate silicon, product performance, manufacturing capability, process-node equivalence, benchmark superiority, AI understanding, or universal Tau Scaling law.
 
 ## Nexus Feedback Health Schema Alignment v0.4.5b
 
@@ -1118,6 +1149,7 @@ validation_remains_required
 | v0.4.5 | Nexus reflective feedback loop for ranked improvement signals. |
 | v0.4.5a | Feedback health ordering repair so Nexus feedback reads fresh validation surfaces. |
 | v0.4.5b | Nexus feedback health schema alignment for list-valued findings and derived sensitivity points. |
+| v0.4.5c | Nexus feedback function-block repair to ensure health scorer logic actually updates. |
 
 ## Next Recommended Version
 

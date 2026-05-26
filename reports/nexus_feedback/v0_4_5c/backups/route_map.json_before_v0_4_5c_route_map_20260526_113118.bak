@@ -1,0 +1,254 @@
+{
+  "default_read_order": [
+    "README.md",
+    "README_90_SECONDS.md",
+    "AGENTS.md",
+    "docs/context/repository_context_index.json",
+    "docs/context/rcc_nexus_index.json",
+    "rcc/nexus/route_map.json",
+    "target folder README.md"
+  ],
+  "generated_at": "2026-05-26T04:58:39-04:00",
+  "geometry": {
+    "center": [
+      "README.md",
+      "AGENTS.md",
+      "docs/context",
+      "rcc/nexus"
+    ],
+    "inner": [
+      "configs/seeds",
+      "src/tau_scaling/gates",
+      "src/tau_scaling/claims",
+      "src/tau_scaling/schemas"
+    ],
+    "middle": [
+      "src/tau_scaling",
+      "tests",
+      "scripts",
+      "scripts/release"
+    ],
+    "outer": [
+      "artifacts",
+      "outputs",
+      "reports",
+      "visuals",
+      "releases"
+    ]
+  },
+  "non_claim_lock": "Geometric routing is not code correctness, silicon validation, product validation, AI understanding, or universal Tau Scaling proof.",
+  "repository": "tau-scaling",
+  "routes": {
+    "documentation_change": [
+      "README.md",
+      "docs/context",
+      "rcc/nexus",
+      "target folder README.md"
+    ],
+    "evidence_change": [
+      "artifacts/runs/latest",
+      "outputs/evidence",
+      "outputs/reports",
+      "reports/rcc_nexus"
+    ],
+    "rcc_change": [
+      "docs/context",
+      "rcc/nexus",
+      "scripts/rcc",
+      "reports/rcc_nexus"
+    ],
+    "release_change": [
+      "docs/release_notes",
+      "reports/readiness",
+      "scripts/release"
+    ],
+    "runtime_change": [
+      "src/tau_scaling",
+      "tests",
+      "configs/seeds",
+      "artifacts/runs/latest"
+    ]
+  },
+  "schema": "rcc-nexus-route-map-v1.7",
+  "updated_at": "2026-05-26T15:26:39.153752+00:00",
+  "v0_4_routes": {
+    "feedback_health_ordering_repair": {
+      "evidence": [
+        "reports/nexus_feedback/latest_nexus_feedback.md",
+        "reports/nexus_feedback/v0_4_5a/latest_v0_4_5a_status.md"
+      ],
+      "mutation_lock": "Does not change classifier behavior; repairs feedback ordering only.",
+      "read_first": [
+        "reports/nexus_feedback/latest_nexus_feedback.json",
+        "reports/release/latest_release_readiness.json",
+        "reports/readme/latest_readme_mini_repo_audit.json",
+        "reports/rcc_nexus/latest_rcc_nexus_check.json"
+      ],
+      "validate": [
+        "python scripts/release/validate_release.py",
+        "python scripts/rcc/audit_readme_surface.py",
+        "python scripts/rcc/check_rcc_nexus.py",
+        "python scripts/feedback/run_nexus_feedback.py",
+        "python scripts/release/validate_release.py"
+      ]
+    },
+    "feedback_health_schema_alignment": {
+      "evidence": [
+        "reports/nexus_feedback/latest_nexus_feedback.md",
+        "reports/nexus_feedback/v0_4_5b/latest_v0_4_5b_status.md"
+      ],
+      "mutation_lock": "Does not change classifier behavior; repairs feedback health scoring only.",
+      "read_first": [
+        "scripts/feedback/run_nexus_feedback.py",
+        "reports/release/latest_release_readiness.json",
+        "reports/sensitivity/latest_sensitivity_sweep.json",
+        "reports/nexus_feedback/latest_nexus_feedback.json"
+      ],
+      "validate": [
+        "python scripts/release/validate_release.py",
+        "python scripts/rcc/audit_readme_surface.py",
+        "python scripts/rcc/check_rcc_nexus.py",
+        "python scripts/feedback/run_nexus_feedback.py",
+        "python scripts/release/validate_release.py"
+      ]
+    },
+    "gate_interaction_matrix": {
+      "evidence": [
+        "reports/interactions/latest_gate_interaction_matrix.md",
+        "visuals/interactions/v0_4_2/"
+      ],
+      "read_first": [
+        "configs/seeds/interactions",
+        "scripts/benchmarks/run_gate_interaction_matrix.py",
+        "reports/sensitivity/latest_sensitivity_sweep.json",
+        "docs/benchmarks/benchmark_atlas.md"
+      ],
+      "validate": [
+        "python scripts/benchmarks/run_gate_interaction_matrix.py",
+        "python scripts/release/validate_release.py"
+      ]
+    },
+    "nexus_feedback": {
+      "evidence": [
+        "reports/nexus_feedback/latest_nexus_feedback.md",
+        "visuals/nexus_feedback/v0_4_5/"
+      ],
+      "mutation_lock": "Does not change classifier behavior; emits improvement priorities only.",
+      "read_first": [
+        "reports/release/latest_release_readiness.json",
+        "reports/readme/latest_readme_mini_repo_audit.json",
+        "reports/rcc_nexus/latest_rcc_nexus_check.json",
+        "reports/benchmarks/latest_synthetic_gate_suite.json",
+        "reports/sensitivity/latest_sensitivity_sweep.json",
+        "reports/interactions/latest_gate_interaction_matrix.json",
+        "reports/explanations/latest_threshold_explanation_cards.json",
+        "reports/policy/latest_pair_policy_review.json"
+      ],
+      "validate": [
+        "python scripts/feedback/run_nexus_feedback.py",
+        "python scripts/release/validate_release.py"
+      ]
+    },
+    "pair_policy_review": {
+      "evidence": [
+        "reports/policy/latest_pair_policy_review.md",
+        "visuals/policy/v0_4_4/"
+      ],
+      "mutation_lock": "Does not change classifier behavior.",
+      "read_first": [
+        "reports/explanations/latest_threshold_explanation_cards.json",
+        "reports/interactions/latest_gate_interaction_matrix.json"
+      ],
+      "validate": [
+        "python scripts/benchmarks/run_pair_policy_review.py",
+        "python scripts/release/validate_release.py"
+      ]
+    },
+    "public_claim_replay": {
+      "evidence": [
+        "reports/public_claims/latest_claim_replay_report.md"
+      ],
+      "read_first": [
+        "docs/theory",
+        "configs/seeds/public_claims",
+        "reports/public_claims"
+      ],
+      "validate": [
+        "python scripts/release/validate_release.py"
+      ]
+    },
+    "reflection": {
+      "evidence": [
+        "docs/reflection/tau_scaling_reflection_v0_4_0f.md",
+        "reports/reflection/latest_system_reflection.md"
+      ],
+      "read_first": [
+        "README.md",
+        "AGENTS.md",
+        "rcc/nexus/task_routing_matrix.md",
+        "docs/benchmarks/benchmark_atlas.md"
+      ],
+      "validate": [
+        "python scripts/rcc/audit_readme_surface.py",
+        "python scripts/release/validate_release.py"
+      ]
+    },
+    "sensitivity_sweep": {
+      "evidence": [
+        "reports/sensitivity/latest_sensitivity_sweep.md",
+        "visuals/sensitivity/v0_4_1/"
+      ],
+      "read_first": [
+        "configs/seeds/sweeps",
+        "scripts/benchmarks/run_sensitivity_sweep.py",
+        "reports/benchmarks/latest_synthetic_gate_suite.json",
+        "docs/benchmarks/benchmark_atlas.md"
+      ],
+      "validate": [
+        "python scripts/benchmarks/run_sensitivity_sweep.py",
+        "python scripts/release/validate_release.py"
+      ]
+    },
+    "synthetic_gate_tests": {
+      "evidence": [
+        "reports/benchmarks/latest_synthetic_gate_suite.md",
+        "reports/findings/latest_finding_charts.md",
+        "visuals/benchmarks/v0_4_0",
+        "visuals/findings/v0_4_0"
+      ],
+      "read_first": [
+        "configs/seeds/tests",
+        "src/tau_scaling/gates",
+        "src/tau_scaling/claims",
+        "scripts/benchmarks/run_synthetic_gate_suite.py"
+      ],
+      "validate": [
+        "python scripts/benchmarks/run_synthetic_gate_suite.py",
+        "python scripts/release/validate_release.py"
+      ]
+    },
+    "threshold_explanation_cards": {
+      "evidence": [
+        "reports/explanations/latest_threshold_explanation_cards.md",
+        "reports/explanations/cards/v0_4_3/",
+        "visuals/explanations/v0_4_3/"
+      ],
+      "read_first": [
+        "reports/benchmarks/latest_synthetic_gate_suite.json",
+        "reports/sensitivity/latest_sensitivity_sweep.json",
+        "reports/interactions/latest_gate_interaction_matrix.json"
+      ],
+      "validate": [
+        "python scripts/benchmarks/generate_threshold_explanation_cards.py",
+        "python scripts/release/validate_release.py"
+      ]
+    }
+  },
+  "validation": {
+    "architecture": "python scripts/validation/validate_architecture_contracts.py",
+    "rcc": "python scripts/rcc/check_rcc_nexus.py",
+    "runtime": "python -m tau_scaling run-claim --seed configs/seeds/logicfolding_claim_card.json",
+    "tests": "python -m unittest discover -s tests"
+  },
+  "version": "v0.4.5b"
+}

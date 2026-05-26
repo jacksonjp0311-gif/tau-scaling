@@ -1,6 +1,6 @@
 # AGENTS.md — Tau Scaling Agent Operating Contract
 
-Current contract: **TAU-SCALING-SA v0.4.5b - Nexus Feedback Health Schema Alignment**
+Current contract: **TAU-SCALING-SA v0.4.5c - Nexus Feedback Function-Block Repair**
 
 ## Mission
 
@@ -162,3 +162,17 @@ sensitivity_points = total_points if present else len(results)
 ```
 
 Non-claim lock: schema-normalized health is repository self-observation, not external validation.
+
+
+## Function-Block Repair Verification Rule
+
+When a patch is intended to alter executable logic, verify the target function body changed.
+
+Required check examples:
+
+```powershell
+python -m py_compile scripts/feedback/run_nexus_feedback.py
+python -c "from pathlib import Path; s=Path('scripts/feedback/run_nexus_feedback.py').read_text(); assert 'schema_alignment' in s and 'release_findings_count' in s"
+```
+
+Non-claim lock: function-body verification is repository hygiene, not external validation.

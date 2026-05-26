@@ -2,10 +2,10 @@
   "A_TSEK": 1.0,
   "classification": "TSEK-B",
   "diagnostic_average": 1.0,
-  "evidence_path": "artifacts/runs/claim-20260526T152645219289Z-f858a8/evidence_package.json",
+  "evidence_path": "artifacts/runs/claim-20260526T153124548914Z-c3d8b5/evidence_package.json",
   "finding_codes": [],
   "findings_count": 0,
-  "generated_at": "2026-05-26T15:26:55.366928+00:00",
+  "generated_at": "2026-05-26T15:31:34.577260+00:00",
   "minimum_repair_for_promotion": [
     "Independent validation would be required for TSEK-A promotion."
   ],

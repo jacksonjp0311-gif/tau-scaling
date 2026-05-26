@@ -5,7 +5,7 @@
     "visuals/nexus_feedback/v0_4_5/nexus_feedback_severity_counts.png",
     "visuals/nexus_feedback/v0_4_5/nexus_priority_stack.png"
   ],
-  "generated_at": "2026-05-26T15:27:00.877371+00:00",
+  "generated_at": "2026-05-26T15:31:39.811409+00:00",
   "health": {
     "checks": {
       "explanation_cards": true,
@@ -13,12 +13,23 @@
       "policy_review": true,
       "rcc_nexus": true,
       "readme_audit": true,
-      "release_readiness": false,
+      "release_readiness": true,
       "sensitivity_sweep": false,
       "synthetic_suite": true
     },
+    "details": {
+      "rcc_errors_count": 0,
+      "rcc_warnings_count": 0,
+      "readme_errors_count": 0,
+      "readme_warnings_count": 0,
+      "release_findings_count": 0,
+      "release_step_failures_count": 0,
+      "schema_alignment": "v0.4.5c function-block replacement active",
+      "sensitivity_chart_count": 0,
+      "sensitivity_points": 29
+    },
     "passed": false,
-    "score": 0.75
+    "score": 0.875
   },
   "inputs": {
     "gate_interaction_matrix": "reports/interactions/latest_gate_interaction_matrix.json",
@@ -77,7 +88,7 @@
       "target_next": "README feedback command sync"
     }
   ],
-  "schema": "tau-scaling-nexus-reflective-feedback-v0.4.5b",
+  "schema": "tau-scaling-nexus-reflective-feedback-v0.4.5c",
   "signals": [
     {
       "evidence": {
