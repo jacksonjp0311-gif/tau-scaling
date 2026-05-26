@@ -168,8 +168,7 @@ def render_markdown(summary: dict[str, Any], charts: list[str]) -> str:
     lines = ["# Tau Scaling v0.4.0 Synthetic Gate Suite","",f"Generated: `{summary['generated_at']}`","", "## Result","", f"- Total scenarios: `{summary['total_scenarios']}`", f"- Passed scenarios: `{summary['passed_scenarios']}`", f"- Failed scenarios: `{summary['failed_scenarios']}`", f"- All scenarios passed: `{summary['all_scenarios_passed']}`", f"- Mean elapsed ms: `{summary['mean_elapsed_ms']}`", "", "## Benchmark Charts", ""]
     for chart in charts:
         if chart.startswith("visuals/benchmarks/"):
-            rel = Path("../../../") / chart
-            rel = rel.as_posix(); lines.extend([f"![{Path(chart).stem}]({rel})", ""])
+            rel = Path(REPO_ROOT / chart).relative_to(REPORT_DIR).as_posix(); lines.extend([f"![{Path(chart).stem}]({rel})", ""])
     lines.extend(["## Scenario Findings", "", "| Scenario | Expected | Actual | A_TSEK | Diagnostic avg | Findings | Passed |", "|---|---|---|---:|---:|---:|---|"])
     for r in summary["results"]:
         lines.append(f"| `{r['id']}` | {r['expected_class']} | {r['classification']} | {r['A_TSEK']} | {r['diagnostic_average']} | {r['findings_count']} | {r['scenario_passed']} |")
@@ -179,8 +178,7 @@ def render_markdown(summary: dict[str, Any], charts: list[str]) -> str:
     lines.extend(["", "## Finding Charts", ""])
     for chart in charts:
         if chart.startswith("visuals/findings/"):
-            rel = Path("../../../") / chart
-            rel = rel.as_posix(); lines.extend([f"![{Path(chart).stem}]({rel})", ""])
+            rel = Path(REPO_ROOT / chart).relative_to(REPORT_DIR).as_posix(); lines.extend([f"![{Path(chart).stem}]({rel})", ""])
     lines.extend(["## Gate Failure Counts", "", "| Gate | Failures |", "|---|---:|"])
     for gate, count in sorted(summary["gate_failure_counts"].items()):
         lines.append(f"| `{gate}` | {count} |")
@@ -203,6 +201,6 @@ def main() -> None:
     write_json(GATE_REPORT_DIR / "latest_synthetic_gate_report.json", summary)
     write_text(FINDING_REPORT_DIR / "latest_finding_charts.md", md)
     write_json(FINDING_REPORT_DIR / "latest_finding_summary.json", {"schema": "tau-scaling-finding-summary-v0.4.0", "generated_at": summary["generated_at"], "finding_counts": summary["finding_counts"], "chart_paths": [p for p in charts if p.startswith("visuals/findings/")], "non_claim_lock": summary["boundary"]})
-    print(json.dumps({"schema": summary["schema"], "all_scenarios_passed": summary["all_scenarios_passed"], "total_scenarios": summary["total_scenarios"], "passed_scenarios": summary["passed_scenarios"], "failed_scenarios": summary["failed_scenarios"], "class_counts": summary["class_counts"], "finding_counts": summary["finding_counts"], "chart_count": len(charts), "suite_complete": summary["all_scenarios_passed"], "report": "reports/benchmarks/latest_synthetic_gate_suite.md"}, indent=2, sort_keys=True))
+    print(json.dumps({"schema": summary["schema"], "all_scenarios_passed": summary["all_scenarios_passed"], "total_scenarios": summary["total_scenarios"], "passed_scenarios": summary["passed_scenarios"], "failed_scenarios": summary["failed_scenarios"], "class_counts": summary["class_counts"], "finding_counts": summary["finding_counts"], "chart_count": len(charts), "report": "reports/benchmarks/latest_synthetic_gate_suite.md"}, indent=2, sort_keys=True))
 if __name__ == "__main__":
     main()

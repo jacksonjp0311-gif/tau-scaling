@@ -1,0 +1,31 @@
+{
+  "chart_paths": [
+    "visuals/findings/v0_4_0/finding_b-etp-missing.png",
+    "visuals/findings/v0_4_0/finding_b-lf-missing.png",
+    "visuals/findings/v0_4_0/finding_b-pvt-missing.png",
+    "visuals/findings/v0_4_0/finding_b-baseline-missing.png",
+    "visuals/findings/v0_4_0/finding_b-evidence-missing.png",
+    "visuals/findings/v0_4_0/finding_b-method-missing.png",
+    "visuals/findings/v0_4_0/finding_b-metric-missing.png",
+    "visuals/findings/v0_4_0/finding_b-tau-missing.png",
+    "visuals/findings/v0_4_0/finding_b-workload-missing.png",
+    "visuals/findings/v0_4_0/finding_b-yield-missing.png",
+    "visuals/findings/v0_4_0/finding_overclaim-independent-validation.png"
+  ],
+  "finding_counts": {
+    "TSEK_B_ETP_MISSING": 2,
+    "TSEK_B_LF_MISSING": 2,
+    "TSEK_B_PVT_MISSING": 2,
+    "TSEK_B_baseline_MISSING": 2,
+    "TSEK_B_evidence_MISSING": 2,
+    "TSEK_B_method_MISSING": 1,
+    "TSEK_B_metric_MISSING": 1,
+    "TSEK_B_tau_MISSING": 1,
+    "TSEK_B_workload_MISSING": 2,
+    "TSEK_B_yield_MISSING": 2,
+    "TSEK_OVERCLAIM_INDEPENDENT_VALIDATION": 1
+  },
+  "generated_at": "2026-05-26T13:13:37.508894+00:00",
+  "non_claim_lock": "Synthetic gate suite validates local runtime downgrade behavior only. It is not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.",
+  "schema": "tau-scaling-finding-summary-v0.4.0"
+}
