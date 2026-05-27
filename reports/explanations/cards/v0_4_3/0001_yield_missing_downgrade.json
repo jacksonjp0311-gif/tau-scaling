@@ -2,12 +2,12 @@
   "A_TSEK": 0.0,
   "classification": "TSEK-C",
   "diagnostic_average": 0.9091,
-  "evidence_path": "artifacts/runs/claim-20260527T143950066095Z-63851f/evidence_package.json",
+  "evidence_path": "artifacts/runs/claim-20260527T145604073056Z-f9029f/evidence_package.json",
   "finding_codes": [
     "TSEK_B_yield_MISSING"
   ],
   "findings_count": 1,
-  "generated_at": "2026-05-27T14:39:56.295004+00:00",
+  "generated_at": "2026-05-27T14:56:11.495261+00:00",
   "minimum_repair_for_promotion": [
     "Report yield or downgrade the claim."
   ],

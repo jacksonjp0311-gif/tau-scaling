@@ -10,8 +10,8 @@
 
 Repository: `tau-scaling`  
 Package / CLI: `tau_scaling` / `tau-scaling`  
-Current checkpoint: **TAU-SCALING-SA v0.4.5d - Nexus Feedback Chart-Path Health Repair**  
-Previous seal: **TAU-SCALING-SA v0.4.5c - Nexus Feedback Function-Block Repair**
+Current checkpoint: **TAU-SCALING-SA v0.4.6 - Pair Policy Dry-Run Simulator**  
+Previous seal: **TAU-SCALING-SA v0.4.5d - Nexus Feedback Chart-Path Health Repair**
 
 Tau Scaling is a local-first, evidence-gated Python runtime for evaluating tau-scaling claims through structured claim cards, workload declarations, tau vectors, LogicFolding survivability checks, edge-to-surface boundary algebra, energy / thermal / PDN / PVT gates, Monte Carlo checker stress, TSEK classification, evidence packages, and RCC-N / OMN-style repository navigation.
 
@@ -55,7 +55,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | TAU-SCALING-SA v0.4.5d |
+| Current checkpoint | TAU-SCALING-SA v0.4.6 |
 | Synthetic gate suite | v0.4.0 / benchmark + finding charts |
 | Package version | 0.2.0 |
 | Baseline seed | TSEK-C / A_TSEK 0.0000 |
@@ -88,6 +88,8 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 | Pair policy charts | `visuals/policy/v0_4_4/` |
 | Nexus feedback report | `reports/nexus_feedback/latest_nexus_feedback.md` |
 | Nexus feedback charts | `visuals/nexus_feedback/v0_4_5/` |
+| Pair policy dry-run | `reports/policy_dry_run/latest_pair_policy_dry_run.md` |
+| Pair policy dry-run charts | `visuals/policy_dry_run/v0_4_6/` |
 | Agent contract version sync | v0.4.0f / updated from v0.3.3e |
 | Release readiness report | `reports/release/latest_release_readiness.md` |
 | Collision-proof run identity | passed |
@@ -117,6 +119,7 @@ python scripts/benchmarks/run_sensitivity_sweep.py
 python scripts/benchmarks/run_gate_interaction_matrix.py
 python scripts/benchmarks/generate_threshold_explanation_cards.py
 python scripts/benchmarks/run_pair_policy_review.py
+python scripts/benchmarks/run_pair_policy_dry_run.py
 python scripts/feedback/run_nexus_feedback.py
 python scripts/release/validate_release.py
 ```
@@ -410,6 +413,7 @@ This section is part of the repository's operating memory. When a patch fails, t
 | L-025 | v0.4.5a proved ordering was correct but `health_passed` stayed false. | The feedback scorer expected numeric `findings`, numeric `step_failures`, and top-level `total_points`, while actual reports used lists and `results`. | Feedback health checks must normalize report schemas before scoring; schema mismatch is not validation failure. |
 | L-026 | v0.4.5b changed the feedback schema label but `health_score` still used the old comparisons. | Regex patching did not replace the intended function body, so labels advanced faster than executable logic. | Function repairs must verify the target function body changed, not just schema strings or docs. |
 | L-027 | v0.4.5c repaired list counters but `sensitivity_sweep` still failed health scoring. | The persisted sensitivity JSON used `chart_paths` while the feedback health scorer checked only `chart_count`. | Feedback health scoring must normalize both count fields and evidence-list fields such as chart_paths. |
+| L-028 | Nexus feedback v0.4.5d reached health 1.0 and ranked pair-policy pressure as the top next target. | Policy review pressure should not mutate the classifier directly. | Any classifier-policy change must first pass a dry-run simulator comparing current class vs simulated policy class. |
 
 ### Failure Response Protocol
 
@@ -737,6 +741,43 @@ per-finding scenario presence
 ### Boundary
 
 Synthetic gate charts show local runtime behavior only. They are not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.
+
+## Pair Policy Dry-Run Simulator v0.4.6
+
+v0.4.6 simulates v0.4.4 pair-policy enforcement without mutating the classifier.
+
+Primary command:
+
+```powershell
+python scripts/benchmarks/run_pair_policy_dry_run.py
+```
+
+Primary outputs:
+
+```text
+reports/policy_dry_run/latest_pair_policy_dry_run.json
+reports/policy_dry_run/latest_pair_policy_dry_run.md
+visuals/policy_dry_run/v0_4_6/
+```
+
+The simulator compares:
+
+```text
+current_classification
+vs
+simulated_policy_classification
+```
+
+It answers:
+
+```text
+How many pairs drift if policy is enforced?
+How many TSEK-C cases become TSEK-D?
+How many require human review?
+Would enforcement over-penalize local synthetic evidence?
+```
+
+Boundary: dry-run simulation is classifier governance only. It does not change classifier behavior and does not validate silicon, product performance, manufacturing capability, process-node equivalence, benchmark superiority, AI understanding, or universal Tau Scaling law.
 
 ## Nexus Feedback Chart-Path Health Repair v0.4.5d
 
@@ -1180,15 +1221,15 @@ validation_remains_required
 | v0.4.5b | Nexus feedback health schema alignment for list-valued findings and derived sensitivity points. |
 | v0.4.5c | Nexus feedback function-block repair to ensure health scorer logic actually updates. |
 | v0.4.5d | Nexus feedback chart-path health repair for sensitivity sweep chart evidence. |
+| v0.4.6 | Pair policy dry-run simulator for non-mutating classifier-policy impact analysis. |
 
 ## Next Recommended Version
 
-**TAU-SCALING-SA v0.4.6 - Pair Policy Dry-Run Simulator**
+**TAU-SCALING-SA v0.4.7 - Policy Impact Explanation Cards**
 
 Recommended goals:
 
-- Simulate policy-class changes without mutating the classifier.
-- Compare current class vs proposed policy class.
-- Emit drift impact charts.
-- Decide whether policy enforcement is safe.
-- Preserve non-claim locks: dry-run policy simulation is local classifier governance only.
+- Explain each simulated class drift.
+- Identify over-penalty risks.
+- Separate justified downgrades from policy-review-only cases.
+- Preserve non-claim locks: impact explanations are local classifier governance only.

@@ -1,6 +1,6 @@
 # Tau Scaling v0.4.3 Threshold Explanation Cards
 
-Generated: `2026-05-27T14:39:58.120847+00:00`
+Generated: `2026-05-27T14:56:13.641842+00:00`
 
 ## Result
 

@@ -2,10 +2,10 @@
   "A_TSEK": 0.5,
   "classification": "TSEK-C",
   "diagnostic_average": 1.0,
-  "evidence_path": "artifacts/runs/claim-20260527T143946521970Z-ae69da/evidence_package.json",
+  "evidence_path": "artifacts/runs/claim-20260527T145600013841Z-de84fc/evidence_package.json",
   "finding_codes": [],
   "findings_count": 0,
-  "generated_at": "2026-05-27T14:39:56.305006+00:00",
+  "generated_at": "2026-05-27T14:56:11.505512+00:00",
   "minimum_repair_for_promotion": [
     "No explicit finding codes were emitted; inspect gate values and classifier thresholds."
   ],

@@ -2,12 +2,12 @@
   "A_TSEK": 0.0,
   "classification": "TSEK-C",
   "diagnostic_average": 0.9091,
-  "evidence_path": "artifacts/runs/claim-20260527T143945643443Z-b52904/evidence_package.json",
+  "evidence_path": "artifacts/runs/claim-20260527T145559092528Z-277952/evidence_package.json",
   "finding_codes": [
     "TSEK_B_LF_MISSING"
   ],
   "findings_count": 1,
-  "generated_at": "2026-05-27T14:39:56.305006+00:00",
+  "generated_at": "2026-05-27T14:56:11.505512+00:00",
   "minimum_repair_for_promotion": [
     "Restore positive LogicFolding survivability margin."
   ],

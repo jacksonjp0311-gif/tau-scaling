@@ -1,6 +1,6 @@
 # Explanation Card — control_all_disclosed_promotable
 
-Generated: `2026-05-27T14:39:56.295004+00:00`
+Generated: `2026-05-27T14:56:11.495261+00:00`
 
 | Field | Value |
 |---|---|
@@ -26,7 +26,7 @@ None
 ## Evidence Path
 
 ```text
-artifacts/runs/claim-20260527T143950008904Z-5ea8f7/evidence_package.json
+artifacts/runs/claim-20260527T145603941804Z-a92d62/evidence_package.json
 ```
 
 ## Boundary

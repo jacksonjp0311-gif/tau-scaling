@@ -26,6 +26,7 @@ This atlas gives humans and AI agents one stable place to understand benchmark e
 | v0.4.5b | Nexus feedback health schema alignment | `python scripts/feedback/run_nexus_feedback.py` | Normalizes list-valued findings/step_failures and derives sensitivity points from results | `reports/nexus_feedback/latest_nexus_feedback.md` | `reports/nexus_feedback/v0_4_5b/` |
 | v0.4.5c | Nexus feedback function-block repair | function-body assertion + feedback run | Ensures health scorer executable logic actually changed | `reports/nexus_feedback/latest_nexus_feedback.md` | `reports/nexus_feedback/v0_4_5c/` |
 | v0.4.5d | Nexus feedback chart-path health repair | chart-path assertion + feedback health assertion | Normalizes sensitivity chart evidence from `chart_paths` | `reports/nexus_feedback/latest_nexus_feedback.md` | `reports/nexus_feedback/v0_4_5d/` |
+| v0.4.6 | Pair policy dry-run simulator | `python scripts/benchmarks/run_pair_policy_dry_run.py` | Simulates policy impact without classifier mutation | `reports/policy_dry_run/latest_pair_policy_dry_run.md` | `visuals/policy_dry_run/v0_4_6/` |
 
 ## Current Synthetic Suite Summary
 
