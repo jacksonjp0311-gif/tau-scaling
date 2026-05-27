@@ -1,0 +1,99 @@
+{
+  "active_blocker": {
+    "evidence": {
+      "blocked_by_over_penalty_count": 6,
+      "eligible_candidate_design_count": 0,
+      "enforcement_candidate_enabled": false,
+      "mutation_allowed": false,
+      "source": "reports/enforcement_readiness/latest_enforcement_readiness_gate.json"
+    },
+    "id": "NF-ACTIVE-001",
+    "rank": 1,
+    "recommendation": "Decompose why all controlled downgrades are blocked before any enforcement-candidate design.",
+    "severity": "high",
+    "signal": "all_controlled_downgrades_blocked",
+    "surface": "enforcement_readiness",
+    "target_next": "TAU-SCALING-SA v0.5.2 - Over-Penalty Cause Decomposition"
+  },
+  "active_old_signal_count": 4,
+  "boundary": "Nexus target refresh is repository self-observation and queue hygiene only. It does not change classifier behavior and does not validate silicon, products, manufacturing, process nodes, benchmark superiority, or universal Tau Scaling law.",
+  "chart_paths": [
+    "visuals/nexus_target_refresh/v0_5_1/nexus_priority_completion_status.png",
+    "visuals/nexus_target_refresh/v0_5_1/active_enforcement_blocker_counts.png",
+    "visuals/nexus_target_refresh/v0_5_1/retired_priority_severity_counts.png"
+  ],
+  "completed_signal_count": 1,
+  "generated_at": "2026-05-27T16:21:00.476421+00:00",
+  "input_enforcement_readiness": "reports/enforcement_readiness/latest_enforcement_readiness_gate.json",
+  "input_nexus_feedback": "reports/nexus_feedback/latest_nexus_feedback.json",
+  "input_priority_count": 5,
+  "mutation_allowed": false,
+  "next_current_target": "TAU-SCALING-SA v0.5.2 - Over-Penalty Cause Decomposition",
+  "next_recommendation": "TAU-SCALING-SA v0.5.2 - Over-Penalty Cause Decomposition",
+  "policy_enforced": false,
+  "priority_refresh_rows": [
+    {
+      "completion_reason": "Target evidence exists; recommendation should be retired from active Nexus queue.",
+      "completion_status": "COMPLETED_RETIRED",
+      "id": "NF-001",
+      "rank": 1,
+      "recommendation": "Run a dry-run simulator before enforcing pair-policy changes.",
+      "severity": "high",
+      "signal": "pair_policy_escalation_pressure",
+      "surface": "pair_policy",
+      "target_next": "TAU-SCALING-SA v0.4.6 - Pair Policy Dry-Run Simulator"
+    },
+    {
+      "completion_reason": "No completion evidence found for target.",
+      "completion_status": "ACTIVE",
+      "id": "NF-002",
+      "rank": 2,
+      "recommendation": "Add explicit finding provenance for any TSEK-E collapse path that currently emits no finding code.",
+      "severity": "medium",
+      "signal": "hard_reject_without_finding",
+      "surface": "explanations",
+      "target_next": "Diagnostic finding provenance repair"
+    },
+    {
+      "completion_reason": "No completion evidence found for target.",
+      "completion_status": "ACTIVE",
+      "id": "NF-003",
+      "rank": 3,
+      "recommendation": "Generalize the AGENTS experiment-start rule so future layers do not carry stale version-specific language.",
+      "severity": "low",
+      "signal": "agent_contract_current",
+      "surface": "agent_contract",
+      "target_next": "Agent contract feedback sync"
+    },
+    {
+      "completion_reason": "No completion evidence found for target.",
+      "completion_status": "ACTIVE",
+      "id": "NF-004",
+      "rank": 4,
+      "recommendation": "Keep a route-map entry for Nexus feedback so agents know where reflective reports live.",
+      "severity": "low",
+      "signal": "feedback_route_present",
+      "surface": "rcc_nexus",
+      "target_next": "Route-map feedback continuity"
+    },
+    {
+      "completion_reason": "No completion evidence found for target.",
+      "completion_status": "ACTIVE",
+      "id": "NF-005",
+      "rank": 5,
+      "recommendation": "Expose Nexus feedback as a first-class README command.",
+      "severity": "low",
+      "signal": "feedback_command_present",
+      "surface": "readme",
+      "target_next": "README feedback command sync"
+    }
+  ],
+  "retired_severity_counts": {
+    "high": 1
+  },
+  "schema": "tau-scaling-nexus-target-refresh-v0.5.1",
+  "status_counts": {
+    "ACTIVE": 4,
+    "COMPLETED_RETIRED": 1
+  }
+}

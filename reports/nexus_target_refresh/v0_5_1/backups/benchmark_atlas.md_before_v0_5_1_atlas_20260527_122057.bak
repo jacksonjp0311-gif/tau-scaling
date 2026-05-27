@@ -31,7 +31,6 @@ This atlas gives humans and AI agents one stable place to understand benchmark e
 | v0.4.8 | Policy decision record | `python scripts/benchmarks/generate_policy_decision_record.py` | Converts impact cards into non-mutating decision records | `reports/policy_decision/latest_policy_decision_record.md` | `visuals/policy_decision/v0_4_8/` |
 | v0.4.9 | Regression and over-penalty review | `python scripts/benchmarks/run_regression_over_penalty_review.py` | Reviews controlled downgrade candidates before enforcement-candidate design | `reports/regression_review/latest_regression_over_penalty_review.md` | `visuals/regression_review/v0_4_9/` |
 | v0.5.0 | Enforcement readiness gate | `python scripts/benchmarks/run_enforcement_readiness_gate.py` | Major checkpoint that blocks enforcement when over-penalty review fails | `reports/enforcement_readiness/latest_enforcement_readiness_gate.md` | `visuals/enforcement_readiness/v0_5_0/` |
-| v0.5.1 | Nexus target refresh | `python scripts/feedback/run_nexus_target_refresh.py` | Retires completed Nexus targets and promotes the current active blocker | `reports/nexus_target_refresh/latest_nexus_target_refresh.md` | `visuals/nexus_target_refresh/v0_5_1/` |
 
 ## Current Synthetic Suite Summary
 

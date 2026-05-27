@@ -77,7 +77,7 @@
   "eligible_candidate_design_count": 0,
   "enforcement_candidate_enabled": false,
   "final_recommendation": "do_not_design_enforcement_candidate__all_controlled_downgrades_blocked",
-  "generated_at": "2026-05-27T15:45:47.602349+00:00",
+  "generated_at": "2026-05-27T16:20:57.488426+00:00",
   "human_review_only_count": 3,
   "input": "reports/regression_review/latest_regression_over_penalty_review.json",
   "input_review_rows": 9,

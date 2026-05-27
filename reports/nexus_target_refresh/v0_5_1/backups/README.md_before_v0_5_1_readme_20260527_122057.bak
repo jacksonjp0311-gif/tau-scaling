@@ -10,8 +10,8 @@
 
 Repository: `tau-scaling`  
 Package / CLI: `tau_scaling` / `tau-scaling`  
-Current checkpoint: **TAU-SCALING-SA v0.5.1 - Nexus Target Refresh and Completed-Signal Retirement**  
-Previous seal: **TAU-SCALING-SA v0.5.0 - Enforcement Readiness Gate**
+Current checkpoint: **TAU-SCALING-SA v0.5.0 - Enforcement Readiness Gate**  
+Previous seal: **TAU-SCALING-SA v0.4.9 - Regression and Over-Penalty Review**
 
 Tau Scaling is a local-first, evidence-gated Python runtime for evaluating tau-scaling claims through structured claim cards, workload declarations, tau vectors, LogicFolding survivability checks, edge-to-surface boundary algebra, energy / thermal / PDN / PVT gates, Monte Carlo checker stress, TSEK classification, evidence packages, and RCC-N / OMN-style repository navigation.
 
@@ -55,7 +55,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | TAU-SCALING-SA v0.5.1 |
+| Current checkpoint | TAU-SCALING-SA v0.5.0 |
 | Synthetic gate suite | v0.4.0 / benchmark + finding charts |
 | Package version | 0.2.0 |
 | Baseline seed | TSEK-C / A_TSEK 0.0000 |
@@ -98,8 +98,6 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 | Regression review charts | `visuals/regression_review/v0_4_9/` |
 | Enforcement readiness gate | `reports/enforcement_readiness/latest_enforcement_readiness_gate.md` |
 | Enforcement readiness charts | `visuals/enforcement_readiness/v0_5_0/` |
-| Nexus target refresh | `reports/nexus_target_refresh/latest_nexus_target_refresh.md` |
-| Nexus target refresh charts | `visuals/nexus_target_refresh/v0_5_1/` |
 | Agent contract version sync | current / v0.4.8 |
 | Release readiness report | `reports/release/latest_release_readiness.md` |
 | Collision-proof run identity | passed |
@@ -135,7 +133,6 @@ python scripts/benchmarks/generate_policy_decision_record.py
 python scripts/benchmarks/run_regression_over_penalty_review.py
 python scripts/benchmarks/run_enforcement_readiness_gate.py
 python scripts/feedback/run_nexus_feedback.py
-python scripts/feedback/run_nexus_target_refresh.py
 python scripts/release/validate_release.py
 ```
 
@@ -433,7 +430,6 @@ This section is part of the repository's operating memory. When a patch fails, t
 | L-030 | v0.4.7 generated impact cards, but impact cards alone do not authorize classifier mutation. | Explanation artifacts identify drift reasons; they do not decide enforcement readiness. | Simulated policy impacts must be converted into a decision record with mutation_allowed=false until regression and over-penalty review pass. |
 | L-031 | v0.4.8 approved six drift cases for regression review, but approval-for-review is not approval-for-enforcement. | Decision records classify readiness for review, not readiness for mutation. | Controlled downgrade candidates must pass regression and over-penalty review before any classifier enforcement candidate is allowed. |
 | L-032 | v0.4.9 showed that all six controlled downgrade candidates triggered over-penalty review. | A review gate that blocks every candidate may indicate true policy harshness or heuristic over-sensitivity. | When regression review blocks every candidate, do not proceed to enforcement design; first promote the blocked state into a major enforcement-readiness gate with all mutation disabled. |
-| L-033 | v0.5.0 completed the dry-run through enforcement-readiness chain, but Nexus still ranked the old v0.4.6 dry-run target as active. | A healthy feedback score can still carry stale priorities if completed targets are not retired. | Reflective feedback must retire completed targets and promote the current active blocker, or the repo will keep recommending already-completed work. |
 
 ### Failure Response Protocol
 
@@ -642,7 +638,6 @@ tau-scaling/
   releases/
   reports/
     nexus_feedback/
-    nexus_target_refresh/
     enforcement_readiness/
     regression_review/
     policy_dry_run/
@@ -685,7 +680,6 @@ tau-scaling/
   tests/
   visuals/
     nexus_feedback/
-    nexus_target_refresh/
     enforcement_readiness/
     regression_review/
     policy_dry_run/
@@ -773,41 +767,6 @@ per-finding scenario presence
 ### Boundary
 
 Synthetic gate charts show local runtime behavior only. They are not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.
-
-## Nexus Target Refresh and Completed-Signal Retirement v0.5.1
-
-v0.5.1 repairs stale reflective routing after v0.5.0 enforcement readiness.
-
-Primary command:
-
-```powershell
-python scripts/feedback/run_nexus_target_refresh.py
-```
-
-Primary outputs:
-
-```text
-reports/nexus_target_refresh/latest_nexus_target_refresh.json
-reports/nexus_target_refresh/latest_nexus_target_refresh.md
-visuals/nexus_target_refresh/v0_5_1/
-```
-
-This layer answers:
-
-```text
-which old Nexus priorities are completed
-which stale recommendations should retire
-what the current active blocker is
-what the next current target should be
-```
-
-Current active blocker:
-
-```text
-all_controlled_downgrades_blocked
-```
-
-Boundary: Nexus target refresh is repository self-observation and queue hygiene only. It does not change classifier behavior and does not validate silicon, product performance, manufacturing capability, process-node equivalence, benchmark superiority, AI understanding, or universal Tau Scaling law.
 
 ## Enforcement Readiness Gate v0.5.0
 
@@ -1088,7 +1047,6 @@ python scripts/release/validate_release.py
 python scripts/rcc/audit_readme_surface.py
 python scripts/rcc/check_rcc_nexus.py
 python scripts/feedback/run_nexus_feedback.py
-python scripts/feedback/run_nexus_target_refresh.py
 python scripts/release/validate_release.py
 python scripts/rcc/audit_readme_surface.py
 python scripts/rcc/check_rcc_nexus.py
@@ -1433,15 +1391,14 @@ validation_remains_required
 | v0.4.8 | Policy decision record for non-mutating enforcement readiness classification. |
 | v0.4.9 | Regression and over-penalty review for controlled downgrade candidates. |
 | v0.5.0 | Enforcement readiness gate for blocked policy candidates with classifier mutation disabled. |
-| v0.5.1 | Nexus target refresh and completed-signal retirement after v0.5.0. |
 
 ## Next Recommended Version
 
-**TAU-SCALING-SA v0.5.2 - Over-Penalty Cause Decomposition**
+**TAU-SCALING-SA v0.5.1 - Nexus Target Refresh and Completed-Signal Retirement**
 
 Recommended goals:
 
-- Decompose why all six controlled downgrades are blocked.
-- Separate diagnostic-support over-sensitivity from missing provenance and high drift severity.
-- Emit cause-specific remediation cards.
-- Preserve non-claim locks: cause decomposition is local classifier governance only.
+- Update Nexus feedback so completed v0.4.6-v0.5.0 targets are recognized as completed.
+- Retire stale NF-001 dry-run recommendation.
+- Promote the current blocker as the next active signal.
+- Preserve non-claim locks: Nexus target refresh is repository self-observation only.

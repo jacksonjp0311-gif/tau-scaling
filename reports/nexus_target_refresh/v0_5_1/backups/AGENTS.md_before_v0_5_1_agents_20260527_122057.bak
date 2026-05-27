@@ -1,6 +1,6 @@
 # AGENTS.md — Tau Scaling Agent Operating Contract
 
-Current contract: **TAU-SCALING-SA v0.5.1 - Nexus Target Refresh and Completed-Signal Retirement**
+Current contract: **TAU-SCALING-SA v0.5.0 - Enforcement Readiness Gate**
 
 ## Mission
 
@@ -76,7 +76,6 @@ python -m unittest discover -s tests
 | Policy decision patch | `reports/policy_decision/`, `visuals/policy_decision/`, impact cards | decision record + release validator; mutation_allowed must remain false |
 | Regression review patch | `reports/regression_review/`, `visuals/regression_review/`, decision record | regression review + over-penalty report; mutation_allowed must remain false |
 | Enforcement readiness patch | `reports/enforcement_readiness/`, `visuals/enforcement_readiness/`, regression review | readiness gate + release validator; enforcement_candidate_enabled must remain false |
-| Nexus target refresh patch | `reports/nexus_target_refresh/`, `visuals/nexus_target_refresh/`, Nexus feedback + readiness gate | target-refresh report + release validator; no classifier mutation |
 | Public claim replay patch | source boundary docs, `configs/seeds/public_claims/`, claim reports | release validator + claim replay report |
 | Directory structure patch | Full Directory Box, affected mini READMEs, context indexes | README audit + RCC-N + release validator |
 
