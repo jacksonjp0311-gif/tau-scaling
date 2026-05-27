@@ -1,0 +1,28 @@
+{
+  "card_id": "policy-impact-v0-4-7-006",
+  "current_A_TSEK": 0.0,
+  "current_classification": "TSEK-C",
+  "current_diagnostic_average": 0.8182,
+  "decision_hint": "Candidate controlled downgrade; explain and regression-test before enforcement.",
+  "drift_severity": 1,
+  "drifted": true,
+  "finding_codes": [
+    "TSEK_B_workload_MISSING",
+    "TSEK_B_tau_MISSING"
+  ],
+  "findings_count": 2,
+  "gate_a": "B_workload",
+  "gate_b": "B_tau",
+  "gate_pair": "B_workload+B_tau",
+  "impact_class": "controlled_policy_downgrade",
+  "impact_explanation": "Pair B_workload+B_tau would move from TSEK-C to TSEK-D under dry-run policy.",
+  "non_claim_lock": "Policy impact cards explain simulated classifier-governance effects only; they do not validate silicon or product claims.",
+  "policy_class": "TSEK-D_CANDIDATE",
+  "policy_enforced": false,
+  "reason": "Tau improvements are not interpretable without workload and baseline context.",
+  "recommended_action_from_policy": "Candidate downgrade below TSEK-C until tau vector, workload, and baseline are simultaneously repaired.",
+  "risk_label": "downgrade_risk",
+  "schema": "tau-scaling-policy-impact-card-v0.4.7",
+  "simulated_policy_classification": "TSEK-D",
+  "simulation_action": "candidate_downgrade"
+}

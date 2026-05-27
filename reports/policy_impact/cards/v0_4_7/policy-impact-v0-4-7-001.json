@@ -1,0 +1,28 @@
+{
+  "card_id": "policy-impact-v0-4-7-001",
+  "current_A_TSEK": 0.0,
+  "current_classification": "TSEK-C",
+  "current_diagnostic_average": 0.8182,
+  "decision_hint": "Do not enforce automatically; route to human policy review.",
+  "drift_severity": 3,
+  "drifted": true,
+  "finding_codes": [
+    "TSEK_B_source_MISSING",
+    "TSEK_B_metric_MISSING"
+  ],
+  "findings_count": 2,
+  "gate_a": "B_source",
+  "gate_b": "B_metric",
+  "gate_pair": "B_source+B_metric",
+  "impact_class": "manual_review_required",
+  "impact_explanation": "Pair B_source+B_metric would move from TSEK-C to HUMAN_REVIEW under dry-run policy.",
+  "non_claim_lock": "Policy impact cards explain simulated classifier-governance effects only; they do not validate silicon or product claims.",
+  "policy_class": "HUMAN_REVIEW",
+  "policy_enforced": false,
+  "reason": "Source-boundary failures affect interpretability of the entire claim.",
+  "recommended_action_from_policy": "Require human review before promotion because source boundary is paired with metric/baseline/evidence failure.",
+  "risk_label": "review_risk",
+  "schema": "tau-scaling-policy-impact-card-v0.4.7",
+  "simulated_policy_classification": "HUMAN_REVIEW",
+  "simulation_action": "human_review_required"
+}

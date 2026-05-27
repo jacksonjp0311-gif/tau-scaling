@@ -1,6 +1,6 @@
 # Task Routing Matrix
 
-Current contract: **TAU-SCALING-SA v0.4.6 - Pair Policy Dry-Run Simulator**
+Current contract: **TAU-SCALING-SA v0.4.7 - Policy Impact Explanation Cards**
 
 ## Geometry Route
 
@@ -29,6 +29,7 @@ intent -> shell -> meridian -> sector -> files -> validation -> evidence -> less
 | Feedback function-block repair | outer | drift | agent | feedback runner function body | compile + function-body assertion + feedback health score 1.0 | `reports/nexus_feedback/latest_nexus_feedback.md` |
 | Feedback chart-path health repair | outer | drift | agent | feedback runner + sensitivity chart_paths | compile + chart-path assertion + feedback health score 1.0 | `reports/nexus_feedback/latest_nexus_feedback.md` |
 | Pair policy dry-run patch | outer | validation | governance | pair policy review + dry-run report | dry-run report + charts + release validator | `reports/policy_dry_run/latest_pair_policy_dry_run.md` |
+| Policy impact patch | outer | validation | governance | dry-run report + impact cards | impact report + charts + release validator | `reports/policy_impact/latest_policy_impact_cards.md` |
 | Public claim replay patch | outer | evidence | release | source boundary docs, `configs/seeds/public_claims/` | release validator + claim replay report | `reports/public_claims/latest_claim_replay_report.md` |
 | Agent contract patch | center | agent | rcc | `AGENTS.md`, route map, task matrix, README | README audit + release validator | `reports/agent/latest_agent_contract_sync.md` |
 | Reflection patch | center | drift | documentation | `docs/reflection/`, `reports/reflection/`, README, AGENTS | README audit + release validator | `reports/reflection/latest_system_reflection.md` |

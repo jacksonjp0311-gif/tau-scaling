@@ -1,0 +1,1235 @@
+# Tau Scaling — Evidence-Gated Tau-Claim Runtime
+
+![RCC-N](https://img.shields.io/badge/RCC--N-passing-brightgreen)
+![Architecture](https://img.shields.io/badge/architecture-passing-brightgreen)
+![Tests](https://img.shields.io/badge/tests-8%20OK-brightgreen)
+![README Audit](https://img.shields.io/badge/README%20audit-passing-brightgreen)
+![Benchmarks](https://img.shields.io/badge/benchmarks-12%20runs%20%2F%200%20duplicates-brightgreen)
+![Claim Class](https://img.shields.io/badge/latest%20baseline-TSEK--C-blue)
+![Promotion Path](https://img.shields.io/badge/promotion%20seed-TSEK--B-purple)
+
+Repository: `tau-scaling`  
+Package / CLI: `tau_scaling` / `tau-scaling`  
+Current checkpoint: **TAU-SCALING-SA v0.4.6 - Pair Policy Dry-Run Simulator**  
+Previous seal: **TAU-SCALING-SA v0.4.5d - Nexus Feedback Chart-Path Health Repair**
+
+Tau Scaling is a local-first, evidence-gated Python runtime for evaluating tau-scaling claims through structured claim cards, workload declarations, tau vectors, LogicFolding survivability checks, edge-to-surface boundary algebra, energy / thermal / PDN / PVT gates, Monte Carlo checker stress, TSEK classification, evidence packages, and RCC-N / OMN-style repository navigation.
+
+Core law:
+
+```text
+No workload, no tau claim.
+No baseline, no gain.
+No gates, no validation.
+No evidence, no strong class.
+```
+
+## Human Director Box
+
+### What this repository is
+
+This repo is a governed claim-evaluation workbench. It turns a tau-scaling claim into a structured audit path:
+
+```text
+claim
+-> source boundary
+-> claim card
+-> workload profile
+-> tau vector
+-> baseline / candidate manifests
+-> LogicFolding survivability
+-> edge-surface boundary model
+-> energy / thermal / PDN / PVT gates
+-> Monte Carlo checker stress
+-> TSEK classifier
+-> evidence package
+-> reports / ledgers / visuals
+-> release manifest
+```
+
+### What this repository is not
+
+This repo does **not** independently validate silicon, Huawei product metrics, manufacturing capability, benchmark superiority, process-node equivalence, investment value, or a universal Tau Scaling law. It is a local runtime for evidence discipline and claim classification.
+
+## Current Public Metrics
+
+| Surface | Result |
+|---|---:|
+| Current checkpoint | TAU-SCALING-SA v0.4.6 |
+| Synthetic gate suite | v0.4.0 / benchmark + finding charts |
+| Package version | 0.2.0 |
+| Baseline seed | TSEK-C / A_TSEK 0.0000 |
+| Promotion-path seed | TSEK-B / A_TSEK 1.0000 |
+| RCC-N checker | passing / 0 warnings |
+| README mini repo audit | passing / 0 warnings |
+| Unified release validator | passing / step failures 0 |
+| AGENTS.md contract | synchronized with release validator |
+| Task routing matrix | geometry-aware / v0.4-ready |
+| Release warning findings | 0 expected after v0.3.3d validator scan repair |
+| Architecture validator | passing / 0 warnings |
+| Unit tests | 8 OK |
+| Benchmark harness | 12 runs / 12 unique IDs / 0 duplicates |
+| Synthetic gate report | `reports/gates/latest_synthetic_gate_report.md` |
+| Synthetic gate report links | repaired / v0.4.0a |
+| Synthetic gate suite | expected 10/10 after v0.4.0b calibration |
+| Finding charts | `reports/findings/latest_finding_charts.md` |
+| Benchmark atlas | `docs/benchmarks/benchmark_atlas.md` |
+| Benchmark mini README AI/RCC guidance | repaired / expected 0 warnings |
+| Mini README audit warnings | exact anchor repair / expected 0 warnings |
+| Benchmark chart registry | `visuals/benchmarks/v0_4_0/` + `visuals/findings/v0_4_0/` |
+| Reflection layer | `docs/reflection/tau_scaling_reflection_v0_4_0f.md` |
+| Sensitivity sweep | `reports/sensitivity/latest_sensitivity_sweep.md` |
+| Sensitivity charts | `visuals/sensitivity/v0_4_1/` |
+| Gate interaction matrix | `reports/interactions/latest_gate_interaction_matrix.md` |
+| Interaction charts | `visuals/interactions/v0_4_2/` |
+| Threshold explanation cards | `reports/explanations/latest_threshold_explanation_cards.md` |
+| Explanation charts | `visuals/explanations/v0_4_3/` |
+| Pair policy review | `reports/policy/latest_pair_policy_review.md` |
+| Pair policy charts | `visuals/policy/v0_4_4/` |
+| Nexus feedback report | `reports/nexus_feedback/latest_nexus_feedback.md` |
+| Nexus feedback charts | `visuals/nexus_feedback/v0_4_5/` |
+| Pair policy dry-run | `reports/policy_dry_run/latest_pair_policy_dry_run.md` |
+| Pair policy dry-run charts | `visuals/policy_dry_run/v0_4_6/` |
+| Agent contract version sync | v0.4.0f / updated from v0.3.3e |
+| Release readiness report | `reports/release/latest_release_readiness.md` |
+| Collision-proof run identity | passed |
+| Mini README coverage | 1.0 |
+| Major dirs checked | 25 |
+| Durable dirs checked by README audit | 38 |
+| Claim status | local runtime evidence + benchmark observability only |
+
+The baseline demo remains **TSEK-C** by design: the system refuses to promote a claim beyond disclosed evidence. The promotion-path seed demonstrates how stronger disclosed evidence can move a claim to **TSEK-B** without weakening gates.
+
+## Quick Start
+
+```powershell
+cd "C:\Users\jacks\OneDrive\Desktop\tau-scaling"
+.\.venv\Scripts\Activate.ps1
+
+python -m tau_scaling --help
+python -m tau_scaling run-claim --seed configs/seeds/logicfolding_claim_card.json
+python -m tau_scaling run-claim --seed configs/seeds/logicfolding_promotion_path_claim_card.json
+python scripts/rcc/check_rcc_nexus.py
+python scripts/rcc/audit_readme_surface.py
+python scripts/validation/validate_architecture_contracts.py
+python -m unittest discover -s tests
+python scripts/benchmarks/run_tau_scaling_benchmarks.py
+python scripts/benchmarks/run_synthetic_gate_suite.py
+python scripts/benchmarks/run_sensitivity_sweep.py
+python scripts/benchmarks/run_gate_interaction_matrix.py
+python scripts/benchmarks/generate_threshold_explanation_cards.py
+python scripts/benchmarks/run_pair_policy_review.py
+python scripts/benchmarks/run_pair_policy_dry_run.py
+python scripts/feedback/run_nexus_feedback.py
+python scripts/release/validate_release.py
+```
+
+## Repository Layers
+
+| Layer | Purpose | Main paths |
+|---|---|---|
+| Tau Scaling runtime | Executes claim cards, gates, classifier, evidence emission | `src/tau_scaling/`, `configs/seeds/`, `tests/` |
+| RCC-N navigation | Makes the repo self-locating for humans and AI agents | `rcc/nexus/`, `docs/context/`, folder `README.md` files |
+| Benchmark and evidence observability | Runs local benchmark loops and evidence package checks | `scripts/benchmarks/`, `reports/benchmarks/`, `artifacts/runs/` |
+| Unified release readiness | Runs the full release gate before experiments | `scripts/release/`, `reports/release/` |
+| Codex documentation shell | Records source boundaries, releases, architecture, non-claim locks | `docs/`, `reports/`, `releases/`, `visuals/` |
+
+## PART I - Human README
+
+### What Tau Scaling Tests
+
+| Seed / surface | Purpose |
+|---|---|
+| `logicfolding_claim_card.json` | Tests global LogicFolding survivability and downgrade behavior. |
+| `logicfolding_promotion_path_claim_card.json` | Demonstrates the evidence-promotion path to TSEK-B without weakening gates. |
+| `edge_surface_boundary_toy.json` | Tests edge-bound resource starvation vs. surface-coupled scaling. |
+| `gamma_tau_etp_toy.json` | Tests energy / thermal / PDN-normalized tau gain. |
+| `monte_carlo_stress_toy.json` | Tests checker sensitivity under synthetic priors. |
+| `codex_tau_vector_toy.json` | Tests Codex governance-latency analogy while preserving physical non-equivalence. |
+
+Tau Scaling rewards bounded evidence emission, not confident overclaiming.
+
+### Evidence Artifacts
+
+Primary runtime artifacts are written under:
+
+```text
+artifacts/runs/<unique-run-id>/
+artifacts/runs/latest/
+```
+
+Mirrored evidence surfaces are written under:
+
+```text
+outputs/evidence/
+outputs/reports/
+outputs/plots/
+outputs/ledger/
+```
+
+Release and validation surfaces are written under:
+
+```text
+releases/
+reports/rcc_nexus/
+reports/architecture/
+reports/readme/
+reports/benchmarks/
+docs/benchmarks/
+```
+
+## PART II - RCC Nexus README
+
+### RCC Nexus Identity
+
+RCC tells the agent what the repository means.  
+RCC-N tells the agent where it is.  
+Validation tells the agent whether reality agreed.
+
+### Repository Sphere
+
+| Shell | Meaning |
+|---|---|
+| center | Source boundary, non-claim locks, architecture, context indexes. |
+| inner | Runtime primitives: claim cards, tau vectors, gate records, schemas. |
+| middle | Processes: CLI flow, examples, tests, scripts, checker workflows. |
+| outer | Evidence / reflection: artifacts, outputs, ledgers, reports, visuals, release notes. |
+
+### Nexus Meridians
+
+`source`, `validation`, `evidence`, `drift`, `agent`, `safety`, `runtime`, `tau`, `release`, `documentation`
+
+### Nexus Sectors
+
+`core`, `schemas`, `tau`, `runtime`, `validation`, `evidence`, `rcc`, `agent`, `examples`, `release`
+
+### Primary Nexus Files
+
+| File | Role |
+|---|---|
+| `docs/context/repository_context_index.json` | Repository meaning map. |
+| `docs/context/rcc_nexus_index.json` | Nexus route and coverage index. |
+| `docs/context/validation_surface.md` | Validation commands and claim boundaries. |
+| `rcc/nexus/README.md` | RCC-N local orientation. |
+| `rcc/nexus/rcc_nexus_protocol.md` | Nexus protocol. |
+| `rcc/nexus/route_map.json` | Machine-readable routing map. |
+| `rcc/nexus/task_routing_matrix.md` | Task-to-validation routing. |
+| `rcc/nexus/echo_location_template.md` | Mini README Echo Location template. |
+| `rcc/nexus/agent_handoff_contract.md` | Agent handoff rules. |
+| `scripts/rcc/check_rcc_nexus.py` | RCC-N checker. |
+| `scripts/rcc/audit_readme_surface.py` | README / mini repo audit scanner. |
+| `scripts/release/validate_release.py` | Unified release-readiness validator. |
+| `reports/rcc_nexus/latest_rcc_nexus_check.md` | Latest RCC-N report. |
+| `reports/readme/latest_readme_mini_repo_audit.md` | Latest README / mini repo audit report. |
+| `reports/release/latest_release_readiness.md` | Latest unified release-readiness report. |
+
+### RCC Nexus Echo Location
+
+| Field | Value |
+|---|---|
+| Shell | center |
+| Meridians | source, safety, agent, runtime, evidence |
+| Sector | rcc |
+| Version / TTL | RCC-N-v1.7 / 180 days |
+| Last verified | 2026-05-26 |
+| Local role | Root orientation surface for humans, RCC Nexus navigation, and AI agents. |
+
+### RCC-N Status
+
+The Nexus is working when the following command passes with zero warnings:
+
+```powershell
+python scripts/rcc/check_rcc_nexus.py
+```
+
+Expected current state:
+
+```text
+passed: true
+errors: 0
+warnings: 0
+mini_readme_coverage: 1.0
+major_dirs_checked: 25
+```
+
+RCC-N checks repository navigation and context integrity. It does not prove code correctness, patch safety, independent silicon validation, product performance, process-node equivalence, AI understanding, or production readiness.
+
+## PART III - AI Agent README
+
+### AI Operating Contract
+
+Before editing, an AI agent must read:
+
+1. `README.md`
+2. `README_90_SECONDS.md`
+3. `AGENTS.md`
+4. `docs/context/repository_context_index.json`
+5. `docs/context/rcc_nexus_index.json`
+6. `rcc/nexus/route_map.json`
+7. the target folder `README.md`
+8. relevant source and tests
+
+After editing, run the validation command associated with the changed surface.
+
+### Patch Routing Matrix
+
+| Change type | Read first | Validate |
+|---|---|---|
+| Runtime patch | `src/tau_scaling/README.md`, `tests/` | compile + import + unit tests + baseline/promotion claims |
+| Claim classifier patch | `src/tau_scaling/claims/README.md`, latest evidence | baseline/promotion claims + evidence package check |
+| RCC docs patch | `README.md`, `docs/context/`, `rcc/nexus/` | `python scripts/rcc/check_rcc_nexus.py` |
+| README / mini README patch | `README.md`, target mini README, route maps | `python scripts/rcc/audit_readme_surface.py` |
+| Architecture docs patch | `docs/software_architecture/`, `docs/architecture/` | `python scripts/validation/validate_architecture_contracts.py` |
+| Directory structure patch | root README directory box, affected mini READMEs, context indexes | RCC-N + README audit + architecture + tests |
+| Release / benchmark patch | `releases/`, `docs/benchmarks/`, `reports/benchmarks/`, `reports/release/` | `python scripts/release/validate_release.py` |
+| Synthetic gate test patch | `configs/seeds/tests/`, `reports/gates/`, `tests/`, `src/tau_scaling/gates/` | `python scripts/release/validate_release.py` + gate suite |
+| Public claim replay patch | `configs/seeds/public_claims/`, `reports/public_claims/`, source boundary docs | release validator + claim replay report |
+| Agent contract patch | `AGENTS.md`, `rcc/nexus/task_routing_matrix.md`, route map, README | README audit + release validator |
+
+## README + Mini Repo Audit Map
+
+This section tells AI agents exactly where to scan for gaps before editing or declaring the repository healthy.
+
+### Audit Purpose
+
+The repository is considered healthy only when its public surfaces, folder-level mini READMEs, route maps, validation reports, runtime checks, and benchmark evidence agree.
+
+A patch is incomplete if it changes code, folders, benchmarks, reports, claim seeds, release state, or documentation meaning without updating the matching README and mini README surfaces.
+
+### Required Gap Scan Order
+
+| Scan step | Surface | What to check |
+|---:|---|---|
+| 1 | `README.md` | Current checkpoint, metrics, lineage, validation commands, non-claim locks, directory box, and AI rules. |
+| 2 | `AGENTS.md` | Agent entry order, patch discipline, and validation expectations. |
+| 3 | `README_90_SECONDS.md` | Compressed onboarding is not stale. |
+| 4 | `docs/context/repository_context_index.json` | Repo meaning and route descriptions. |
+| 5 | `docs/context/rcc_nexus_index.json` | Nexus shell/meridian/sector mapping. |
+| 6 | `rcc/nexus/route_map.json` | Task routing and target surfaces. |
+| 7 | `rcc/nexus/task_routing_matrix.md` | Human-readable task routing. |
+| 8 | Target folder `README.md` | Local folder role, inputs, outputs, and validation command. |
+| 9 | Sibling mini READMEs | Adjacent surfaces if routing or folder meaning changed. |
+| 10 | Latest reports | `reports/rcc_nexus/`, `reports/architecture/`, `reports/readme/`, `reports/benchmarks/`, and `reports/release/`. |
+
+### Gap Classes the AI Must Detect
+
+| Gap class | Detection question | Required repair |
+|---|---|---|
+| README drift | Does the root README describe the current repo state? | Patch checkpoint, metrics, lineage, commands, and directory box. |
+| Mini README drift | Did a folder change without its README changing? | Patch the affected folder README. |
+| Route drift | Did task routing or folder purpose change? | Patch context indexes and route maps. |
+| Validation drift | Do public claims lack fresh validation reports? | Rerun validation and refresh reports. |
+| Runtime drift | Did Python code change without compile/import/test proof? | Run compile, import, tests, claims, and benchmarks. |
+| Benchmark drift | Did benchmark behavior change without benchmark reports? | Rerun benchmark harness and update reports. |
+| Evidence drift | Could one run overwrite another? | Verify collision-proof run IDs and latest evidence package. |
+| Claim drift | Does language imply stronger proof than evidence allows? | Restore downgrade wording and non-claim locks. |
+| Encoding drift | Do headings, arrows, paths, or code fences show mojibake? | Rewrite affected README surfaces using UTF-8 and ASCII-safe syntax unless Unicode is required by an audit anchor. |
+
+### Executable README / Mini Repo Audit
+
+Run:
+
+```powershell
+python scripts/rcc/audit_readme_surface.py
+```
+
+Expected pass:
+
+```text
+passed: true
+errors: 0
+warnings: 0
+```
+
+Primary outputs:
+
+```text
+reports/readme/latest_readme_mini_repo_audit.json
+reports/readme/latest_readme_mini_repo_audit.md
+```
+
+### AI Failure Learning Rule
+
+When a failure occurs, do not only patch the failing line. Add the lesson to the relevant public surface:
+
+| Failure type | Also update |
+|---|---|
+| README/RCC drift | `README.md`, target mini README, `reports/readme/` |
+| Runtime syntax failure | `README.md` AI learning ledger, `src/tau_scaling/core/README.md`, tests |
+| Benchmark failure | `reports/benchmarks/README.md`, benchmark report, README metrics |
+| Route/context failure | `rcc/nexus/README.md`, route map, context indexes |
+| Encoding failure | README backup, README cleanup release note, and audit-visible anchor test |
+| Claim overreach | README non-claim locks, claim card notes, release note |
+
+Non-claim lock: README audits and mini repo audits improve context alignment. They do not prove runtime correctness, silicon validation, product validation, manufacturing validation, process-node equivalence, or universal Tau Scaling law.
+
+### Required Validation
+
+```powershell
+python -m py_compile src/tau_scaling/core/runtime.py
+python -c "from tau_scaling.core.runtime import TauScalingRuntime; print('TauScalingRuntime import OK')"
+python scripts/rcc/check_rcc_nexus.py
+python scripts/rcc/audit_readme_surface.py
+python scripts/validation/validate_architecture_contracts.py
+python -m unittest discover -s tests
+python scripts/benchmarks/run_tau_scaling_benchmarks.py
+python -m tau_scaling run-claim --seed configs/seeds/logicfolding_claim_card.json
+python -m tau_scaling run-claim --seed configs/seeds/logicfolding_promotion_path_claim_card.json
+python scripts/release/validate_release.py
+```
+
+## AI Failure Learning Ledger
+
+This section is part of the repository's operating memory. When a patch fails, the failure must be compressed into a durable lesson so the next AI or human maintainer does not repeat it.
+
+### Current Lessons
+
+| Lesson ID | Failure observed | Root cause | Permanent rule |
+|---|---|---|---|
+| L-001 | RCC-N passed while runtime syntax was broken. | RCC-N validates navigation and context, not Python execution. | Runtime patches must run `py_compile`, import checks, unit tests, and CLI claims. |
+| L-002 | Architecture validator passed while runtime syntax was broken. | Architecture validation checks contract surfaces, not executable behavior. | Architecture pass is necessary but never sufficient for release readiness. |
+| L-003 | v0.3.2 introduced a concatenated import line. | Script patching merged two Python imports into one invalid statement. | Generated code patches must be compile-checked before any commit. |
+| L-004 | v0.3.2a left a literal PowerShell backtick newline inside Python. | PowerShell string escaping injected raw escape text instead of an actual newline. | Scripts that patch code must avoid raw escape residue and must compile the patched file. |
+| L-005 | Back-to-back baseline and promotion runs originally shared second-level run IDs. | Timestamp identity had insufficient granularity. | Run identity must use microsecond/token uniqueness and filesystem collision guards. |
+| L-006 | Early v0.3.2 status text said complete even when validation failed. | Script wrote completion status after failed checks without hard stop semantics. | Failed validation must produce a failure status, not a completion seal. |
+| L-007 | Benchmark evidence could be confused with product evidence. | Local runtime benchmarks can look stronger than their claim boundary. | Benchmark reports must state: local-runtime evidence only, not silicon/product validation. |
+| L-008 | README audit failed on a visually correct AI Rule heading. | The heading used the wrong dash/encoding variant. | Audit-visible anchors must be written with exact expected Unicode or ASCII tokens. |
+| L-009 | README became mojibake-contaminated after repeated Unicode patching. | Mixed console encodings and repeated copy/paste repair passes corrupted Unicode arrows/dashes/code blocks. | Public README should prefer ASCII-safe syntax except for explicitly audited Unicode anchors. |
+| L-010 | v0.3.3 release validator passed with one non-blocking finding. | Release readiness can be true while warning-level readability/risk findings remain. | Passing release readiness must still be inspected before the next experimental layer. |
+| L-011 | README release-state drift recurred after v0.3.3. | The release validator was added and pushed before the public README was fully synchronized. | Every release patch must update README checkpoint, metrics, lineage, next target, and process rules before promotion. |
+| L-012 | v0.3.3b repair failed when pasted line by line. | PowerShell line wrapping split paths such as `reports\\readme` and `scripts\\release`. | Large scripts must be run from downloaded `.ps1` files using `powershell -ExecutionPolicy Bypass -File ...`. |
+| L-013 | v0.3.3c README had out-of-order release lineage. | Emergency repair appended rows without chronological normalization. | Release lineage and lesson ledgers must be ordered before push. |
+| L-014 | README contract became more advanced than AGENTS.md and task routing matrix. | Human-facing Nexus evolved faster than agent-facing operating contract. | Agent contracts and routing matrices must be synchronized before experiments begin. |
+| L-015 | v0.4.0 synthetic suite generated charts but failed Markdown rendering. | The report renderer tried to make visual paths relative to `reports/benchmarks/v0_4_0`, although visuals live outside that subtree. | Benchmark reports must use repo-root-safe relative links for visuals, and failed synthetic-suite runs must be repaired before being treated as complete. |
+| L-016 | v0.4.0a synthetic suite completed reports but one scenario failed. | The multi-gate stress seed expected TSEK-D even though the classifier correctly returns TSEK-E when only one of eleven hard gates survives. | Synthetic test expectations must be calibrated to the classifier algebra; incomplete suites must exit non-zero. |
+| L-017 | Benchmark charts existed, but the README did not yet provide a versioned chart/finding atlas. | Visual evidence was distributed across reports and visuals folders without one public navigation surface per version. | Every benchmark version must maintain a benchmark atlas with chart registry, finding registry, version ledger, and non-claim boundary. |
+| L-018 | v0.4.0c benchmark atlas passed but README audit found two warnings. | `docs/benchmarks/README.md` and `reports/benchmarks/README.md` lacked explicit AI/RCC update guidance. | Every benchmark mini README must include an AI/RCC update rule when benchmark charts, reports, or interpretation surfaces change. |
+| L-019 | v0.4.0d attempted AI/RCC mini README repair but audit still reported two warnings. | The audit script searches exact tokens such as `README Update Rule`; the added heading `AI / RCC Update Rule` was semantically correct but not audit-recognized. | Mini README repair patches must use exact audit-visible anchor phrases, not merely equivalent wording. |
+| L-020 | After v0.4.0e, README checkpoint advanced while AGENTS.md and task_routing_matrix.md still identified v0.3.3e. | Fast benchmark/readme repair layers advanced human-facing state faster than agent-facing contracts. | Every release-like change must re-sync AGENTS.md, task_routing_matrix.md, and route surfaces to the current checkpoint before the next experiment. |
+| L-021 | v0.4.2 showed every paired hard-gate failure classified as TSEK-C. | The current classifier treats paired missing gates as controlled downgrade unless overclaim or severe collapse forces TSEK-E. | Do not harden classifier thresholds until explanation cards classify whether pair-policy behavior is expected, suspicious, or promotion-repairable. |
+| L-022 | v0.4.3 produced 55 `review_pair_policy` cards and 1 `hard_reject_without_finding` card. | Explanation cards successfully exposed classifier-policy questions without mutating classifier behavior. | Pair-policy changes must pass through a non-enforcing policy review layer and then a dry-run simulator before classifier enforcement. |
+| L-023 | v0.4.4 created policy candidates but the repo still needed a way to turn outputs into improvement priorities. | Validation, benchmark, explanation, and policy reports were readable, but not yet synthesized into a feedback surface for the next agent. | Every mature runtime should emit a Nexus feedback report that ranks improvement targets without mutating classifier behavior. |
+| L-024 | v0.4.5 feedback emitted correct priorities but `health_passed` was false because it read validation surfaces before the final validators refreshed. | Reflective feedback can be logically correct while its health score is stale relative to the final seal. | Run prerequisite validators before Nexus feedback, then run Nexus feedback, then run final validators again before commit/push. |
+| L-025 | v0.4.5a proved ordering was correct but `health_passed` stayed false. | The feedback scorer expected numeric `findings`, numeric `step_failures`, and top-level `total_points`, while actual reports used lists and `results`. | Feedback health checks must normalize report schemas before scoring; schema mismatch is not validation failure. |
+| L-026 | v0.4.5b changed the feedback schema label but `health_score` still used the old comparisons. | Regex patching did not replace the intended function body, so labels advanced faster than executable logic. | Function repairs must verify the target function body changed, not just schema strings or docs. |
+| L-027 | v0.4.5c repaired list counters but `sensitivity_sweep` still failed health scoring. | The persisted sensitivity JSON used `chart_paths` while the feedback health scorer checked only `chart_count`. | Feedback health scoring must normalize both count fields and evidence-list fields such as chart_paths. |
+| L-028 | Nexus feedback v0.4.5d reached health 1.0 and ranked pair-policy pressure as the top next target. | Policy review pressure should not mutate the classifier directly. | Any classifier-policy change must first pass a dry-run simulator comparing current class vs simulated policy class. |
+
+### Failure Response Protocol
+
+When a failure occurs:
+
+1. **Stop promotion.** Do not commit or push a failing runtime, checker, test, or benchmark state.
+2. **Locate the failing surface.** Classify as runtime, syntax, RCC-N, architecture, benchmark, README, mini README, encoding, or evidence-output failure.
+3. **Patch minimally.** Repair the smallest surface that caused the failure.
+4. **Run the full validation set.** Compile, import, RCC-N, README audit, architecture, tests, benchmarks, baseline claim, and promotion-path claim.
+5. **Log the lesson.** Update this ledger and the affected mini README if the failure teaches a reusable rule.
+6. **Only then commit.** A passing run plus a logged lesson is a promotable repair.
+
+### AI Patch Rule
+
+Any AI patch that causes a failure must update this section before the repair is considered complete. Failure logs are repository memory, not blame records.
+
+## Agent Geometry Layer
+
+v0.3.3e synchronizes the agent-facing contract with the Nexus geometry before v0.4.0 experiments begin.
+
+### Geometry Principle
+
+The repo is treated as a navigable coherence field:
+
+```text
+center  = source boundaries, non-claim locks, architecture, context indexes
+inner   = claim cards, tau vectors, gates, schemas, classifier state
+middle  = CLI flows, tests, scripts, benchmarks, release validator
+outer   = reports, evidence packages, ledgers, visuals, release notes
+```
+
+Every patch must preserve route coherence:
+
+```text
+intent -> shell -> meridian -> sector -> files -> validation -> evidence -> lesson
+```
+
+### Coherence Gate
+
+A patch is coherent only when these surfaces agree:
+
+```text
+README.md
+AGENTS.md
+rcc/nexus/task_routing_matrix.md
+rcc/nexus/route_map.json
+docs/context/repository_context_index.json
+docs/context/rcc_nexus_index.json
+target folder README.md
+latest validation reports
+```
+
+### v0.4 Readiness Rule
+
+Synthetic gate tests may begin only after the agent contract, task routing matrix, release validator, README audit, and unit tests all pass.
+
+Non-claim lock: geometric routing improves repository orientation. It is not AI understanding, code correctness, silicon validation, product validation, manufacturing validation, process-node equivalence, or universal Tau Scaling proof.
+
+## Coherence Reflection Layer v0.4.0f
+
+v0.4.0f pauses after the benchmark/chart/mini-README repair sequence and turns the repo's operational history into a forward plan.
+
+Primary reflection surfaces:
+
+```text
+docs/reflection/tau_scaling_reflection_v0_4_0f.md
+reports/reflection/latest_system_reflection.md
+reports/reflection/latest_system_reflection.json
+visuals/reflection/v0_4_0f/
+```
+
+Current reflection finding:
+
+```text
+The repo is clean at the validation layer, but agent-facing contracts can still lag behind the root README after fast benchmark evolution.
+```
+
+New rule:
+
+```text
+Every release-like README or benchmark evolution must check AGENTS.md and rcc/nexus/task_routing_matrix.md for current-version alignment.
+```
+
+Boundary: reflection improves repository coherence and experiment planning only. It is not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.
+
+## Process Alignment Layer
+
+This layer keeps the repository synchronized after every evolution step.
+
+### Alignment Rules
+
+| Rule | Requirement |
+|---|---|
+| Version-state rule | After every commit that changes runtime, reports, validators, or public docs, the main README current checkpoint must be updated. |
+| Release-readiness rule | `python scripts/release/validate_release.py` is the final local gate before commit/push. |
+| Warning-inspection rule | A passing validator with warnings is not ignored; warning findings must be inspected and either repaired or explicitly classified as non-blocking. |
+| Directory-box rule | The Full Directory Box must not contain duplicate top-level or durable child entries. |
+| File-run rule | Large repair scripts must be run with `powershell -File`, not pasted line by line. |
+| Experiment-start rule | No v0.4+ Tau Scaling experiment starts until release readiness, README audit, and unit tests pass. |
+| Boundary rule | Process alignment is repository hygiene. It is not silicon validation, product validation, manufacturing validation, process-node equivalence, or universal-law proof. |
+
+### Render and Ordering Discipline
+
+Before push, inspect the public README for:
+
+```text
+- current checkpoint matches latest commit intent
+- release lineage is chronological
+- failure lessons are numerically ordered
+- directory box has no duplicate durable entries
+- Quick Start includes the release validator
+- next recommended version points to the actual next layer
+```
+
+### Pre-Experiment Checklist
+
+```powershell
+python scripts/release/validate_release.py
+python scripts/rcc/audit_readme_surface.py
+python -m unittest discover -s tests
+```
+
+Expected minimum state:
+
+```text
+release_readiness: passed
+step_failures: 0
+README audit: passed
+unit_tests: OK
+```
+
+## AI Rule — Directory Box and Mini README Synchronization
+
+This exact heading uses a Unicode em dash (U+2014) because `scripts/rcc/audit_readme_surface.py` checks this anchor literally.
+
+This repository uses RCC-N style navigation. Repository structure is part of the public interface.
+
+Any AI or human patch that adds, removes, renames, or repurposes a folder must update these surfaces in the same commit:
+
+1. The root README Full Directory Box.
+2. The affected folder-level mini `README.md`.
+3. `docs/context/repository_context_index.json` if route meaning changes.
+4. `docs/context/rcc_nexus_index.json` if Nexus position changes.
+5. `rcc/nexus/route_map.json` if task routing changes.
+6. Relevant validation reports after rerunning checks.
+
+Non-claim lock: directory navigation is not correctness, but stale navigation is repository drift.
+
+## Full Directory Box
+
+This box is a durable public repository map. Update it in the same commit whenever top-level folders or durable subfolders are added, removed, renamed, or repurposed. Generated timestamped runtime folders under `artifacts/runs/` are intentionally excluded.
+
+```text
+tau-scaling/
+  .github/
+    workflows/
+  AGENTS.md
+  LICENSE
+  pyproject.toml
+  README.md
+  README_5_MINUTES.md
+  README_90_SECONDS.md
+  artifacts/
+    dashboards/
+    evidence_packages/
+    ledgers/
+    reports/
+    runs/
+      latest/
+        ledger/
+        reports/
+        scoring/
+        simulation/
+        state/
+        validation/
+        visuals/
+    visuals/
+  configs/
+    seeds/
+  docs/
+    feedback/
+    architecture/
+    architecture_changes/
+    benchmarks/
+    context/
+      drift/
+    future_architecture/
+    injected_theory/
+    injections/
+    protocols/
+    public_release/
+    release_notes/
+    reflection/
+    software_architecture/
+    theory/
+  examples/
+  outputs/
+    evidence/
+    ledger/
+    logs/
+    plots/
+    reports/
+    state/
+  rcc/
+    nexus/
+  releases/
+  reports/
+    nexus_feedback/
+    policy/
+    explanations/
+    interactions/
+    architecture/
+    benchmarks/
+    cleanup/
+    rcc_nexus/
+    readiness/
+    readme/
+      backups/
+    release/
+    reflection/
+    repo_dump/
+    runtime/
+    status/
+      legacy_root_status/
+  scripts/
+    feedback/
+    benchmarks/
+    maintenance/
+    rcc/
+    release/
+    reflection/
+    validation/
+  src/
+    tau_scaling/
+      claims/
+      core/
+      evidence/
+      gates/
+      schemas/
+      simulation/
+      tau/
+      utils/
+  tests/
+  visuals/
+    nexus_feedback/
+    policy/
+    explanations/
+    interactions/
+    reflection/
+    rcc_nexus/
+    tau_scaling/
+```
+
+## Unified Release Readiness Layer
+
+v0.3.3 adds one authoritative local release gate before deeper Tau Scaling experiments.
+
+Primary command:
+
+```powershell
+python scripts/release/validate_release.py
+```
+
+Primary outputs:
+
+```text
+reports/release/latest_release_readiness.json
+reports/release/latest_release_readiness.md
+```
+
+Current expected state:
+
+```text
+schema: tau-scaling-unified-release-readiness-v0.3.3
+passed: true
+step_failures: 0
+baseline_claim: TSEK-C / A_TSEK 0.0000
+promotion_path_claim: TSEK-B / A_TSEK 1.0000
+benchmark_runs: 12
+unique_run_ids: 12
+duplicate_run_ids: []
+```
+
+The release validator checks compile, import, RCC-N, README audit, architecture validation, unit tests, benchmark harness, baseline claim, promotion-path claim, expected artifact existence, and README encoding/path-break risk.
+
+Non-claim lock: release readiness validates repository/runtime hygiene only. It is not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.
+
+## Synthetic Gate Suite v0.4.0
+
+v0.4.0 adds controlled gate-isolation scenarios and charted benchmark/finding reports.
+
+Primary command:
+
+```powershell
+python scripts/benchmarks/run_synthetic_gate_suite.py
+```
+
+Primary outputs:
+
+```text
+configs/seeds/tests/synthetic_gate_manifest_v0_4_0.json
+reports/benchmarks/latest_synthetic_gate_suite.json
+reports/benchmarks/latest_synthetic_gate_suite.md
+reports/gates/latest_synthetic_gate_report.md
+reports/findings/latest_finding_charts.md
+visuals/benchmarks/v0_4_0/
+visuals/findings/v0_4_0/
+```
+
+### Benchmark and Finding Charts
+
+The suite emits charts for:
+
+```text
+class distribution
+A_TSEK by scenario
+finding count by scenario
+diagnostic average by scenario
+elapsed ms by scenario
+gate pass/fail heatmap
+finding code frequency
+per-finding scenario presence
+```
+
+### Boundary
+
+Synthetic gate charts show local runtime behavior only. They are not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.
+
+## Pair Policy Dry-Run Simulator v0.4.6
+
+v0.4.6 simulates v0.4.4 pair-policy enforcement without mutating the classifier.
+
+Primary command:
+
+```powershell
+python scripts/benchmarks/run_pair_policy_dry_run.py
+```
+
+Primary outputs:
+
+```text
+reports/policy_dry_run/latest_pair_policy_dry_run.json
+reports/policy_dry_run/latest_pair_policy_dry_run.md
+visuals/policy_dry_run/v0_4_6/
+```
+
+The simulator compares:
+
+```text
+current_classification
+vs
+simulated_policy_classification
+```
+
+It answers:
+
+```text
+How many pairs drift if policy is enforced?
+How many TSEK-C cases become TSEK-D?
+How many require human review?
+Would enforcement over-penalize local synthetic evidence?
+```
+
+Boundary: dry-run simulation is classifier governance only. It does not change classifier behavior and does not validate silicon, product performance, manufacturing capability, process-node equivalence, benchmark superiority, AI understanding, or universal Tau Scaling law.
+
+## Nexus Feedback Chart-Path Health Repair v0.4.5d
+
+v0.4.5d repairs the final feedback-health mismatch.
+
+Cause found:
+
+```text
+v0.4.5c normalized findings and step_failures correctly.
+The remaining failed check was sensitivity_sweep.
+The sensitivity report stores chart evidence as chart_paths, not always chart_count.
+```
+
+Repair:
+
+```text
+sensitivity_chart_count = chart_count if present else len(chart_paths)
+```
+
+Expected result:
+
+```text
+health_score: 1.0
+health_passed: true
+schema: tau-scaling-nexus-reflective-feedback-v0.4.5d
+```
+
+Boundary: chart-path health repair is repository self-observation only. It does not mutate classifier behavior and does not validate silicon, product performance, manufacturing capability, process-node equivalence, benchmark superiority, AI understanding, or universal Tau Scaling law.
+
+## Nexus Feedback Function-Block Repair v0.4.5c
+
+v0.4.5c repairs the actual `health_score` function body.
+
+Cause found:
+
+```text
+v0.4.5b updated schema labels and docs,
+but the old health_score logic remained active.
+```
+
+Repair:
+
+```text
+replace health_score by explicit function block
+normalize list-valued findings and step_failures
+derive sensitivity_points from total_points or len(results)
+emit health.details for auditability
+```
+
+Expected result:
+
+```text
+health_score: 1.0
+health_passed: true
+schema: tau-scaling-nexus-reflective-feedback-v0.4.5c
+```
+
+Boundary: feedback function repair is repository self-observation only. It does not mutate classifier behavior and does not validate silicon, product performance, manufacturing capability, process-node equivalence, benchmark superiority, AI understanding, or universal Tau Scaling law.
+
+## Nexus Feedback Health Schema Alignment v0.4.5b
+
+v0.4.5b repairs the feedback health scorer, not the runtime.
+
+Cause found:
+
+```text
+release readiness writes findings and step_failures as lists.
+sensitivity sweep stores point count in results, not always as top-level total_points.
+```
+
+Repair:
+
+```text
+[] counts as zero findings.
+[] counts as zero step failures.
+sensitivity_points = total_points if present, else len(results).
+```
+
+Primary command:
+
+```powershell
+python scripts/feedback/run_nexus_feedback.py
+```
+
+Expected result after fresh validators:
+
+```text
+health_score: 1.0
+health_passed: true
+```
+
+Boundary: feedback health schema alignment is repository self-observation only. It does not mutate classifier behavior and does not validate silicon, product performance, manufacturing capability, process-node equivalence, benchmark superiority, AI understanding, or universal Tau Scaling law.
+
+## Feedback Health Ordering Repair v0.4.5a
+
+v0.4.5a repairs the execution order for reflective feedback.
+
+Primary sequence:
+
+```powershell
+python scripts/release/validate_release.py
+python scripts/rcc/audit_readme_surface.py
+python scripts/rcc/check_rcc_nexus.py
+python scripts/feedback/run_nexus_feedback.py
+python scripts/release/validate_release.py
+python scripts/rcc/audit_readme_surface.py
+python scripts/rcc/check_rcc_nexus.py
+python -m unittest discover -s tests
+```
+
+The purpose is to ensure Nexus feedback reads freshly generated validation reports before it emits its health score and improvement priorities.
+
+Boundary: feedback health ordering is repository self-observation only. It does not mutate classifier behavior and does not validate silicon, product performance, manufacturing capability, process-node equivalence, benchmark superiority, AI understanding, or universal Tau Scaling law.
+
+## Nexus Reflective Feedback Loop v0.4.5
+
+v0.4.5 lets the repository read its own latest outputs and emit improvement priorities.
+
+Primary command:
+
+```powershell
+python scripts/feedback/run_nexus_feedback.py
+```
+
+Primary outputs:
+
+```text
+reports/nexus_feedback/latest_nexus_feedback.json
+reports/nexus_feedback/latest_nexus_feedback.md
+visuals/nexus_feedback/v0_4_5/
+```
+
+The feedback loop reads:
+
+```text
+release readiness
+README audit
+RCC-N checker
+synthetic gate suite
+sensitivity sweep
+gate interaction matrix
+threshold explanation cards
+pair policy review
+```
+
+The purpose is to answer:
+
+```text
+What is healthy?
+What is producing policy pressure?
+What should be improved next?
+What should not be mutated yet?
+```
+
+This creates a reflective Nexus surface: the system does not merely generate reports; it turns its reports into ranked improvement signals.
+
+Boundary: Nexus feedback is repository self-observation and improvement prioritization only. It does not mutate classifier behavior and does not validate silicon, products, manufacturing, process nodes, benchmark superiority, AI understanding, or universal Tau Scaling law.
+
+## Pair Policy Review Gate v0.4.4
+
+v0.4.4 converts `review_pair_policy` findings into an explicit non-enforcing policy table.
+
+Primary command:
+
+```powershell
+python scripts/benchmarks/run_pair_policy_review.py
+```
+
+Primary outputs:
+
+```text
+reports/policy/latest_pair_policy_review.json
+reports/policy/latest_pair_policy_review.md
+visuals/policy/v0_4_4/
+```
+
+The purpose is to answer:
+
+```text
+Which paired failures should remain TSEK-C?
+Which paired failures are TSEK-D candidates?
+Which paired failures require human review?
+Should any pair become a TSEK-E candidate?
+```
+
+This layer does **not** change classifier output. It creates a governed decision surface for a future dry-run policy simulator.
+
+Boundary: pair policy review is classifier governance only. It is not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.
+
+## Threshold Explanation Cards v0.4.3
+
+v0.4.3 turns classifier outputs into explanation cards.
+
+Primary command:
+
+```powershell
+python scripts/benchmarks/generate_threshold_explanation_cards.py
+```
+
+Primary outputs:
+
+```text
+reports/explanations/latest_threshold_explanation_cards.json
+reports/explanations/latest_threshold_explanation_cards.md
+reports/explanations/cards/v0_4_3/
+visuals/explanations/v0_4_3/
+```
+
+The purpose is to answer:
+
+```text
+Why did this claim receive its class?
+Which gates caused downgrade?
+What minimum repair would promote it?
+Which classifier behaviors should be reviewed before hardening?
+```
+
+Current design question:
+
+```text
+v0.4.2 showed all paired gate failures remained TSEK-C.
+v0.4.3 marks those cases as review_pair_policy instead of changing classifier rules prematurely.
+```
+
+Boundary: explanation cards explain local classifier behavior only. They are not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.
+
+## Gate Interaction Matrix v0.4.2
+
+v0.4.2 moves from single-gate threshold curves to paired gate-failure interactions.
+
+Primary command:
+
+```powershell
+python scripts/benchmarks/run_gate_interaction_matrix.py
+```
+
+Primary outputs:
+
+```text
+configs/seeds/interactions/gate_interaction_manifest_v0_4_2.json
+reports/interactions/latest_gate_interaction_matrix.json
+reports/interactions/latest_gate_interaction_matrix.md
+visuals/interactions/v0_4_2/
+```
+
+The purpose is to answer:
+
+```text
+Which gates compound each other?
+Which paired failures force hard downgrades?
+Which pairs remain diagnostic rather than catastrophic?
+Which pairings reveal classifier brittleness?
+```
+
+Boundary: interaction matrices are synthetic local runtime diagnostics only. They are not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.
+
+## Synthetic Gate Sensitivity Sweep v0.4.1
+
+v0.4.1 moves from discrete synthetic pass/fail scenarios to threshold curves.
+
+Primary command:
+
+```powershell
+python scripts/benchmarks/run_sensitivity_sweep.py
+```
+
+Primary outputs:
+
+```text
+configs/seeds/sweeps/sensitivity_sweep_manifest_v0_4_1.json
+reports/sensitivity/latest_sensitivity_sweep.json
+reports/sensitivity/latest_sensitivity_sweep.md
+visuals/sensitivity/v0_4_1/
+```
+
+Current sweep families:
+
+```text
+logicfolding_vertical_penalty
+gamma_tau_etp_tau_gain
+overclaim_pressure
+```
+
+The purpose is to answer:
+
+```text
+Where does the gate flip?
+Where does A_TSEK collapse?
+Where does diagnostic_average remain stable?
+Where does the class transition occur?
+```
+
+Boundary: sensitivity sweeps are synthetic local runtime diagnostics only. They are not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.
+
+## Benchmark and Finding Atlas
+
+v0.4.0c adds a stable benchmark atlas so every benchmark layer has a public chart/finding registry.
+
+Primary atlas:
+
+```text
+docs/benchmarks/benchmark_atlas.md
+```
+
+Atlas surfaces:
+
+```text
+reports/benchmarks/README.md
+reports/benchmarks/v0_4_0/README.md
+reports/gates/README.md
+reports/findings/README.md
+visuals/benchmarks/README.md
+visuals/benchmarks/v0_4_0/README.md
+visuals/findings/README.md
+visuals/findings/v0_4_0/README.md
+```
+
+Current synthetic-suite seal:
+
+```text
+total_scenarios: 10
+passed_scenarios: 10
+failed_scenarios: 0
+suite_complete: true
+chart_count: 18
+class_counts: TSEK-B=1, TSEK-C=7, TSEK-E=2
+```
+
+Every future benchmark version must add or update:
+
+```text
+benchmark summary
+finding summary
+chart registry
+version ledger row
+boundary statement
+```
+
+Boundary: benchmark charts are local runtime diagnostics only. They are not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.
+
+## Benchmark Learning Layer
+
+v0.3.2+ adds collision-proof run identity and a local benchmark loop.
+
+Primary benchmark command:
+
+```powershell
+python scripts/benchmarks/run_tau_scaling_benchmarks.py
+```
+
+Latest benchmark proof:
+
+```text
+schema: tau-scaling-benchmark-summary-v0.3.2
+total_runs: 12
+unique_run_ids: 12
+duplicate_run_ids: []
+collision_proof_run_identity_passed: true
+class_counts: { TSEK-B: 6, TSEK-C: 6 }
+```
+
+Benchmark outputs:
+
+```text
+reports/benchmarks/latest_benchmark_summary.json
+reports/benchmarks/latest_benchmark_summary.md
+```
+
+Boundary: benchmark stability is local-runtime evidence only. It is not silicon validation, product validation, manufacturing validation, process-node equivalence, or universal-law proof.
+
+## Public Non-Claim Locks
+
+These exact phrases and machine-readable lock IDs are audit-visible and must remain in the root README.
+
+Human-readable locks:
+
+- Roadmap coherence is not validation.
+- Simulation is not silicon validation.
+- Simulation is not silicon evidence.
+- Documentation is not correctness.
+- RCC-N navigation is not code correctness.
+- Navigation is not validation.
+- Density equivalence is not node equivalence.
+- Local path win is not full-chip win.
+- Context reconstruction is not correctness proof.
+- Evidence packages are task-bounded artifacts, not universal proof.
+- Tau Scaling runtime outputs do not independently validate silicon, product metrics, manufacturing capability, benchmark superiority, process-node equivalence, or universal physical law.
+- Validation remains required.
+
+Machine-readable lock IDs:
+
+```text
+roadmap_coherence_is_not_validation
+simulation_is_not_silicon_validation
+simulation_is_not_silicon_evidence
+documentation_is_not_correctness
+navigation_is_not_validation
+context_reconstruction_is_not_correctness_proof
+density_equivalence_is_not_node_equivalence
+local_path_win_is_not_full_chip_win
+validation_remains_required
+```
+
+## Release Lineage
+
+| Version | Meaning |
+|---|---|
+| v0.1 | Minimal Tau Scaling runtime scaffold. |
+| v0.2-RCCN | RCC-N / OMN-style repository structure injection. |
+| v0.2.1 | Root cleanup and identity guard. |
+| v0.2.2 | Version seal and release manifest layer. |
+| v0.2.3 | README / Nexus public polish layer. |
+| v0.2.3a | RCC-N trisection anchor repair. |
+| v0.3 | Evidence Promotion Path + Directory Governance. |
+| v0.3.1 | Public README directory-box repair and durable map cleanup. |
+| v0.3.2b | Collision-proof run identity and benchmark validation. |
+| v0.3.2c | AI failure-learning README ledger and protocol. |
+| v0.3.2d | README + mini repo audit map and executable gap scanner. |
+| v0.3.2e | README / mini repo audit repair and visible lock restoration. |
+| v0.3.2f | README / mini repo audit visibility repair. |
+| v0.3.2g | Exact Unicode README anchor repair. |
+| v0.3.2h | README mojibake cleanup and audit surface consolidation. |
+| v0.3.3 | Unified release validator and release-readiness reports. |
+| v0.3.3a | Main README release-state synchronization. |
+| v0.3.3c | Safe README process alignment repair after pasted-script path break. |
+| v0.3.3d | README render, lineage, and validator-warning polish. |
+| v0.3.3e | Agent contract geometry sync and v0.4 routing readiness. |
+| v0.4.0 | Synthetic gate suite with benchmark charts and finding charts. |
+| v0.4.0a | Synthetic gate report link repair and complete report regeneration. |
+| v0.4.0b | Synthetic gate expectation calibration and hard-fail incomplete suite semantics. |
+| v0.4.0c | Benchmark atlas and per-version chart/finding registry. |
+| v0.4.0d | Benchmark mini README AI/RCC warning repair. |
+| v0.4.0e | Exact mini README audit-anchor repair for benchmark docs. |
+| v0.4.0f | Coherence reflection and agent contract re-sync after benchmark atlas sequence. |
+| v0.4.1 | Synthetic gate sensitivity sweep and threshold curves. |
+| v0.4.2 | Gate interaction matrix and paired gate-failure heatmaps. |
+| v0.4.3 | Threshold explanation cards and promotion-repair hints. |
+| v0.4.4 | Pair policy review gate for non-enforcing classifier-governance candidates. |
+| v0.4.5 | Nexus reflective feedback loop for ranked improvement signals. |
+| v0.4.5a | Feedback health ordering repair so Nexus feedback reads fresh validation surfaces. |
+| v0.4.5b | Nexus feedback health schema alignment for list-valued findings and derived sensitivity points. |
+| v0.4.5c | Nexus feedback function-block repair to ensure health scorer logic actually updates. |
+| v0.4.5d | Nexus feedback chart-path health repair for sensitivity sweep chart evidence. |
+| v0.4.6 | Pair policy dry-run simulator for non-mutating classifier-policy impact analysis. |
+
+## Next Recommended Version
+
+**TAU-SCALING-SA v0.4.7 - Policy Impact Explanation Cards**
+
+Recommended goals:
+
+- Explain each simulated class drift.
+- Identify over-penalty risks.
+- Separate justified downgrades from policy-review-only cases.
+- Preserve non-claim locks: impact explanations are local classifier governance only.

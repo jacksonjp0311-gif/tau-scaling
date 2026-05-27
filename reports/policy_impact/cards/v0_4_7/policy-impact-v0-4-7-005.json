@@ -1,0 +1,28 @@
+{
+  "card_id": "policy-impact-v0-4-7-005",
+  "current_A_TSEK": 0.0,
+  "current_classification": "TSEK-C",
+  "current_diagnostic_average": 0.8182,
+  "decision_hint": "Candidate controlled downgrade; explain and regression-test before enforcement.",
+  "drift_severity": 1,
+  "drifted": true,
+  "finding_codes": [
+    "TSEK_B_method_MISSING",
+    "TSEK_B_evidence_MISSING"
+  ],
+  "findings_count": 2,
+  "gate_a": "B_method",
+  "gate_b": "B_evidence",
+  "gate_pair": "B_method+B_evidence",
+  "impact_class": "controlled_policy_downgrade",
+  "impact_explanation": "Pair B_method+B_evidence would move from TSEK-C to TSEK-D under dry-run policy.",
+  "non_claim_lock": "Policy impact cards explain simulated classifier-governance effects only; they do not validate silicon or product claims.",
+  "policy_class": "TSEK-D_CANDIDATE",
+  "policy_enforced": false,
+  "reason": "Evidence plus physical-disclosure failure weakens auditability beyond ordinary single-gate downgrade.",
+  "recommended_action_from_policy": "Candidate downgrade below TSEK-C unless evidence package, yield/method, and closure disclosures are repaired.",
+  "risk_label": "downgrade_risk",
+  "schema": "tau-scaling-policy-impact-card-v0.4.7",
+  "simulated_policy_classification": "TSEK-D",
+  "simulation_action": "candidate_downgrade"
+}

@@ -1,6 +1,6 @@
 # AGENTS.md — Tau Scaling Agent Operating Contract
 
-Current contract: **TAU-SCALING-SA v0.4.6 - Pair Policy Dry-Run Simulator**
+Current contract: **TAU-SCALING-SA v0.4.7 - Policy Impact Explanation Cards**
 
 ## Mission
 
@@ -72,6 +72,7 @@ python -m unittest discover -s tests
 | Pair policy patch | `reports/policy/`, `visuals/policy/`, explanation cards | release validator + policy review report; no classifier mutation |
 | Nexus feedback patch | `scripts/feedback/`, `reports/nexus_feedback/`, `visuals/nexus_feedback/` | release validator + Nexus feedback report; no classifier mutation |
 | Pair policy dry-run patch | `reports/policy_dry_run/`, `visuals/policy_dry_run/`, policy review report | dry-run report + Nexus feedback + release validator; no classifier mutation |
+| Policy impact patch | `reports/policy_impact/`, `visuals/policy_impact/`, dry-run report | impact cards + release validator; no classifier mutation |
 | Public claim replay patch | source boundary docs, `configs/seeds/public_claims/`, claim reports | release validator + claim replay report |
 | Directory structure patch | Full Directory Box, affected mini READMEs, context indexes | README audit + RCC-N + release validator |
 

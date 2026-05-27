@@ -10,8 +10,8 @@
 
 Repository: `tau-scaling`  
 Package / CLI: `tau_scaling` / `tau-scaling`  
-Current checkpoint: **TAU-SCALING-SA v0.4.6 - Pair Policy Dry-Run Simulator**  
-Previous seal: **TAU-SCALING-SA v0.4.5d - Nexus Feedback Chart-Path Health Repair**
+Current checkpoint: **TAU-SCALING-SA v0.4.7 - Policy Impact Explanation Cards**  
+Previous seal: **TAU-SCALING-SA v0.4.6 - Pair Policy Dry-Run Simulator**
 
 Tau Scaling is a local-first, evidence-gated Python runtime for evaluating tau-scaling claims through structured claim cards, workload declarations, tau vectors, LogicFolding survivability checks, edge-to-surface boundary algebra, energy / thermal / PDN / PVT gates, Monte Carlo checker stress, TSEK classification, evidence packages, and RCC-N / OMN-style repository navigation.
 
@@ -55,7 +55,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | TAU-SCALING-SA v0.4.6 |
+| Current checkpoint | TAU-SCALING-SA v0.4.7 |
 | Synthetic gate suite | v0.4.0 / benchmark + finding charts |
 | Package version | 0.2.0 |
 | Baseline seed | TSEK-C / A_TSEK 0.0000 |
@@ -90,6 +90,8 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 | Nexus feedback charts | `visuals/nexus_feedback/v0_4_5/` |
 | Pair policy dry-run | `reports/policy_dry_run/latest_pair_policy_dry_run.md` |
 | Pair policy dry-run charts | `visuals/policy_dry_run/v0_4_6/` |
+| Policy impact cards | `reports/policy_impact/latest_policy_impact_cards.md` |
+| Policy impact charts | `visuals/policy_impact/v0_4_7/` |
 | Agent contract version sync | v0.4.0f / updated from v0.3.3e |
 | Release readiness report | `reports/release/latest_release_readiness.md` |
 | Collision-proof run identity | passed |
@@ -120,6 +122,7 @@ python scripts/benchmarks/run_gate_interaction_matrix.py
 python scripts/benchmarks/generate_threshold_explanation_cards.py
 python scripts/benchmarks/run_pair_policy_review.py
 python scripts/benchmarks/run_pair_policy_dry_run.py
+python scripts/benchmarks/generate_policy_impact_cards.py
 python scripts/feedback/run_nexus_feedback.py
 python scripts/release/validate_release.py
 ```
@@ -414,6 +417,7 @@ This section is part of the repository's operating memory. When a patch fails, t
 | L-026 | v0.4.5b changed the feedback schema label but `health_score` still used the old comparisons. | Regex patching did not replace the intended function body, so labels advanced faster than executable logic. | Function repairs must verify the target function body changed, not just schema strings or docs. |
 | L-027 | v0.4.5c repaired list counters but `sensitivity_sweep` still failed health scoring. | The persisted sensitivity JSON used `chart_paths` while the feedback health scorer checked only `chart_count`. | Feedback health scoring must normalize both count fields and evidence-list fields such as chart_paths. |
 | L-028 | Nexus feedback v0.4.5d reached health 1.0 and ranked pair-policy pressure as the top next target. | Policy review pressure should not mutate the classifier directly. | Any classifier-policy change must first pass a dry-run simulator comparing current class vs simulated policy class. |
+| L-029 | v0.4.6 produced 9 drift cases but drift alone is not an enforcement decision. | A dry-run simulator can show impact without explaining whether each impact is justified. | Any simulated classifier drift must receive an impact explanation card before enforcement is considered. |
 
 ### Failure Response Protocol
 
@@ -741,6 +745,36 @@ per-finding scenario presence
 ### Boundary
 
 Synthetic gate charts show local runtime behavior only. They are not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.
+
+## Policy Impact Explanation Cards v0.4.7
+
+v0.4.7 explains the drift cases produced by the v0.4.6 dry-run simulator.
+
+Primary command:
+
+```powershell
+python scripts/benchmarks/generate_policy_impact_cards.py
+```
+
+Primary outputs:
+
+```text
+reports/policy_impact/latest_policy_impact_cards.json
+reports/policy_impact/latest_policy_impact_cards.md
+reports/policy_impact/cards/v0_4_7/
+visuals/policy_impact/v0_4_7/
+```
+
+This layer explains:
+
+```text
+which dry-run pairs drifted
+why each drift happened
+whether the drift is a controlled downgrade or human-review case
+which gates are most involved in policy impact
+```
+
+Boundary: impact cards explain simulated classifier-governance effects only. They do not change classifier behavior and do not validate silicon, product performance, manufacturing capability, process-node equivalence, benchmark superiority, AI understanding, or universal Tau Scaling law.
 
 ## Pair Policy Dry-Run Simulator v0.4.6
 
@@ -1222,14 +1256,15 @@ validation_remains_required
 | v0.4.5c | Nexus feedback function-block repair to ensure health scorer logic actually updates. |
 | v0.4.5d | Nexus feedback chart-path health repair for sensitivity sweep chart evidence. |
 | v0.4.6 | Pair policy dry-run simulator for non-mutating classifier-policy impact analysis. |
+| v0.4.7 | Policy impact explanation cards for dry-run drift cases. |
 
 ## Next Recommended Version
 
-**TAU-SCALING-SA v0.4.7 - Policy Impact Explanation Cards**
+**TAU-SCALING-SA v0.4.8 - Policy Decision Record**
 
 Recommended goals:
 
-- Explain each simulated class drift.
-- Identify over-penalty risks.
-- Separate justified downgrades from policy-review-only cases.
-- Preserve non-claim locks: impact explanations are local classifier governance only.
+- Convert policy impact cards into a decision record.
+- Approve, reject, or defer each simulated drift class.
+- Preserve classifier non-mutation until decision record passes.
+- Preserve non-claim locks: policy decisions are local classifier governance only.
