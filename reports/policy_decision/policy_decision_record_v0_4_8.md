@@ -1,6 +1,6 @@
 # Tau Scaling v0.4.8 Policy Decision Record
 
-Generated: `2026-05-27T15:15:08.099591+00:00`
+Generated: `2026-05-27T15:38:22.332458+00:00`
 
 ## Result
 

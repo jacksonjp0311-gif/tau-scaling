@@ -274,7 +274,7 @@
     "B_workload": 1,
     "B_yield": 1
   },
-  "generated_at": "2026-05-27T15:15:06.580940+00:00",
+  "generated_at": "2026-05-27T15:38:20.583904+00:00",
   "hard_reject_candidate_count": 0,
   "impact_class_counts": {
     "controlled_policy_downgrade": 6,

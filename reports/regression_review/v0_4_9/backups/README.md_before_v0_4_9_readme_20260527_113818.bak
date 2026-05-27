@@ -10,8 +10,8 @@
 
 Repository: `tau-scaling`  
 Package / CLI: `tau_scaling` / `tau-scaling`  
-Current checkpoint: **TAU-SCALING-SA v0.4.9 - Regression and Over-Penalty Review**  
-Previous seal: **TAU-SCALING-SA v0.4.8 - Policy Decision Record**
+Current checkpoint: **TAU-SCALING-SA v0.4.8 - Policy Decision Record**  
+Previous seal: **TAU-SCALING-SA v0.4.7 - Policy Impact Explanation Cards**
 
 Tau Scaling is a local-first, evidence-gated Python runtime for evaluating tau-scaling claims through structured claim cards, workload declarations, tau vectors, LogicFolding survivability checks, edge-to-surface boundary algebra, energy / thermal / PDN / PVT gates, Monte Carlo checker stress, TSEK classification, evidence packages, and RCC-N / OMN-style repository navigation.
 
@@ -55,7 +55,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | TAU-SCALING-SA v0.4.9 |
+| Current checkpoint | TAU-SCALING-SA v0.4.8 |
 | Synthetic gate suite | v0.4.0 / benchmark + finding charts |
 | Package version | 0.2.0 |
 | Baseline seed | TSEK-C / A_TSEK 0.0000 |
@@ -94,8 +94,6 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 | Policy impact charts | `visuals/policy_impact/v0_4_7/` |
 | Policy decision record | `reports/policy_decision/latest_policy_decision_record.md` |
 | Policy decision charts | `visuals/policy_decision/v0_4_8/` |
-| Regression review | `reports/regression_review/latest_regression_over_penalty_review.md` |
-| Regression review charts | `visuals/regression_review/v0_4_9/` |
 | Agent contract version sync | current / v0.4.8 |
 | Release readiness report | `reports/release/latest_release_readiness.md` |
 | Collision-proof run identity | passed |
@@ -128,7 +126,6 @@ python scripts/benchmarks/run_pair_policy_review.py
 python scripts/benchmarks/run_pair_policy_dry_run.py
 python scripts/benchmarks/generate_policy_impact_cards.py
 python scripts/benchmarks/generate_policy_decision_record.py
-python scripts/benchmarks/run_regression_over_penalty_review.py
 python scripts/feedback/run_nexus_feedback.py
 python scripts/release/validate_release.py
 ```
@@ -425,7 +422,6 @@ This section is part of the repository's operating memory. When a patch fails, t
 | L-028 | Nexus feedback v0.4.5d reached health 1.0 and ranked pair-policy pressure as the top next target. | Policy review pressure should not mutate the classifier directly. | Any classifier-policy change must first pass a dry-run simulator comparing current class vs simulated policy class. |
 | L-029 | v0.4.6 produced 9 drift cases but drift alone is not an enforcement decision. | A dry-run simulator can show impact without explaining whether each impact is justified. | Any simulated classifier drift must receive an impact explanation card before enforcement is considered. |
 | L-030 | v0.4.7 generated impact cards, but impact cards alone do not authorize classifier mutation. | Explanation artifacts identify drift reasons; they do not decide enforcement readiness. | Simulated policy impacts must be converted into a decision record with mutation_allowed=false until regression and over-penalty review pass. |
-| L-031 | v0.4.8 approved six drift cases for regression review, but approval-for-review is not approval-for-enforcement. | Decision records classify readiness for review, not readiness for mutation. | Controlled downgrade candidates must pass regression and over-penalty review before any classifier enforcement candidate is allowed. |
 
 ### Failure Response Protocol
 
@@ -634,7 +630,6 @@ tau-scaling/
   releases/
   reports/
     nexus_feedback/
-    regression_review/
     policy_dry_run/
     policy_impact/
     policy_decision/
@@ -675,7 +670,6 @@ tau-scaling/
   tests/
   visuals/
     nexus_feedback/
-    regression_review/
     policy_dry_run/
     policy_impact/
     policy_decision/
@@ -761,42 +755,6 @@ per-finding scenario presence
 ### Boundary
 
 Synthetic gate charts show local runtime behavior only. They are not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.
-
-## Regression and Over-Penalty Review v0.4.9
-
-v0.4.9 reviews the six controlled downgrade candidates approved for regression review by v0.4.8.
-
-Primary command:
-
-```powershell
-python scripts/benchmarks/run_regression_over_penalty_review.py
-```
-
-Primary outputs:
-
-```text
-reports/regression_review/latest_regression_over_penalty_review.json
-reports/regression_review/latest_regression_over_penalty_review.md
-visuals/regression_review/v0_4_9/
-```
-
-This layer checks:
-
-```text
-whether controlled downgrades pass regression review
-whether ordinary incomplete evidence is over-penalized
-whether human-review cases remain human-review only
-whether any classifier mutation may be designed next
-```
-
-Current lock:
-
-```text
-mutation_allowed: false
-policy_enforced: false
-```
-
-Boundary: regression and over-penalty review is local classifier-governance analysis only. It does not change classifier behavior and does not validate silicon, product performance, manufacturing capability, process-node equivalence, benchmark superiority, AI understanding, or universal Tau Scaling law.
 
 ## Policy Decision Record v0.4.8
 
@@ -1346,15 +1304,14 @@ validation_remains_required
 | v0.4.6 | Pair policy dry-run simulator for non-mutating classifier-policy impact analysis. |
 | v0.4.7 | Policy impact explanation cards for dry-run drift cases. |
 | v0.4.8 | Policy decision record for non-mutating enforcement readiness classification. |
-| v0.4.9 | Regression and over-penalty review for controlled downgrade candidates. |
 
 ## Next Recommended Version
 
-**TAU-SCALING-SA v0.5.0 - Enforcement Candidate Design**
+**TAU-SCALING-SA v0.4.9 - Regression and Over-Penalty Review**
 
 Recommended goals:
 
-- Design enforcement candidate rules without activating them.
-- Require regression review pass and over-penalty count zero.
-- Emit enforcement-candidate config with `enabled: false`.
-- Preserve classifier non-mutation until explicit future activation gate.
+- Regression-test the six controlled downgrade candidates.
+- Check whether downgrades over-penalize ordinary incomplete evidence.
+- Preserve classifier non-mutation until review passes.
+- Preserve non-claim locks: regression review is local classifier governance only.

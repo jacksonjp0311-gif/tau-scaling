@@ -1,6 +1,6 @@
 # Tau Scaling v0.4.7 Policy Impact Explanation Cards
 
-Generated: `2026-05-27T15:15:06.580940+00:00`
+Generated: `2026-05-27T15:38:20.583904+00:00`
 
 ## Result
 
