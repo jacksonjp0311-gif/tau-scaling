@@ -1,6 +1,6 @@
 # Tau Scaling v0.5.3 Cause-Specific Remediation Plan
 
-Generated: `2026-05-27T17:51:11.869965+00:00`
+Generated: `2026-05-27T17:53:45.419316+00:00`
 
 ## Result
 

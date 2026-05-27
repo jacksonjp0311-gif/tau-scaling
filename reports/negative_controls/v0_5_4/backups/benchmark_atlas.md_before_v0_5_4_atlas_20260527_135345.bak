@@ -34,7 +34,6 @@ This atlas gives humans and AI agents one stable place to understand benchmark e
 | v0.5.1 | Nexus target refresh | `python scripts/feedback/run_nexus_target_refresh.py` | Retires completed Nexus targets and promotes the current active blocker | `reports/nexus_target_refresh/latest_nexus_target_refresh.md` | `visuals/nexus_target_refresh/v0_5_1/` |
 | v0.5.2 | Over-penalty cause decomposition | `python scripts/benchmarks/run_over_penalty_cause_decomposition.py` | Converts active blocker into cause-specific remediation cards | `reports/over_penalty_causes/latest_over_penalty_cause_decomposition.md` | `visuals/over_penalty_causes/v0_5_2/` |
 | v0.5.3 | Cause-specific remediation plan | `python scripts/benchmarks/generate_cause_specific_remediation_plan.py` | Converts cause cards into non-mutating remediation tasks | `reports/remediation_plan/latest_cause_specific_remediation_plan.md` | `visuals/remediation_plan/v0_5_3/` |
-| v0.5.4 | Support-aware negative controls | `python scripts/benchmarks/run_support_aware_negative_controls.py` | Tests high-support retention before calibration or policy design | `reports/negative_controls/latest_support_aware_negative_controls.md` | `visuals/negative_controls/v0_5_4/` |
 
 ## Current Synthetic Suite Summary
 

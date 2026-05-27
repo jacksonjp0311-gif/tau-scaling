@@ -17,7 +17,7 @@
     "B_workload": 1,
     "B_yield": 1
   },
-  "generated_at": "2026-05-27T17:51:11.869965+00:00",
+  "generated_at": "2026-05-27T17:53:45.419316+00:00",
   "input": "reports/over_penalty_causes/latest_over_penalty_cause_decomposition.json",
   "mutation_allowed": false,
   "next_recommendation": "v0.5.4 should implement support-aware negative controls as disabled/report-only tests.",

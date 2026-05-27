@@ -10,8 +10,8 @@
 
 Repository: `tau-scaling`  
 Package / CLI: `tau_scaling` / `tau-scaling`  
-Current checkpoint: **TAU-SCALING-SA v0.5.4 - Support-Aware Negative Controls**  
-Previous seal: **TAU-SCALING-SA v0.5.3 - Cause-Specific Remediation Plan**
+Current checkpoint: **TAU-SCALING-SA v0.5.3 - Cause-Specific Remediation Plan**  
+Previous seal: **TAU-SCALING-SA v0.5.2 - Over-Penalty Cause Decomposition**
 
 Tau Scaling is a local-first, evidence-gated Python runtime for evaluating tau-scaling claims through structured claim cards, workload declarations, tau vectors, LogicFolding survivability checks, edge-to-surface boundary algebra, energy / thermal / PDN / PVT gates, Monte Carlo checker stress, TSEK classification, evidence packages, and RCC-N / OMN-style repository navigation.
 
@@ -55,7 +55,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | TAU-SCALING-SA v0.5.4 |
+| Current checkpoint | TAU-SCALING-SA v0.5.3 |
 | Synthetic gate suite | v0.4.0 / benchmark + finding charts |
 | Package version | 0.2.0 |
 | Baseline seed | TSEK-C / A_TSEK 0.0000 |
@@ -64,7 +64,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 | README mini repo audit | passing / 0 warnings |
 | Unified release validator | passing / step failures 0 |
 | AGENTS.md contract | synchronized with release validator |
-| Task routing matrix | geometry-aware / v0.5.4-ready |
+| Task routing matrix | geometry-aware / v0.5.3-ready |
 | Release warning findings | 0 expected after v0.3.3d validator scan repair |
 | Architecture validator | passing / 0 warnings |
 | Unit tests | 8 OK |
@@ -104,9 +104,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 | Over-penalty cause charts | `visuals/over_penalty_causes/v0_5_2/` |
 | Remediation plan | `reports/remediation_plan/latest_cause_specific_remediation_plan.md` |
 | Remediation plan charts | `visuals/remediation_plan/v0_5_3/` |
-| Support-aware negative controls | `reports/negative_controls/latest_support_aware_negative_controls.md` |
-| Support-aware control charts | `visuals/negative_controls/v0_5_4/` |
-| Agent contract version sync | current / v0.5.4 |
+| Agent contract version sync | current / v0.5.3 |
 | Release readiness report | `reports/release/latest_release_readiness.md` |
 | Collision-proof run identity | passed |
 | Mini README coverage | 1.0 |
@@ -144,7 +142,6 @@ python scripts/feedback/run_nexus_feedback.py
 python scripts/feedback/run_nexus_target_refresh.py
 python scripts/benchmarks/run_over_penalty_cause_decomposition.py
 python scripts/benchmarks/generate_cause_specific_remediation_plan.py
-python scripts/benchmarks/run_support_aware_negative_controls.py
 python scripts/release/validate_release.py
 ```
 
@@ -445,7 +442,6 @@ This section is part of the repository's operating memory. When a patch fails, t
 | L-033 | v0.5.0 completed the dry-run through enforcement-readiness chain, but Nexus still ranked the old v0.4.6 dry-run target as active. | A healthy feedback score can still carry stale priorities if completed targets are not retired. | Reflective feedback must retire completed targets and promote the current active blocker, or the repo will keep recommending already-completed work. |
 | L-034 | v0.5.1 promoted the active blocker, but a blocker is not actionable until decomposed into causes. | Completed-signal retirement identifies what is next; it does not specify how to remediate the blocker. | When Nexus promotes a blocker, the next layer must convert the blocker into cause-specific remediation cards before any new policy design. |
 | L-035 | v0.5.2 showed all blocked candidates were high-support / heuristic-sensitivity cases. | Cause cards identify why a blocker exists, but do not define the next safe work unit. | High-support downgrade pressure must become support-aware negative-control tasks before calibration or policy design. |
-| L-036 | v0.5.3 converted all six blocked cases into support-aware negative-control tasks. | Remediation planning is not enough; high-support retention must be tested as a disabled/report-only control. | Before calibration or policy design, high-support downgrade pressure must pass support-aware negative controls with mutation disabled. |
 
 ### Failure Response Protocol
 
@@ -654,7 +650,6 @@ tau-scaling/
   releases/
   reports/
     nexus_feedback/
-    negative_controls/
     remediation_plan/
     over_penalty_causes/
     nexus_target_refresh/
@@ -700,7 +695,6 @@ tau-scaling/
   tests/
   visuals/
     nexus_feedback/
-    negative_controls/
     remediation_plan/
     over_penalty_causes/
     nexus_target_refresh/
@@ -805,35 +799,6 @@ AGENTS.md Required Validation now includes the current v0.4.6-v0.5.1 governance 
 ```
 
 Boundary: alignment polish is repository hygiene only. It is not code correctness, silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.
-
-## Support-Aware Negative Controls v0.5.4
-
-v0.5.4 converts v0.5.3 support-aware remediation tasks into disabled/report-only negative-control tests.
-
-Primary command:
-
-```powershell
-python scripts/benchmarks/run_support_aware_negative_controls.py
-```
-
-Primary outputs:
-
-```text
-reports/negative_controls/latest_support_aware_negative_controls.json
-reports/negative_controls/latest_support_aware_negative_controls.md
-visuals/negative_controls/v0_5_4/
-```
-
-This layer checks whether high-support cases are safely retained and blocked from downgrade pressure before any calibration plan is considered.
-
-Current lock:
-
-```text
-mutation_allowed: false
-policy_enforced: false
-```
-
-Boundary: support-aware negative controls are local classifier-governance diagnostics only. They do not change classifier behavior and do not validate silicon, product performance, manufacturing capability, process-node equivalence, benchmark superiority, AI understanding, or universal Tau Scaling law.
 
 ## Cause-Specific Remediation Plan v0.5.3
 
@@ -1208,7 +1173,6 @@ python scripts/feedback/run_nexus_feedback.py
 python scripts/feedback/run_nexus_target_refresh.py
 python scripts/benchmarks/run_over_penalty_cause_decomposition.py
 python scripts/benchmarks/generate_cause_specific_remediation_plan.py
-python scripts/benchmarks/run_support_aware_negative_controls.py
 python scripts/release/validate_release.py
 python scripts/rcc/audit_readme_surface.py
 python scripts/rcc/check_rcc_nexus.py
@@ -1557,15 +1521,14 @@ validation_remains_required
 | v0.5.1a | Public alignment polish for README metrics and AGENTS validation chain. |
 | v0.5.2 | Over-penalty cause decomposition and remediation cards for blocked controlled downgrades. |
 | v0.5.3 | Cause-specific remediation plan for high-support blocked downgrade candidates. |
-| v0.5.4 | Support-aware negative controls for high-support blocked downgrade candidates. |
 
 ## Next Recommended Version
 
-**TAU-SCALING-SA v0.5.5 - Disabled Calibration Plan**
+**TAU-SCALING-SA v0.5.4 - Support-Aware Negative Controls**
 
 Recommended goals:
 
-- Build a report-only calibration plan only after support-aware negative controls pass.
-- Compare proposed thresholds against high-support retention constraints.
+- Convert v0.5.3 support-aware tasks into disabled/report-only negative-control tests.
+- Compare downgrade pressure against high-support retention baselines.
 - Keep `mutation_allowed: false`.
-- Preserve non-claim locks: calibration planning is local classifier governance only.
+- Preserve non-claim locks: negative controls are local classifier governance only.
