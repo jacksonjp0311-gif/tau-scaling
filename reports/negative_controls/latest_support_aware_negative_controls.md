@@ -1,6 +1,6 @@
 # Tau Scaling v0.5.4 Support-Aware Negative Controls
 
-Generated: `2026-05-27T17:53:46.940203+00:00`
+Generated: `2026-05-27T17:56:43.023957+00:00`
 
 ## Result
 

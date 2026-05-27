@@ -1,6 +1,6 @@
 # Task Routing Matrix
 
-Current contract: **TAU-SCALING-SA v0.5.5 - Disabled Calibration Plan**
+Current contract: **TAU-SCALING-SA v0.5.4 - Support-Aware Negative Controls**
 
 ## Geometry Route
 
@@ -37,7 +37,6 @@ intent -> shell -> meridian -> sector -> files -> validation -> evidence -> less
 | Over-penalty cause patch | outer | validation | governance | readiness gate + regression review | cause cards + charts + release validator | `reports/over_penalty_causes/latest_over_penalty_cause_decomposition.md` |
 | Remediation plan patch | outer | validation | governance | cause cards + remediation tasks | remediation report + charts + release validator | `reports/remediation_plan/latest_cause_specific_remediation_plan.md` |
 | Support-aware negative-control patch | outer | validation | governance | remediation tasks + cause cards | negative-control report + charts + release validator | `reports/negative_controls/latest_support_aware_negative_controls.md` |
-| Disabled calibration plan patch | outer | validation | governance | negative controls + candidate thresholds | calibration plan + charts + release validator | `reports/calibration_plan/latest_disabled_calibration_plan.md` |
 | Public claim replay patch | outer | evidence | release | source boundary docs, `configs/seeds/public_claims/` | release validator + claim replay report | `reports/public_claims/latest_claim_replay_report.md` |
 | Agent contract patch | center | agent | rcc | `AGENTS.md`, route map, task matrix, README | README audit + release validator | `reports/agent/latest_agent_contract_sync.md` |
 | Reflection patch | center | drift | documentation | `docs/reflection/`, `reports/reflection/`, README, AGENTS | README audit + release validator | `reports/reflection/latest_system_reflection.md` |

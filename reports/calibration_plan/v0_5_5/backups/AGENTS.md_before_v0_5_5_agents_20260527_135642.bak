@@ -1,6 +1,6 @@
 # AGENTS.md — Tau Scaling Agent Operating Contract
 
-Current contract: **TAU-SCALING-SA v0.5.5 - Disabled Calibration Plan**
+Current contract: **TAU-SCALING-SA v0.5.4 - Support-Aware Negative Controls**
 
 ## Mission
 
@@ -62,7 +62,6 @@ python scripts/feedback/run_nexus_target_refresh.py
 python scripts/benchmarks/run_over_penalty_cause_decomposition.py
 python scripts/benchmarks/generate_cause_specific_remediation_plan.py
 python scripts/benchmarks/run_support_aware_negative_controls.py
-python scripts/benchmarks/generate_disabled_calibration_plan.py
 python -m unittest discover -s tests
 ```
 
@@ -91,7 +90,6 @@ python -m unittest discover -s tests
 | Over-penalty cause patch | `reports/over_penalty_causes/`, `visuals/over_penalty_causes/`, readiness gate | cause cards + release validator; no classifier mutation |
 | Remediation plan patch | `reports/remediation_plan/`, `visuals/remediation_plan/`, cause cards | remediation tasks + release validator; no classifier mutation |
 | Support-aware negative-control patch | `reports/negative_controls/`, `visuals/negative_controls/`, remediation tasks | negative-control report + release validator; no classifier mutation |
-| Disabled calibration plan patch | `reports/calibration_plan/`, `visuals/calibration_plan/`, negative controls | calibration plan + release validator; no classifier mutation |
 | Public claim replay patch | source boundary docs, `configs/seeds/public_claims/`, claim reports | release validator + claim replay report |
 | Directory structure patch | Full Directory Box, affected mini READMEs, context indexes | README audit + RCC-N + release validator |
 

@@ -21,7 +21,7 @@
     "B_workload": 1,
     "B_yield": 1
   },
-  "generated_at": "2026-05-27T17:53:46.940203+00:00",
+  "generated_at": "2026-05-27T17:56:43.023957+00:00",
   "input_causes": "reports/over_penalty_causes/latest_over_penalty_cause_decomposition.json",
   "input_plan": "reports/remediation_plan/latest_cause_specific_remediation_plan.json",
   "mutation_allowed": false,

@@ -1,0 +1,402 @@
+{
+  "admissible_threshold_count": 3,
+  "boundary": "Disabled calibration planning is local report-only classifier-governance analysis. It does not change classifier behavior and does not validate silicon, products, manufacturing, process nodes, benchmark superiority, or universal Tau Scaling law.",
+  "calibration_applied": false,
+  "candidate_threshold_count": 6,
+  "chart_paths": [
+    "visuals/calibration_plan/v0_5_5/calibration_retention_by_threshold.png",
+    "visuals/calibration_plan/v0_5_5/calibration_violation_by_threshold.png",
+    "visuals/calibration_plan/v0_5_5/calibration_minimum_margin.png"
+  ],
+  "final_recommendation": "draft_report_only_calibration_candidate_preserving_support_controls",
+  "generated_at": "2026-05-27T17:56:44.460535+00:00",
+  "input_negative_controls": "reports/negative_controls/latest_support_aware_negative_controls.json",
+  "mutation_allowed": false,
+  "next_recommendation": "v0.5.6 should run calibration counterfactuals without applying classifier mutation.",
+  "policy_enforced": false,
+  "rejected_threshold_count": 3,
+  "schema": "tau-scaling-disabled-calibration-plan-v0.5.5",
+  "selected_report_only_threshold": 0.8,
+  "source_negative_control_count": 6,
+  "source_passed_control_count": 6,
+  "threshold_results": [
+    {
+      "candidate_status": "admissible_report_only",
+      "minimum_margin": 0.1182,
+      "retained_control_count": 6,
+      "rows": [
+        {
+          "control_id": "negative-control-v0-5-3-001",
+          "diagnostic_average": 0.8182,
+          "expected_retain": true,
+          "gate_pair": "B_baseline+B_tau",
+          "margin": 0.1182,
+          "preserves_retention": true,
+          "threshold": 0.7
+        },
+        {
+          "control_id": "negative-control-v0-5-3-002",
+          "diagnostic_average": 0.8182,
+          "expected_retain": true,
+          "gate_pair": "B_method+B_evidence",
+          "margin": 0.1182,
+          "preserves_retention": true,
+          "threshold": 0.7
+        },
+        {
+          "control_id": "negative-control-v0-5-3-003",
+          "diagnostic_average": 0.8182,
+          "expected_retain": true,
+          "gate_pair": "B_workload+B_tau",
+          "margin": 0.1182,
+          "preserves_retention": true,
+          "threshold": 0.7
+        },
+        {
+          "control_id": "negative-control-v0-5-3-004",
+          "diagnostic_average": 0.8182,
+          "expected_retain": true,
+          "gate_pair": "B_LF+B_ETP",
+          "margin": 0.1182,
+          "preserves_retention": true,
+          "threshold": 0.7
+        },
+        {
+          "control_id": "negative-control-v0-5-3-005",
+          "diagnostic_average": 0.8182,
+          "expected_retain": true,
+          "gate_pair": "B_PVT+B_evidence",
+          "margin": 0.1182,
+          "preserves_retention": true,
+          "threshold": 0.7
+        },
+        {
+          "control_id": "negative-control-v0-5-3-006",
+          "diagnostic_average": 0.8182,
+          "expected_retain": true,
+          "gate_pair": "B_yield+B_evidence",
+          "margin": 0.1182,
+          "preserves_retention": true,
+          "threshold": 0.7
+        }
+      ],
+      "threshold": 0.7,
+      "violation_count": 0
+    },
+    {
+      "candidate_status": "admissible_report_only",
+      "minimum_margin": 0.0682,
+      "retained_control_count": 6,
+      "rows": [
+        {
+          "control_id": "negative-control-v0-5-3-001",
+          "diagnostic_average": 0.8182,
+          "expected_retain": true,
+          "gate_pair": "B_baseline+B_tau",
+          "margin": 0.0682,
+          "preserves_retention": true,
+          "threshold": 0.75
+        },
+        {
+          "control_id": "negative-control-v0-5-3-002",
+          "diagnostic_average": 0.8182,
+          "expected_retain": true,
+          "gate_pair": "B_method+B_evidence",
+          "margin": 0.0682,
+          "preserves_retention": true,
+          "threshold": 0.75
+        },
+        {
+          "control_id": "negative-control-v0-5-3-003",
+          "diagnostic_average": 0.8182,
+          "expected_retain": true,
+          "gate_pair": "B_workload+B_tau",
+          "margin": 0.0682,
+          "preserves_retention": true,
+          "threshold": 0.75
+        },
+        {
+          "control_id": "negative-control-v0-5-3-004",
+          "diagnostic_average": 0.8182,
+          "expected_retain": true,
+          "gate_pair": "B_LF+B_ETP",
+          "margin": 0.0682,
+          "preserves_retention": true,
+          "threshold": 0.75
+        },
+        {
+          "control_id": "negative-control-v0-5-3-005",
+          "diagnostic_average": 0.8182,
+          "expected_retain": true,
+          "gate_pair": "B_PVT+B_evidence",
+          "margin": 0.0682,
+          "preserves_retention": true,
+          "threshold": 0.75
+        },
+        {
+          "control_id": "negative-control-v0-5-3-006",
+          "diagnostic_average": 0.8182,
+          "expected_retain": true,
+          "gate_pair": "B_yield+B_evidence",
+          "margin": 0.0682,
+          "preserves_retention": true,
+          "threshold": 0.75
+        }
+      ],
+      "threshold": 0.75,
+      "violation_count": 0
+    },
+    {
+      "candidate_status": "admissible_report_only",
+      "minimum_margin": 0.0182,
+      "retained_control_count": 6,
+      "rows": [
+        {
+          "control_id": "negative-control-v0-5-3-001",
+          "diagnostic_average": 0.8182,
+          "expected_retain": true,
+          "gate_pair": "B_baseline+B_tau",
+          "margin": 0.0182,
+          "preserves_retention": true,
+          "threshold": 0.8
+        },
+        {
+          "control_id": "negative-control-v0-5-3-002",
+          "diagnostic_average": 0.8182,
+          "expected_retain": true,
+          "gate_pair": "B_method+B_evidence",
+          "margin": 0.0182,
+          "preserves_retention": true,
+          "threshold": 0.8
+        },
+        {
+          "control_id": "negative-control-v0-5-3-003",
+          "diagnostic_average": 0.8182,
+          "expected_retain": true,
+          "gate_pair": "B_workload+B_tau",
+          "margin": 0.0182,
+          "preserves_retention": true,
+          "threshold": 0.8
+        },
+        {
+          "control_id": "negative-control-v0-5-3-004",
+          "diagnostic_average": 0.8182,
+          "expected_retain": true,
+          "gate_pair": "B_LF+B_ETP",
+          "margin": 0.0182,
+          "preserves_retention": true,
+          "threshold": 0.8
+        },
+        {
+          "control_id": "negative-control-v0-5-3-005",
+          "diagnostic_average": 0.8182,
+          "expected_retain": true,
+          "gate_pair": "B_PVT+B_evidence",
+          "margin": 0.0182,
+          "preserves_retention": true,
+          "threshold": 0.8
+        },
+        {
+          "control_id": "negative-control-v0-5-3-006",
+          "diagnostic_average": 0.8182,
+          "expected_retain": true,
+          "gate_pair": "B_yield+B_evidence",
+          "margin": 0.0182,
+          "preserves_retention": true,
+          "threshold": 0.8
+        }
+      ],
+      "threshold": 0.8,
+      "violation_count": 0
+    },
+    {
+      "candidate_status": "rejected_retention_violation",
+      "minimum_margin": -0.0318,
+      "retained_control_count": 0,
+      "rows": [
+        {
+          "control_id": "negative-control-v0-5-3-001",
+          "diagnostic_average": 0.8182,
+          "expected_retain": true,
+          "gate_pair": "B_baseline+B_tau",
+          "margin": -0.0318,
+          "preserves_retention": false,
+          "threshold": 0.85
+        },
+        {
+          "control_id": "negative-control-v0-5-3-002",
+          "diagnostic_average": 0.8182,
+          "expected_retain": true,
+          "gate_pair": "B_method+B_evidence",
+          "margin": -0.0318,
+          "preserves_retention": false,
+          "threshold": 0.85
+        },
+        {
+          "control_id": "negative-control-v0-5-3-003",
+          "diagnostic_average": 0.8182,
+          "expected_retain": true,
+          "gate_pair": "B_workload+B_tau",
+          "margin": -0.0318,
+          "preserves_retention": false,
+          "threshold": 0.85
+        },
+        {
+          "control_id": "negative-control-v0-5-3-004",
+          "diagnostic_average": 0.8182,
+          "expected_retain": true,
+          "gate_pair": "B_LF+B_ETP",
+          "margin": -0.0318,
+          "preserves_retention": false,
+          "threshold": 0.85
+        },
+        {
+          "control_id": "negative-control-v0-5-3-005",
+          "diagnostic_average": 0.8182,
+          "expected_retain": true,
+          "gate_pair": "B_PVT+B_evidence",
+          "margin": -0.0318,
+          "preserves_retention": false,
+          "threshold": 0.85
+        },
+        {
+          "control_id": "negative-control-v0-5-3-006",
+          "diagnostic_average": 0.8182,
+          "expected_retain": true,
+          "gate_pair": "B_yield+B_evidence",
+          "margin": -0.0318,
+          "preserves_retention": false,
+          "threshold": 0.85
+        }
+      ],
+      "threshold": 0.85,
+      "violation_count": 6
+    },
+    {
+      "candidate_status": "rejected_retention_violation",
+      "minimum_margin": -0.0818,
+      "retained_control_count": 0,
+      "rows": [
+        {
+          "control_id": "negative-control-v0-5-3-001",
+          "diagnostic_average": 0.8182,
+          "expected_retain": true,
+          "gate_pair": "B_baseline+B_tau",
+          "margin": -0.0818,
+          "preserves_retention": false,
+          "threshold": 0.9
+        },
+        {
+          "control_id": "negative-control-v0-5-3-002",
+          "diagnostic_average": 0.8182,
+          "expected_retain": true,
+          "gate_pair": "B_method+B_evidence",
+          "margin": -0.0818,
+          "preserves_retention": false,
+          "threshold": 0.9
+        },
+        {
+          "control_id": "negative-control-v0-5-3-003",
+          "diagnostic_average": 0.8182,
+          "expected_retain": true,
+          "gate_pair": "B_workload+B_tau",
+          "margin": -0.0818,
+          "preserves_retention": false,
+          "threshold": 0.9
+        },
+        {
+          "control_id": "negative-control-v0-5-3-004",
+          "diagnostic_average": 0.8182,
+          "expected_retain": true,
+          "gate_pair": "B_LF+B_ETP",
+          "margin": -0.0818,
+          "preserves_retention": false,
+          "threshold": 0.9
+        },
+        {
+          "control_id": "negative-control-v0-5-3-005",
+          "diagnostic_average": 0.8182,
+          "expected_retain": true,
+          "gate_pair": "B_PVT+B_evidence",
+          "margin": -0.0818,
+          "preserves_retention": false,
+          "threshold": 0.9
+        },
+        {
+          "control_id": "negative-control-v0-5-3-006",
+          "diagnostic_average": 0.8182,
+          "expected_retain": true,
+          "gate_pair": "B_yield+B_evidence",
+          "margin": -0.0818,
+          "preserves_retention": false,
+          "threshold": 0.9
+        }
+      ],
+      "threshold": 0.9,
+      "violation_count": 6
+    },
+    {
+      "candidate_status": "rejected_retention_violation",
+      "minimum_margin": -0.1318,
+      "retained_control_count": 0,
+      "rows": [
+        {
+          "control_id": "negative-control-v0-5-3-001",
+          "diagnostic_average": 0.8182,
+          "expected_retain": true,
+          "gate_pair": "B_baseline+B_tau",
+          "margin": -0.1318,
+          "preserves_retention": false,
+          "threshold": 0.95
+        },
+        {
+          "control_id": "negative-control-v0-5-3-002",
+          "diagnostic_average": 0.8182,
+          "expected_retain": true,
+          "gate_pair": "B_method+B_evidence",
+          "margin": -0.1318,
+          "preserves_retention": false,
+          "threshold": 0.95
+        },
+        {
+          "control_id": "negative-control-v0-5-3-003",
+          "diagnostic_average": 0.8182,
+          "expected_retain": true,
+          "gate_pair": "B_workload+B_tau",
+          "margin": -0.1318,
+          "preserves_retention": false,
+          "threshold": 0.95
+        },
+        {
+          "control_id": "negative-control-v0-5-3-004",
+          "diagnostic_average": 0.8182,
+          "expected_retain": true,
+          "gate_pair": "B_LF+B_ETP",
+          "margin": -0.1318,
+          "preserves_retention": false,
+          "threshold": 0.95
+        },
+        {
+          "control_id": "negative-control-v0-5-3-005",
+          "diagnostic_average": 0.8182,
+          "expected_retain": true,
+          "gate_pair": "B_PVT+B_evidence",
+          "margin": -0.1318,
+          "preserves_retention": false,
+          "threshold": 0.95
+        },
+        {
+          "control_id": "negative-control-v0-5-3-006",
+          "diagnostic_average": 0.8182,
+          "expected_retain": true,
+          "gate_pair": "B_yield+B_evidence",
+          "margin": -0.1318,
+          "preserves_retention": false,
+          "threshold": 0.95
+        }
+      ],
+      "threshold": 0.95,
+      "violation_count": 6
+    }
+  ]
+}
