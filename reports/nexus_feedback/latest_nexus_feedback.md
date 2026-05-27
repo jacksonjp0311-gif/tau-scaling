@@ -1,11 +1,11 @@
-# Tau Scaling v0.4.5c Nexus Feedback Function-Block Repair
+# Tau Scaling v0.4.5d Nexus Feedback Chart-Path Health Repair
 
-Generated: `2026-05-26T15:31:39.811409+00:00`
+Generated: `2026-05-27T14:40:02.382628+00:00`
 
 ## Result
 
-- Health score: `0.875`
-- Health passed: `False`
+- Health score: `1.0`
+- Health passed: `True`
 - Feedback signal count: `5`
 - Chart count: `3`
 
@@ -17,7 +17,7 @@ Generated: `2026-05-26T15:31:39.811409+00:00`
 | `readme_audit` | `True` |
 | `rcc_nexus` | `True` |
 | `synthetic_suite` | `True` |
-| `sensitivity_sweep` | `False` |
+| `sensitivity_sweep` | `True` |
 | `gate_interactions` | `True` |
 | `explanation_cards` | `True` |
 | `policy_review` | `True` |

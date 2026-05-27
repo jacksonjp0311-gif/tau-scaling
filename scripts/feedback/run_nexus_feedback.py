@@ -64,6 +64,7 @@ def health_score(inputs: dict[str, dict[str, Any]]) -> dict[str, Any]:
     policy = inputs["pair_policy_review"]
 
     sensitivity_points = int(sensitivity.get("total_points", 0) or len(sensitivity.get("results", [])))
+    sensitivity_chart_count = int(sensitivity.get("chart_count", 0) or len(sensitivity.get("chart_paths", [])))
     release_findings_count = count_items(release.get("findings", 0))
     release_step_failures_count = count_items(release.get("step_failures", 0))
     readme_warnings_count = count_items(readme.get("warnings", 0))
@@ -76,7 +77,7 @@ def health_score(inputs: dict[str, dict[str, Any]]) -> dict[str, Any]:
         "readme_audit": bool_pass(readme) and readme_warnings_count == 0 and readme_errors_count == 0,
         "rcc_nexus": bool_pass(rcc) and rcc_warnings_count == 0 and rcc_errors_count == 0,
         "synthetic_suite": synthetic.get("all_scenarios_passed") is True and int(synthetic.get("failed_scenarios", 1)) == 0,
-        "sensitivity_sweep": sensitivity_points >= 29 and int(sensitivity.get("chart_count", 0)) >= 10,
+        "sensitivity_sweep": sensitivity_points >= 29 and sensitivity_chart_count >= 10,
         "gate_interactions": interactions.get("all_pairs_executed") is True and int(interactions.get("pair_count", 0)) == 55,
         "explanation_cards": int(explanations.get("card_count", 0)) >= 94,
         "policy_review": int(policy.get("pair_count", 0)) == 55 and policy.get("policy_enforced") is False,
@@ -90,8 +91,9 @@ def health_score(inputs: dict[str, dict[str, Any]]) -> dict[str, Any]:
         "rcc_warnings_count": rcc_warnings_count,
         "rcc_errors_count": rcc_errors_count,
         "sensitivity_points": sensitivity_points,
-        "sensitivity_chart_count": int(sensitivity.get("chart_count", 0)),
-        "schema_alignment": "v0.4.5c function-block replacement active",
+        "sensitivity_chart_count": sensitivity_chart_count,
+        "sensitivity_chart_source": "chart_count if present else len(chart_paths)",
+        "schema_alignment": "v0.4.5d chart-path normalization active",
     }
 
     score = sum(1 for v in validations.values() if v) / len(validations)
@@ -235,7 +237,7 @@ def generate_charts(summary: dict[str, Any]) -> list[str]:
 
 def render_markdown(summary: dict[str, Any]) -> str:
     lines = [
-        "# Tau Scaling v0.4.5c Nexus Feedback Function-Block Repair",
+        "# Tau Scaling v0.4.5d Nexus Feedback Chart-Path Health Repair",
         "",
         f"Generated: `{summary['generated_at']}`",
         "",
@@ -293,7 +295,7 @@ def main() -> None:
     health = health_score(inputs)
     signals = feedback_signals(inputs)
     summary = {
-        "schema": "tau-scaling-nexus-reflective-feedback-v0.4.5c",
+        "schema": "tau-scaling-nexus-reflective-feedback-v0.4.5d",
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "inputs": {k: str(v.relative_to(REPO_ROOT)).replace("\\", "/") for k, v in INPUTS.items()},
         "health": health,

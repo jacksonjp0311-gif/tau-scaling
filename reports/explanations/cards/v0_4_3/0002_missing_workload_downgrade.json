@@ -2,12 +2,12 @@
   "A_TSEK": 0.0,
   "classification": "TSEK-C",
   "diagnostic_average": 0.9091,
-  "evidence_path": "artifacts/runs/claim-20260526T153128862149Z-cc7262/evidence_package.json",
+  "evidence_path": "artifacts/runs/claim-20260527T143950114814Z-f3fbf8/evidence_package.json",
   "finding_codes": [
     "TSEK_B_workload_MISSING"
   ],
   "findings_count": 1,
-  "generated_at": "2026-05-26T15:31:34.566767+00:00",
+  "generated_at": "2026-05-27T14:39:56.295004+00:00",
   "minimum_repair_for_promotion": [
     "Declare workload class and dominant tau term."
   ],

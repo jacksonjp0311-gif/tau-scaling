@@ -10,8 +10,8 @@
 
 Repository: `tau-scaling`  
 Package / CLI: `tau_scaling` / `tau-scaling`  
-Current checkpoint: **TAU-SCALING-SA v0.4.5c - Nexus Feedback Function-Block Repair**  
-Previous seal: **TAU-SCALING-SA v0.4.5b - Nexus Feedback Health Schema Alignment**
+Current checkpoint: **TAU-SCALING-SA v0.4.5d - Nexus Feedback Chart-Path Health Repair**  
+Previous seal: **TAU-SCALING-SA v0.4.5c - Nexus Feedback Function-Block Repair**
 
 Tau Scaling is a local-first, evidence-gated Python runtime for evaluating tau-scaling claims through structured claim cards, workload declarations, tau vectors, LogicFolding survivability checks, edge-to-surface boundary algebra, energy / thermal / PDN / PVT gates, Monte Carlo checker stress, TSEK classification, evidence packages, and RCC-N / OMN-style repository navigation.
 
@@ -55,7 +55,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | TAU-SCALING-SA v0.4.5c |
+| Current checkpoint | TAU-SCALING-SA v0.4.5d |
 | Synthetic gate suite | v0.4.0 / benchmark + finding charts |
 | Package version | 0.2.0 |
 | Baseline seed | TSEK-C / A_TSEK 0.0000 |
@@ -409,6 +409,7 @@ This section is part of the repository's operating memory. When a patch fails, t
 | L-024 | v0.4.5 feedback emitted correct priorities but `health_passed` was false because it read validation surfaces before the final validators refreshed. | Reflective feedback can be logically correct while its health score is stale relative to the final seal. | Run prerequisite validators before Nexus feedback, then run Nexus feedback, then run final validators again before commit/push. |
 | L-025 | v0.4.5a proved ordering was correct but `health_passed` stayed false. | The feedback scorer expected numeric `findings`, numeric `step_failures`, and top-level `total_points`, while actual reports used lists and `results`. | Feedback health checks must normalize report schemas before scoring; schema mismatch is not validation failure. |
 | L-026 | v0.4.5b changed the feedback schema label but `health_score` still used the old comparisons. | Regex patching did not replace the intended function body, so labels advanced faster than executable logic. | Function repairs must verify the target function body changed, not just schema strings or docs. |
+| L-027 | v0.4.5c repaired list counters but `sensitivity_sweep` still failed health scoring. | The persisted sensitivity JSON used `chart_paths` while the feedback health scorer checked only `chart_count`. | Feedback health scoring must normalize both count fields and evidence-list fields such as chart_paths. |
 
 ### Failure Response Protocol
 
@@ -736,6 +737,34 @@ per-finding scenario presence
 ### Boundary
 
 Synthetic gate charts show local runtime behavior only. They are not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.
+
+## Nexus Feedback Chart-Path Health Repair v0.4.5d
+
+v0.4.5d repairs the final feedback-health mismatch.
+
+Cause found:
+
+```text
+v0.4.5c normalized findings and step_failures correctly.
+The remaining failed check was sensitivity_sweep.
+The sensitivity report stores chart evidence as chart_paths, not always chart_count.
+```
+
+Repair:
+
+```text
+sensitivity_chart_count = chart_count if present else len(chart_paths)
+```
+
+Expected result:
+
+```text
+health_score: 1.0
+health_passed: true
+schema: tau-scaling-nexus-reflective-feedback-v0.4.5d
+```
+
+Boundary: chart-path health repair is repository self-observation only. It does not mutate classifier behavior and does not validate silicon, product performance, manufacturing capability, process-node equivalence, benchmark superiority, AI understanding, or universal Tau Scaling law.
 
 ## Nexus Feedback Function-Block Repair v0.4.5c
 
@@ -1150,6 +1179,7 @@ validation_remains_required
 | v0.4.5a | Feedback health ordering repair so Nexus feedback reads fresh validation surfaces. |
 | v0.4.5b | Nexus feedback health schema alignment for list-valued findings and derived sensitivity points. |
 | v0.4.5c | Nexus feedback function-block repair to ensure health scorer logic actually updates. |
+| v0.4.5d | Nexus feedback chart-path health repair for sensitivity sweep chart evidence. |
 
 ## Next Recommended Version
 

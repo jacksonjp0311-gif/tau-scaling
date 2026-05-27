@@ -1,6 +1,6 @@
 # AGENTS.md — Tau Scaling Agent Operating Contract
 
-Current contract: **TAU-SCALING-SA v0.4.5c - Nexus Feedback Function-Block Repair**
+Current contract: **TAU-SCALING-SA v0.4.5d - Nexus Feedback Chart-Path Health Repair**
 
 ## Mission
 
@@ -176,3 +176,18 @@ python -c "from pathlib import Path; s=Path('scripts/feedback/run_nexus_feedback
 ```
 
 Non-claim lock: function-body verification is repository hygiene, not external validation.
+
+
+## Feedback Evidence-List Normalization Rule
+
+Feedback health must normalize evidence-list fields as well as explicit count fields.
+
+Examples:
+
+```text
+chart_count = chart_count if present else len(chart_paths)
+point_count = total_points if present else len(results)
+finding_count = findings if numeric else len(findings)
+```
+
+Non-claim lock: evidence-list normalization is repository self-observation, not external validation.
