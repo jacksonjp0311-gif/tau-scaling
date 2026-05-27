@@ -70,7 +70,7 @@
     ]
   },
   "schema": "rcc-nexus-route-map-v1.7",
-  "updated_at": "2026-05-27T17:51:09.945891+00:00",
+  "updated_at": "2026-05-27T17:35:30.700511+00:00",
   "v0_4_routes": {
     "feedback_chart_path_health_repair": {
       "evidence": [
@@ -346,21 +346,6 @@
     }
   },
   "v0_5_routes": {
-    "cause_specific_remediation_plan": {
-      "evidence": [
-        "reports/remediation_plan/latest_cause_specific_remediation_plan.md",
-        "reports/remediation_plan/tasks/v0_5_3/",
-        "visuals/remediation_plan/v0_5_3/"
-      ],
-      "mutation_lock": "Does not change classifier behavior; emits remediation tasks only.",
-      "read_first": [
-        "reports/over_penalty_causes/latest_over_penalty_cause_decomposition.json"
-      ],
-      "validate": [
-        "python scripts/benchmarks/generate_cause_specific_remediation_plan.py",
-        "python scripts/release/validate_release.py"
-      ]
-    },
     "enforcement_readiness_gate": {
       "evidence": [
         "reports/enforcement_readiness/latest_enforcement_readiness_gate.md",
@@ -414,5 +399,5 @@
     "runtime": "python -m tau_scaling run-claim --seed configs/seeds/logicfolding_claim_card.json",
     "tests": "python -m unittest discover -s tests"
   },
-  "version": "v0.5.3"
+  "version": "v0.5.2"
 }

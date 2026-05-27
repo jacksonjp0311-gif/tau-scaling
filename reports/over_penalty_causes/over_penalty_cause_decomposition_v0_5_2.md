@@ -1,6 +1,6 @@
 # Tau Scaling v0.5.2 Over-Penalty Cause Decomposition
 
-Generated: `2026-05-27T17:35:35.176659+00:00`
+Generated: `2026-05-27T17:51:10.253287+00:00`
 
 ## Result
 

@@ -1,0 +1,174 @@
+{
+  "boundary": "Cause-specific remediation planning is local classifier-governance planning only. It does not change classifier behavior and does not validate silicon, products, manufacturing, process nodes, benchmark superiority, or universal Tau Scaling law.",
+  "chart_paths": [
+    "visuals/remediation_plan/v0_5_3/remediation_class_counts.png",
+    "visuals/remediation_plan/v0_5_3/remediation_primary_cause_counts.png",
+    "visuals/remediation_plan/v0_5_3/remediation_gate_involvement.png"
+  ],
+  "final_recommendation": "build_support_aware_negative_controls_next",
+  "gate_involvement_counts": {
+    "B_ETP": 1,
+    "B_LF": 1,
+    "B_PVT": 1,
+    "B_baseline": 1,
+    "B_evidence": 3,
+    "B_method": 1,
+    "B_tau": 2,
+    "B_workload": 1,
+    "B_yield": 1
+  },
+  "generated_at": "2026-05-27T17:51:11.869965+00:00",
+  "input": "reports/over_penalty_causes/latest_over_penalty_cause_decomposition.json",
+  "mutation_allowed": false,
+  "next_recommendation": "v0.5.4 should implement support-aware negative controls as disabled/report-only tests.",
+  "policy_enforced": false,
+  "primary_cause_counts": {
+    "high_diagnostic_support": 6
+  },
+  "remediation_class_counts": {
+    "support_aware_negative_control": 6
+  },
+  "remediation_task_count": 6,
+  "remediation_tasks": [
+    {
+      "causes": [
+        "high_diagnostic_support",
+        "heuristic_over_sensitivity"
+      ],
+      "gate_pair": "B_baseline+B_tau",
+      "mutation_allowed": false,
+      "non_claim_lock": "Remediation tasks are local classifier-governance planning artifacts only.",
+      "policy_enforced": false,
+      "primary_cause": "high_diagnostic_support",
+      "remediation_action": "Design a support-aware negative control before reconsidering downgrade pressure.",
+      "remediation_class": "support_aware_negative_control",
+      "required_validation": [
+        "build disabled negative-control case",
+        "compare downgrade pressure against high-support retention baseline",
+        "rerun cause decomposition",
+        "keep mutation_allowed false"
+      ],
+      "schema": "tau-scaling-remediation-task-v0.5.3",
+      "source_card_id": "over-penalty-cause-v0-5-2-001",
+      "status": "planned_not_applied",
+      "task_id": "remediation-task-v0-5-3-001"
+    },
+    {
+      "causes": [
+        "high_diagnostic_support",
+        "heuristic_over_sensitivity"
+      ],
+      "gate_pair": "B_method+B_evidence",
+      "mutation_allowed": false,
+      "non_claim_lock": "Remediation tasks are local classifier-governance planning artifacts only.",
+      "policy_enforced": false,
+      "primary_cause": "high_diagnostic_support",
+      "remediation_action": "Design a support-aware negative control before reconsidering downgrade pressure.",
+      "remediation_class": "support_aware_negative_control",
+      "required_validation": [
+        "build disabled negative-control case",
+        "compare downgrade pressure against high-support retention baseline",
+        "rerun cause decomposition",
+        "keep mutation_allowed false"
+      ],
+      "schema": "tau-scaling-remediation-task-v0.5.3",
+      "source_card_id": "over-penalty-cause-v0-5-2-002",
+      "status": "planned_not_applied",
+      "task_id": "remediation-task-v0-5-3-002"
+    },
+    {
+      "causes": [
+        "high_diagnostic_support",
+        "heuristic_over_sensitivity"
+      ],
+      "gate_pair": "B_workload+B_tau",
+      "mutation_allowed": false,
+      "non_claim_lock": "Remediation tasks are local classifier-governance planning artifacts only.",
+      "policy_enforced": false,
+      "primary_cause": "high_diagnostic_support",
+      "remediation_action": "Design a support-aware negative control before reconsidering downgrade pressure.",
+      "remediation_class": "support_aware_negative_control",
+      "required_validation": [
+        "build disabled negative-control case",
+        "compare downgrade pressure against high-support retention baseline",
+        "rerun cause decomposition",
+        "keep mutation_allowed false"
+      ],
+      "schema": "tau-scaling-remediation-task-v0.5.3",
+      "source_card_id": "over-penalty-cause-v0-5-2-003",
+      "status": "planned_not_applied",
+      "task_id": "remediation-task-v0-5-3-003"
+    },
+    {
+      "causes": [
+        "high_diagnostic_support",
+        "heuristic_over_sensitivity"
+      ],
+      "gate_pair": "B_LF+B_ETP",
+      "mutation_allowed": false,
+      "non_claim_lock": "Remediation tasks are local classifier-governance planning artifacts only.",
+      "policy_enforced": false,
+      "primary_cause": "high_diagnostic_support",
+      "remediation_action": "Design a support-aware negative control before reconsidering downgrade pressure.",
+      "remediation_class": "support_aware_negative_control",
+      "required_validation": [
+        "build disabled negative-control case",
+        "compare downgrade pressure against high-support retention baseline",
+        "rerun cause decomposition",
+        "keep mutation_allowed false"
+      ],
+      "schema": "tau-scaling-remediation-task-v0.5.3",
+      "source_card_id": "over-penalty-cause-v0-5-2-004",
+      "status": "planned_not_applied",
+      "task_id": "remediation-task-v0-5-3-004"
+    },
+    {
+      "causes": [
+        "high_diagnostic_support",
+        "heuristic_over_sensitivity"
+      ],
+      "gate_pair": "B_PVT+B_evidence",
+      "mutation_allowed": false,
+      "non_claim_lock": "Remediation tasks are local classifier-governance planning artifacts only.",
+      "policy_enforced": false,
+      "primary_cause": "high_diagnostic_support",
+      "remediation_action": "Design a support-aware negative control before reconsidering downgrade pressure.",
+      "remediation_class": "support_aware_negative_control",
+      "required_validation": [
+        "build disabled negative-control case",
+        "compare downgrade pressure against high-support retention baseline",
+        "rerun cause decomposition",
+        "keep mutation_allowed false"
+      ],
+      "schema": "tau-scaling-remediation-task-v0.5.3",
+      "source_card_id": "over-penalty-cause-v0-5-2-005",
+      "status": "planned_not_applied",
+      "task_id": "remediation-task-v0-5-3-005"
+    },
+    {
+      "causes": [
+        "high_diagnostic_support",
+        "heuristic_over_sensitivity"
+      ],
+      "gate_pair": "B_yield+B_evidence",
+      "mutation_allowed": false,
+      "non_claim_lock": "Remediation tasks are local classifier-governance planning artifacts only.",
+      "policy_enforced": false,
+      "primary_cause": "high_diagnostic_support",
+      "remediation_action": "Design a support-aware negative control before reconsidering downgrade pressure.",
+      "remediation_class": "support_aware_negative_control",
+      "required_validation": [
+        "build disabled negative-control case",
+        "compare downgrade pressure against high-support retention baseline",
+        "rerun cause decomposition",
+        "keep mutation_allowed false"
+      ],
+      "schema": "tau-scaling-remediation-task-v0.5.3",
+      "source_card_id": "over-penalty-cause-v0-5-2-006",
+      "status": "planned_not_applied",
+      "task_id": "remediation-task-v0-5-3-006"
+    }
+  ],
+  "schema": "tau-scaling-cause-specific-remediation-plan-v0.5.3",
+  "source_cause_card_count": 6
+}
