@@ -30,7 +30,6 @@ This atlas gives humans and AI agents one stable place to understand benchmark e
 | v0.4.7 | Policy impact explanation cards | `python scripts/benchmarks/generate_policy_impact_cards.py` | Explains each dry-run drift case before policy decision | `reports/policy_impact/latest_policy_impact_cards.md` | `visuals/policy_impact/v0_4_7/` |
 | v0.4.8 | Policy decision record | `python scripts/benchmarks/generate_policy_decision_record.py` | Converts impact cards into non-mutating decision records | `reports/policy_decision/latest_policy_decision_record.md` | `visuals/policy_decision/v0_4_8/` |
 | v0.4.9 | Regression and over-penalty review | `python scripts/benchmarks/run_regression_over_penalty_review.py` | Reviews controlled downgrade candidates before enforcement-candidate design | `reports/regression_review/latest_regression_over_penalty_review.md` | `visuals/regression_review/v0_4_9/` |
-| v0.5.0 | Enforcement readiness gate | `python scripts/benchmarks/run_enforcement_readiness_gate.py` | Major checkpoint that blocks enforcement when over-penalty review fails | `reports/enforcement_readiness/latest_enforcement_readiness_gate.md` | `visuals/enforcement_readiness/v0_5_0/` |
 
 ## Current Synthetic Suite Summary
 

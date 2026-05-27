@@ -1,6 +1,6 @@
 # Task Routing Matrix
 
-Current contract: **TAU-SCALING-SA v0.5.0 - Enforcement Readiness Gate**
+Current contract: **TAU-SCALING-SA v0.4.9 - Regression and Over-Penalty Review**
 
 ## Geometry Route
 
@@ -32,7 +32,6 @@ intent -> shell -> meridian -> sector -> files -> validation -> evidence -> less
 | Policy impact patch | outer | validation | governance | dry-run report + impact cards | impact report + charts + release validator | `reports/policy_impact/latest_policy_impact_cards.md` |
 | Policy decision patch | outer | validation | governance | impact cards + decision record | decision record + charts + release validator | `reports/policy_decision/latest_policy_decision_record.md` |
 | Regression review patch | outer | validation | governance | decision record + dry-run report | regression report + charts + release validator | `reports/regression_review/latest_regression_over_penalty_review.md` |
-| Enforcement readiness patch | outer | validation | governance | regression review + readiness gate | readiness report + charts + release validator | `reports/enforcement_readiness/latest_enforcement_readiness_gate.md` |
 | Public claim replay patch | outer | evidence | release | source boundary docs, `configs/seeds/public_claims/` | release validator + claim replay report | `reports/public_claims/latest_claim_replay_report.md` |
 | Agent contract patch | center | agent | rcc | `AGENTS.md`, route map, task matrix, README | README audit + release validator | `reports/agent/latest_agent_contract_sync.md` |
 | Reflection patch | center | drift | documentation | `docs/reflection/`, `reports/reflection/`, README, AGENTS | README audit + release validator | `reports/reflection/latest_system_reflection.md` |

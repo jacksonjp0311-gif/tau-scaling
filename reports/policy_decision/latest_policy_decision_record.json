@@ -209,7 +209,7 @@
     }
   ],
   "final_recommendation": "no_classifier_mutation__prepare_regression_review_for_controlled_downgrades",
-  "generated_at": "2026-05-27T15:38:22.332458+00:00",
+  "generated_at": "2026-05-27T15:45:44.821856+00:00",
   "input": "reports/policy_impact/latest_policy_impact_cards.json",
   "input_card_count": 9,
   "mutation_allowed": false,

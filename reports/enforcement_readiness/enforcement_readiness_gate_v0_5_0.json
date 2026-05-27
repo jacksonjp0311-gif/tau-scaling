@@ -1,0 +1,259 @@
+{
+  "blocked_by_over_penalty_count": 6,
+  "blocked_gate_counts": {
+    "B_ETP": 1,
+    "B_LF": 1,
+    "B_PVT": 1,
+    "B_baseline": 1,
+    "B_evidence": 3,
+    "B_method": 1,
+    "B_tau": 2,
+    "B_workload": 1,
+    "B_yield": 1
+  },
+  "boundary": "Enforcement readiness is local classifier-governance analysis only. It does not change classifier behavior and does not validate silicon, products, manufacturing, process nodes, benchmark superiority, or universal Tau Scaling law.",
+  "calibration_sweep": [
+    {
+      "candidate_count": 6,
+      "high_severity_count": 0,
+      "high_support_count": 6,
+      "missing_findings_count": 0,
+      "over_penalty_count": 6,
+      "pass_count": 0,
+      "threshold": 0.7
+    },
+    {
+      "candidate_count": 6,
+      "high_severity_count": 0,
+      "high_support_count": 6,
+      "missing_findings_count": 0,
+      "over_penalty_count": 6,
+      "pass_count": 0,
+      "threshold": 0.75
+    },
+    {
+      "candidate_count": 6,
+      "high_severity_count": 0,
+      "high_support_count": 6,
+      "missing_findings_count": 0,
+      "over_penalty_count": 6,
+      "pass_count": 0,
+      "threshold": 0.8
+    },
+    {
+      "candidate_count": 6,
+      "high_severity_count": 0,
+      "high_support_count": 0,
+      "missing_findings_count": 0,
+      "over_penalty_count": 0,
+      "pass_count": 6,
+      "threshold": 0.85
+    },
+    {
+      "candidate_count": 6,
+      "high_severity_count": 0,
+      "high_support_count": 0,
+      "missing_findings_count": 0,
+      "over_penalty_count": 0,
+      "pass_count": 6,
+      "threshold": 0.9
+    },
+    {
+      "candidate_count": 6,
+      "high_severity_count": 0,
+      "high_support_count": 0,
+      "missing_findings_count": 0,
+      "over_penalty_count": 0,
+      "pass_count": 6,
+      "threshold": 0.95
+    }
+  ],
+  "chart_paths": [
+    "visuals/enforcement_readiness/v0_5_0/enforcement_readiness_status_counts.png",
+    "visuals/enforcement_readiness/v0_5_0/enforcement_readiness_calibration_sweep.png",
+    "visuals/enforcement_readiness/v0_5_0/blocked_candidate_gate_counts.png"
+  ],
+  "controlled_downgrade_candidate_count": 6,
+  "eligible_candidate_design_count": 0,
+  "enforcement_candidate_enabled": false,
+  "final_recommendation": "do_not_design_enforcement_candidate__all_controlled_downgrades_blocked",
+  "generated_at": "2026-05-27T15:45:47.602349+00:00",
+  "human_review_only_count": 3,
+  "input": "reports/regression_review/latest_regression_over_penalty_review.json",
+  "input_review_rows": 9,
+  "mutation_allowed": false,
+  "next_recommendation": "v0.5.1 should repair the Nexus feedback target so completed v0.4.x surfaces are recognized and stale recommendations are retired.",
+  "policy_enforced": false,
+  "readiness_rows": [
+    {
+      "baseline_over_penalty_reasons": [
+        "high_diagnostic_support",
+        "high_drift_severity"
+      ],
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "decision": "DEFER_TO_HUMAN_REVIEW",
+      "drift_severity": 3,
+      "findings_count": 2,
+      "gate_a": "B_source",
+      "gate_b": "B_metric",
+      "gate_pair": "B_source+B_metric",
+      "mutation_allowed": false,
+      "policy_enforced": false,
+      "readiness_status": "HUMAN_REVIEW_ONLY",
+      "recommended_action": "Preserve human-review routing. Do not convert to automatic downgrade.",
+      "simulated_policy_classification": "HUMAN_REVIEW"
+    },
+    {
+      "baseline_over_penalty_reasons": [
+        "high_diagnostic_support",
+        "high_drift_severity"
+      ],
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "decision": "DEFER_TO_HUMAN_REVIEW",
+      "drift_severity": 3,
+      "findings_count": 2,
+      "gate_a": "B_source",
+      "gate_b": "B_baseline",
+      "gate_pair": "B_source+B_baseline",
+      "mutation_allowed": false,
+      "policy_enforced": false,
+      "readiness_status": "HUMAN_REVIEW_ONLY",
+      "recommended_action": "Preserve human-review routing. Do not convert to automatic downgrade.",
+      "simulated_policy_classification": "HUMAN_REVIEW"
+    },
+    {
+      "baseline_over_penalty_reasons": [
+        "high_diagnostic_support",
+        "high_drift_severity"
+      ],
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "decision": "DEFER_TO_HUMAN_REVIEW",
+      "drift_severity": 3,
+      "findings_count": 2,
+      "gate_a": "B_source",
+      "gate_b": "B_evidence",
+      "gate_pair": "B_source+B_evidence",
+      "mutation_allowed": false,
+      "policy_enforced": false,
+      "readiness_status": "HUMAN_REVIEW_ONLY",
+      "recommended_action": "Preserve human-review routing. Do not convert to automatic downgrade.",
+      "simulated_policy_classification": "HUMAN_REVIEW"
+    },
+    {
+      "baseline_over_penalty_reasons": [
+        "high_diagnostic_support"
+      ],
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "decision": "APPROVE_FOR_REGRESSION_REVIEW",
+      "drift_severity": 1,
+      "findings_count": 2,
+      "gate_a": "B_baseline",
+      "gate_b": "B_tau",
+      "gate_pair": "B_baseline+B_tau",
+      "mutation_allowed": false,
+      "policy_enforced": false,
+      "readiness_status": "BLOCKED_BY_OVER_PENALTY",
+      "recommended_action": "Do not enforce. Candidate must be calibrated or narrowed before any enforcement design.",
+      "simulated_policy_classification": "TSEK-D"
+    },
+    {
+      "baseline_over_penalty_reasons": [
+        "high_diagnostic_support"
+      ],
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "decision": "APPROVE_FOR_REGRESSION_REVIEW",
+      "drift_severity": 1,
+      "findings_count": 2,
+      "gate_a": "B_method",
+      "gate_b": "B_evidence",
+      "gate_pair": "B_method+B_evidence",
+      "mutation_allowed": false,
+      "policy_enforced": false,
+      "readiness_status": "BLOCKED_BY_OVER_PENALTY",
+      "recommended_action": "Do not enforce. Candidate must be calibrated or narrowed before any enforcement design.",
+      "simulated_policy_classification": "TSEK-D"
+    },
+    {
+      "baseline_over_penalty_reasons": [
+        "high_diagnostic_support"
+      ],
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "decision": "APPROVE_FOR_REGRESSION_REVIEW",
+      "drift_severity": 1,
+      "findings_count": 2,
+      "gate_a": "B_workload",
+      "gate_b": "B_tau",
+      "gate_pair": "B_workload+B_tau",
+      "mutation_allowed": false,
+      "policy_enforced": false,
+      "readiness_status": "BLOCKED_BY_OVER_PENALTY",
+      "recommended_action": "Do not enforce. Candidate must be calibrated or narrowed before any enforcement design.",
+      "simulated_policy_classification": "TSEK-D"
+    },
+    {
+      "baseline_over_penalty_reasons": [
+        "high_diagnostic_support"
+      ],
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "decision": "APPROVE_FOR_REGRESSION_REVIEW",
+      "drift_severity": 1,
+      "findings_count": 2,
+      "gate_a": "B_LF",
+      "gate_b": "B_ETP",
+      "gate_pair": "B_LF+B_ETP",
+      "mutation_allowed": false,
+      "policy_enforced": false,
+      "readiness_status": "BLOCKED_BY_OVER_PENALTY",
+      "recommended_action": "Do not enforce. Candidate must be calibrated or narrowed before any enforcement design.",
+      "simulated_policy_classification": "TSEK-D"
+    },
+    {
+      "baseline_over_penalty_reasons": [
+        "high_diagnostic_support"
+      ],
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "decision": "APPROVE_FOR_REGRESSION_REVIEW",
+      "drift_severity": 1,
+      "findings_count": 2,
+      "gate_a": "B_PVT",
+      "gate_b": "B_evidence",
+      "gate_pair": "B_PVT+B_evidence",
+      "mutation_allowed": false,
+      "policy_enforced": false,
+      "readiness_status": "BLOCKED_BY_OVER_PENALTY",
+      "recommended_action": "Do not enforce. Candidate must be calibrated or narrowed before any enforcement design.",
+      "simulated_policy_classification": "TSEK-D"
+    },
+    {
+      "baseline_over_penalty_reasons": [
+        "high_diagnostic_support"
+      ],
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "decision": "APPROVE_FOR_REGRESSION_REVIEW",
+      "drift_severity": 1,
+      "findings_count": 2,
+      "gate_a": "B_yield",
+      "gate_b": "B_evidence",
+      "gate_pair": "B_yield+B_evidence",
+      "mutation_allowed": false,
+      "policy_enforced": false,
+      "readiness_status": "BLOCKED_BY_OVER_PENALTY",
+      "recommended_action": "Do not enforce. Candidate must be calibrated or narrowed before any enforcement design.",
+      "simulated_policy_classification": "TSEK-D"
+    }
+  ],
+  "readiness_status_counts": {
+    "BLOCKED_BY_OVER_PENALTY": 6,
+    "HUMAN_REVIEW_ONLY": 3
+  },
+  "schema": "tau-scaling-enforcement-readiness-gate-v0.5.0"
+}

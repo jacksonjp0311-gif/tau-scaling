@@ -10,8 +10,8 @@
 
 Repository: `tau-scaling`  
 Package / CLI: `tau_scaling` / `tau-scaling`  
-Current checkpoint: **TAU-SCALING-SA v0.5.0 - Enforcement Readiness Gate**  
-Previous seal: **TAU-SCALING-SA v0.4.9 - Regression and Over-Penalty Review**
+Current checkpoint: **TAU-SCALING-SA v0.4.9 - Regression and Over-Penalty Review**  
+Previous seal: **TAU-SCALING-SA v0.4.8 - Policy Decision Record**
 
 Tau Scaling is a local-first, evidence-gated Python runtime for evaluating tau-scaling claims through structured claim cards, workload declarations, tau vectors, LogicFolding survivability checks, edge-to-surface boundary algebra, energy / thermal / PDN / PVT gates, Monte Carlo checker stress, TSEK classification, evidence packages, and RCC-N / OMN-style repository navigation.
 
@@ -55,7 +55,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | TAU-SCALING-SA v0.5.0 |
+| Current checkpoint | TAU-SCALING-SA v0.4.9 |
 | Synthetic gate suite | v0.4.0 / benchmark + finding charts |
 | Package version | 0.2.0 |
 | Baseline seed | TSEK-C / A_TSEK 0.0000 |
@@ -96,8 +96,6 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 | Policy decision charts | `visuals/policy_decision/v0_4_8/` |
 | Regression review | `reports/regression_review/latest_regression_over_penalty_review.md` |
 | Regression review charts | `visuals/regression_review/v0_4_9/` |
-| Enforcement readiness gate | `reports/enforcement_readiness/latest_enforcement_readiness_gate.md` |
-| Enforcement readiness charts | `visuals/enforcement_readiness/v0_5_0/` |
 | Agent contract version sync | current / v0.4.8 |
 | Release readiness report | `reports/release/latest_release_readiness.md` |
 | Collision-proof run identity | passed |
@@ -131,7 +129,6 @@ python scripts/benchmarks/run_pair_policy_dry_run.py
 python scripts/benchmarks/generate_policy_impact_cards.py
 python scripts/benchmarks/generate_policy_decision_record.py
 python scripts/benchmarks/run_regression_over_penalty_review.py
-python scripts/benchmarks/run_enforcement_readiness_gate.py
 python scripts/feedback/run_nexus_feedback.py
 python scripts/release/validate_release.py
 ```
@@ -429,7 +426,6 @@ This section is part of the repository's operating memory. When a patch fails, t
 | L-029 | v0.4.6 produced 9 drift cases but drift alone is not an enforcement decision. | A dry-run simulator can show impact without explaining whether each impact is justified. | Any simulated classifier drift must receive an impact explanation card before enforcement is considered. |
 | L-030 | v0.4.7 generated impact cards, but impact cards alone do not authorize classifier mutation. | Explanation artifacts identify drift reasons; they do not decide enforcement readiness. | Simulated policy impacts must be converted into a decision record with mutation_allowed=false until regression and over-penalty review pass. |
 | L-031 | v0.4.8 approved six drift cases for regression review, but approval-for-review is not approval-for-enforcement. | Decision records classify readiness for review, not readiness for mutation. | Controlled downgrade candidates must pass regression and over-penalty review before any classifier enforcement candidate is allowed. |
-| L-032 | v0.4.9 showed that all six controlled downgrade candidates triggered over-penalty review. | A review gate that blocks every candidate may indicate true policy harshness or heuristic over-sensitivity. | When regression review blocks every candidate, do not proceed to enforcement design; first promote the blocked state into a major enforcement-readiness gate with all mutation disabled. |
 
 ### Failure Response Protocol
 
@@ -638,7 +634,6 @@ tau-scaling/
   releases/
   reports/
     nexus_feedback/
-    enforcement_readiness/
     regression_review/
     policy_dry_run/
     policy_impact/
@@ -680,7 +675,6 @@ tau-scaling/
   tests/
   visuals/
     nexus_feedback/
-    enforcement_readiness/
     regression_review/
     policy_dry_run/
     policy_impact/
@@ -767,43 +761,6 @@ per-finding scenario presence
 ### Boundary
 
 Synthetic gate charts show local runtime behavior only. They are not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.
-
-## Enforcement Readiness Gate v0.5.0
-
-v0.5.0 is the major governance checkpoint after v0.4.9 blocked all controlled downgrade candidates.
-
-Primary command:
-
-```powershell
-python scripts/benchmarks/run_enforcement_readiness_gate.py
-```
-
-Primary outputs:
-
-```text
-reports/enforcement_readiness/latest_enforcement_readiness_gate.json
-reports/enforcement_readiness/latest_enforcement_readiness_gate.md
-visuals/enforcement_readiness/v0_5_0/
-```
-
-This layer answers:
-
-```text
-which policy candidates remain blocked
-which cases stay human-review only
-whether disabled enforcement-candidate design is allowed
-whether any classifier mutation is permitted
-```
-
-Current lock:
-
-```text
-enforcement_candidate_enabled: false
-mutation_allowed: false
-policy_enforced: false
-```
-
-Boundary: enforcement readiness is local classifier-governance analysis only. It does not change classifier behavior and does not validate silicon, product performance, manufacturing capability, process-node equivalence, benchmark superiority, AI understanding, or universal Tau Scaling law.
 
 ## Regression and Over-Penalty Review v0.4.9
 
@@ -1390,15 +1347,14 @@ validation_remains_required
 | v0.4.7 | Policy impact explanation cards for dry-run drift cases. |
 | v0.4.8 | Policy decision record for non-mutating enforcement readiness classification. |
 | v0.4.9 | Regression and over-penalty review for controlled downgrade candidates. |
-| v0.5.0 | Enforcement readiness gate for blocked policy candidates with classifier mutation disabled. |
 
 ## Next Recommended Version
 
-**TAU-SCALING-SA v0.5.1 - Nexus Target Refresh and Completed-Signal Retirement**
+**TAU-SCALING-SA v0.5.0 - Enforcement Candidate Design**
 
 Recommended goals:
 
-- Update Nexus feedback so completed v0.4.6-v0.5.0 targets are recognized as completed.
-- Retire stale NF-001 dry-run recommendation.
-- Promote the current blocker as the next active signal.
-- Preserve non-claim locks: Nexus target refresh is repository self-observation only.
+- Design enforcement candidate rules without activating them.
+- Require regression review pass and over-penalty count zero.
+- Emit enforcement-candidate config with `enabled: false`.
+- Preserve classifier non-mutation until explicit future activation gate.

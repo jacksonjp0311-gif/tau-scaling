@@ -1,6 +1,6 @@
 # AGENTS.md — Tau Scaling Agent Operating Contract
 
-Current contract: **TAU-SCALING-SA v0.5.0 - Enforcement Readiness Gate**
+Current contract: **TAU-SCALING-SA v0.4.9 - Regression and Over-Penalty Review**
 
 ## Mission
 
@@ -75,7 +75,6 @@ python -m unittest discover -s tests
 | Policy impact patch | `reports/policy_impact/`, `visuals/policy_impact/`, dry-run report | impact cards + release validator; no classifier mutation |
 | Policy decision patch | `reports/policy_decision/`, `visuals/policy_decision/`, impact cards | decision record + release validator; mutation_allowed must remain false |
 | Regression review patch | `reports/regression_review/`, `visuals/regression_review/`, decision record | regression review + over-penalty report; mutation_allowed must remain false |
-| Enforcement readiness patch | `reports/enforcement_readiness/`, `visuals/enforcement_readiness/`, regression review | readiness gate + release validator; enforcement_candidate_enabled must remain false |
 | Public claim replay patch | source boundary docs, `configs/seeds/public_claims/`, claim reports | release validator + claim replay report |
 | Directory structure patch | Full Directory Box, affected mini READMEs, context indexes | README audit + RCC-N + release validator |
 
