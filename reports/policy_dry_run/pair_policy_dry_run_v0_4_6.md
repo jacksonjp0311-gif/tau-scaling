@@ -1,6 +1,6 @@
 # Tau Scaling v0.4.6 Pair Policy Dry-Run Simulator
 
-Generated: `2026-05-27T15:00:51.831032+00:00`
+Generated: `2026-05-27T15:15:05.043207+00:00`
 
 ## Result
 

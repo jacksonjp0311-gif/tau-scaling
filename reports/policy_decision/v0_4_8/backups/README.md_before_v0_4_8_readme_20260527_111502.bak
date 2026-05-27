@@ -10,8 +10,8 @@
 
 Repository: `tau-scaling`  
 Package / CLI: `tau_scaling` / `tau-scaling`  
-Current checkpoint: **TAU-SCALING-SA v0.4.8 - Policy Decision Record**  
-Previous seal: **TAU-SCALING-SA v0.4.7 - Policy Impact Explanation Cards**
+Current checkpoint: **TAU-SCALING-SA v0.4.7 - Policy Impact Explanation Cards**  
+Previous seal: **TAU-SCALING-SA v0.4.6 - Pair Policy Dry-Run Simulator**
 
 Tau Scaling is a local-first, evidence-gated Python runtime for evaluating tau-scaling claims through structured claim cards, workload declarations, tau vectors, LogicFolding survivability checks, edge-to-surface boundary algebra, energy / thermal / PDN / PVT gates, Monte Carlo checker stress, TSEK classification, evidence packages, and RCC-N / OMN-style repository navigation.
 
@@ -55,7 +55,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | TAU-SCALING-SA v0.4.8 |
+| Current checkpoint | TAU-SCALING-SA v0.4.7 |
 | Synthetic gate suite | v0.4.0 / benchmark + finding charts |
 | Package version | 0.2.0 |
 | Baseline seed | TSEK-C / A_TSEK 0.0000 |
@@ -64,7 +64,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 | README mini repo audit | passing / 0 warnings |
 | Unified release validator | passing / step failures 0 |
 | AGENTS.md contract | synchronized with release validator |
-| Task routing matrix | geometry-aware / v0.4.8-ready |
+| Task routing matrix | geometry-aware / v0.4-ready |
 | Release warning findings | 0 expected after v0.3.3d validator scan repair |
 | Architecture validator | passing / 0 warnings |
 | Unit tests | 8 OK |
@@ -92,9 +92,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 | Pair policy dry-run charts | `visuals/policy_dry_run/v0_4_6/` |
 | Policy impact cards | `reports/policy_impact/latest_policy_impact_cards.md` |
 | Policy impact charts | `visuals/policy_impact/v0_4_7/` |
-| Policy decision record | `reports/policy_decision/latest_policy_decision_record.md` |
-| Policy decision charts | `visuals/policy_decision/v0_4_8/` |
-| Agent contract version sync | current / v0.4.8 |
+| Agent contract version sync | v0.4.0f / updated from v0.3.3e |
 | Release readiness report | `reports/release/latest_release_readiness.md` |
 | Collision-proof run identity | passed |
 | Mini README coverage | 1.0 |
@@ -125,7 +123,6 @@ python scripts/benchmarks/generate_threshold_explanation_cards.py
 python scripts/benchmarks/run_pair_policy_review.py
 python scripts/benchmarks/run_pair_policy_dry_run.py
 python scripts/benchmarks/generate_policy_impact_cards.py
-python scripts/benchmarks/generate_policy_decision_record.py
 python scripts/feedback/run_nexus_feedback.py
 python scripts/release/validate_release.py
 ```
@@ -421,7 +418,6 @@ This section is part of the repository's operating memory. When a patch fails, t
 | L-027 | v0.4.5c repaired list counters but `sensitivity_sweep` still failed health scoring. | The persisted sensitivity JSON used `chart_paths` while the feedback health scorer checked only `chart_count`. | Feedback health scoring must normalize both count fields and evidence-list fields such as chart_paths. |
 | L-028 | Nexus feedback v0.4.5d reached health 1.0 and ranked pair-policy pressure as the top next target. | Policy review pressure should not mutate the classifier directly. | Any classifier-policy change must first pass a dry-run simulator comparing current class vs simulated policy class. |
 | L-029 | v0.4.6 produced 9 drift cases but drift alone is not an enforcement decision. | A dry-run simulator can show impact without explaining whether each impact is justified. | Any simulated classifier drift must receive an impact explanation card before enforcement is considered. |
-| L-030 | v0.4.7 generated impact cards, but impact cards alone do not authorize classifier mutation. | Explanation artifacts identify drift reasons; they do not decide enforcement readiness. | Simulated policy impacts must be converted into a decision record with mutation_allowed=false until regression and over-penalty review pass. |
 
 ### Failure Response Protocol
 
@@ -630,9 +626,6 @@ tau-scaling/
   releases/
   reports/
     nexus_feedback/
-    policy_dry_run/
-    policy_impact/
-    policy_decision/
     policy/
     explanations/
     interactions/
@@ -670,9 +663,6 @@ tau-scaling/
   tests/
   visuals/
     nexus_feedback/
-    policy_dry_run/
-    policy_impact/
-    policy_decision/
     policy/
     explanations/
     interactions/
@@ -755,42 +745,6 @@ per-finding scenario presence
 ### Boundary
 
 Synthetic gate charts show local runtime behavior only. They are not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.
-
-## Policy Decision Record v0.4.8
-
-v0.4.8 converts policy impact cards into a non-mutating decision record.
-
-Primary command:
-
-```powershell
-python scripts/benchmarks/generate_policy_decision_record.py
-```
-
-Primary outputs:
-
-```text
-reports/policy_decision/latest_policy_decision_record.json
-reports/policy_decision/latest_policy_decision_record.md
-visuals/policy_decision/v0_4_8/
-```
-
-This layer decides:
-
-```text
-which simulated downgrades are approved for regression review
-which cases must defer to human review
-which cases must not be enforced
-whether classifier mutation is allowed
-```
-
-Current lock:
-
-```text
-mutation_allowed: false
-policy_enforced: false
-```
-
-Boundary: policy decision records are local classifier-governance artifacts only. They do not change classifier behavior and do not validate silicon, product performance, manufacturing capability, process-node equivalence, benchmark superiority, AI understanding, or universal Tau Scaling law.
 
 ## Policy Impact Explanation Cards v0.4.7
 
@@ -1303,15 +1257,14 @@ validation_remains_required
 | v0.4.5d | Nexus feedback chart-path health repair for sensitivity sweep chart evidence. |
 | v0.4.6 | Pair policy dry-run simulator for non-mutating classifier-policy impact analysis. |
 | v0.4.7 | Policy impact explanation cards for dry-run drift cases. |
-| v0.4.8 | Policy decision record for non-mutating enforcement readiness classification. |
 
 ## Next Recommended Version
 
-**TAU-SCALING-SA v0.4.9 - Regression and Over-Penalty Review**
+**TAU-SCALING-SA v0.4.8 - Policy Decision Record**
 
 Recommended goals:
 
-- Regression-test the six controlled downgrade candidates.
-- Check whether downgrades over-penalize ordinary incomplete evidence.
-- Preserve classifier non-mutation until review passes.
-- Preserve non-claim locks: regression review is local classifier governance only.
+- Convert policy impact cards into a decision record.
+- Approve, reject, or defer each simulated drift class.
+- Preserve classifier non-mutation until decision record passes.
+- Preserve non-claim locks: policy decisions are local classifier governance only.

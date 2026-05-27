@@ -1126,7 +1126,7 @@
       "simulation_action": "candidate_downgrade"
     }
   ],
-  "generated_at": "2026-05-27T15:00:51.831032+00:00",
+  "generated_at": "2026-05-27T15:15:05.043207+00:00",
   "hard_reject_count": 0,
   "human_review_count": 3,
   "next_recommendation": "v0.4.7 should generate policy impact explanation cards before any classifier enforcement candidate.",

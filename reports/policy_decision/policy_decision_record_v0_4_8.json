@@ -1,0 +1,219 @@
+{
+  "boundary": "Policy decision records are local classifier-governance artifacts only. They do not change classifier behavior and do not validate silicon, products, manufacturing, process nodes, benchmark superiority, or universal Tau Scaling law.",
+  "chart_paths": [
+    "visuals/policy_decision/v0_4_8/policy_decision_counts.png",
+    "visuals/policy_decision/v0_4_8/policy_decision_class_counts.png",
+    "visuals/policy_decision/v0_4_8/policy_decision_gate_counts.png"
+  ],
+  "decision_class_counts": {
+    "controlled_downgrade_candidate": 6,
+    "manual_review_gate": 3
+  },
+  "decision_counts": {
+    "APPROVE_FOR_REGRESSION_REVIEW": 6,
+    "DEFER_TO_HUMAN_REVIEW": 3
+  },
+  "decision_gate_counts": {
+    "B_ETP": 1,
+    "B_LF": 1,
+    "B_PVT": 1,
+    "B_baseline": 2,
+    "B_evidence": 4,
+    "B_method": 1,
+    "B_metric": 1,
+    "B_source": 3,
+    "B_tau": 2,
+    "B_workload": 1,
+    "B_yield": 1
+  },
+  "decision_rows": [
+    {
+      "card_id": "policy-impact-v0-4-7-001",
+      "current_classification": "TSEK-C",
+      "decision": "DEFER_TO_HUMAN_REVIEW",
+      "decision_class": "manual_review_gate",
+      "decision_rationale": "Do not enforce automatically. Human review is required before any classifier-policy mutation.",
+      "finding_codes": [
+        "TSEK_B_source_MISSING",
+        "TSEK_B_metric_MISSING"
+      ],
+      "gate_a": "B_source",
+      "gate_b": "B_metric",
+      "gate_pair": "B_source+B_metric",
+      "impact_class": "manual_review_required",
+      "mutation_allowed": false,
+      "non_claim_lock": "Policy decisions are local classifier-governance decisions only; they do not validate silicon or product claims.",
+      "policy_enforced": false,
+      "risk_label": "review_risk",
+      "simulated_policy_classification": "HUMAN_REVIEW"
+    },
+    {
+      "card_id": "policy-impact-v0-4-7-002",
+      "current_classification": "TSEK-C",
+      "decision": "DEFER_TO_HUMAN_REVIEW",
+      "decision_class": "manual_review_gate",
+      "decision_rationale": "Do not enforce automatically. Human review is required before any classifier-policy mutation.",
+      "finding_codes": [
+        "TSEK_B_source_MISSING",
+        "TSEK_B_baseline_MISSING"
+      ],
+      "gate_a": "B_source",
+      "gate_b": "B_baseline",
+      "gate_pair": "B_source+B_baseline",
+      "impact_class": "manual_review_required",
+      "mutation_allowed": false,
+      "non_claim_lock": "Policy decisions are local classifier-governance decisions only; they do not validate silicon or product claims.",
+      "policy_enforced": false,
+      "risk_label": "review_risk",
+      "simulated_policy_classification": "HUMAN_REVIEW"
+    },
+    {
+      "card_id": "policy-impact-v0-4-7-003",
+      "current_classification": "TSEK-C",
+      "decision": "DEFER_TO_HUMAN_REVIEW",
+      "decision_class": "manual_review_gate",
+      "decision_rationale": "Do not enforce automatically. Human review is required before any classifier-policy mutation.",
+      "finding_codes": [
+        "TSEK_B_source_MISSING",
+        "TSEK_B_evidence_MISSING"
+      ],
+      "gate_a": "B_source",
+      "gate_b": "B_evidence",
+      "gate_pair": "B_source+B_evidence",
+      "impact_class": "manual_review_required",
+      "mutation_allowed": false,
+      "non_claim_lock": "Policy decisions are local classifier-governance decisions only; they do not validate silicon or product claims.",
+      "policy_enforced": false,
+      "risk_label": "review_risk",
+      "simulated_policy_classification": "HUMAN_REVIEW"
+    },
+    {
+      "card_id": "policy-impact-v0-4-7-004",
+      "current_classification": "TSEK-C",
+      "decision": "APPROVE_FOR_REGRESSION_REVIEW",
+      "decision_class": "controlled_downgrade_candidate",
+      "decision_rationale": "Candidate for future controlled downgrade, but only after regression and over-penalty review.",
+      "finding_codes": [
+        "TSEK_B_baseline_MISSING",
+        "TSEK_B_tau_MISSING"
+      ],
+      "gate_a": "B_baseline",
+      "gate_b": "B_tau",
+      "gate_pair": "B_baseline+B_tau",
+      "impact_class": "controlled_policy_downgrade",
+      "mutation_allowed": false,
+      "non_claim_lock": "Policy decisions are local classifier-governance decisions only; they do not validate silicon or product claims.",
+      "policy_enforced": false,
+      "risk_label": "downgrade_risk",
+      "simulated_policy_classification": "TSEK-D"
+    },
+    {
+      "card_id": "policy-impact-v0-4-7-005",
+      "current_classification": "TSEK-C",
+      "decision": "APPROVE_FOR_REGRESSION_REVIEW",
+      "decision_class": "controlled_downgrade_candidate",
+      "decision_rationale": "Candidate for future controlled downgrade, but only after regression and over-penalty review.",
+      "finding_codes": [
+        "TSEK_B_method_MISSING",
+        "TSEK_B_evidence_MISSING"
+      ],
+      "gate_a": "B_method",
+      "gate_b": "B_evidence",
+      "gate_pair": "B_method+B_evidence",
+      "impact_class": "controlled_policy_downgrade",
+      "mutation_allowed": false,
+      "non_claim_lock": "Policy decisions are local classifier-governance decisions only; they do not validate silicon or product claims.",
+      "policy_enforced": false,
+      "risk_label": "downgrade_risk",
+      "simulated_policy_classification": "TSEK-D"
+    },
+    {
+      "card_id": "policy-impact-v0-4-7-006",
+      "current_classification": "TSEK-C",
+      "decision": "APPROVE_FOR_REGRESSION_REVIEW",
+      "decision_class": "controlled_downgrade_candidate",
+      "decision_rationale": "Candidate for future controlled downgrade, but only after regression and over-penalty review.",
+      "finding_codes": [
+        "TSEK_B_workload_MISSING",
+        "TSEK_B_tau_MISSING"
+      ],
+      "gate_a": "B_workload",
+      "gate_b": "B_tau",
+      "gate_pair": "B_workload+B_tau",
+      "impact_class": "controlled_policy_downgrade",
+      "mutation_allowed": false,
+      "non_claim_lock": "Policy decisions are local classifier-governance decisions only; they do not validate silicon or product claims.",
+      "policy_enforced": false,
+      "risk_label": "downgrade_risk",
+      "simulated_policy_classification": "TSEK-D"
+    },
+    {
+      "card_id": "policy-impact-v0-4-7-007",
+      "current_classification": "TSEK-C",
+      "decision": "APPROVE_FOR_REGRESSION_REVIEW",
+      "decision_class": "controlled_downgrade_candidate",
+      "decision_rationale": "Candidate for future controlled downgrade, but only after regression and over-penalty review.",
+      "finding_codes": [
+        "TSEK_B_LF_MISSING",
+        "TSEK_B_ETP_MISSING"
+      ],
+      "gate_a": "B_LF",
+      "gate_b": "B_ETP",
+      "gate_pair": "B_LF+B_ETP",
+      "impact_class": "controlled_policy_downgrade",
+      "mutation_allowed": false,
+      "non_claim_lock": "Policy decisions are local classifier-governance decisions only; they do not validate silicon or product claims.",
+      "policy_enforced": false,
+      "risk_label": "downgrade_risk",
+      "simulated_policy_classification": "TSEK-D"
+    },
+    {
+      "card_id": "policy-impact-v0-4-7-008",
+      "current_classification": "TSEK-C",
+      "decision": "APPROVE_FOR_REGRESSION_REVIEW",
+      "decision_class": "controlled_downgrade_candidate",
+      "decision_rationale": "Candidate for future controlled downgrade, but only after regression and over-penalty review.",
+      "finding_codes": [
+        "TSEK_B_PVT_MISSING",
+        "TSEK_B_evidence_MISSING"
+      ],
+      "gate_a": "B_PVT",
+      "gate_b": "B_evidence",
+      "gate_pair": "B_PVT+B_evidence",
+      "impact_class": "controlled_policy_downgrade",
+      "mutation_allowed": false,
+      "non_claim_lock": "Policy decisions are local classifier-governance decisions only; they do not validate silicon or product claims.",
+      "policy_enforced": false,
+      "risk_label": "downgrade_risk",
+      "simulated_policy_classification": "TSEK-D"
+    },
+    {
+      "card_id": "policy-impact-v0-4-7-009",
+      "current_classification": "TSEK-C",
+      "decision": "APPROVE_FOR_REGRESSION_REVIEW",
+      "decision_class": "controlled_downgrade_candidate",
+      "decision_rationale": "Candidate for future controlled downgrade, but only after regression and over-penalty review.",
+      "finding_codes": [
+        "TSEK_B_yield_MISSING",
+        "TSEK_B_evidence_MISSING"
+      ],
+      "gate_a": "B_yield",
+      "gate_b": "B_evidence",
+      "gate_pair": "B_yield+B_evidence",
+      "impact_class": "controlled_policy_downgrade",
+      "mutation_allowed": false,
+      "non_claim_lock": "Policy decisions are local classifier-governance decisions only; they do not validate silicon or product claims.",
+      "policy_enforced": false,
+      "risk_label": "downgrade_risk",
+      "simulated_policy_classification": "TSEK-D"
+    }
+  ],
+  "final_recommendation": "no_classifier_mutation__prepare_regression_review_for_controlled_downgrades",
+  "generated_at": "2026-05-27T15:15:08.099591+00:00",
+  "input": "reports/policy_impact/latest_policy_impact_cards.json",
+  "input_card_count": 9,
+  "mutation_allowed": false,
+  "next_recommendation": "v0.4.9 should run regression/over-penalty review for the six controlled downgrade candidates before any enforcement candidate.",
+  "policy_enforced": false,
+  "schema": "tau-scaling-policy-decision-record-v0.4.8"
+}
