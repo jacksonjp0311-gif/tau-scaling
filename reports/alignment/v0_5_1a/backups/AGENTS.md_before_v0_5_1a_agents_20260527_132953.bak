@@ -46,19 +46,12 @@ For every non-trivial patch, run:
 ```powershell
 python scripts/release/validate_release.py
 python scripts/rcc/audit_readme_surface.py
-python scripts/rcc/check_rcc_nexus.py
 python scripts/benchmarks/run_synthetic_gate_suite.py
 python scripts/benchmarks/run_sensitivity_sweep.py
 python scripts/benchmarks/run_gate_interaction_matrix.py
 python scripts/benchmarks/generate_threshold_explanation_cards.py
 python scripts/benchmarks/run_pair_policy_review.py
-python scripts/benchmarks/run_pair_policy_dry_run.py
-python scripts/benchmarks/generate_policy_impact_cards.py
-python scripts/benchmarks/generate_policy_decision_record.py
-python scripts/benchmarks/run_regression_over_penalty_review.py
-python scripts/benchmarks/run_enforcement_readiness_gate.py
 python scripts/feedback/run_nexus_feedback.py
-python scripts/feedback/run_nexus_target_refresh.py
 python -m unittest discover -s tests
 ```
 

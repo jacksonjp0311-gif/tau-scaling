@@ -64,7 +64,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 | README mini repo audit | passing / 0 warnings |
 | Unified release validator | passing / step failures 0 |
 | AGENTS.md contract | synchronized with release validator |
-| Task routing matrix | geometry-aware / v0.5.1-ready |
+| Task routing matrix | geometry-aware / v0.4.8-ready |
 | Release warning findings | 0 expected after v0.3.3d validator scan repair |
 | Architecture validator | passing / 0 warnings |
 | Unit tests | 8 OK |
@@ -100,7 +100,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 | Enforcement readiness charts | `visuals/enforcement_readiness/v0_5_0/` |
 | Nexus target refresh | `reports/nexus_target_refresh/latest_nexus_target_refresh.md` |
 | Nexus target refresh charts | `visuals/nexus_target_refresh/v0_5_1/` |
-| Agent contract version sync | current / v0.5.1 |
+| Agent contract version sync | current / v0.4.8 |
 | Release readiness report | `reports/release/latest_release_readiness.md` |
 | Collision-proof run identity | passed |
 | Mini README coverage | 1.0 |
@@ -774,20 +774,6 @@ per-finding scenario presence
 
 Synthetic gate charts show local runtime behavior only. They are not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.
 
-## v0.5.1a Public Alignment Polish
-
-v0.5.1a is a documentation-alignment polish layer. It does not add runtime behavior.
-
-Repairs:
-
-```text
-README public metrics now identify AGENTS.md as current / v0.5.1.
-README public metrics now identify task routing as v0.5.1-ready.
-AGENTS.md Required Validation now includes the current v0.4.6-v0.5.1 governance chain.
-```
-
-Boundary: alignment polish is repository hygiene only. It is not code correctness, silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.
-
 ## Nexus Target Refresh and Completed-Signal Retirement v0.5.1
 
 v0.5.1 repairs stale reflective routing after v0.5.0 enforcement readiness.
@@ -1448,7 +1434,6 @@ validation_remains_required
 | v0.4.9 | Regression and over-penalty review for controlled downgrade candidates. |
 | v0.5.0 | Enforcement readiness gate for blocked policy candidates with classifier mutation disabled. |
 | v0.5.1 | Nexus target refresh and completed-signal retirement after v0.5.0. |
-| v0.5.1a | Public alignment polish for README metrics and AGENTS validation chain. |
 
 ## Next Recommended Version
 
