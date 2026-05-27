@@ -1,6 +1,6 @@
 # Tau Scaling v0.5.0 Enforcement Readiness Gate
 
-Generated: `2026-05-27T16:20:57.488426+00:00`
+Generated: `2026-05-27T17:35:32.392363+00:00`
 
 ## Result
 

@@ -7,7 +7,7 @@
   ],
   "controlled_downgrade_candidate_count": 6,
   "final_recommendation": "do_not_enforce__over_penalty_review_required",
-  "generated_at": "2026-05-27T15:45:46.211620+00:00",
+  "generated_at": "2026-05-27T17:35:30.975919+00:00",
   "human_review_confirmed_count": 3,
   "input_decision_record": "reports/policy_decision/latest_policy_decision_record.json",
   "input_decision_rows": 9,

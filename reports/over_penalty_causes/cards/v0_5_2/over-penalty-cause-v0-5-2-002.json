@@ -1,0 +1,24 @@
+{
+  "candidate_status": "blocked_until_remediated",
+  "card_id": "over-penalty-cause-v0-5-2-002",
+  "causes": [
+    "high_diagnostic_support",
+    "heuristic_over_sensitivity"
+  ],
+  "current_classification": "TSEK-C",
+  "current_diagnostic_average": 0.8182,
+  "decision": "APPROVE_FOR_REGRESSION_REVIEW",
+  "drift_severity": 1,
+  "findings_count": 2,
+  "gate_a": "B_method",
+  "gate_b": "B_evidence",
+  "gate_pair": "B_method+B_evidence",
+  "mutation_allowed": false,
+  "non_claim_lock": "Cause cards are local classifier-governance diagnostics only.",
+  "policy_enforced": false,
+  "primary_cause": "high_diagnostic_support",
+  "readiness_status": "BLOCKED_BY_OVER_PENALTY",
+  "remediation": "Add a secondary evidence-pressure test before downgrading high-support cases.",
+  "schema": "tau-scaling-over-penalty-cause-card-v0.5.2",
+  "simulated_policy_classification": "TSEK-D"
+}

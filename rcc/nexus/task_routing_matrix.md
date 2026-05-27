@@ -1,6 +1,6 @@
 # Task Routing Matrix
 
-Current contract: **TAU-SCALING-SA v0.5.1 - Nexus Target Refresh and Completed-Signal Retirement**
+Current contract: **TAU-SCALING-SA v0.5.2 - Over-Penalty Cause Decomposition**
 
 ## Geometry Route
 
@@ -34,6 +34,7 @@ intent -> shell -> meridian -> sector -> files -> validation -> evidence -> less
 | Regression review patch | outer | validation | governance | decision record + dry-run report | regression report + charts + release validator | `reports/regression_review/latest_regression_over_penalty_review.md` |
 | Enforcement readiness patch | outer | validation | governance | regression review + readiness gate | readiness report + charts + release validator | `reports/enforcement_readiness/latest_enforcement_readiness_gate.md` |
 | Nexus target refresh patch | outer | drift | feedback | Nexus feedback + readiness gate | target-refresh report + charts + release validator | `reports/nexus_target_refresh/latest_nexus_target_refresh.md` |
+| Over-penalty cause patch | outer | validation | governance | readiness gate + regression review | cause cards + charts + release validator | `reports/over_penalty_causes/latest_over_penalty_cause_decomposition.md` |
 | Public claim replay patch | outer | evidence | release | source boundary docs, `configs/seeds/public_claims/` | release validator + claim replay report | `reports/public_claims/latest_claim_replay_report.md` |
 | Agent contract patch | center | agent | rcc | `AGENTS.md`, route map, task matrix, README | README audit + release validator | `reports/agent/latest_agent_contract_sync.md` |
 | Reflection patch | center | drift | documentation | `docs/reflection/`, `reports/reflection/`, README, AGENTS | README audit + release validator | `reports/reflection/latest_system_reflection.md` |

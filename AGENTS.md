@@ -1,6 +1,6 @@
 # AGENTS.md — Tau Scaling Agent Operating Contract
 
-Current contract: **TAU-SCALING-SA v0.5.1 - Nexus Target Refresh and Completed-Signal Retirement**
+Current contract: **TAU-SCALING-SA v0.5.2 - Over-Penalty Cause Decomposition**
 
 ## Mission
 
@@ -59,6 +59,7 @@ python scripts/benchmarks/run_regression_over_penalty_review.py
 python scripts/benchmarks/run_enforcement_readiness_gate.py
 python scripts/feedback/run_nexus_feedback.py
 python scripts/feedback/run_nexus_target_refresh.py
+python scripts/benchmarks/run_over_penalty_cause_decomposition.py
 python -m unittest discover -s tests
 ```
 
@@ -84,6 +85,7 @@ python -m unittest discover -s tests
 | Regression review patch | `reports/regression_review/`, `visuals/regression_review/`, decision record | regression review + over-penalty report; mutation_allowed must remain false |
 | Enforcement readiness patch | `reports/enforcement_readiness/`, `visuals/enforcement_readiness/`, regression review | readiness gate + release validator; enforcement_candidate_enabled must remain false |
 | Nexus target refresh patch | `reports/nexus_target_refresh/`, `visuals/nexus_target_refresh/`, Nexus feedback + readiness gate | target-refresh report + release validator; no classifier mutation |
+| Over-penalty cause patch | `reports/over_penalty_causes/`, `visuals/over_penalty_causes/`, readiness gate | cause cards + release validator; no classifier mutation |
 | Public claim replay patch | source boundary docs, `configs/seeds/public_claims/`, claim reports | release validator + claim replay report |
 | Directory structure patch | Full Directory Box, affected mini READMEs, context indexes | README audit + RCC-N + release validator |
 

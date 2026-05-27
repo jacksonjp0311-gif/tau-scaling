@@ -23,7 +23,7 @@
     "visuals/nexus_target_refresh/v0_5_1/retired_priority_severity_counts.png"
   ],
   "completed_signal_count": 1,
-  "generated_at": "2026-05-27T16:21:00.476421+00:00",
+  "generated_at": "2026-05-27T17:35:33.811542+00:00",
   "input_enforcement_readiness": "reports/enforcement_readiness/latest_enforcement_readiness_gate.json",
   "input_nexus_feedback": "reports/nexus_feedback/latest_nexus_feedback.json",
   "input_priority_count": 5,

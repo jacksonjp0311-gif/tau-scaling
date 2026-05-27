@@ -1,0 +1,180 @@
+{
+  "blocked_candidate_count": 6,
+  "boundary": "Over-penalty cause decomposition is local classifier-governance analysis only. It does not change classifier behavior and does not validate silicon, products, manufacturing, process nodes, benchmark superiority, or universal Tau Scaling law.",
+  "cause_card_count": 6,
+  "cause_cards": [
+    {
+      "candidate_status": "blocked_until_remediated",
+      "card_id": "over-penalty-cause-v0-5-2-001",
+      "causes": [
+        "high_diagnostic_support",
+        "heuristic_over_sensitivity"
+      ],
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "decision": "APPROVE_FOR_REGRESSION_REVIEW",
+      "drift_severity": 1,
+      "findings_count": 2,
+      "gate_a": "B_baseline",
+      "gate_b": "B_tau",
+      "gate_pair": "B_baseline+B_tau",
+      "mutation_allowed": false,
+      "non_claim_lock": "Cause cards are local classifier-governance diagnostics only.",
+      "policy_enforced": false,
+      "primary_cause": "high_diagnostic_support",
+      "readiness_status": "BLOCKED_BY_OVER_PENALTY",
+      "remediation": "Add a secondary evidence-pressure test before downgrading high-support cases.",
+      "schema": "tau-scaling-over-penalty-cause-card-v0.5.2",
+      "simulated_policy_classification": "TSEK-D"
+    },
+    {
+      "candidate_status": "blocked_until_remediated",
+      "card_id": "over-penalty-cause-v0-5-2-002",
+      "causes": [
+        "high_diagnostic_support",
+        "heuristic_over_sensitivity"
+      ],
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "decision": "APPROVE_FOR_REGRESSION_REVIEW",
+      "drift_severity": 1,
+      "findings_count": 2,
+      "gate_a": "B_method",
+      "gate_b": "B_evidence",
+      "gate_pair": "B_method+B_evidence",
+      "mutation_allowed": false,
+      "non_claim_lock": "Cause cards are local classifier-governance diagnostics only.",
+      "policy_enforced": false,
+      "primary_cause": "high_diagnostic_support",
+      "readiness_status": "BLOCKED_BY_OVER_PENALTY",
+      "remediation": "Add a secondary evidence-pressure test before downgrading high-support cases.",
+      "schema": "tau-scaling-over-penalty-cause-card-v0.5.2",
+      "simulated_policy_classification": "TSEK-D"
+    },
+    {
+      "candidate_status": "blocked_until_remediated",
+      "card_id": "over-penalty-cause-v0-5-2-003",
+      "causes": [
+        "high_diagnostic_support",
+        "heuristic_over_sensitivity"
+      ],
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "decision": "APPROVE_FOR_REGRESSION_REVIEW",
+      "drift_severity": 1,
+      "findings_count": 2,
+      "gate_a": "B_workload",
+      "gate_b": "B_tau",
+      "gate_pair": "B_workload+B_tau",
+      "mutation_allowed": false,
+      "non_claim_lock": "Cause cards are local classifier-governance diagnostics only.",
+      "policy_enforced": false,
+      "primary_cause": "high_diagnostic_support",
+      "readiness_status": "BLOCKED_BY_OVER_PENALTY",
+      "remediation": "Add a secondary evidence-pressure test before downgrading high-support cases.",
+      "schema": "tau-scaling-over-penalty-cause-card-v0.5.2",
+      "simulated_policy_classification": "TSEK-D"
+    },
+    {
+      "candidate_status": "blocked_until_remediated",
+      "card_id": "over-penalty-cause-v0-5-2-004",
+      "causes": [
+        "high_diagnostic_support",
+        "heuristic_over_sensitivity"
+      ],
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "decision": "APPROVE_FOR_REGRESSION_REVIEW",
+      "drift_severity": 1,
+      "findings_count": 2,
+      "gate_a": "B_LF",
+      "gate_b": "B_ETP",
+      "gate_pair": "B_LF+B_ETP",
+      "mutation_allowed": false,
+      "non_claim_lock": "Cause cards are local classifier-governance diagnostics only.",
+      "policy_enforced": false,
+      "primary_cause": "high_diagnostic_support",
+      "readiness_status": "BLOCKED_BY_OVER_PENALTY",
+      "remediation": "Add a secondary evidence-pressure test before downgrading high-support cases.",
+      "schema": "tau-scaling-over-penalty-cause-card-v0.5.2",
+      "simulated_policy_classification": "TSEK-D"
+    },
+    {
+      "candidate_status": "blocked_until_remediated",
+      "card_id": "over-penalty-cause-v0-5-2-005",
+      "causes": [
+        "high_diagnostic_support",
+        "heuristic_over_sensitivity"
+      ],
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "decision": "APPROVE_FOR_REGRESSION_REVIEW",
+      "drift_severity": 1,
+      "findings_count": 2,
+      "gate_a": "B_PVT",
+      "gate_b": "B_evidence",
+      "gate_pair": "B_PVT+B_evidence",
+      "mutation_allowed": false,
+      "non_claim_lock": "Cause cards are local classifier-governance diagnostics only.",
+      "policy_enforced": false,
+      "primary_cause": "high_diagnostic_support",
+      "readiness_status": "BLOCKED_BY_OVER_PENALTY",
+      "remediation": "Add a secondary evidence-pressure test before downgrading high-support cases.",
+      "schema": "tau-scaling-over-penalty-cause-card-v0.5.2",
+      "simulated_policy_classification": "TSEK-D"
+    },
+    {
+      "candidate_status": "blocked_until_remediated",
+      "card_id": "over-penalty-cause-v0-5-2-006",
+      "causes": [
+        "high_diagnostic_support",
+        "heuristic_over_sensitivity"
+      ],
+      "current_classification": "TSEK-C",
+      "current_diagnostic_average": 0.8182,
+      "decision": "APPROVE_FOR_REGRESSION_REVIEW",
+      "drift_severity": 1,
+      "findings_count": 2,
+      "gate_a": "B_yield",
+      "gate_b": "B_evidence",
+      "gate_pair": "B_yield+B_evidence",
+      "mutation_allowed": false,
+      "non_claim_lock": "Cause cards are local classifier-governance diagnostics only.",
+      "policy_enforced": false,
+      "primary_cause": "high_diagnostic_support",
+      "readiness_status": "BLOCKED_BY_OVER_PENALTY",
+      "remediation": "Add a secondary evidence-pressure test before downgrading high-support cases.",
+      "schema": "tau-scaling-over-penalty-cause-card-v0.5.2",
+      "simulated_policy_classification": "TSEK-D"
+    }
+  ],
+  "cause_counts": {
+    "heuristic_over_sensitivity": 6,
+    "high_diagnostic_support": 6
+  },
+  "chart_paths": [
+    "visuals/over_penalty_causes/v0_5_2/over_penalty_cause_counts.png",
+    "visuals/over_penalty_causes/v0_5_2/over_penalty_primary_cause_counts.png",
+    "visuals/over_penalty_causes/v0_5_2/over_penalty_gate_involvement.png"
+  ],
+  "final_recommendation": "prepare_disabled_calibration_plan",
+  "gate_involvement_counts": {
+    "B_ETP": 1,
+    "B_LF": 1,
+    "B_PVT": 1,
+    "B_baseline": 1,
+    "B_evidence": 3,
+    "B_method": 1,
+    "B_tau": 2,
+    "B_workload": 1,
+    "B_yield": 1
+  },
+  "generated_at": "2026-05-27T17:35:35.176659+00:00",
+  "mutation_allowed": false,
+  "next_recommendation": "v0.5.3 should implement cause-specific remediation planning without classifier mutation.",
+  "policy_enforced": false,
+  "primary_cause_counts": {
+    "high_diagnostic_support": 6
+  },
+  "schema": "tau-scaling-over-penalty-cause-decomposition-v0.5.2"
+}

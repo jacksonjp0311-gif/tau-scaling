@@ -10,8 +10,8 @@
 
 Repository: `tau-scaling`  
 Package / CLI: `tau_scaling` / `tau-scaling`  
-Current checkpoint: **TAU-SCALING-SA v0.5.1 - Nexus Target Refresh and Completed-Signal Retirement**  
-Previous seal: **TAU-SCALING-SA v0.5.0 - Enforcement Readiness Gate**
+Current checkpoint: **TAU-SCALING-SA v0.5.2 - Over-Penalty Cause Decomposition**  
+Previous seal: **TAU-SCALING-SA v0.5.1 - Nexus Target Refresh and Completed-Signal Retirement**
 
 Tau Scaling is a local-first, evidence-gated Python runtime for evaluating tau-scaling claims through structured claim cards, workload declarations, tau vectors, LogicFolding survivability checks, edge-to-surface boundary algebra, energy / thermal / PDN / PVT gates, Monte Carlo checker stress, TSEK classification, evidence packages, and RCC-N / OMN-style repository navigation.
 
@@ -55,7 +55,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | TAU-SCALING-SA v0.5.1 |
+| Current checkpoint | TAU-SCALING-SA v0.5.2 |
 | Synthetic gate suite | v0.4.0 / benchmark + finding charts |
 | Package version | 0.2.0 |
 | Baseline seed | TSEK-C / A_TSEK 0.0000 |
@@ -64,7 +64,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 | README mini repo audit | passing / 0 warnings |
 | Unified release validator | passing / step failures 0 |
 | AGENTS.md contract | synchronized with release validator |
-| Task routing matrix | geometry-aware / v0.5.1-ready |
+| Task routing matrix | geometry-aware / v0.5.2-ready |
 | Release warning findings | 0 expected after v0.3.3d validator scan repair |
 | Architecture validator | passing / 0 warnings |
 | Unit tests | 8 OK |
@@ -100,7 +100,9 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 | Enforcement readiness charts | `visuals/enforcement_readiness/v0_5_0/` |
 | Nexus target refresh | `reports/nexus_target_refresh/latest_nexus_target_refresh.md` |
 | Nexus target refresh charts | `visuals/nexus_target_refresh/v0_5_1/` |
-| Agent contract version sync | current / v0.5.1 |
+| Over-penalty causes | `reports/over_penalty_causes/latest_over_penalty_cause_decomposition.md` |
+| Over-penalty cause charts | `visuals/over_penalty_causes/v0_5_2/` |
+| Agent contract version sync | current / v0.5.2 |
 | Release readiness report | `reports/release/latest_release_readiness.md` |
 | Collision-proof run identity | passed |
 | Mini README coverage | 1.0 |
@@ -136,6 +138,7 @@ python scripts/benchmarks/run_regression_over_penalty_review.py
 python scripts/benchmarks/run_enforcement_readiness_gate.py
 python scripts/feedback/run_nexus_feedback.py
 python scripts/feedback/run_nexus_target_refresh.py
+python scripts/benchmarks/run_over_penalty_cause_decomposition.py
 python scripts/release/validate_release.py
 ```
 
@@ -434,6 +437,7 @@ This section is part of the repository's operating memory. When a patch fails, t
 | L-031 | v0.4.8 approved six drift cases for regression review, but approval-for-review is not approval-for-enforcement. | Decision records classify readiness for review, not readiness for mutation. | Controlled downgrade candidates must pass regression and over-penalty review before any classifier enforcement candidate is allowed. |
 | L-032 | v0.4.9 showed that all six controlled downgrade candidates triggered over-penalty review. | A review gate that blocks every candidate may indicate true policy harshness or heuristic over-sensitivity. | When regression review blocks every candidate, do not proceed to enforcement design; first promote the blocked state into a major enforcement-readiness gate with all mutation disabled. |
 | L-033 | v0.5.0 completed the dry-run through enforcement-readiness chain, but Nexus still ranked the old v0.4.6 dry-run target as active. | A healthy feedback score can still carry stale priorities if completed targets are not retired. | Reflective feedback must retire completed targets and promote the current active blocker, or the repo will keep recommending already-completed work. |
+| L-034 | v0.5.1 promoted the active blocker, but a blocker is not actionable until decomposed into causes. | Completed-signal retirement identifies what is next; it does not specify how to remediate the blocker. | When Nexus promotes a blocker, the next layer must convert the blocker into cause-specific remediation cards before any new policy design. |
 
 ### Failure Response Protocol
 
@@ -642,6 +646,7 @@ tau-scaling/
   releases/
   reports/
     nexus_feedback/
+    over_penalty_causes/
     nexus_target_refresh/
     enforcement_readiness/
     regression_review/
@@ -685,6 +690,7 @@ tau-scaling/
   tests/
   visuals/
     nexus_feedback/
+    over_penalty_causes/
     nexus_target_refresh/
     enforcement_readiness/
     regression_review/
@@ -787,6 +793,34 @@ AGENTS.md Required Validation now includes the current v0.4.6-v0.5.1 governance 
 ```
 
 Boundary: alignment polish is repository hygiene only. It is not code correctness, silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.
+
+## Over-Penalty Cause Decomposition v0.5.2
+
+v0.5.2 decomposes the current active blocker promoted by v0.5.1.
+
+Primary command:
+
+```powershell
+python scripts/benchmarks/run_over_penalty_cause_decomposition.py
+```
+
+Primary outputs:
+
+```text
+reports/over_penalty_causes/latest_over_penalty_cause_decomposition.json
+reports/over_penalty_causes/latest_over_penalty_cause_decomposition.md
+reports/over_penalty_causes/cards/v0_5_2/
+visuals/over_penalty_causes/v0_5_2/
+```
+
+Current lock:
+
+```text
+mutation_allowed: false
+policy_enforced: false
+```
+
+Boundary: over-penalty cause decomposition is local classifier-governance analysis only. It does not change classifier behavior and does not validate silicon, product performance, manufacturing capability, process-node equivalence, benchmark superiority, AI understanding, or universal Tau Scaling law.
 
 ## Nexus Target Refresh and Completed-Signal Retirement v0.5.1
 
@@ -1103,6 +1137,7 @@ python scripts/rcc/audit_readme_surface.py
 python scripts/rcc/check_rcc_nexus.py
 python scripts/feedback/run_nexus_feedback.py
 python scripts/feedback/run_nexus_target_refresh.py
+python scripts/benchmarks/run_over_penalty_cause_decomposition.py
 python scripts/release/validate_release.py
 python scripts/rcc/audit_readme_surface.py
 python scripts/rcc/check_rcc_nexus.py
@@ -1449,14 +1484,15 @@ validation_remains_required
 | v0.5.0 | Enforcement readiness gate for blocked policy candidates with classifier mutation disabled. |
 | v0.5.1 | Nexus target refresh and completed-signal retirement after v0.5.0. |
 | v0.5.1a | Public alignment polish for README metrics and AGENTS validation chain. |
+| v0.5.2 | Over-penalty cause decomposition and remediation cards for blocked controlled downgrades. |
 
 ## Next Recommended Version
 
-**TAU-SCALING-SA v0.5.2 - Over-Penalty Cause Decomposition**
+**TAU-SCALING-SA v0.5.3 - Cause-Specific Remediation Plan**
 
 Recommended goals:
 
-- Decompose why all six controlled downgrades are blocked.
-- Separate diagnostic-support over-sensitivity from missing provenance and high drift severity.
-- Emit cause-specific remediation cards.
-- Preserve non-claim locks: cause decomposition is local classifier governance only.
+- Convert v0.5.2 cause cards into remediation tasks.
+- Separate provenance repair, support-aware negative controls, severity stratification, and heuristic calibration.
+- Keep `mutation_allowed: false`.
+- Preserve non-claim locks: remediation planning is local classifier governance only.

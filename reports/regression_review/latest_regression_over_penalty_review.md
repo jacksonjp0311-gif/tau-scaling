@@ -1,6 +1,6 @@
 # Tau Scaling v0.4.9 Regression and Over-Penalty Review
 
-Generated: `2026-05-27T15:45:46.211620+00:00`
+Generated: `2026-05-27T17:35:30.975919+00:00`
 
 ## Result
 

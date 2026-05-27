@@ -32,6 +32,7 @@ This atlas gives humans and AI agents one stable place to understand benchmark e
 | v0.4.9 | Regression and over-penalty review | `python scripts/benchmarks/run_regression_over_penalty_review.py` | Reviews controlled downgrade candidates before enforcement-candidate design | `reports/regression_review/latest_regression_over_penalty_review.md` | `visuals/regression_review/v0_4_9/` |
 | v0.5.0 | Enforcement readiness gate | `python scripts/benchmarks/run_enforcement_readiness_gate.py` | Major checkpoint that blocks enforcement when over-penalty review fails | `reports/enforcement_readiness/latest_enforcement_readiness_gate.md` | `visuals/enforcement_readiness/v0_5_0/` |
 | v0.5.1 | Nexus target refresh | `python scripts/feedback/run_nexus_target_refresh.py` | Retires completed Nexus targets and promotes the current active blocker | `reports/nexus_target_refresh/latest_nexus_target_refresh.md` | `visuals/nexus_target_refresh/v0_5_1/` |
+| v0.5.2 | Over-penalty cause decomposition | `python scripts/benchmarks/run_over_penalty_cause_decomposition.py` | Converts active blocker into cause-specific remediation cards | `reports/over_penalty_causes/latest_over_penalty_cause_decomposition.md` | `visuals/over_penalty_causes/v0_5_2/` |
 
 ## Current Synthetic Suite Summary
 
