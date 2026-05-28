@@ -56,7 +56,7 @@
     }
   ],
   "fixture_status": "FIXTURES_VALIDATED__NO_LIVE_APPROVAL_CREATED",
-  "generated_at": "2026-05-28T07:54:58.265792+00:00",
+  "generated_at": "2026-05-28T07:57:31.301400+00:00",
   "input_template": "reports/human_approval/human_approval_artifact_template_v0_6_2.json",
   "live_approval_present": false,
   "mutation_allowed": false,

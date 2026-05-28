@@ -1,0 +1,30 @@
+{
+  "application_allowed": false,
+  "approval_decision": "MISSING",
+  "boundary": "Live approval handoff checks are local classifier-governance boundary artifacts. They do not create branches by default, do not mutate classifier behavior, do not apply calibration, and do not validate silicon, products, manufacturing, process nodes, benchmark superiority, or universal Tau Scaling law.",
+  "branch_created": false,
+  "branch_creation_allowed": false,
+  "calibration_applied": false,
+  "chart_paths": [
+    "visuals/live_approval_handoff/v0_6_6/live_approval_handoff_gate.png",
+    "visuals/live_approval_handoff/v0_6_6/fixture_vs_live_approval.png",
+    "visuals/live_approval_handoff/v0_6_6/live_approval_handoff_status.png"
+  ],
+  "final_recommendation": "Keep replay blocked. A non-fixture live approval artifact is required.",
+  "fixture_misuse_detected": false,
+  "fixtures_validated": true,
+  "generated_at": "2026-05-28T07:57:32.694741+00:00",
+  "handoff_status": "HANDOFF_BLOCKED__NO_LIVE_APPROVAL",
+  "input_fixture_validator": "reports/approval_fixtures/latest_approval_fixture_validator.json",
+  "live_approval_directory": "reports/human_approval/live",
+  "live_approval_path": "MISSING",
+  "live_approval_present": false,
+  "live_approval_valid": false,
+  "mutation_allowed": false,
+  "next_recommendation": "v0.6.7 should create an approval-gated replay executor that still refuses to run unless the live approval handoff is valid.",
+  "policy_enforced": false,
+  "reason": "No live approval artifact was found in reports/human_approval/live/.",
+  "replay_allowed": false,
+  "runtime_behavior_changed": false,
+  "schema": "tau-scaling-live-approval-handoff-check-v0.6.6"
+}

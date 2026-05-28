@@ -1,6 +1,6 @@
 # Task Routing Matrix
 
-Current contract: **TAU-SCALING-SA v0.6.6 - Live Approval Handoff Check**
+Current contract: **TAU-SCALING-SA v0.6.5 - Approval Fixture and Denial Fixture Validator**
 
 ## Geometry Route
 
@@ -48,7 +48,6 @@ intent -> shell -> meridian -> sector -> files -> validation -> evidence -> less
 | Human approval validator patch | outer | validation | governance | approval artifact + replay harness | approval validator + charts + release validator | `reports/approval_validator/latest_human_approval_validator.md` |
 | Approval-gated replay patch | outer | validation | governance | approval validator + replay harness | blocked replay dry-run + charts + release validator | `reports/approval_gated_replay/latest_approval_gated_replay_dry_run.md` |
 | Approval fixture patch | outer | validation | governance | approval template + approval validator | fixture validator + charts + release validator | `reports/approval_fixtures/latest_approval_fixture_validator.md` |
-| Live approval handoff patch | outer | validation | governance | approval fixtures + live approval directory | handoff check + charts + release validator | `reports/live_approval_handoff/latest_live_approval_handoff_check.md` |
 | Public claim replay patch | outer | evidence | release | source boundary docs, `configs/seeds/public_claims/` | release validator + claim replay report | `reports/public_claims/latest_claim_replay_report.md` |
 | Agent contract patch | center | agent | rcc | `AGENTS.md`, route map, task matrix, README | README audit + release validator | `reports/agent/latest_agent_contract_sync.md` |
 | Reflection patch | center | drift | documentation | `docs/reflection/`, `reports/reflection/`, README, AGENTS | README audit + release validator | `reports/reflection/latest_system_reflection.md` |

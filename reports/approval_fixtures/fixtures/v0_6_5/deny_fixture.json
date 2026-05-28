@@ -5,7 +5,7 @@
     "REQUEST_MORE_EVIDENCE"
   ],
   "approval_decision": "DENY",
-  "approval_timestamp": "2026-05-28T07:54:58.264790+00:00",
+  "approval_timestamp": "2026-05-28T07:57:31.300372+00:00",
   "approver": "fixture-only",
   "artifact_status": "FIXTURE_ONLY_NOT_LIVE_APPROVAL",
   "candidate_branch": "candidate/v0.6.0-threshold-0.8-review-only",
