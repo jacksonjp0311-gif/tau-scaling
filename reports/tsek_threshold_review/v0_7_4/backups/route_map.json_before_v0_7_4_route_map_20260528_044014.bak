@@ -70,7 +70,7 @@
     ]
   },
   "schema": "rcc-nexus-route-map-v1.7",
-  "updated_at": "2026-05-28T08:40:14.916823+00:00",
+  "updated_at": "2026-05-28T08:35:59.122847+00:00",
   "v0_4_routes": {
     "feedback_chart_path_health_repair": {
       "evidence": [
@@ -706,22 +706,6 @@
         "python scripts/benchmarks/generate_tau_vector_semantics_ledger.py",
         "python scripts/release/validate_release.py"
       ]
-    },
-    "tsek_threshold_boundary_review": {
-      "evidence": [
-        "reports/tsek_threshold_review/latest_tsek_threshold_boundary_review.md",
-        "visuals/tsek_threshold_review/v0_7_4/"
-      ],
-      "mutation_lock": "Threshold review only; no classifier change, branch creation, or mutation.",
-      "read_first": [
-        "src/tau_scaling/core/classifier.py",
-        "reports/gate_algebra/latest_gate_algebra_map.json",
-        "reports/release/latest_release_readiness.json"
-      ],
-      "validate": [
-        "python scripts/benchmarks/run_tsek_threshold_boundary_review.py",
-        "python scripts/release/validate_release.py"
-      ]
     }
   },
   "validation": {
@@ -730,5 +714,5 @@
     "runtime": "python -m tau_scaling run-claim --seed configs/seeds/logicfolding_claim_card.json",
     "tests": "python -m unittest discover -s tests"
   },
-  "version": "v0.7.4"
+  "version": "v0.7.3"
 }

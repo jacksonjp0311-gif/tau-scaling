@@ -1,7 +1,7 @@
 {
   "checkpoint": "TAU-SCALING-SA v0.3.3 \u2014 Unified Release Validator",
   "findings": [],
-  "generated_at": "2026-05-28T08:36:03.960122+00:00",
+  "generated_at": "2026-05-28T08:40:20.762881+00:00",
   "non_claim_lock": "Release readiness validates repository/runtime hygiene only. It is not silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.",
   "passed": true,
   "repository": "tau-scaling",
@@ -16,7 +16,7 @@
         "py_compile",
         "src/tau_scaling/core/runtime.py"
       ],
-      "elapsed_ms": 70.671,
+      "elapsed_ms": 82.419,
       "exit_code": 0,
       "name": "compile_runtime",
       "parsed": null,
@@ -30,7 +30,7 @@
         "-c",
         "from tau_scaling.core.runtime import TauScalingRuntime; print('TauScalingRuntime import OK')"
       ],
-      "elapsed_ms": 105.513,
+      "elapsed_ms": 120.894,
       "exit_code": 0,
       "name": "import_runtime",
       "parsed": null,
@@ -43,13 +43,13 @@
         "C:\\Users\\jacks\\OneDrive\\Desktop\\tau-scaling\\.venv\\Scripts\\python.exe",
         "scripts/rcc/check_rcc_nexus.py"
       ],
-      "elapsed_ms": 85.404,
+      "elapsed_ms": 95.79,
       "exit_code": 0,
       "name": "rcc_nexus_check",
       "parsed": {
         "errors": 0,
         "findings": [],
-        "generated_at": "2026-05-28T08:36:02.607070+00:00",
+        "generated_at": "2026-05-28T08:40:19.288185+00:00",
         "major_dirs_checked": 25,
         "mini_readme_coverage": 1.0,
         "non_claim_lock": "RCC-N navigation is not code correctness or silicon validation.",
@@ -61,21 +61,21 @@
       },
       "passed": true,
       "stderr_tail": "",
-      "stdout_tail": "{\n  \"schema\": \"tau-scaling-rcc-nexus-check-v0.2\",\n  \"generated_at\": \"2026-05-28T08:36:02.607070+00:00\",\n  \"repository\": \"tau-scaling\",\n  \"profile\": \"Full\",\n  \"major_dirs_checked\": 25,\n  \"mini_readme_coverage\": 1.0,\n  \"errors\": 0,\n  \"warnings\": 0,\n  \"passed\": true,\n  \"findings\": [],\n  \"non_claim_lock\": \"RCC-N navigation is not code correctness or silicon validation.\"\n}\n"
+      "stdout_tail": "{\n  \"schema\": \"tau-scaling-rcc-nexus-check-v0.2\",\n  \"generated_at\": \"2026-05-28T08:40:19.288185+00:00\",\n  \"repository\": \"tau-scaling\",\n  \"profile\": \"Full\",\n  \"major_dirs_checked\": 25,\n  \"mini_readme_coverage\": 1.0,\n  \"errors\": 0,\n  \"warnings\": 0,\n  \"passed\": true,\n  \"findings\": [],\n  \"non_claim_lock\": \"RCC-N navigation is not code correctness or silicon validation.\"\n}\n"
     },
     {
       "command": [
         "C:\\Users\\jacks\\OneDrive\\Desktop\\tau-scaling\\.venv\\Scripts\\python.exe",
         "scripts/rcc/audit_readme_surface.py"
       ],
-      "elapsed_ms": 84.479,
+      "elapsed_ms": 92.424,
       "exit_code": 0,
       "name": "readme_mini_repo_audit",
       "parsed": {
         "durable_dirs_checked": 38,
         "errors": 0,
         "findings": [],
-        "generated_at": "2026-05-28T08:36:02.689153+00:00",
+        "generated_at": "2026-05-28T08:40:19.380658+00:00",
         "non_claim_lock": "README/mini-repo audit is context alignment, not code correctness or silicon validation.",
         "passed": true,
         "repository": "tau-scaling",
@@ -97,28 +97,28 @@
       },
       "passed": true,
       "stderr_tail": "",
-      "stdout_tail": "{\n  \"durable_dirs_checked\": 38,\n  \"errors\": 0,\n  \"findings\": [],\n  \"generated_at\": \"2026-05-28T08:36:02.689153+00:00\",\n  \"non_claim_lock\": \"README/mini-repo audit is context alignment, not code correctness or silicon validation.\",\n  \"passed\": true,\n  \"repository\": \"tau-scaling\",\n  \"required_root_sections\": [\n    \"# Tau Scaling\",\n    \"PART I - Human README\",\n    \"PART II - RCC Nexus README\",\n    \"PART III - AI Agent README\",\n    \"AI Operating Contract\",\n    \"Patch Routing Matrix\",\n    \"README + Mini Repo Audit Map\",\n    \"AI Failure Learning Ledger\",\n    \"AI Rule \\u2014 Directory Box and Mini README Synchronization\",\n    \"Full Directory Box\",\n    \"Public Non-Claim Locks\"\n  ],\n  \"schema\": \"tau-scaling-readme-mini-repo-audit-v0.3.2d\",\n  \"warnings\": 0\n}\n"
+      "stdout_tail": "{\n  \"durable_dirs_checked\": 38,\n  \"errors\": 0,\n  \"findings\": [],\n  \"generated_at\": \"2026-05-28T08:40:19.380658+00:00\",\n  \"non_claim_lock\": \"README/mini-repo audit is context alignment, not code correctness or silicon validation.\",\n  \"passed\": true,\n  \"repository\": \"tau-scaling\",\n  \"required_root_sections\": [\n    \"# Tau Scaling\",\n    \"PART I - Human README\",\n    \"PART II - RCC Nexus README\",\n    \"PART III - AI Agent README\",\n    \"AI Operating Contract\",\n    \"Patch Routing Matrix\",\n    \"README + Mini Repo Audit Map\",\n    \"AI Failure Learning Ledger\",\n    \"AI Rule \\u2014 Directory Box and Mini README Synchronization\",\n    \"Full Directory Box\",\n    \"Public Non-Claim Locks\"\n  ],\n  \"schema\": \"tau-scaling-readme-mini-repo-audit-v0.3.2d\",\n  \"warnings\": 0\n}\n"
     },
     {
       "command": [
         "C:\\Users\\jacks\\OneDrive\\Desktop\\tau-scaling\\.venv\\Scripts\\python.exe",
         "scripts/validation/validate_architecture_contracts.py"
       ],
-      "elapsed_ms": 62.043,
+      "elapsed_ms": 69.722,
       "exit_code": 0,
       "name": "architecture_contract_validation",
       "parsed": {
         "boundary": "Architecture validation is not code correctness or silicon validation.",
         "errors": 0,
         "findings": [],
-        "generated_at": "2026-05-28T08:36:02.753735+00:00",
+        "generated_at": "2026-05-28T08:40:19.452207+00:00",
         "passed": true,
         "schema": "tau-scaling-architecture-contract-validation-v0.2",
         "warnings": 0
       },
       "passed": true,
       "stderr_tail": "",
-      "stdout_tail": "{\n  \"schema\": \"tau-scaling-architecture-contract-validation-v0.2\",\n  \"generated_at\": \"2026-05-28T08:36:02.753735+00:00\",\n  \"passed\": true,\n  \"errors\": 0,\n  \"warnings\": 0,\n  \"findings\": [],\n  \"boundary\": \"Architecture validation is not code correctness or silicon validation.\"\n}\n"
+      "stdout_tail": "{\n  \"schema\": \"tau-scaling-architecture-contract-validation-v0.2\",\n  \"generated_at\": \"2026-05-28T08:40:19.452207+00:00\",\n  \"passed\": true,\n  \"errors\": 0,\n  \"warnings\": 0,\n  \"findings\": [],\n  \"boundary\": \"Architecture validation is not code correctness or silicon validation.\"\n}\n"
     },
     {
       "command": [
@@ -129,12 +129,12 @@
         "-s",
         "tests"
       ],
-      "elapsed_ms": 222.086,
+      "elapsed_ms": 236.7,
       "exit_code": 0,
       "name": "unit_tests",
       "parsed": null,
       "passed": true,
-      "stderr_tail": "........\n----------------------------------------------------------------------\nRan 8 tests in 0.058s\n\nOK\n",
+      "stderr_tail": "........\n----------------------------------------------------------------------\nRan 8 tests in 0.055s\n\nOK\n",
       "stdout_tail": ""
     },
     {
@@ -142,7 +142,7 @@
         "C:\\Users\\jacks\\OneDrive\\Desktop\\tau-scaling\\.venv\\Scripts\\python.exe",
         "scripts/benchmarks/run_tau_scaling_benchmarks.py"
       ],
-      "elapsed_ms": 555.716,
+      "elapsed_ms": 668.169,
       "exit_code": 0,
       "name": "benchmark_harness",
       "parsed": {
@@ -152,14 +152,14 @@
         },
         "collision_proof_run_identity_passed": true,
         "duplicate_run_ids": [],
-        "mean_elapsed_ms": 36.5221,
+        "mean_elapsed_ms": 43.8759,
         "schema": "tau-scaling-benchmark-summary-v0.3.2",
         "total_runs": 12,
         "unique_run_ids": 12
       },
       "passed": true,
       "stderr_tail": "",
-      "stdout_tail": "{\n  \"class_counts\": {\n    \"TSEK-B\": 6,\n    \"TSEK-C\": 6\n  },\n  \"collision_proof_run_identity_passed\": true,\n  \"duplicate_run_ids\": [],\n  \"mean_elapsed_ms\": 36.5221,\n  \"schema\": \"tau-scaling-benchmark-summary-v0.3.2\",\n  \"total_runs\": 12,\n  \"unique_run_ids\": 12\n}\n"
+      "stdout_tail": "{\n  \"class_counts\": {\n    \"TSEK-B\": 6,\n    \"TSEK-C\": 6\n  },\n  \"collision_proof_run_identity_passed\": true,\n  \"duplicate_run_ids\": [],\n  \"mean_elapsed_ms\": 43.8759,\n  \"schema\": \"tau-scaling-benchmark-summary-v0.3.2\",\n  \"total_runs\": 12,\n  \"unique_run_ids\": 12\n}\n"
     },
     {
       "command": [
@@ -170,20 +170,20 @@
         "--seed",
         "configs/seeds/logicfolding_claim_card.json"
       ],
-      "elapsed_ms": 191.845,
+      "elapsed_ms": 168.08,
       "exit_code": 0,
       "name": "baseline_claim",
       "parsed": {
         "A_TSEK": 0.0,
-        "artifacts": "C:\\Users\\jacks\\OneDrive\\Desktop\\tau-scaling\\artifacts\\runs\\claim-20260528T083603677819Z-4330f3",
+        "artifacts": "C:\\Users\\jacks\\OneDrive\\Desktop\\tau-scaling\\artifacts\\runs\\claim-20260528T084020486147Z-a9679b",
         "class": "TSEK-C",
-        "evidence": "C:\\Users\\jacks\\OneDrive\\Desktop\\tau-scaling\\artifacts\\runs\\claim-20260528T083603677819Z-4330f3\\evidence_package.json",
+        "evidence": "C:\\Users\\jacks\\OneDrive\\Desktop\\tau-scaling\\artifacts\\runs\\claim-20260528T084020486147Z-a9679b\\evidence_package.json",
         "findings": 1,
-        "run_id": "claim-20260528T083603677819Z-4330f3"
+        "run_id": "claim-20260528T084020486147Z-a9679b"
       },
       "passed": true,
       "stderr_tail": "",
-      "stdout_tail": "TAU-SCALING-SA run complete\nrun_id: claim-20260528T083603677819Z-4330f3\nclass: TSEK-C\nA_TSEK: 0.0000\nfindings: 1\nartifacts: C:\\Users\\jacks\\OneDrive\\Desktop\\tau-scaling\\artifacts\\runs\\claim-20260528T083603677819Z-4330f3\nevidence: C:\\Users\\jacks\\OneDrive\\Desktop\\tau-scaling\\artifacts\\runs\\claim-20260528T083603677819Z-4330f3\\evidence_package.json\n"
+      "stdout_tail": "TAU-SCALING-SA run complete\nrun_id: claim-20260528T084020486147Z-a9679b\nclass: TSEK-C\nA_TSEK: 0.0000\nfindings: 1\nartifacts: C:\\Users\\jacks\\OneDrive\\Desktop\\tau-scaling\\artifacts\\runs\\claim-20260528T084020486147Z-a9679b\nevidence: C:\\Users\\jacks\\OneDrive\\Desktop\\tau-scaling\\artifacts\\runs\\claim-20260528T084020486147Z-a9679b\\evidence_package.json\n"
     },
     {
       "command": [
@@ -194,20 +194,20 @@
         "--seed",
         "configs/seeds/logicfolding_promotion_path_claim_card.json"
       ],
-      "elapsed_ms": 188.155,
+      "elapsed_ms": 188.274,
       "exit_code": 0,
       "name": "promotion_path_claim",
       "parsed": {
         "A_TSEK": 1.0,
-        "artifacts": "C:\\Users\\jacks\\OneDrive\\Desktop\\tau-scaling\\artifacts\\runs\\claim-20260528T083603848446Z-f57ee1",
+        "artifacts": "C:\\Users\\jacks\\OneDrive\\Desktop\\tau-scaling\\artifacts\\runs\\claim-20260528T084020666434Z-f17578",
         "class": "TSEK-B",
-        "evidence": "C:\\Users\\jacks\\OneDrive\\Desktop\\tau-scaling\\artifacts\\runs\\claim-20260528T083603848446Z-f57ee1\\evidence_package.json",
+        "evidence": "C:\\Users\\jacks\\OneDrive\\Desktop\\tau-scaling\\artifacts\\runs\\claim-20260528T084020666434Z-f17578\\evidence_package.json",
         "findings": 0,
-        "run_id": "claim-20260528T083603848446Z-f57ee1"
+        "run_id": "claim-20260528T084020666434Z-f17578"
       },
       "passed": true,
       "stderr_tail": "",
-      "stdout_tail": "TAU-SCALING-SA run complete\nrun_id: claim-20260528T083603848446Z-f57ee1\nclass: TSEK-B\nA_TSEK: 1.0000\nfindings: 0\nartifacts: C:\\Users\\jacks\\OneDrive\\Desktop\\tau-scaling\\artifacts\\runs\\claim-20260528T083603848446Z-f57ee1\nevidence: C:\\Users\\jacks\\OneDrive\\Desktop\\tau-scaling\\artifacts\\runs\\claim-20260528T083603848446Z-f57ee1\\evidence_package.json\n"
+      "stdout_tail": "TAU-SCALING-SA run complete\nrun_id: claim-20260528T084020666434Z-f17578\nclass: TSEK-B\nA_TSEK: 1.0000\nfindings: 0\nartifacts: C:\\Users\\jacks\\OneDrive\\Desktop\\tau-scaling\\artifacts\\runs\\claim-20260528T084020666434Z-f17578\nevidence: C:\\Users\\jacks\\OneDrive\\Desktop\\tau-scaling\\artifacts\\runs\\claim-20260528T084020666434Z-f17578\\evidence_package.json\n"
     }
   ],
   "summaries": {
@@ -215,18 +215,18 @@
       "boundary": "Architecture validation is not code correctness or silicon validation.",
       "errors": 0,
       "findings": [],
-      "generated_at": "2026-05-28T08:36:02.753735+00:00",
+      "generated_at": "2026-05-28T08:40:19.452207+00:00",
       "passed": true,
       "schema": "tau-scaling-architecture-contract-validation-v0.2",
       "warnings": 0
     },
     "baseline_claim": {
       "A_TSEK": 0.0,
-      "artifacts": "C:\\Users\\jacks\\OneDrive\\Desktop\\tau-scaling\\artifacts\\runs\\claim-20260528T083603677819Z-4330f3",
+      "artifacts": "C:\\Users\\jacks\\OneDrive\\Desktop\\tau-scaling\\artifacts\\runs\\claim-20260528T084020486147Z-a9679b",
       "class": "TSEK-C",
-      "evidence": "C:\\Users\\jacks\\OneDrive\\Desktop\\tau-scaling\\artifacts\\runs\\claim-20260528T083603677819Z-4330f3\\evidence_package.json",
+      "evidence": "C:\\Users\\jacks\\OneDrive\\Desktop\\tau-scaling\\artifacts\\runs\\claim-20260528T084020486147Z-a9679b\\evidence_package.json",
       "findings": 1,
-      "run_id": "claim-20260528T083603677819Z-4330f3"
+      "run_id": "claim-20260528T084020486147Z-a9679b"
     },
     "benchmark": {
       "boundary": "Benchmark timing and class stability are local-runtime diagnostics only. They are not silicon validation, product validation, or universal Tau Scaling proof.",
@@ -241,9 +241,9 @@
           "findings_values": [
             1
           ],
-          "max_elapsed_ms": 38.7331,
-          "mean_elapsed_ms": 36.0807,
-          "min_elapsed_ms": 34.6958,
+          "max_elapsed_ms": 47.3416,
+          "mean_elapsed_ms": 43.8909,
+          "min_elapsed_ms": 42.7004,
           "runs": 6
         },
         "configs/seeds/logicfolding_promotion_path_claim_card.json": {
@@ -256,9 +256,9 @@
           "findings_values": [
             0
           ],
-          "max_elapsed_ms": 39.0034,
-          "mean_elapsed_ms": 36.9634,
-          "min_elapsed_ms": 35.0896,
+          "max_elapsed_ms": 61.7553,
+          "mean_elapsed_ms": 43.8609,
+          "min_elapsed_ms": 39.0101,
           "runs": 6
         }
       },
@@ -268,131 +268,131 @@
       },
       "collision_proof_run_identity_passed": true,
       "duplicate_run_ids": [],
-      "generated_at": "2026-05-28T08:36:03.083513+00:00",
+      "generated_at": "2026-05-28T08:40:19.818422+00:00",
       "iterations_per_seed": 6,
-      "max_elapsed_ms": 39.0034,
-      "mean_elapsed_ms": 36.5221,
-      "median_elapsed_ms": 35.9455,
-      "min_elapsed_ms": 34.6958,
+      "max_elapsed_ms": 61.7553,
+      "mean_elapsed_ms": 43.8759,
+      "median_elapsed_ms": 42.7841,
+      "min_elapsed_ms": 39.0101,
       "results": [
         {
           "A_TSEK": 0.0,
           "classification": "TSEK-C",
-          "elapsed_ms": 38.7331,
-          "evidence_path": "artifacts/runs/claim-20260528T083603083513Z-bde1aa/evidence_package.json",
+          "elapsed_ms": 47.3416,
+          "evidence_path": "artifacts/runs/claim-20260528T084019818422Z-b73104/evidence_package.json",
           "findings_count": 1,
           "iteration": 1,
-          "run_id": "claim-20260528T083603083513Z-bde1aa",
+          "run_id": "claim-20260528T084019818422Z-b73104",
           "seed": "configs/seeds/logicfolding_claim_card.json"
         },
         {
           "A_TSEK": 0.0,
           "classification": "TSEK-C",
-          "elapsed_ms": 35.1011,
-          "evidence_path": "artifacts/runs/claim-20260528T083603122230Z-b3aef1/evidence_package.json",
+          "elapsed_ms": 42.7127,
+          "evidence_path": "artifacts/runs/claim-20260528T084019865343Z-176bff/evidence_package.json",
           "findings_count": 1,
           "iteration": 2,
-          "run_id": "claim-20260528T083603122230Z-b3aef1",
+          "run_id": "claim-20260528T084019865343Z-176bff",
           "seed": "configs/seeds/logicfolding_claim_card.json"
         },
         {
           "A_TSEK": 0.0,
           "classification": "TSEK-C",
-          "elapsed_ms": 34.6958,
-          "evidence_path": "artifacts/runs/claim-20260528T083603157823Z-436636/evidence_package.json",
+          "elapsed_ms": 42.8554,
+          "evidence_path": "artifacts/runs/claim-20260528T084019909118Z-efa729/evidence_package.json",
           "findings_count": 1,
           "iteration": 3,
-          "run_id": "claim-20260528T083603157823Z-436636",
+          "run_id": "claim-20260528T084019909118Z-efa729",
           "seed": "configs/seeds/logicfolding_claim_card.json"
         },
         {
           "A_TSEK": 0.0,
           "classification": "TSEK-C",
-          "elapsed_ms": 35.0077,
-          "evidence_path": "artifacts/runs/claim-20260528T083603192881Z-4f928b/evidence_package.json",
+          "elapsed_ms": 43.037,
+          "evidence_path": "artifacts/runs/claim-20260528T084019952128Z-1db843/evidence_package.json",
           "findings_count": 1,
           "iteration": 4,
-          "run_id": "claim-20260528T083603192881Z-4f928b",
+          "run_id": "claim-20260528T084019952128Z-1db843",
           "seed": "configs/seeds/logicfolding_claim_card.json"
         },
         {
           "A_TSEK": 0.0,
           "classification": "TSEK-C",
-          "elapsed_ms": 36.0527,
-          "evidence_path": "artifacts/runs/claim-20260528T083603227783Z-7072d7/evidence_package.json",
+          "elapsed_ms": 42.7004,
+          "evidence_path": "artifacts/runs/claim-20260528T084019995007Z-f9e223/evidence_package.json",
           "findings_count": 1,
           "iteration": 5,
-          "run_id": "claim-20260528T083603227783Z-7072d7",
+          "run_id": "claim-20260528T084019995007Z-f9e223",
           "seed": "configs/seeds/logicfolding_claim_card.json"
         },
         {
           "A_TSEK": 0.0,
           "classification": "TSEK-C",
-          "elapsed_ms": 36.8939,
-          "evidence_path": "artifacts/runs/claim-20260528T083603263569Z-59c875/evidence_package.json",
+          "elapsed_ms": 44.6981,
+          "evidence_path": "artifacts/runs/claim-20260528T084020037588Z-ec24da/evidence_package.json",
           "findings_count": 1,
           "iteration": 6,
-          "run_id": "claim-20260528T083603263569Z-59c875",
+          "run_id": "claim-20260528T084020037588Z-ec24da",
           "seed": "configs/seeds/logicfolding_claim_card.json"
         },
         {
           "A_TSEK": 1.0,
           "classification": "TSEK-B",
-          "elapsed_ms": 37.9922,
-          "evidence_path": "artifacts/runs/claim-20260528T083603301467Z-d28904/evidence_package.json",
+          "elapsed_ms": 39.5688,
+          "evidence_path": "artifacts/runs/claim-20260528T084020082869Z-db183a/evidence_package.json",
           "findings_count": 0,
           "iteration": 1,
-          "run_id": "claim-20260528T083603301467Z-d28904",
+          "run_id": "claim-20260528T084020082869Z-db183a",
           "seed": "configs/seeds/logicfolding_promotion_path_claim_card.json"
         },
         {
           "A_TSEK": 1.0,
           "classification": "TSEK-B",
-          "elapsed_ms": 35.2023,
-          "evidence_path": "artifacts/runs/claim-20260528T083603339995Z-68bb61/evidence_package.json",
+          "elapsed_ms": 40.4786,
+          "evidence_path": "artifacts/runs/claim-20260528T084020122742Z-2325a5/evidence_package.json",
           "findings_count": 0,
           "iteration": 2,
-          "run_id": "claim-20260528T083603339995Z-68bb61",
+          "run_id": "claim-20260528T084020122742Z-2325a5",
           "seed": "configs/seeds/logicfolding_promotion_path_claim_card.json"
         },
         {
           "A_TSEK": 1.0,
           "classification": "TSEK-B",
-          "elapsed_ms": 38.6546,
-          "evidence_path": "artifacts/runs/claim-20260528T083603374708Z-b88a7f/evidence_package.json",
+          "elapsed_ms": 43.3054,
+          "evidence_path": "artifacts/runs/claim-20260528T084020163585Z-587e6c/evidence_package.json",
           "findings_count": 0,
           "iteration": 3,
-          "run_id": "claim-20260528T083603374708Z-b88a7f",
+          "run_id": "claim-20260528T084020163585Z-587e6c",
           "seed": "configs/seeds/logicfolding_promotion_path_claim_card.json"
         },
         {
           "A_TSEK": 1.0,
           "classification": "TSEK-B",
-          "elapsed_ms": 35.0896,
-          "evidence_path": "artifacts/runs/claim-20260528T083603414218Z-da5942/evidence_package.json",
+          "elapsed_ms": 39.0101,
+          "evidence_path": "artifacts/runs/claim-20260528T084020206980Z-f978d3/evidence_package.json",
           "findings_count": 0,
           "iteration": 4,
-          "run_id": "claim-20260528T083603414218Z-da5942",
+          "run_id": "claim-20260528T084020206980Z-f978d3",
           "seed": "configs/seeds/logicfolding_promotion_path_claim_card.json"
         },
         {
           "A_TSEK": 1.0,
           "classification": "TSEK-B",
-          "elapsed_ms": 35.8384,
-          "evidence_path": "artifacts/runs/claim-20260528T083603448699Z-e2b73a/evidence_package.json",
+          "elapsed_ms": 61.7553,
+          "evidence_path": "artifacts/runs/claim-20260528T084020246284Z-ef1a10/evidence_package.json",
           "findings_count": 0,
           "iteration": 5,
-          "run_id": "claim-20260528T083603448699Z-e2b73a",
+          "run_id": "claim-20260528T084020246284Z-ef1a10",
           "seed": "configs/seeds/logicfolding_promotion_path_claim_card.json"
         },
         {
           "A_TSEK": 1.0,
           "classification": "TSEK-B",
-          "elapsed_ms": 39.0034,
-          "evidence_path": "artifacts/runs/claim-20260528T083603484834Z-026c1c/evidence_package.json",
+          "elapsed_ms": 39.0474,
+          "evidence_path": "artifacts/runs/claim-20260528T084020308301Z-d51f8c/evidence_package.json",
           "findings_count": 0,
           "iteration": 6,
-          "run_id": "claim-20260528T083603484834Z-026c1c",
+          "run_id": "claim-20260528T084020308301Z-d51f8c",
           "seed": "configs/seeds/logicfolding_promotion_path_claim_card.json"
         }
       ],
@@ -402,16 +402,16 @@
     },
     "promotion_path_claim": {
       "A_TSEK": 1.0,
-      "artifacts": "C:\\Users\\jacks\\OneDrive\\Desktop\\tau-scaling\\artifacts\\runs\\claim-20260528T083603848446Z-f57ee1",
+      "artifacts": "C:\\Users\\jacks\\OneDrive\\Desktop\\tau-scaling\\artifacts\\runs\\claim-20260528T084020666434Z-f17578",
       "class": "TSEK-B",
-      "evidence": "C:\\Users\\jacks\\OneDrive\\Desktop\\tau-scaling\\artifacts\\runs\\claim-20260528T083603848446Z-f57ee1\\evidence_package.json",
+      "evidence": "C:\\Users\\jacks\\OneDrive\\Desktop\\tau-scaling\\artifacts\\runs\\claim-20260528T084020666434Z-f17578\\evidence_package.json",
       "findings": 0,
-      "run_id": "claim-20260528T083603848446Z-f57ee1"
+      "run_id": "claim-20260528T084020666434Z-f17578"
     },
     "rcc": {
       "errors": 0,
       "findings": [],
-      "generated_at": "2026-05-28T08:36:02.607070+00:00",
+      "generated_at": "2026-05-28T08:40:19.288185+00:00",
       "major_dirs_checked": 25,
       "mini_readme_coverage": 1.0,
       "non_claim_lock": "RCC-N navigation is not code correctness or silicon validation.",
@@ -425,7 +425,7 @@
       "durable_dirs_checked": 38,
       "errors": 0,
       "findings": [],
-      "generated_at": "2026-05-28T08:36:02.689153+00:00",
+      "generated_at": "2026-05-28T08:40:19.380658+00:00",
       "non_claim_lock": "README/mini-repo audit is context alignment, not code correctness or silicon validation.",
       "passed": true,
       "repository": "tau-scaling",

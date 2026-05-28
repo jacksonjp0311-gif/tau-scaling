@@ -129,7 +129,7 @@
       "visibility_status": "core_and_seed_visible"
     }
   ],
-  "generated_at": "2026-05-28T08:36:00.883345+00:00",
+  "generated_at": "2026-05-28T08:40:15.188992+00:00",
   "mutation_allowed": false,
   "next_recommendation": "Move to v0.7.4 TSEK Threshold Boundary Review after gate-family visibility is mapped.",
   "policy_enforced": false,
