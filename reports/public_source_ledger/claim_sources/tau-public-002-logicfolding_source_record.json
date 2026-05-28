@@ -1,0 +1,23 @@
+{
+  "allowed_carry": "mechanism hypothesis and plausibility regime testing",
+  "blocked_carry": [
+    "measured gain",
+    "full-chip win",
+    "energy-normalized improvement without data"
+  ],
+  "claim_id": "tau-public-002-logicfolding",
+  "current_class": "TSEK-C",
+  "promotion_blockers": [
+    "primary source URL / citation required",
+    "independent corroboration required before promotion",
+    "current evidence class remains bounded"
+  ],
+  "provenance_confidence": 0.55,
+  "requires_independent_source_for_promotion": true,
+  "requires_primary_source": true,
+  "requires_source_url": true,
+  "source_boundary": "Allowed to motivate LogicFolding plausibility testing; not allowed to prove measured timing gain without workload/baseline/method data.",
+  "source_category": "architecture_interpretation",
+  "source_path": "claims\\public_tau\\tau-public-002-logicfolding.json",
+  "title": "LogicFolding reduces critical-path/wire delay"
+}

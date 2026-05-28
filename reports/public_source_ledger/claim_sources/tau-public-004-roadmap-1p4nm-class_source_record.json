@@ -1,0 +1,24 @@
+{
+  "allowed_carry": "roadmap hypothesis",
+  "blocked_carry": [
+    "achieved silicon result",
+    "process-node equivalence",
+    "near-term certainty"
+  ],
+  "claim_id": "tau-public-004-roadmap-1p4nm-class",
+  "current_class": "TSEK-C",
+  "promotion_blockers": [
+    "source category cannot carry achieved-result claims",
+    "primary source URL / citation required",
+    "independent corroboration required before promotion",
+    "current evidence class remains bounded"
+  ],
+  "provenance_confidence": 0.45,
+  "requires_independent_source_for_promotion": true,
+  "requires_primary_source": true,
+  "requires_source_url": true,
+  "source_boundary": "Allowed to record roadmap projection; not allowed to treat projection as achieved product result.",
+  "source_category": "roadmap_projection",
+  "source_path": "claims\\public_tau\\tau-public-004-roadmap-1p4nm-class.json",
+  "title": "Roadmap projection toward 1.4nm-class density"
+}

@@ -70,7 +70,7 @@
                                       ]
                },
     "schema":  "rcc-nexus-route-map-v1.7",
-    "updated_at":  "2026-05-28T13:48:54.0967517Z",
+    "updated_at":  "2026-05-28T13:54:09.5756943Z",
     "v0_4_routes":  {
                         "feedback_chart_path_health_repair":  {
                                                                   "evidence":  [
@@ -940,7 +940,27 @@
                                                                            "reports/nexus_surface_sync/latest_nexus_surface_sync_polish.md"
                                                                        ],
                                                           "mutation_lock":  "Nexus surface sync polish only; preserves RCC-N anchors; no classifier change, threshold change, branch creation, or mutation."
-                                                      }
+                                                      },
+                        "public_source_ledger":  {
+                                                     "read_first":  [
+                                                                        "claims/public_tau/",
+                                                                        "reports/public_source_ledger/latest_public_source_ledger.md",
+                                                                        "docs/reflection/law_of_sufficient_form_v0_8_5.md",
+                                                                        "README.md"
+                                                                    ],
+                                                     "validate":  [
+                                                                      "python scripts/benchmarks/generate_public_source_ledger.py",
+                                                                      "python scripts/release/validate_release.py",
+                                                                      "python scripts/rcc/audit_readme_surface.py"
+                                                                  ],
+                                                     "evidence":  [
+                                                                      "reports/public_source_ledger/latest_public_source_ledger.md",
+                                                                      "reports/public_source_ledger/claim_sources/",
+                                                                      "visuals/public_source_ledger/v0_8_5/",
+                                                                      "docs/reflection/law_of_sufficient_form_v0_8_5.md"
+                                                                  ],
+                                                     "mutation_lock":  "Public source ledger and reflection only; no classifier change, threshold change, branch creation, or mutation."
+                                                 }
                     },
     "validation":  {
                        "architecture":  "python scripts/validation/validate_architecture_contracts.py",
@@ -948,5 +968,5 @@
                        "runtime":  "python -m tau_scaling run-claim --seed configs/seeds/logicfolding_claim_card.json",
                        "tests":  "python -m unittest discover -s tests"
                    },
-    "version":  "v0.8.4c"
+    "version":  "v0.8.5"
 }

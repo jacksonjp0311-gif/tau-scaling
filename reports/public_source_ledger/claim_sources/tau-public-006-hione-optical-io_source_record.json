@@ -1,0 +1,23 @@
+{
+  "allowed_carry": "I/O claim requiring integration evidence",
+  "blocked_carry": [
+    "full-system proof",
+    "workload proof",
+    "thermal/yield proof"
+  ],
+  "claim_id": "tau-public-006-hione-optical-io",
+  "current_class": "TSEK-C",
+  "promotion_blockers": [
+    "primary source URL / citation required",
+    "independent corroboration required before promotion",
+    "current evidence class remains bounded"
+  ],
+  "provenance_confidence": 0.5,
+  "requires_independent_source_for_promotion": true,
+  "requires_primary_source": true,
+  "requires_source_url": true,
+  "source_boundary": "Allowed to record I/O or interconnect acceleration claim; not allowed to infer full workload improvement without integration data.",
+  "source_category": "reported_metric",
+  "source_path": "claims\\public_tau\\tau-public-006-hione-optical-io.json",
+  "title": "Hi-ONE / optical I/O improves AI-scale data movement"
+}

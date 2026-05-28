@@ -1,6 +1,6 @@
 # Task Routing Matrix
 
-Current contract: **TAU-SCALING-SA v0.8.4c - Nexus Surface Sync Polish**
+Current contract: **TAU-SCALING-SA v0.8.5 - Public Source Ledger / Claim Provenance Map**
 
 ## Geometry Route
 

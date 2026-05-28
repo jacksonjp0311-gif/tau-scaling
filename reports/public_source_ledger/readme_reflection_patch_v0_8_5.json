@@ -1,0 +1,19 @@
+{
+  "application_allowed": false,
+  "boundary": "README/reflection patch is source provenance and reflection routing only. It does not validate silicon or promote claims.",
+  "checkpoint": "TAU-SCALING-SA v0.8.5 - Public Source Ledger / Claim Provenance Map",
+  "classifier_changed": false,
+  "generated_at": "2026-05-28T13:54:09.374747+00:00",
+  "mutation_allowed": false,
+  "repairs": [
+    "added Law of Sufficient Form reflection section",
+    "added public source ledger section",
+    "updated current research snapshot",
+    "updated current metrics and quick start",
+    "updated directory box and archive pointers",
+    "updated release lineage and next version target",
+    "added L-072 failure/reflection lesson"
+  ],
+  "schema": "tau-scaling-v0.8.5-readme-reflection-patch",
+  "thresholds_changed": false
+}

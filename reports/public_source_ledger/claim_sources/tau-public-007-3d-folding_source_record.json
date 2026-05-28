@@ -1,0 +1,23 @@
+{
+  "allowed_carry": "topology hypothesis",
+  "blocked_carry": [
+    "automatic speedup",
+    "full-chip timing proof",
+    "manufacturing proof"
+  ],
+  "claim_id": "tau-public-007-3d-folding",
+  "current_class": "TSEK-C",
+  "promotion_blockers": [
+    "primary source URL / citation required",
+    "independent corroboration required before promotion",
+    "current evidence class remains bounded"
+  ],
+  "provenance_confidence": 0.55,
+  "requires_independent_source_for_promotion": true,
+  "requires_primary_source": true,
+  "requires_source_url": true,
+  "source_boundary": "Allowed to test topology/path-shortening plausibility; not allowed to ignore vertical overhead, closure, thermal, and yield burdens.",
+  "source_category": "architecture_interpretation",
+  "source_path": "claims\\public_tau\\tau-public-007-3d-folding.json",
+  "title": "3D Folding solves edge-bound resource bottlenecks"
+}

@@ -10,8 +10,8 @@
 
 Repository: `tau-scaling`  
 Package / CLI: `tau_scaling` / `tau-scaling`  
-Current checkpoint: **TAU-SCALING-SA v0.8.5 - Public Source Ledger / Claim Provenance Map**  
-Previous seal: **TAU-SCALING-SA v0.8.4c - Nexus Surface Sync Polish**
+Current checkpoint: **TAU-SCALING-SA v0.8.4c - Nexus Surface Sync Polish**  
+Previous seal: **TAU-SCALING-SA v0.8.4b - README Information Architecture Compression**
 
 Tau Scaling is a local-first, evidence-gated Python runtime for evaluating Tau Scaling claims through structured claim cards, workload declarations, tau vectors, LogicFolding survivability checks, energy / thermal / PDN / PVT gates, TSEK classification, evidence packages, and RCC-N / OMN-style repository navigation.
 
@@ -34,7 +34,6 @@ This repository is now in the **v0.8 public Tau research spine**.
 | v0.8.4a Release Finding Zero-Finding Repair | Is the repo back to a zero-warning release state? | `reports/release/latest_release_readiness.md` |
 | v0.8.4b README IA Compression | Did the README remain readable without weakening RCC-N? | `reports/readme_information_architecture/latest_readme_information_architecture_compression.md` |
 | v0.8.4c Nexus Surface Sync Polish | Are current report surfaces mirrored into the Nexus directory spine? | `reports/nexus_surface_sync/latest_nexus_surface_sync_polish.md` |
-| v0.8.5 Public Source Ledger | Which source category produced each claim, and how far can it carry the claim? | `reports/public_source_ledger/latest_public_source_ledger.md` |
 
 Current public finding: Tau Scaling can be studied as an evidence-gated claim system. Public claims can be separated into methodology, reported metrics, roadmap projections, topology arguments, and independent evidence.
 
@@ -72,29 +71,6 @@ Primary outputs:
 
 Boundary: evidence sufficiency matrices define promotion conditions only. They do not promote claims, mutate thresholds, validate silicon, validate products, prove benchmark superiority, or establish a universal Tau Scaling law.
 
-## Public Source Ledger / Claim Provenance Map v0.8.5
-
-This layer maps each public Tau claim to a source category, source-carry boundary, allowed carry, blocked carry, and promotion blockers.
-
-Primary outputs:
-
-- `reports/public_source_ledger/latest_public_source_ledger.md`
-- `reports/public_source_ledger/latest_public_source_ledger.json`
-- `reports/public_source_ledger/claim_sources/`
-- `visuals/public_source_ledger/v0_8_5/`
-- `docs/reflection/law_of_sufficient_form_v0_8_5.md`
-
-Source categories:
-
-- methodology_claim
-- reported_metric
-- roadmap_projection
-- media_interpretation
-- architecture_interpretation
-- independent_evidence
-- unknown_or_unresolved
-
-Boundary: source provenance maps source-carry boundaries only. It does not promote claims, validate silicon, validate products, prove benchmark superiority, or establish a universal Tau Scaling law.
 ## Tau Doctrine Alignment
 
 - Time is the shared metric, not automatic proof.
@@ -104,17 +80,6 @@ Boundary: source provenance maps source-carry boundaries only. It does not promo
 
 These rules align the software runtime with TSEK v1.3: tau is treated as a cross-layer claim object that must survive workload, gate, method, and evidence constraints before promotion.
 
-## Reflection: Law of Sufficient Form
-
-> When enough governed form is in place, structure begins to hold itself.
-
-Operational form: A system becomes self-stabilizing when its claims, evidence, routing, validation, memory, and non-claim locks are all visible to both humans and agents.
-
-This reflection is part of the repository's operating memory. It can be expanded occasionally as the system matures, but it must remain bounded: reflection names process insight; it does not replace validation, evidence, source provenance, or non-claim locks.
-
-Primary reflection surface:
-
-- `docs/reflection/law_of_sufficient_form_v0_8_5.md`
 ## Human Director Box
 
 ### What this repository is
@@ -131,7 +96,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | TAU-SCALING-SA v0.8.5 |
+| Current checkpoint | TAU-SCALING-SA v0.8.4c |
 | Release validator | passing / findings 0 / step failures 0 |
 | README mini repo audit | passing / 0 warnings |
 | RCC-N checker | passing / 0 warnings |
@@ -140,9 +105,6 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 | Public Tau claim ledger | `reports/tau_claim_ledger/latest_tau_public_claim_ledger.md` |
 | LogicFolding plausibility sweep | `reports/logicfolding_plausibility/latest_logicfolding_plausibility_sweep.md` |
 | Evidence sufficiency matrix | `reports/evidence_sufficiency/latest_evidence_sufficiency_matrix.md` |
-| Law of Sufficient Form | `docs/reflection/law_of_sufficient_form_v0_8_5.md` |
-| Source ledger visual | `visuals/public_source_ledger/v0_8_5/public_source_ledger.svg` |
-| Public source ledger | `reports/public_source_ledger/latest_public_source_ledger.md` |
 | Evidence sufficiency visual | `visuals/evidence_sufficiency/v0_8_4/evidence_sufficiency_matrix.svg` |
 | Release readiness report | `reports/release/latest_release_readiness.md` |
 | Nexus surface sync polish | `reports/nexus_surface_sync/latest_nexus_surface_sync_polish.md` |
@@ -169,7 +131,6 @@ python -m unittest discover -s tests
 python scripts/benchmarks/generate_tau_public_claim_ledger.py
 python scripts/benchmarks/run_logicfolding_plausibility_sweep.py
 python scripts/benchmarks/generate_evidence_sufficiency_matrix.py
-python scripts/benchmarks/generate_public_source_ledger.py
 ```
 
 ### Baseline claim checks
@@ -240,7 +201,6 @@ The full historical chain remains available, but the root README now keeps only 
 | `docs/benchmarks/benchmark_atlas.md` | Historical benchmark and chart registry |
 | `reports/readme_information_architecture/` | README information architecture compression reports |
 | `docs/release_notes/` | Versioned release notes |
-| `docs/reflection/` | Reflection notes including the Law of Sufficient Form |
 | `reports/stable_tau_threshold_governance/` | v0.8.0 stable threshold milestone |
 | `reports/threshold_governance_summary/` | v0.7.x threshold summary |
 | `reports/approval_corridor/` | v0.6-v0.7 approval-governance corridor |
@@ -248,8 +208,6 @@ The full historical chain remains available, but the root README now keeps only 
 | `reports/readme/latest_readme_mini_repo_audit.md` | Current README / mini repo audit |
 | `reports/rcc_nexus/latest_rcc_nexus_check.md` | Current RCC-N navigation check |
 | `reports/nexus_surface_sync/latest_nexus_surface_sync_polish.md` | Nexus surface sync polish report |
-| `docs/reflection/law_of_sufficient_form_v0_8_5.md` | Law of Sufficient Form reflection |
-| `reports/public_source_ledger/latest_public_source_ledger.md` | Public source ledger and claim provenance map |
 | `reports/readme_information_architecture/latest_readme_information_architecture_compression.md` | README IA compression report |
 | `reports/evidence_sufficiency/latest_evidence_sufficiency_matrix.md` | Current evidence sufficiency matrix |
 
@@ -577,7 +535,6 @@ This section is part of the repository's operating memory. When a patch fails, t
 | L-069 | v0.8.4 passed but release readiness emitted one path-break warning for a line beginning `eports/`. | Markdown presentation repairs can leave hard-wrapped bare paths that validators read as broken repo paths. | After adding new report paths, run release validator and repair any bare-path continuation lines before moving to the next research layer. |
 | L-070 | v0.8.4a made the repo validator-clean, but the root README had become a historical command/report archive. | Root README accumulated every layer instead of routing historical detail to archive reports and mini READMEs. | Root README should present current research, essential validation, RCC-N anchors, and archive pointers; detailed history belongs in reports, release notes, and folder-level READMEs. |
 | L-071 | v0.8.4b compressed the README successfully, but new current report surfaces needed to be mirrored into the directory/Nexus spine. | Compression improves readability but can hide new durable surfaces if the directory box and archive pointers are not updated. | After README compression, run a Nexus surface sync pass to ensure current reports, visuals, and verification dates are visible in the navigation spine. |
-| L-072 | The Law of Sufficient Form emerged during the v0.8.4c stabilization sequence. | Once claim, evidence, routing, validation, memory, and non-claim locks were visible, the repo began acting like a self-stabilizing substrate. | Major process insights should be added to a reflection surface, but reflection must remain bounded by validation and source provenance. |
 
 ### Failure Response Protocol
 
@@ -714,15 +671,12 @@ This section is intentionally compact. The full repository is validated by RCC-N
 | `reports/tau_claim_ledger/` | Public Tau claim ledger reports |
 | `reports/logicfolding_plausibility/` | LogicFolding plausibility sweep outputs |
 | `reports/evidence_sufficiency/` | Evidence sufficiency matrix reports and claim-level promotion/downgrade requirements |
-| `reports/public_source_ledger/` | Public source provenance and source-carry boundary reports |
 | `reports/release_finding_repair/` | Release warning inspection and zero-finding repair reports |
 | `visuals/logicfolding_plausibility/` | LogicFolding sweep charts |
 | `visuals/evidence_sufficiency/` | Evidence sufficiency charts |
-| `visuals/public_source_ledger/` | Public source ledger charts |
 | `visuals/stable_tau_threshold_governance/` | Stable threshold governance charts |
 | `reports/readme_information_architecture/` | README information architecture compression reports |
 | `docs/release_notes/` | Versioned release notes |
-| `docs/reflection/` | Reflection notes including the Law of Sufficient Form |
 | `rcc/nexus/` | Route map, task matrix, Nexus handoff surfaces |
 | `tests/` | Unit tests |
 
@@ -884,16 +838,15 @@ validation_remains_required
 | v0.8.4a | Release Finding Zero-Finding Repair; removes remaining path-break warning after v0.8.4. |
 | v0.8.4b | README Information Architecture Compression; compresses the public README while preserving RCC-N anchors and archive routing. |
 | v0.8.4c | Nexus Surface Sync Polish; mirrors current report surfaces into the directory box and RCC echo state. |
-| v0.8.5 | Public Source Ledger / Claim Provenance Map; maps source categories, source-carry boundaries, and reflection law into the public Tau claim spine. |
 
 ## Next Recommended Version
 
-**TAU-SCALING-SA v0.8.6 - Source Evidence Intake Cards**
+**TAU-SCALING-SA v0.8.5 - Public Source Ledger / Claim Provenance Map**
 
 Recommended goals:
 
-- Add source evidence intake cards for each public Tau claim.
-- Require URL/citation, source type, quote/paraphrase boundary, and claim-carry limit.
+- Tie every public Tau claim to source category, claim type, and extraction boundary.
+- Separate methodology claims, reported metrics, roadmap claims, media interpretation, and independent evidence.
 - Preserve source-fidelity and non-claim locks.
 - Keep threshold and classifier mutation disabled.
 - Preserve `mutation_allowed: false`.

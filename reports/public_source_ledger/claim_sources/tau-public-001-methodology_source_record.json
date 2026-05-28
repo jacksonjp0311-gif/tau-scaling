@@ -1,0 +1,24 @@
+{
+  "allowed_carry": "methodology framing",
+  "blocked_carry": [
+    "silicon validation",
+    "product proof",
+    "benchmark superiority",
+    "universal Tau law"
+  ],
+  "claim_id": "tau-public-001-methodology",
+  "current_class": "TSEK-C",
+  "promotion_blockers": [
+    "primary source URL / citation required",
+    "independent corroboration required before promotion",
+    "current evidence class remains bounded"
+  ],
+  "provenance_confidence": 0.65,
+  "requires_independent_source_for_promotion": true,
+  "requires_primary_source": true,
+  "requires_source_url": true,
+  "source_boundary": "Allowed to describe a claim-evaluation method; not allowed to imply independent silicon validation.",
+  "source_category": "methodology_claim",
+  "source_path": "claims\\public_tau\\tau-public-001-methodology.json",
+  "title": "Tau Scaling as post-geometric methodology"
+}

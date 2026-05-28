@@ -1,0 +1,23 @@
+{
+  "allowed_carry": "reported metric requiring normalization",
+  "blocked_carry": [
+    "node equivalence",
+    "manufacturing capability proof",
+    "yield proof"
+  ],
+  "claim_id": "tau-public-003-density-equivalent",
+  "current_class": "TSEK-C",
+  "promotion_blockers": [
+    "primary source URL / citation required",
+    "independent corroboration required before promotion",
+    "current evidence class remains bounded"
+  ],
+  "provenance_confidence": 0.55,
+  "requires_independent_source_for_promotion": true,
+  "requires_primary_source": true,
+  "requires_source_url": true,
+  "source_boundary": "Allowed to record reported density-equivalence language; not allowed to equate density equivalence with process-node equivalence.",
+  "source_category": "reported_metric",
+  "source_path": "claims\\public_tau\\tau-public-003-density-equivalent.json",
+  "title": "Density-equivalent scaling from LogicFolding"
+}

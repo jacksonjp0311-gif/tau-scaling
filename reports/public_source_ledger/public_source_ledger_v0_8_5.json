@@ -1,0 +1,213 @@
+{
+  "application_allowed": false,
+  "average_provenance_confidence": 0.5125,
+  "boundary": "Source provenance maps source-carry boundaries only. They do not promote claims, validate silicon, validate products, prove benchmark superiority, or establish a universal Tau Scaling law.",
+  "calibration_applied": false,
+  "claim_count": 8,
+  "classifier_changed": false,
+  "entries": [
+    {
+      "allowed_carry": "methodology framing",
+      "blocked_carry": [
+        "silicon validation",
+        "product proof",
+        "benchmark superiority",
+        "universal Tau law"
+      ],
+      "claim_id": "tau-public-001-methodology",
+      "current_class": "TSEK-C",
+      "promotion_blockers": [
+        "primary source URL / citation required",
+        "independent corroboration required before promotion",
+        "current evidence class remains bounded"
+      ],
+      "provenance_confidence": 0.65,
+      "requires_independent_source_for_promotion": true,
+      "requires_primary_source": true,
+      "requires_source_url": true,
+      "source_boundary": "Allowed to describe a claim-evaluation method; not allowed to imply independent silicon validation.",
+      "source_category": "methodology_claim",
+      "source_path": "claims\\public_tau\\tau-public-001-methodology.json",
+      "title": "Tau Scaling as post-geometric methodology"
+    },
+    {
+      "allowed_carry": "mechanism hypothesis and plausibility regime testing",
+      "blocked_carry": [
+        "measured gain",
+        "full-chip win",
+        "energy-normalized improvement without data"
+      ],
+      "claim_id": "tau-public-002-logicfolding",
+      "current_class": "TSEK-C",
+      "promotion_blockers": [
+        "primary source URL / citation required",
+        "independent corroboration required before promotion",
+        "current evidence class remains bounded"
+      ],
+      "provenance_confidence": 0.55,
+      "requires_independent_source_for_promotion": true,
+      "requires_primary_source": true,
+      "requires_source_url": true,
+      "source_boundary": "Allowed to motivate LogicFolding plausibility testing; not allowed to prove measured timing gain without workload/baseline/method data.",
+      "source_category": "architecture_interpretation",
+      "source_path": "claims\\public_tau\\tau-public-002-logicfolding.json",
+      "title": "LogicFolding reduces critical-path/wire delay"
+    },
+    {
+      "allowed_carry": "reported metric requiring normalization",
+      "blocked_carry": [
+        "node equivalence",
+        "manufacturing capability proof",
+        "yield proof"
+      ],
+      "claim_id": "tau-public-003-density-equivalent",
+      "current_class": "TSEK-C",
+      "promotion_blockers": [
+        "primary source URL / citation required",
+        "independent corroboration required before promotion",
+        "current evidence class remains bounded"
+      ],
+      "provenance_confidence": 0.55,
+      "requires_independent_source_for_promotion": true,
+      "requires_primary_source": true,
+      "requires_source_url": true,
+      "source_boundary": "Allowed to record reported density-equivalence language; not allowed to equate density equivalence with process-node equivalence.",
+      "source_category": "reported_metric",
+      "source_path": "claims\\public_tau\\tau-public-003-density-equivalent.json",
+      "title": "Density-equivalent scaling from LogicFolding"
+    },
+    {
+      "allowed_carry": "roadmap hypothesis",
+      "blocked_carry": [
+        "achieved silicon result",
+        "process-node equivalence",
+        "near-term certainty"
+      ],
+      "claim_id": "tau-public-004-roadmap-1p4nm-class",
+      "current_class": "TSEK-C",
+      "promotion_blockers": [
+        "source category cannot carry achieved-result claims",
+        "primary source URL / citation required",
+        "independent corroboration required before promotion",
+        "current evidence class remains bounded"
+      ],
+      "provenance_confidence": 0.45,
+      "requires_independent_source_for_promotion": true,
+      "requires_primary_source": true,
+      "requires_source_url": true,
+      "source_boundary": "Allowed to record roadmap projection; not allowed to treat projection as achieved product result.",
+      "source_category": "roadmap_projection",
+      "source_path": "claims\\public_tau\\tau-public-004-roadmap-1p4nm-class.json",
+      "title": "Roadmap projection toward 1.4nm-class density"
+    },
+    {
+      "allowed_carry": "architecture hypothesis",
+      "blocked_carry": [
+        "end-to-end speedup proof",
+        "energy-normalized improvement",
+        "product validation"
+      ],
+      "claim_id": "tau-public-005-unified-bus",
+      "current_class": "TSEK-C",
+      "promotion_blockers": [
+        "primary source URL / citation required",
+        "independent corroboration required before promotion",
+        "current evidence class remains bounded"
+      ],
+      "provenance_confidence": 0.5,
+      "requires_independent_source_for_promotion": true,
+      "requires_primary_source": true,
+      "requires_source_url": true,
+      "source_boundary": "Allowed to evaluate architectural communication hypothesis; not allowed to claim workload improvement without latency/bandwidth/energy evidence.",
+      "source_category": "architecture_interpretation",
+      "source_path": "claims\\public_tau\\tau-public-005-unified-bus.json",
+      "title": "Unified Bus reduces remote-access latency"
+    },
+    {
+      "allowed_carry": "I/O claim requiring integration evidence",
+      "blocked_carry": [
+        "full-system proof",
+        "workload proof",
+        "thermal/yield proof"
+      ],
+      "claim_id": "tau-public-006-hione-optical-io",
+      "current_class": "TSEK-C",
+      "promotion_blockers": [
+        "primary source URL / citation required",
+        "independent corroboration required before promotion",
+        "current evidence class remains bounded"
+      ],
+      "provenance_confidence": 0.5,
+      "requires_independent_source_for_promotion": true,
+      "requires_primary_source": true,
+      "requires_source_url": true,
+      "source_boundary": "Allowed to record I/O or interconnect acceleration claim; not allowed to infer full workload improvement without integration data.",
+      "source_category": "reported_metric",
+      "source_path": "claims\\public_tau\\tau-public-006-hione-optical-io.json",
+      "title": "Hi-ONE / optical I/O improves AI-scale data movement"
+    },
+    {
+      "allowed_carry": "topology hypothesis",
+      "blocked_carry": [
+        "automatic speedup",
+        "full-chip timing proof",
+        "manufacturing proof"
+      ],
+      "claim_id": "tau-public-007-3d-folding",
+      "current_class": "TSEK-C",
+      "promotion_blockers": [
+        "primary source URL / citation required",
+        "independent corroboration required before promotion",
+        "current evidence class remains bounded"
+      ],
+      "provenance_confidence": 0.55,
+      "requires_independent_source_for_promotion": true,
+      "requires_primary_source": true,
+      "requires_source_url": true,
+      "source_boundary": "Allowed to test topology/path-shortening plausibility; not allowed to ignore vertical overhead, closure, thermal, and yield burdens.",
+      "source_category": "architecture_interpretation",
+      "source_path": "claims\\public_tau\\tau-public-007-3d-folding.json",
+      "title": "3D Folding solves edge-bound resource bottlenecks"
+    },
+    {
+      "allowed_carry": "public narrative requiring source separation",
+      "blocked_carry": [
+        "independent validation",
+        "product superiority",
+        "investment or market proof"
+      ],
+      "claim_id": "tau-public-008-ai-gap-closure",
+      "current_class": "TSEK-C",
+      "promotion_blockers": [
+        "source category cannot carry achieved-result claims",
+        "primary source URL / citation required",
+        "independent corroboration required before promotion",
+        "current evidence class remains bounded"
+      ],
+      "provenance_confidence": 0.35,
+      "requires_independent_source_for_promotion": true,
+      "requires_primary_source": true,
+      "requires_source_url": true,
+      "source_boundary": "Allowed to record public competitiveness narrative; not allowed to treat narrative as independent benchmark evidence.",
+      "source_category": "media_interpretation",
+      "source_path": "claims\\public_tau\\tau-public-008-ai-gap-closure.json",
+      "title": "Tau Scaling materially closes AI-chip performance gap"
+    }
+  ],
+  "generated_at": "2026-05-28T13:54:10.141151+00:00",
+  "law_of_sufficient_form": {
+    "law": "When enough governed form is in place, structure begins to hold itself.",
+    "operational_form": "A system becomes self-stabilizing when its claims, evidence, routing, validation, memory, and non-claim locks are all visible to both humans and agents."
+  },
+  "mutation_allowed": false,
+  "research_finding": "Public Tau claims now have a provenance map separating methodology, reported metrics, roadmap projections, media interpretation, architecture interpretation, and independent evidence requirements.",
+  "schema": "tau-scaling-public-source-ledger-v0.8.5",
+  "source_category_counts": {
+    "architecture_interpretation": 3,
+    "media_interpretation": 1,
+    "methodology_claim": 1,
+    "reported_metric": 2,
+    "roadmap_projection": 1
+  },
+  "thresholds_changed": false
+}

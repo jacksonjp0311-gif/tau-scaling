@@ -1,0 +1,24 @@
+{
+  "allowed_carry": "public narrative requiring source separation",
+  "blocked_carry": [
+    "independent validation",
+    "product superiority",
+    "investment or market proof"
+  ],
+  "claim_id": "tau-public-008-ai-gap-closure",
+  "current_class": "TSEK-C",
+  "promotion_blockers": [
+    "source category cannot carry achieved-result claims",
+    "primary source URL / citation required",
+    "independent corroboration required before promotion",
+    "current evidence class remains bounded"
+  ],
+  "provenance_confidence": 0.35,
+  "requires_independent_source_for_promotion": true,
+  "requires_primary_source": true,
+  "requires_source_url": true,
+  "source_boundary": "Allowed to record public competitiveness narrative; not allowed to treat narrative as independent benchmark evidence.",
+  "source_category": "media_interpretation",
+  "source_path": "claims\\public_tau\\tau-public-008-ai-gap-closure.json",
+  "title": "Tau Scaling materially closes AI-chip performance gap"
+}

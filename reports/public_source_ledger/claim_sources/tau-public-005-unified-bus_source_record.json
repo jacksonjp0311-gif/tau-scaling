@@ -1,0 +1,23 @@
+{
+  "allowed_carry": "architecture hypothesis",
+  "blocked_carry": [
+    "end-to-end speedup proof",
+    "energy-normalized improvement",
+    "product validation"
+  ],
+  "claim_id": "tau-public-005-unified-bus",
+  "current_class": "TSEK-C",
+  "promotion_blockers": [
+    "primary source URL / citation required",
+    "independent corroboration required before promotion",
+    "current evidence class remains bounded"
+  ],
+  "provenance_confidence": 0.5,
+  "requires_independent_source_for_promotion": true,
+  "requires_primary_source": true,
+  "requires_source_url": true,
+  "source_boundary": "Allowed to evaluate architectural communication hypothesis; not allowed to claim workload improvement without latency/bandwidth/energy evidence.",
+  "source_category": "architecture_interpretation",
+  "source_path": "claims\\public_tau\\tau-public-005-unified-bus.json",
+  "title": "Unified Bus reduces remote-access latency"
+}
