@@ -154,7 +154,7 @@
     "blocked_state_to_failure",
     "local_runtime_evidence_to_silicon_validation"
   ],
-  "generated_at": "2026-05-28T08:12:44.945203+00:00",
+  "generated_at": "2026-05-28T08:15:15.923500+00:00",
   "missing_count": 0,
   "missing_states": [],
   "mutation_allowed": false,

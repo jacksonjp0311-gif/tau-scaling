@@ -1,6 +1,6 @@
 # Tau Scaling v0.7.0 Approval-Governance Corridor Milestone
 
-Generated: `2026-05-28T08:12:44.945203+00:00`
+Generated: `2026-05-28T08:15:15.923500+00:00`
 
 ## Milestone Result
 

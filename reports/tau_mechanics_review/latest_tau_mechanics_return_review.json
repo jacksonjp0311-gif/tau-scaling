@@ -1,0 +1,165 @@
+{
+  "application_allowed": false,
+  "approval_corridor_locked": true,
+  "boundary": "Tau mechanics return reviews are local classifier-governance analysis artifacts. They inspect runtime mechanics and evidence surfaces. They do not create live approval, execute replay commands, create branches, mutate classifier behavior, apply calibration, or validate silicon, products, manufacturing, process nodes, benchmark superiority, or universal Tau Scaling law.",
+  "branch_created": false,
+  "branch_creation_allowed": false,
+  "calibration_applied": false,
+  "chart_paths": [
+    "visuals/tau_mechanics_review/v0_7_1/tau_mechanics_code_signals.png",
+    "visuals/tau_mechanics_review/v0_7_1/tau_mechanics_seed_coverage.png",
+    "visuals/tau_mechanics_review/v0_7_1/tau_mechanics_return_health.png"
+  ],
+  "code_signals": {
+    "class_count": 2,
+    "classes": [
+      "TauScalingRunResult",
+      "TauScalingRuntime"
+    ],
+    "function_count": 2,
+    "functions": [
+      "__init__",
+      "run"
+    ],
+    "token_counts": {
+      "baseline_mentions": 2,
+      "evidence_mentions": 12,
+      "gate_mentions": 3,
+      "tau_mentions": 17,
+      "tsek_mentions": 1,
+      "workload_mentions": 4
+    }
+  },
+  "executor_ran": false,
+  "gap_count": 2,
+  "gaps": [
+    "some_seed_cards_do_not_surface_tau_terms",
+    "some_seed_cards_do_not_surface_gate_terms"
+  ],
+  "generated_at": "2026-05-28T08:15:17.409871+00:00",
+  "mechanics_status": "TAU_MECHANICS_REVIEW_READY__TARGETED_GAPS_IDENTIFIED",
+  "mutation_allowed": false,
+  "next_recommendation": "Move from governance containment into Tau mechanics: tau vectors, gate algebra, TSEK thresholds, synthetic gate suite interpretation, and evidence-card design.",
+  "policy_enforced": false,
+  "release_passed": true,
+  "replay_allowed": false,
+  "runtime_behavior_changed": false,
+  "schema": "tau-scaling-tau-mechanics-return-review-v0.7.1",
+  "seed_cards": [
+    {
+      "has_baseline": true,
+      "has_candidate": true,
+      "has_gate": true,
+      "has_tau": true,
+      "has_workload": true,
+      "keys": [
+        "baseline",
+        "candidate",
+        "dominant_tau_improved",
+        "dominant_tau_term",
+        "non_claim_lock",
+        "tau_units",
+        "weights_declared",
+        "workload_class"
+      ],
+      "path": "configs/seeds/codex_tau_vector_toy.json"
+    },
+    {
+      "has_baseline": false,
+      "has_candidate": false,
+      "has_gate": false,
+      "has_tau": false,
+      "has_workload": false,
+      "keys": [
+        "N",
+        "compute_coeff",
+        "edge_coeff",
+        "surface_coeff"
+      ],
+      "path": "configs/seeds/edge_surface_boundary_toy.json"
+    },
+    {
+      "has_baseline": false,
+      "has_candidate": false,
+      "has_gate": true,
+      "has_tau": true,
+      "has_workload": false,
+      "keys": [
+        "energy_ratio_new_over_old",
+        "pdn_droop_ratio_new_over_old",
+        "tau_gain",
+        "thermal_ratio_new_over_old"
+      ],
+      "path": "configs/seeds/gamma_tau_etp_toy.json"
+    },
+    {
+      "has_baseline": true,
+      "has_candidate": true,
+      "has_gate": true,
+      "has_tau": true,
+      "has_workload": true,
+      "keys": [
+        "baseline_manifest",
+        "candidate_manifest",
+        "claim_card",
+        "edge_surface_boundary",
+        "energy_thermal_pdn_pvt",
+        "evidence_disclosure",
+        "logicfolding_survivability",
+        "monte_carlo_stress",
+        "non_claim_locks",
+        "overclaim",
+        "pvt_closure",
+        "source_boundary",
+        "tau_vector",
+        "workload_profile",
+        "yield_method_disclosure"
+      ],
+      "path": "configs/seeds/logicfolding_claim_card.json"
+    },
+    {
+      "has_baseline": true,
+      "has_candidate": true,
+      "has_gate": true,
+      "has_tau": true,
+      "has_workload": true,
+      "keys": [
+        "baseline_manifest",
+        "candidate_manifest",
+        "claim_card",
+        "edge_surface_boundary",
+        "energy_thermal_pdn_pvt",
+        "evidence_disclosure",
+        "logicfolding_survivability",
+        "monte_carlo_stress",
+        "non_claim_locks",
+        "overclaim",
+        "pvt_closure",
+        "source_boundary",
+        "tau_vector",
+        "workload_profile",
+        "yield_method_disclosure"
+      ],
+      "path": "configs/seeds/logicfolding_promotion_path_claim_card.json"
+    },
+    {
+      "has_baseline": false,
+      "has_candidate": false,
+      "has_gate": true,
+      "has_tau": true,
+      "has_workload": false,
+      "keys": [
+        "monte_carlo_stress"
+      ],
+      "path": "configs/seeds/monte_carlo_stress_toy.json"
+    }
+  ],
+  "seed_coverage": {
+    "seed_count": 6,
+    "seeds_with_baseline": 3,
+    "seeds_with_candidate": 3,
+    "seeds_with_gate": 5,
+    "seeds_with_tau": 5,
+    "seeds_with_workload": 3
+  }
+}
