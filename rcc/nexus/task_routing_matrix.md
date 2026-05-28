@@ -1,6 +1,6 @@
 # Task Routing Matrix
 
-Current contract: **TAU-SCALING-SA v0.8.4b - README Information Architecture Compression**
+Current contract: **TAU-SCALING-SA v0.8.4c - Nexus Surface Sync Polish**
 
 ## Geometry Route
 

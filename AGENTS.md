@@ -1,6 +1,6 @@
 # AGENTS.md Ã¢â‚¬â€ Tau Scaling Agent Operating Contract
 
-Current contract: **TAU-SCALING-SA v0.8.4b - README Information Architecture Compression**
+Current contract: **TAU-SCALING-SA v0.8.4c - Nexus Surface Sync Polish**
 
 ## Mission
 

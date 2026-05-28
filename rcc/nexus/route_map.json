@@ -70,7 +70,7 @@
                                       ]
                },
     "schema":  "rcc-nexus-route-map-v1.7",
-    "updated_at":  "2026-05-28T13:39:28.8185597Z",
+    "updated_at":  "2026-05-28T13:48:54.0967517Z",
     "v0_4_routes":  {
                         "feedback_chart_path_health_repair":  {
                                                                   "evidence":  [
@@ -925,7 +925,22 @@
                                                                                              "reports/readme_information_architecture/latest_readme_information_architecture_compression.md"
                                                                                          ],
                                                                             "mutation_lock":  "README information architecture compression only; preserves RCC-N anchors; no classifier change, threshold change, branch creation, or mutation."
-                                                                        }
+                                                                        },
+                        "nexus_surface_sync_polish":  {
+                                                          "read_first":  [
+                                                                             "README.md",
+                                                                             "reports/nexus_surface_sync/latest_nexus_surface_sync_polish.md"
+                                                                         ],
+                                                          "validate":  [
+                                                                           "python scripts/release/validate_release.py",
+                                                                           "python scripts/rcc/audit_readme_surface.py",
+                                                                           "python scripts/rcc/check_rcc_nexus.py"
+                                                                       ],
+                                                          "evidence":  [
+                                                                           "reports/nexus_surface_sync/latest_nexus_surface_sync_polish.md"
+                                                                       ],
+                                                          "mutation_lock":  "Nexus surface sync polish only; preserves RCC-N anchors; no classifier change, threshold change, branch creation, or mutation."
+                                                      }
                     },
     "validation":  {
                        "architecture":  "python scripts/validation/validate_architecture_contracts.py",
@@ -933,5 +948,5 @@
                        "runtime":  "python -m tau_scaling run-claim --seed configs/seeds/logicfolding_claim_card.json",
                        "tests":  "python -m unittest discover -s tests"
                    },
-    "version":  "v0.8.4b"
+    "version":  "v0.8.4c"
 }
