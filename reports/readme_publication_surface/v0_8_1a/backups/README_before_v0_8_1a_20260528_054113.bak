@@ -1,4 +1,4 @@
-# Tau Scaling â€” Evidence-Gated Tau-Claim Runtime
+# Tau Scaling — Evidence-Gated Tau-Claim Runtime
 
 ![RCC-N](https://img.shields.io/badge/RCC--N-passing-brightgreen)
 ![Architecture](https://img.shields.io/badge/architecture-passing-brightgreen)
@@ -24,16 +24,6 @@ No gates, no validation.
 No evidence, no strong class.
 ```
 
-## Tau Doctrine Alignment
-
-```text
-Time is the shared metric, not automatic proof.
-Topology helps only when overheads are dominated.
-Industrial roadmap coherence is not independent validation.
-Energy, thermal, yield, PDN/PVT, workload, and method data are required.
-```
-
-These four rules are the public Tau doctrine lock for this repository. They align the software runtime with TSEK v1.3: tau is treated as a cross-layer claim object that must survive workload, gate, method, and evidence constraints before promotion.
 ## Human Director Box
 
 ### What this repository is
@@ -61,37 +51,6 @@ claim
 
 This repo does **not** independently validate silicon, Huawei product metrics, manufacturing capability, benchmark superiority, process-node equivalence, investment value, or a universal Tau Scaling law. It is a local runtime for evidence discipline and claim classification.
 
-## Benchmark Finding - Stable Tau Threshold Governance v0.8.0
-
-![Tau Scaling Benchmark Findings](visuals/stable_tau_threshold_governance/v0_8_0/tau_scaling_benchmark_findings_dashboard.svg)
-
-The publishable result is **not** that Tau Scaling is independently validated. The publishable result is that Tau Scaling can be operationalized as an evidence-gated claim-governance runtime.
-
-Current benchmark finding:
-
-`	ext
-Baseline claim remains TSEK-C.
-Promotion-path seed can reach TSEK-B with stronger disclosed evidence.
-v0.8.0 deferred threshold changes pending more evidence.
-No classifier mutation occurred.
-No threshold mutation occurred.
-All validators passed.
-This is local runtime governance, not silicon/product validation.
-`
-
-Stable Tau insight:
-
-`	ext
-The key result is governance stability: sensitivity, penalty, and boundary review did not justify changing TSEK thresholds. The current policy remains stable until stronger evidence arrives.
-`
-
-Publication lock phrase: **defer threshold change pending more evidence**.
-
-The active research question is:
-
-`	ext
-What evidence is sufficient to move a Tau Scaling claim from roadmap coherence to a stronger evidence class without overclaiming?
-`
 ## Current Public Metrics
 
 | Surface | Result |
@@ -722,7 +681,7 @@ README audit: passed
 unit_tests: OK
 ```
 
-## AI Rule â€” Directory Box and Mini README Synchronization
+## AI Rule — Directory Box and Mini README Synchronization
 
 This exact heading uses a Unicode em dash (U+2014) because `scripts/rcc/audit_readme_surface.py` checks this anchor literally.
 

@@ -1,15 +1,17 @@
 # README + Mini Repo Audit
 
-Generated: 2026-05-28T09:33:12.100555+00:00
+Generated: 2026-05-28T09:41:17.713630+00:00
 
-Passed: `true`
-Errors: `0`
+Passed: `false`
+Errors: `1`
 Warnings: `0`
 Durable dirs checked: `38`
 
 ## Findings
 
-No findings.
+| Severity | Code | Path | Detail |
+|---|---|---|---|
+| error | `root_readme_section_missing` | `README.md` | Missing section/token: AI Rule — Directory Box and Mini README Synchronization |
 
 ## Non-Claim Lock
 
