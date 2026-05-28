@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#00e5ff"/>
+      <stop offset=".5" stop-color="#8b5cf6"/>
+      <stop offset="1" stop-color="#ff4fd8"/>
+    </linearGradient>
+    <style>
+      .bg{fill:#030712}.panel{fill:#07111f;stroke:#22d3ee;stroke-width:2}.panel2{fill:#0b0618;stroke:#a855f7;stroke-width:2}.panel3{fill:#15051a;stroke:#ec4899;stroke-width:2}
+      .title{font:700 54px Segoe UI,Arial,sans-serif;fill:url(#g)}.sub{font:700 26px Segoe UI,Arial,sans-serif;fill:#67e8f9}.small{font:500 18px Segoe UI,Arial,sans-serif;fill:#cbd5e1}.body{font:600 22px Segoe UI,Arial,sans-serif;fill:#f8fafc}.label{font:700 24px Segoe UI,Arial,sans-serif;fill:#67e8f9}.ok{fill:#22c55e}.cyan{fill:#22d3ee}.purple{fill:#a855f7}.green{fill:#4ade80}
+    </style>
+  </defs>
+  <rect class="bg" width="1400" height="760"/>
+  <text x="700" y="70" text-anchor="middle" class="title">Tau Scaling - Benchmark Findings</text>
+  <text x="700" y="112" text-anchor="middle" class="sub">Stable Threshold Governance v0.8.0</text>
+  <text x="700" y="145" text-anchor="middle" class="small">What we learned from the current benchmark and governance arc</text>
+  <rect x="40" y="180" width="630" height="215" rx="22" class="panel"/>
+  <text x="70" y="225" class="label">1  Core Tau Findings</text>
+  <text x="85" y="275" class="body">Stable threshold governance locked</text>
+  <text x="85" y="320" class="body">Threshold change deferred pending more evidence</text>
+  <text x="85" y="365" class="body">Baseline classifier preserved</text>
+  <text x="85" y="410" class="small">Roadmap coherence is not validation; simulation is not silicon evidence</text>
+  <rect x="710" y="180" width="650" height="215" rx="22" class="panel"/>
+  <text x="740" y="225" class="label">2  Benchmark Snapshot</text>
+  <text x="760" y="275" class="body">Release validator</text><rect x="1110" y="250" width="190" height="34" rx="16" class="ok"/><text x="1205" y="274" text-anchor="middle" class="body">PASSED</text>
+  <text x="760" y="320" class="body">README audit</text><rect x="1110" y="295" width="190" height="34" rx="16" class="ok"/><text x="1205" y="319" text-anchor="middle" class="body">PASSED</text>
+  <text x="760" y="365" class="body">RCC-N checker</text><rect x="1110" y="340" width="190" height="34" rx="16" class="ok"/><text x="1205" y="364" text-anchor="middle" class="body">PASSED</text>
+  <text x="760" y="410" class="body">Unit tests</text><text x="1165" y="410" class="cyan body">8 / 8 OK</text>
+  <rect x="40" y="430" width="650" height="170" rx="22" class="panel2"/>
+  <text x="70" y="475" class="label">3  Decision Trail</text>
+  <text x="90" y="525" class="body">Baseline claim -> TSEK-C</text>
+  <text x="90" y="565" class="body">Promotion path exists with stronger evidence</text>
+  <rect x="720" y="430" width="640" height="170" rx="22" class="panel3"/>
+  <text x="750" y="475" class="label">4  Publishable Tau Insight</text>
+  <text x="760" y="525" class="body">Governance stability is the key result.</text>
+  <text x="760" y="560" class="body">Review did not justify changing TSEK thresholds.</text>
+  <rect x="40" y="630" width="1320" height="90" rx="22" class="panel"/>
+  <text x="70" y="665" class="label">5  Evidence Contrast</text>
+  <text x="300" y="695" class="cyan body">Baseline: A_TSEK = 0.0 / TSEK-C</text>
+  <text x="710" y="695" class="purple body">Promotion: A_TSEK = 1.0 / TSEK-B</text>
+  <text x="1090" y="695" class="green body">Thresholds changed = false</text>
+  <text x="700" y="745" text-anchor="middle" class="small">Repo status: threshold decision deferred, classifier unchanged, mutation blocked without stronger evidence.</text>
+</svg>

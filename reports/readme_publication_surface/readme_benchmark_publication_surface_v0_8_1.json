@@ -1,0 +1,25 @@
+{
+  "application_allowed": false,
+  "boundary": "README benchmark publication surfaces summarize local runtime governance only. They do not validate silicon, products, manufacturing, process nodes, benchmark superiority, or universal Tau Scaling law.",
+  "calibration_applied": false,
+  "classifier_changed": false,
+  "generated_at": "2026-05-28T09:33:09.557883+00:00",
+  "graphic_exists": true,
+  "graphic_path": "visuals/stable_tau_threshold_governance/v0_8_0/tau_scaling_benchmark_findings_dashboard.svg",
+  "missing_required_items": [
+    "## Tau Doctrine Alignment",
+    "Time is the shared metric, not automatic proof.",
+    "Topology helps only when overheads are dominated.",
+    "Industrial roadmap coherence is not independent validation.",
+    "Energy, thermal, yield, PDN/PVT, workload, and method data are required.",
+    "## Benchmark Finding - Stable Tau Threshold Governance v0.8.0",
+    "The publishable result is **not** that Tau Scaling is independently validated.",
+    "defer threshold change pending more evidence",
+    "visuals/stable_tau_threshold_governance/v0_8_0/tau_scaling_benchmark_findings_dashboard.svg"
+  ],
+  "mutation_allowed": false,
+  "passed": false,
+  "publication_status": "README_BENCHMARK_PUBLICATION_SURFACE_NEEDS_REPAIR",
+  "schema": "tau-scaling-readme-benchmark-publication-surface-v0.8.1",
+  "thresholds_changed": false
+}
