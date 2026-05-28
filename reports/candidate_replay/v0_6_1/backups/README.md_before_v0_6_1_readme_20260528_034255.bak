@@ -10,8 +10,8 @@
 
 Repository: `tau-scaling`  
 Package / CLI: `tau_scaling` / `tau-scaling`  
-Current checkpoint: **TAU-SCALING-SA v0.6.1 - Candidate Branch Replay Harness**  
-Previous seal: **TAU-SCALING-SA v0.6.0 - Human-Approved Candidate Branch Gate**
+Current checkpoint: **TAU-SCALING-SA v0.6.0 - Human-Approved Candidate Branch Gate**  
+Previous seal: **TAU-SCALING-SA v0.5.9 - Review Checklist and Signoff Gate**
 
 Tau Scaling is a local-first, evidence-gated Python runtime for evaluating tau-scaling claims through structured claim cards, workload declarations, tau vectors, LogicFolding survivability checks, edge-to-surface boundary algebra, energy / thermal / PDN / PVT gates, Monte Carlo checker stress, TSEK classification, evidence packages, and RCC-N / OMN-style repository navigation.
 
@@ -55,7 +55,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | TAU-SCALING-SA v0.6.1 |
+| Current checkpoint | TAU-SCALING-SA v0.6.0 |
 | Synthetic gate suite | v0.4.0 / benchmark + finding charts |
 | Package version | 0.2.0 |
 | Baseline seed | TSEK-C / A_TSEK 0.0000 |
@@ -64,7 +64,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 | README mini repo audit | passing / 0 warnings |
 | Unified release validator | passing / step failures 0 |
 | AGENTS.md contract | synchronized with release validator |
-| Task routing matrix | geometry-aware / v0.6.1-ready |
+| Task routing matrix | geometry-aware / v0.6.0-ready |
 | Release warning findings | 0 expected after v0.3.3d validator scan repair |
 | Architecture validator | passing / 0 warnings |
 | Unit tests | 8 OK |
@@ -118,9 +118,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 | Review signoff charts | `visuals/review_signoff/v0_5_9/` |
 | Candidate branch gate | `reports/candidate_branch/latest_candidate_branch_gate.md` |
 | Candidate branch charts | `visuals/candidate_branch/v0_6_0/` |
-| Candidate replay harness | `reports/candidate_replay/latest_candidate_branch_replay_harness.md` |
-| Candidate replay charts | `visuals/candidate_replay/v0_6_1/` |
-| Agent contract version sync | current / v0.6.1 |
+| Agent contract version sync | current / v0.6.0 |
 | Release readiness report | `reports/release/latest_release_readiness.md` |
 | Collision-proof run identity | passed |
 | Mini README coverage | 1.0 |
@@ -165,7 +163,6 @@ python scripts/benchmarks/generate_counterfactual_decision_record.py
 python scripts/benchmarks/generate_review_package.py
 python scripts/benchmarks/run_review_signoff_gate.py
 python scripts/benchmarks/run_candidate_branch_gate.py
-python scripts/benchmarks/run_candidate_branch_replay_harness.py
 python scripts/release/validate_release.py
 ```
 
@@ -473,7 +470,6 @@ This section is part of the repository's operating memory. When a patch fails, t
 | L-040 | v0.5.7 produced SAFE_FOR_REVIEW_NOT_APPLICATION. | Safe-for-review can be mistaken for safe-for-application unless bundled explicitly. | A candidate that reaches SAFE_FOR_REVIEW_NOT_APPLICATION must be bundled into a review package before any implementation pathway is discussed. |
 | L-041 | v0.5.8 produced a review-ready evidence bundle. | Review-ready bundles still require explicit signoff gates to prevent review from being mistaken for application. | A review package must pass a signoff checklist before a candidate branch or implementation pathway is discussed. |
 | L-042 | v0.5.9 passed the signoff gate, but signoff readiness is still not branch creation. | A signoff-ready candidate needs an explicit human approval artifact before branch creation or implementation. | Candidate-branch gates must prepare proposals only; branches require explicit human approval and remain non-mutating by default. |
-| L-043 | v0.6.0 allowed a branch proposal but confirmed human approval was absent. | Proposal-readiness can be mistaken for replay-readiness unless replay is separately blocked. | Candidate replay harnesses must remain blocked until an explicit human approval artifact exists. |
 
 ### Failure Response Protocol
 
@@ -682,7 +678,6 @@ tau-scaling/
   releases/
   reports/
     nexus_feedback/
-    candidate_replay/
     candidate_branch/
     review_signoff/
     review_package/
@@ -735,7 +730,6 @@ tau-scaling/
   tests/
   visuals/
     nexus_feedback/
-    candidate_replay/
     candidate_branch/
     review_signoff/
     review_package/
@@ -847,39 +841,6 @@ AGENTS.md Required Validation now includes the current v0.4.6-v0.5.1 governance 
 ```
 
 Boundary: alignment polish is repository hygiene only. It is not code correctness, silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.
-
-## Candidate Branch Replay Harness v0.6.1
-
-v0.6.1 prepares the candidate replay harness, but blocks replay until explicit human approval exists.
-
-Primary command:
-
-```powershell
-python scripts/benchmarks/run_candidate_branch_replay_harness.py
-```
-
-Primary outputs:
-
-```text
-reports/candidate_replay/latest_candidate_branch_replay_harness.json
-reports/candidate_replay/latest_candidate_branch_replay_harness.md
-visuals/candidate_replay/v0_6_1/
-```
-
-Current lock:
-
-```text
-human_approval_required: true
-human_approval_present: false
-replay_allowed: false
-branch_created: false
-mutation_allowed: false
-policy_enforced: false
-calibration_applied: false
-application_allowed: false
-```
-
-Boundary: candidate replay harnesses are local classifier-governance planning artifacts. They do not create branches by default, do not change classifier behavior, and do not validate silicon, product performance, manufacturing capability, process-node equivalence, benchmark superiority, AI understanding, or universal Tau Scaling law.
 
 ## Human-Approved Candidate Branch Gate v0.6.0
 
@@ -1471,7 +1432,6 @@ python scripts/benchmarks/generate_counterfactual_decision_record.py
 python scripts/benchmarks/generate_review_package.py
 python scripts/benchmarks/run_review_signoff_gate.py
 python scripts/benchmarks/run_candidate_branch_gate.py
-python scripts/benchmarks/run_candidate_branch_replay_harness.py
 python scripts/release/validate_release.py
 python scripts/rcc/audit_readme_surface.py
 python scripts/rcc/check_rcc_nexus.py
@@ -1827,15 +1787,14 @@ validation_remains_required
 | v0.5.8 | Review package and evidence bundle for v0.5.2-v0.5.7. |
 | v0.5.9 | Review checklist and signoff gate for the evidence bundle. |
 | v0.6.0 | Human-approved candidate branch gate; proposal only, no branch by default. |
-| v0.6.1 | Candidate branch replay harness; replay blocked until explicit approval artifact exists. |
 
 ## Next Recommended Version
 
-**TAU-SCALING-SA v0.6.2 - Human Approval Artifact Template**
+**TAU-SCALING-SA v0.6.1 - Candidate Branch Replay Harness**
 
 Recommended goals:
 
-- Add an explicit approval/denial artifact template.
-- Require a signed local decision before candidate replay can proceed.
+- Only run after explicit human approval artifact exists.
+- Replay the candidate proposal against baseline evidence.
 - Keep default runtime behavior unchanged.
 - Keep `mutation_allowed: false` unless a separate explicit human approval artifact exists.

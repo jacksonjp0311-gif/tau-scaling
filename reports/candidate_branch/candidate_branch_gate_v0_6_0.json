@@ -11,7 +11,7 @@
     "visuals/candidate_branch/v0_6_0/candidate_branch_status.png"
   ],
   "final_recommendation": "Prepare human review disposition. Do not create branch, apply calibration, or mutate classifier behavior from this report alone.",
-  "generated_at": "2026-05-28T07:37:34.626150+00:00",
+  "generated_at": "2026-05-28T07:42:56.350753+00:00",
   "human_approval_present": false,
   "human_approval_required": true,
   "human_approval_requirement": "A human approval artifact must be added before creating any candidate branch or implementation pathway. This gate only prepares a proposal.",

@@ -1,0 +1,60 @@
+{
+  "application_allowed": false,
+  "approval_boundary": "Replay is intentionally blocked until a separate explicit human approval artifact exists. This v0.6.1 layer prepares the replay harness and proves the block.",
+  "boundary": "Candidate branch replay harnesses are local classifier-governance planning artifacts. They do not create branches by default, do not change classifier behavior, and do not validate silicon, products, manufacturing, process nodes, benchmark superiority, or universal Tau Scaling law.",
+  "branch_created": false,
+  "branch_proposal_allowed": true,
+  "calibration_applied": false,
+  "chart_paths": [
+    "visuals/candidate_replay/v0_6_1/candidate_replay_gate_state.png",
+    "visuals/candidate_replay/v0_6_1/candidate_replay_steps.png",
+    "visuals/candidate_replay/v0_6_1/candidate_replay_status.png"
+  ],
+  "final_recommendation": "Add an explicit human approval artifact before replaying any candidate branch. Do not create a branch or mutate classifier behavior from this report.",
+  "generated_at": "2026-05-28T07:43:00.509448+00:00",
+  "human_approval_present": false,
+  "human_approval_required": true,
+  "input_candidate_branch_gate": "reports/candidate_branch/latest_candidate_branch_gate.json",
+  "input_review_signoff": "reports/review_signoff/latest_review_signoff_gate.json",
+  "mutation_allowed": false,
+  "next_recommendation": "v0.6.2 should add a human approval artifact template or explicit approval-denial ledger before replay can proceed.",
+  "policy_enforced": false,
+  "proposed_branch_name": "candidate/v0.6.0-threshold-0.8-review-only",
+  "replay_allowed": false,
+  "replay_status": "REPLAY_BLOCKED__HUMAN_APPROVAL_ARTIFACT_REQUIRED",
+  "replay_steps": [
+    {
+      "command": "python -m tau_scaling run-claim --seed configs/seeds/logicfolding_claim_card.json",
+      "included": true,
+      "purpose": "Replay baseline/candidate evidence without changing default runtime behavior.",
+      "step_id": "baseline_claim"
+    },
+    {
+      "command": "python -m tau_scaling run-claim --seed configs/seeds/logicfolding_promotion_path_claim_card.json",
+      "included": true,
+      "purpose": "Replay baseline/candidate evidence without changing default runtime behavior.",
+      "step_id": "promotion_path_claim"
+    },
+    {
+      "command": "python scripts/benchmarks/run_support_aware_negative_controls.py",
+      "included": true,
+      "purpose": "Replay baseline/candidate evidence without changing default runtime behavior.",
+      "step_id": "support_controls"
+    },
+    {
+      "command": "python scripts/benchmarks/run_calibration_counterfactuals.py",
+      "included": true,
+      "purpose": "Replay baseline/candidate evidence without changing default runtime behavior.",
+      "step_id": "calibration_counterfactuals"
+    },
+    {
+      "command": "python scripts/benchmarks/run_review_signoff_gate.py",
+      "included": true,
+      "purpose": "Replay baseline/candidate evidence without changing default runtime behavior.",
+      "step_id": "review_signoff"
+    }
+  ],
+  "runtime_behavior_changed": false,
+  "schema": "tau-scaling-candidate-branch-replay-harness-v0.6.1",
+  "selected_report_only_threshold": 0.8
+}

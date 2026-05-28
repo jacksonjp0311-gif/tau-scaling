@@ -1,6 +1,6 @@
 # AGENTS.md — Tau Scaling Agent Operating Contract
 
-Current contract: **TAU-SCALING-SA v0.6.1 - Candidate Branch Replay Harness**
+Current contract: **TAU-SCALING-SA v0.6.0 - Human-Approved Candidate Branch Gate**
 
 ## Mission
 
@@ -68,7 +68,6 @@ python scripts/benchmarks/generate_counterfactual_decision_record.py
 python scripts/benchmarks/generate_review_package.py
 python scripts/benchmarks/run_review_signoff_gate.py
 python scripts/benchmarks/run_candidate_branch_gate.py
-python scripts/benchmarks/run_candidate_branch_replay_harness.py
 python -m unittest discover -s tests
 ```
 
@@ -103,7 +102,6 @@ python -m unittest discover -s tests
 | Review package patch | `reports/review_package/`, `visuals/review_package/`, decision record | review package + release validator; no classifier mutation |
 | Review signoff patch | `reports/review_signoff/`, `visuals/review_signoff/`, review package | signoff checklist + release validator; no classifier mutation |
 | Candidate branch gate patch | `reports/candidate_branch/`, `visuals/candidate_branch/`, review signoff | proposal gate + release validator; no branch by default |
-| Candidate replay harness patch | `reports/candidate_replay/`, `visuals/candidate_replay/`, candidate gate | replay harness + release validator; replay blocked by default |
 | Public claim replay patch | source boundary docs, `configs/seeds/public_claims/`, claim reports | release validator + claim replay report |
 | Directory structure patch | Full Directory Box, affected mini READMEs, context indexes | README audit + RCC-N + release validator |
 
