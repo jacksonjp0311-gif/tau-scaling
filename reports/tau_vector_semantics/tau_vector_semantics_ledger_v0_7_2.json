@@ -27,7 +27,7 @@
     "some_seed_cards_do_not_explicitly_surface_baseline_terms",
     "tau_vector_or_tau_gain_semantics_need_more_explicit_core_naming"
   ],
-  "generated_at": "2026-05-28T08:33:05.354376+00:00",
+  "generated_at": "2026-05-28T08:35:59.374406+00:00",
   "mechanics_ready": true,
   "mutation_allowed": false,
   "next_recommendation": "Move to v0.7.3 Gate Algebra Map: explicitly map tau-vector fields to gates and TSEK scoring.",

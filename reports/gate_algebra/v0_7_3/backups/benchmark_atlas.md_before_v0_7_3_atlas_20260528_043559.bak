@@ -53,7 +53,6 @@ This atlas gives humans and AI agents one stable place to understand benchmark e
 | v0.7.0 | Approval-governance corridor milestone | `python scripts/benchmarks/generate_approval_governance_corridor.py` | Packages v0.6.0-v0.6.9 as stable corridor and returns focus to Tau mechanics | `reports/approval_corridor/latest_approval_governance_corridor_milestone.md` | `visuals/approval_corridor/v0_7_0/` |
 | v0.7.1 | Tau mechanics return review | `python scripts/benchmarks/run_tau_mechanics_return_review.py` | Reviews tau-vector, gate, threshold, seed, and evidence surfaces | `reports/tau_mechanics_review/latest_tau_mechanics_return_review.md` | `visuals/tau_mechanics_review/v0_7_1/` |
 | v0.7.2 | Tau vector semantics ledger | `python scripts/benchmarks/generate_tau_vector_semantics_ledger.py` | Maps tau terms, seed coverage, and semantic gaps before gate algebra changes | `reports/tau_vector_semantics/latest_tau_vector_semantics_ledger.md` | `visuals/tau_vector_semantics/v0_7_2/` |
-| v0.7.3 | Gate algebra map | `python scripts/benchmarks/generate_gate_algebra_map.py` | Maps gate-family visibility before TSEK threshold changes | `reports/gate_algebra/latest_gate_algebra_map.md` | `visuals/gate_algebra/v0_7_3/` |
 
 ## Current Synthetic Suite Summary
 

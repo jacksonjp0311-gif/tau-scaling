@@ -70,7 +70,7 @@
     ]
   },
   "schema": "rcc-nexus-route-map-v1.7",
-  "updated_at": "2026-05-28T08:35:59.122847+00:00",
+  "updated_at": "2026-05-28T08:33:03.624072+00:00",
   "v0_4_routes": {
     "feedback_chart_path_health_repair": {
       "evidence": [
@@ -658,23 +658,6 @@
         "python scripts/release/validate_release.py"
       ]
     },
-    "gate_algebra_map": {
-      "evidence": [
-        "reports/gate_algebra/latest_gate_algebra_map.md",
-        "visuals/gate_algebra/v0_7_3/"
-      ],
-      "mutation_lock": "Gate map only; no replay execution, branch creation, or mutation.",
-      "read_first": [
-        "src/tau_scaling/gates/",
-        "src/tau_scaling/core/",
-        "configs/seeds/",
-        "reports/tau_vector_semantics/latest_tau_vector_semantics_ledger.json"
-      ],
-      "validate": [
-        "python scripts/benchmarks/generate_gate_algebra_map.py",
-        "python scripts/release/validate_release.py"
-      ]
-    },
     "tau_mechanics_return_review": {
       "evidence": [
         "reports/tau_mechanics_review/latest_tau_mechanics_return_review.md",
@@ -714,5 +697,5 @@
     "runtime": "python -m tau_scaling run-claim --seed configs/seeds/logicfolding_claim_card.json",
     "tests": "python -m unittest discover -s tests"
   },
-  "version": "v0.7.3"
+  "version": "v0.7.2"
 }

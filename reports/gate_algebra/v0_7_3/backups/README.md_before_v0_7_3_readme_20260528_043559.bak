@@ -10,8 +10,8 @@
 
 Repository: `tau-scaling`  
 Package / CLI: `tau_scaling` / `tau-scaling`  
-Current checkpoint: **TAU-SCALING-SA v0.7.3 - Gate Algebra Map**  
-Previous seal: **TAU-SCALING-SA v0.7.2 - Tau Vector Semantics Ledger**
+Current checkpoint: **TAU-SCALING-SA v0.7.2 - Tau Vector Semantics Ledger**  
+Previous seal: **TAU-SCALING-SA v0.7.1 - Tau Mechanics Return Review**
 
 Tau Scaling is a local-first, evidence-gated Python runtime for evaluating tau-scaling claims through structured claim cards, workload declarations, tau vectors, LogicFolding survivability checks, edge-to-surface boundary algebra, energy / thermal / PDN / PVT gates, Monte Carlo checker stress, TSEK classification, evidence packages, and RCC-N / OMN-style repository navigation.
 
@@ -55,7 +55,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | TAU-SCALING-SA v0.7.3 |
+| Current checkpoint | TAU-SCALING-SA v0.7.2 |
 | Synthetic gate suite | v0.4.0 / benchmark + finding charts |
 | Package version | 0.2.0 |
 | Baseline seed | TSEK-C / A_TSEK 0.0000 |
@@ -64,7 +64,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 | README mini repo audit | passing / 0 warnings |
 | Unified release validator | passing / step failures 0 |
 | AGENTS.md contract | synchronized with release validator |
-| Task routing matrix | geometry-aware / v0.7.3-ready |
+| Task routing matrix | geometry-aware / v0.7.2-ready |
 | Release warning findings | 0 expected after v0.3.3d validator scan repair |
 | Architecture validator | passing / 0 warnings |
 | Unit tests | 8 OK |
@@ -142,9 +142,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 | Tau mechanics charts | `visuals/tau_mechanics_review/v0_7_1/` |
 | Tau vector semantics ledger | `reports/tau_vector_semantics/latest_tau_vector_semantics_ledger.md` |
 | Tau vector semantics charts | `visuals/tau_vector_semantics/v0_7_2/` |
-| Gate algebra map | `reports/gate_algebra/latest_gate_algebra_map.md` |
-| Gate algebra charts | `visuals/gate_algebra/v0_7_3/` |
-| Agent contract version sync | current / v0.7.3 |
+| Agent contract version sync | current / v0.7.2 |
 | Release readiness report | `reports/release/latest_release_readiness.md` |
 | Collision-proof run identity | passed |
 | Mini README coverage | 1.0 |
@@ -201,7 +199,6 @@ python scripts/benchmarks/run_blocked_state_trend_review.py
 python scripts/benchmarks/generate_approval_governance_corridor.py
 python scripts/benchmarks/run_tau_mechanics_return_review.py
 python scripts/benchmarks/generate_tau_vector_semantics_ledger.py
-python scripts/benchmarks/generate_gate_algebra_map.py
 python scripts/release/validate_release.py
 ```
 
@@ -521,7 +518,6 @@ This section is part of the repository's operating memory. When a patch fails, t
 | L-052 | v0.6.9 confirmed the governance block was still valid. | Continuing to add gates after a valid trend review risks ceremonial accumulation. | A completed approval-governance corridor should be packaged as a milestone before returning to core Tau mechanics. |
 | L-053 | v0.7.0 sealed the approval-governance corridor. | Once containment is sealed, further progress must return to the object being governed. | Tau mechanics reviews should examine tau vectors, gate algebra, TSEK thresholds, sensitivity behavior, and evidence-card design before adding any new governance gate. |
 | L-054 | v0.7.1 identified targeted Tau-mechanics gaps after the approval corridor was sealed. | The next repair should not mutate scoring; it should name and audit tau-vector semantics first. | Tau vector fields must be made explicit before gate algebra or TSEK thresholds are tightened. |
-| L-055 | v0.7.2 named tau-vector semantic gaps without changing scoring. | Tau semantics alone are not enough; the next layer must map which gates consume or expose those semantics. | Gate algebra must be mapped before TSEK thresholds or policy penalties are tightened. |
 
 ### Failure Response Protocol
 
@@ -730,7 +726,6 @@ tau-scaling/
   releases/
   reports/
     nexus_feedback/
-    gate_algebra/
     tau_vector_semantics/
     tau_mechanics_review/
     approval_corridor/
@@ -795,7 +790,6 @@ tau-scaling/
   tests/
   visuals/
     nexus_feedback/
-    gate_algebra/
     tau_vector_semantics/
     tau_mechanics_review/
     approval_corridor/
@@ -919,38 +913,6 @@ AGENTS.md Required Validation now includes the current v0.4.6-v0.5.1 governance 
 ```
 
 Boundary: alignment polish is repository hygiene only. It is not code correctness, silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.
-
-## Gate Algebra Map v0.7.3
-
-v0.7.3 maps gate-family visibility across core source and seed claim cards before any threshold changes.
-
-Primary command:
-
-```powershell
-python scripts/benchmarks/generate_gate_algebra_map.py
-```
-
-Primary outputs:
-
-```text
-reports/gate_algebra/latest_gate_algebra_map.json
-reports/gate_algebra/latest_gate_algebra_map.md
-visuals/gate_algebra/v0_7_3/
-```
-
-Current lock:
-
-```text
-replay_allowed: false
-executor_ran: false
-branch_created: false
-mutation_allowed: false
-policy_enforced: false
-calibration_applied: false
-application_allowed: false
-```
-
-Boundary: gate algebra maps are local classifier-governance analysis artifacts. They map gate visibility and evidence surfaces. They do not create live approval, execute replay commands, create branches, mutate classifier behavior, apply calibration, or validate silicon, product performance, manufacturing capability, process-node equivalence, benchmark superiority, AI understanding, or universal Tau Scaling law.
 
 ## Tau Vector Semantics Ledger v0.7.2
 
@@ -1951,7 +1913,6 @@ python scripts/benchmarks/run_blocked_state_trend_review.py
 python scripts/benchmarks/generate_approval_governance_corridor.py
 python scripts/benchmarks/run_tau_mechanics_return_review.py
 python scripts/benchmarks/generate_tau_vector_semantics_ledger.py
-python scripts/benchmarks/generate_gate_algebra_map.py
 python scripts/release/validate_release.py
 python scripts/rcc/audit_readme_surface.py
 python scripts/rcc/check_rcc_nexus.py
@@ -2319,15 +2280,14 @@ validation_remains_required
 | v0.7.0 | Approval-governance corridor milestone; packages v0.6.0-v0.6.9 and returns focus to Tau mechanics. |
 | v0.7.1 | Tau mechanics return review; inspects tau vectors, gate algebra, thresholds, and evidence surfaces. |
 | v0.7.2 | Tau vector semantics ledger; maps tau terms, seed coverage, and evidence surface gaps. |
-| v0.7.3 | Gate algebra map; maps gate-family visibility before threshold changes. |
 
 ## Next Recommended Version
 
-**TAU-SCALING-SA v0.7.4 - TSEK Threshold Boundary Review**
+**TAU-SCALING-SA v0.7.3 - Gate Algebra Map**
 
 Recommended goals:
 
-- Review TSEK threshold boundaries without changing them.
-- Separate downgrade policy from evidence sufficiency.
-- Identify over-penalty and under-penalty risk surfaces.
+- Map tau-vector fields to gates.
+- Separate evidence gates from classifier scoring.
+- Identify over-penalty and under-penalty risks by gate family.
 - Keep `mutation_allowed: false`.

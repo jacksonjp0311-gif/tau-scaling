@@ -1,0 +1,233 @@
+{
+  "application_allowed": false,
+  "boundary": "Gate algebra maps are local classifier-governance analysis artifacts. They map gate visibility and evidence surfaces. They do not create live approval, execute replay commands, create branches, mutate classifier behavior, apply calibration, or validate silicon, products, manufacturing, process nodes, benchmark superiority, or universal Tau Scaling law.",
+  "branch_created": false,
+  "branch_creation_allowed": false,
+  "calibration_applied": false,
+  "chart_paths": [
+    "visuals/gate_algebra/v0_7_3/gate_algebra_core_visibility.png",
+    "visuals/gate_algebra/v0_7_3/gate_algebra_seed_visibility.png",
+    "visuals/gate_algebra/v0_7_3/gate_algebra_health.png"
+  ],
+  "executor_ran": false,
+  "gap_count": 1,
+  "gaps": [
+    "some_seed_cards_have_sparse_gate_family_visibility"
+  ],
+  "gate_algebra_status": "GATE_ALGEBRA_MAP_READY__TARGETED_GATE_GAPS_IDENTIFIED",
+  "gate_family_rows": [
+    {
+      "core_count": 17,
+      "gate_family": "workload",
+      "mutation_allowed": false,
+      "seed_count": 13,
+      "terms": [
+        "workload",
+        "task",
+        "profile"
+      ],
+      "visibility_status": "core_and_seed_visible"
+    },
+    {
+      "core_count": 12,
+      "gate_family": "baseline",
+      "mutation_allowed": false,
+      "seed_count": 20,
+      "terms": [
+        "baseline",
+        "gain",
+        "candidate"
+      ],
+      "visibility_status": "core_and_seed_visible"
+    },
+    {
+      "core_count": 15,
+      "gate_family": "logicfolding",
+      "mutation_allowed": false,
+      "seed_count": 9,
+      "terms": [
+        "logicfolding",
+        "survivability",
+        "survive"
+      ],
+      "visibility_status": "core_and_seed_visible"
+    },
+    {
+      "core_count": 42,
+      "gate_family": "edge_surface",
+      "mutation_allowed": false,
+      "seed_count": 14,
+      "terms": [
+        "edge",
+        "surface",
+        "boundary"
+      ],
+      "visibility_status": "core_and_seed_visible"
+    },
+    {
+      "core_count": 9,
+      "gate_family": "energy_thermal",
+      "mutation_allowed": false,
+      "seed_count": 16,
+      "terms": [
+        "energy",
+        "thermal",
+        "power"
+      ],
+      "visibility_status": "core_and_seed_visible"
+    },
+    {
+      "core_count": 22,
+      "gate_family": "pdn_pvt",
+      "mutation_allowed": false,
+      "seed_count": 16,
+      "terms": [
+        "pdn",
+        "pvt",
+        "voltage",
+        "process",
+        "temperature"
+      ],
+      "visibility_status": "core_and_seed_visible"
+    },
+    {
+      "core_count": 18,
+      "gate_family": "monte_carlo",
+      "mutation_allowed": false,
+      "seed_count": 9,
+      "terms": [
+        "monte",
+        "carlo",
+        "stress",
+        "prior"
+      ],
+      "visibility_status": "core_and_seed_visible"
+    },
+    {
+      "core_count": 35,
+      "gate_family": "evidence",
+      "mutation_allowed": false,
+      "seed_count": 8,
+      "terms": [
+        "evidence",
+        "finding",
+        "package"
+      ],
+      "visibility_status": "core_and_seed_visible"
+    },
+    {
+      "core_count": 47,
+      "gate_family": "classifier",
+      "mutation_allowed": false,
+      "seed_count": 3,
+      "terms": [
+        "tsek",
+        "class",
+        "score",
+        "threshold"
+      ],
+      "visibility_status": "core_and_seed_visible"
+    }
+  ],
+  "generated_at": "2026-05-28T08:36:00.883345+00:00",
+  "mutation_allowed": false,
+  "next_recommendation": "Move to v0.7.4 TSEK Threshold Boundary Review after gate-family visibility is mapped.",
+  "policy_enforced": false,
+  "release_passed": true,
+  "replay_allowed": false,
+  "runtime_behavior_changed": false,
+  "schema": "tau-scaling-gate-algebra-map-v0.7.3",
+  "seed_count": 6,
+  "seed_gate_matrix": [
+    {
+      "baseline": true,
+      "classifier": true,
+      "edge_surface": false,
+      "energy_thermal": false,
+      "evidence": true,
+      "logicfolding": false,
+      "monte_carlo": false,
+      "path": "configs/seeds/codex_tau_vector_toy.json",
+      "pdn_pvt": false,
+      "visible_family_count": 4,
+      "workload": true
+    },
+    {
+      "baseline": false,
+      "classifier": false,
+      "edge_surface": true,
+      "energy_thermal": false,
+      "evidence": false,
+      "logicfolding": false,
+      "monte_carlo": false,
+      "path": "configs/seeds/edge_surface_boundary_toy.json",
+      "pdn_pvt": false,
+      "visible_family_count": 1,
+      "workload": false
+    },
+    {
+      "baseline": true,
+      "classifier": false,
+      "edge_surface": false,
+      "energy_thermal": true,
+      "evidence": false,
+      "logicfolding": false,
+      "monte_carlo": false,
+      "path": "configs/seeds/gamma_tau_etp_toy.json",
+      "pdn_pvt": true,
+      "visible_family_count": 3,
+      "workload": false
+    },
+    {
+      "baseline": true,
+      "classifier": true,
+      "edge_surface": true,
+      "energy_thermal": true,
+      "evidence": true,
+      "logicfolding": true,
+      "monte_carlo": true,
+      "path": "configs/seeds/logicfolding_claim_card.json",
+      "pdn_pvt": true,
+      "visible_family_count": 9,
+      "workload": true
+    },
+    {
+      "baseline": true,
+      "classifier": true,
+      "edge_surface": true,
+      "energy_thermal": true,
+      "evidence": true,
+      "logicfolding": true,
+      "monte_carlo": true,
+      "path": "configs/seeds/logicfolding_promotion_path_claim_card.json",
+      "pdn_pvt": true,
+      "visible_family_count": 9,
+      "workload": true
+    },
+    {
+      "baseline": true,
+      "classifier": false,
+      "edge_surface": false,
+      "energy_thermal": true,
+      "evidence": false,
+      "logicfolding": false,
+      "monte_carlo": true,
+      "path": "configs/seeds/monte_carlo_stress_toy.json",
+      "pdn_pvt": true,
+      "visible_family_count": 4,
+      "workload": false
+    }
+  ],
+  "semantics_ready": true,
+  "source_file_count": 8,
+  "source_files": [
+    "src/tau_scaling/core/__init__.py",
+    "src/tau_scaling/core/runtime.py",
+    "src/tau_scaling/gates/__init__.py",
+    "src/tau_scaling/gates/edge_surface.py",
+    "src/tau_scaling/gates/gamma_tau_etp.py",
+    "src/tau_scaling/gates/logicfolding_survivability.py",
+    "src/tau_scaling/claims/__init__.py",
+    "src/tau_scaling/claims/classifier.py"
+  ]
+}
