@@ -70,7 +70,7 @@
                                       ]
                },
     "schema":  "rcc-nexus-route-map-v1.7",
-    "updated_at":  "2026-05-28T11:20:03.9161746Z",
+    "updated_at":  "2026-05-28T13:27:20.2258321Z",
     "v0_4_routes":  {
                         "feedback_chart_path_health_repair":  {
                                                                   "evidence":  [
@@ -895,6 +895,21 @@
                                                                              "visuals/evidence_sufficiency/v0_8_4/"
                                                                          ],
                                                             "mutation_lock":  "Evidence sufficiency matrix only; no classifier change, threshold change, branch creation, or mutation."
+                                                        },
+                        "release_finding_zero_repair":  {
+                                                            "read_first":  [
+                                                                               "reports/release/latest_release_readiness.json",
+                                                                               "README.md"
+                                                                           ],
+                                                            "validate":  [
+                                                                             "python scripts/release/validate_release.py",
+                                                                             "python scripts/rcc/audit_readme_surface.py",
+                                                                             "python scripts/rcc/check_rcc_nexus.py"
+                                                                         ],
+                                                            "evidence":  [
+                                                                             "reports/release_finding_repair/latest_release_finding_zero_repair.md"
+                                                                         ],
+                                                            "mutation_lock":  "Release warning repair only; no classifier change, threshold change, branch creation, or mutation."
                                                         }
                     },
     "validation":  {
@@ -903,5 +918,5 @@
                        "runtime":  "python -m tau_scaling run-claim --seed configs/seeds/logicfolding_claim_card.json",
                        "tests":  "python -m unittest discover -s tests"
                    },
-    "version":  "v0.8.4"
+    "version":  "v0.8.4a"
 }

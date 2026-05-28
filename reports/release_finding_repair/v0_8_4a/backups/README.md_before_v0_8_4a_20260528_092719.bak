@@ -10,8 +10,8 @@
 
 Repository: `tau-scaling`  
 Package / CLI: `tau_scaling` / `tau-scaling`  
-Current checkpoint: **TAU-SCALING-SA v0.8.4a - Release Finding Zero-Finding Repair**  
-Previous seal: **TAU-SCALING-SA v0.8.4 - Evidence Sufficiency Matrix**
+Current checkpoint: **TAU-SCALING-SA v0.8.4 - Evidence Sufficiency Matrix**  
+Previous seal: **TAU-SCALING-SA v0.8.3d - README Bottom Versioning and Presentation Tail Repair**
 
 Tau Scaling is a local-first, evidence-gated Python runtime for evaluating tau-scaling claims through structured claim cards, workload declarations, tau vectors, LogicFolding survivability checks, edge-to-surface boundary algebra, energy / thermal / PDN / PVT gates, Monte Carlo checker stress, TSEK classification, evidence packages, and RCC-N / OMN-style repository navigation.
 
@@ -144,7 +144,7 @@ Active research question: **What evidence is sufficient to move a Tau Scaling cl
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | TAU-SCALING-SA v0.8.4a |
+| Current checkpoint | TAU-SCALING-SA v0.8.4 |
 | Synthetic gate suite | v0.4.0 / benchmark + finding charts |
 | Package version | 0.2.0 |
 | Baseline seed | TSEK-C / A_TSEK 0.0000 |
@@ -153,8 +153,8 @@ Active research question: **What evidence is sufficient to move a Tau Scaling cl
 | README mini repo audit | passing / 0 warnings |
 | Unified release validator | passing / step failures 0 |
 | AGENTS.md contract | synchronized with release validator |
-| Task routing matrix | geometry-aware / v0.8.4a-ready |
-| Release warning findings | 0 / v0.8.4a zero-finding repair |
+| Task routing matrix | geometry-aware / v0.8.4-ready |
+| Release warning findings | non-blocking / tracked by release readiness report |
 | Architecture validator | passing / 0 warnings |
 | Unit tests | 8 OK |
 | Benchmark harness | 12 runs / 12 unique IDs / 0 duplicates |
@@ -247,7 +247,7 @@ Active research question: **What evidence is sufficient to move a Tau Scaling cl
 | Threshold governance charts | `visuals/threshold_governance_summary/v0_7_9/` |
 | Stable Tau threshold governance | `reports/stable_tau_threshold_governance/latest_stable_tau_threshold_governance_milestone.md` |
 | Stable Tau threshold charts | `visuals/stable_tau_threshold_governance/v0_8_0/` |
-| Agent contract version sync | current / v0.8.4a |
+| Agent contract version sync | current / v0.8.4 |
 | Release readiness report | `reports/release/latest_release_readiness.md` |
 | Collision-proof run identity | passed |
 | Mini README coverage | 1.0 |
@@ -256,7 +256,7 @@ Active research question: **What evidence is sufficient to move a Tau Scaling cl
 | README presentation restore | `reports/readme_presentation_restore/latest_readme_presentation_restore.md` |
 | README bottom versioning repair | `reports/readme_bottom_versioning/latest_readme_bottom_versioning_repair.md` |
 | Evidence sufficiency matrix | 
-reports/evidence_sufficiency/latest_evidence_sufficiency_matrix.md |
+eports/evidence_sufficiency/latest_evidence_sufficiency_matrix.md |
 | Claim status | local runtime evidence + benchmark observability only |
 
 The baseline demo remains **TSEK-C** by design: the system refuses to promote a claim beyond disclosed evidence. The promotion-path seed demonstrates how stronger disclosed evidence can move a claim to **TSEK-B** without weakening gates.
@@ -648,7 +648,6 @@ This section is part of the repository's operating memory. When a patch fails, t
 | L-066 | v0.8.3a passed all validators but README rendering still showed mojibake and broken code fences. | Passing exact anchors is not the same as human-readable public rendering. | After validator repair, inspect rendered README for mojibake, broken fences, duplicate lesson headers, stale metrics, and directory-box drift. |
 | L-067 | v0.8.3b made validators clean but created visually heavy README boxes and visible text labels. | Repair optimized for validation and directory completeness instead of public readability. | Presentation repairs must preserve human-readable README layout: use bullets/tables for short findings and reserve fenced blocks for commands or true code. |
 | L-068 | v0.8.3c restored the top README presentation, but the release lineage tail still had stale v0.8.3 text and a corrupt Next Recommended heading. | Top and bottom README sections can drift independently after surgical repairs. | Presentation repairs must inspect the README tail: release lineage, next-version block, duplicate sections, and stale version labels. |
-| L-069 | v0.8.4 passed but release readiness emitted one path-break warning for a line beginning `eports/`. | Markdown presentation repairs can leave hard-wrapped bare paths that validators read as broken repo paths. | After adding new report paths, run release validator and repair any bare-path continuation lines before moving to the next research layer. |
 
 ### Failure Response Protocol
 
@@ -2574,7 +2573,6 @@ validation_remains_required
 | v0.8.3c | README presentation restore; compact human-readable layout. |
 | v0.8.3d | README bottom versioning and final presentation tail repair. |
 | v0.8.4 | Evidence Sufficiency Matrix; defines promotion/downgrade evidence requirements for public Tau claims. |
-| v0.8.4a | Release Finding Zero-Finding Repair; removes remaining path-break warning after v0.8.4. |
 
 ## Next Recommended Version
 

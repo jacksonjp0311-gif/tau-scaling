@@ -1,0 +1,22 @@
+{
+  "application_allowed": false,
+  "boundary": "Release finding repair improves README/release hygiene only. It does not validate silicon, products, manufacturing, process nodes, benchmark superiority, or universal Tau Scaling law.",
+  "calibration_applied": false,
+  "checkpoint": "TAU-SCALING-SA v0.8.4a - Release Finding Zero-Finding Repair",
+  "classifier_changed": false,
+  "expected_release_findings_after_validator": 0,
+  "findings_after_local_scan": [],
+  "findings_before": [
+    {
+      "code": "possible_path_break",
+      "detail": "missing leading r in reports/"
+    }
+  ],
+  "generated_at": "2026-05-28T13:27:19.988749+00:00",
+  "mutation_allowed": false,
+  "repair_patterns_applied": [
+    "(?m)^(\\s*)eports/"
+  ],
+  "schema": "tau-scaling-release-finding-zero-repair-v0.8.4a",
+  "thresholds_changed": false
+}

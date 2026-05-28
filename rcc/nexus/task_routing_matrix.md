@@ -1,6 +1,6 @@
 # Task Routing Matrix
 
-Current contract: **TAU-SCALING-SA v0.8.4 - Evidence Sufficiency Matrix**
+Current contract: **TAU-SCALING-SA v0.8.4a - Release Finding Zero-Finding Repair**
 
 ## Geometry Route
 
