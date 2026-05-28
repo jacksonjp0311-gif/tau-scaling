@@ -1,0 +1,15 @@
+{
+  "classifier_change_allowed": false,
+  "control_id": "missing_intermediate_tsek_d_path",
+  "control_result": "pending_future_dry_run",
+  "control_status": "REPORT_ONLY_CONTROL_DEFINED",
+  "evidence_boundary": "Control is based on local reports and explanation cards only; it is not product, silicon, manufacturing, or universal Tau validation.",
+  "expected_behavior": "explain_absence_or_add_future_scenario",
+  "mutation_allowed": false,
+  "pressure_score": 8,
+  "purpose": "Detect whether the intermediate weak class is absent because of design or insufficient scenario coverage.",
+  "risk_type": "boundary_gap",
+  "schema": "tau-scaling-over-under-penalty-control-v0.7.6",
+  "target_class_boundary": "TSEK-C/TSEK-D/TSEK-E",
+  "threshold_change_allowed": false
+}

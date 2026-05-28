@@ -101,7 +101,7 @@
   ],
   "classifier_changed": false,
   "executor_ran": false,
-  "generated_at": "2026-05-28T08:43:27.607788+00:00",
+  "generated_at": "2026-05-28T08:51:29.947687+00:00",
   "mutation_allowed": false,
   "next_recommendation": "Move to v0.7.6 Over/Under-Penalty Negative Controls before any threshold dry-run or tuning.",
   "policy_enforced": false,

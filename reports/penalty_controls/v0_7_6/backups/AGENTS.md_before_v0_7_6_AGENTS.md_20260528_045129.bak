@@ -1,6 +1,6 @@
 # AGENTS.md — Tau Scaling Agent Operating Contract
 
-Current contract: **TAU-SCALING-SA v0.7.6 - Over/Under-Penalty Negative Controls**
+Current contract: **TAU-SCALING-SA v0.7.5 - TSEK Boundary Explanation Cards**
 
 ## Mission
 
@@ -83,7 +83,6 @@ python scripts/benchmarks/generate_tau_vector_semantics_ledger.py
 python scripts/benchmarks/generate_gate_algebra_map.py
 python scripts/benchmarks/run_tsek_threshold_boundary_review.py
 python scripts/benchmarks/generate_tsek_boundary_explanation_cards.py
-python scripts/benchmarks/generate_over_under_penalty_controls.py
 python -m unittest discover -s tests
 ```
 
@@ -133,7 +132,6 @@ python -m unittest discover -s tests
 | Gate algebra patch | `reports/gate_algebra/`, `visuals/gate_algebra/`, core gates/seeds | gate map + release validator; no mutation |
 | TSEK threshold review patch | `reports/tsek_threshold_review/`, `visuals/tsek_threshold_review/`, classifier/reports | threshold boundary review + release validator; no mutation |
 | TSEK boundary card patch | `reports/tsek_boundary_cards/`, `visuals/tsek_boundary_cards/`, threshold review | boundary cards + release validator; no mutation |
-| Penalty controls patch | `reports/penalty_controls/`, `visuals/penalty_controls/`, TSEK boundary cards | report-only penalty controls + release validator; no mutation |
 | Public claim replay patch | source boundary docs, `configs/seeds/public_claims/`, claim reports | release validator + claim replay report |
 | Directory structure patch | Full Directory Box, affected mini READMEs, context indexes | README audit + RCC-N + release validator |
 

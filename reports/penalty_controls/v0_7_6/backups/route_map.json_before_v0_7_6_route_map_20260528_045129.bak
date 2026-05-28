@@ -70,7 +70,7 @@
     ]
   },
   "schema": "rcc-nexus-route-map-v1.7",
-  "updated_at": "2026-05-28T08:51:29.686598+00:00",
+  "updated_at": "2026-05-28T08:43:25.980113+00:00",
   "v0_4_routes": {
     "feedback_chart_path_health_repair": {
       "evidence": [
@@ -675,21 +675,6 @@
         "python scripts/release/validate_release.py"
       ]
     },
-    "over_under_penalty_negative_controls": {
-      "evidence": [
-        "reports/penalty_controls/latest_over_under_penalty_negative_controls.md",
-        "visuals/penalty_controls/v0_7_6/"
-      ],
-      "mutation_lock": "Report-only penalty controls; no classifier change, threshold change, branch creation, or mutation.",
-      "read_first": [
-        "reports/tsek_boundary_cards/latest_tsek_boundary_explanation_cards.json",
-        "reports/tsek_threshold_review/latest_tsek_threshold_boundary_review.json"
-      ],
-      "validate": [
-        "python scripts/benchmarks/generate_over_under_penalty_controls.py",
-        "python scripts/release/validate_release.py"
-      ]
-    },
     "tau_mechanics_return_review": {
       "evidence": [
         "reports/tau_mechanics_review/latest_tau_mechanics_return_review.md",
@@ -760,5 +745,5 @@
     "runtime": "python -m tau_scaling run-claim --seed configs/seeds/logicfolding_claim_card.json",
     "tests": "python -m unittest discover -s tests"
   },
-  "version": "v0.7.6"
+  "version": "v0.7.5"
 }

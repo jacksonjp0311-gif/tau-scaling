@@ -56,7 +56,6 @@ This atlas gives humans and AI agents one stable place to understand benchmark e
 | v0.7.3 | Gate algebra map | `python scripts/benchmarks/generate_gate_algebra_map.py` | Maps gate-family visibility before TSEK threshold changes | `reports/gate_algebra/latest_gate_algebra_map.md` | `visuals/gate_algebra/v0_7_3/` |
 | v0.7.4 | TSEK threshold boundary review | `python scripts/benchmarks/run_tsek_threshold_boundary_review.py` | Reviews TSEK class-boundary visibility without changing classifier behavior | `reports/tsek_threshold_review/latest_tsek_threshold_boundary_review.md` | `visuals/tsek_threshold_review/v0_7_4/` |
 | v0.7.5 | TSEK boundary explanation cards | `python scripts/benchmarks/generate_tsek_boundary_explanation_cards.py` | Creates class-boundary explanation cards without changing thresholds | `reports/tsek_boundary_cards/latest_tsek_boundary_explanation_cards.md` | `visuals/tsek_boundary_cards/v0_7_5/` |
-| v0.7.6 | Over/under-penalty negative controls | `python scripts/benchmarks/generate_over_under_penalty_controls.py` | Defines report-only controls before threshold dry-runs | `reports/penalty_controls/latest_over_under_penalty_negative_controls.md` | `visuals/penalty_controls/v0_7_6/` |
 
 ## Current Synthetic Suite Summary
 

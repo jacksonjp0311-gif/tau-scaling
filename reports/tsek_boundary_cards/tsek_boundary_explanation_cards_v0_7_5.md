@@ -1,6 +1,6 @@
 # Tau Scaling v0.7.5 TSEK Boundary Explanation Cards
 
-Generated: `2026-05-28T08:43:27.607788+00:00`
+Generated: `2026-05-28T08:51:29.947687+00:00`
 
 ## Card Result
 
