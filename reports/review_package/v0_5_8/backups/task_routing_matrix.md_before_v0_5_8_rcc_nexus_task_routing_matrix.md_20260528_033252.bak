@@ -1,6 +1,6 @@
 # Task Routing Matrix
 
-Current contract: **TAU-SCALING-SA v0.5.8 - Review Package and Evidence Bundle**
+Current contract: **TAU-SCALING-SA v0.5.7 - Counterfactual Decision Record**
 
 ## Geometry Route
 
@@ -40,7 +40,6 @@ intent -> shell -> meridian -> sector -> files -> validation -> evidence -> less
 | Disabled calibration plan patch | outer | validation | governance | negative controls + candidate thresholds | calibration plan + charts + release validator | `reports/calibration_plan/latest_disabled_calibration_plan.md` |
 | Calibration counterfactual patch | outer | validation | governance | calibration plan + negative controls | counterfactual report + charts + release validator | `reports/calibration_counterfactuals/latest_calibration_counterfactuals.md` |
 | Counterfactual decision patch | outer | validation | governance | calibration counterfactuals + decision criteria | decision record + charts + release validator | `reports/counterfactual_decision/latest_counterfactual_decision_record.md` |
-| Review package patch | outer | evidence | governance | v0.5.2-v0.5.7 evidence surfaces | review package + charts + release validator | `reports/review_package/latest_review_package.md` |
 | Public claim replay patch | outer | evidence | release | source boundary docs, `configs/seeds/public_claims/` | release validator + claim replay report | `reports/public_claims/latest_claim_replay_report.md` |
 | Agent contract patch | center | agent | rcc | `AGENTS.md`, route map, task matrix, README | README audit + release validator | `reports/agent/latest_agent_contract_sync.md` |
 | Reflection patch | center | drift | documentation | `docs/reflection/`, `reports/reflection/`, README, AGENTS | README audit + release validator | `reports/reflection/latest_system_reflection.md` |

@@ -1,0 +1,101 @@
+{
+  "application_allowed": false,
+  "boundary": "Review packages are local classifier-governance evidence bundles. They do not change classifier behavior and do not validate silicon, products, manufacturing, process nodes, benchmark superiority, or universal Tau Scaling law.",
+  "bundle_items": [
+    {
+      "exists": true,
+      "name": "cause_decomposition",
+      "path": "reports/over_penalty_causes/latest_over_penalty_cause_decomposition.json"
+    },
+    {
+      "exists": true,
+      "name": "remediation_plan",
+      "path": "reports/remediation_plan/latest_cause_specific_remediation_plan.json"
+    },
+    {
+      "exists": true,
+      "name": "negative_controls",
+      "path": "reports/negative_controls/latest_support_aware_negative_controls.json"
+    },
+    {
+      "exists": true,
+      "name": "calibration_plan",
+      "path": "reports/calibration_plan/latest_disabled_calibration_plan.json"
+    },
+    {
+      "exists": true,
+      "name": "calibration_counterfactuals",
+      "path": "reports/calibration_counterfactuals/latest_calibration_counterfactuals.json"
+    },
+    {
+      "exists": true,
+      "name": "counterfactual_decision",
+      "path": "reports/counterfactual_decision/latest_counterfactual_decision_record.json"
+    }
+  ],
+  "calibration_applied": false,
+  "chart_paths": [
+    "visuals/review_package/v0_5_8/review_package_evidence_chain.png",
+    "visuals/review_package/v0_5_8/review_package_lock_states.png",
+    "visuals/review_package/v0_5_8/review_package_decision_counts.png"
+  ],
+  "decision_class": "SAFE_FOR_REVIEW_NOT_APPLICATION",
+  "decision_class_counts": {
+    "SAFE_FOR_REVIEW_NOT_APPLICATION": 1
+  },
+  "final_recommendation": "Send this package to review. Do not apply calibration, mutate classifier behavior, or enforce policy from this package alone.",
+  "generated_at": "2026-05-28T07:32:53.928487+00:00",
+  "missing_inputs": [],
+  "mutation_allowed": false,
+  "next_recommendation": "v0.5.9 should create a review checklist / signoff gate, still with mutation disabled.",
+  "policy_enforced": false,
+  "review_allowed": true,
+  "review_package_status": "READY_FOR_HUMAN_REVIEW_NOT_APPLICATION",
+  "schema": "tau-scaling-review-package-evidence-bundle-v0.5.8",
+  "selected_report_only_threshold": 0.8,
+  "source_decision_record": "reports/counterfactual_decision/latest_counterfactual_decision_record.json",
+  "stage_summary": [
+    {
+      "primary_count": 6,
+      "primary_metric": "cause_card_count",
+      "source": "reports/over_penalty_causes/latest_over_penalty_cause_decomposition.json",
+      "stage": "cause_decomposition",
+      "status": "loaded"
+    },
+    {
+      "primary_count": 6,
+      "primary_metric": "remediation_task_count",
+      "source": "reports/remediation_plan/latest_cause_specific_remediation_plan.json",
+      "stage": "remediation_plan",
+      "status": "loaded"
+    },
+    {
+      "primary_count": 6,
+      "primary_metric": "passed_control_count",
+      "source": "reports/negative_controls/latest_support_aware_negative_controls.json",
+      "stage": "negative_controls",
+      "status": "loaded"
+    },
+    {
+      "primary_count": 3,
+      "primary_metric": "admissible_threshold_count",
+      "source": "reports/calibration_plan/latest_disabled_calibration_plan.json",
+      "stage": "calibration_plan",
+      "status": "loaded"
+    },
+    {
+      "primary_count": 6,
+      "primary_metric": "safe_candidate_count",
+      "source": "reports/calibration_counterfactuals/latest_calibration_counterfactuals.json",
+      "stage": "calibration_counterfactuals",
+      "status": "loaded"
+    },
+    {
+      "primary_count": 1,
+      "primary_metric": "review_allowed",
+      "source": "reports/counterfactual_decision/latest_counterfactual_decision_record.json",
+      "stage": "counterfactual_decision",
+      "status": "SAFE_FOR_REVIEW_NOT_APPLICATION"
+    }
+  ]
+}

@@ -10,8 +10,8 @@
 
 Repository: `tau-scaling`  
 Package / CLI: `tau_scaling` / `tau-scaling`  
-Current checkpoint: **TAU-SCALING-SA v0.5.8 - Review Package and Evidence Bundle**  
-Previous seal: **TAU-SCALING-SA v0.5.7 - Counterfactual Decision Record**
+Current checkpoint: **TAU-SCALING-SA v0.5.7 - Counterfactual Decision Record**  
+Previous seal: **TAU-SCALING-SA v0.5.6 - Calibration Counterfactuals**
 
 Tau Scaling is a local-first, evidence-gated Python runtime for evaluating tau-scaling claims through structured claim cards, workload declarations, tau vectors, LogicFolding survivability checks, edge-to-surface boundary algebra, energy / thermal / PDN / PVT gates, Monte Carlo checker stress, TSEK classification, evidence packages, and RCC-N / OMN-style repository navigation.
 
@@ -55,7 +55,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | TAU-SCALING-SA v0.5.8 |
+| Current checkpoint | TAU-SCALING-SA v0.5.7 |
 | Synthetic gate suite | v0.4.0 / benchmark + finding charts |
 | Package version | 0.2.0 |
 | Baseline seed | TSEK-C / A_TSEK 0.0000 |
@@ -64,7 +64,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 | README mini repo audit | passing / 0 warnings |
 | Unified release validator | passing / step failures 0 |
 | AGENTS.md contract | synchronized with release validator |
-| Task routing matrix | geometry-aware / v0.5.8-ready |
+| Task routing matrix | geometry-aware / v0.5.7-ready |
 | Release warning findings | 0 expected after v0.3.3d validator scan repair |
 | Architecture validator | passing / 0 warnings |
 | Unit tests | 8 OK |
@@ -112,9 +112,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 | Calibration counterfactual charts | `visuals/calibration_counterfactuals/v0_5_6/` |
 | Counterfactual decision record | `reports/counterfactual_decision/latest_counterfactual_decision_record.md` |
 | Counterfactual decision charts | `visuals/counterfactual_decision/v0_5_7/` |
-| Review package | `reports/review_package/latest_review_package.md` |
-| Review package charts | `visuals/review_package/v0_5_8/` |
-| Agent contract version sync | current / v0.5.8 |
+| Agent contract version sync | current / v0.5.7 |
 | Release readiness report | `reports/release/latest_release_readiness.md` |
 | Collision-proof run identity | passed |
 | Mini README coverage | 1.0 |
@@ -156,7 +154,6 @@ python scripts/benchmarks/run_support_aware_negative_controls.py
 python scripts/benchmarks/generate_disabled_calibration_plan.py
 python scripts/benchmarks/run_calibration_counterfactuals.py
 python scripts/benchmarks/generate_counterfactual_decision_record.py
-python scripts/benchmarks/generate_review_package.py
 python scripts/release/validate_release.py
 ```
 
@@ -461,7 +458,6 @@ This section is part of the repository's operating memory. When a patch fails, t
 | L-037 | v0.5.4 support-aware negative controls passed 6/6. | Passing support controls permit calibration planning, but not calibration application. | A calibration plan may only be drafted after support-aware controls pass, and it must preserve high-support retention as a hard constraint. |
 | L-038 | v0.5.5 selected a report-only calibration threshold, but a threshold is not a classifier change. | Calibration planning can still hide drift unless tested counterfactually. | Any selected calibration threshold must pass report-only counterfactual testing before policy mutation can even be discussed. |
 | L-039 | v0.5.6 counterfactuals passed, but a passing counterfactual is not an applied policy. | Successful simulations still need an explicit decision record to prevent silent promotion. | A successful counterfactual must become a decision record before any implementation pathway can be discussed. |
-| L-040 | v0.5.7 produced SAFE_FOR_REVIEW_NOT_APPLICATION. | Safe-for-review can be mistaken for safe-for-application unless bundled explicitly. | A candidate that reaches SAFE_FOR_REVIEW_NOT_APPLICATION must be bundled into a review package before any implementation pathway is discussed. |
 
 ### Failure Response Protocol
 
@@ -670,7 +666,6 @@ tau-scaling/
   releases/
   reports/
     nexus_feedback/
-    review_package/
     counterfactual_decision/
     calibration_counterfactuals/
     calibration_plan/
@@ -720,7 +715,6 @@ tau-scaling/
   tests/
   visuals/
     nexus_feedback/
-    review_package/
     counterfactual_decision/
     calibration_counterfactuals/
     calibration_plan/
@@ -829,37 +823,6 @@ AGENTS.md Required Validation now includes the current v0.4.6-v0.5.1 governance 
 ```
 
 Boundary: alignment polish is repository hygiene only. It is not code correctness, silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.
-
-## Review Package and Evidence Bundle v0.5.8
-
-v0.5.8 bundles v0.5.2 through v0.5.7 into one non-mutating review package.
-
-Primary command:
-
-```powershell
-python scripts/benchmarks/generate_review_package.py
-```
-
-Primary outputs:
-
-```text
-reports/review_package/latest_review_package.json
-reports/review_package/latest_review_package.md
-visuals/review_package/v0_5_8/
-```
-
-This layer bundles cause cards, remediation tasks, support-aware negative controls, disabled calibration plan, calibration counterfactuals, and counterfactual decision record.
-
-Current lock:
-
-```text
-mutation_allowed: false
-policy_enforced: false
-calibration_applied: false
-application_allowed: false
-```
-
-Boundary: review packages are local classifier-governance evidence bundles. They do not change classifier behavior and do not validate silicon, product performance, manufacturing capability, process-node equivalence, benchmark superiority, AI understanding, or universal Tau Scaling law.
 
 ## Counterfactual Decision Record v0.5.7
 
@@ -1356,7 +1319,6 @@ python scripts/benchmarks/run_support_aware_negative_controls.py
 python scripts/benchmarks/generate_disabled_calibration_plan.py
 python scripts/benchmarks/run_calibration_counterfactuals.py
 python scripts/benchmarks/generate_counterfactual_decision_record.py
-python scripts/benchmarks/generate_review_package.py
 python scripts/release/validate_release.py
 python scripts/rcc/audit_readme_surface.py
 python scripts/rcc/check_rcc_nexus.py
@@ -1709,15 +1671,14 @@ validation_remains_required
 | v0.5.5 | Disabled calibration plan preserving support-aware retention constraints. |
 | v0.5.6 | Calibration counterfactuals for the selected report-only threshold. |
 | v0.5.7 | Counterfactual decision record for safe-review classification without application. |
-| v0.5.8 | Review package and evidence bundle for v0.5.2-v0.5.7. |
 
 ## Next Recommended Version
 
-**TAU-SCALING-SA v0.5.9 - Review Checklist and Signoff Gate**
+**TAU-SCALING-SA v0.5.8 - Review Package and Evidence Bundle**
 
 Recommended goals:
 
-- Convert the review package into a checklist/signoff gate.
-- Require explicit human-review disposition before any implementation pathway.
+- Bundle v0.5.2-v0.5.7 evidence into a review package.
+- Include cause cards, remediation tasks, negative controls, calibration plan, counterfactuals, and decision record.
 - Keep `mutation_allowed: false`.
-- Preserve non-claim locks: signoff gates are local classifier governance only.
+- Preserve non-claim locks: review packages are local classifier governance only.

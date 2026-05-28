@@ -1,6 +1,6 @@
 # AGENTS.md — Tau Scaling Agent Operating Contract
 
-Current contract: **TAU-SCALING-SA v0.5.8 - Review Package and Evidence Bundle**
+Current contract: **TAU-SCALING-SA v0.5.7 - Counterfactual Decision Record**
 
 ## Mission
 
@@ -65,7 +65,6 @@ python scripts/benchmarks/run_support_aware_negative_controls.py
 python scripts/benchmarks/generate_disabled_calibration_plan.py
 python scripts/benchmarks/run_calibration_counterfactuals.py
 python scripts/benchmarks/generate_counterfactual_decision_record.py
-python scripts/benchmarks/generate_review_package.py
 python -m unittest discover -s tests
 ```
 
@@ -97,7 +96,6 @@ python -m unittest discover -s tests
 | Disabled calibration plan patch | `reports/calibration_plan/`, `visuals/calibration_plan/`, negative controls | calibration plan + release validator; no classifier mutation |
 | Calibration counterfactual patch | `reports/calibration_counterfactuals/`, `visuals/calibration_counterfactuals/`, calibration plan | counterfactual report + release validator; no classifier mutation |
 | Counterfactual decision patch | `reports/counterfactual_decision/`, `visuals/counterfactual_decision/`, counterfactual report | decision record + release validator; no classifier mutation |
-| Review package patch | `reports/review_package/`, `visuals/review_package/`, decision record | review package + release validator; no classifier mutation |
 | Public claim replay patch | source boundary docs, `configs/seeds/public_claims/`, claim reports | release validator + claim replay report |
 | Directory structure patch | Full Directory Box, affected mini READMEs, context indexes | README audit + RCC-N + release validator |
 

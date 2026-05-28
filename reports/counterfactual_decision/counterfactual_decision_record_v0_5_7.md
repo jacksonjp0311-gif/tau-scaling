@@ -1,6 +1,6 @@
 # Tau Scaling v0.5.7 Counterfactual Decision Record
 
-Generated: `2026-05-28T07:30:06.560444+00:00`
+Generated: `2026-05-28T07:32:52.610969+00:00`
 
 ## Decision
 

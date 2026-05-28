@@ -15,7 +15,7 @@
   },
   "decision_reason": "All counterfactual rows preserved support controls with zero drift and zero rejected rows.",
   "final_recommendation": "review_candidate_without_application",
-  "generated_at": "2026-05-28T07:30:06.560444+00:00",
+  "generated_at": "2026-05-28T07:32:52.610969+00:00",
   "input_counterfactuals": "reports/calibration_counterfactuals/latest_calibration_counterfactuals.json",
   "mutation_allowed": false,
   "next_recommendation": "v0.5.8 should produce a review package with evidence bundle and mutation still disabled.",
