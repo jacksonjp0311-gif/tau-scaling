@@ -1,6 +1,6 @@
 # Task Routing Matrix
 
-Current contract: **TAU-SCALING-SA v0.7.8 - Threshold Decision Record**
+Current contract: **TAU-SCALING-SA v0.7.7 - Threshold Sensitivity Dry-Run**
 
 ## Geometry Route
 
@@ -60,7 +60,6 @@ intent -> shell -> meridian -> sector -> files -> validation -> evidence -> less
 | TSEK boundary card patch | inner | explanation | classifier | threshold review + TSEK classes | boundary cards + charts + release validator | `reports/tsek_boundary_cards/latest_tsek_boundary_explanation_cards.md` |
 | Penalty controls patch | inner | analysis | classifier | TSEK boundary cards + threshold review | report-only controls + charts + release validator | `reports/penalty_controls/latest_over_under_penalty_negative_controls.md` |
 | Threshold sensitivity patch | inner | dry-run | classifier | penalty controls + threshold review | report-only threshold sensitivity + charts + release validator | `reports/threshold_sensitivity_dry_run/latest_threshold_sensitivity_dry_run.md` |
-| Threshold decision patch | inner | decision | classifier | threshold sensitivity dry-run | non-mutating decision record + charts + release validator | `reports/threshold_decision_record/latest_threshold_decision_record.md` |
 | Public claim replay patch | outer | evidence | release | source boundary docs, `configs/seeds/public_claims/` | release validator + claim replay report | `reports/public_claims/latest_claim_replay_report.md` |
 | Agent contract patch | center | agent | rcc | `AGENTS.md`, route map, task matrix, README | README audit + release validator | `reports/agent/latest_agent_contract_sync.md` |
 | Reflection patch | center | drift | documentation | `docs/reflection/`, `reports/reflection/`, README, AGENTS | README audit + release validator | `reports/reflection/latest_system_reflection.md` |

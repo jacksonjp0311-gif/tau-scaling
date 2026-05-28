@@ -1,6 +1,6 @@
 # AGENTS.md — Tau Scaling Agent Operating Contract
 
-Current contract: **TAU-SCALING-SA v0.7.8 - Threshold Decision Record**
+Current contract: **TAU-SCALING-SA v0.7.7 - Threshold Sensitivity Dry-Run**
 
 ## Mission
 
@@ -85,7 +85,6 @@ python scripts/benchmarks/run_tsek_threshold_boundary_review.py
 python scripts/benchmarks/generate_tsek_boundary_explanation_cards.py
 python scripts/benchmarks/generate_over_under_penalty_controls.py
 python scripts/benchmarks/run_threshold_sensitivity_dry_run.py
-python scripts/benchmarks/generate_threshold_decision_record.py
 python -m unittest discover -s tests
 ```
 
@@ -137,7 +136,6 @@ python -m unittest discover -s tests
 | TSEK boundary card patch | `reports/tsek_boundary_cards/`, `visuals/tsek_boundary_cards/`, threshold review | boundary cards + release validator; no mutation |
 | Penalty controls patch | `reports/penalty_controls/`, `visuals/penalty_controls/`, TSEK boundary cards | report-only penalty controls + release validator; no mutation |
 | Threshold sensitivity patch | `reports/threshold_sensitivity_dry_run/`, `visuals/threshold_sensitivity_dry_run/`, penalty controls | report-only dry-run + release validator; no mutation |
-| Threshold decision patch | `reports/threshold_decision_record/`, `visuals/threshold_decision_record/`, threshold dry-run | decision record + release validator; no mutation |
 | Public claim replay patch | source boundary docs, `configs/seeds/public_claims/`, claim reports | release validator + claim replay report |
 | Directory structure patch | Full Directory Box, affected mini READMEs, context indexes | README audit + RCC-N + release validator |
 

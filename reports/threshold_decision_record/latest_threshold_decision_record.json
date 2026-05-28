@@ -1,0 +1,43 @@
+{
+  "application_allowed": false,
+  "boundary": "Threshold decision records are local classifier-governance decision artifacts. They convert report-only dry-run evidence into a non-mutating decision. They do not create live approval, execute replay commands, create branches, mutate classifier behavior, apply calibration, change thresholds, or validate silicon, products, manufacturing, process nodes, benchmark superiority, or universal Tau Scaling law.",
+  "boundary_cards_ready": true,
+  "branch_created": false,
+  "branch_creation_allowed": false,
+  "calibration_applied": false,
+  "candidate_branch_created": false,
+  "chart_paths": [
+    "visuals/threshold_decision_record/v0_7_8/threshold_decision_selected.png",
+    "visuals/threshold_decision_record/v0_7_8/threshold_decision_attention_counts.png",
+    "visuals/threshold_decision_record/v0_7_8/threshold_decision_locks.png"
+  ],
+  "classifier_changed": false,
+  "controls_ready": true,
+  "decision_options": [
+    "REJECT_THRESHOLD_CHANGE",
+    "DEFER_THRESHOLD_CHANGE_PENDING_MORE_EVIDENCE",
+    "REVIEW_READY_REPORT_ONLY",
+    "CANDIDATE_BRANCH_REQUIRED_BEFORE_ANY_MUTATION"
+  ],
+  "decision_rationale": "High-attention threshold pressure exists; threshold tuning is not justified without additional evidence and review.",
+  "decision_status": "THRESHOLD_DECISION_RECORDED__NO_MUTATION",
+  "dry_run_ready": true,
+  "executor_ran": false,
+  "generated_at": "2026-05-28T08:57:18.333184+00:00",
+  "high_attention_count": 2,
+  "input_boundary_cards": "reports/tsek_boundary_cards/latest_tsek_boundary_explanation_cards.json",
+  "input_penalty_controls": "reports/penalty_controls/latest_over_under_penalty_negative_controls.json",
+  "input_threshold_sensitivity_dry_run": "reports/threshold_sensitivity_dry_run/latest_threshold_sensitivity_dry_run.json",
+  "low_attention_count": 1,
+  "moderate_attention_count": 2,
+  "mutation_allowed": false,
+  "next_recommendation": "Move to v0.7.9 Threshold Governance Summary or freeze v0.7.x as a Tau threshold analysis milestone.",
+  "policy_enforced": false,
+  "release_passed": true,
+  "replay_allowed": false,
+  "runtime_behavior_changed": false,
+  "scenario_count": 5,
+  "schema": "tau-scaling-threshold-decision-record-v0.7.8",
+  "threshold_decision": "DEFER_THRESHOLD_CHANGE_PENDING_MORE_EVIDENCE",
+  "thresholds_changed": false
+}

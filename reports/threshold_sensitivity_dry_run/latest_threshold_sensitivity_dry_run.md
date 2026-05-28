@@ -1,6 +1,6 @@
 # Tau Scaling v0.7.7 Threshold Sensitivity Dry-Run
 
-Generated: `2026-05-28T08:54:46.347007+00:00`
+Generated: `2026-05-28T08:57:16.881979+00:00`
 
 ## Dry-Run Result
 
