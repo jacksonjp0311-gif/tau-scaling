@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760">
+<rect width="1400" height="760" fill="#030712"/>
+<text x="700" y="65" text-anchor="middle" fill="#67e8f9" font-size="46" font-family="Segoe UI" font-weight="700">Evidence Gap Matrix</text>
+<text x="700" y="110" text-anchor="middle" fill="#cbd5e1" font-size="22" font-family="Segoe UI">Green = disclosed, amber = partial, red = missing/not public</text>
+<text x="80" y="170" fill="#e5e7eb" font-size="22" font-family="Segoe UI">Claim set: 8 public Tau claims</text>
+<text x="80" y="230" fill="#22d3ee" font-size="24" font-family="Segoe UI">Disclosed: methodology / topology only</text>
+<text x="80" y="280" fill="#f59e0b" font-size="24" font-family="Segoe UI">Partial: method references for paper-level mechanisms</text>
+<text x="80" y="330" fill="#ef4444" font-size="24" font-family="Segoe UI">Missing for strong validation: energy, thermal, yield, PDN/PVT, independent validation</text>
+<rect x="80" y="400" width="1240" height="150" rx="24" fill="#07111f" stroke="#22d3ee" stroke-width="3"/>
+<text x="120" y="460" fill="#f8fafc" font-size="28" font-family="Segoe UI" font-weight="700">Core gap:</text>
+<text x="280" y="460" fill="#f8fafc" font-size="28" font-family="Segoe UI">public data is not yet sufficient for TSEK-A or TSEK-B.</text>
+<text x="120" y="515" fill="#cbd5e1" font-size="24" font-family="Segoe UI">The ledger therefore preserves investigation status without overpromotion.</text>
+</svg>

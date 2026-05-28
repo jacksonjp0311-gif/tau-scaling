@@ -1,4 +1,4 @@
-# Tau Scaling Ã¢â‚¬â€ Evidence-Gated Tau-Claim Runtime
+# Tau Scaling â€” Evidence-Gated Tau-Claim Runtime
 
 ![RCC-N](https://img.shields.io/badge/RCC--N-passing-brightgreen)
 ![Architecture](https://img.shields.io/badge/architecture-passing-brightgreen)
@@ -10,8 +10,8 @@
 
 Repository: `tau-scaling`  
 Package / CLI: `tau_scaling` / `tau-scaling`  
-Current checkpoint: **TAU-SCALING-SA v0.8.2 - Public Tau Claim Ledger**  
-Previous seal: **TAU-SCALING-SA v0.8.1a - README Benchmark Publication Lock Repair**
+Current checkpoint: **TAU-SCALING-SA v0.8.1 - Benchmark Finding Publication Surface**  
+Previous seal: **TAU-SCALING-SA v0.8.0 - Stable Tau Threshold Governance Milestone**
 
 Tau Scaling is a local-first, evidence-gated Python runtime for evaluating tau-scaling claims through structured claim cards, workload declarations, tau vectors, LogicFolding survivability checks, edge-to-surface boundary algebra, energy / thermal / PDN / PVT gates, Monte Carlo checker stress, TSEK classification, evidence packages, and RCC-N / OMN-style repository navigation.
 
@@ -61,37 +61,6 @@ claim
 
 This repo does **not** independently validate silicon, Huawei product metrics, manufacturing capability, benchmark superiority, process-node equivalence, investment value, or a universal Tau Scaling law. It is a local runtime for evidence discipline and claim classification.
 
-## Public Tau Claim Ledger v0.8.2
-
-The repo now begins source-bounded Tau Scaling research by turning public claims into explicit claim cards and a ledger.
-
-Primary outputs:
-
-```text
-claims/public_tau/
-reports/tau_claim_ledger/latest_tau_public_claim_ledger.md
-visuals/tau_claim_ledger/v0_8_2/
-```
-
-Current public Tau claim status:
-
-```text
-TSEK-A: 0
-TSEK-B: 0
-TSEK-C: 6
-TSEK-D: 2
-TSEK-E: 0
-```
-
-Interpretation: the public claim set is currently research-worthy and structurally plausible in parts, but not independently validated. The ledger preserves the boundary between methodology, reported metrics, roadmap projections, topology arguments, and independent evidence.
-
-Command:
-
-```powershell
-python scripts/benchmarks/generate_tau_public_claim_ledger.py
-```
-
-Boundary: this ledger classifies disclosed evidence only. It does not validate silicon, products, manufacturing, process nodes, benchmark superiority, or universal Tau Scaling law.
 ## Benchmark Finding - Stable Tau Threshold Governance v0.8.0
 
 ![Tau Scaling Benchmark Findings](visuals/stable_tau_threshold_governance/v0_8_0/tau_scaling_benchmark_findings_dashboard.svg)
@@ -127,7 +96,7 @@ What evidence is sufficient to move a Tau Scaling claim from roadmap coherence t
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | TAU-SCALING-SA v0.8.2 |
+| Current checkpoint | TAU-SCALING-SA v0.8.1 |
 | Synthetic gate suite | v0.4.0 / benchmark + finding charts |
 | Package version | 0.2.0 |
 | Baseline seed | TSEK-C / A_TSEK 0.0000 |
@@ -136,7 +105,7 @@ What evidence is sufficient to move a Tau Scaling claim from roadmap coherence t
 | README mini repo audit | passing / 0 warnings |
 | Unified release validator | passing / step failures 0 |
 | AGENTS.md contract | synchronized with release validator |
-| Task routing matrix | geometry-aware / v0.8.2-ready |
+| Task routing matrix | geometry-aware / v0.8.1-ready |
 | Release warning findings | 0 expected after v0.3.3d validator scan repair |
 | Architecture validator | passing / 0 warnings |
 | Unit tests | 8 OK |
@@ -230,7 +199,7 @@ What evidence is sufficient to move a Tau Scaling claim from roadmap coherence t
 | Threshold governance charts | `visuals/threshold_governance_summary/v0_7_9/` |
 | Stable Tau threshold governance | `reports/stable_tau_threshold_governance/latest_stable_tau_threshold_governance_milestone.md` |
 | Stable Tau threshold charts | `visuals/stable_tau_threshold_governance/v0_8_0/` |
-| Agent contract version sync | current / v0.8.2 |
+| Agent contract version sync | current / v0.8.1 |
 | Release readiness report | `reports/release/latest_release_readiness.md` |
 | Collision-proof run identity | passed |
 | Mini README coverage | 1.0 |
@@ -753,7 +722,7 @@ README audit: passed
 unit_tests: OK
 ```
 
-## AI Rule Ã¢â‚¬â€ Directory Box and Mini README Synchronization
+## AI Rule â€” Directory Box and Mini README Synchronization
 
 This exact heading uses a Unicode em dash (U+2014) because `scripts/rcc/audit_readme_surface.py` checks this anchor literally.
 
@@ -2693,12 +2662,11 @@ validation_remains_required
 
 ## Next Recommended Version
 
-**TAU-SCALING-SA v0.8.3 - LogicFolding Plausibility Sweep**
+**TAU-SCALING-SA v0.8.2 - High-Attention Scenario Evidence Expansion**
 
 Recommended goals:
 
-- Sweep the global LogicFolding survivability inequality.
-- Test when wire-delay savings dominate vertical, routing, sync, variation, closure, thermal, and yield penalties.
-- Keep public claims classified by disclosed evidence.
+- Expand evidence for the two high-attention threshold pressure surfaces.
 - Keep threshold and classifier mutation disabled.
-- Preserve `mutation_allowed: false`.
+- Preserve no-candidate-branch behavior unless explicitly approved by human review.
+- Keep `mutation_allowed: false`.

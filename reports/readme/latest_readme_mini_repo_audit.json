@@ -9,7 +9,7 @@
       "severity": "error"
     }
   ],
-  "generated_at": "2026-05-28T09:41:17.713630+00:00",
+  "generated_at": "2026-05-28T09:50:54.285338+00:00",
   "non_claim_lock": "README/mini-repo audit is context alignment, not code correctness or silicon validation.",
   "passed": false,
   "repository": "tau-scaling",

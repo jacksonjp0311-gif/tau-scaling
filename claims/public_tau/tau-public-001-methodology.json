@@ -1,0 +1,40 @@
+{
+    "schema":  "tau-scaling-public-tau-claim-card-v0.8.2",
+    "version":  "v0.8.2",
+    "generated_at":  "2026-05-28T09:50:49.5623691Z",
+    "claim_id":  "tau-public-001-methodology",
+    "title":  "Tau Scaling as post-geometric methodology",
+    "claim_text":  "Tau Scaling proposes that post-Moore electronic-system progress should be governed by cross-layer time-constant minimization rather than feature-size reduction alone.",
+    "source_layer":  "paper_methodology",
+    "mechanism":  "tau_stack",
+    "claim_type":  "methodological_thesis",
+    "reported_metric":  null,
+    "declared_workload":  "cross_layer_electronic_systems",
+    "baseline_disclosed":  true,
+    "method_disclosed":  "partial",
+    "energy_reported":  false,
+    "thermal_reported":  false,
+    "yield_reported":  false,
+    "pdn_pvt_reported":  false,
+    "independent_validation_present":  false,
+    "current_tsek_class":  "TSEK-C",
+    "downgrade_reason":  "Coherent industrial methodology, but not independent validation or universal physical law.",
+    "promotion_requirements":  [
+                                   "independent review",
+                                   "reproducible workload metrics",
+                                   "baseline/candidate measurement packages"
+                               ],
+    "falsification_triggers":  [
+                                   "treated as universal law without evidence",
+                                   "no workload-level tau improvement",
+                                   "energy/thermal/yield gates fail"
+                               ],
+    "non_claim_locks":  {
+                            "not_independent_validation":  true,
+                            "not_universal_tau_law_proof":  true,
+                            "not_product_validation":  true,
+                            "not_manufacturing_validation":  true,
+                            "not_process_node_equivalence":  true,
+                            "not_benchmark_superiority_proof":  true
+                        }
+}

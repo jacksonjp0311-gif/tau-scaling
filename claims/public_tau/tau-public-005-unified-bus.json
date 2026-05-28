@@ -1,0 +1,42 @@
+{
+    "schema":  "tau-scaling-public-tau-claim-card-v0.8.2",
+    "version":  "v0.8.2",
+    "generated_at":  "2026-05-28T09:50:49.6607368Z",
+    "claim_id":  "tau-public-005-unified-bus",
+    "title":  "Unified Bus reduces remote-access latency",
+    "claim_text":  "Unified Bus is presented as a data-movement tau reduction mechanism for AI-scale systems.",
+    "source_layer":  "paper_and_public_announcement",
+    "mechanism":  "unified_bus",
+    "claim_type":  "reported_metric",
+    "reported_metric":  "remote-access latency reduction",
+    "declared_workload":  "ai_cluster_memory_access",
+    "baseline_disclosed":  false,
+    "method_disclosed":  false,
+    "energy_reported":  false,
+    "thermal_reported":  false,
+    "yield_reported":  false,
+    "pdn_pvt_reported":  false,
+    "independent_validation_present":  false,
+    "current_tsek_class":  "TSEK-C",
+    "downgrade_reason":  "Potentially important data-movement mechanism, but workload, baseline, method, and independent benchmark evidence are missing.",
+    "promotion_requirements":  [
+                                   "latency benchmark",
+                                   "baseline fabric",
+                                   "workload profile",
+                                   "power per transfer",
+                                   "independent reproduction"
+                               ],
+    "falsification_triggers":  [
+                                   "latency gain only under synthetic workload",
+                                   "energy cost erases benefit",
+                                   "coherence/protocol overhead hidden"
+                               ],
+    "non_claim_locks":  {
+                            "not_independent_validation":  true,
+                            "not_universal_tau_law_proof":  true,
+                            "not_product_validation":  true,
+                            "not_manufacturing_validation":  true,
+                            "not_process_node_equivalence":  true,
+                            "not_benchmark_superiority_proof":  true
+                        }
+}

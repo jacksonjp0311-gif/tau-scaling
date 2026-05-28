@@ -1,0 +1,40 @@
+{
+    "schema":  "tau-scaling-public-tau-claim-card-v0.8.2",
+    "version":  "v0.8.2",
+    "generated_at":  "2026-05-28T09:50:49.6587333Z",
+    "claim_id":  "tau-public-004-roadmap-1p4nm-class",
+    "title":  "Roadmap projection toward 1.4nm-class density",
+    "claim_text":  "Public roadmap language projects advanced density-equivalent targets in future years.",
+    "source_layer":  "roadmap_projection",
+    "mechanism":  "roadmap_tau_scaling",
+    "claim_type":  "forecast",
+    "reported_metric":  "future density target",
+    "declared_workload":  "roadmap",
+    "baseline_disclosed":  false,
+    "method_disclosed":  false,
+    "energy_reported":  false,
+    "thermal_reported":  false,
+    "yield_reported":  false,
+    "pdn_pvt_reported":  false,
+    "independent_validation_present":  false,
+    "current_tsek_class":  "TSEK-D",
+    "downgrade_reason":  "Projection-heavy roadmap claim without achieved measurement package.",
+    "promotion_requirements":  [
+                                   "achieved die-level result",
+                                   "method disclosure",
+                                   "power/thermal/yield data",
+                                   "independent benchmark or teardown"
+                               ],
+    "falsification_triggers":  [
+                                   "presented as achieved production proof",
+                                   "contradicted by measured density/area/yield data"
+                               ],
+    "non_claim_locks":  {
+                            "not_independent_validation":  true,
+                            "not_universal_tau_law_proof":  true,
+                            "not_product_validation":  true,
+                            "not_manufacturing_validation":  true,
+                            "not_process_node_equivalence":  true,
+                            "not_benchmark_superiority_proof":  true
+                        }
+}

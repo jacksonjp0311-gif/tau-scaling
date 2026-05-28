@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760">
+<rect width="1400" height="760" fill="#030712"/>
+<text x="700" y="80" text-anchor="middle" fill="#67e8f9" font-size="52" font-family="Segoe UI" font-weight="700">Promotion Requirements</text>
+<rect x="90" y="170" width="560" height="420" rx="28" fill="#07111f" stroke="#22d3ee" stroke-width="3"/>
+<text x="120" y="235" fill="#f8fafc" font-size="30" font-family="Segoe UI" font-weight="700">TSEK-C -> TSEK-B</text>
+<text x="120" y="300" fill="#e5e7eb" font-size="24" font-family="Segoe UI">- baseline disclosed</text>
+<text x="120" y="345" fill="#e5e7eb" font-size="24" font-family="Segoe UI">- method disclosed</text>
+<text x="120" y="390" fill="#e5e7eb" font-size="24" font-family="Segoe UI">- workload declared</text>
+<text x="120" y="435" fill="#e5e7eb" font-size="24" font-family="Segoe UI">- power / thermal context</text>
+<text x="120" y="480" fill="#e5e7eb" font-size="24" font-family="Segoe UI">- no overclaim</text>
+<rect x="750" y="170" width="560" height="420" rx="28" fill="#12061f" stroke="#a855f7" stroke-width="3"/>
+<text x="780" y="235" fill="#f8fafc" font-size="30" font-family="Segoe UI" font-weight="700">TSEK-B -> TSEK-A</text>
+<text x="780" y="300" fill="#e5e7eb" font-size="24" font-family="Segoe UI">- independent validation</text>
+<text x="780" y="345" fill="#e5e7eb" font-size="24" font-family="Segoe UI">- raw / reproducible data</text>
+<text x="780" y="390" fill="#e5e7eb" font-size="24" font-family="Segoe UI">- power and thermal curves</text>
+<text x="780" y="435" fill="#e5e7eb" font-size="24" font-family="Segoe UI">- yield / PDN / PVT evidence</text>
+<text x="780" y="480" fill="#e5e7eb" font-size="24" font-family="Segoe UI">- third-party benchmarks</text>
+<text x="700" y="680" text-anchor="middle" fill="#f59e0b" font-size="26" font-family="Segoe UI" font-weight="700">No strong Tau claim without baseline, workload, gates, method, and independent evidence.</text>
+</svg>
