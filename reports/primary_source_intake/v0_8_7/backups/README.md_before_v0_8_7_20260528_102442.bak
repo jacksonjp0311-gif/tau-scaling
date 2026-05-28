@@ -10,8 +10,8 @@
 
 Repository: `tau-scaling`  
 Package / CLI: `tau_scaling` / `tau-scaling`  
-Current checkpoint: **TAU-SCALING-SA v0.8.7 - Primary Source Intake Queue / Source Population Scaffold**  
-Previous seal: **TAU-SCALING-SA v0.8.6a - README Render Spacing Polish**
+Current checkpoint: **TAU-SCALING-SA v0.8.6a - README Render Spacing Polish**  
+Previous seal: **TAU-SCALING-SA v0.8.6 - Source Evidence Intake Cards**
 
 Tau Scaling is a local-first, evidence-gated Python runtime for evaluating Tau Scaling claims through structured claim cards, workload declarations, tau vectors, LogicFolding survivability checks, energy / thermal / PDN / PVT gates, TSEK classification, evidence packages, and RCC-N / OMN-style repository navigation.
 
@@ -37,7 +37,6 @@ This repository is now in the **v0.8 public Tau research spine**.
 | v0.8.5 Public Source Ledger | Which source category produced each claim, and how far can it carry the claim? | `reports/public_source_ledger/latest_public_source_ledger.md` |
 | v0.8.6 Source Evidence Intake Cards | What exact source fields must be filled before claims can be reviewed? | `reports/source_evidence_intake/latest_source_evidence_intake_cards.md` |
 | v0.8.6a README Render Spacing Polish | Did the public README render cleanly after source-intake insertion? | `reports/readme_render_spacing/latest_readme_render_spacing_polish.md` |
-| v0.8.7 Primary Source Intake Queue | Which source records are ready to be manually populated and confirmed? | `reports/primary_source_intake/latest_primary_source_intake_queue.md` |
 
 Current public finding: Tau Scaling can be studied as an evidence-gated claim system. Public claims can be separated into methodology, reported metrics, roadmap projections, topology arguments, and independent evidence.
 
@@ -112,18 +111,6 @@ Primary outputs:
 
 Boundary: source evidence intake cards are templates for source discipline. They do not promote claims, validate silicon, validate products, prove benchmark superiority, or establish a universal Tau Scaling law.
 
-## Primary Source Intake Queue v0.8.7
-
-This layer creates a governed manual queue for filling v0.8.6 source-intake cards with actual primary-source details. It intentionally does not invent URLs, scrape sources, or promote claims.
-
-Primary outputs:
-
-- `sources/primary_source_intake/source_seed_manifest_v0_8_7.json`
-- `reports/primary_source_intake/latest_primary_source_intake_queue.md`
-- `reports/primary_source_intake/latest_primary_source_intake_queue.json`
-- `visuals/primary_source_intake/v0_8_7/`
-
-Boundary: primary source intake queueing prepares source population only. It does not validate sources, promote claims, validate silicon, validate products, prove benchmark superiority, or establish a universal Tau Scaling law.
 ## Tau Doctrine Alignment
 
 - Time is the shared metric, not automatic proof.
@@ -161,7 +148,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | TAU-SCALING-SA v0.8.7 |
+| Current checkpoint | TAU-SCALING-SA v0.8.6a |
 | Release validator | passing / findings 0 / step failures 0 |
 | README mini repo audit | passing / 0 warnings |
 | RCC-N checker | passing / 0 warnings |
@@ -175,9 +162,6 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 | Public source ledger | `reports/public_source_ledger/latest_public_source_ledger.md` |
 | Source evidence intake visual | `visuals/source_evidence_intake/v0_8_6/source_evidence_intake_cards.svg` |
 | Source evidence intake cards | `reports/source_evidence_intake/latest_source_evidence_intake_cards.md` |
-| Primary source intake visual | `visuals/primary_source_intake/v0_8_7/primary_source_intake_queue.svg` |
-| Primary source intake manifest | `sources/primary_source_intake/source_seed_manifest_v0_8_7.json` |
-| Primary source intake queue | `reports/primary_source_intake/latest_primary_source_intake_queue.md` |
 | README render spacing polish | `reports/readme_render_spacing/latest_readme_render_spacing_polish.md` |
 | Evidence sufficiency visual | `visuals/evidence_sufficiency/v0_8_4/evidence_sufficiency_matrix.svg` |
 | Release readiness report | `reports/release/latest_release_readiness.md` |
@@ -207,7 +191,6 @@ python scripts/benchmarks/run_logicfolding_plausibility_sweep.py
 python scripts/benchmarks/generate_evidence_sufficiency_matrix.py
 python scripts/benchmarks/generate_public_source_ledger.py
 python scripts/benchmarks/generate_source_evidence_intake_cards.py
-python scripts/benchmarks/run_primary_source_intake_queue.py
 ```
 
 ### Baseline claim checks
@@ -290,7 +273,6 @@ The full historical chain remains available, but the root README now keeps only 
 | `docs/reflection/law_of_sufficient_form_v0_8_5.md` | Law of Sufficient Form reflection |
 | `reports/public_source_ledger/latest_public_source_ledger.md` | Public source ledger and claim provenance map |
 | `reports/source_evidence_intake/latest_source_evidence_intake_cards.md` | Source evidence intake card report |
-| `reports/primary_source_intake/latest_primary_source_intake_queue.md` | Primary source intake queue report |
 | `reports/readme_render_spacing/latest_readme_render_spacing_polish.md` | README render spacing polish report |
 | `reports/readme_information_architecture/latest_readme_information_architecture_compression.md` | README IA compression report |
 | `reports/evidence_sufficiency/latest_evidence_sufficiency_matrix.md` | Current evidence sufficiency matrix |
@@ -623,8 +605,6 @@ This section is part of the repository's operating memory. When a patch fails, t
 | L-073 | v0.8.5 mapped source provenance, but provenance categories still needed concrete source-intake fields. | A source category is not yet a citation, quote, date, author, or measurement package. | Source provenance must be followed by intake cards before any source-backed claim review or promotion discussion. |
 | L-074 | v0.8.6 passed all validators, but generated README sections had minor heading-adjacency render risk. | Markdown can pass audits while still needing visual spacing polish. | After inserting generated README sections, run a render-spacing polish pass before starting the next research layer. |
 
-| L-075 | v0.8.6 created source-intake cards, but actual source population should not be invented by automation. | A card scaffold is not a source; a TODO field is not evidence. | Create a manual primary-source intake queue before source population, and keep claim promotion disabled until source details are filled and reviewed. |
-
 ### Failure Response Protocol
 
 When a failure occurs:
@@ -754,7 +734,6 @@ This section is intentionally compact. The full repository is validated by RCC-N
 | `src/tau_scaling/` | Runtime, gates, claims, evidence, schemas, simulation, tau utilities |
 | `configs/seeds/` | Claim seeds and demo/promotion-path claim cards |
 | `claims/public_tau/` | Public Tau claim cards created in v0.8.2 |
-| `sources/primary_source_intake/` | Manual primary-source intake manifest |
 | `scripts/benchmarks/` | Benchmark, sweep, report, and governance generators |
 | `scripts/rcc/` | RCC-N checker and README audit scanner |
 | `scripts/release/` | Unified release readiness validator |
@@ -763,13 +742,11 @@ This section is intentionally compact. The full repository is validated by RCC-N
 | `reports/evidence_sufficiency/` | Evidence sufficiency matrix reports and claim-level promotion/downgrade requirements |
 | `reports/public_source_ledger/` | Public source provenance and source-carry boundary reports |
 | `reports/source_evidence_intake/` | Source evidence intake card reports |
-| `reports/primary_source_intake/` | Primary source intake queue reports |
 | `reports/release_finding_repair/` | Release warning inspection and zero-finding repair reports |
 | `visuals/logicfolding_plausibility/` | LogicFolding sweep charts |
 | `visuals/evidence_sufficiency/` | Evidence sufficiency charts |
 | `visuals/public_source_ledger/` | Public source ledger charts |
 | `visuals/source_evidence_intake/` | Source evidence intake charts |
-| `visuals/primary_source_intake/` | Primary source intake charts |
 | `visuals/stable_tau_threshold_governance/` | Stable threshold governance charts |
 | `reports/readme_information_architecture/` | README information architecture compression reports |
 | `reports/readme_render_spacing/` | README render-spacing polish reports |
@@ -939,16 +916,15 @@ validation_remains_required
 | v0.8.5 | Public Source Ledger / Claim Provenance Map; maps source categories, source-carry boundaries, and reflection law into the public Tau claim spine. |
 | v0.8.6 | Source Evidence Intake Cards; creates per-claim source-intake cards with required source fields and promotion blockers. |
 | v0.8.6a | README Render Spacing Polish; repairs GitHub-rendering spacing after v0.8.6 section insertion. |
-| v0.8.7 | Primary Source Intake Queue; creates manual source-population manifest without inventing or validating sources. |
 
 ## Next Recommended Version
 
-**TAU-SCALING-SA v0.8.8 - Primary Source Population Pass**
+**TAU-SCALING-SA v0.8.7 - Source Intake Population / Primary Source Pass**
 
 Recommended goals:
 
-- Populate source manifest entries with actual source URLs, titles, dates, authors/orgs, and bounded paraphrases.
-- Keep primary source and media interpretation separate.
+- Fill intake cards with actual primary-source URLs, titles, dates, and bounded paraphrases.
+- Separate primary-source claims from media interpretation.
 - Preserve source-fidelity and non-claim locks.
 - Keep threshold and classifier mutation disabled.
 - Preserve `mutation_allowed: false`.

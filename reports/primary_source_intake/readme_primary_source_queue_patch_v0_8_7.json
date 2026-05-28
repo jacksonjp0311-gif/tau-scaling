@@ -1,0 +1,11 @@
+{
+  "application_allowed": false,
+  "boundary": "README/queue patch is source-population scaffold only. It does not validate or promote claims.",
+  "checkpoint": "TAU-SCALING-SA v0.8.7 - Primary Source Intake Queue / Source Population Scaffold",
+  "claim_promotion_allowed": false,
+  "classifier_changed": false,
+  "generated_at": "2026-05-28T14:24:42.190836+00:00",
+  "mutation_allowed": false,
+  "schema": "tau-scaling-v0.8.7-readme-primary-source-queue-patch",
+  "thresholds_changed": false
+}

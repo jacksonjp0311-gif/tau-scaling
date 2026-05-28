@@ -70,7 +70,7 @@
                                       ]
                },
     "schema":  "rcc-nexus-route-map-v1.7",
-    "updated_at":  "2026-05-28T14:20:06.1762828Z",
+    "updated_at":  "2026-05-28T14:24:42.3896564Z",
     "v0_4_routes":  {
                         "feedback_chart_path_health_repair":  {
                                                                   "evidence":  [
@@ -994,7 +994,26 @@
                                                                               "reports/readme_render_spacing/latest_readme_render_spacing_polish.md"
                                                                           ],
                                                              "mutation_lock":  "README render spacing polish only; no classifier change, threshold change, claim promotion, branch creation, or mutation."
-                                                         }
+                                                         },
+                        "primary_source_intake_queue":  {
+                                                            "read_first":  [
+                                                                               "reports/source_evidence_intake/latest_source_evidence_intake_cards.md",
+                                                                               "sources/primary_source_intake/source_seed_manifest_v0_8_7.json",
+                                                                               "reports/primary_source_intake/latest_primary_source_intake_queue.md",
+                                                                               "README.md"
+                                                                           ],
+                                                            "validate":  [
+                                                                             "python scripts/benchmarks/run_primary_source_intake_queue.py",
+                                                                             "python scripts/release/validate_release.py",
+                                                                             "python scripts/rcc/audit_readme_surface.py"
+                                                                         ],
+                                                            "evidence":  [
+                                                                             "sources/primary_source_intake/source_seed_manifest_v0_8_7.json",
+                                                                             "reports/primary_source_intake/latest_primary_source_intake_queue.md",
+                                                                             "visuals/primary_source_intake/v0_8_7/"
+                                                                         ],
+                                                            "mutation_lock":  "Primary source intake queue only; no source validation, classifier change, threshold change, claim promotion, branch creation, or mutation."
+                                                        }
                     },
     "validation":  {
                        "architecture":  "python scripts/validation/validate_architecture_contracts.py",
@@ -1002,5 +1021,5 @@
                        "runtime":  "python -m tau_scaling run-claim --seed configs/seeds/logicfolding_claim_card.json",
                        "tests":  "python -m unittest discover -s tests"
                    },
-    "version":  "v0.8.6a"
+    "version":  "v0.8.7"
 }

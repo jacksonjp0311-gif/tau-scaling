@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="720" viewBox="0 0 1400 720">
+<rect width="1400" height="720" fill="#030712"/>
+<text x="700" y="78" text-anchor="middle" fill="#67e8f9" font-size="44" font-family="Segoe UI" font-weight="700">Primary Source Intake Queue v0.8.7</text>
+<text x="700" y="122" text-anchor="middle" fill="#cbd5e1" font-size="22" font-family="Segoe UI">Sources are queued until manually populated and confirmed</text>
+<rect x="220" y="220" width="760" height="54" rx="14" fill="#f59e0b"/>
+<text x="220" y="205" fill="#f8fafc" font-size="25" font-family="Segoe UI">Queued / TODO: 8</text>
+<rect x="220" y="360" width="95" height="54" rx="14" fill="#22c55e"/>
+<text x="220" y="345" fill="#f8fafc" font-size="25" font-family="Segoe UI">Source-populated: 0</text>
+<text x="700" y="640" text-anchor="middle" fill="#94a3b8" font-size="21" font-family="Segoe UI">Queue creation is not source validation and does not promote claims.</text>
+</svg>

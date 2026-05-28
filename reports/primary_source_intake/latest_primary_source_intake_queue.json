@@ -1,0 +1,155 @@
+{
+  "application_allowed": false,
+  "average_filled_fields": 2,
+  "average_source_confidence": 0.0,
+  "boundary": "Primary source intake queue prepares manual source population only. It does not invent sources, validate sources, promote claims, validate silicon, validate products, or establish a universal Tau Scaling law.",
+  "claim_count": 8,
+  "claim_promotion_allowed": false,
+  "classifier_changed": false,
+  "generated_at": "2026-05-28T14:24:43.237485+00:00",
+  "manifest": "sources\\primary_source_intake\\source_seed_manifest_v0_8_7.json",
+  "mutation_allowed": false,
+  "ready_for_claim_review_count": 0,
+  "schema": "tau-scaling-primary-source-intake-queue-v0.8.7",
+  "scores": [
+    {
+      "claim_id": "tau-public-001-methodology",
+      "filled_fields": 2,
+      "independent_source_confirmed": false,
+      "missing_fields": [
+        "source_url",
+        "source_title",
+        "source_date",
+        "source_author_or_org",
+        "claim_excerpt_or_paraphrase"
+      ],
+      "primary_source_confirmed": false,
+      "ready_for_claim_review": false,
+      "source_category": "methodology_claim",
+      "source_confidence": 0.0,
+      "source_populated": false
+    },
+    {
+      "claim_id": "tau-public-002-logicfolding",
+      "filled_fields": 2,
+      "independent_source_confirmed": false,
+      "missing_fields": [
+        "source_url",
+        "source_title",
+        "source_date",
+        "source_author_or_org",
+        "claim_excerpt_or_paraphrase"
+      ],
+      "primary_source_confirmed": false,
+      "ready_for_claim_review": false,
+      "source_category": "architecture_interpretation",
+      "source_confidence": 0.0,
+      "source_populated": false
+    },
+    {
+      "claim_id": "tau-public-003-density-equivalent",
+      "filled_fields": 2,
+      "independent_source_confirmed": false,
+      "missing_fields": [
+        "source_url",
+        "source_title",
+        "source_date",
+        "source_author_or_org",
+        "claim_excerpt_or_paraphrase"
+      ],
+      "primary_source_confirmed": false,
+      "ready_for_claim_review": false,
+      "source_category": "reported_metric",
+      "source_confidence": 0.0,
+      "source_populated": false
+    },
+    {
+      "claim_id": "tau-public-004-roadmap-1p4nm-class",
+      "filled_fields": 2,
+      "independent_source_confirmed": false,
+      "missing_fields": [
+        "source_url",
+        "source_title",
+        "source_date",
+        "source_author_or_org",
+        "claim_excerpt_or_paraphrase"
+      ],
+      "primary_source_confirmed": false,
+      "ready_for_claim_review": false,
+      "source_category": "roadmap_projection",
+      "source_confidence": 0.0,
+      "source_populated": false
+    },
+    {
+      "claim_id": "tau-public-005-unified-bus",
+      "filled_fields": 2,
+      "independent_source_confirmed": false,
+      "missing_fields": [
+        "source_url",
+        "source_title",
+        "source_date",
+        "source_author_or_org",
+        "claim_excerpt_or_paraphrase"
+      ],
+      "primary_source_confirmed": false,
+      "ready_for_claim_review": false,
+      "source_category": "architecture_interpretation",
+      "source_confidence": 0.0,
+      "source_populated": false
+    },
+    {
+      "claim_id": "tau-public-006-hione-optical-io",
+      "filled_fields": 2,
+      "independent_source_confirmed": false,
+      "missing_fields": [
+        "source_url",
+        "source_title",
+        "source_date",
+        "source_author_or_org",
+        "claim_excerpt_or_paraphrase"
+      ],
+      "primary_source_confirmed": false,
+      "ready_for_claim_review": false,
+      "source_category": "reported_metric",
+      "source_confidence": 0.0,
+      "source_populated": false
+    },
+    {
+      "claim_id": "tau-public-007-3d-folding",
+      "filled_fields": 2,
+      "independent_source_confirmed": false,
+      "missing_fields": [
+        "source_url",
+        "source_title",
+        "source_date",
+        "source_author_or_org",
+        "claim_excerpt_or_paraphrase"
+      ],
+      "primary_source_confirmed": false,
+      "ready_for_claim_review": false,
+      "source_category": "architecture_interpretation",
+      "source_confidence": 0.0,
+      "source_populated": false
+    },
+    {
+      "claim_id": "tau-public-008-ai-gap-closure",
+      "filled_fields": 2,
+      "independent_source_confirmed": false,
+      "missing_fields": [
+        "source_url",
+        "source_title",
+        "source_date",
+        "source_author_or_org",
+        "claim_excerpt_or_paraphrase"
+      ],
+      "primary_source_confirmed": false,
+      "ready_for_claim_review": false,
+      "source_category": "media_interpretation",
+      "source_confidence": 0.0,
+      "source_populated": false
+    }
+  ],
+  "source_populated_count": 0,
+  "source_validation_claimed": false,
+  "thresholds_changed": false
+}
