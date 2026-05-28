@@ -10,8 +10,8 @@
 
 Repository: `tau-scaling`  
 Package / CLI: `tau_scaling` / `tau-scaling`  
-Current checkpoint: **TAU-SCALING-SA v0.8.3d - README Bottom Versioning and Presentation Tail Repair**  
-Previous seal: **TAU-SCALING-SA v0.8.3c - README Presentation Restore**
+Current checkpoint: **TAU-SCALING-SA v0.8.4 - Evidence Sufficiency Matrix**  
+Previous seal: **TAU-SCALING-SA v0.8.3d - README Bottom Versioning and Presentation Tail Repair**
 
 Tau Scaling is a local-first, evidence-gated Python runtime for evaluating tau-scaling claims through structured claim cards, workload declarations, tau vectors, LogicFolding survivability checks, edge-to-surface boundary algebra, energy / thermal / PDN / PVT gates, Monte Carlo checker stress, TSEK classification, evidence packages, and RCC-N / OMN-style repository navigation.
 
@@ -22,6 +22,25 @@ Core law:
 - No gates, no validation.
 - No evidence, no strong class.
 
+## Evidence Sufficiency Matrix v0.8.4
+
+This layer converts public Tau claim classes into explicit promotion and downgrade requirements.
+
+The key transition is:
+
+- TSEK-C is not failure; it means evidence is structurally plausible but incomplete.
+- TSEK-B requires declared workload, baseline, method, and companion gate evidence.
+- TSEK-A requires independent reproduction, measurement protocol, uncertainty bounds, and negative controls.
+- TSEK-D/E pressure appears when roadmap, density, timing, or topology claims are treated as stronger than disclosed evidence permits.
+
+Primary outputs:
+
+- `reports/evidence_sufficiency/latest_evidence_sufficiency_matrix.md`
+- `reports/evidence_sufficiency/latest_evidence_sufficiency_matrix.json`
+- `reports/evidence_sufficiency/claim_matrices/`
+- `visuals/evidence_sufficiency/v0_8_4/`
+
+Boundary: evidence sufficiency matrices define promotion conditions only. They do not promote claims, mutate thresholds, validate silicon, validate products, prove benchmark superiority, or establish a universal Tau Scaling law.
 ## Showcase Tau Findings
 
 This repository has moved from governance construction into **Tau Scaling research instrumentation**.
@@ -125,7 +144,7 @@ Active research question: **What evidence is sufficient to move a Tau Scaling cl
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | TAU-SCALING-SA v0.8.3d |
+| Current checkpoint | TAU-SCALING-SA v0.8.4 |
 | Synthetic gate suite | v0.4.0 / benchmark + finding charts |
 | Package version | 0.2.0 |
 | Baseline seed | TSEK-C / A_TSEK 0.0000 |
@@ -134,7 +153,7 @@ Active research question: **What evidence is sufficient to move a Tau Scaling cl
 | README mini repo audit | passing / 0 warnings |
 | Unified release validator | passing / step failures 0 |
 | AGENTS.md contract | synchronized with release validator |
-| Task routing matrix | geometry-aware / v0.8.3d-ready |
+| Task routing matrix | geometry-aware / v0.8.4-ready |
 | Release warning findings | non-blocking / tracked by release readiness report |
 | Architecture validator | passing / 0 warnings |
 | Unit tests | 8 OK |
@@ -228,7 +247,7 @@ Active research question: **What evidence is sufficient to move a Tau Scaling cl
 | Threshold governance charts | `visuals/threshold_governance_summary/v0_7_9/` |
 | Stable Tau threshold governance | `reports/stable_tau_threshold_governance/latest_stable_tau_threshold_governance_milestone.md` |
 | Stable Tau threshold charts | `visuals/stable_tau_threshold_governance/v0_8_0/` |
-| Agent contract version sync | current / v0.8.3d |
+| Agent contract version sync | current / v0.8.4 |
 | Release readiness report | `reports/release/latest_release_readiness.md` |
 | Collision-proof run identity | passed |
 | Mini README coverage | 1.0 |
@@ -236,6 +255,7 @@ Active research question: **What evidence is sufficient to move a Tau Scaling cl
 | Durable dirs checked by README audit | 38 |
 | README presentation restore | `reports/readme_presentation_restore/latest_readme_presentation_restore.md` |
 | README bottom versioning repair | `reports/readme_bottom_versioning/latest_readme_bottom_versioning_repair.md` |
+| Evidence sufficiency matrix | eports/evidence_sufficiency/latest_evidence_sufficiency_matrix.md |
 | Claim status | local runtime evidence + benchmark observability only |
 
 The baseline demo remains **TSEK-C** by design: the system refuses to promote a claim beyond disclosed evidence. The promotion-path seed demonstrates how stronger disclosed evidence can move a claim to **TSEK-B** without weakening gates.
@@ -2551,16 +2571,16 @@ validation_remains_required
 | v0.8.3b | README render/alignment repair after remaining mojibake and directory-box drift. |
 | v0.8.3c | README presentation restore; compact human-readable layout. |
 | v0.8.3d | README bottom versioning and final presentation tail repair. |
+| v0.8.4 | Evidence Sufficiency Matrix; defines promotion/downgrade evidence requirements for public Tau claims. |
 
 ## Next Recommended Version
 
-**TAU-SCALING-SA v0.8.4 - Evidence Sufficiency Matrix**
+**TAU-SCALING-SA v0.8.5 - Public Source Ledger / Claim Provenance Map**
 
 Recommended goals:
 
-- Convert public Tau claim classes into explicit evidence sufficiency requirements.
-- Define what evidence would promote TSEK-C to TSEK-B and TSEK-B to TSEK-A.
-- Define what evidence would force downgrade to TSEK-D or TSEK-E.
-- Preserve downgrade discipline and non-claim locks.
+- Tie every public Tau claim to source category, claim type, and extraction boundary.
+- Separate methodology claims, reported metrics, roadmap claims, media interpretation, and independent evidence.
+- Preserve source-fidelity and non-claim locks.
 - Keep threshold and classifier mutation disabled.
 - Preserve `mutation_allowed: false`.

@@ -1,0 +1,74 @@
+{
+  "claim_family": "mechanism",
+  "claim_id": "tau-public-003-density-equivalent",
+  "current_class": "TSEK-C",
+  "downgrade_or_reject_if": [
+    "wire savings erased by overhead",
+    "thermal collapse",
+    "closure failure",
+    "no workload-specific gain"
+  ],
+  "evidence_gates": [
+    "workload",
+    "baseline",
+    "method",
+    "energy",
+    "thermal",
+    "yield",
+    "pdn_pvt",
+    "independent"
+  ],
+  "evidence_sufficiency_score": 0.375,
+  "keep_current_conditions": [
+    "Missing energy evidence keeps claim at or below TSEK-C.",
+    "Missing thermal evidence keeps claim at or below TSEK-C.",
+    "Missing yield evidence keeps claim at or below TSEK-C.",
+    "Missing pdn_pvt evidence keeps claim at or below TSEK-C.",
+    "Missing independent evidence keeps claim at or below TSEK-C."
+  ],
+  "measurement_package": {
+    "independent": [
+      "third-party reproduction",
+      "raw measurements",
+      "uncertainty bounds",
+      "replication protocol"
+    ],
+    "minimum": [
+      "workload",
+      "baseline",
+      "method",
+      "tau vector",
+      "gate evidence table"
+    ],
+    "strong": [
+      "energy",
+      "thermal",
+      "PDN/PVT",
+      "yield/manufacturability",
+      "negative controls"
+    ]
+  },
+  "missing_gates": [
+    "energy",
+    "thermal",
+    "yield",
+    "pdn_pvt",
+    "independent"
+  ],
+  "non_claim_lock": "Evidence sufficiency requirements define promotion conditions only. They do not promote the claim or validate silicon by themselves.",
+  "promote_to_tsek_a_requires": [
+    "independent silicon or EDA reproduction",
+    "post-route closed design",
+    "measured energy-delay product",
+    "PVT and yield disclosure"
+  ],
+  "promote_to_tsek_b_requires": [
+    "post-route timing comparison",
+    "wire-delay reduction estimate",
+    "vertical/routing/sync overhead estimate",
+    "energy/thermal/PDN companion data"
+  ],
+  "recommended_action": "remain_current_class_pending_evidence",
+  "source_path": "claims\\public_tau\\tau-public-003-density-equivalent.json",
+  "title": "Density-equivalent scaling from LogicFolding"
+}

@@ -70,7 +70,7 @@
                                       ]
                },
     "schema":  "rcc-nexus-route-map-v1.7",
-    "updated_at":  "2026-05-28T10:50:39.0008936Z",
+    "updated_at":  "2026-05-28T11:20:03.9161746Z",
     "v0_4_routes":  {
                         "feedback_chart_path_health_repair":  {
                                                                   "evidence":  [
@@ -876,7 +876,26 @@
                                                                                  "reports/readme_bottom_versioning/latest_readme_bottom_versioning_repair.md"
                                                                              ],
                                                                 "mutation_lock":  "README bottom versioning repair only; no classifier change, threshold change, branch creation, or mutation."
-                                                            }
+                                                            },
+                        "evidence_sufficiency_matrix":  {
+                                                            "read_first":  [
+                                                                               "claims/public_tau/",
+                                                                               "reports/tau_claim_ledger/latest_tau_public_claim_ledger.json",
+                                                                               "reports/logicfolding_plausibility/latest_logicfolding_plausibility_sweep.json",
+                                                                               "README.md"
+                                                                           ],
+                                                            "validate":  [
+                                                                             "python scripts/benchmarks/generate_evidence_sufficiency_matrix.py",
+                                                                             "python scripts/release/validate_release.py",
+                                                                             "python scripts/rcc/audit_readme_surface.py"
+                                                                         ],
+                                                            "evidence":  [
+                                                                             "reports/evidence_sufficiency/latest_evidence_sufficiency_matrix.md",
+                                                                             "reports/evidence_sufficiency/claim_matrices/",
+                                                                             "visuals/evidence_sufficiency/v0_8_4/"
+                                                                         ],
+                                                            "mutation_lock":  "Evidence sufficiency matrix only; no classifier change, threshold change, branch creation, or mutation."
+                                                        }
                     },
     "validation":  {
                        "architecture":  "python scripts/validation/validate_architecture_contracts.py",
@@ -884,5 +903,5 @@
                        "runtime":  "python -m tau_scaling run-claim --seed configs/seeds/logicfolding_claim_card.json",
                        "tests":  "python -m unittest discover -s tests"
                    },
-    "version":  "v0.8.3d"
+    "version":  "v0.8.4"
 }

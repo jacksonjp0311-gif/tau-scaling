@@ -1,6 +1,6 @@
 # AGENTS.md Ã¢â‚¬â€ Tau Scaling Agent Operating Contract
 
-Current contract: **TAU-SCALING-SA v0.8.3d - README Bottom Versioning and Presentation Tail Repair**
+Current contract: **TAU-SCALING-SA v0.8.4 - Evidence Sufficiency Matrix**
 
 ## Mission
 

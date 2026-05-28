@@ -1,0 +1,606 @@
+{
+  "application_allowed": false,
+  "average_evidence_sufficiency_score": 0.375,
+  "average_missing_gates": 5,
+  "boundary": "Evidence sufficiency matrices are promotion-condition artifacts only. They do not validate silicon, products, manufacturing, process nodes, benchmark superiority, or universal Tau Scaling law.",
+  "calibration_applied": false,
+  "claim_count": 8,
+  "class_counts": {
+    "TSEK-C": 8
+  },
+  "classifier_changed": false,
+  "generated_at": "2026-05-28T11:20:04.185017+00:00",
+  "matrices": [
+    {
+      "claim_family": "methodology",
+      "claim_id": "tau-public-001-methodology",
+      "current_class": "TSEK-C",
+      "downgrade_or_reject_if": [
+        "method cannot reproduce stated class",
+        "undefined baseline",
+        "method changes after result"
+      ],
+      "evidence_gates": [
+        "workload",
+        "baseline",
+        "method",
+        "energy",
+        "thermal",
+        "yield",
+        "pdn_pvt",
+        "independent"
+      ],
+      "evidence_sufficiency_score": 0.375,
+      "keep_current_conditions": [
+        "Missing energy evidence keeps claim at or below TSEK-C.",
+        "Missing thermal evidence keeps claim at or below TSEK-C.",
+        "Missing yield evidence keeps claim at or below TSEK-C.",
+        "Missing pdn_pvt evidence keeps claim at or below TSEK-C.",
+        "Missing independent evidence keeps claim at or below TSEK-C."
+      ],
+      "measurement_package": {
+        "independent": [
+          "third-party reproduction",
+          "raw measurements",
+          "uncertainty bounds",
+          "replication protocol"
+        ],
+        "minimum": [
+          "workload",
+          "baseline",
+          "method",
+          "tau vector",
+          "gate evidence table"
+        ],
+        "strong": [
+          "energy",
+          "thermal",
+          "PDN/PVT",
+          "yield/manufacturability",
+          "negative controls"
+        ]
+      },
+      "missing_gates": [
+        "energy",
+        "thermal",
+        "yield",
+        "pdn_pvt",
+        "independent"
+      ],
+      "non_claim_lock": "Evidence sufficiency requirements define promotion conditions only. They do not promote the claim or validate silicon by themselves.",
+      "promote_to_tsek_a_requires": [
+        "independent reproduction",
+        "cross-workload replication",
+        "public methods package",
+        "adversarial negative controls"
+      ],
+      "promote_to_tsek_b_requires": [
+        "formal method statement",
+        "declared workload model",
+        "baseline comparator",
+        "repeatable calculation or simulation artifact"
+      ],
+      "recommended_action": "remain_current_class_pending_evidence",
+      "source_path": "claims\\public_tau\\tau-public-001-methodology.json",
+      "title": "Tau Scaling as post-geometric methodology"
+    },
+    {
+      "claim_family": "mechanism",
+      "claim_id": "tau-public-002-logicfolding",
+      "current_class": "TSEK-C",
+      "downgrade_or_reject_if": [
+        "wire savings erased by overhead",
+        "thermal collapse",
+        "closure failure",
+        "no workload-specific gain"
+      ],
+      "evidence_gates": [
+        "workload",
+        "baseline",
+        "method",
+        "energy",
+        "thermal",
+        "yield",
+        "pdn_pvt",
+        "independent"
+      ],
+      "evidence_sufficiency_score": 0.375,
+      "keep_current_conditions": [
+        "Missing energy evidence keeps claim at or below TSEK-C.",
+        "Missing thermal evidence keeps claim at or below TSEK-C.",
+        "Missing yield evidence keeps claim at or below TSEK-C.",
+        "Missing pdn_pvt evidence keeps claim at or below TSEK-C.",
+        "Missing independent evidence keeps claim at or below TSEK-C."
+      ],
+      "measurement_package": {
+        "independent": [
+          "third-party reproduction",
+          "raw measurements",
+          "uncertainty bounds",
+          "replication protocol"
+        ],
+        "minimum": [
+          "workload",
+          "baseline",
+          "method",
+          "tau vector",
+          "gate evidence table"
+        ],
+        "strong": [
+          "energy",
+          "thermal",
+          "PDN/PVT",
+          "yield/manufacturability",
+          "negative controls"
+        ]
+      },
+      "missing_gates": [
+        "energy",
+        "thermal",
+        "yield",
+        "pdn_pvt",
+        "independent"
+      ],
+      "non_claim_lock": "Evidence sufficiency requirements define promotion conditions only. They do not promote the claim or validate silicon by themselves.",
+      "promote_to_tsek_a_requires": [
+        "independent silicon or EDA reproduction",
+        "post-route closed design",
+        "measured energy-delay product",
+        "PVT and yield disclosure"
+      ],
+      "promote_to_tsek_b_requires": [
+        "post-route timing comparison",
+        "wire-delay reduction estimate",
+        "vertical/routing/sync overhead estimate",
+        "energy/thermal/PDN companion data"
+      ],
+      "recommended_action": "remain_current_class_pending_evidence",
+      "source_path": "claims\\public_tau\\tau-public-002-logicfolding.json",
+      "title": "LogicFolding reduces critical-path/wire delay"
+    },
+    {
+      "claim_family": "mechanism",
+      "claim_id": "tau-public-003-density-equivalent",
+      "current_class": "TSEK-C",
+      "downgrade_or_reject_if": [
+        "wire savings erased by overhead",
+        "thermal collapse",
+        "closure failure",
+        "no workload-specific gain"
+      ],
+      "evidence_gates": [
+        "workload",
+        "baseline",
+        "method",
+        "energy",
+        "thermal",
+        "yield",
+        "pdn_pvt",
+        "independent"
+      ],
+      "evidence_sufficiency_score": 0.375,
+      "keep_current_conditions": [
+        "Missing energy evidence keeps claim at or below TSEK-C.",
+        "Missing thermal evidence keeps claim at or below TSEK-C.",
+        "Missing yield evidence keeps claim at or below TSEK-C.",
+        "Missing pdn_pvt evidence keeps claim at or below TSEK-C.",
+        "Missing independent evidence keeps claim at or below TSEK-C."
+      ],
+      "measurement_package": {
+        "independent": [
+          "third-party reproduction",
+          "raw measurements",
+          "uncertainty bounds",
+          "replication protocol"
+        ],
+        "minimum": [
+          "workload",
+          "baseline",
+          "method",
+          "tau vector",
+          "gate evidence table"
+        ],
+        "strong": [
+          "energy",
+          "thermal",
+          "PDN/PVT",
+          "yield/manufacturability",
+          "negative controls"
+        ]
+      },
+      "missing_gates": [
+        "energy",
+        "thermal",
+        "yield",
+        "pdn_pvt",
+        "independent"
+      ],
+      "non_claim_lock": "Evidence sufficiency requirements define promotion conditions only. They do not promote the claim or validate silicon by themselves.",
+      "promote_to_tsek_a_requires": [
+        "independent silicon or EDA reproduction",
+        "post-route closed design",
+        "measured energy-delay product",
+        "PVT and yield disclosure"
+      ],
+      "promote_to_tsek_b_requires": [
+        "post-route timing comparison",
+        "wire-delay reduction estimate",
+        "vertical/routing/sync overhead estimate",
+        "energy/thermal/PDN companion data"
+      ],
+      "recommended_action": "remain_current_class_pending_evidence",
+      "source_path": "claims\\public_tau\\tau-public-003-density-equivalent.json",
+      "title": "Density-equivalent scaling from LogicFolding"
+    },
+    {
+      "claim_family": "metric",
+      "claim_id": "tau-public-004-roadmap-1p4nm-class",
+      "current_class": "TSEK-C",
+      "downgrade_or_reject_if": [
+        "density equivalence treated as node equivalence",
+        "single proxy metric without companion gates",
+        "ambiguous denominator"
+      ],
+      "evidence_gates": [
+        "workload",
+        "baseline",
+        "method",
+        "energy",
+        "thermal",
+        "yield",
+        "pdn_pvt",
+        "independent"
+      ],
+      "evidence_sufficiency_score": 0.375,
+      "keep_current_conditions": [
+        "Missing energy evidence keeps claim at or below TSEK-C.",
+        "Missing thermal evidence keeps claim at or below TSEK-C.",
+        "Missing yield evidence keeps claim at or below TSEK-C.",
+        "Missing pdn_pvt evidence keeps claim at or below TSEK-C.",
+        "Missing independent evidence keeps claim at or below TSEK-C."
+      ],
+      "measurement_package": {
+        "independent": [
+          "third-party reproduction",
+          "raw measurements",
+          "uncertainty bounds",
+          "replication protocol"
+        ],
+        "minimum": [
+          "workload",
+          "baseline",
+          "method",
+          "tau vector",
+          "gate evidence table"
+        ],
+        "strong": [
+          "energy",
+          "thermal",
+          "PDN/PVT",
+          "yield/manufacturability",
+          "negative controls"
+        ]
+      },
+      "missing_gates": [
+        "energy",
+        "thermal",
+        "yield",
+        "pdn_pvt",
+        "independent"
+      ],
+      "non_claim_lock": "Evidence sufficiency requirements define promotion conditions only. They do not promote the claim or validate silicon by themselves.",
+      "promote_to_tsek_a_requires": [
+        "independent benchmark replication",
+        "measurement protocol",
+        "uncertainty bounds",
+        "raw table availability"
+      ],
+      "promote_to_tsek_b_requires": [
+        "exact metric definition",
+        "baseline node/class comparator",
+        "normalization rule",
+        "energy/area/timing companion metrics"
+      ],
+      "recommended_action": "remain_current_class_pending_evidence",
+      "source_path": "claims\\public_tau\\tau-public-004-roadmap-1p4nm-class.json",
+      "title": "Roadmap projection toward 1.4nm-class density"
+    },
+    {
+      "claim_family": "architecture",
+      "claim_id": "tau-public-005-unified-bus",
+      "current_class": "TSEK-C",
+      "downgrade_or_reject_if": [
+        "local path win not full-chip win",
+        "unmodeled contention",
+        "routing/PDN overhead dominates"
+      ],
+      "evidence_gates": [
+        "workload",
+        "baseline",
+        "method",
+        "energy",
+        "thermal",
+        "yield",
+        "pdn_pvt",
+        "independent"
+      ],
+      "evidence_sufficiency_score": 0.375,
+      "keep_current_conditions": [
+        "Missing energy evidence keeps claim at or below TSEK-C.",
+        "Missing thermal evidence keeps claim at or below TSEK-C.",
+        "Missing yield evidence keeps claim at or below TSEK-C.",
+        "Missing pdn_pvt evidence keeps claim at or below TSEK-C.",
+        "Missing independent evidence keeps claim at or below TSEK-C."
+      ],
+      "measurement_package": {
+        "independent": [
+          "third-party reproduction",
+          "raw measurements",
+          "uncertainty bounds",
+          "replication protocol"
+        ],
+        "minimum": [
+          "workload",
+          "baseline",
+          "method",
+          "tau vector",
+          "gate evidence table"
+        ],
+        "strong": [
+          "energy",
+          "thermal",
+          "PDN/PVT",
+          "yield/manufacturability",
+          "negative controls"
+        ]
+      },
+      "missing_gates": [
+        "energy",
+        "thermal",
+        "yield",
+        "pdn_pvt",
+        "independent"
+      ],
+      "non_claim_lock": "Evidence sufficiency requirements define promotion conditions only. They do not promote the claim or validate silicon by themselves.",
+      "promote_to_tsek_a_requires": [
+        "independent implementation",
+        "post-layout or silicon measurement",
+        "stress workloads",
+        "failure-mode disclosure"
+      ],
+      "promote_to_tsek_b_requires": [
+        "architecture diagram",
+        "workload-specific traffic model",
+        "latency/bandwidth baseline",
+        "energy/thermal/PDN model"
+      ],
+      "recommended_action": "remain_current_class_pending_evidence",
+      "source_path": "claims\\public_tau\\tau-public-005-unified-bus.json",
+      "title": "Unified Bus reduces remote-access latency"
+    },
+    {
+      "claim_family": "io",
+      "claim_id": "tau-public-006-hione-optical-io",
+      "current_class": "TSEK-C",
+      "downgrade_or_reject_if": [
+        "I/O win not tied to workload",
+        "integration overhead dominates",
+        "energy per bit worsens"
+      ],
+      "evidence_gates": [
+        "workload",
+        "baseline",
+        "method",
+        "energy",
+        "thermal",
+        "yield",
+        "pdn_pvt",
+        "independent"
+      ],
+      "evidence_sufficiency_score": 0.375,
+      "keep_current_conditions": [
+        "Missing energy evidence keeps claim at or below TSEK-C.",
+        "Missing thermal evidence keeps claim at or below TSEK-C.",
+        "Missing yield evidence keeps claim at or below TSEK-C.",
+        "Missing pdn_pvt evidence keeps claim at or below TSEK-C.",
+        "Missing independent evidence keeps claim at or below TSEK-C."
+      ],
+      "measurement_package": {
+        "independent": [
+          "third-party reproduction",
+          "raw measurements",
+          "uncertainty bounds",
+          "replication protocol"
+        ],
+        "minimum": [
+          "workload",
+          "baseline",
+          "method",
+          "tau vector",
+          "gate evidence table"
+        ],
+        "strong": [
+          "energy",
+          "thermal",
+          "PDN/PVT",
+          "yield/manufacturability",
+          "negative controls"
+        ]
+      },
+      "missing_gates": [
+        "energy",
+        "thermal",
+        "yield",
+        "pdn_pvt",
+        "independent"
+      ],
+      "non_claim_lock": "Evidence sufficiency requirements define promotion conditions only. They do not promote the claim or validate silicon by themselves.",
+      "promote_to_tsek_a_requires": [
+        "measured package/system result",
+        "independent link characterization",
+        "thermal/yield disclosure",
+        "end-to-end workload gain"
+      ],
+      "promote_to_tsek_b_requires": [
+        "I/O bandwidth baseline",
+        "latency profile",
+        "energy per bit",
+        "integration overhead estimate"
+      ],
+      "recommended_action": "remain_current_class_pending_evidence",
+      "source_path": "claims\\public_tau\\tau-public-006-hione-optical-io.json",
+      "title": "Hi-ONE / optical I/O improves AI-scale data movement"
+    },
+    {
+      "claim_family": "topology",
+      "claim_id": "tau-public-007-3d-folding",
+      "current_class": "TSEK-C",
+      "downgrade_or_reject_if": [
+        "topology helps only before routing",
+        "vertical overhead dominates",
+        "manufacturability/yield collapse"
+      ],
+      "evidence_gates": [
+        "workload",
+        "baseline",
+        "method",
+        "energy",
+        "thermal",
+        "yield",
+        "pdn_pvt",
+        "independent"
+      ],
+      "evidence_sufficiency_score": 0.375,
+      "keep_current_conditions": [
+        "Missing energy evidence keeps claim at or below TSEK-C.",
+        "Missing thermal evidence keeps claim at or below TSEK-C.",
+        "Missing yield evidence keeps claim at or below TSEK-C.",
+        "Missing pdn_pvt evidence keeps claim at or below TSEK-C.",
+        "Missing independent evidence keeps claim at or below TSEK-C."
+      ],
+      "measurement_package": {
+        "independent": [
+          "third-party reproduction",
+          "raw measurements",
+          "uncertainty bounds",
+          "replication protocol"
+        ],
+        "minimum": [
+          "workload",
+          "baseline",
+          "method",
+          "tau vector",
+          "gate evidence table"
+        ],
+        "strong": [
+          "energy",
+          "thermal",
+          "PDN/PVT",
+          "yield/manufacturability",
+          "negative controls"
+        ]
+      },
+      "missing_gates": [
+        "energy",
+        "thermal",
+        "yield",
+        "pdn_pvt",
+        "independent"
+      ],
+      "non_claim_lock": "Evidence sufficiency requirements define promotion conditions only. They do not promote the claim or validate silicon by themselves.",
+      "promote_to_tsek_a_requires": [
+        "post-route closed design",
+        "measured timing-energy result",
+        "PVT/yield sweep",
+        "independent reproduction"
+      ],
+      "promote_to_tsek_b_requires": [
+        "topology model",
+        "wire-length/path reduction estimate",
+        "vertical interconnect penalty estimate",
+        "closure/thermal/yield analysis"
+      ],
+      "recommended_action": "remain_current_class_pending_evidence",
+      "source_path": "claims\\public_tau\\tau-public-007-3d-folding.json",
+      "title": "3D Folding solves edge-bound resource bottlenecks"
+    },
+    {
+      "claim_family": "roadmap",
+      "claim_id": "tau-public-008-ai-gap-closure",
+      "current_class": "TSEK-C",
+      "downgrade_or_reject_if": [
+        "roadmap language treated as achieved result",
+        "missing schedule assumptions",
+        "unbounded extrapolation"
+      ],
+      "evidence_gates": [
+        "workload",
+        "baseline",
+        "method",
+        "energy",
+        "thermal",
+        "yield",
+        "pdn_pvt",
+        "independent"
+      ],
+      "evidence_sufficiency_score": 0.375,
+      "keep_current_conditions": [
+        "Missing energy evidence keeps claim at or below TSEK-C.",
+        "Missing thermal evidence keeps claim at or below TSEK-C.",
+        "Missing yield evidence keeps claim at or below TSEK-C.",
+        "Missing pdn_pvt evidence keeps claim at or below TSEK-C.",
+        "Missing independent evidence keeps claim at or below TSEK-C."
+      ],
+      "measurement_package": {
+        "independent": [
+          "third-party reproduction",
+          "raw measurements",
+          "uncertainty bounds",
+          "replication protocol"
+        ],
+        "minimum": [
+          "workload",
+          "baseline",
+          "method",
+          "tau vector",
+          "gate evidence table"
+        ],
+        "strong": [
+          "energy",
+          "thermal",
+          "PDN/PVT",
+          "yield/manufacturability",
+          "negative controls"
+        ]
+      },
+      "missing_gates": [
+        "energy",
+        "thermal",
+        "yield",
+        "pdn_pvt",
+        "independent"
+      ],
+      "non_claim_lock": "Evidence sufficiency requirements define promotion conditions only. They do not promote the claim or validate silicon by themselves.",
+      "promote_to_tsek_a_requires": [
+        "completed independent product-level validation",
+        "published measurement package",
+        "yield/manufacturing evidence",
+        "third-party reproduction"
+      ],
+      "promote_to_tsek_b_requires": [
+        "milestone evidence",
+        "dated roadmap assumptions",
+        "dependency list",
+        "measured intermediate artifact"
+      ],
+      "recommended_action": "remain_current_class_pending_evidence",
+      "source_path": "claims\\public_tau\\tau-public-008-ai-gap-closure.json",
+      "title": "Tau Scaling materially closes AI-chip performance gap"
+    }
+  ],
+  "mutation_allowed": false,
+  "promotion_lock": "No claim is promoted by this matrix. Promotion requires disclosed evidence satisfying the required gates and independent review.",
+  "research_finding": "Public Tau claims can now be evaluated by explicit evidence sufficiency requirements rather than narrative plausibility.",
+  "schema": "tau-scaling-evidence-sufficiency-matrix-v0.8.4",
+  "thresholds_changed": false
+}

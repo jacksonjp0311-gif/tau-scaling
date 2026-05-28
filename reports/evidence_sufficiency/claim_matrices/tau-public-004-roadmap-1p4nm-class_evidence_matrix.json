@@ -1,0 +1,73 @@
+{
+  "claim_family": "metric",
+  "claim_id": "tau-public-004-roadmap-1p4nm-class",
+  "current_class": "TSEK-C",
+  "downgrade_or_reject_if": [
+    "density equivalence treated as node equivalence",
+    "single proxy metric without companion gates",
+    "ambiguous denominator"
+  ],
+  "evidence_gates": [
+    "workload",
+    "baseline",
+    "method",
+    "energy",
+    "thermal",
+    "yield",
+    "pdn_pvt",
+    "independent"
+  ],
+  "evidence_sufficiency_score": 0.375,
+  "keep_current_conditions": [
+    "Missing energy evidence keeps claim at or below TSEK-C.",
+    "Missing thermal evidence keeps claim at or below TSEK-C.",
+    "Missing yield evidence keeps claim at or below TSEK-C.",
+    "Missing pdn_pvt evidence keeps claim at or below TSEK-C.",
+    "Missing independent evidence keeps claim at or below TSEK-C."
+  ],
+  "measurement_package": {
+    "independent": [
+      "third-party reproduction",
+      "raw measurements",
+      "uncertainty bounds",
+      "replication protocol"
+    ],
+    "minimum": [
+      "workload",
+      "baseline",
+      "method",
+      "tau vector",
+      "gate evidence table"
+    ],
+    "strong": [
+      "energy",
+      "thermal",
+      "PDN/PVT",
+      "yield/manufacturability",
+      "negative controls"
+    ]
+  },
+  "missing_gates": [
+    "energy",
+    "thermal",
+    "yield",
+    "pdn_pvt",
+    "independent"
+  ],
+  "non_claim_lock": "Evidence sufficiency requirements define promotion conditions only. They do not promote the claim or validate silicon by themselves.",
+  "promote_to_tsek_a_requires": [
+    "independent benchmark replication",
+    "measurement protocol",
+    "uncertainty bounds",
+    "raw table availability"
+  ],
+  "promote_to_tsek_b_requires": [
+    "exact metric definition",
+    "baseline node/class comparator",
+    "normalization rule",
+    "energy/area/timing companion metrics"
+  ],
+  "recommended_action": "remain_current_class_pending_evidence",
+  "source_path": "claims\\public_tau\\tau-public-004-roadmap-1p4nm-class.json",
+  "title": "Roadmap projection toward 1.4nm-class density"
+}

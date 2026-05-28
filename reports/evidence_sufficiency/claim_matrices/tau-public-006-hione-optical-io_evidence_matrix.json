@@ -1,0 +1,73 @@
+{
+  "claim_family": "io",
+  "claim_id": "tau-public-006-hione-optical-io",
+  "current_class": "TSEK-C",
+  "downgrade_or_reject_if": [
+    "I/O win not tied to workload",
+    "integration overhead dominates",
+    "energy per bit worsens"
+  ],
+  "evidence_gates": [
+    "workload",
+    "baseline",
+    "method",
+    "energy",
+    "thermal",
+    "yield",
+    "pdn_pvt",
+    "independent"
+  ],
+  "evidence_sufficiency_score": 0.375,
+  "keep_current_conditions": [
+    "Missing energy evidence keeps claim at or below TSEK-C.",
+    "Missing thermal evidence keeps claim at or below TSEK-C.",
+    "Missing yield evidence keeps claim at or below TSEK-C.",
+    "Missing pdn_pvt evidence keeps claim at or below TSEK-C.",
+    "Missing independent evidence keeps claim at or below TSEK-C."
+  ],
+  "measurement_package": {
+    "independent": [
+      "third-party reproduction",
+      "raw measurements",
+      "uncertainty bounds",
+      "replication protocol"
+    ],
+    "minimum": [
+      "workload",
+      "baseline",
+      "method",
+      "tau vector",
+      "gate evidence table"
+    ],
+    "strong": [
+      "energy",
+      "thermal",
+      "PDN/PVT",
+      "yield/manufacturability",
+      "negative controls"
+    ]
+  },
+  "missing_gates": [
+    "energy",
+    "thermal",
+    "yield",
+    "pdn_pvt",
+    "independent"
+  ],
+  "non_claim_lock": "Evidence sufficiency requirements define promotion conditions only. They do not promote the claim or validate silicon by themselves.",
+  "promote_to_tsek_a_requires": [
+    "measured package/system result",
+    "independent link characterization",
+    "thermal/yield disclosure",
+    "end-to-end workload gain"
+  ],
+  "promote_to_tsek_b_requires": [
+    "I/O bandwidth baseline",
+    "latency profile",
+    "energy per bit",
+    "integration overhead estimate"
+  ],
+  "recommended_action": "remain_current_class_pending_evidence",
+  "source_path": "claims\\public_tau\\tau-public-006-hione-optical-io.json",
+  "title": "Hi-ONE / optical I/O improves AI-scale data movement"
+}
