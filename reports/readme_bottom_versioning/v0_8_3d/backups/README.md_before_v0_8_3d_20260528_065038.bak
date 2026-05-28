@@ -10,8 +10,8 @@
 
 Repository: `tau-scaling`  
 Package / CLI: `tau_scaling` / `tau-scaling`  
-Current checkpoint: **TAU-SCALING-SA v0.8.3d - README Bottom Versioning and Presentation Tail Repair**  
-Previous seal: **TAU-SCALING-SA v0.8.3c - README Presentation Restore**
+Current checkpoint: **TAU-SCALING-SA v0.8.3c - README Presentation Restore**  
+Previous seal: **TAU-SCALING-SA v0.8.3b - README Render and Alignment Repair**
 
 Tau Scaling is a local-first, evidence-gated Python runtime for evaluating tau-scaling claims through structured claim cards, workload declarations, tau vectors, LogicFolding survivability checks, edge-to-surface boundary algebra, energy / thermal / PDN / PVT gates, Monte Carlo checker stress, TSEK classification, evidence packages, and RCC-N / OMN-style repository navigation.
 
@@ -125,7 +125,7 @@ Active research question: **What evidence is sufficient to move a Tau Scaling cl
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | TAU-SCALING-SA v0.8.3d |
+| Current checkpoint | TAU-SCALING-SA v0.8.3c |
 | Synthetic gate suite | v0.4.0 / benchmark + finding charts |
 | Package version | 0.2.0 |
 | Baseline seed | TSEK-C / A_TSEK 0.0000 |
@@ -134,7 +134,7 @@ Active research question: **What evidence is sufficient to move a Tau Scaling cl
 | README mini repo audit | passing / 0 warnings |
 | Unified release validator | passing / step failures 0 |
 | AGENTS.md contract | synchronized with release validator |
-| Task routing matrix | geometry-aware / v0.8.3d-ready |
+| Task routing matrix | geometry-aware / v0.8.3c-ready |
 | Release warning findings | non-blocking / tracked by release readiness report |
 | Architecture validator | passing / 0 warnings |
 | Unit tests | 8 OK |
@@ -228,14 +228,12 @@ Active research question: **What evidence is sufficient to move a Tau Scaling cl
 | Threshold governance charts | `visuals/threshold_governance_summary/v0_7_9/` |
 | Stable Tau threshold governance | `reports/stable_tau_threshold_governance/latest_stable_tau_threshold_governance_milestone.md` |
 | Stable Tau threshold charts | `visuals/stable_tau_threshold_governance/v0_8_0/` |
-| Agent contract version sync | current / v0.8.3d |
+| Agent contract version sync | current / v0.8.3c |
 | Release readiness report | `reports/release/latest_release_readiness.md` |
 | Collision-proof run identity | passed |
 | Mini README coverage | 1.0 |
 | Major dirs checked | 25 |
 | Durable dirs checked by README audit | 38 |
-| README presentation restore | `reports/readme_presentation_restore/latest_readme_presentation_restore.md` |
-| README bottom versioning repair | `reports/readme_bottom_versioning/latest_readme_bottom_versioning_repair.md` |
 | Claim status | local runtime evidence + benchmark observability only |
 
 The baseline demo remains **TSEK-C** by design: the system refuses to promote a claim beyond disclosed evidence. The promotion-path seed demonstrates how stronger disclosed evidence can move a claim to **TSEK-B** without weakening gates.
@@ -626,7 +624,6 @@ This section is part of the repository's operating memory. When a patch fails, t
 | L-065 | v0.8.3 LogicFolding sweep succeeded, but README audit failed again on the em-dash AI Rule anchor. | Windows PowerShell read/write paths can reintroduce mojibake into UTF-8 README surfaces. | README repairs that must preserve Unicode audit anchors must use explicit UTF-8 patchers, then rerun release validator before commit. |
 | L-066 | v0.8.3a passed all validators but README rendering still showed mojibake and broken code fences. | Passing exact anchors is not the same as human-readable public rendering. | After validator repair, inspect rendered README for mojibake, broken fences, duplicate lesson headers, stale metrics, and directory-box drift. |
 | L-067 | v0.8.3b made validators clean but created visually heavy README boxes and visible text labels. | Repair optimized for validation and directory completeness instead of public readability. | Presentation repairs must preserve human-readable README layout: use bullets/tables for short findings and reserve fenced blocks for commands or true code. |
-| L-068 | v0.8.3c restored the top README presentation, but the release lineage tail still had stale v0.8.3 text and a corrupt Next Recommended heading. | Top and bottom README sections can drift independently after surgical repairs. | Presentation repairs must inspect the README tail: release lineage, next-version block, duplicate sections, and stale version labels. |
 
 ### Failure Response Protocol
 
@@ -2542,15 +2539,51 @@ validation_remains_required
 | v0.7.8 | Threshold decision record; converts dry-run pressure into a non-mutating decision. |
 | v0.7.9 | Threshold governance summary; summarizes v0.7.x and freezes threshold mutation pending more evidence. |
 | v0.8.0 | Stable Tau threshold governance milestone; packages v0.7.x and routes future work to evidence expansion. |
-| v0.8.1 | README benchmark publication surface for stable Tau threshold findings. |
-| v0.8.1a | README benchmark publication lock repair with exact public anchors. |
-| v0.8.2 | Public Tau claim ledger; source-bounded classification of company/public claims. |
-| v0.8.2a | README showcase and audit-anchor repair for public Tau findings. |
-| v0.8.3 | LogicFolding plausibility sweep; synthetic proof/falsification regime test. |
-| v0.8.3a | README UTF-8 audit-anchor repair after LogicFolding sweep. |
-| v0.8.3b | README render/alignment repair after remaining mojibake and directory-box drift. |
-| v0.8.3c | README presentation restore; compact human-readable layout. |
-| v0.8.3d | README bottom versioning and final presentation tail repair. |
+
+## N```` Recommended Version
+
+**TAU-SCALING-SA v0.8.3 - LogicFolding Plausibility Sweep**
+
+Recommended goals:
+
+- Sweep the global LogicFolding survivability inequality.
+- Test when wire-delay savings dominate vertical, routing, sync, variation, closure, thermal, and yield penalties.
+- Keep public claims classified by disclosed evidence.
+- Keep threshold and classifier mutation disabled.
+- Preserve `mutation_allowed: false`.
+
+## LogicFolding Plausibility Sweep v0.8.3
+
+This layer begins proof/falsification work on the core LogicFolding claim by testing the TSEK survivability inequality under synthetic priors.
+
+```
+rho_c * E[delta_tau_wire] >
+E[tau_vertical] + tau_route + tau_sync + tau_variation + tau_closure
+
+gamma_tau_ETP > 1
+```
+
+Primary outputs:
+
+```
+reports/logicfolding_plausibility/latest_logicfolding_plausibility_sweep.md
+reports/logicfolding_plausibility/latest_logicfolding_plausibility_sweep.json
+visuals/logicfolding_plausibility/v0_8_3/
+```
+
+Research interpretation:
+
+```
+LogicFolding is conditionally plausible when critical-path coverage and wire-delay savings are high enough to dominate vertical, routing, sync, variation, and closure costs, and when energy/thermal/PDN-normalized tau gain remains above one.
+```
+
+Falsification pressure:
+
+```
+Thermal-stressed and closure-stressed priors test whether apparent timing gains collapse when companion gates dominate.
+```
+
+Boundary: this is synthetic plausibility testing only. It does not validate Huawei silicon, products, manufacturing capability, process-node equivalence, benchmark superiority, or universal Tau Scaling law.
 
 ## Next Recommended Version
 
@@ -2560,7 +2593,6 @@ Recommended goals:
 
 - Convert public Tau claim classes into explicit evidence sufficiency requirements.
 - Define what evidence would promote TSEK-C to TSEK-B and TSEK-B to TSEK-A.
-- Define what evidence would force downgrade to TSEK-D or TSEK-E.
 - Preserve downgrade discipline and non-claim locks.
 - Keep threshold and classifier mutation disabled.
 - Preserve `mutation_allowed: false`.
