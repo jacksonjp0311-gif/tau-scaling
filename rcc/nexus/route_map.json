@@ -70,7 +70,7 @@
                                       ]
                },
     "schema":  "rcc-nexus-route-map-v1.7",
-    "updated_at":  "2026-05-28T15:08:02.5621135Z",
+    "updated_at":  "2026-05-28T15:12:08.5945197Z",
     "v0_4_routes":  {
                         "feedback_chart_path_health_repair":  {
                                                                   "evidence":  [
@@ -1057,5 +1057,8 @@
                        "runtime":  "python -m tau_scaling run-claim --seed configs/seeds/logicfolding_claim_card.json",
                        "tests":  "python -m unittest discover -s tests"
                    },
-    "version":  "v0.8.9"
+    "version":  "v0.9.0",
+    "v0_9_routes":  {
+
+                    }
 }

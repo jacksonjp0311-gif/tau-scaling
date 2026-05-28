@@ -1,0 +1,169 @@
+{
+  "application_allowed": false,
+  "claim_promotion_allowed": false,
+  "classifier_changed": false,
+  "generated_at": "2026-05-28T15:12:10.204885+00:00",
+  "independent_validation_claimed": false,
+  "metrics": {
+    "average_gap_count": 14.75,
+    "average_source_confidence": 0.5837,
+    "claim_count": 8,
+    "high_gap_claim_count": 8,
+    "independent_source_confirmed_count": 0,
+    "primary_source_confirmed_count": 0,
+    "release_findings": 0,
+    "release_passed": true,
+    "source_populated_count": 8
+  },
+  "mutation_allowed": false,
+  "non_claims": [
+    "This package does not validate silicon.",
+    "This package does not validate Huawei products.",
+    "This package does not prove benchmark superiority.",
+    "This package does not establish process-node equivalence.",
+    "This package does not establish a universal Tau Scaling law.",
+    "This package does not promote any public Tau claim beyond its evidence gates."
+  ],
+  "package_dir": "releases\\public_research_milestone_v0_9_0",
+  "package_items": [
+    {
+      "exists": true,
+      "label": "tau_claim_ledger",
+      "packaged_as": "releases\\public_research_milestone_v0_9_0\\reports\\latest_tau_public_claim_ledger.md",
+      "source": "reports\\tau_claim_ledger\\latest_tau_public_claim_ledger.md"
+    },
+    {
+      "exists": true,
+      "label": "logicfolding_plausibility",
+      "packaged_as": "releases\\public_research_milestone_v0_9_0\\reports\\latest_logicfolding_plausibility_sweep.md",
+      "source": "reports\\logicfolding_plausibility\\latest_logicfolding_plausibility_sweep.md"
+    },
+    {
+      "exists": true,
+      "label": "evidence_sufficiency",
+      "packaged_as": "releases\\public_research_milestone_v0_9_0\\reports\\latest_evidence_sufficiency_matrix.md",
+      "source": "reports\\evidence_sufficiency\\latest_evidence_sufficiency_matrix.md"
+    },
+    {
+      "exists": true,
+      "label": "public_source_ledger",
+      "packaged_as": "releases\\public_research_milestone_v0_9_0\\reports\\latest_public_source_ledger.md",
+      "source": "reports\\public_source_ledger\\latest_public_source_ledger.md"
+    },
+    {
+      "exists": true,
+      "label": "source_evidence_intake",
+      "packaged_as": "releases\\public_research_milestone_v0_9_0\\reports\\latest_source_evidence_intake_cards.md",
+      "source": "reports\\source_evidence_intake\\latest_source_evidence_intake_cards.md"
+    },
+    {
+      "exists": true,
+      "label": "primary_source_intake_queue",
+      "packaged_as": "releases\\public_research_milestone_v0_9_0\\reports\\latest_primary_source_intake_queue.md",
+      "source": "reports\\primary_source_intake\\latest_primary_source_intake_queue.md"
+    },
+    {
+      "exists": true,
+      "label": "public_source_population",
+      "packaged_as": "releases\\public_research_milestone_v0_9_0\\reports\\latest_public_source_population_pass.md",
+      "source": "reports\\public_source_population\\latest_public_source_population_pass.md"
+    },
+    {
+      "exists": true,
+      "label": "primary_source_gap_review",
+      "packaged_as": "releases\\public_research_milestone_v0_9_0\\reports\\latest_primary_source_gap_review.md",
+      "source": "reports\\primary_source_gap_review\\latest_primary_source_gap_review.md"
+    },
+    {
+      "exists": true,
+      "label": "publishable_findings",
+      "packaged_as": "releases\\public_research_milestone_v0_9_0\\reports\\latest_publishable_findings_brief.md",
+      "source": "reports\\publishable_findings\\latest_publishable_findings_brief.md"
+    },
+    {
+      "exists": true,
+      "label": "release_readiness",
+      "packaged_as": "releases\\public_research_milestone_v0_9_0\\reports\\latest_release_readiness.md",
+      "source": "reports\\release\\latest_release_readiness.md"
+    },
+    {
+      "exists": true,
+      "label": "tau_claim_ledger",
+      "packaged_as": "releases\\public_research_milestone_v0_9_0\\json\\latest_tau_public_claim_ledger.json",
+      "source": "reports\\tau_claim_ledger\\latest_tau_public_claim_ledger.json"
+    },
+    {
+      "exists": true,
+      "label": "logicfolding_plausibility",
+      "packaged_as": "releases\\public_research_milestone_v0_9_0\\json\\latest_logicfolding_plausibility_sweep.json",
+      "source": "reports\\logicfolding_plausibility\\latest_logicfolding_plausibility_sweep.json"
+    },
+    {
+      "exists": true,
+      "label": "evidence_sufficiency",
+      "packaged_as": "releases\\public_research_milestone_v0_9_0\\json\\latest_evidence_sufficiency_matrix.json",
+      "source": "reports\\evidence_sufficiency\\latest_evidence_sufficiency_matrix.json"
+    },
+    {
+      "exists": true,
+      "label": "public_source_population",
+      "packaged_as": "releases\\public_research_milestone_v0_9_0\\json\\latest_public_source_population_pass.json",
+      "source": "reports\\public_source_population\\latest_public_source_population_pass.json"
+    },
+    {
+      "exists": true,
+      "label": "primary_source_gap_review",
+      "packaged_as": "releases\\public_research_milestone_v0_9_0\\json\\latest_primary_source_gap_review.json",
+      "source": "reports\\primary_source_gap_review\\latest_primary_source_gap_review.json"
+    },
+    {
+      "exists": true,
+      "label": "publishable_findings",
+      "packaged_as": "releases\\public_research_milestone_v0_9_0\\json\\latest_publishable_findings_brief.json",
+      "source": "reports\\publishable_findings\\latest_publishable_findings_brief.json"
+    },
+    {
+      "exists": true,
+      "label": "release_readiness",
+      "packaged_as": "releases\\public_research_milestone_v0_9_0\\json\\latest_release_readiness.json",
+      "source": "reports\\release\\latest_release_readiness.json"
+    },
+    {
+      "exists": true,
+      "label": "source_population_manifest",
+      "packaged_as": "releases\\public_research_milestone_v0_9_0\\manifests\\source_population_manifest_v0_8_8.json",
+      "source": "sources\\primary_source_intake\\source_population_manifest_v0_8_8.json"
+    },
+    {
+      "exists": true,
+      "label": "source_seed_manifest",
+      "packaged_as": "releases\\public_research_milestone_v0_9_0\\manifests\\source_seed_manifest_v0_8_7.json",
+      "source": "sources\\primary_source_intake\\source_seed_manifest_v0_8_7.json"
+    },
+    {
+      "exists": true,
+      "label": "primary_source_gap_review",
+      "packaged_as": "releases\\public_research_milestone_v0_9_0\\visuals\\primary_source_gap_review.svg",
+      "source": "visuals\\primary_source_gap_review\\v0_8_9\\primary_source_gap_review.svg"
+    },
+    {
+      "exists": true,
+      "label": "public_source_population",
+      "packaged_as": "releases\\public_research_milestone_v0_9_0\\visuals\\public_source_population_pass.svg",
+      "source": "visuals\\public_source_population\\v0_8_8\\public_source_population_pass.svg"
+    },
+    {
+      "exists": true,
+      "label": "evidence_sufficiency",
+      "packaged_as": "releases\\public_research_milestone_v0_9_0\\visuals\\evidence_sufficiency_matrix.svg",
+      "source": "visuals\\evidence_sufficiency\\v0_8_4\\evidence_sufficiency_matrix.svg"
+    }
+  ],
+  "primary_source_validation_claimed": false,
+  "publishable_claim": "Tau Scaling public claims can be represented as an evidence-gated claim system with reproducible source-provenance and primary-validation gap surfaces.",
+  "schema": "tau-scaling-public-research-milestone-v0.9.0",
+  "source_validation_claimed": false,
+  "subtitle": "Source Population, Primary-Validation Gaps, and Non-Claim Locks",
+  "thresholds_changed": false,
+  "title": "Tau Scaling as an Evidence-Gated Public Claim System"
+}

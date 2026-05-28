@@ -1,6 +1,6 @@
 # AGENTS.md Ã¢â‚¬â€ Tau Scaling Agent Operating Contract
 
-Current contract: **TAU-SCALING-SA v0.8.9 - Primary Source Validation Gap Review**
+Current contract: **TAU-SCALING-SA v0.9.0 - Public Research Milestone Package**
 
 ## Mission
 

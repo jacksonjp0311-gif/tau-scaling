@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<rect width="1600" height="900" fill="#020617"/>
+<text x="800" y="78" text-anchor="middle" fill="#67e8f9" font-size="46" font-family="Segoe UI" font-weight="700">Tau Scaling Public Research Milestone v0.9.0</text>
+<text x="800" y="126" text-anchor="middle" fill="#cbd5e1" font-size="24" font-family="Segoe UI">Evidence-gated public claim system; source-populated, not primary-validated</text>
+<text x="180" y="230" fill="#f8fafc" font-size="28" font-family="Segoe UI">Public claims analyzed: 8</text>
+<rect x="180" y="260" width="840" height="50" rx="12" fill="#22c55e"/>
+<text x="180" y="350" fill="#f8fafc" font-size="28" font-family="Segoe UI">Source-populated claims: 8</text>
+<rect x="180" y="380" width="105" height="50" rx="12" fill="#f59e0b"/>
+<text x="180" y="470" fill="#f8fafc" font-size="28" font-family="Segoe UI">Primary-source confirmed: 0</text>
+<rect x="180" y="500" width="105" height="50" rx="12" fill="#a78bfa"/>
+<text x="180" y="590" fill="#f8fafc" font-size="28" font-family="Segoe UI">Independent-source confirmed: 0</text>
+<rect x="180" y="620" width="840" height="50" rx="12" fill="#ef4444"/>
+<text x="180" y="710" fill="#f8fafc" font-size="28" font-family="Segoe UI">High validation-gap claims: 8</text>
+<text x="800" y="830" text-anchor="middle" fill="#94a3b8" font-size="22" font-family="Segoe UI">Publishable as source-provenance and validation-gap analysis; not as silicon validation.</text>
+</svg>

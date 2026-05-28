@@ -1,0 +1,355 @@
+{
+  "application_allowed": false,
+  "average_missing_evidence_gates": 6.375,
+  "boundary": "Public Tau claim ledgers classify disclosed evidence only. They do not validate Huawei silicon, products, manufacturing, process nodes, benchmark superiority, or universal Tau Scaling law.",
+  "calibration_applied": false,
+  "claim_count": 8,
+  "claims": [
+    {
+      "baseline_disclosed": true,
+      "claim_id": "tau-public-001-methodology",
+      "claim_text": "Tau Scaling proposes that post-Moore electronic-system progress should be governed by cross-layer time-constant minimization rather than feature-size reduction alone.",
+      "claim_type": "methodological_thesis",
+      "current_tsek_class": "TSEK-C",
+      "declared_workload": "cross_layer_electronic_systems",
+      "downgrade_reason": "Coherent industrial methodology, but not independent validation or universal physical law.",
+      "energy_reported": false,
+      "falsification_triggers": [
+        "treated as universal law without evidence",
+        "no workload-level tau improvement",
+        "energy/thermal/yield gates fail"
+      ],
+      "generated_at": "2026-05-28T09:50:49.5623691Z",
+      "independent_validation_present": false,
+      "mechanism": "tau_stack",
+      "method_disclosed": "partial",
+      "non_claim_locks": {
+        "not_benchmark_superiority_proof": true,
+        "not_independent_validation": true,
+        "not_manufacturing_validation": true,
+        "not_process_node_equivalence": true,
+        "not_product_validation": true,
+        "not_universal_tau_law_proof": true
+      },
+      "pdn_pvt_reported": false,
+      "promotion_requirements": [
+        "independent review",
+        "reproducible workload metrics",
+        "baseline/candidate measurement packages"
+      ],
+      "reported_metric": null,
+      "schema": "tau-scaling-public-tau-claim-card-v0.8.2",
+      "source_layer": "paper_methodology",
+      "thermal_reported": false,
+      "title": "Tau Scaling as post-geometric methodology",
+      "version": "v0.8.2",
+      "yield_reported": false
+    },
+    {
+      "baseline_disclosed": false,
+      "claim_id": "tau-public-002-logicfolding",
+      "claim_text": "LogicFolding reorganizes logic, analog, and memory circuits across stacked active tiers to reduce critical paths and timing delay.",
+      "claim_type": "reported_mechanism",
+      "current_tsek_class": "TSEK-C",
+      "declared_workload": "mobile_soc",
+      "downgrade_reason": "Mechanism is plausible, but strong class requires post-route timing, overhead, thermal, PDN/PVT, and yield evidence.",
+      "energy_reported": false,
+      "falsification_triggers": [
+        "vertical overhead dominates savings",
+        "post-route timing closure fails",
+        "thermal or yield burden erases gain"
+      ],
+      "generated_at": "2026-05-28T09:50:49.6548353Z",
+      "independent_validation_present": false,
+      "mechanism": "logicfolding",
+      "method_disclosed": "partial",
+      "non_claim_locks": {
+        "not_benchmark_superiority_proof": true,
+        "not_independent_validation": true,
+        "not_manufacturing_validation": true,
+        "not_process_node_equivalence": true,
+        "not_product_validation": true,
+        "not_universal_tau_law_proof": true
+      },
+      "pdn_pvt_reported": false,
+      "promotion_requirements": [
+        "post-route timing closure",
+        "wire-delay savings",
+        "vertical overhead disclosure",
+        "thermal/yield/variation data"
+      ],
+      "reported_metric": "wire delay / critical path reduction, as reported publicly",
+      "schema": "tau-scaling-public-tau-claim-card-v0.8.2",
+      "source_layer": "paper_and_announcement",
+      "thermal_reported": false,
+      "title": "LogicFolding reduces critical-path/wire delay",
+      "version": "v0.8.2",
+      "yield_reported": false
+    },
+    {
+      "baseline_disclosed": false,
+      "claim_id": "tau-public-003-density-equivalent",
+      "claim_text": "Public Tau/LogicFolding claims include density-equivalent improvements from topological reorganization.",
+      "claim_type": "reported_metric",
+      "current_tsek_class": "TSEK-C",
+      "declared_workload": "chip_density",
+      "downgrade_reason": "Density-equivalent is not process-node equivalence and requires die/area/method disclosure.",
+      "energy_reported": false,
+      "falsification_triggers": [
+        "node-equivalence overclaim",
+        "area excludes necessary overhead structures",
+        "yield/thermal data absent"
+      ],
+      "generated_at": "2026-05-28T09:50:49.6558382Z",
+      "independent_validation_present": false,
+      "mechanism": "density_equivalent_logicfolding",
+      "method_disclosed": false,
+      "non_claim_locks": {
+        "not_benchmark_superiority_proof": true,
+        "not_independent_validation": true,
+        "not_manufacturing_validation": true,
+        "not_process_node_equivalence": true,
+        "not_product_validation": true,
+        "not_universal_tau_law_proof": true
+      },
+      "pdn_pvt_reported": false,
+      "promotion_requirements": [
+        "die area accounting",
+        "keep-out/bonding/repair overhead",
+        "comparison baseline",
+        "third-party review"
+      ],
+      "reported_metric": "density-equivalent gain",
+      "schema": "tau-scaling-public-tau-claim-card-v0.8.2",
+      "source_layer": "public_announcement",
+      "thermal_reported": false,
+      "title": "Density-equivalent scaling from LogicFolding",
+      "version": "v0.8.2",
+      "yield_reported": false
+    },
+    {
+      "baseline_disclosed": false,
+      "claim_id": "tau-public-004-roadmap-1p4nm-class",
+      "claim_text": "Public roadmap language projects advanced density-equivalent targets in future years.",
+      "claim_type": "forecast",
+      "current_tsek_class": "TSEK-D",
+      "declared_workload": "roadmap",
+      "downgrade_reason": "Projection-heavy roadmap claim without achieved measurement package.",
+      "energy_reported": false,
+      "falsification_triggers": [
+        "presented as achieved production proof",
+        "contradicted by measured density/area/yield data"
+      ],
+      "generated_at": "2026-05-28T09:50:49.6587333Z",
+      "independent_validation_present": false,
+      "mechanism": "roadmap_tau_scaling",
+      "method_disclosed": false,
+      "non_claim_locks": {
+        "not_benchmark_superiority_proof": true,
+        "not_independent_validation": true,
+        "not_manufacturing_validation": true,
+        "not_process_node_equivalence": true,
+        "not_product_validation": true,
+        "not_universal_tau_law_proof": true
+      },
+      "pdn_pvt_reported": false,
+      "promotion_requirements": [
+        "achieved die-level result",
+        "method disclosure",
+        "power/thermal/yield data",
+        "independent benchmark or teardown"
+      ],
+      "reported_metric": "future density target",
+      "schema": "tau-scaling-public-tau-claim-card-v0.8.2",
+      "source_layer": "roadmap_projection",
+      "thermal_reported": false,
+      "title": "Roadmap projection toward 1.4nm-class density",
+      "version": "v0.8.2",
+      "yield_reported": false
+    },
+    {
+      "baseline_disclosed": false,
+      "claim_id": "tau-public-005-unified-bus",
+      "claim_text": "Unified Bus is presented as a data-movement tau reduction mechanism for AI-scale systems.",
+      "claim_type": "reported_metric",
+      "current_tsek_class": "TSEK-C",
+      "declared_workload": "ai_cluster_memory_access",
+      "downgrade_reason": "Potentially important data-movement mechanism, but workload, baseline, method, and independent benchmark evidence are missing.",
+      "energy_reported": false,
+      "falsification_triggers": [
+        "latency gain only under synthetic workload",
+        "energy cost erases benefit",
+        "coherence/protocol overhead hidden"
+      ],
+      "generated_at": "2026-05-28T09:50:49.6607368Z",
+      "independent_validation_present": false,
+      "mechanism": "unified_bus",
+      "method_disclosed": false,
+      "non_claim_locks": {
+        "not_benchmark_superiority_proof": true,
+        "not_independent_validation": true,
+        "not_manufacturing_validation": true,
+        "not_process_node_equivalence": true,
+        "not_product_validation": true,
+        "not_universal_tau_law_proof": true
+      },
+      "pdn_pvt_reported": false,
+      "promotion_requirements": [
+        "latency benchmark",
+        "baseline fabric",
+        "workload profile",
+        "power per transfer",
+        "independent reproduction"
+      ],
+      "reported_metric": "remote-access latency reduction",
+      "schema": "tau-scaling-public-tau-claim-card-v0.8.2",
+      "source_layer": "paper_and_public_announcement",
+      "thermal_reported": false,
+      "title": "Unified Bus reduces remote-access latency",
+      "version": "v0.8.2",
+      "yield_reported": false
+    },
+    {
+      "baseline_disclosed": false,
+      "claim_id": "tau-public-006-hione-optical-io",
+      "claim_text": "Hi-ONE or optical I/O mechanisms are presented as high-bandwidth tau-reduction interfaces for AI systems.",
+      "claim_type": "reported_mechanism",
+      "current_tsek_class": "TSEK-C",
+      "declared_workload": "ai_cluster_io",
+      "downgrade_reason": "Mechanism is plausible, but strong evidence requires optical/electrical baseline, energy, thermal, packaging, and workload data.",
+      "energy_reported": false,
+      "falsification_triggers": [
+        "optical interface overhead dominates",
+        "packaging/thermal burden erases gain",
+        "no workload-level observable improvement"
+      ],
+      "generated_at": "2026-05-28T09:50:49.6617370Z",
+      "independent_validation_present": false,
+      "mechanism": "hione_optical_io",
+      "method_disclosed": false,
+      "non_claim_locks": {
+        "not_benchmark_superiority_proof": true,
+        "not_independent_validation": true,
+        "not_manufacturing_validation": true,
+        "not_process_node_equivalence": true,
+        "not_product_validation": true,
+        "not_universal_tau_law_proof": true
+      },
+      "pdn_pvt_reported": false,
+      "promotion_requirements": [
+        "bandwidth test",
+        "latency test",
+        "pJ/bit data",
+        "thermal/package integration data",
+        "baseline comparison"
+      ],
+      "reported_metric": "bandwidth / latency / pJ-per-bit improvement",
+      "schema": "tau-scaling-public-tau-claim-card-v0.8.2",
+      "source_layer": "paper_and_public_announcement",
+      "thermal_reported": false,
+      "title": "Hi-ONE / optical I/O improves AI-scale data movement",
+      "version": "v0.8.2",
+      "yield_reported": false
+    },
+    {
+      "baseline_disclosed": true,
+      "claim_id": "tau-public-007-3d-folding",
+      "claim_text": "3D Folding moves resource delivery from perimeter-bound edges toward surface/volume coupling to address N^2-vs-N resource mismatch.",
+      "claim_type": "topology_argument",
+      "current_tsek_class": "TSEK-C",
+      "declared_workload": "ai_package_resource_delivery",
+      "downgrade_reason": "Boundary math is strong, but implementation proof requires overhead gates.",
+      "energy_reported": false,
+      "falsification_triggers": [
+        "thermal/PDN overhead dominates",
+        "surface routing not actually O(N^2)",
+        "manufacturability/yield fails"
+      ],
+      "generated_at": "2026-05-28T09:50:49.6637373Z",
+      "independent_validation_present": false,
+      "mechanism": "3d_folding_edge_surface",
+      "method_disclosed": "mathematical_topology",
+      "non_claim_locks": {
+        "not_benchmark_superiority_proof": true,
+        "not_independent_validation": true,
+        "not_manufacturing_validation": true,
+        "not_process_node_equivalence": true,
+        "not_product_validation": true,
+        "not_universal_tau_law_proof": true
+      },
+      "pdn_pvt_reported": false,
+      "promotion_requirements": [
+        "surface/volume resource delivery measurements",
+        "thermal and PDN evidence",
+        "yield data",
+        "workload-level improvement"
+      ],
+      "reported_metric": "edge-to-surface scaling compatibility",
+      "schema": "tau-scaling-public-tau-claim-card-v0.8.2",
+      "source_layer": "paper_topology_argument",
+      "thermal_reported": false,
+      "title": "3D Folding solves edge-bound resource bottlenecks",
+      "version": "v0.8.2",
+      "yield_reported": false
+    },
+    {
+      "baseline_disclosed": false,
+      "claim_id": "tau-public-008-ai-gap-closure",
+      "claim_text": "Public discussion implies Tau Scaling mechanisms could materially improve AI-system competitiveness or close a performance gap.",
+      "claim_type": "high_risk_system_claim",
+      "current_tsek_class": "TSEK-D",
+      "declared_workload": "ai_training_inference",
+      "downgrade_reason": "System-level AI competitiveness requires workload, software stack, power, thermal, scale, cost, and third-party benchmarks.",
+      "energy_reported": false,
+      "falsification_triggers": [
+        "marketing inference from component-level data",
+        "no end-to-end workload gain",
+        "energy or thermal cost dominates"
+      ],
+      "generated_at": "2026-05-28T09:50:49.6667380Z",
+      "independent_validation_present": false,
+      "mechanism": "system_level_ai_tau_stack",
+      "method_disclosed": false,
+      "non_claim_locks": {
+        "not_benchmark_superiority_proof": true,
+        "not_independent_validation": true,
+        "not_manufacturing_validation": true,
+        "not_process_node_equivalence": true,
+        "not_product_validation": true,
+        "not_universal_tau_law_proof": true
+      },
+      "pdn_pvt_reported": false,
+      "promotion_requirements": [
+        "full AI benchmark suite",
+        "baseline competitor",
+        "power/thermal/cost disclosure",
+        "software stack details",
+        "independent test"
+      ],
+      "reported_metric": "system-level AI performance improvement",
+      "schema": "tau-scaling-public-tau-claim-card-v0.8.2",
+      "source_layer": "public_interpretation",
+      "thermal_reported": false,
+      "title": "Tau Scaling materially closes AI-chip performance gap",
+      "version": "v0.8.2",
+      "yield_reported": false
+    }
+  ],
+  "class_counts": {
+    "TSEK-A": 0,
+    "TSEK-B": 0,
+    "TSEK-C": 6,
+    "TSEK-D": 2,
+    "TSEK-E": 0
+  },
+  "classifier_changed": false,
+  "mutation_allowed": false,
+  "public_result": "The current public Tau claim set is mostly TSEK-C with roadmap/system claims in TSEK-D. This supports continued investigation, not independent validation.",
+  "schema": "tau-scaling-public-tau-claim-ledger-v0.8.2",
+  "thresholds_changed": false,
+  "tsek_a_count": 0,
+  "tsek_b_count": 0,
+  "tsek_c_count": 6,
+  "tsek_d_count": 2,
+  "tsek_e_count": 0
+}

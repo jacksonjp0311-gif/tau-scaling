@@ -10,8 +10,8 @@
 
 Repository: `tau-scaling`  
 Package / CLI: `tau_scaling` / `tau-scaling`  
-Current checkpoint: **TAU-SCALING-SA v0.8.9 - Primary Source Validation Gap Review**  
-Previous seal: **TAU-SCALING-SA v0.8.8 - Public Source Population Pass**
+Current checkpoint: **TAU-SCALING-SA v0.9.0 - Public Research Milestone Package**  
+Previous seal: **TAU-SCALING-SA v0.8.9 - Primary Source Validation Gap Review**
 
 Tau Scaling is a local-first, evidence-gated Python runtime for evaluating Tau Scaling claims through structured claim cards, workload declarations, tau vectors, LogicFolding survivability checks, energy / thermal / PDN / PVT gates, TSEK classification, evidence packages, and RCC-N / OMN-style repository navigation.
 
@@ -40,6 +40,7 @@ This repository is now in the **v0.8 public Tau research spine**.
 | v0.8.7 Primary Source Intake Queue | Which source records are ready to be manually populated and confirmed? | `reports/primary_source_intake/latest_primary_source_intake_queue.md` |
 | v0.8.8 Public Source Population Pass | What public sources can populate the queue without claiming primary validation? | `reports/public_source_population/latest_public_source_population_pass.md` |
 | v0.8.9 Primary Source Gap Review | What primary and independent validation is still missing? | `reports/primary_source_gap_review/latest_primary_source_gap_review.md` |
+| v0.9.0 Public Research Milestone Package | What publishable package summarizes the v0.8 public Tau research spine? | `reports/public_research_milestone/latest_public_research_milestone.md` |
 
 Current public finding: Tau Scaling can be studied as an evidence-gated claim system. Public claims can be separated into methodology, reported metrics, roadmap projections, topology arguments, and independent evidence.
 
@@ -152,6 +153,20 @@ Primary outputs:
 - `visuals/primary_source_gap_review/v0_8_9/`
 
 Publishable boundary: the current result is publishable as evidence-governance and source-provenance analysis. It is not silicon validation, product validation, benchmark superiority, or proof of a universal Tau Scaling law.
+
+## Public Research Milestone Package v0.9.0
+
+This layer packages the full v0.8 public Tau research spine into a release-quality research artifact.
+
+Primary outputs:
+
+- `releases/public_research_milestone_v0_9_0/README.md`
+- `releases/public_research_milestone_v0_9_0/public_research_milestone_manifest_v0_9_0.json`
+- `reports/public_research_milestone/latest_public_research_milestone.md`
+- `reports/publishable_findings/latest_publishable_findings_brief.md`
+- `visuals/public_research_milestone/v0_9_0/public_research_milestone.svg`
+
+Publishable boundary: this is publishable as a repository-based evidence-governance and source-provenance artifact. It is not silicon validation, product validation, benchmark superiority, process-node equivalence, or proof of a universal Tau Scaling law.
 ## Tau Doctrine Alignment
 
 - Time is the shared metric, not automatic proof.
@@ -189,7 +204,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | TAU-SCALING-SA v0.8.9 |
+| Current checkpoint | TAU-SCALING-SA v0.9.0 |
 | Release validator | passing / findings 0 / step failures 0 |
 | README mini repo audit | passing / 0 warnings |
 | RCC-N checker | passing / 0 warnings |
@@ -209,6 +224,9 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 | Public source population manifest | `sources/primary_source_intake/source_population_manifest_v0_8_8.json` |
 | Public source population pass | `reports/public_source_population/latest_public_source_population_pass.md` |
 | Publishable findings brief | `reports/publishable_findings/latest_publishable_findings_brief.md` |
+| Public research milestone visual | `visuals/public_research_milestone/v0_9_0/public_research_milestone.svg` |
+| Public research milestone release | `releases/public_research_milestone_v0_9_0/README.md` |
+| Public research milestone package | `reports/public_research_milestone/latest_public_research_milestone.md` |
 | Primary source gap review | `reports/primary_source_gap_review/latest_primary_source_gap_review.md` |
 | README render spacing polish | `reports/readme_render_spacing/latest_readme_render_spacing_polish.md` |
 | Evidence sufficiency visual | `visuals/evidence_sufficiency/v0_8_4/evidence_sufficiency_matrix.svg` |
@@ -242,6 +260,7 @@ python scripts/benchmarks/generate_source_evidence_intake_cards.py
 python scripts/benchmarks/run_primary_source_intake_queue.py
 python scripts/benchmarks/populate_public_source_intake_v0_8_8.py
 python scripts/benchmarks/generate_primary_source_gap_review_v0_8_9.py
+python scripts/release/build_public_research_milestone_v0_9_0.py
 ```
 
 ### Baseline claim checks
@@ -327,6 +346,7 @@ The full historical chain remains available, but the root README now keeps only 
 | `reports/primary_source_intake/latest_primary_source_intake_queue.md` | Primary source intake queue report |
 | `reports/public_source_population/latest_public_source_population_pass.md` | Public source population report |
 | `reports/publishable_findings/latest_publishable_findings_brief.md` | Evidence-bounded publishable findings brief |
+| `reports/public_research_milestone/latest_public_research_milestone.md` | Public research milestone package summary |
 | `reports/primary_source_gap_review/latest_primary_source_gap_review.md` | Primary source validation gap review |
 | `reports/readme_render_spacing/latest_readme_render_spacing_polish.md` | README render spacing polish report |
 | `reports/readme_information_architecture/latest_readme_information_architecture_compression.md` | README IA compression report |
@@ -666,6 +686,8 @@ This section is part of the repository's operating memory. When a patch fails, t
 
 | L-077 | v0.8.8 source-populated all public Tau claims, but primary and independent validation remain absent. | A publishable result can be a bounded gap map, not a validation claim. | Publish source-provenance and validation-gap findings without upgrading technical claims beyond the available evidence. |
 
+| L-078 | v0.9.0 packages the v0.8 spine as a public research artifact. | A package can be publishable when it publishes evidence boundaries, not overclaims. | Milestone packages should preserve claim ledgers, source ledgers, validation gaps, visuals, release checks, and explicit non-claim locks. |
+
 ### Failure Response Protocol
 
 When a failure occurs:
@@ -808,6 +830,7 @@ This section is intentionally compact. The full repository is validated by RCC-N
 | `reports/public_source_population/` | Public source population reports |
 | `reports/primary_source_gap_review/` | Primary source validation gap reports |
 | `reports/publishable_findings/` | Evidence-bounded publishable findings briefs |
+| `reports/public_research_milestone/` | Public research milestone package reports |
 | `reports/release_finding_repair/` | Release warning inspection and zero-finding repair reports |
 | `visuals/logicfolding_plausibility/` | LogicFolding sweep charts |
 | `visuals/evidence_sufficiency/` | Evidence sufficiency charts |
@@ -816,6 +839,7 @@ This section is intentionally compact. The full repository is validated by RCC-N
 | `visuals/primary_source_intake/` | Primary source intake charts |
 | `visuals/public_source_population/` | Public source population charts |
 | `visuals/primary_source_gap_review/` | Primary source validation gap charts |
+| `visuals/public_research_milestone/` | Public research milestone charts |
 | `visuals/stable_tau_threshold_governance/` | Stable threshold governance charts |
 | `reports/readme_information_architecture/` | README information architecture compression reports |
 | `reports/readme_render_spacing/` | README render-spacing polish reports |
@@ -988,15 +1012,16 @@ validation_remains_required
 | v0.8.7 | Primary Source Intake Queue; creates manual source-population manifest without inventing or validating sources. |
 | v0.8.8 | Public Source Population Pass; populates source queue with bounded public secondary-source records while preserving primary-validation locks. |
 | v0.8.9 | Primary Source Validation Gap Review; converts public source population into publishable validation-gap findings. |
+| v0.9.0 | Public Research Milestone Package; packages the full v0.8 public Tau research spine into a release-quality artifact. |
 
 ## Next Recommended Version
 
-**TAU-SCALING-SA v0.9.0 - Public Research Milestone Package**
+**TAU-SCALING-SA v0.9.1 - Manuscript Draft Scaffold**
 
 Recommended goals:
 
-- Package the v0.8 public Tau research spine into a release-quality research artifact.
-- Include claim ledger, source ledger, source population, validation-gap matrix, visuals, and publishable findings brief.
+- Convert the v0.9.0 public research package into a manuscript-style draft.
+- Include abstract, method, artifacts, results, limitations, reproducibility, and non-claim locks.
 - Preserve source-fidelity and non-claim locks.
 - Keep threshold and classifier mutation disabled.
 - Preserve `mutation_allowed: false`.
