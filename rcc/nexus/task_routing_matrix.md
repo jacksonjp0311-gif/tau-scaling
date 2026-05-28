@@ -1,6 +1,6 @@
 # Task Routing Matrix
 
-Current contract: **TAU-SCALING-SA v0.8.4a - Release Finding Zero-Finding Repair**
+Current contract: **TAU-SCALING-SA v0.8.4b - README Information Architecture Compression**
 
 ## Geometry Route
 

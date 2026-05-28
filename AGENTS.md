@@ -1,6 +1,6 @@
 # AGENTS.md Ã¢â‚¬â€ Tau Scaling Agent Operating Contract
 
-Current contract: **TAU-SCALING-SA v0.8.4a - Release Finding Zero-Finding Repair**
+Current contract: **TAU-SCALING-SA v0.8.4b - README Information Architecture Compression**
 
 ## Mission
 

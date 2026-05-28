@@ -70,7 +70,7 @@
                                       ]
                },
     "schema":  "rcc-nexus-route-map-v1.7",
-    "updated_at":  "2026-05-28T13:27:20.2258321Z",
+    "updated_at":  "2026-05-28T13:39:28.8185597Z",
     "v0_4_routes":  {
                         "feedback_chart_path_health_repair":  {
                                                                   "evidence":  [
@@ -910,7 +910,22 @@
                                                                              "reports/release_finding_repair/latest_release_finding_zero_repair.md"
                                                                          ],
                                                             "mutation_lock":  "Release warning repair only; no classifier change, threshold change, branch creation, or mutation."
-                                                        }
+                                                        },
+                        "readme_information_architecture_compression":  {
+                                                                            "read_first":  [
+                                                                                               "README.md",
+                                                                                               "reports/readme_information_architecture/latest_readme_information_architecture_compression.md"
+                                                                                           ],
+                                                                            "validate":  [
+                                                                                             "python scripts/release/validate_release.py",
+                                                                                             "python scripts/rcc/audit_readme_surface.py",
+                                                                                             "python scripts/rcc/check_rcc_nexus.py"
+                                                                                         ],
+                                                                            "evidence":  [
+                                                                                             "reports/readme_information_architecture/latest_readme_information_architecture_compression.md"
+                                                                                         ],
+                                                                            "mutation_lock":  "README information architecture compression only; preserves RCC-N anchors; no classifier change, threshold change, branch creation, or mutation."
+                                                                        }
                     },
     "validation":  {
                        "architecture":  "python scripts/validation/validate_architecture_contracts.py",
@@ -918,5 +933,5 @@
                        "runtime":  "python -m tau_scaling run-claim --seed configs/seeds/logicfolding_claim_card.json",
                        "tests":  "python -m unittest discover -s tests"
                    },
-    "version":  "v0.8.4a"
+    "version":  "v0.8.4b"
 }

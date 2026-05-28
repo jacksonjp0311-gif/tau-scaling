@@ -1,0 +1,33 @@
+{
+  "anchors_preserved": [
+    "PART I - Human README",
+    "PART II - RCC Nexus README",
+    "PART III - AI Agent README",
+    "AI Operating Contract",
+    "Patch Routing Matrix",
+    "README + Mini Repo Audit Map",
+    "AI Failure Learning Ledger",
+    "## AI Rule \u2014 Directory Box and Mini README Synchronization",
+    "Full Directory Box",
+    "Public Non-Claim Locks"
+  ],
+  "application_allowed": false,
+  "boundary": "README information architecture compression improves public readability and routing only. It does not reduce RCC-N, remove evidence, validate silicon, validate products, mutate thresholds, or mutate classifier behavior.",
+  "calibration_applied": false,
+  "checkpoint": "TAU-SCALING-SA v0.8.4b - README Information Architecture Compression",
+  "classifier_changed": false,
+  "generated_at": "2026-05-28T13:39:28.558421+00:00",
+  "mutation_allowed": false,
+  "repairs": [
+    "merged current research story into Current Research Snapshot",
+    "compressed Current Public Metrics to current operational rows",
+    "split Quick Start into Essential Validation, Current Research Generators, and Baseline Claim Checks",
+    "added Historical Report Archive pointers",
+    "preserved RCC-N / Nexus audit anchors",
+    "preserved AI Operating Contract and Patch Routing Matrix",
+    "preserved AI Failure Learning Ledger and added L-070",
+    "preserved Public Non-Claim Locks and Release Lineage"
+  ],
+  "schema": "tau-scaling-readme-information-architecture-compression-v0.8.4b",
+  "thresholds_changed": false
+}
