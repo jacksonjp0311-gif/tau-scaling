@@ -1,0 +1,26 @@
+{
+  "allowed_values": [
+    "APPROVE_REPLAY_ONLY",
+    "DENY",
+    "REQUEST_MORE_EVIDENCE"
+  ],
+  "approval_decision": "UNSET",
+  "approval_timestamp": "",
+  "approver": "",
+  "artifact_status": "TEMPLATE_ONLY_NOT_APPROVED",
+  "candidate_branch": "candidate/v0.6.0-threshold-0.8-review-only",
+  "explicit_locks": {
+    "application_allowed": false,
+    "branch_creation_allowed": false,
+    "calibration_applied": false,
+    "classifier_mutation_allowed": false,
+    "policy_enforced": false,
+    "runtime_mutation_allowed": false
+  },
+  "generated_at": "2026-05-28T07:46:00.106512+00:00",
+  "notes": "",
+  "required_statement": "I understand this approval, if set to APPROVE_REPLAY_ONLY, authorizes replay only and does not authorize classifier mutation, runtime mutation, calibration application, production use, silicon validation, or product claims.",
+  "schema": "tau-scaling-human-approval-artifact-v0.6.2",
+  "scope": "candidate_branch_replay_only",
+  "selected_report_only_threshold": 0.8
+}

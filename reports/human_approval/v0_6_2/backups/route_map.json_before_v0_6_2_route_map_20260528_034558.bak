@@ -70,7 +70,7 @@
     ]
   },
   "schema": "rcc-nexus-route-map-v1.7",
-  "updated_at": "2026-05-28T07:45:58.425783+00:00",
+  "updated_at": "2026-05-28T07:42:55.780007+00:00",
   "v0_4_routes": {
     "feedback_chart_path_health_repair": {
       "evidence": [
@@ -523,20 +523,6 @@
         "python scripts/benchmarks/run_candidate_branch_replay_harness.py",
         "python scripts/release/validate_release.py"
       ]
-    },
-    "human_approval_template": {
-      "evidence": [
-        "reports/human_approval/latest_human_approval_template_report.md",
-        "visuals/human_approval/v0_6_2/"
-      ],
-      "mutation_lock": "Template only; no approval, replay, branch creation, or classifier mutation by default.",
-      "read_first": [
-        "reports/candidate_replay/latest_candidate_branch_replay_harness.json"
-      ],
-      "validate": [
-        "python scripts/benchmarks/generate_human_approval_template.py",
-        "python scripts/release/validate_release.py"
-      ]
     }
   },
   "validation": {
@@ -545,5 +531,5 @@
     "runtime": "python -m tau_scaling run-claim --seed configs/seeds/logicfolding_claim_card.json",
     "tests": "python -m unittest discover -s tests"
   },
-  "version": "v0.6.2"
+  "version": "v0.6.1"
 }

@@ -11,7 +11,7 @@
     "visuals/candidate_replay/v0_6_1/candidate_replay_status.png"
   ],
   "final_recommendation": "Add an explicit human approval artifact before replaying any candidate branch. Do not create a branch or mutate classifier behavior from this report.",
-  "generated_at": "2026-05-28T07:43:00.509448+00:00",
+  "generated_at": "2026-05-28T07:45:58.673049+00:00",
   "human_approval_present": false,
   "human_approval_required": true,
   "input_candidate_branch_gate": "reports/candidate_branch/latest_candidate_branch_gate.json",

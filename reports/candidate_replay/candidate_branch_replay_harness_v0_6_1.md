@@ -1,6 +1,6 @@
 # Tau Scaling v0.6.1 Candidate Branch Replay Harness
 
-Generated: `2026-05-28T07:43:00.509448+00:00`
+Generated: `2026-05-28T07:45:58.673049+00:00`
 
 ## Replay Gate Result
 
