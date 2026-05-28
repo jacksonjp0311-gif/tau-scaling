@@ -4,7 +4,7 @@
   "calibration_applied": false,
   "classifier_changed": false,
   "falsification_pressure": "Thermal-stressed and closure-stressed priors show how plausible timing gains can collapse when companion gates dominate.",
-  "generated_at": "2026-05-28T15:21:20.477808+00:00",
+  "generated_at": "2026-05-28T15:53:58.465344+00:00",
   "mutation_allowed": false,
   "research_finding": "LogicFolding is conditionally plausible when critical-path coverage and wire-delay savings are high enough to dominate vertical, routing, synchronization, variation, and closure costs, and when energy/thermal/PDN-normalized tau gain remains above one.",
   "results": [

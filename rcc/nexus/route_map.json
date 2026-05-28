@@ -70,7 +70,7 @@
                                       ]
                },
     "schema":  "rcc-nexus-route-map-v1.7",
-    "updated_at":  "2026-05-28T15:21:19.9978004Z",
+    "updated_at":  "2026-05-28T15:53:58.0504881Z",
     "v0_4_routes":  {
                         "feedback_chart_path_health_repair":  {
                                                                   "evidence":  [
@@ -1057,7 +1057,7 @@
                        "runtime":  "python -m tau_scaling run-claim --seed configs/seeds/logicfolding_claim_card.json",
                        "tests":  "python -m unittest discover -s tests"
                    },
-    "version":  "v0.9.1",
+    "version":  "v0.9.2",
     "v0_9_routes":  {
                         "manuscript_draft_scaffold":  {
                                                           "read_first":  [
@@ -1077,6 +1077,27 @@
                                                                            "visuals/manuscript_draft/v0_9_1/"
                                                                        ],
                                                           "mutation_lock":  "Manuscript draft scaffold only; no source validation, classifier change, threshold change, claim promotion, branch creation, or mutation."
-                                                      }
+                                                      },
+                        "manuscript_evidence_pack":  {
+                                                         "read_first":  [
+                                                                            "docs/manuscript/evidence_table_v0_9_2.md",
+                                                                            "docs/manuscript/figure_pack_v0_9_2.md",
+                                                                            "docs/manuscript/paper_ready_results_summary_v0_9_2.md",
+                                                                            "reports/manuscript_evidence_pack/latest_manuscript_evidence_pack.md",
+                                                                            "README.md"
+                                                                        ],
+                                                         "validate":  [
+                                                                          "python scripts/release/build_manuscript_evidence_pack_v0_9_2.py",
+                                                                          "python scripts/release/validate_release.py",
+                                                                          "python scripts/rcc/audit_readme_surface.py"
+                                                                      ],
+                                                         "evidence":  [
+                                                                          "docs/manuscript/evidence_table_v0_9_2.md",
+                                                                          "docs/manuscript/figure_pack_v0_9_2.md",
+                                                                          "reports/manuscript_evidence_pack/latest_manuscript_evidence_pack.md",
+                                                                          "visuals/manuscript_evidence_pack/v0_9_2/"
+                                                                      ],
+                                                         "mutation_lock":  "Manuscript evidence-pack only; no source validation, classifier change, threshold change, claim promotion, branch creation, or mutation."
+                                                     }
                     }
 }

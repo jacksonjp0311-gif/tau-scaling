@@ -10,8 +10,8 @@
 
 Repository: `tau-scaling`  
 Package / CLI: `tau_scaling` / `tau-scaling`  
-Current checkpoint: **TAU-SCALING-SA v0.9.1 - Manuscript Draft Scaffold**  
-Previous seal: **TAU-SCALING-SA v0.9.0 - Public Research Milestone Package**
+Current checkpoint: **TAU-SCALING-SA v0.9.2 - Manuscript Evidence Table and Figure Pack**  
+Previous seal: **TAU-SCALING-SA v0.9.1 - Manuscript Draft Scaffold**
 
 Tau Scaling is a local-first, evidence-gated Python runtime for evaluating Tau Scaling claims through structured claim cards, workload declarations, tau vectors, LogicFolding survivability checks, energy / thermal / PDN / PVT gates, TSEK classification, evidence packages, and RCC-N / OMN-style repository navigation.
 
@@ -42,6 +42,7 @@ This repository is now in the **v0.8 public Tau research spine**.
 | v0.8.9 Primary Source Gap Review | What primary and independent validation is still missing? | `reports/primary_source_gap_review/latest_primary_source_gap_review.md` |
 | v0.9.0 Public Research Milestone Package | What publishable package summarizes the v0.8 public Tau research spine? | `reports/public_research_milestone/latest_public_research_milestone.md` |
 | v0.9.1 Manuscript Draft Scaffold | What paper-style draft is generated from the public research package? | `docs/manuscript/tau_scaling_public_claim_system_v0_9_1.md` |
+| v0.9.2 Manuscript Evidence Table and Figure Pack | What tables, captions, limitations, and artifact maps support the manuscript? | `reports/manuscript_evidence_pack/latest_manuscript_evidence_pack.md` |
 
 Current public finding: Tau Scaling can be studied as an evidence-gated claim system. Public claims can be separated into methodology, reported metrics, roadmap projections, topology arguments, and independent evidence.
 
@@ -181,6 +182,23 @@ Primary outputs:
 - `visuals/manuscript_draft/v0_9_1/manuscript_draft_scaffold.svg`
 
 Publishable boundary: the manuscript is a source-provenance and evidence-governance draft. It is not silicon validation, product validation, benchmark superiority, process-node equivalence, or proof of a universal Tau Scaling law.
+
+## Manuscript Evidence Table and Figure Pack v0.9.2
+
+This layer adds manuscript-ready tables, figure captions, limitation tables, artifact maps, and a paper-ready result summary.
+
+Primary outputs:
+
+- `docs/manuscript/evidence_table_v0_9_2.md`
+- `docs/manuscript/evidence_table_v0_9_2.tex`
+- `docs/manuscript/figure_pack_v0_9_2.md`
+- `docs/manuscript/limitations_table_v0_9_2.md`
+- `docs/manuscript/artifact_map_v0_9_2.md`
+- `docs/manuscript/paper_ready_results_summary_v0_9_2.md`
+- `reports/manuscript_evidence_pack/latest_manuscript_evidence_pack.md`
+- `visuals/manuscript_evidence_pack/v0_9_2/manuscript_evidence_pack.svg`
+
+Publishable boundary: these tables and captions improve manuscript readability. They do not validate sources, promote claims, validate silicon, validate products, or prove a universal Tau Scaling law.
 ## Tau Doctrine Alignment
 
 - Time is the shared metric, not automatic proof.
@@ -218,7 +236,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | TAU-SCALING-SA v0.9.1 |
+| Current checkpoint | TAU-SCALING-SA v0.9.2 |
 | Release validator | passing / findings 0 / step failures 0 |
 | README mini repo audit | passing / 0 warnings |
 | RCC-N checker | passing / 0 warnings |
@@ -244,6 +262,10 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 | Manuscript LaTeX | `docs/manuscript/tau_scaling_public_claim_system_v0_9_1.tex` |
 | Manuscript Markdown | `docs/manuscript/tau_scaling_public_claim_system_v0_9_1.md` |
 | Manuscript draft scaffold | `reports/manuscript_draft/latest_manuscript_draft_scaffold.md` |
+| Paper-ready result summary | `docs/manuscript/paper_ready_results_summary_v0_9_2.md` |
+| Manuscript figure pack | `docs/manuscript/figure_pack_v0_9_2.md` |
+| Manuscript evidence table | `docs/manuscript/evidence_table_v0_9_2.md` |
+| Manuscript evidence pack | `reports/manuscript_evidence_pack/latest_manuscript_evidence_pack.md` |
 | Primary source gap review | `reports/primary_source_gap_review/latest_primary_source_gap_review.md` |
 | README render spacing polish | `reports/readme_render_spacing/latest_readme_render_spacing_polish.md` |
 | Evidence sufficiency visual | `visuals/evidence_sufficiency/v0_8_4/evidence_sufficiency_matrix.svg` |
@@ -279,6 +301,7 @@ python scripts/benchmarks/populate_public_source_intake_v0_8_8.py
 python scripts/benchmarks/generate_primary_source_gap_review_v0_8_9.py
 python scripts/release/build_public_research_milestone_v0_9_0.py
 python scripts/release/build_manuscript_draft_scaffold_v0_9_1.py
+python scripts/release/build_manuscript_evidence_pack_v0_9_2.py
 ```
 
 ### Baseline claim checks
@@ -366,6 +389,7 @@ The full historical chain remains available, but the root README now keeps only 
 | `reports/publishable_findings/latest_publishable_findings_brief.md` | Evidence-bounded publishable findings brief |
 | `reports/public_research_milestone/latest_public_research_milestone.md` | Public research milestone package summary |
 | `reports/manuscript_draft/latest_manuscript_draft_scaffold.md` | Manuscript draft scaffold report |
+| `reports/manuscript_evidence_pack/latest_manuscript_evidence_pack.md` | Manuscript evidence table and figure pack report |
 | `reports/primary_source_gap_review/latest_primary_source_gap_review.md` | Primary source validation gap review |
 | `reports/readme_render_spacing/latest_readme_render_spacing_polish.md` | README render spacing polish report |
 | `reports/readme_information_architecture/latest_readme_information_architecture_compression.md` | README IA compression report |
@@ -709,6 +733,8 @@ This section is part of the repository's operating memory. When a patch fails, t
 
 | L-079 | v0.9.1 converts the package into a manuscript scaffold. | A manuscript can publish the evidence machine without turning the evidence machine into a validation claim. | Paper drafts must keep abstract, results, limitations, reproducibility, and non-claim locks aligned. |
 
+| L-080 | v0.9.2 adds manuscript tables and captions. | Presentation can strengthen auditability without strengthening the claim itself. | Tables and figures must preserve the distinction between source-populated, source-validated, and claim-promoted. |
+
 ### Failure Response Protocol
 
 When a failure occurs:
@@ -853,6 +879,7 @@ This section is intentionally compact. The full repository is validated by RCC-N
 | `reports/publishable_findings/` | Evidence-bounded publishable findings briefs |
 | `reports/public_research_milestone/` | Public research milestone package reports |
 | `reports/manuscript_draft/` | Manuscript draft scaffold reports |
+| `reports/manuscript_evidence_pack/` | Manuscript evidence table and figure-pack reports |
 | `reports/release_finding_repair/` | Release warning inspection and zero-finding repair reports |
 | `visuals/logicfolding_plausibility/` | LogicFolding sweep charts |
 | `visuals/evidence_sufficiency/` | Evidence sufficiency charts |
@@ -863,6 +890,7 @@ This section is intentionally compact. The full repository is validated by RCC-N
 | `visuals/primary_source_gap_review/` | Primary source validation gap charts |
 | `visuals/public_research_milestone/` | Public research milestone charts |
 | `visuals/manuscript_draft/` | Manuscript draft charts |
+| `visuals/manuscript_evidence_pack/` | Manuscript evidence-pack charts |
 | `visuals/stable_tau_threshold_governance/` | Stable threshold governance charts |
 | `reports/readme_information_architecture/` | README information architecture compression reports |
 | `reports/readme_render_spacing/` | README render-spacing polish reports |
@@ -1037,16 +1065,17 @@ validation_remains_required
 | v0.8.9 | Primary Source Validation Gap Review; converts public source population into publishable validation-gap findings. |
 | v0.9.0 | Public Research Milestone Package; packages the full v0.8 public Tau research spine into a release-quality artifact. |
 | v0.9.1 | Manuscript Draft Scaffold; converts the public research milestone package into Markdown and LaTeX manuscript drafts. |
+| v0.9.2 | Manuscript Evidence Table and Figure Pack; adds paper-ready evidence tables, captions, limitations, artifact map, and result summary. |
 
 ## Next Recommended Version
 
-**TAU-SCALING-SA v0.9.2 - Manuscript Evidence Table and Figure Pack**
+**TAU-SCALING-SA v0.9.3 - Manuscript Polish and Submission Package**
 
 Recommended goals:
 
-- Add manuscript-ready tables and figure captions.
-- Generate a compact evidence table for the paper body.
-- Generate figure index, caption list, and limitations table.
+- Integrate evidence table and figure pack into the manuscript body.
+- Add polished abstract, contribution statement, limitations paragraph, and data availability statement.
+- Produce a submission-ready Markdown/LaTeX pair.
 - Preserve source-fidelity and non-claim locks.
 - Keep threshold and classifier mutation disabled.
 - Preserve `mutation_allowed: false`.

@@ -1,0 +1,29 @@
+{
+  "application_allowed": false,
+  "artifact_count": 6,
+  "average_gap_count": 14.75,
+  "boundary": "v0.9.2 creates manuscript tables and figure captions only. It does not validate sources, promote claims, validate silicon, validate products, prove benchmark superiority, or establish a universal Tau Scaling law.",
+  "claim_count": 8,
+  "claim_promotion_allowed": false,
+  "classifier_changed": false,
+  "evidence_pack_claims_silicon_validation": false,
+  "figure_count": 4,
+  "generated_at": "2026-05-28T15:53:59.645032+00:00",
+  "independent_source_confirmed_count": 0,
+  "limitation_count": 5,
+  "mutation_allowed": false,
+  "outputs": {
+    "artifact_map_md": "docs/manuscript/artifact_map_v0_9_2.md",
+    "evidence_table_md": "docs/manuscript/evidence_table_v0_9_2.md",
+    "evidence_table_tex": "docs/manuscript/evidence_table_v0_9_2.tex",
+    "figure_pack_md": "docs/manuscript/figure_pack_v0_9_2.md",
+    "limitations_table_md": "docs/manuscript/limitations_table_v0_9_2.md",
+    "paper_ready_results_md": "docs/manuscript/paper_ready_results_summary_v0_9_2.md"
+  },
+  "primary_source_confirmed_count": 0,
+  "schema": "tau-scaling-manuscript-evidence-table-figure-pack-v0.9.2",
+  "source_populated_count": 8,
+  "source_validation_claimed": false,
+  "table_count": 4,
+  "thresholds_changed": false
+}
