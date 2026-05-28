@@ -1,6 +1,6 @@
 # Tau Scaling v0.5.5 Disabled Calibration Plan
 
-Generated: `2026-05-27T17:56:44.460535+00:00`
+Generated: `2026-05-28T07:25:59.561175+00:00`
 
 ## Result
 

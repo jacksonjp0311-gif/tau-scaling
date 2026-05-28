@@ -2,7 +2,7 @@
   "durable_dirs_checked": 38,
   "errors": 0,
   "findings": [],
-  "generated_at": "2026-05-27T17:56:47.729642+00:00",
+  "generated_at": "2026-05-28T07:26:05.589576+00:00",
   "non_claim_lock": "README/mini-repo audit is context alignment, not code correctness or silicon validation.",
   "passed": true,
   "repository": "tau-scaling",

@@ -10,8 +10,8 @@
 
 Repository: `tau-scaling`  
 Package / CLI: `tau_scaling` / `tau-scaling`  
-Current checkpoint: **TAU-SCALING-SA v0.5.6 - Calibration Counterfactuals**  
-Previous seal: **TAU-SCALING-SA v0.5.5 - Disabled Calibration Plan**
+Current checkpoint: **TAU-SCALING-SA v0.5.5 - Disabled Calibration Plan**  
+Previous seal: **TAU-SCALING-SA v0.5.4 - Support-Aware Negative Controls**
 
 Tau Scaling is a local-first, evidence-gated Python runtime for evaluating tau-scaling claims through structured claim cards, workload declarations, tau vectors, LogicFolding survivability checks, edge-to-surface boundary algebra, energy / thermal / PDN / PVT gates, Monte Carlo checker stress, TSEK classification, evidence packages, and RCC-N / OMN-style repository navigation.
 
@@ -55,7 +55,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | TAU-SCALING-SA v0.5.6 |
+| Current checkpoint | TAU-SCALING-SA v0.5.5 |
 | Synthetic gate suite | v0.4.0 / benchmark + finding charts |
 | Package version | 0.2.0 |
 | Baseline seed | TSEK-C / A_TSEK 0.0000 |
@@ -64,7 +64,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 | README mini repo audit | passing / 0 warnings |
 | Unified release validator | passing / step failures 0 |
 | AGENTS.md contract | synchronized with release validator |
-| Task routing matrix | geometry-aware / v0.5.6-ready |
+| Task routing matrix | geometry-aware / v0.5.5-ready |
 | Release warning findings | 0 expected after v0.3.3d validator scan repair |
 | Architecture validator | passing / 0 warnings |
 | Unit tests | 8 OK |
@@ -108,9 +108,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 | Support-aware control charts | `visuals/negative_controls/v0_5_4/` |
 | Disabled calibration plan | `reports/calibration_plan/latest_disabled_calibration_plan.md` |
 | Calibration plan charts | `visuals/calibration_plan/v0_5_5/` |
-| Calibration counterfactuals | `reports/calibration_counterfactuals/latest_calibration_counterfactuals.md` |
-| Calibration counterfactual charts | `visuals/calibration_counterfactuals/v0_5_6/` |
-| Agent contract version sync | current / v0.5.6 |
+| Agent contract version sync | current / v0.5.5 |
 | Release readiness report | `reports/release/latest_release_readiness.md` |
 | Collision-proof run identity | passed |
 | Mini README coverage | 1.0 |
@@ -150,7 +148,6 @@ python scripts/benchmarks/run_over_penalty_cause_decomposition.py
 python scripts/benchmarks/generate_cause_specific_remediation_plan.py
 python scripts/benchmarks/run_support_aware_negative_controls.py
 python scripts/benchmarks/generate_disabled_calibration_plan.py
-python scripts/benchmarks/run_calibration_counterfactuals.py
 python scripts/release/validate_release.py
 ```
 
@@ -453,7 +450,6 @@ This section is part of the repository's operating memory. When a patch fails, t
 | L-035 | v0.5.2 showed all blocked candidates were high-support / heuristic-sensitivity cases. | Cause cards identify why a blocker exists, but do not define the next safe work unit. | High-support downgrade pressure must become support-aware negative-control tasks before calibration or policy design. |
 | L-036 | v0.5.3 converted all six blocked cases into support-aware negative-control tasks. | Remediation planning is not enough; high-support retention must be tested as a disabled/report-only control. | Before calibration or policy design, high-support downgrade pressure must pass support-aware negative controls with mutation disabled. |
 | L-037 | v0.5.4 support-aware negative controls passed 6/6. | Passing support controls permit calibration planning, but not calibration application. | A calibration plan may only be drafted after support-aware controls pass, and it must preserve high-support retention as a hard constraint. |
-| L-038 | v0.5.5 selected a report-only calibration threshold, but a threshold is not a classifier change. | Calibration planning can still hide drift unless tested counterfactually. | Any selected calibration threshold must pass report-only counterfactual testing before policy mutation can even be discussed. |
 
 ### Failure Response Protocol
 
@@ -662,7 +658,6 @@ tau-scaling/
   releases/
   reports/
     nexus_feedback/
-    calibration_counterfactuals/
     calibration_plan/
     negative_controls/
     remediation_plan/
@@ -710,7 +705,6 @@ tau-scaling/
   tests/
   visuals/
     nexus_feedback/
-    calibration_counterfactuals/
     calibration_plan/
     negative_controls/
     remediation_plan/
@@ -817,36 +811,6 @@ AGENTS.md Required Validation now includes the current v0.4.6-v0.5.1 governance 
 ```
 
 Boundary: alignment polish is repository hygiene only. It is not code correctness, silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.
-
-## Calibration Counterfactuals v0.5.6
-
-v0.5.6 simulates the selected disabled calibration threshold without applying it.
-
-Primary command:
-
-```powershell
-python scripts/benchmarks/run_calibration_counterfactuals.py
-```
-
-Primary outputs:
-
-```text
-reports/calibration_counterfactuals/latest_calibration_counterfactuals.json
-reports/calibration_counterfactuals/latest_calibration_counterfactuals.md
-visuals/calibration_counterfactuals/v0_5_6/
-```
-
-This layer compares current behavior against proposed report-only calibrated behavior while preserving support-aware negative controls.
-
-Current lock:
-
-```text
-mutation_allowed: false
-policy_enforced: false
-calibration_applied: false
-```
-
-Boundary: calibration counterfactuals are local report-only classifier-governance simulations. They do not change classifier behavior and do not validate silicon, product performance, manufacturing capability, process-node equivalence, benchmark superiority, AI understanding, or universal Tau Scaling law.
 
 ## Disabled Calibration Plan v0.5.5
 
@@ -1282,7 +1246,6 @@ python scripts/benchmarks/run_over_penalty_cause_decomposition.py
 python scripts/benchmarks/generate_cause_specific_remediation_plan.py
 python scripts/benchmarks/run_support_aware_negative_controls.py
 python scripts/benchmarks/generate_disabled_calibration_plan.py
-python scripts/benchmarks/run_calibration_counterfactuals.py
 python scripts/release/validate_release.py
 python scripts/rcc/audit_readme_surface.py
 python scripts/rcc/check_rcc_nexus.py
@@ -1633,15 +1596,15 @@ validation_remains_required
 | v0.5.3 | Cause-specific remediation plan for high-support blocked downgrade candidates. |
 | v0.5.4 | Support-aware negative controls for high-support blocked downgrade candidates. |
 | v0.5.5 | Disabled calibration plan preserving support-aware retention constraints. |
-| v0.5.6 | Calibration counterfactuals for the selected report-only threshold. |
 
 ## Next Recommended Version
 
-**TAU-SCALING-SA v0.5.7 - Counterfactual Decision Record**
+**TAU-SCALING-SA v0.5.6 - Calibration Counterfactuals**
 
 Recommended goals:
 
-- Convert v0.5.6 counterfactual outcomes into a non-mutating decision record.
-- Decide whether the calibration candidate is safe for review, rejected, or needs more controls.
+- Run report-only counterfactuals for the selected disabled calibration threshold.
+- Compare current behavior vs proposed behavior without applying mutation.
+- Preserve all support-aware negative-control passes.
 - Keep `mutation_allowed: false`.
-- Preserve non-claim locks: decision records are local classifier governance only.
+- Preserve non-claim locks: counterfactuals are local classifier governance only.

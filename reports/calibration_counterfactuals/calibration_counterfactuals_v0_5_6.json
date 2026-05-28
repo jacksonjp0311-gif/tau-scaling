@@ -1,0 +1,96 @@
+{
+  "boundary": "Calibration counterfactuals are local report-only classifier-governance simulations. They do not change classifier behavior and do not validate silicon, products, manufacturing, process nodes, benchmark superiority, or universal Tau Scaling law.",
+  "calibration_applied": false,
+  "chart_paths": [
+    "visuals/calibration_counterfactuals/v0_5_6/counterfactual_status_counts.png",
+    "visuals/calibration_counterfactuals/v0_5_6/counterfactual_drift_counts.png",
+    "visuals/calibration_counterfactuals/v0_5_6/counterfactual_support_threshold.png"
+  ],
+  "counterfactual_count": 6,
+  "counterfactual_drift_count": 0,
+  "counterfactual_rows": [
+    {
+      "control_id": "negative-control-v0-5-3-001",
+      "counterfactual_drift": false,
+      "counterfactual_status": "safe_report_only_candidate",
+      "current_behavior": "retain_blocked_no_downgrade",
+      "diagnostic_average": 0.8182,
+      "gate_pair": "B_baseline+B_tau",
+      "proposed_report_only_behavior": "retain_blocked_no_downgrade",
+      "selected_threshold": 0.8,
+      "support_pass_preserved": true
+    },
+    {
+      "control_id": "negative-control-v0-5-3-002",
+      "counterfactual_drift": false,
+      "counterfactual_status": "safe_report_only_candidate",
+      "current_behavior": "retain_blocked_no_downgrade",
+      "diagnostic_average": 0.8182,
+      "gate_pair": "B_method+B_evidence",
+      "proposed_report_only_behavior": "retain_blocked_no_downgrade",
+      "selected_threshold": 0.8,
+      "support_pass_preserved": true
+    },
+    {
+      "control_id": "negative-control-v0-5-3-003",
+      "counterfactual_drift": false,
+      "counterfactual_status": "safe_report_only_candidate",
+      "current_behavior": "retain_blocked_no_downgrade",
+      "diagnostic_average": 0.8182,
+      "gate_pair": "B_workload+B_tau",
+      "proposed_report_only_behavior": "retain_blocked_no_downgrade",
+      "selected_threshold": 0.8,
+      "support_pass_preserved": true
+    },
+    {
+      "control_id": "negative-control-v0-5-3-004",
+      "counterfactual_drift": false,
+      "counterfactual_status": "safe_report_only_candidate",
+      "current_behavior": "retain_blocked_no_downgrade",
+      "diagnostic_average": 0.8182,
+      "gate_pair": "B_LF+B_ETP",
+      "proposed_report_only_behavior": "retain_blocked_no_downgrade",
+      "selected_threshold": 0.8,
+      "support_pass_preserved": true
+    },
+    {
+      "control_id": "negative-control-v0-5-3-005",
+      "counterfactual_drift": false,
+      "counterfactual_status": "safe_report_only_candidate",
+      "current_behavior": "retain_blocked_no_downgrade",
+      "diagnostic_average": 0.8182,
+      "gate_pair": "B_PVT+B_evidence",
+      "proposed_report_only_behavior": "retain_blocked_no_downgrade",
+      "selected_threshold": 0.8,
+      "support_pass_preserved": true
+    },
+    {
+      "control_id": "negative-control-v0-5-3-006",
+      "counterfactual_drift": false,
+      "counterfactual_status": "safe_report_only_candidate",
+      "current_behavior": "retain_blocked_no_downgrade",
+      "diagnostic_average": 0.8182,
+      "gate_pair": "B_yield+B_evidence",
+      "proposed_report_only_behavior": "retain_blocked_no_downgrade",
+      "selected_threshold": 0.8,
+      "support_pass_preserved": true
+    }
+  ],
+  "drift_counts": {
+    "no_drift": 6
+  },
+  "final_recommendation": "counterfactual_candidate_safe_for_review_not_application",
+  "generated_at": "2026-05-28T07:26:01.863414+00:00",
+  "input_calibration_plan": "reports/calibration_plan/latest_disabled_calibration_plan.json",
+  "input_negative_controls": "reports/negative_controls/latest_support_aware_negative_controls.json",
+  "mutation_allowed": false,
+  "next_recommendation": "v0.5.7 should produce a counterfactual decision record before any classifier mutation is discussed.",
+  "policy_enforced": false,
+  "rejected_count": 0,
+  "safe_candidate_count": 6,
+  "schema": "tau-scaling-calibration-counterfactuals-v0.5.6",
+  "selected_report_only_threshold": 0.8,
+  "status_counts": {
+    "safe_report_only_candidate": 6
+  }
+}

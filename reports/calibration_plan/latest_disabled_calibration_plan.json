@@ -9,7 +9,7 @@
     "visuals/calibration_plan/v0_5_5/calibration_minimum_margin.png"
   ],
   "final_recommendation": "draft_report_only_calibration_candidate_preserving_support_controls",
-  "generated_at": "2026-05-27T17:56:44.460535+00:00",
+  "generated_at": "2026-05-28T07:25:59.561175+00:00",
   "input_negative_controls": "reports/negative_controls/latest_support_aware_negative_controls.json",
   "mutation_allowed": false,
   "next_recommendation": "v0.5.6 should run calibration counterfactuals without applying classifier mutation.",
