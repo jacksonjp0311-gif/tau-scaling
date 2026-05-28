@@ -23,7 +23,7 @@
   "decision_status": "THRESHOLD_DECISION_RECORDED__NO_MUTATION",
   "dry_run_ready": true,
   "executor_ran": false,
-  "generated_at": "2026-05-28T08:57:18.333184+00:00",
+  "generated_at": "2026-05-28T09:01:43.052617+00:00",
   "high_attention_count": 2,
   "input_boundary_cards": "reports/tsek_boundary_cards/latest_tsek_boundary_explanation_cards.json",
   "input_penalty_controls": "reports/penalty_controls/latest_over_under_penalty_negative_controls.json",

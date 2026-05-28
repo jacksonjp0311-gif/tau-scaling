@@ -59,7 +59,6 @@ This atlas gives humans and AI agents one stable place to understand benchmark e
 | v0.7.6 | Over/under-penalty negative controls | `python scripts/benchmarks/generate_over_under_penalty_controls.py` | Defines report-only controls before threshold dry-runs | `reports/penalty_controls/latest_over_under_penalty_negative_controls.md` | `visuals/penalty_controls/v0_7_6/` |
 | v0.7.7 | Threshold sensitivity dry-run | `python scripts/benchmarks/run_threshold_sensitivity_dry_run.py` | Models threshold pressure without changing classifier behavior | `reports/threshold_sensitivity_dry_run/latest_threshold_sensitivity_dry_run.md` | `visuals/threshold_sensitivity_dry_run/v0_7_7/` |
 | v0.7.8 | Threshold decision record | `python scripts/benchmarks/generate_threshold_decision_record.py` | Converts threshold dry-run pressure into non-mutating decision | `reports/threshold_decision_record/latest_threshold_decision_record.md` | `visuals/threshold_decision_record/v0_7_8/` |
-| v0.7.9 | Threshold governance summary | `python scripts/benchmarks/generate_threshold_governance_summary.py` | Summarizes v0.7.x and freezes threshold mutation pending more evidence | `reports/threshold_governance_summary/latest_threshold_governance_summary.md` | `visuals/threshold_governance_summary/v0_7_9/` |
 
 ## Current Synthetic Suite Summary
 

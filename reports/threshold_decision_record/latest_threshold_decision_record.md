@@ -1,6 +1,6 @@
 # Tau Scaling v0.7.8 Threshold Decision Record
 
-Generated: `2026-05-28T08:57:18.333184+00:00`
+Generated: `2026-05-28T09:01:43.052617+00:00`
 
 ## Decision Result
 

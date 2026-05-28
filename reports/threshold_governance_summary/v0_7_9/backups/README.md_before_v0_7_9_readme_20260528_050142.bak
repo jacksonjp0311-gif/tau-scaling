@@ -10,8 +10,8 @@
 
 Repository: `tau-scaling`  
 Package / CLI: `tau_scaling` / `tau-scaling`  
-Current checkpoint: **TAU-SCALING-SA v0.7.9 - Threshold Governance Summary**  
-Previous seal: **TAU-SCALING-SA v0.7.8 - Threshold Decision Record**
+Current checkpoint: **TAU-SCALING-SA v0.7.8 - Threshold Decision Record**  
+Previous seal: **TAU-SCALING-SA v0.7.7 - Threshold Sensitivity Dry-Run**
 
 Tau Scaling is a local-first, evidence-gated Python runtime for evaluating tau-scaling claims through structured claim cards, workload declarations, tau vectors, LogicFolding survivability checks, edge-to-surface boundary algebra, energy / thermal / PDN / PVT gates, Monte Carlo checker stress, TSEK classification, evidence packages, and RCC-N / OMN-style repository navigation.
 
@@ -55,7 +55,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | TAU-SCALING-SA v0.7.9 |
+| Current checkpoint | TAU-SCALING-SA v0.7.8 |
 | Synthetic gate suite | v0.4.0 / benchmark + finding charts |
 | Package version | 0.2.0 |
 | Baseline seed | TSEK-C / A_TSEK 0.0000 |
@@ -64,7 +64,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 | README mini repo audit | passing / 0 warnings |
 | Unified release validator | passing / step failures 0 |
 | AGENTS.md contract | synchronized with release validator |
-| Task routing matrix | geometry-aware / v0.7.9-ready |
+| Task routing matrix | geometry-aware / v0.7.8-ready |
 | Release warning findings | 0 expected after v0.3.3d validator scan repair |
 | Architecture validator | passing / 0 warnings |
 | Unit tests | 8 OK |
@@ -154,9 +154,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 | Threshold sensitivity charts | `visuals/threshold_sensitivity_dry_run/v0_7_7/` |
 | Threshold decision record | `reports/threshold_decision_record/latest_threshold_decision_record.md` |
 | Threshold decision charts | `visuals/threshold_decision_record/v0_7_8/` |
-| Threshold governance summary | `reports/threshold_governance_summary/latest_threshold_governance_summary.md` |
-| Threshold governance charts | `visuals/threshold_governance_summary/v0_7_9/` |
-| Agent contract version sync | current / v0.7.9 |
+| Agent contract version sync | current / v0.7.8 |
 | Release readiness report | `reports/release/latest_release_readiness.md` |
 | Collision-proof run identity | passed |
 | Mini README coverage | 1.0 |
@@ -219,7 +217,6 @@ python scripts/benchmarks/generate_tsek_boundary_explanation_cards.py
 python scripts/benchmarks/generate_over_under_penalty_controls.py
 python scripts/benchmarks/run_threshold_sensitivity_dry_run.py
 python scripts/benchmarks/generate_threshold_decision_record.py
-python scripts/benchmarks/generate_threshold_governance_summary.py
 python scripts/release/validate_release.py
 ```
 
@@ -545,7 +542,6 @@ This section is part of the repository's operating memory. When a patch fails, t
 | L-058 | v0.7.5 generated boundary cards and flagged every class boundary for attention. | Explanation cards alone still do not test whether boundaries over-penalize or under-penalize claims. | TSEK boundary cards must be followed by report-only over/under-penalty controls before threshold dry-runs or classifier tuning. |
 | L-059 | v0.7.6 defined report-only over/under-penalty controls. | Controls alone do not show which threshold pressures are high attention. | Threshold sensitivity must be dry-run in report-only mode before any decision record or classifier change is discussed. |
 | L-060 | v0.7.7 dry-ran threshold sensitivity in report-only mode. | Dry-run pressure is not a decision by itself. | Threshold sensitivity outputs must be compiled into a decision record before any candidate branch or threshold tuning is considered. |
-| L-061 | v0.7.8 deferred threshold changes pending more evidence because high-attention pressure remained. | A deferral decision should become a stable summary before any further threshold work. | Threshold governance must be summarized as a milestone before candidate-branch or tuning discussions resume. |
 
 ### Failure Response Protocol
 
@@ -754,7 +750,6 @@ tau-scaling/
   releases/
   reports/
     nexus_feedback/
-    threshold_governance_summary/
     threshold_decision_record/
     threshold_sensitivity_dry_run/
     penalty_controls/
@@ -825,7 +820,6 @@ tau-scaling/
   tests/
   visuals/
     nexus_feedback/
-    threshold_governance_summary/
     threshold_decision_record/
     threshold_sensitivity_dry_run/
     penalty_controls/
@@ -955,40 +949,6 @@ AGENTS.md Required Validation now includes the current v0.4.6-v0.5.1 governance 
 ```
 
 Boundary: alignment polish is repository hygiene only. It is not code correctness, silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.
-
-## Threshold Governance Summary v0.7.9
-
-v0.7.9 summarizes the full v0.7.x Tau mechanics and threshold-governance chain.
-
-Primary command:
-
-```powershell
-python scripts/benchmarks/generate_threshold_governance_summary.py
-```
-
-Primary outputs:
-
-```text
-reports/threshold_governance_summary/latest_threshold_governance_summary.json
-reports/threshold_governance_summary/latest_threshold_governance_summary.md
-visuals/threshold_governance_summary/v0_7_9/
-```
-
-Current lock:
-
-```text
-thresholds_changed: false
-classifier_changed: false
-replay_allowed: false
-executor_ran: false
-branch_created: false
-mutation_allowed: false
-policy_enforced: false
-calibration_applied: false
-application_allowed: false
-```
-
-Boundary: threshold governance summaries are local classifier-governance milestone artifacts. They summarize threshold review, controls, dry-runs, and decisions. They do not create live approval, execute replay commands, create branches, mutate classifier behavior, apply calibration, change thresholds, or validate silicon, product performance, manufacturing capability, process-node equivalence, benchmark superiority, AI understanding, or universal Tau Scaling law.
 
 ## Threshold Decision Record v0.7.8
 
@@ -2200,7 +2160,6 @@ python scripts/benchmarks/generate_tsek_boundary_explanation_cards.py
 python scripts/benchmarks/generate_over_under_penalty_controls.py
 python scripts/benchmarks/run_threshold_sensitivity_dry_run.py
 python scripts/benchmarks/generate_threshold_decision_record.py
-python scripts/benchmarks/generate_threshold_governance_summary.py
 python scripts/release/validate_release.py
 python scripts/rcc/audit_readme_surface.py
 python scripts/rcc/check_rcc_nexus.py
@@ -2574,15 +2533,14 @@ validation_remains_required
 | v0.7.6 | Over/under-penalty negative controls; defines report-only controls before threshold dry-runs. |
 | v0.7.7 | Threshold sensitivity dry-run; models threshold pressure without changing classifier behavior. |
 | v0.7.8 | Threshold decision record; converts dry-run pressure into a non-mutating decision. |
-| v0.7.9 | Threshold governance summary; summarizes v0.7.x and freezes threshold mutation pending more evidence. |
 
 ## Next Recommended Version
 
-**TAU-SCALING-SA v0.8.0 - Stable Tau Threshold Governance Milestone**
+**TAU-SCALING-SA v0.7.9 - Threshold Governance Summary**
 
 Recommended goals:
 
-- Package v0.7.1-v0.7.9 as a stable Tau mechanics/threshold-governance milestone.
+- Summarize v0.7.1-v0.7.8 Tau mechanics return path.
 - Freeze current threshold decision unless human review requests a candidate branch.
 - Preserve no-classifier-mutation lock.
 - Keep `mutation_allowed: false`.
