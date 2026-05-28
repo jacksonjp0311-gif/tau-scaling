@@ -1,0 +1,16 @@
+{
+  "classifier_change_allowed": false,
+  "control_pressure_score": 1,
+  "current_classifier_output_changed": false,
+  "direction": "no_direct_penalty",
+  "dry_run_result": "REPORT_ONLY_REVIEW_REQUIRED",
+  "interpretation": "Scenario defines pressure to inspect later; it does not change thresholds or classifier behavior.",
+  "mutation_allowed": false,
+  "risk_checked": "gate_gap_penalty_alignment",
+  "scenario": "gate_gap_neutrality_report_only",
+  "schema": "tau-scaling-threshold-sensitivity-dry-run-scenario-v0.7.7",
+  "sensitivity_class": "low_attention",
+  "simulated_only": true,
+  "target": "gate_family_to_tsek_score",
+  "threshold_change_allowed": false
+}

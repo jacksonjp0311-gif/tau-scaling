@@ -93,7 +93,7 @@
   ],
   "executor_ran": false,
   "gate_gap_count": 1,
-  "generated_at": "2026-05-28T08:51:31.326873+00:00",
+  "generated_at": "2026-05-28T08:54:44.868341+00:00",
   "mutation_allowed": false,
   "next_recommendation": "Move to v0.7.7 Threshold Sensitivity Dry-Run using these report-only controls.",
   "policy_enforced": false,

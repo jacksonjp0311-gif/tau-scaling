@@ -70,7 +70,7 @@
     ]
   },
   "schema": "rcc-nexus-route-map-v1.7",
-  "updated_at": "2026-05-28T08:54:44.597421+00:00",
+  "updated_at": "2026-05-28T08:51:29.686598+00:00",
   "v0_4_routes": {
     "feedback_chart_path_health_repair": {
       "evidence": [
@@ -722,21 +722,6 @@
         "python scripts/release/validate_release.py"
       ]
     },
-    "threshold_sensitivity_dry_run": {
-      "evidence": [
-        "reports/threshold_sensitivity_dry_run/latest_threshold_sensitivity_dry_run.md",
-        "visuals/threshold_sensitivity_dry_run/v0_7_7/"
-      ],
-      "mutation_lock": "Report-only threshold sensitivity; no classifier change, threshold change, branch creation, or mutation.",
-      "read_first": [
-        "reports/penalty_controls/latest_over_under_penalty_negative_controls.json",
-        "reports/tsek_boundary_cards/latest_tsek_boundary_explanation_cards.json"
-      ],
-      "validate": [
-        "python scripts/benchmarks/run_threshold_sensitivity_dry_run.py",
-        "python scripts/release/validate_release.py"
-      ]
-    },
     "tsek_boundary_explanation_cards": {
       "evidence": [
         "reports/tsek_boundary_cards/latest_tsek_boundary_explanation_cards.md",
@@ -775,5 +760,5 @@
     "runtime": "python -m tau_scaling run-claim --seed configs/seeds/logicfolding_claim_card.json",
     "tests": "python -m unittest discover -s tests"
   },
-  "version": "v0.7.7"
+  "version": "v0.7.6"
 }

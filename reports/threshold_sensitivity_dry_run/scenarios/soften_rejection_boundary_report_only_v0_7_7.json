@@ -1,0 +1,16 @@
+{
+  "classifier_change_allowed": false,
+  "control_pressure_score": 6,
+  "current_classifier_output_changed": false,
+  "direction": "rejection_harder_to_trigger",
+  "dry_run_result": "REPORT_ONLY_REVIEW_REQUIRED",
+  "interpretation": "Scenario defines pressure to inspect later; it does not change thresholds or classifier behavior.",
+  "mutation_allowed": false,
+  "risk_checked": "over_penalty_high_support_claim",
+  "scenario": "soften_rejection_boundary_report_only",
+  "schema": "tau-scaling-threshold-sensitivity-dry-run-scenario-v0.7.7",
+  "sensitivity_class": "moderate_attention",
+  "simulated_only": true,
+  "target": "TSEK-C/TSEK-E",
+  "threshold_change_allowed": false
+}
