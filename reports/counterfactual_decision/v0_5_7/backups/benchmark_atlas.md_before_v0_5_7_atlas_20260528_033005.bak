@@ -37,7 +37,6 @@ This atlas gives humans and AI agents one stable place to understand benchmark e
 | v0.5.4 | Support-aware negative controls | `python scripts/benchmarks/run_support_aware_negative_controls.py` | Tests high-support retention before calibration or policy design | `reports/negative_controls/latest_support_aware_negative_controls.md` | `visuals/negative_controls/v0_5_4/` |
 | v0.5.5 | Disabled calibration plan | `python scripts/benchmarks/generate_disabled_calibration_plan.py` | Plans report-only threshold calibration while preserving support retention | `reports/calibration_plan/latest_disabled_calibration_plan.md` | `visuals/calibration_plan/v0_5_5/` |
 | v0.5.6 | Calibration counterfactuals | `python scripts/benchmarks/run_calibration_counterfactuals.py` | Simulates selected calibration candidate without applying classifier mutation | `reports/calibration_counterfactuals/latest_calibration_counterfactuals.md` | `visuals/calibration_counterfactuals/v0_5_6/` |
-| v0.5.7 | Counterfactual decision record | `python scripts/benchmarks/generate_counterfactual_decision_record.py` | Classifies counterfactual candidate for review without application | `reports/counterfactual_decision/latest_counterfactual_decision_record.md` | `visuals/counterfactual_decision/v0_5_7/` |
 
 ## Current Synthetic Suite Summary
 

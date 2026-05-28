@@ -80,7 +80,7 @@
     "no_drift": 6
   },
   "final_recommendation": "counterfactual_candidate_safe_for_review_not_application",
-  "generated_at": "2026-05-28T07:26:01.863414+00:00",
+  "generated_at": "2026-05-28T07:30:05.228973+00:00",
   "input_calibration_plan": "reports/calibration_plan/latest_disabled_calibration_plan.json",
   "input_negative_controls": "reports/negative_controls/latest_support_aware_negative_controls.json",
   "mutation_allowed": false,

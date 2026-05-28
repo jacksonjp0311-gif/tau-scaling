@@ -1,0 +1,32 @@
+{
+  "application_allowed": false,
+  "boundary": "Counterfactual decision records are local classifier-governance decision artifacts. They do not change classifier behavior and do not validate silicon, products, manufacturing, process nodes, benchmark superiority, or universal Tau Scaling law.",
+  "calibration_applied": false,
+  "chart_paths": [
+    "visuals/counterfactual_decision/v0_5_7/counterfactual_decision_counts.png",
+    "visuals/counterfactual_decision/v0_5_7/counterfactual_decision_metrics.png",
+    "visuals/counterfactual_decision/v0_5_7/counterfactual_source_status_counts.png"
+  ],
+  "counterfactual_count": 6,
+  "counterfactual_drift_count": 0,
+  "decision": "SAFE_FOR_REVIEW_NOT_APPLICATION",
+  "decision_counts": {
+    "SAFE_FOR_REVIEW_NOT_APPLICATION": 1
+  },
+  "decision_reason": "All counterfactual rows preserved support controls with zero drift and zero rejected rows.",
+  "final_recommendation": "review_candidate_without_application",
+  "generated_at": "2026-05-28T07:30:06.560444+00:00",
+  "input_counterfactuals": "reports/calibration_counterfactuals/latest_calibration_counterfactuals.json",
+  "mutation_allowed": false,
+  "next_recommendation": "v0.5.8 should produce a review package with evidence bundle and mutation still disabled.",
+  "next_step": "Bundle evidence for review; do not apply classifier mutation.",
+  "policy_enforced": false,
+  "rejected_count": 0,
+  "review_allowed": true,
+  "safe_candidate_count": 6,
+  "schema": "tau-scaling-counterfactual-decision-record-v0.5.7",
+  "selected_report_only_threshold": 0.8,
+  "source_status_counts": {
+    "safe_report_only_candidate": 6
+  }
+}

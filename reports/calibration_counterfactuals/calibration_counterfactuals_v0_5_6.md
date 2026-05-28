@@ -1,6 +1,6 @@
 # Tau Scaling v0.5.6 Calibration Counterfactuals
 
-Generated: `2026-05-28T07:26:01.863414+00:00`
+Generated: `2026-05-28T07:30:05.228973+00:00`
 
 ## Result
 
