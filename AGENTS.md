@@ -1,6 +1,6 @@
 # AGENTS.md Ã¢â‚¬â€ Tau Scaling Agent Operating Contract
 
-Current contract: **TAU-SCALING-SA v0.8.6 - Source Evidence Intake Cards**
+Current contract: **TAU-SCALING-SA v0.8.6a - README Render Spacing Polish**
 
 ## Mission
 

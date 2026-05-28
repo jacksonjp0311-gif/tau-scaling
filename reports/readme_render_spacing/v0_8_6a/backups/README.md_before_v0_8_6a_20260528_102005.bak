@@ -10,8 +10,8 @@
 
 Repository: `tau-scaling`  
 Package / CLI: `tau_scaling` / `tau-scaling`  
-Current checkpoint: **TAU-SCALING-SA v0.8.6a - README Render Spacing Polish**  
-Previous seal: **TAU-SCALING-SA v0.8.6 - Source Evidence Intake Cards**
+Current checkpoint: **TAU-SCALING-SA v0.8.6 - Source Evidence Intake Cards**  
+Previous seal: **TAU-SCALING-SA v0.8.5 - Public Source Ledger / Claim Provenance Map**
 
 Tau Scaling is a local-first, evidence-gated Python runtime for evaluating Tau Scaling claims through structured claim cards, workload declarations, tau vectors, LogicFolding survivability checks, energy / thermal / PDN / PVT gates, TSEK classification, evidence packages, and RCC-N / OMN-style repository navigation.
 
@@ -36,7 +36,6 @@ This repository is now in the **v0.8 public Tau research spine**.
 | v0.8.4c Nexus Surface Sync Polish | Are current report surfaces mirrored into the Nexus directory spine? | `reports/nexus_surface_sync/latest_nexus_surface_sync_polish.md` |
 | v0.8.5 Public Source Ledger | Which source category produced each claim, and how far can it carry the claim? | `reports/public_source_ledger/latest_public_source_ledger.md` |
 | v0.8.6 Source Evidence Intake Cards | What exact source fields must be filled before claims can be reviewed? | `reports/source_evidence_intake/latest_source_evidence_intake_cards.md` |
-| v0.8.6a README Render Spacing Polish | Did the public README render cleanly after source-intake insertion? | `reports/readme_render_spacing/latest_readme_render_spacing_polish.md` |
 
 Current public finding: Tau Scaling can be studied as an evidence-gated claim system. Public claims can be separated into methodology, reported metrics, roadmap projections, topology arguments, and independent evidence.
 
@@ -110,7 +109,6 @@ Primary outputs:
 - `visuals/source_evidence_intake/v0_8_6/`
 
 Boundary: source evidence intake cards are templates for source discipline. They do not promote claims, validate silicon, validate products, prove benchmark superiority, or establish a universal Tau Scaling law.
-
 ## Tau Doctrine Alignment
 
 - Time is the shared metric, not automatic proof.
@@ -131,7 +129,6 @@ This reflection is part of the repository's operating memory. It can be expanded
 Primary reflection surface:
 
 - `docs/reflection/law_of_sufficient_form_v0_8_5.md`
-
 ## Human Director Box
 
 ### What this repository is
@@ -148,7 +145,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | TAU-SCALING-SA v0.8.6a |
+| Current checkpoint | TAU-SCALING-SA v0.8.6 |
 | Release validator | passing / findings 0 / step failures 0 |
 | README mini repo audit | passing / 0 warnings |
 | RCC-N checker | passing / 0 warnings |
@@ -162,7 +159,6 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 | Public source ledger | `reports/public_source_ledger/latest_public_source_ledger.md` |
 | Source evidence intake visual | `visuals/source_evidence_intake/v0_8_6/source_evidence_intake_cards.svg` |
 | Source evidence intake cards | `reports/source_evidence_intake/latest_source_evidence_intake_cards.md` |
-| README render spacing polish | `reports/readme_render_spacing/latest_readme_render_spacing_polish.md` |
 | Evidence sufficiency visual | `visuals/evidence_sufficiency/v0_8_4/evidence_sufficiency_matrix.svg` |
 | Release readiness report | `reports/release/latest_release_readiness.md` |
 | Nexus surface sync polish | `reports/nexus_surface_sync/latest_nexus_surface_sync_polish.md` |
@@ -260,7 +256,6 @@ The full historical chain remains available, but the root README now keeps only 
 |---|---|
 | `docs/benchmarks/benchmark_atlas.md` | Historical benchmark and chart registry |
 | `reports/readme_information_architecture/` | README information architecture compression reports |
-| `reports/readme_render_spacing/` | README render-spacing polish reports |
 | `docs/release_notes/` | Versioned release notes |
 | `docs/reflection/` | Reflection notes including the Law of Sufficient Form |
 | `reports/stable_tau_threshold_governance/` | v0.8.0 stable threshold milestone |
@@ -273,7 +268,6 @@ The full historical chain remains available, but the root README now keeps only 
 | `docs/reflection/law_of_sufficient_form_v0_8_5.md` | Law of Sufficient Form reflection |
 | `reports/public_source_ledger/latest_public_source_ledger.md` | Public source ledger and claim provenance map |
 | `reports/source_evidence_intake/latest_source_evidence_intake_cards.md` | Source evidence intake card report |
-| `reports/readme_render_spacing/latest_readme_render_spacing_polish.md` | README render spacing polish report |
 | `reports/readme_information_architecture/latest_readme_information_architecture_compression.md` | README IA compression report |
 | `reports/evidence_sufficiency/latest_evidence_sufficiency_matrix.md` | Current evidence sufficiency matrix |
 
@@ -603,7 +597,6 @@ This section is part of the repository's operating memory. When a patch fails, t
 | L-071 | v0.8.4b compressed the README successfully, but new current report surfaces needed to be mirrored into the directory/Nexus spine. | Compression improves readability but can hide new durable surfaces if the directory box and archive pointers are not updated. | After README compression, run a Nexus surface sync pass to ensure current reports, visuals, and verification dates are visible in the navigation spine. |
 | L-072 | The Law of Sufficient Form emerged during the v0.8.4c stabilization sequence. | Once claim, evidence, routing, validation, memory, and non-claim locks were visible, the repo began acting like a self-stabilizing substrate. | Major process insights should be added to a reflection surface, but reflection must remain bounded by validation and source provenance. |
 | L-073 | v0.8.5 mapped source provenance, but provenance categories still needed concrete source-intake fields. | A source category is not yet a citation, quote, date, author, or measurement package. | Source provenance must be followed by intake cards before any source-backed claim review or promotion discussion. |
-| L-074 | v0.8.6 passed all validators, but generated README sections had minor heading-adjacency render risk. | Markdown can pass audits while still needing visual spacing polish. | After inserting generated README sections, run a render-spacing polish pass before starting the next research layer. |
 
 ### Failure Response Protocol
 
@@ -749,7 +742,6 @@ This section is intentionally compact. The full repository is validated by RCC-N
 | `visuals/source_evidence_intake/` | Source evidence intake charts |
 | `visuals/stable_tau_threshold_governance/` | Stable threshold governance charts |
 | `reports/readme_information_architecture/` | README information architecture compression reports |
-| `reports/readme_render_spacing/` | README render-spacing polish reports |
 | `docs/release_notes/` | Versioned release notes |
 | `docs/reflection/` | Reflection notes including the Law of Sufficient Form |
 | `rcc/nexus/` | Route map, task matrix, Nexus handoff surfaces |
@@ -915,7 +907,6 @@ validation_remains_required
 | v0.8.4c | Nexus Surface Sync Polish; mirrors current report surfaces into the directory box and RCC echo state. |
 | v0.8.5 | Public Source Ledger / Claim Provenance Map; maps source categories, source-carry boundaries, and reflection law into the public Tau claim spine. |
 | v0.8.6 | Source Evidence Intake Cards; creates per-claim source-intake cards with required source fields and promotion blockers. |
-| v0.8.6a | README Render Spacing Polish; repairs GitHub-rendering spacing after v0.8.6 section insertion. |
 
 ## Next Recommended Version
 
