@@ -1,0 +1,64 @@
+{
+  "application_allowed": false,
+  "block_reason": "Live approval handoff is not valid for replay. Executor remains blocked.",
+  "boundary": "Approval-gated replay executors are local classifier-governance execution-boundary artifacts. This report does not execute replay commands by default, does not create branches, does not mutate classifier behavior, does not apply calibration, and does not validate silicon, products, manufacturing, process nodes, benchmark superiority, or universal Tau Scaling law.",
+  "branch_created": false,
+  "branch_creation_allowed": false,
+  "calibration_applied": false,
+  "chart_paths": [
+    "visuals/replay_executor/v0_6_7/replay_executor_gate_state.png",
+    "visuals/replay_executor/v0_6_7/replay_executor_steps.png",
+    "visuals/replay_executor/v0_6_7/replay_executor_status.png"
+  ],
+  "executor_allowed": false,
+  "executor_ran": false,
+  "executor_status": "EXECUTOR_BLOCKED__LIVE_APPROVAL_HANDOFF_NOT_VALID",
+  "executor_steps": [
+    {
+      "command": "python -m tau_scaling run-claim --seed configs/seeds/logicfolding_claim_card.json",
+      "executed_now": false,
+      "step_id": "baseline_claim",
+      "would_run_if_authorized": false
+    },
+    {
+      "command": "python -m tau_scaling run-claim --seed configs/seeds/logicfolding_promotion_path_claim_card.json",
+      "executed_now": false,
+      "step_id": "promotion_path_claim",
+      "would_run_if_authorized": false
+    },
+    {
+      "command": "python scripts/benchmarks/run_support_aware_negative_controls.py",
+      "executed_now": false,
+      "step_id": "support_aware_negative_controls",
+      "would_run_if_authorized": false
+    },
+    {
+      "command": "python scripts/benchmarks/run_calibration_counterfactuals.py",
+      "executed_now": false,
+      "step_id": "calibration_counterfactuals",
+      "would_run_if_authorized": false
+    },
+    {
+      "command": "python scripts/benchmarks/run_review_signoff_gate.py",
+      "executed_now": false,
+      "step_id": "review_signoff_gate",
+      "would_run_if_authorized": false
+    },
+    {
+      "command": "python scripts/benchmarks/run_candidate_branch_gate.py",
+      "executed_now": false,
+      "step_id": "candidate_branch_gate",
+      "would_run_if_authorized": false
+    }
+  ],
+  "final_recommendation": "Keep executor blocked until live approval handoff is valid.",
+  "generated_at": "2026-05-28T07:59:49.853360+00:00",
+  "handoff_status": "HANDOFF_BLOCKED__NO_LIVE_APPROVAL",
+  "handoff_valid": false,
+  "input_live_approval_handoff": "reports/live_approval_handoff/latest_live_approval_handoff_check.json",
+  "mutation_allowed": false,
+  "next_recommendation": "v0.6.8 should add explicit run authorization if live handoff becomes valid; otherwise continue blocked-state observability.",
+  "policy_enforced": false,
+  "runtime_behavior_changed": false,
+  "schema": "tau-scaling-approval-gated-replay-executor-v0.6.7"
+}

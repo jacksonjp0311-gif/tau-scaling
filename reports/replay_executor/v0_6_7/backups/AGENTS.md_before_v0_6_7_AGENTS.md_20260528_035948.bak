@@ -1,6 +1,6 @@
 # AGENTS.md — Tau Scaling Agent Operating Contract
 
-Current contract: **TAU-SCALING-SA v0.6.7 - Approval-Gated Replay Executor**
+Current contract: **TAU-SCALING-SA v0.6.6 - Live Approval Handoff Check**
 
 ## Mission
 
@@ -74,7 +74,6 @@ python scripts/benchmarks/validate_human_approval_artifact.py
 python scripts/benchmarks/run_approval_gated_replay_dry_run.py
 python scripts/benchmarks/validate_approval_fixtures.py
 python scripts/benchmarks/run_live_approval_handoff_check.py
-python scripts/benchmarks/run_approval_gated_replay_executor.py
 python -m unittest discover -s tests
 ```
 
@@ -115,7 +114,6 @@ python -m unittest discover -s tests
 | Approval-gated replay patch | `reports/approval_gated_replay/`, `visuals/approval_gated_replay/`, approval validator | blocked replay dry-run + release validator; no mutation |
 | Approval fixture patch | `reports/approval_fixtures/`, `visuals/approval_fixtures/`, approval template | fixture validator + release validator; fixtures are not approval |
 | Live approval handoff patch | `reports/live_approval_handoff/`, `visuals/live_approval_handoff/`, approval fixtures | handoff check + release validator; fixtures refused as live approval |
-| Replay executor patch | `reports/replay_executor/`, `visuals/replay_executor/`, live approval handoff | executor gate + release validator; refuses execution when handoff invalid |
 | Public claim replay patch | source boundary docs, `configs/seeds/public_claims/`, claim reports | release validator + claim replay report |
 | Directory structure patch | Full Directory Box, affected mini READMEs, context indexes | README audit + RCC-N + release validator |
 
