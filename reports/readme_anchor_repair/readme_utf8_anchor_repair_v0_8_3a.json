@@ -1,0 +1,13 @@
+{
+    "schema":  "tau-scaling-readme-utf8-anchor-repair-v0.8.3a",
+    "generated_at":  "2026-05-28T10:11:42.5482011Z",
+    "checkpoint":  "TAU-SCALING-SA v0.8.3a - README UTF-8 Anchor Repair after LogicFolding Sweep",
+    "repaired_anchor":  "AI Rule — Directory Box and Mini README Synchronization",
+    "preserved_logicfolding_sweep":  true,
+    "thresholds_changed":  false,
+    "classifier_changed":  false,
+    "mutation_allowed":  false,
+    "application_allowed":  false,
+    "calibration_applied":  false,
+    "boundary":  "README UTF-8 anchor repair improves repository hygiene only. It does not validate silicon, products, manufacturing, process nodes, benchmark superiority, or universal Tau Scaling law."
+}

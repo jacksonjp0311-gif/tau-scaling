@@ -10,8 +10,8 @@
 
 Repository: `tau-scaling`  
 Package / CLI: `tau_scaling` / `tau-scaling`  
-Current checkpoint: **TAU-SCALING-SA v0.8.3a - README UTF-8 Anchor Repair after LogicFolding Sweep**  
-Previous seal: **TAU-SCALING-SA v0.8.3 - LogicFolding Plausibility Sweep**
+Current checkpoint: **TAU-SCALING-SA v0.8.3 - LogicFolding Plausibility Sweep**  
+Previous seal: **TAU-SCALING-SA v0.8.2a - README Showcase and Audit Anchor Repair**
 
 Tau Scaling is a local-first, evidence-gated Python runtime for evaluating tau-scaling claims through structured claim cards, workload declarations, tau vectors, LogicFolding survivability checks, edge-to-surface boundary algebra, energy / thermal / PDN / PVT gates, Monte Carlo checker stress, TSEK classification, evidence packages, and RCC-N / OMN-style repository navigation.
 
@@ -127,7 +127,7 @@ What evidence is sufficient to move a Tau Scaling claim from roadmap coherence t
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | TAU-SCALING-SA v0.8.3a |
+| Current checkpoint | TAU-SCALING-SA v0.8.3 |
 | Synthetic gate suite | v0.4.0 / benchmark + finding charts |
 | Package version | 0.2.0 |
 | Baseline seed | TSEK-C / A_TSEK 0.0000 |
@@ -136,7 +136,7 @@ What evidence is sufficient to move a Tau Scaling claim from roadmap coherence t
 | README mini repo audit | passing / 0 warnings |
 | Unified release validator | passing / step failures 0 |
 | AGENTS.md contract | synchronized with release validator |
-| Task routing matrix | geometry-aware / v0.8.3a-ready |
+| Task routing matrix | geometry-aware / v0.8.3-ready |
 | Release warning findings | 0 expected after v0.3.3d validator scan repair |
 | Architecture validator | passing / 0 warnings |
 | Unit tests | 8 OK |
@@ -230,7 +230,7 @@ What evidence is sufficient to move a Tau Scaling claim from roadmap coherence t
 | Threshold governance charts | `visuals/threshold_governance_summary/v0_7_9/` |
 | Stable Tau threshold governance | `reports/stable_tau_threshold_governance/latest_stable_tau_threshold_governance_milestone.md` |
 | Stable Tau threshold charts | `visuals/stable_tau_threshold_governance/v0_8_0/` |
-| Agent contract version sync | current / v0.8.3a |
+| Agent contract version sync | current / v0.8.3 |
 | Release readiness report | `reports/release/latest_release_readiness.md` |
 | Collision-proof run identity | passed |
 | Mini README coverage | 1.0 |
@@ -561,7 +561,6 @@ This section is part of the repository's operating memory. When a patch fails, t
 | Lesson ID | Failure observed | Root cause | Permanent rule |
 |---|---|---|---|
 | L-064 | v0.8.2 created the public Tau claim ledger, but README audit failed because the AI Rule em-dash anchor was mojibake-corrupted. | Encoding drift can make a semantically correct README fail exact audit anchors. | Audit-visible headings must be repaired with exact Unicode anchors, and high-value findings should be showcased near the top of the README. |
-| L-065 | v0.8.3 LogicFolding sweep succeeded, but README audit failed again on the em-dash AI Rule anchor. | Windows PowerShell Get-Content / rewrite paths can reintroduce mojibake into UTF-8 README surfaces. | README repairs that must preserve Unicode audit anchors must use explicit .NET UTF-8 read/write or a Python UTF-8 patcher, then rerun release validator before commit. |
 
 | Lesson ID | Failure observed | Root cause | Permanent rule |
 |---|---|---|---|
@@ -758,7 +757,7 @@ README audit: passed
 unit_tests: OK
 ```
 
-## AI Rule — Directory Box and Mini README Synchronization
+## AI Rule â€” Directory Box and Mini README Synchronization
 
 This exact heading uses a Unicode em dash (U+2014) because `scripts/rcc/audit_readme_surface.py` checks this anchor literally.
 
