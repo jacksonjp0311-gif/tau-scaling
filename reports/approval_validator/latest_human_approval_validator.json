@@ -1,0 +1,95 @@
+{
+  "application_allowed": false,
+  "approval_decision": "UNSET",
+  "approval_valid": false,
+  "boundary": "Human approval validators are local classifier-governance validation artifacts. They do not create branches by default, do not mutate classifier behavior, do not apply calibration, and do not validate silicon, products, manufacturing, process nodes, benchmark superiority, or universal Tau Scaling law.",
+  "branch_created": false,
+  "branch_creation_allowed": false,
+  "calibration_applied": false,
+  "chart_paths": [
+    "visuals/approval_validator/v0_6_3/approval_validator_check_counts.png",
+    "visuals/approval_validator/v0_6_3/approval_validator_gate_state.png",
+    "visuals/approval_validator/v0_6_3/approval_validator_status.png"
+  ],
+  "check_fail_count": 3,
+  "check_pass_count": 8,
+  "checks": [
+    {
+      "check_id": "schema_is_v0_6_2",
+      "observed": "tau-scaling-human-approval-artifact-v0.6.2",
+      "passed": true,
+      "required": true
+    },
+    {
+      "check_id": "decision_is_explicit",
+      "observed": "UNSET",
+      "passed": false,
+      "required": true
+    },
+    {
+      "check_id": "approver_present",
+      "observed": "missing",
+      "passed": false,
+      "required": true
+    },
+    {
+      "check_id": "timestamp_present",
+      "observed": "missing",
+      "passed": false,
+      "required": true
+    },
+    {
+      "check_id": "scope_replay_only",
+      "observed": "candidate_branch_replay_only",
+      "passed": true,
+      "required": true
+    },
+    {
+      "check_id": "required_statement_present",
+      "observed": "present",
+      "passed": true,
+      "required": true
+    },
+    {
+      "check_id": "runtime_mutation_locked",
+      "observed": "False",
+      "passed": true,
+      "required": true
+    },
+    {
+      "check_id": "classifier_mutation_locked",
+      "observed": "False",
+      "passed": true,
+      "required": true
+    },
+    {
+      "check_id": "application_locked",
+      "observed": "False",
+      "passed": true,
+      "required": true
+    },
+    {
+      "check_id": "calibration_unapplied",
+      "observed": "False",
+      "passed": true,
+      "required": true
+    },
+    {
+      "check_id": "policy_unenforced",
+      "observed": "False",
+      "passed": true,
+      "required": true
+    }
+  ],
+  "final_recommendation": "Approval is not valid for replay. Keep replay blocked.",
+  "generated_at": "2026-05-28T07:49:45.189682+00:00",
+  "input_approval_artifact": "reports/human_approval/human_approval_artifact_template_v0_6_2.json",
+  "input_candidate_replay": "reports/candidate_replay/latest_candidate_branch_replay_harness.json",
+  "mutation_allowed": false,
+  "next_recommendation": "v0.6.4 should add approval-gated replay dry-run only if approval_valid is true; otherwise preserve blocked state.",
+  "policy_enforced": false,
+  "replay_allowed": false,
+  "runtime_behavior_changed": false,
+  "schema": "tau-scaling-human-approval-artifact-validator-v0.6.3",
+  "validator_status": "APPROVAL_INVALID_OR_TEMPLATE_ONLY"
+}

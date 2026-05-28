@@ -17,7 +17,7 @@
     "policy_enforced": false,
     "runtime_mutation_allowed": false
   },
-  "generated_at": "2026-05-28T07:46:00.106512+00:00",
+  "generated_at": "2026-05-28T07:49:43.680289+00:00",
   "notes": "",
   "required_statement": "I understand this approval, if set to APPROVE_REPLAY_ONLY, authorizes replay only and does not authorize classifier mutation, runtime mutation, calibration application, production use, silicon validation, or product claims.",
   "schema": "tau-scaling-human-approval-artifact-v0.6.2",

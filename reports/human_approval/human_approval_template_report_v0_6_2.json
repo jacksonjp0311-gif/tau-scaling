@@ -14,7 +14,7 @@
     "visuals/human_approval/v0_6_2/human_approval_lock_counts.png"
   ],
   "final_recommendation": "Use this template for a future explicit approval or denial artifact. Do not replay or create branches from the template alone.",
-  "generated_at": "2026-05-28T07:46:00.107515+00:00",
+  "generated_at": "2026-05-28T07:49:43.681397+00:00",
   "human_approval_present": false,
   "human_approval_required": true,
   "input_candidate_branch_gate": "reports/candidate_branch/latest_candidate_branch_gate.json",
