@@ -6,7 +6,7 @@
   "claim_count": 8,
   "claim_promotion_allowed": false,
   "classifier_changed": false,
-  "generated_at": "2026-05-28T15:03:43.097816+00:00",
+  "generated_at": "2026-05-28T15:08:03.379358+00:00",
   "mutation_allowed": false,
   "ready_for_promotion_review_count": 0,
   "schema": "tau-scaling-source-evidence-intake-cards-v0.8.6",

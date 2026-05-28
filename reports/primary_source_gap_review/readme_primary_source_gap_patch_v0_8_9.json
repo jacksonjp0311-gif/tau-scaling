@@ -1,0 +1,12 @@
+{
+  "application_allowed": false,
+  "boundary": "README/gap patch is publication routing only. It does not validate or promote claims.",
+  "checkpoint": "TAU-SCALING-SA v0.8.9 - Primary Source Validation Gap Review",
+  "claim_promotion_allowed": false,
+  "classifier_changed": false,
+  "generated_at": "2026-05-28T15:08:02.308714+00:00",
+  "mutation_allowed": false,
+  "schema": "tau-scaling-v0.8.9-readme-primary-source-gap-patch",
+  "source_validation_claimed": false,
+  "thresholds_changed": false
+}

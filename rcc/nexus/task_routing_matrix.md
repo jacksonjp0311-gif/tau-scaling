@@ -1,6 +1,6 @@
 # Task Routing Matrix
 
-Current contract: **TAU-SCALING-SA v0.8.8 - Public Source Population Pass**
+Current contract: **TAU-SCALING-SA v0.8.9 - Primary Source Validation Gap Review**
 
 ## Geometry Route
 

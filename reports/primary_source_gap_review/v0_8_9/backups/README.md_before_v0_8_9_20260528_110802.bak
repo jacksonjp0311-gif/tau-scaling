@@ -10,8 +10,8 @@
 
 Repository: `tau-scaling`  
 Package / CLI: `tau_scaling` / `tau-scaling`  
-Current checkpoint: **TAU-SCALING-SA v0.8.9 - Primary Source Validation Gap Review**  
-Previous seal: **TAU-SCALING-SA v0.8.8 - Public Source Population Pass**
+Current checkpoint: **TAU-SCALING-SA v0.8.8 - Public Source Population Pass**  
+Previous seal: **TAU-SCALING-SA v0.8.7 - Primary Source Intake Queue / Source Population Scaffold**
 
 Tau Scaling is a local-first, evidence-gated Python runtime for evaluating Tau Scaling claims through structured claim cards, workload declarations, tau vectors, LogicFolding survivability checks, energy / thermal / PDN / PVT gates, TSEK classification, evidence packages, and RCC-N / OMN-style repository navigation.
 
@@ -39,7 +39,6 @@ This repository is now in the **v0.8 public Tau research spine**.
 | v0.8.6a README Render Spacing Polish | Did the public README render cleanly after source-intake insertion? | `reports/readme_render_spacing/latest_readme_render_spacing_polish.md` |
 | v0.8.7 Primary Source Intake Queue | Which source records are ready to be manually populated and confirmed? | `reports/primary_source_intake/latest_primary_source_intake_queue.md` |
 | v0.8.8 Public Source Population Pass | What public sources can populate the queue without claiming primary validation? | `reports/public_source_population/latest_public_source_population_pass.md` |
-| v0.8.9 Primary Source Gap Review | What primary and independent validation is still missing? | `reports/primary_source_gap_review/latest_primary_source_gap_review.md` |
 
 Current public finding: Tau Scaling can be studied as an evidence-gated claim system. Public claims can be separated into methodology, reported metrics, roadmap projections, topology arguments, and independent evidence.
 
@@ -139,19 +138,6 @@ Primary outputs:
 - `visuals/public_source_population/v0_8_8/`
 
 Boundary: source population is not source validation. Source validation is not claim promotion. Claim promotion requires evidence gates, independent support, and explicit review.
-
-## Primary Source Validation Gap Review v0.8.9
-
-This layer converts source population into a publishable validation-gap review. It asks what first-party, formal, or independent evidence is still missing before any public Tau claim can be reviewed for promotion.
-
-Primary outputs:
-
-- `reports/primary_source_gap_review/latest_primary_source_gap_review.md`
-- `reports/primary_source_gap_review/latest_primary_source_gap_review.json`
-- `reports/publishable_findings/latest_publishable_findings_brief.md`
-- `visuals/primary_source_gap_review/v0_8_9/`
-
-Publishable boundary: the current result is publishable as evidence-governance and source-provenance analysis. It is not silicon validation, product validation, benchmark superiority, or proof of a universal Tau Scaling law.
 ## Tau Doctrine Alignment
 
 - Time is the shared metric, not automatic proof.
@@ -189,7 +175,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | TAU-SCALING-SA v0.8.9 |
+| Current checkpoint | TAU-SCALING-SA v0.8.8 |
 | Release validator | passing / findings 0 / step failures 0 |
 | README mini repo audit | passing / 0 warnings |
 | RCC-N checker | passing / 0 warnings |
@@ -208,8 +194,6 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 | Primary source intake queue | `reports/primary_source_intake/latest_primary_source_intake_queue.md` |
 | Public source population manifest | `sources/primary_source_intake/source_population_manifest_v0_8_8.json` |
 | Public source population pass | `reports/public_source_population/latest_public_source_population_pass.md` |
-| Publishable findings brief | `reports/publishable_findings/latest_publishable_findings_brief.md` |
-| Primary source gap review | `reports/primary_source_gap_review/latest_primary_source_gap_review.md` |
 | README render spacing polish | `reports/readme_render_spacing/latest_readme_render_spacing_polish.md` |
 | Evidence sufficiency visual | `visuals/evidence_sufficiency/v0_8_4/evidence_sufficiency_matrix.svg` |
 | Release readiness report | `reports/release/latest_release_readiness.md` |
@@ -241,7 +225,6 @@ python scripts/benchmarks/generate_public_source_ledger.py
 python scripts/benchmarks/generate_source_evidence_intake_cards.py
 python scripts/benchmarks/run_primary_source_intake_queue.py
 python scripts/benchmarks/populate_public_source_intake_v0_8_8.py
-python scripts/benchmarks/generate_primary_source_gap_review_v0_8_9.py
 ```
 
 ### Baseline claim checks
@@ -326,8 +309,6 @@ The full historical chain remains available, but the root README now keeps only 
 | `reports/source_evidence_intake/latest_source_evidence_intake_cards.md` | Source evidence intake card report |
 | `reports/primary_source_intake/latest_primary_source_intake_queue.md` | Primary source intake queue report |
 | `reports/public_source_population/latest_public_source_population_pass.md` | Public source population report |
-| `reports/publishable_findings/latest_publishable_findings_brief.md` | Evidence-bounded publishable findings brief |
-| `reports/primary_source_gap_review/latest_primary_source_gap_review.md` | Primary source validation gap review |
 | `reports/readme_render_spacing/latest_readme_render_spacing_polish.md` | README render spacing polish report |
 | `reports/readme_information_architecture/latest_readme_information_architecture_compression.md` | README IA compression report |
 | `reports/evidence_sufficiency/latest_evidence_sufficiency_matrix.md` | Current evidence sufficiency matrix |
@@ -664,8 +645,6 @@ This section is part of the repository's operating memory. When a patch fails, t
 
 | L-076 | v0.8.8 can populate claims from public reporting, but public secondary reporting is not primary validation. | Source population, source validation, and claim promotion are three separate gates. | Always mark public media/source records as secondary unless first-party or independently reproduced evidence is present. |
 
-| L-077 | v0.8.8 source-populated all public Tau claims, but primary and independent validation remain absent. | A publishable result can be a bounded gap map, not a validation claim. | Publish source-provenance and validation-gap findings without upgrading technical claims beyond the available evidence. |
-
 ### Failure Response Protocol
 
 When a failure occurs:
@@ -806,8 +785,6 @@ This section is intentionally compact. The full repository is validated by RCC-N
 | `reports/source_evidence_intake/` | Source evidence intake card reports |
 | `reports/primary_source_intake/` | Primary source intake queue reports |
 | `reports/public_source_population/` | Public source population reports |
-| `reports/primary_source_gap_review/` | Primary source validation gap reports |
-| `reports/publishable_findings/` | Evidence-bounded publishable findings briefs |
 | `reports/release_finding_repair/` | Release warning inspection and zero-finding repair reports |
 | `visuals/logicfolding_plausibility/` | LogicFolding sweep charts |
 | `visuals/evidence_sufficiency/` | Evidence sufficiency charts |
@@ -815,7 +792,6 @@ This section is intentionally compact. The full repository is validated by RCC-N
 | `visuals/source_evidence_intake/` | Source evidence intake charts |
 | `visuals/primary_source_intake/` | Primary source intake charts |
 | `visuals/public_source_population/` | Public source population charts |
-| `visuals/primary_source_gap_review/` | Primary source validation gap charts |
 | `visuals/stable_tau_threshold_governance/` | Stable threshold governance charts |
 | `reports/readme_information_architecture/` | README information architecture compression reports |
 | `reports/readme_render_spacing/` | README render-spacing polish reports |
@@ -987,16 +963,15 @@ validation_remains_required
 | v0.8.6a | README Render Spacing Polish; repairs GitHub-rendering spacing after v0.8.6 section insertion. |
 | v0.8.7 | Primary Source Intake Queue; creates manual source-population manifest without inventing or validating sources. |
 | v0.8.8 | Public Source Population Pass; populates source queue with bounded public secondary-source records while preserving primary-validation locks. |
-| v0.8.9 | Primary Source Validation Gap Review; converts public source population into publishable validation-gap findings. |
 
 ## Next Recommended Version
 
-**TAU-SCALING-SA v0.9.0 - Public Research Milestone Package**
+**TAU-SCALING-SA v0.8.9 - Primary Source Validation Gap Review**
 
 Recommended goals:
 
-- Package the v0.8 public Tau research spine into a release-quality research artifact.
-- Include claim ledger, source ledger, source population, validation-gap matrix, visuals, and publishable findings brief.
+- Identify which populated source records still need first-party Huawei/HiSilicon/IEEE material.
+- Separate secondary-source confidence from primary-source confirmation.
 - Preserve source-fidelity and non-claim locks.
 - Keep threshold and classifier mutation disabled.
 - Preserve `mutation_allowed: false`.

@@ -1,6 +1,6 @@
 # Tau Scaling v0.3.2 Benchmark Summary
 
-Generated: `2026-05-28T15:03:44.471717+00:00`
+Generated: `2026-05-28T15:08:05.047339+00:00`
 
 ## Result
 
@@ -8,10 +8,10 @@ Generated: `2026-05-28T15:03:44.471717+00:00`
 - Unique run IDs: `12`
 - Duplicate run IDs: `0`
 - Collision-proof identity passed: `True`
-- Mean elapsed ms: `41.6031`
-- Median elapsed ms: `41.3964`
-- Min elapsed ms: `38.4931`
-- Max elapsed ms: `47.2714`
+- Mean elapsed ms: `51.1041`
+- Median elapsed ms: `48.5619`
+- Min elapsed ms: `39.3051`
+- Max elapsed ms: `75.6769`
 
 ## Class Counts
 
@@ -24,8 +24,8 @@ Generated: `2026-05-28T15:03:44.471717+00:00`
 
 | Seed | Runs | Classes | A_TSEK values | Findings values | Mean ms |
 |---|---:|---|---|---|---:|
-| `configs/seeds/logicfolding_claim_card.json` | 6 | TSEK-C:6 | [0.0] | [1] | 42.9064 |
-| `configs/seeds/logicfolding_promotion_path_claim_card.json` | 6 | TSEK-B:6 | [1.0] | [0] | 40.2997 |
+| `configs/seeds/logicfolding_claim_card.json` | 6 | TSEK-C:6 | [0.0] | [1] | 49.256 |
+| `configs/seeds/logicfolding_promotion_path_claim_card.json` | 6 | TSEK-B:6 | [1.0] | [0] | 52.9523 |
 
 ## Boundary
 

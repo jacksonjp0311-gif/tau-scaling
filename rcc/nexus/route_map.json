@@ -70,7 +70,7 @@
                                       ]
                },
     "schema":  "rcc-nexus-route-map-v1.7",
-    "updated_at":  "2026-05-28T15:03:42.3108117Z",
+    "updated_at":  "2026-05-28T15:08:02.5621135Z",
     "v0_4_routes":  {
                         "feedback_chart_path_health_repair":  {
                                                                   "evidence":  [
@@ -1031,7 +1031,25 @@
                                                                                "visuals/public_source_population/v0_8_8/"
                                                                            ],
                                                               "mutation_lock":  "Public source population only; no source validation, classifier change, threshold change, claim promotion, branch creation, or mutation."
-                                                          }
+                                                          },
+                        "primary_source_validation_gap_review":  {
+                                                                     "read_first":  [
+                                                                                        "reports/primary_source_gap_review/latest_primary_source_gap_review.md",
+                                                                                        "reports/publishable_findings/latest_publishable_findings_brief.md",
+                                                                                        "README.md"
+                                                                                    ],
+                                                                     "validate":  [
+                                                                                      "python scripts/benchmarks/generate_primary_source_gap_review_v0_8_9.py",
+                                                                                      "python scripts/release/validate_release.py",
+                                                                                      "python scripts/rcc/audit_readme_surface.py"
+                                                                                  ],
+                                                                     "evidence":  [
+                                                                                      "reports/primary_source_gap_review/latest_primary_source_gap_review.md",
+                                                                                      "reports/publishable_findings/latest_publishable_findings_brief.md",
+                                                                                      "visuals/primary_source_gap_review/v0_8_9/"
+                                                                                  ],
+                                                                     "mutation_lock":  "Primary source gap review only; no source validation, classifier change, threshold change, claim promotion, branch creation, or mutation."
+                                                                 }
                     },
     "validation":  {
                        "architecture":  "python scripts/validation/validate_architecture_contracts.py",
@@ -1039,5 +1057,5 @@
                        "runtime":  "python -m tau_scaling run-claim --seed configs/seeds/logicfolding_claim_card.json",
                        "tests":  "python -m unittest discover -s tests"
                    },
-    "version":  "v0.8.8"
+    "version":  "v0.8.9"
 }

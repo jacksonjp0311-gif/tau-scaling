@@ -1,0 +1,17 @@
+{
+  "claim_promotion_allowed": false,
+  "generated_at": "2026-05-28T15:08:03.857751+00:00",
+  "metrics": {
+    "average_gap_count": 14.75,
+    "average_source_confidence": 0.5837,
+    "claim_count": 8,
+    "high_gap_claim_count": 8,
+    "independent_source_confirmed_count": 0,
+    "primary_source_confirmed_count": 0,
+    "secondary_source_only_count": 8,
+    "source_populated_count": 8
+  },
+  "schema": "tau-scaling-publishable-findings-brief-v0.8.9",
+  "source_validation_claimed": false,
+  "title": "Tau Scaling as an Evidence-Gated Public Claim System: Source Population Without Primary Validation"
+}
