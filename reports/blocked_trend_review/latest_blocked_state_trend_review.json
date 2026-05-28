@@ -19,7 +19,7 @@
   "executor_status_counts": {
     "EXECUTOR_BLOCKED__LIVE_APPROVAL_HANDOFF_NOT_VALID": 2
   },
-  "generated_at": "2026-05-28T08:04:53.605511+00:00",
+  "generated_at": "2026-05-28T08:12:43.538835+00:00",
   "handoff_status_counts": {
     "HANDOFF_BLOCKED__NO_LIVE_APPROVAL": 2
   },

@@ -1,6 +1,6 @@
 # Task Routing Matrix
 
-Current contract: **TAU-SCALING-SA v0.7.0 - Approval-Governance Corridor Milestone**
+Current contract: **TAU-SCALING-SA v0.6.9 - Blocked-State Trend Review**
 
 ## Geometry Route
 
@@ -52,7 +52,6 @@ intent -> shell -> meridian -> sector -> files -> validation -> evidence -> less
 | Replay executor patch | outer | execution-boundary | governance | live approval handoff | executor blocked report + charts + release validator | `reports/replay_executor/latest_approval_gated_replay_executor.md` |
 | Blocked continuity patch | outer | evidence | governance | replay executor + live approval handoff | continuity ledger + charts + release validator | `reports/blocked_continuity/latest_blocked_state_continuity.md` |
 | Blocked trend patch | outer | analysis | governance | blocked continuity ledger | trend review + charts + release validator | `reports/blocked_trend_review/latest_blocked_state_trend_review.md` |
-| Approval corridor patch | outer | milestone | governance | v0.6 approval reports | corridor manifest + charts + release validator | `reports/approval_corridor/latest_approval_governance_corridor_milestone.md` |
 | Public claim replay patch | outer | evidence | release | source boundary docs, `configs/seeds/public_claims/` | release validator + claim replay report | `reports/public_claims/latest_claim_replay_report.md` |
 | Agent contract patch | center | agent | rcc | `AGENTS.md`, route map, task matrix, README | README audit + release validator | `reports/agent/latest_agent_contract_sync.md` |
 | Reflection patch | center | drift | documentation | `docs/reflection/`, `reports/reflection/`, README, AGENTS | README audit + release validator | `reports/reflection/latest_system_reflection.md` |

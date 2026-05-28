@@ -50,7 +50,6 @@ This atlas gives humans and AI agents one stable place to understand benchmark e
 | v0.6.7 | Approval-gated replay executor | `python scripts/benchmarks/run_approval_gated_replay_executor.py` | Refuses execution when live approval handoff is invalid | `reports/replay_executor/latest_approval_gated_replay_executor.md` | `visuals/replay_executor/v0_6_7/` |
 | v0.6.8 | Blocked-state continuity ledger | `python scripts/benchmarks/run_blocked_state_continuity_ledger.py` | Records blocked executor state as continuity evidence | `reports/blocked_continuity/latest_blocked_state_continuity.md` | `visuals/blocked_continuity/v0_6_8/` |
 | v0.6.9 | Blocked-state trend review | `python scripts/benchmarks/run_blocked_state_trend_review.py` | Classifies whether the persistent block is valid or stale | `reports/blocked_trend_review/latest_blocked_state_trend_review.md` | `visuals/blocked_trend_review/v0_6_9/` |
-| v0.7.0 | Approval-governance corridor milestone | `python scripts/benchmarks/generate_approval_governance_corridor.py` | Packages v0.6.0-v0.6.9 as stable corridor and returns focus to Tau mechanics | `reports/approval_corridor/latest_approval_governance_corridor_milestone.md` | `visuals/approval_corridor/v0_7_0/` |
 
 ## Current Synthetic Suite Summary
 

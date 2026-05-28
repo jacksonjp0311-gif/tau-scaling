@@ -10,8 +10,8 @@
 
 Repository: `tau-scaling`  
 Package / CLI: `tau_scaling` / `tau-scaling`  
-Current checkpoint: **TAU-SCALING-SA v0.7.0 - Approval-Governance Corridor Milestone**  
-Previous seal: **TAU-SCALING-SA v0.6.9 - Blocked-State Trend Review**
+Current checkpoint: **TAU-SCALING-SA v0.6.9 - Blocked-State Trend Review**  
+Previous seal: **TAU-SCALING-SA v0.6.8 - Blocked-State Continuity Ledger**
 
 Tau Scaling is a local-first, evidence-gated Python runtime for evaluating tau-scaling claims through structured claim cards, workload declarations, tau vectors, LogicFolding survivability checks, edge-to-surface boundary algebra, energy / thermal / PDN / PVT gates, Monte Carlo checker stress, TSEK classification, evidence packages, and RCC-N / OMN-style repository navigation.
 
@@ -55,7 +55,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | TAU-SCALING-SA v0.7.0 |
+| Current checkpoint | TAU-SCALING-SA v0.6.9 |
 | Synthetic gate suite | v0.4.0 / benchmark + finding charts |
 | Package version | 0.2.0 |
 | Baseline seed | TSEK-C / A_TSEK 0.0000 |
@@ -64,7 +64,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 | README mini repo audit | passing / 0 warnings |
 | Unified release validator | passing / step failures 0 |
 | AGENTS.md contract | synchronized with release validator |
-| Task routing matrix | geometry-aware / v0.7.0-ready |
+| Task routing matrix | geometry-aware / v0.6.9-ready |
 | Release warning findings | 0 expected after v0.3.3d validator scan repair |
 | Architecture validator | passing / 0 warnings |
 | Unit tests | 8 OK |
@@ -136,9 +136,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 | Blocked-state continuity charts | `visuals/blocked_continuity/v0_6_8/` |
 | Blocked-state trend review | `reports/blocked_trend_review/latest_blocked_state_trend_review.md` |
 | Blocked-state trend charts | `visuals/blocked_trend_review/v0_6_9/` |
-| Approval-governance corridor | `reports/approval_corridor/latest_approval_governance_corridor_milestone.md` |
-| Approval corridor charts | `visuals/approval_corridor/v0_7_0/` |
-| Agent contract version sync | current / v0.7.0 |
+| Agent contract version sync | current / v0.6.9 |
 | Release readiness report | `reports/release/latest_release_readiness.md` |
 | Collision-proof run identity | passed |
 | Mini README coverage | 1.0 |
@@ -192,7 +190,6 @@ python scripts/benchmarks/run_live_approval_handoff_check.py
 python scripts/benchmarks/run_approval_gated_replay_executor.py
 python scripts/benchmarks/run_blocked_state_continuity_ledger.py
 python scripts/benchmarks/run_blocked_state_trend_review.py
-python scripts/benchmarks/generate_approval_governance_corridor.py
 python scripts/release/validate_release.py
 ```
 
@@ -509,7 +506,6 @@ This section is part of the repository's operating memory. When a patch fails, t
 | L-049 | v0.6.6 confirmed no live approval existed. | A missing live approval should still reach the executor boundary and prove execution is blocked. | Replay executors must refuse to run when live approval handoff is invalid, emitting a blocked executor report instead of silently stopping. |
 | L-050 | v0.6.7 blocked the executor because live approval handoff was invalid. | Repeated blocked execution states should be preserved as continuity evidence, not treated as no-op failures. | Blocked executor states must append to a continuity ledger so future agents can see why execution remained blocked across versions. |
 | L-051 | v0.6.8 recorded blocked execution in a continuity ledger. | A ledger can accumulate blocked states without explaining whether the block is still valid or stale. | Blocked-state trend review must classify persistent blocks before continuing toward another execution or approval layer. |
-| L-052 | v0.6.9 confirmed the governance block was still valid. | Continuing to add gates after a valid trend review risks ceremonial accumulation. | A completed approval-governance corridor should be packaged as a milestone before returning to core Tau mechanics. |
 
 ### Failure Response Protocol
 
@@ -718,7 +714,6 @@ tau-scaling/
   releases/
   reports/
     nexus_feedback/
-    approval_corridor/
     blocked_trend_review/
     blocked_continuity/
     replay_executor/
@@ -780,7 +775,6 @@ tau-scaling/
   tests/
   visuals/
     nexus_feedback/
-    approval_corridor/
     blocked_trend_review/
     blocked_continuity/
     replay_executor/
@@ -901,39 +895,6 @@ AGENTS.md Required Validation now includes the current v0.4.6-v0.5.1 governance 
 ```
 
 Boundary: alignment polish is repository hygiene only. It is not code correctness, silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.
-
-## Approval-Governance Corridor Milestone v0.7.0
-
-v0.7.0 packages v0.6.0-v0.6.9 as a stable approval-governance corridor.
-
-Primary command:
-
-```powershell
-python scripts/benchmarks/generate_approval_governance_corridor.py
-```
-
-Primary outputs:
-
-```text
-reports/approval_corridor/latest_approval_governance_corridor_milestone.json
-reports/approval_corridor/latest_approval_governance_corridor_milestone.md
-visuals/approval_corridor/v0_7_0/
-```
-
-Current expected lock:
-
-```text
-corridor_status: APPROVAL_CORRIDOR_MILESTONE_LOCKED__NO_EXECUTION_NO_MUTATION
-replay_allowed: false
-executor_ran: false
-branch_created: false
-mutation_allowed: false
-policy_enforced: false
-calibration_applied: false
-application_allowed: false
-```
-
-Boundary: approval-governance corridor milestones are local classifier-governance milestone artifacts. They summarize authority boundaries and execution locks. They do not create live approval, execute replay commands, create branches, mutate classifier behavior, apply calibration, or validate silicon, product performance, manufacturing capability, process-node equivalence, benchmark superiority, AI understanding, or universal Tau Scaling law.
 
 ## Blocked-State Trend Review v0.6.9
 
@@ -1834,7 +1795,6 @@ python scripts/benchmarks/run_live_approval_handoff_check.py
 python scripts/benchmarks/run_approval_gated_replay_executor.py
 python scripts/benchmarks/run_blocked_state_continuity_ledger.py
 python scripts/benchmarks/run_blocked_state_trend_review.py
-python scripts/benchmarks/generate_approval_governance_corridor.py
 python scripts/release/validate_release.py
 python scripts/rcc/audit_readme_surface.py
 python scripts/rcc/check_rcc_nexus.py
@@ -2199,15 +2159,14 @@ validation_remains_required
 | v0.6.7 | Approval-gated replay executor; refuses execution when handoff is invalid. |
 | v0.6.8 | Blocked-state continuity ledger; records blocked execution as evidence. |
 | v0.6.9 | Blocked-state trend review; classifies whether block remains valid or stale. |
-| v0.7.0 | Approval-governance corridor milestone; packages v0.6.0-v0.6.9 and returns focus to Tau mechanics. |
 
 ## Next Recommended Version
 
-**TAU-SCALING-SA v0.7.1 - Tau Mechanics Return Review**
+**TAU-SCALING-SA v0.7.0 - Approval-Governance Corridor Milestone**
 
 Recommended goals:
 
-- Review tau-vector semantics.
-- Review gate algebra and TSEK classifier thresholds.
-- Review synthetic gate suite and sensitivity sweeps.
-- Avoid adding more approval gates unless a real live approval path is intentionally introduced.
+- Package v0.6.0-v0.6.9 as a stable governance corridor.
+- Summarize authority boundaries: template, fixture, live approval, handoff, executor, continuity, trend.
+- Freeze mutation locks unless a separate live approval path is intentionally introduced.
+- Keep `mutation_allowed: false`.
