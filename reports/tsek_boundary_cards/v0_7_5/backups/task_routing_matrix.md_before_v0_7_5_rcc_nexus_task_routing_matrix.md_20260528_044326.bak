@@ -1,6 +1,6 @@
 # Task Routing Matrix
 
-Current contract: **TAU-SCALING-SA v0.7.5 - TSEK Boundary Explanation Cards**
+Current contract: **TAU-SCALING-SA v0.7.4 - TSEK Threshold Boundary Review**
 
 ## Geometry Route
 
@@ -57,7 +57,6 @@ intent -> shell -> meridian -> sector -> files -> validation -> evidence -> less
 | Tau vector semantics patch | inner | analysis | runtime | core runtime + seeds | semantics ledger + charts + release validator | `reports/tau_vector_semantics/latest_tau_vector_semantics_ledger.md` |
 | Gate algebra patch | inner | analysis | runtime | core gates + seeds + tau semantics | gate algebra map + charts + release validator | `reports/gate_algebra/latest_gate_algebra_map.md` |
 | TSEK threshold review patch | inner | analysis | classifier | classifier + gate algebra + reports | threshold review + charts + release validator | `reports/tsek_threshold_review/latest_tsek_threshold_boundary_review.md` |
-| TSEK boundary card patch | inner | explanation | classifier | threshold review + TSEK classes | boundary cards + charts + release validator | `reports/tsek_boundary_cards/latest_tsek_boundary_explanation_cards.md` |
 | Public claim replay patch | outer | evidence | release | source boundary docs, `configs/seeds/public_claims/` | release validator + claim replay report | `reports/public_claims/latest_claim_replay_report.md` |
 | Agent contract patch | center | agent | rcc | `AGENTS.md`, route map, task matrix, README | README audit + release validator | `reports/agent/latest_agent_contract_sync.md` |
 | Reflection patch | center | drift | documentation | `docs/reflection/`, `reports/reflection/`, README, AGENTS | README audit + release validator | `reports/reflection/latest_system_reflection.md` |

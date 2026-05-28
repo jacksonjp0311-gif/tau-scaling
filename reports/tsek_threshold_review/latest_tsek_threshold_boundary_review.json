@@ -30,7 +30,7 @@
     "downgrade_terms_not_explicit_in_classifier_scan"
   ],
   "gate_algebra_ready": true,
-  "generated_at": "2026-05-28T08:40:17.414916+00:00",
+  "generated_at": "2026-05-28T08:43:26.269805+00:00",
   "mutation_allowed": false,
   "next_recommendation": "Move to v0.7.5 TSEK Boundary Explanation Cards before any classifier threshold changes.",
   "numeric_literals_seen": [

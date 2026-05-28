@@ -10,8 +10,8 @@
 
 Repository: `tau-scaling`  
 Package / CLI: `tau_scaling` / `tau-scaling`  
-Current checkpoint: **TAU-SCALING-SA v0.7.5 - TSEK Boundary Explanation Cards**  
-Previous seal: **TAU-SCALING-SA v0.7.4 - TSEK Threshold Boundary Review**
+Current checkpoint: **TAU-SCALING-SA v0.7.4 - TSEK Threshold Boundary Review**  
+Previous seal: **TAU-SCALING-SA v0.7.3 - Gate Algebra Map**
 
 Tau Scaling is a local-first, evidence-gated Python runtime for evaluating tau-scaling claims through structured claim cards, workload declarations, tau vectors, LogicFolding survivability checks, edge-to-surface boundary algebra, energy / thermal / PDN / PVT gates, Monte Carlo checker stress, TSEK classification, evidence packages, and RCC-N / OMN-style repository navigation.
 
@@ -55,7 +55,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | TAU-SCALING-SA v0.7.5 |
+| Current checkpoint | TAU-SCALING-SA v0.7.4 |
 | Synthetic gate suite | v0.4.0 / benchmark + finding charts |
 | Package version | 0.2.0 |
 | Baseline seed | TSEK-C / A_TSEK 0.0000 |
@@ -64,7 +64,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 | README mini repo audit | passing / 0 warnings |
 | Unified release validator | passing / step failures 0 |
 | AGENTS.md contract | synchronized with release validator |
-| Task routing matrix | geometry-aware / v0.7.5-ready |
+| Task routing matrix | geometry-aware / v0.7.4-ready |
 | Release warning findings | 0 expected after v0.3.3d validator scan repair |
 | Architecture validator | passing / 0 warnings |
 | Unit tests | 8 OK |
@@ -146,9 +146,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 | Gate algebra charts | `visuals/gate_algebra/v0_7_3/` |
 | TSEK threshold boundary review | `reports/tsek_threshold_review/latest_tsek_threshold_boundary_review.md` |
 | TSEK threshold charts | `visuals/tsek_threshold_review/v0_7_4/` |
-| TSEK boundary explanation cards | `reports/tsek_boundary_cards/latest_tsek_boundary_explanation_cards.md` |
-| TSEK boundary card charts | `visuals/tsek_boundary_cards/v0_7_5/` |
-| Agent contract version sync | current / v0.7.5 |
+| Agent contract version sync | current / v0.7.4 |
 | Release readiness report | `reports/release/latest_release_readiness.md` |
 | Collision-proof run identity | passed |
 | Mini README coverage | 1.0 |
@@ -207,7 +205,6 @@ python scripts/benchmarks/run_tau_mechanics_return_review.py
 python scripts/benchmarks/generate_tau_vector_semantics_ledger.py
 python scripts/benchmarks/generate_gate_algebra_map.py
 python scripts/benchmarks/run_tsek_threshold_boundary_review.py
-python scripts/benchmarks/generate_tsek_boundary_explanation_cards.py
 python scripts/release/validate_release.py
 ```
 
@@ -529,7 +526,6 @@ This section is part of the repository's operating memory. When a patch fails, t
 | L-054 | v0.7.1 identified targeted Tau-mechanics gaps after the approval corridor was sealed. | The next repair should not mutate scoring; it should name and audit tau-vector semantics first. | Tau vector fields must be made explicit before gate algebra or TSEK thresholds are tightened. |
 | L-055 | v0.7.2 named tau-vector semantic gaps without changing scoring. | Tau semantics alone are not enough; the next layer must map which gates consume or expose those semantics. | Gate algebra must be mapped before TSEK thresholds or policy penalties are tightened. |
 | L-056 | v0.7.3 mapped gate-family visibility and found targeted gate gaps. | Gate mapping still does not authorize threshold changes. | TSEK threshold boundaries must be reviewed and explained before any classifier mutation or threshold tuning. |
-| L-057 | v0.7.4 reviewed TSEK threshold boundaries without changing thresholds. | Boundary review identifies visibility, but humans and agents need class-level explanation cards before pressure testing penalties. | TSEK class boundaries must be explained as cards before over/under-penalty controls or threshold dry-runs. |
 
 ### Failure Response Protocol
 
@@ -738,7 +734,6 @@ tau-scaling/
   releases/
   reports/
     nexus_feedback/
-    tsek_boundary_cards/
     tsek_threshold_review/
     gate_algebra/
     tau_vector_semantics/
@@ -805,7 +800,6 @@ tau-scaling/
   tests/
   visuals/
     nexus_feedback/
-    tsek_boundary_cards/
     tsek_threshold_review/
     gate_algebra/
     tau_vector_semantics/
@@ -931,41 +925,6 @@ AGENTS.md Required Validation now includes the current v0.4.6-v0.5.1 governance 
 ```
 
 Boundary: alignment polish is repository hygiene only. It is not code correctness, silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.
-
-## TSEK Boundary Explanation Cards v0.7.5
-
-v0.7.5 creates one non-mutating explanation-card surface for the TSEK class boundaries.
-
-Primary command:
-
-```powershell
-python scripts/benchmarks/generate_tsek_boundary_explanation_cards.py
-```
-
-Primary outputs:
-
-```text
-reports/tsek_boundary_cards/latest_tsek_boundary_explanation_cards.json
-reports/tsek_boundary_cards/latest_tsek_boundary_explanation_cards.md
-reports/tsek_boundary_cards/cards/
-visuals/tsek_boundary_cards/v0_7_5/
-```
-
-Current lock:
-
-```text
-thresholds_changed: false
-classifier_changed: false
-replay_allowed: false
-executor_ran: false
-branch_created: false
-mutation_allowed: false
-policy_enforced: false
-calibration_applied: false
-application_allowed: false
-```
-
-Boundary: TSEK boundary explanation cards are local classifier-governance analysis artifacts. They explain class-boundary semantics without changing classifier behavior. They do not create live approval, execute replay commands, create branches, mutate classifier behavior, apply calibration, or validate silicon, product performance, manufacturing capability, process-node equivalence, benchmark superiority, AI understanding, or universal Tau Scaling law.
 
 ## TSEK Threshold Boundary Review v0.7.4
 
@@ -2034,7 +1993,6 @@ python scripts/benchmarks/run_tau_mechanics_return_review.py
 python scripts/benchmarks/generate_tau_vector_semantics_ledger.py
 python scripts/benchmarks/generate_gate_algebra_map.py
 python scripts/benchmarks/run_tsek_threshold_boundary_review.py
-python scripts/benchmarks/generate_tsek_boundary_explanation_cards.py
 python scripts/release/validate_release.py
 python scripts/rcc/audit_readme_surface.py
 python scripts/rcc/check_rcc_nexus.py
@@ -2404,15 +2362,14 @@ validation_remains_required
 | v0.7.2 | Tau vector semantics ledger; maps tau terms, seed coverage, and evidence surface gaps. |
 | v0.7.3 | Gate algebra map; maps gate-family visibility before threshold changes. |
 | v0.7.4 | TSEK threshold boundary review; reviews class-boundary visibility without mutation. |
-| v0.7.5 | TSEK boundary explanation cards; explains each class boundary before penalty controls. |
 
 ## Next Recommended Version
 
-**TAU-SCALING-SA v0.7.6 - Over/Under-Penalty Negative Controls**
+**TAU-SCALING-SA v0.7.5 - TSEK Boundary Explanation Cards**
 
 Recommended goals:
 
-- Generate negative controls for over-penalty and under-penalty risk.
-- Test boundary-card assumptions without changing thresholds.
-- Preserve no-classifier-mutation lock.
+- Generate one explanation card per TSEK class boundary.
+- Explain downgrade vs evidence sufficiency.
+- Preserve no-threshold-change and no-classifier-mutation locks.
 - Keep `mutation_allowed: false`.

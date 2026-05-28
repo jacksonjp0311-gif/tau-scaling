@@ -1,0 +1,17 @@
+{
+  "boundary_question": "Is the claim structurally present but too weak, sparse, or unstable for C/B?",
+  "class": "TSEK-D",
+  "classifier_change_allowed": false,
+  "default_action": "explain_weakness_without_rejection",
+  "evidence_note": "This card explains a class boundary using local repo evidence only. It does not validate silicon, product performance, manufacturing, process nodes, benchmark superiority, or universal Tau Scaling law.",
+  "gate_gap_count_context": 1,
+  "mutation_allowed": false,
+  "needs_attention": true,
+  "observed_core_mentions": 0,
+  "observed_report_mentions": 12,
+  "risk": "missing_intermediate_downgrade_path",
+  "role": "weak_or_high_uncertainty_class",
+  "schema": "tau-scaling-tsek-boundary-explanation-card-v0.7.5",
+  "tau_gap_count_context": 4,
+  "threshold_change_allowed": false
+}

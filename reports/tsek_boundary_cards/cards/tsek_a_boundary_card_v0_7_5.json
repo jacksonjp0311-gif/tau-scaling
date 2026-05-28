@@ -1,0 +1,17 @@
+{
+  "boundary_question": "What would be required for a strong Tau claim beyond local runtime evidence?",
+  "class": "TSEK-A",
+  "classifier_change_allowed": false,
+  "default_action": "keep_unassigned_without_external_evidence",
+  "evidence_note": "This card explains a class boundary using local repo evidence only. It does not validate silicon, product performance, manufacturing, process nodes, benchmark superiority, or universal Tau Scaling law.",
+  "gate_gap_count_context": 1,
+  "mutation_allowed": false,
+  "needs_attention": true,
+  "observed_core_mentions": 0,
+  "observed_report_mentions": 32,
+  "risk": "overclaim_risk",
+  "role": "reserved_strong_claim_class",
+  "schema": "tau-scaling-tsek-boundary-explanation-card-v0.7.5",
+  "tau_gap_count_context": 4,
+  "threshold_change_allowed": false
+}

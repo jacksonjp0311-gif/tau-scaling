@@ -55,7 +55,6 @@ This atlas gives humans and AI agents one stable place to understand benchmark e
 | v0.7.2 | Tau vector semantics ledger | `python scripts/benchmarks/generate_tau_vector_semantics_ledger.py` | Maps tau terms, seed coverage, and semantic gaps before gate algebra changes | `reports/tau_vector_semantics/latest_tau_vector_semantics_ledger.md` | `visuals/tau_vector_semantics/v0_7_2/` |
 | v0.7.3 | Gate algebra map | `python scripts/benchmarks/generate_gate_algebra_map.py` | Maps gate-family visibility before TSEK threshold changes | `reports/gate_algebra/latest_gate_algebra_map.md` | `visuals/gate_algebra/v0_7_3/` |
 | v0.7.4 | TSEK threshold boundary review | `python scripts/benchmarks/run_tsek_threshold_boundary_review.py` | Reviews TSEK class-boundary visibility without changing classifier behavior | `reports/tsek_threshold_review/latest_tsek_threshold_boundary_review.md` | `visuals/tsek_threshold_review/v0_7_4/` |
-| v0.7.5 | TSEK boundary explanation cards | `python scripts/benchmarks/generate_tsek_boundary_explanation_cards.py` | Creates class-boundary explanation cards without changing thresholds | `reports/tsek_boundary_cards/latest_tsek_boundary_explanation_cards.md` | `visuals/tsek_boundary_cards/v0_7_5/` |
 
 ## Current Synthetic Suite Summary
 
