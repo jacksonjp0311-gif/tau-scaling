@@ -1,0 +1,314 @@
+{
+  "application_allowed": false,
+  "boundary": "Tau vector semantics ledgers are local classifier-governance analysis artifacts. They document semantics and evidence surfaces. They do not create live approval, execute replay commands, create branches, mutate classifier behavior, apply calibration, or validate silicon, products, manufacturing, process nodes, benchmark superiority, or universal Tau Scaling law.",
+  "branch_created": false,
+  "branch_creation_allowed": false,
+  "calibration_applied": false,
+  "chart_paths": [
+    "visuals/tau_vector_semantics/v0_7_2/tau_vector_core_term_visibility.png",
+    "visuals/tau_vector_semantics/v0_7_2/tau_vector_seed_term_coverage.png",
+    "visuals/tau_vector_semantics/v0_7_2/tau_vector_semantics_health.png"
+  ],
+  "core_class_count": 2,
+  "core_classes": [
+    "TauScalingRunResult",
+    "TauScalingRuntime"
+  ],
+  "core_function_count": 2,
+  "core_functions": [
+    "__init__",
+    "run"
+  ],
+  "executor_ran": false,
+  "gap_count": 4,
+  "gaps": [
+    "some_seed_cards_do_not_explicitly_surface_tau_terms",
+    "some_seed_cards_do_not_explicitly_surface_gate_terms",
+    "some_seed_cards_do_not_explicitly_surface_baseline_terms",
+    "tau_vector_or_tau_gain_semantics_need_more_explicit_core_naming"
+  ],
+  "generated_at": "2026-05-28T08:33:05.354376+00:00",
+  "mechanics_ready": true,
+  "mutation_allowed": false,
+  "next_recommendation": "Move to v0.7.3 Gate Algebra Map: explicitly map tau-vector fields to gates and TSEK scoring.",
+  "policy_enforced": false,
+  "release_passed": true,
+  "replay_allowed": false,
+  "runtime_behavior_changed": false,
+  "schema": "tau-scaling-tau-vector-semantics-ledger-v0.7.2",
+  "seed_count": 6,
+  "seed_key_counts_top": {
+    "baseline_manifest": 2,
+    "baseline_manifest.declared": 2,
+    "baseline_manifest.name": 2,
+    "candidate_manifest": 2,
+    "candidate_manifest.declared": 2,
+    "candidate_manifest.name": 2,
+    "claim_card": 2,
+    "claim_card.claim_id": 2,
+    "claim_card.claim_text": 2,
+    "claim_card.claim_type": 2,
+    "claim_card.independent_validation_claimed": 2,
+    "claim_card.source": 2,
+    "claim_card.tau_layer": 2,
+    "edge_surface_boundary": 2,
+    "edge_surface_boundary.N": 2,
+    "edge_surface_boundary.compute_coeff": 2,
+    "edge_surface_boundary.edge_coeff": 2,
+    "edge_surface_boundary.surface_coeff": 2,
+    "energy_thermal_pdn_pvt": 2,
+    "energy_thermal_pdn_pvt.energy_ratio_new_over_old": 2,
+    "energy_thermal_pdn_pvt.pdn_droop_ratio_new_over_old": 2,
+    "energy_thermal_pdn_pvt.tau_gain": 2,
+    "energy_thermal_pdn_pvt.thermal_ratio_new_over_old": 2,
+    "evidence_disclosure": 2,
+    "evidence_disclosure.evidence_package_complete": 2,
+    "evidence_disclosure.independent_validation_present": 2,
+    "logicfolding_survivability": 2,
+    "logicfolding_survivability.closure_penalty_ps": 2,
+    "logicfolding_survivability.expected_vertical_penalty_ps": 2,
+    "logicfolding_survivability.expected_wire_savings_ps": 2,
+    "logicfolding_survivability.rho_critical_paths": 2,
+    "logicfolding_survivability.routing_penalty_ps": 2,
+    "logicfolding_survivability.sync_penalty_ps": 2,
+    "logicfolding_survivability.variation_penalty_ps": 2,
+    "monte_carlo_stress": 3,
+    "monte_carlo_stress.closure_penalty_ps": 3,
+    "monte_carlo_stress.energy_ratio": 3,
+    "monte_carlo_stress.pdn_ratio": 3,
+    "monte_carlo_stress.post_route_closure_probability": 3,
+    "monte_carlo_stress.rho_critical_paths": 3,
+    "monte_carlo_stress.routing_penalty_ps": 3,
+    "monte_carlo_stress.runs": 3,
+    "monte_carlo_stress.seed": 3,
+    "monte_carlo_stress.sync_penalty_ps": 3,
+    "monte_carlo_stress.tau_gain": 3,
+    "monte_carlo_stress.thermal_ratio": 3,
+    "monte_carlo_stress.variation_penalty_ps": 3,
+    "monte_carlo_stress.vertical_penalty_ps": 3,
+    "monte_carlo_stress.wire_savings_ps": 3,
+    "non_claim_locks": 2,
+    "non_claim_locks.roadmap_coherence_is_not_validation": 2,
+    "overclaim": 2,
+    "pvt_closure": 2,
+    "pvt_closure.pdn_reported": 2,
+    "pvt_closure.post_route_closure_passed": 2,
+    "pvt_closure.pvt_variation_passed": 2,
+    "source_boundary": 2,
+    "source_boundary.codex_mapping_not_physical_equivalence": 2,
+    "source_boundary.primary_source": 2,
+    "source_boundary.reported_claims_separated_from_validation": 2,
+    "source_boundary.source_declared": 2,
+    "tau_vector": 2,
+    "tau_vector.baseline": 2,
+    "tau_vector.baseline.chip": 2,
+    "tau_vector.baseline.circuit": 2,
+    "tau_vector.baseline.workload": 2,
+    "tau_vector.candidate": 2,
+    "tau_vector.candidate.chip": 2,
+    "tau_vector.candidate.circuit": 2,
+    "tau_vector.candidate.workload": 2,
+    "tau_vector.dominant_tau_improved": 2,
+    "tau_vector.tau_units": 2,
+    "tau_vector.weights_declared": 2,
+    "workload_profile": 2,
+    "workload_profile.dominant_tau_term": 2,
+    "workload_profile.workload_class": 2,
+    "workload_profile.workload_declared": 2,
+    "yield_method_disclosure": 2,
+    "yield_method_disclosure.method_disclosed": 2,
+    "yield_method_disclosure.yield_reported": 2
+  },
+  "seed_semantic_rows": [
+    {
+      "has_baseline": true,
+      "has_candidate": true,
+      "has_gate": true,
+      "has_tau": true,
+      "has_workload": true,
+      "key_count": 20,
+      "path": "configs/seeds/codex_tau_vector_toy.json",
+      "present_tau_terms": [
+        "baseline",
+        "candidate",
+        "workload"
+      ],
+      "term_count": 3
+    },
+    {
+      "has_baseline": false,
+      "has_candidate": false,
+      "has_gate": false,
+      "has_tau": false,
+      "has_workload": false,
+      "key_count": 4,
+      "path": "configs/seeds/edge_surface_boundary_toy.json",
+      "present_tau_terms": [],
+      "term_count": 0
+    },
+    {
+      "has_baseline": false,
+      "has_candidate": false,
+      "has_gate": true,
+      "has_tau": true,
+      "has_workload": false,
+      "key_count": 4,
+      "path": "configs/seeds/gamma_tau_etp_toy.json",
+      "present_tau_terms": [
+        "tau_gain",
+        "energy",
+        "thermal",
+        "pdn"
+      ],
+      "term_count": 4
+    },
+    {
+      "has_baseline": true,
+      "has_candidate": true,
+      "has_gate": true,
+      "has_tau": true,
+      "has_workload": true,
+      "key_count": 83,
+      "path": "configs/seeds/logicfolding_claim_card.json",
+      "present_tau_terms": [
+        "tau_gain",
+        "tau_vector",
+        "logicfolding",
+        "survivability",
+        "edge_surface",
+        "energy",
+        "thermal",
+        "pdn",
+        "pvt",
+        "monte_carlo",
+        "baseline",
+        "candidate",
+        "workload"
+      ],
+      "term_count": 13
+    },
+    {
+      "has_baseline": true,
+      "has_candidate": true,
+      "has_gate": true,
+      "has_tau": true,
+      "has_workload": true,
+      "key_count": 83,
+      "path": "configs/seeds/logicfolding_promotion_path_claim_card.json",
+      "present_tau_terms": [
+        "tau_gain",
+        "tau_vector",
+        "logicfolding",
+        "survivability",
+        "edge_surface",
+        "energy",
+        "thermal",
+        "pdn",
+        "pvt",
+        "monte_carlo",
+        "baseline",
+        "candidate",
+        "workload"
+      ],
+      "term_count": 13
+    },
+    {
+      "has_baseline": false,
+      "has_candidate": false,
+      "has_gate": true,
+      "has_tau": true,
+      "has_workload": false,
+      "key_count": 15,
+      "path": "configs/seeds/monte_carlo_stress_toy.json",
+      "present_tau_terms": [
+        "tau_gain",
+        "energy",
+        "thermal",
+        "pdn",
+        "monte_carlo"
+      ],
+      "term_count": 5
+    }
+  ],
+  "semantics_status": "TAU_VECTOR_SEMANTICS_LEDGER_READY__TARGETED_FIELDS_IDENTIFIED",
+  "tau_term_rows": [
+    {
+      "core_count": 0,
+      "seed_count": 4,
+      "semantic_status": "seed_or_report_only",
+      "term": "tau_gain"
+    },
+    {
+      "core_count": 4,
+      "seed_count": 2,
+      "semantic_status": "core_visible",
+      "term": "tau_vector"
+    },
+    {
+      "core_count": 10,
+      "seed_count": 2,
+      "semantic_status": "core_visible",
+      "term": "logicfolding"
+    },
+    {
+      "core_count": 3,
+      "seed_count": 2,
+      "semantic_status": "core_visible",
+      "term": "survivability"
+    },
+    {
+      "core_count": 6,
+      "seed_count": 2,
+      "semantic_status": "core_visible",
+      "term": "edge_surface"
+    },
+    {
+      "core_count": 2,
+      "seed_count": 4,
+      "semantic_status": "core_visible",
+      "term": "energy"
+    },
+    {
+      "core_count": 2,
+      "seed_count": 4,
+      "semantic_status": "core_visible",
+      "term": "thermal"
+    },
+    {
+      "core_count": 2,
+      "seed_count": 4,
+      "semantic_status": "core_visible",
+      "term": "pdn"
+    },
+    {
+      "core_count": 6,
+      "seed_count": 2,
+      "semantic_status": "core_visible",
+      "term": "pvt"
+    },
+    {
+      "core_count": 6,
+      "seed_count": 3,
+      "semantic_status": "core_visible",
+      "term": "monte_carlo"
+    },
+    {
+      "core_count": 2,
+      "seed_count": 3,
+      "semantic_status": "core_visible",
+      "term": "baseline"
+    },
+    {
+      "core_count": 2,
+      "seed_count": 3,
+      "semantic_status": "core_visible",
+      "term": "candidate"
+    },
+    {
+      "core_count": 4,
+      "seed_count": 3,
+      "semantic_status": "core_visible",
+      "term": "workload"
+    }
+  ]
+}

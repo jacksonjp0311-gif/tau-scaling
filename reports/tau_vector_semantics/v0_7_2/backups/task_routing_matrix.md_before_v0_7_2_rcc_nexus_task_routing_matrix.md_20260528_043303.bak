@@ -1,6 +1,6 @@
 # Task Routing Matrix
 
-Current contract: **TAU-SCALING-SA v0.7.2 - Tau Vector Semantics Ledger**
+Current contract: **TAU-SCALING-SA v0.7.1 - Tau Mechanics Return Review**
 
 ## Geometry Route
 
@@ -54,7 +54,6 @@ intent -> shell -> meridian -> sector -> files -> validation -> evidence -> less
 | Blocked trend patch | outer | analysis | governance | blocked continuity ledger | trend review + charts + release validator | `reports/blocked_trend_review/latest_blocked_state_trend_review.md` |
 | Approval corridor patch | outer | milestone | governance | v0.6 approval reports | corridor manifest + charts + release validator | `reports/approval_corridor/latest_approval_governance_corridor_milestone.md` |
 | Tau mechanics review patch | inner | analysis | runtime | core runtime + seeds + reports | mechanics scan + charts + release validator | `reports/tau_mechanics_review/latest_tau_mechanics_return_review.md` |
-| Tau vector semantics patch | inner | analysis | runtime | core runtime + seeds | semantics ledger + charts + release validator | `reports/tau_vector_semantics/latest_tau_vector_semantics_ledger.md` |
 | Public claim replay patch | outer | evidence | release | source boundary docs, `configs/seeds/public_claims/` | release validator + claim replay report | `reports/public_claims/latest_claim_replay_report.md` |
 | Agent contract patch | center | agent | rcc | `AGENTS.md`, route map, task matrix, README | README audit + release validator | `reports/agent/latest_agent_contract_sync.md` |
 | Reflection patch | center | drift | documentation | `docs/reflection/`, `reports/reflection/`, README, AGENTS | README audit + release validator | `reports/reflection/latest_system_reflection.md` |

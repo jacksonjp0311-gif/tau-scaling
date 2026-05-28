@@ -36,7 +36,7 @@
     "some_seed_cards_do_not_surface_tau_terms",
     "some_seed_cards_do_not_surface_gate_terms"
   ],
-  "generated_at": "2026-05-28T08:15:17.409871+00:00",
+  "generated_at": "2026-05-28T08:33:03.885101+00:00",
   "mechanics_status": "TAU_MECHANICS_REVIEW_READY__TARGETED_GAPS_IDENTIFIED",
   "mutation_allowed": false,
   "next_recommendation": "Move from governance containment into Tau mechanics: tau vectors, gate algebra, TSEK thresholds, synthetic gate suite interpretation, and evidence-card design.",

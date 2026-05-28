@@ -1,6 +1,6 @@
 # AGENTS.md — Tau Scaling Agent Operating Contract
 
-Current contract: **TAU-SCALING-SA v0.7.2 - Tau Vector Semantics Ledger**
+Current contract: **TAU-SCALING-SA v0.7.1 - Tau Mechanics Return Review**
 
 ## Mission
 
@@ -79,7 +79,6 @@ python scripts/benchmarks/run_blocked_state_continuity_ledger.py
 python scripts/benchmarks/run_blocked_state_trend_review.py
 python scripts/benchmarks/generate_approval_governance_corridor.py
 python scripts/benchmarks/run_tau_mechanics_return_review.py
-python scripts/benchmarks/generate_tau_vector_semantics_ledger.py
 python -m unittest discover -s tests
 ```
 
@@ -125,7 +124,6 @@ python -m unittest discover -s tests
 | Blocked trend patch | `reports/blocked_trend_review/`, `visuals/blocked_trend_review/`, blocked continuity | trend review + release validator; no execution |
 | Approval corridor patch | `reports/approval_corridor/`, `visuals/approval_corridor/`, v0.6 reports | corridor milestone + release validator; no execution |
 | Tau mechanics review patch | `reports/tau_mechanics_review/`, `visuals/tau_mechanics_review/`, core runtime/seeds | mechanics scan + release validator; no mutation |
-| Tau vector semantics patch | `reports/tau_vector_semantics/`, `visuals/tau_vector_semantics/`, seeds/runtime | semantics ledger + release validator; no mutation |
 | Public claim replay patch | source boundary docs, `configs/seeds/public_claims/`, claim reports | release validator + claim replay report |
 | Directory structure patch | Full Directory Box, affected mini READMEs, context indexes | README audit + RCC-N + release validator |
 
