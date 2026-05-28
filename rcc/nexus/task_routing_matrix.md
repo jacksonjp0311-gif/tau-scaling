@@ -1,6 +1,6 @@
 # Task Routing Matrix
 
-Current contract: **TAU-SCALING-SA v0.8.3b - README Render and Alignment Repair**
+Current contract: **TAU-SCALING-SA v0.8.3c - README Presentation Restore**
 
 ## Geometry Route
 
