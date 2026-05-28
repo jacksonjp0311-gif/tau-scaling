@@ -120,7 +120,7 @@
   "decision_rationale": "High-attention threshold pressure exists; threshold tuning is not justified without additional evidence and review.",
   "decision_status": "THRESHOLD_DECISION_RECORDED__NO_MUTATION",
   "executor_ran": false,
-  "generated_at": "2026-05-28T09:01:44.539236+00:00",
+  "generated_at": "2026-05-28T09:04:46.962157+00:00",
   "high_attention_count": 2,
   "low_attention_count": 1,
   "missing_artifacts": [],

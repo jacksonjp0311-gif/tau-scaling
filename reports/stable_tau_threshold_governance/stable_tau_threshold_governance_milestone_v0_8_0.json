@@ -1,14 +1,37 @@
 {
   "application_allowed": false,
-  "boundary": "Threshold governance summaries are local classifier-governance milestone artifacts. They summarize threshold review, controls, dry-runs, and decisions. They do not create live approval, execute replay commands, create branches, mutate classifier behavior, apply calibration, change thresholds, or validate silicon, products, manufacturing, process nodes, benchmark superiority, or universal Tau Scaling law.",
+  "boundary": "Stable Tau threshold governance milestones are local classifier-governance milestone artifacts. They package evidence, dry-runs, and decisions into a stable release surface. They do not create live approval, execute replay commands, create branches, mutate classifier behavior, apply calibration, change thresholds, or validate silicon, products, manufacturing, process nodes, benchmark superiority, or universal Tau Scaling law.",
   "branch_created": false,
   "branch_creation_allowed": false,
   "calibration_applied": false,
   "candidate_branch_created": false,
-  "chain_rows": [
+  "chart_paths": [
+    "visuals/stable_tau_threshold_governance/v0_8_0/stable_tau_threshold_chain_coverage.png",
+    "visuals/stable_tau_threshold_governance/v0_8_0/stable_tau_threshold_gap_compression.png",
+    "visuals/stable_tau_threshold_governance/v0_8_0/stable_tau_threshold_milestone_health.png"
+  ],
+  "classifier_changed": false,
+  "executor_ran": false,
+  "generated_at": "2026-05-28T09:04:48.379268+00:00",
+  "milestone_chain": [
+    {
+      "application_allowed": false,
+      "artifact": "approval_corridor",
+      "branch_created": false,
+      "calibration_applied": false,
+      "classifier_changed": false,
+      "gap_count": 0,
+      "missing": false,
+      "mutation_allowed": false,
+      "replay_allowed": false,
+      "status": "APPROVAL_CORRIDOR_MILESTONE_LOCKED__NO_EXECUTION_NO_MUTATION",
+      "thresholds_changed": false,
+      "version": "v0.7.0"
+    },
     {
       "application_allowed": false,
       "artifact": "tau_mechanics",
+      "branch_created": false,
       "calibration_applied": false,
       "classifier_changed": false,
       "gap_count": 2,
@@ -22,6 +45,7 @@
     {
       "application_allowed": false,
       "artifact": "tau_vector",
+      "branch_created": false,
       "calibration_applied": false,
       "classifier_changed": false,
       "gap_count": 4,
@@ -35,6 +59,7 @@
     {
       "application_allowed": false,
       "artifact": "gate_algebra",
+      "branch_created": false,
       "calibration_applied": false,
       "classifier_changed": false,
       "gap_count": 1,
@@ -48,6 +73,7 @@
     {
       "application_allowed": false,
       "artifact": "threshold_review",
+      "branch_created": false,
       "calibration_applied": false,
       "classifier_changed": false,
       "gap_count": 3,
@@ -61,6 +87,7 @@
     {
       "application_allowed": false,
       "artifact": "boundary_cards",
+      "branch_created": false,
       "calibration_applied": false,
       "classifier_changed": false,
       "gap_count": 0,
@@ -74,6 +101,7 @@
     {
       "application_allowed": false,
       "artifact": "penalty_controls",
+      "branch_created": false,
       "calibration_applied": false,
       "classifier_changed": false,
       "gap_count": 0,
@@ -86,7 +114,8 @@
     },
     {
       "application_allowed": false,
-      "artifact": "sensitivity",
+      "artifact": "threshold_sensitivity",
+      "branch_created": false,
       "calibration_applied": false,
       "classifier_changed": false,
       "gap_count": 0,
@@ -99,7 +128,8 @@
     },
     {
       "application_allowed": false,
-      "artifact": "decision",
+      "artifact": "threshold_decision",
+      "branch_created": false,
       "calibration_applied": false,
       "classifier_changed": false,
       "gap_count": 0,
@@ -109,34 +139,36 @@
       "status": "THRESHOLD_DECISION_RECORDED__NO_MUTATION",
       "thresholds_changed": false,
       "version": "v0.7.8"
+    },
+    {
+      "application_allowed": false,
+      "artifact": "threshold_governance",
+      "branch_created": false,
+      "calibration_applied": false,
+      "classifier_changed": false,
+      "gap_count": 0,
+      "missing": false,
+      "mutation_allowed": false,
+      "replay_allowed": false,
+      "status": "THRESHOLD_GOVERNANCE_SUMMARY_LOCKED__DEFER_CHANGE_NO_MUTATION",
+      "thresholds_changed": false,
+      "version": "v0.7.9"
     }
   ],
-  "chart_paths": [
-    "visuals/threshold_governance_summary/v0_7_9/threshold_governance_chain_coverage.png",
-    "visuals/threshold_governance_summary/v0_7_9/threshold_governance_gap_counts.png",
-    "visuals/threshold_governance_summary/v0_7_9/threshold_governance_summary_health.png"
-  ],
-  "classifier_changed": false,
-  "decision_rationale": "High-attention threshold pressure exists; threshold tuning is not justified without additional evidence and review.",
-  "decision_status": "THRESHOLD_DECISION_RECORDED__NO_MUTATION",
-  "executor_ran": false,
-  "generated_at": "2026-05-28T09:04:46.962157+00:00",
-  "high_attention_count": 2,
-  "low_attention_count": 1,
+  "milestone_locked": true,
+  "milestone_status": "STABLE_TAU_THRESHOLD_GOVERNANCE_MILESTONE_LOCKED__NO_MUTATION",
   "missing_artifacts": [],
   "missing_count": 0,
-  "moderate_attention_count": 2,
   "mutation_allowed": false,
-  "next_recommendation": "Move to v0.8.0 Stable Tau Threshold Governance Milestone or add more scenario evidence before any candidate branch.",
+  "next_recommendation": "Use v0.8.x for scenario evidence expansion. Do not tune thresholds or mutate classifier behavior without explicit human review and a candidate branch gate.",
   "policy_enforced": false,
   "release_passed": true,
   "replay_allowed": false,
   "runtime_behavior_changed": false,
-  "scenario_count": 5,
-  "schema": "tau-scaling-threshold-governance-summary-v0.7.9",
-  "summary_locked": true,
-  "summary_status": "THRESHOLD_GOVERNANCE_SUMMARY_LOCKED__DEFER_CHANGE_NO_MUTATION",
+  "schema": "tau-scaling-stable-tau-threshold-governance-milestone-v0.8.0",
   "threshold_decision": "DEFER_THRESHOLD_CHANGE_PENDING_MORE_EVIDENCE",
+  "threshold_decision_deferred": true,
+  "threshold_governance_locked": true,
   "thresholds_changed": false,
   "violation_count": 0,
   "violations": []

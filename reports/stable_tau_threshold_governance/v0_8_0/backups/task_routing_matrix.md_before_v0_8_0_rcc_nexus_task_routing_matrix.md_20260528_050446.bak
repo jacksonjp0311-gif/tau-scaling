@@ -1,6 +1,6 @@
 # Task Routing Matrix
 
-Current contract: **TAU-SCALING-SA v0.8.0 - Stable Tau Threshold Governance Milestone**
+Current contract: **TAU-SCALING-SA v0.7.9 - Threshold Governance Summary**
 
 ## Geometry Route
 
@@ -62,7 +62,6 @@ intent -> shell -> meridian -> sector -> files -> validation -> evidence -> less
 | Threshold sensitivity patch | inner | dry-run | classifier | penalty controls + threshold review | report-only threshold sensitivity + charts + release validator | `reports/threshold_sensitivity_dry_run/latest_threshold_sensitivity_dry_run.md` |
 | Threshold decision patch | inner | decision | classifier | threshold sensitivity dry-run | non-mutating decision record + charts + release validator | `reports/threshold_decision_record/latest_threshold_decision_record.md` |
 | Threshold governance summary patch | inner | milestone | classifier | v0.7 Tau mechanics reports | milestone summary + charts + release validator | `reports/threshold_governance_summary/latest_threshold_governance_summary.md` |
-| Stable threshold governance patch | inner | milestone | classifier | v0.7 reports + threshold decision | stable milestone + charts + release validator | `reports/stable_tau_threshold_governance/latest_stable_tau_threshold_governance_milestone.md` |
 | Public claim replay patch | outer | evidence | release | source boundary docs, `configs/seeds/public_claims/` | release validator + claim replay report | `reports/public_claims/latest_claim_replay_report.md` |
 | Agent contract patch | center | agent | rcc | `AGENTS.md`, route map, task matrix, README | README audit + release validator | `reports/agent/latest_agent_contract_sync.md` |
 | Reflection patch | center | drift | documentation | `docs/reflection/`, `reports/reflection/`, README, AGENTS | README audit + release validator | `reports/reflection/latest_system_reflection.md` |

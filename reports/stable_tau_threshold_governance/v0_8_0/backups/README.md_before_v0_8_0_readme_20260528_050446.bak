@@ -10,8 +10,8 @@
 
 Repository: `tau-scaling`  
 Package / CLI: `tau_scaling` / `tau-scaling`  
-Current checkpoint: **TAU-SCALING-SA v0.8.0 - Stable Tau Threshold Governance Milestone**  
-Previous seal: **TAU-SCALING-SA v0.7.9 - Threshold Governance Summary**
+Current checkpoint: **TAU-SCALING-SA v0.7.9 - Threshold Governance Summary**  
+Previous seal: **TAU-SCALING-SA v0.7.8 - Threshold Decision Record**
 
 Tau Scaling is a local-first, evidence-gated Python runtime for evaluating tau-scaling claims through structured claim cards, workload declarations, tau vectors, LogicFolding survivability checks, edge-to-surface boundary algebra, energy / thermal / PDN / PVT gates, Monte Carlo checker stress, TSEK classification, evidence packages, and RCC-N / OMN-style repository navigation.
 
@@ -55,7 +55,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | TAU-SCALING-SA v0.8.0 |
+| Current checkpoint | TAU-SCALING-SA v0.7.9 |
 | Synthetic gate suite | v0.4.0 / benchmark + finding charts |
 | Package version | 0.2.0 |
 | Baseline seed | TSEK-C / A_TSEK 0.0000 |
@@ -64,7 +64,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 | README mini repo audit | passing / 0 warnings |
 | Unified release validator | passing / step failures 0 |
 | AGENTS.md contract | synchronized with release validator |
-| Task routing matrix | geometry-aware / v0.8.0-ready |
+| Task routing matrix | geometry-aware / v0.7.9-ready |
 | Release warning findings | 0 expected after v0.3.3d validator scan repair |
 | Architecture validator | passing / 0 warnings |
 | Unit tests | 8 OK |
@@ -156,9 +156,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 | Threshold decision charts | `visuals/threshold_decision_record/v0_7_8/` |
 | Threshold governance summary | `reports/threshold_governance_summary/latest_threshold_governance_summary.md` |
 | Threshold governance charts | `visuals/threshold_governance_summary/v0_7_9/` |
-| Stable Tau threshold governance | `reports/stable_tau_threshold_governance/latest_stable_tau_threshold_governance_milestone.md` |
-| Stable Tau threshold charts | `visuals/stable_tau_threshold_governance/v0_8_0/` |
-| Agent contract version sync | current / v0.8.0 |
+| Agent contract version sync | current / v0.7.9 |
 | Release readiness report | `reports/release/latest_release_readiness.md` |
 | Collision-proof run identity | passed |
 | Mini README coverage | 1.0 |
@@ -222,7 +220,6 @@ python scripts/benchmarks/generate_over_under_penalty_controls.py
 python scripts/benchmarks/run_threshold_sensitivity_dry_run.py
 python scripts/benchmarks/generate_threshold_decision_record.py
 python scripts/benchmarks/generate_threshold_governance_summary.py
-python scripts/benchmarks/generate_stable_tau_threshold_governance_milestone.py
 python scripts/release/validate_release.py
 ```
 
@@ -549,7 +546,6 @@ This section is part of the repository's operating memory. When a patch fails, t
 | L-059 | v0.7.6 defined report-only over/under-penalty controls. | Controls alone do not show which threshold pressures are high attention. | Threshold sensitivity must be dry-run in report-only mode before any decision record or classifier change is discussed. |
 | L-060 | v0.7.7 dry-ran threshold sensitivity in report-only mode. | Dry-run pressure is not a decision by itself. | Threshold sensitivity outputs must be compiled into a decision record before any candidate branch or threshold tuning is considered. |
 | L-061 | v0.7.8 deferred threshold changes pending more evidence because high-attention pressure remained. | A deferral decision should become a stable summary before any further threshold work. | Threshold governance must be summarized as a milestone before candidate-branch or tuning discussions resume. |
-| L-062 | v0.7.9 locked threshold governance with a deferred threshold-change decision. | A locked governance summary should be promoted into a stable milestone before any new evidence-expansion path starts. | v0.8.0 must package v0.7.x as a stable no-mutation milestone and route future work to scenario evidence expansion. |
 
 ### Failure Response Protocol
 
@@ -758,7 +754,6 @@ tau-scaling/
   releases/
   reports/
     nexus_feedback/
-    stable_tau_threshold_governance/
     threshold_governance_summary/
     threshold_decision_record/
     threshold_sensitivity_dry_run/
@@ -830,7 +825,6 @@ tau-scaling/
   tests/
   visuals/
     nexus_feedback/
-    stable_tau_threshold_governance/
     threshold_governance_summary/
     threshold_decision_record/
     threshold_sensitivity_dry_run/
@@ -961,41 +955,6 @@ AGENTS.md Required Validation now includes the current v0.4.6-v0.5.1 governance 
 ```
 
 Boundary: alignment polish is repository hygiene only. It is not code correctness, silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.
-
-## Stable Tau Threshold Governance Milestone v0.8.0
-
-v0.8.0 packages the full v0.7.x Tau mechanics and threshold-governance chain into a stable milestone.
-
-Primary command:
-
-```powershell
-python scripts/benchmarks/generate_stable_tau_threshold_governance_milestone.py
-```
-
-Primary outputs:
-
-```text
-reports/stable_tau_threshold_governance/latest_stable_tau_threshold_governance_milestone.json
-reports/stable_tau_threshold_governance/latest_stable_tau_threshold_governance_milestone.md
-visuals/stable_tau_threshold_governance/v0_8_0/
-```
-
-Current lock:
-
-```text
-threshold_decision: DEFER_THRESHOLD_CHANGE_PENDING_MORE_EVIDENCE
-thresholds_changed: false
-classifier_changed: false
-replay_allowed: false
-executor_ran: false
-branch_created: false
-mutation_allowed: false
-policy_enforced: false
-calibration_applied: false
-application_allowed: false
-```
-
-Boundary: stable Tau threshold governance milestones are local classifier-governance milestone artifacts. They package evidence, dry-runs, and decisions into a stable release surface. They do not create live approval, execute replay commands, create branches, mutate classifier behavior, apply calibration, change thresholds, or validate silicon, product performance, manufacturing capability, process-node equivalence, benchmark superiority, AI understanding, or universal Tau Scaling law.
 
 ## Threshold Governance Summary v0.7.9
 
@@ -2242,7 +2201,6 @@ python scripts/benchmarks/generate_over_under_penalty_controls.py
 python scripts/benchmarks/run_threshold_sensitivity_dry_run.py
 python scripts/benchmarks/generate_threshold_decision_record.py
 python scripts/benchmarks/generate_threshold_governance_summary.py
-python scripts/benchmarks/generate_stable_tau_threshold_governance_milestone.py
 python scripts/release/validate_release.py
 python scripts/rcc/audit_readme_surface.py
 python scripts/rcc/check_rcc_nexus.py
@@ -2617,15 +2575,14 @@ validation_remains_required
 | v0.7.7 | Threshold sensitivity dry-run; models threshold pressure without changing classifier behavior. |
 | v0.7.8 | Threshold decision record; converts dry-run pressure into a non-mutating decision. |
 | v0.7.9 | Threshold governance summary; summarizes v0.7.x and freezes threshold mutation pending more evidence. |
-| v0.8.0 | Stable Tau threshold governance milestone; packages v0.7.x and routes future work to evidence expansion. |
 
 ## Next Recommended Version
 
-**TAU-SCALING-SA v0.8.1 - High-Attention Scenario Evidence Expansion**
+**TAU-SCALING-SA v0.8.0 - Stable Tau Threshold Governance Milestone**
 
 Recommended goals:
 
-- Expand evidence for the two high-attention threshold pressure surfaces.
-- Keep threshold and classifier mutation disabled.
-- Preserve no-candidate-branch behavior unless explicitly approved by human review.
+- Package v0.7.1-v0.7.9 as a stable Tau mechanics/threshold-governance milestone.
+- Freeze current threshold decision unless human review requests a candidate branch.
+- Preserve no-classifier-mutation lock.
 - Keep `mutation_allowed: false`.

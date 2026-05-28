@@ -1,6 +1,6 @@
 # Tau Scaling v0.7.9 Threshold Governance Summary
 
-Generated: `2026-05-28T09:01:44.539236+00:00`
+Generated: `2026-05-28T09:04:46.962157+00:00`
 
 ## Summary Result
 
