@@ -1,0 +1,12 @@
+{
+  "application_allowed": false,
+  "boundary": "README/submission patch is manuscript-routing only. It does not validate or promote claims.",
+  "checkpoint": "TAU-SCALING-SA v0.9.3 - Manuscript Polish and Submission Package",
+  "claim_promotion_allowed": false,
+  "classifier_changed": false,
+  "generated_at": "2026-05-28T16:06:32.454428+00:00",
+  "mutation_allowed": false,
+  "schema": "tau-scaling-v0.9.3-readme-submission-patch",
+  "source_validation_claimed": false,
+  "thresholds_changed": false
+}

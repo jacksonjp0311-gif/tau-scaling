@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<rect width="1600" height="900" fill="#020617"/>
+<text x="800" y="82" text-anchor="middle" fill="#67e8f9" font-size="46" font-family="Segoe UI" font-weight="700">Manuscript Submission Package v0.9.3</text>
+<text x="800" y="130" text-anchor="middle" fill="#cbd5e1" font-size="24" font-family="Segoe UI">Polished manuscript bundle with evidence tables, captions, limitations, and non-claim locks</text>
+<text x="190" y="245" fill="#f8fafc" font-size="30" font-family="Segoe UI">Claims analyzed: 8</text>
+<text x="190" y="315" fill="#f8fafc" font-size="30" font-family="Segoe UI">Source-populated claims: 8</text>
+<text x="190" y="385" fill="#f8fafc" font-size="30" font-family="Segoe UI">Primary-source confirmed: 0</text>
+<text x="190" y="455" fill="#f8fafc" font-size="30" font-family="Segoe UI">Independent-source confirmed: 0</text>
+<text x="190" y="525" fill="#f8fafc" font-size="30" font-family="Segoe UI">Release findings: 0</text>
+<rect x="900" y="250" width="450" height="76" rx="18" fill="#0f172a" stroke="#22c55e"/>
+<text x="1125" y="298" text-anchor="middle" fill="#e2e8f0" font-size="24" font-family="Segoe UI">Submission README</text>
+<rect x="900" y="380" width="450" height="76" rx="18" fill="#0f172a" stroke="#67e8f9"/>
+<text x="1125" y="428" text-anchor="middle" fill="#e2e8f0" font-size="24" font-family="Segoe UI">Polished MD + LaTeX</text>
+<rect x="900" y="510" width="450" height="76" rx="18" fill="#0f172a" stroke="#ef4444"/>
+<text x="1125" y="558" text-anchor="middle" fill="#e2e8f0" font-size="24" font-family="Segoe UI">No validation overclaim</text>
+<text x="800" y="820" text-anchor="middle" fill="#94a3b8" font-size="22" font-family="Segoe UI">Submission package is a communication shell for evidence governance, not silicon proof.</text>
+</svg>

@@ -1,6 +1,6 @@
 # AGENTS.md Ã¢â‚¬â€ Tau Scaling Agent Operating Contract
 
-Current contract: **TAU-SCALING-SA v0.9.2 - Manuscript Evidence Table and Figure Pack**
+Current contract: **TAU-SCALING-SA v0.9.3 - Manuscript Polish and Submission Package**
 
 ## Mission
 
