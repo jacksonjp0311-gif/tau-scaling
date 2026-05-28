@@ -1,4 +1,4 @@
-# Tau Scaling - Evidence-Gated Tau-Claim Runtime
+# Tau Scaling ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â Evidence-Gated Tau-Claim Runtime
 
 ![RCC-N](https://img.shields.io/badge/RCC--N-passing-brightgreen)
 ![Architecture](https://img.shields.io/badge/architecture-passing-brightgreen)
@@ -10,71 +10,23 @@
 
 Repository: `tau-scaling`  
 Package / CLI: `tau_scaling` / `tau-scaling`  
-Current checkpoint: **TAU-SCALING-SA v0.8.3b - README Render and Alignment Repair**  
-Previous seal: **TAU-SCALING-SA v0.8.3a - README UTF-8 Anchor Repair after LogicFolding Sweep**
+Current checkpoint: **TAU-SCALING-SA v0.8.3a - README UTF-8 Anchor Repair after LogicFolding Sweep**  
+Previous seal: **TAU-SCALING-SA v0.8.3 - LogicFolding Plausibility Sweep**
 
 Tau Scaling is a local-first, evidence-gated Python runtime for evaluating tau-scaling claims through structured claim cards, workload declarations, tau vectors, LogicFolding survivability checks, edge-to-surface boundary algebra, energy / thermal / PDN / PVT gates, Monte Carlo checker stress, TSEK classification, evidence packages, and RCC-N / OMN-style repository navigation.
 
 Core law:
 
-`````text
+```t``	ext
 No workload, no tau claim.
 No baseline, no gain.
 No gates, no validation.
 No evidence, no strong class.
 ```
 
-## Showcase Tau Findings
-
-This repository has moved from governance construction into **Tau Scaling research instrumentation**.
-
-Current public finding:
-
-```text
-Tau Scaling can be studied as an evidence-gated claim system.
-Public claims can be separated into methodology, reported metrics, roadmap projections, topology arguments, and independent evidence.
-The current public claim set is mostly TSEK-C, with roadmap/system claims in TSEK-D.
-No public claim currently reaches TSEK-A or TSEK-B without additional disclosed evidence.
-```
-
-Current public Tau claim ledger:
-
-```text
-TSEK-A: 0
-TSEK-B: 0
-TSEK-C: 6
-TSEK-D: 2
-TSEK-E: 0
-Average missing evidence gates: 6.375
-```
-
-LogicFolding sweep result:
-
-```text
-Aggressive best-case prior: 100.0% joint pass.
-Conservative public prior: 0.0% joint pass.
-Interpretation: LogicFolding is conditionally plausible, not automatically validated.
-```
-
-Research boundary:
-
-```text
-The current repo can test plausibility and evidence sufficiency.
-It does not validate Huawei silicon, products, manufacturing capability, process-node equivalence, benchmark superiority, or universal Tau Scaling law.
-```
-
-Primary evidence surfaces:
-
-```text
-claims/public_tau/
-reports/tau_claim_ledger/latest_tau_public_claim_ledger.md
-reports/logicfolding_plausibility/latest_logicfolding_plausibility_sweep.md
-visuals/logicfolding_plausibility/v0_8_3/
-```
-
 ## Tau Doctrine Alignment
 
-`````text
+```t``	ext
 Time is the shared metric, not automatic proof.
 Topology helps only when overheads are dominated.
 Industrial roadmap coherence is not independent validation.
@@ -88,7 +40,7 @@ These four rules are the public Tau doctrine lock for this repository. They alig
 
 This repo is a governed claim-evaluation workbench. It turns a tau-scaling claim into a structured audit path:
 
-`````text
+```t``	ext
 claim
 -> source boundary
 -> claim card
@@ -115,7 +67,7 @@ The repo now begins source-bounded Tau Scaling research by turning public claims
 
 Primary outputs:
 
-`````text
+```t``	ext
 claims/public_tau/
 reports/tau_claim_ledger/latest_tau_public_claim_ledger.md
 visuals/tau_claim_ledger/v0_8_2/
@@ -123,7 +75,7 @@ visuals/tau_claim_ledger/v0_8_2/
 
 Current public Tau claim status:
 
-`````text
+```t``	ext
 TSEK-A: 0
 TSEK-B: 0
 TSEK-C: 6
@@ -148,7 +100,7 @@ The publishable result is **not** that Tau Scaling is independently validated. T
 
 Current benchmark finding:
 
-`````text
+`	``	ext
 Baseline claim remains TSEK-C.
 Promotion-path seed can reach TSEK-B with stronger disclosed evidence.
 v0.8.0 deferred threshold changes pending more evidence.
@@ -156,26 +108,26 @@ No classifier mutation occurred.
 No threshold mutation occurred.
 All validators passed.
 This is local runtime governance, not silicon/product validation.
-```
+`
 
 Stable Tau insight:
 
-`````text
+`	``	ext
 The key result is governance stability: sensitivity, penalty, and boundary review did not justify changing TSEK thresholds. The current policy remains stable until stronger evidence arrives.
-```
+`
 
 Publication lock phrase: **defer threshold change pending more evidence**.
 
 The active research question is:
 
-`````text
+`	``	ext
 What evidence is sufficient to move a Tau Scaling claim from roadmap coherence to a stronger evidence class without overclaiming?
-```
+`
 ## Current Public Metrics
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | TAU-SCALING-SA v0.8.3b |
+| Current checkpoint | TAU-SCALING-SA v0.8.3a |
 | Synthetic gate suite | v0.4.0 / benchmark + finding charts |
 | Package version | 0.2.0 |
 | Baseline seed | TSEK-C / A_TSEK 0.0000 |
@@ -184,8 +136,8 @@ What evidence is sufficient to move a Tau Scaling claim from roadmap coherence t
 | README mini repo audit | passing / 0 warnings |
 | Unified release validator | passing / step failures 0 |
 | AGENTS.md contract | synchronized with release validator |
-| Task routing matrix | geometry-aware / v0.8.3b-ready |
-| Release warning findings | non-blocking / tracked by release readiness report |
+| Task routing matrix | geometry-aware / v0.8.3a-ready |
+| Release warning findings | 0 expected after v0.3.3d validator scan repair |
 | Architecture validator | passing / 0 warnings |
 | Unit tests | 8 OK |
 | Benchmark harness | 12 runs / 12 unique IDs / 0 duplicates |
@@ -278,7 +230,7 @@ What evidence is sufficient to move a Tau Scaling claim from roadmap coherence t
 | Threshold governance charts | `visuals/threshold_governance_summary/v0_7_9/` |
 | Stable Tau threshold governance | `reports/stable_tau_threshold_governance/latest_stable_tau_threshold_governance_milestone.md` |
 | Stable Tau threshold charts | `visuals/stable_tau_threshold_governance/v0_8_0/` |
-| Agent contract version sync | current / v0.8.3b |
+| Agent contract version sync | current / v0.8.3a |
 | Release readiness report | `reports/release/latest_release_readiness.md` |
 | Collision-proof run identity | passed |
 | Mini README coverage | 1.0 |
@@ -351,7 +303,7 @@ python scripts/release/validate_release.py
 | Layer | Purpose | Main paths |
 |---|---|---|
 | Tau Scaling runtime | Executes claim cards, gates, classifier, evidence emission | `src/tau_scaling/`, `configs/seeds/`, `tests/` |
-| RCC-N navigation | Makes the repo self-locating for humans and AI agents | `rcc/nexus/`, `docs/context/`, folder `README.md` files |
+| RCC-N navigation | Makes the repo self-locating for humans and AI agents | `rcc/nexus/`, `docs/cont``	ext/`, folder `README.md` files |
 | Benchmark and evidence observability | Runs local benchmark loops and evidence package checks | `scripts/benchmarks/`, `reports/benchmarks/`, `artifacts/runs/` |
 | Unified release readiness | Runs the full release gate before experiments | `scripts/release/`, `reports/release/` |
 | Codex documentation shell | Records source boundaries, releases, architecture, non-claim locks | `docs/`, `reports/`, `releases/`, `visuals/` |
@@ -375,14 +327,14 @@ Tau Scaling rewards bounded evidence emission, not confident overclaiming.
 
 Primary runtime artifacts are written under:
 
-`````text
+```t``	ext
 artifacts/runs/<unique-run-id>/
 artifacts/runs/latest/
 ```
 
 Mirrored evidence surfaces are written under:
 
-`````text
+```t``	ext
 outputs/evidence/
 outputs/reports/
 outputs/plots/
@@ -391,7 +343,7 @@ outputs/ledger/
 
 Release and validation surfaces are written under:
 
-`````text
+```t``	ext
 releases/
 reports/rcc_nexus/
 reports/architecture/
@@ -412,7 +364,7 @@ Validation tells the agent whether reality agreed.
 
 | Shell | Meaning |
 |---|---|
-| center | Source boundary, non-claim locks, architecture, context indexes. |
+| center | Source boundary, non-claim locks, architecture, cont``	ext indexes. |
 | inner | Runtime primitives: claim cards, tau vectors, gate records, schemas. |
 | middle | Processes: CLI flow, examples, tests, scripts, checker workflows. |
 | outer | Evidence / reflection: artifacts, outputs, ledgers, reports, visuals, release notes. |
@@ -429,9 +381,9 @@ Validation tells the agent whether reality agreed.
 
 | File | Role |
 |---|---|
-| `docs/context/repository_context_index.json` | Repository meaning map. |
-| `docs/context/rcc_nexus_index.json` | Nexus route and coverage index. |
-| `docs/context/validation_surface.md` | Validation commands and claim boundaries. |
+| `docs/cont``	ext/repository_cont``	ext_index.json` | Repository meaning map. |
+| `docs/cont``	ext/rcc_nexus_index.json` | Nexus route and coverage index. |
+| `docs/cont``	ext/validation_surface.md` | Validation commands and claim boundaries. |
 | `rcc/nexus/README.md` | RCC-N local orientation. |
 | `rcc/nexus/rcc_nexus_protocol.md` | Nexus protocol. |
 | `rcc/nexus/route_map.json` | Machine-readable routing map. |
@@ -466,7 +418,7 @@ python scripts/rcc/check_rcc_nexus.py
 
 Expected current state:
 
-`````text
+```t``	ext
 passed: true
 errors: 0
 warnings: 0
@@ -474,7 +426,7 @@ mini_readme_coverage: 1.0
 major_dirs_checked: 25
 ```
 
-RCC-N checks repository navigation and context integrity. It does not prove code correctness, patch safety, independent silicon validation, product performance, process-node equivalence, AI understanding, or production readiness.
+RCC-N checks repository navigation and cont``	ext integrity. It does not prove code correctness, patch safety, independent silicon validation, product performance, process-node equivalence, AI understanding, or production readiness.
 
 ## PART III - AI Agent README
 
@@ -485,8 +437,8 @@ Before editing, an AI agent must read:
 1. `README.md`
 2. `README_90_SECONDS.md`
 3. `AGENTS.md`
-4. `docs/context/repository_context_index.json`
-5. `docs/context/rcc_nexus_index.json`
+4. `docs/cont``	ext/repository_cont``	ext_index.json`
+5. `docs/cont``	ext/rcc_nexus_index.json`
 6. `rcc/nexus/route_map.json`
 7. the target folder `README.md`
 8. relevant source and tests
@@ -499,10 +451,10 @@ After editing, run the validation command associated with the changed surface.
 |---|---|---|
 | Runtime patch | `src/tau_scaling/README.md`, `tests/` | compile + import + unit tests + baseline/promotion claims |
 | Claim classifier patch | `src/tau_scaling/claims/README.md`, latest evidence | baseline/promotion claims + evidence package check |
-| RCC docs patch | `README.md`, `docs/context/`, `rcc/nexus/` | `python scripts/rcc/check_rcc_nexus.py` |
+| RCC docs patch | `README.md`, `docs/cont``	ext/`, `rcc/nexus/` | `python scripts/rcc/check_rcc_nexus.py` |
 | README / mini README patch | `README.md`, target mini README, route maps | `python scripts/rcc/audit_readme_surface.py` |
 | Architecture docs patch | `docs/software_architecture/`, `docs/architecture/` | `python scripts/validation/validate_architecture_contracts.py` |
-| Directory structure patch | root README directory box, affected mini READMEs, context indexes | RCC-N + README audit + architecture + tests |
+| Directory structure patch | root README directory box, affected mini READMEs, cont``	ext indexes | RCC-N + README audit + architecture + tests |
 | Release / benchmark patch | `releases/`, `docs/benchmarks/`, `reports/benchmarks/`, `reports/release/` | `python scripts/release/validate_release.py` |
 | Synthetic gate test patch | `configs/seeds/tests/`, `reports/gates/`, `tests/`, `src/tau_scaling/gates/` | `python scripts/release/validate_release.py` + gate suite |
 | Public claim replay patch | `configs/seeds/public_claims/`, `reports/public_claims/`, source boundary docs | release validator + claim replay report |
@@ -525,8 +477,8 @@ A patch is incomplete if it changes code, folders, benchmarks, reports, claim se
 | 1 | `README.md` | Current checkpoint, metrics, lineage, validation commands, non-claim locks, directory box, and AI rules. |
 | 2 | `AGENTS.md` | Agent entry order, patch discipline, and validation expectations. |
 | 3 | `README_90_SECONDS.md` | Compressed onboarding is not stale. |
-| 4 | `docs/context/repository_context_index.json` | Repo meaning and route descriptions. |
-| 5 | `docs/context/rcc_nexus_index.json` | Nexus shell/meridian/sector mapping. |
+| 4 | `docs/cont``	ext/repository_cont``	ext_index.json` | Repo meaning and route descriptions. |
+| 5 | `docs/cont``	ext/rcc_nexus_index.json` | Nexus shell/meridian/sector mapping. |
 | 6 | `rcc/nexus/route_map.json` | Task routing and target surfaces. |
 | 7 | `rcc/nexus/task_routing_matrix.md` | Human-readable task routing. |
 | 8 | Target folder `README.md` | Local folder role, inputs, outputs, and validation command. |
@@ -539,7 +491,7 @@ A patch is incomplete if it changes code, folders, benchmarks, reports, claim se
 |---|---|---|
 | README drift | Does the root README describe the current repo state? | Patch checkpoint, metrics, lineage, commands, and directory box. |
 | Mini README drift | Did a folder change without its README changing? | Patch the affected folder README. |
-| Route drift | Did task routing or folder purpose change? | Patch context indexes and route maps. |
+| Route drift | Did task routing or folder purpose change? | Patch cont``	ext indexes and route maps. |
 | Validation drift | Do public claims lack fresh validation reports? | Rerun validation and refresh reports. |
 | Runtime drift | Did Python code change without compile/import/test proof? | Run compile, import, tests, claims, and benchmarks. |
 | Benchmark drift | Did benchmark behavior change without benchmark reports? | Rerun benchmark harness and update reports. |
@@ -557,7 +509,7 @@ python scripts/rcc/audit_readme_surface.py
 
 Expected pass:
 
-`````text
+```t``	ext
 passed: true
 errors: 0
 warnings: 0
@@ -565,7 +517,7 @@ warnings: 0
 
 Primary outputs:
 
-`````text
+```t``	ext
 reports/readme/latest_readme_mini_repo_audit.json
 reports/readme/latest_readme_mini_repo_audit.md
 ```
@@ -579,11 +531,11 @@ When a failure occurs, do not only patch the failing line. Add the lesson to the
 | README/RCC drift | `README.md`, target mini README, `reports/readme/` |
 | Runtime syntax failure | `README.md` AI learning ledger, `src/tau_scaling/core/README.md`, tests |
 | Benchmark failure | `reports/benchmarks/README.md`, benchmark report, README metrics |
-| Route/context failure | `rcc/nexus/README.md`, route map, context indexes |
+| Route/cont``	ext failure | `rcc/nexus/README.md`, route map, cont``	ext indexes |
 | Encoding failure | README backup, README cleanup release note, and audit-visible anchor test |
 | Claim overreach | README non-claim locks, claim card notes, release note |
 
-Non-claim lock: README audits and mini repo audits improve context alignment. They do not prove runtime correctness, silicon validation, product validation, manufacturing validation, process-node equivalence, or universal Tau Scaling law.
+Non-claim lock: README audits and mini repo audits improve cont``	ext alignment. They do not prove runtime correctness, silicon validation, product validation, manufacturing validation, process-node equivalence, or universal Tau Scaling law.
 
 ### Required Validation
 
@@ -602,23 +554,28 @@ python scripts/release/validate_release.py
 
 ## AI Failure Learning Ledger
 
-This section is part of the repository's operating memory. When a patch fails, the failure must be compressed into a durable lesson so the next AI or human maintainer does not repeat it.
+This section is part of the repository's operating memory. When a patch fails, the failure must be compressed into a durable lesson so the n``	ext AI or human maintainer does not repeat it.
 
 ### Current Lessons
 
 | Lesson ID | Failure observed | Root cause | Permanent rule |
 |---|---|---|---|
-| L-001 | RCC-N passed while runtime syntax was broken. | RCC-N validates navigation and context, not Python execution. | Runtime patches must run `py_compile`, import checks, unit tests, and CLI claims. |
+| L-064 | v0.8.2 created the public Tau claim ledger, but README audit failed because the AI Rule em-dash anchor was mojibake-corrupted. | Encoding drift can make a semantically correct README fail exact audit anchors. | Audit-visible headings must be repaired with exact Unicode anchors, and high-value findings should be showcased near the top of the README. |
+| L-065 | v0.8.3 LogicFolding sweep succeeded, but README audit failed again on the em-dash AI Rule anchor. | Windows PowerShell Get-Content / rewrite paths can reintroduce mojibake into UTF-8 README surfaces. | README repairs that must preserve Unicode audit anchors must use explicit .NET UTF-8 read/write or a Python UTF-8 patcher, then rerun release validator before commit. |
+
+| Lesson ID | Failure observed | Root cause | Permanent rule |
+|---|---|---|---|
+| L-001 | RCC-N passed while runtime syntax was broken. | RCC-N validates navigation and cont``	ext, not Python execution. | Runtime patches must run `py_compile`, import checks, unit tests, and CLI claims. |
 | L-002 | Architecture validator passed while runtime syntax was broken. | Architecture validation checks contract surfaces, not executable behavior. | Architecture pass is necessary but never sufficient for release readiness. |
 | L-003 | v0.3.2 introduced a concatenated import line. | Script patching merged two Python imports into one invalid statement. | Generated code patches must be compile-checked before any commit. |
-| L-004 | v0.3.2a left a literal PowerShell backtick newline inside Python. | PowerShell string escaping injected raw escape text instead of an actual newline. | Scripts that patch code must avoid raw escape residue and must compile the patched file. |
+| L-004 | v0.3.2a left a literal PowerShell backtick newline inside Python. | PowerShell string escaping injected raw escape t``	ext instead of an actual newline. | Scripts that patch code must avoid raw escape residue and must compile the patched file. |
 | L-005 | Back-to-back baseline and promotion runs originally shared second-level run IDs. | Timestamp identity had insufficient granularity. | Run identity must use microsecond/token uniqueness and filesystem collision guards. |
-| L-006 | Early v0.3.2 status text said complete even when validation failed. | Script wrote completion status after failed checks without hard stop semantics. | Failed validation must produce a failure status, not a completion seal. |
+| L-006 | Early v0.3.2 status t``	ext said complete even when validation failed. | Script wrote completion status after failed checks without hard stop semantics. | Failed validation must produce a failure status, not a completion seal. |
 | L-007 | Benchmark evidence could be confused with product evidence. | Local runtime benchmarks can look stronger than their claim boundary. | Benchmark reports must state: local-runtime evidence only, not silicon/product validation. |
 | L-008 | README audit failed on a visually correct AI Rule heading. | The heading used the wrong dash/encoding variant. | Audit-visible anchors must be written with exact expected Unicode or ASCII tokens. |
 | L-009 | README became mojibake-contaminated after repeated Unicode patching. | Mixed console encodings and repeated copy/paste repair passes corrupted Unicode arrows/dashes/code blocks. | Public README should prefer ASCII-safe syntax except for explicitly audited Unicode anchors. |
-| L-010 | v0.3.3 release validator passed with one non-blocking finding. | Release readiness can be true while warning-level readability/risk findings remain. | Passing release readiness must still be inspected before the next experimental layer. |
-| L-011 | README release-state drift recurred after v0.3.3. | The release validator was added and pushed before the public README was fully synchronized. | Every release patch must update README checkpoint, metrics, lineage, next target, and process rules before promotion. |
+| L-010 | v0.3.3 release validator passed with one non-blocking finding. | Release readiness can be true while warning-level readability/risk findings remain. | Passing release readiness must still be inspected before the n``	ext experimental layer. |
+| L-011 | README release-state drift recurred after v0.3.3. | The release validator was added and pushed before the public README was fully synchronized. | Every release patch must update README checkpoint, metrics, lineage, n``	ext target, and process rules before promotion. |
 | L-012 | v0.3.3b repair failed when pasted line by line. | PowerShell line wrapping split paths such as `reports\\readme` and `scripts\\release`. | Large scripts must be run from downloaded `.ps1` files using `powershell -ExecutionPolicy Bypass -File ...`. |
 | L-013 | v0.3.3c README had out-of-order release lineage. | Emergency repair appended rows without chronological normalization. | Release lineage and lesson ledgers must be ordered before push. |
 | L-014 | README contract became more advanced than AGENTS.md and task routing matrix. | Human-facing Nexus evolved faster than agent-facing operating contract. | Agent contracts and routing matrices must be synchronized before experiments begin. |
@@ -627,22 +584,22 @@ This section is part of the repository's operating memory. When a patch fails, t
 | L-017 | Benchmark charts existed, but the README did not yet provide a versioned chart/finding atlas. | Visual evidence was distributed across reports and visuals folders without one public navigation surface per version. | Every benchmark version must maintain a benchmark atlas with chart registry, finding registry, version ledger, and non-claim boundary. |
 | L-018 | v0.4.0c benchmark atlas passed but README audit found two warnings. | `docs/benchmarks/README.md` and `reports/benchmarks/README.md` lacked explicit AI/RCC update guidance. | Every benchmark mini README must include an AI/RCC update rule when benchmark charts, reports, or interpretation surfaces change. |
 | L-019 | v0.4.0d attempted AI/RCC mini README repair but audit still reported two warnings. | The audit script searches exact tokens such as `README Update Rule`; the added heading `AI / RCC Update Rule` was semantically correct but not audit-recognized. | Mini README repair patches must use exact audit-visible anchor phrases, not merely equivalent wording. |
-| L-020 | After v0.4.0e, README checkpoint advanced while AGENTS.md and task_routing_matrix.md still identified v0.3.3e. | Fast benchmark/readme repair layers advanced human-facing state faster than agent-facing contracts. | Every release-like change must re-sync AGENTS.md, task_routing_matrix.md, and route surfaces to the current checkpoint before the next experiment. |
+| L-020 | After v0.4.0e, README checkpoint advanced while AGENTS.md and task_routing_matrix.md still identified v0.3.3e. | Fast benchmark/readme repair layers advanced human-facing state faster than agent-facing contracts. | Every release-like change must re-sync AGENTS.md, task_routing_matrix.md, and route surfaces to the current checkpoint before the n``	ext experiment. |
 | L-021 | v0.4.2 showed every paired hard-gate failure classified as TSEK-C. | The current classifier treats paired missing gates as controlled downgrade unless overclaim or severe collapse forces TSEK-E. | Do not harden classifier thresholds until explanation cards classify whether pair-policy behavior is expected, suspicious, or promotion-repairable. |
 | L-022 | v0.4.3 produced 55 `review_pair_policy` cards and 1 `hard_reject_without_finding` card. | Explanation cards successfully exposed classifier-policy questions without mutating classifier behavior. | Pair-policy changes must pass through a non-enforcing policy review layer and then a dry-run simulator before classifier enforcement. |
-| L-023 | v0.4.4 created policy candidates but the repo still needed a way to turn outputs into improvement priorities. | Validation, benchmark, explanation, and policy reports were readable, but not yet synthesized into a feedback surface for the next agent. | Every mature runtime should emit a Nexus feedback report that ranks improvement targets without mutating classifier behavior. |
+| L-023 | v0.4.4 created policy candidates but the repo still needed a way to turn outputs into improvement priorities. | Validation, benchmark, explanation, and policy reports were readable, but not yet synthesized into a feedback surface for the n``	ext agent. | Every mature runtime should emit a Nexus feedback report that ranks improvement targets without mutating classifier behavior. |
 | L-024 | v0.4.5 feedback emitted correct priorities but `health_passed` was false because it read validation surfaces before the final validators refreshed. | Reflective feedback can be logically correct while its health score is stale relative to the final seal. | Run prerequisite validators before Nexus feedback, then run Nexus feedback, then run final validators again before commit/push. |
 | L-025 | v0.4.5a proved ordering was correct but `health_passed` stayed false. | The feedback scorer expected numeric `findings`, numeric `step_failures`, and top-level `total_points`, while actual reports used lists and `results`. | Feedback health checks must normalize report schemas before scoring; schema mismatch is not validation failure. |
 | L-026 | v0.4.5b changed the feedback schema label but `health_score` still used the old comparisons. | Regex patching did not replace the intended function body, so labels advanced faster than executable logic. | Function repairs must verify the target function body changed, not just schema strings or docs. |
 | L-027 | v0.4.5c repaired list counters but `sensitivity_sweep` still failed health scoring. | The persisted sensitivity JSON used `chart_paths` while the feedback health scorer checked only `chart_count`. | Feedback health scoring must normalize both count fields and evidence-list fields such as chart_paths. |
-| L-028 | Nexus feedback v0.4.5d reached health 1.0 and ranked pair-policy pressure as the top next target. | Policy review pressure should not mutate the classifier directly. | Any classifier-policy change must first pass a dry-run simulator comparing current class vs simulated policy class. |
+| L-028 | Nexus feedback v0.4.5d reached health 1.0 and ranked pair-policy pressure as the top n``	ext target. | Policy review pressure should not mutate the classifier directly. | Any classifier-policy change must first pass a dry-run simulator comparing current class vs simulated policy class. |
 | L-029 | v0.4.6 produced 9 drift cases but drift alone is not an enforcement decision. | A dry-run simulator can show impact without explaining whether each impact is justified. | Any simulated classifier drift must receive an impact explanation card before enforcement is considered. |
 | L-030 | v0.4.7 generated impact cards, but impact cards alone do not authorize classifier mutation. | Explanation artifacts identify drift reasons; they do not decide enforcement readiness. | Simulated policy impacts must be converted into a decision record with mutation_allowed=false until regression and over-penalty review pass. |
 | L-031 | v0.4.8 approved six drift cases for regression review, but approval-for-review is not approval-for-enforcement. | Decision records classify readiness for review, not readiness for mutation. | Controlled downgrade candidates must pass regression and over-penalty review before any classifier enforcement candidate is allowed. |
 | L-032 | v0.4.9 showed that all six controlled downgrade candidates triggered over-penalty review. | A review gate that blocks every candidate may indicate true policy harshness or heuristic over-sensitivity. | When regression review blocks every candidate, do not proceed to enforcement design; first promote the blocked state into a major enforcement-readiness gate with all mutation disabled. |
 | L-033 | v0.5.0 completed the dry-run through enforcement-readiness chain, but Nexus still ranked the old v0.4.6 dry-run target as active. | A healthy feedback score can still carry stale priorities if completed targets are not retired. | Reflective feedback must retire completed targets and promote the current active blocker, or the repo will keep recommending already-completed work. |
-| L-034 | v0.5.1 promoted the active blocker, but a blocker is not actionable until decomposed into causes. | Completed-signal retirement identifies what is next; it does not specify how to remediate the blocker. | When Nexus promotes a blocker, the next layer must convert the blocker into cause-specific remediation cards before any new policy design. |
-| L-035 | v0.5.2 showed all blocked candidates were high-support / heuristic-sensitivity cases. | Cause cards identify why a blocker exists, but do not define the next safe work unit. | High-support downgrade pressure must become support-aware negative-control tasks before calibration or policy design. |
+| L-034 | v0.5.1 promoted the active blocker, but a blocker is not actionable until decomposed into causes. | Completed-signal retirement identifies what is n``	ext; it does not specify how to remediate the blocker. | When Nexus promotes a blocker, the n``	ext layer must convert the blocker into cause-specific remediation cards before any new policy design. |
+| L-035 | v0.5.2 showed all blocked candidates were high-support / heuristic-sensitivity cases. | Cause cards identify why a blocker exists, but do not define the n``	ext safe work unit. | High-support downgrade pressure must become support-aware negative-control tasks before calibration or policy design. |
 | L-036 | v0.5.3 converted all six blocked cases into support-aware negative-control tasks. | Remediation planning is not enough; high-support retention must be tested as a disabled/report-only control. | Before calibration or policy design, high-support downgrade pressure must pass support-aware negative controls with mutation disabled. |
 | L-037 | v0.5.4 support-aware negative controls passed 6/6. | Passing support controls permit calibration planning, but not calibration application. | A calibration plan may only be drafted after support-aware controls pass, and it must preserve high-support retention as a hard constraint. |
 | L-038 | v0.5.5 selected a report-only calibration threshold, but a threshold is not a classifier change. | Calibration planning can still hide drift unless tested counterfactually. | Any selected calibration threshold must pass report-only counterfactual testing before policy mutation can even be discussed. |
@@ -661,8 +618,8 @@ This section is part of the repository's operating memory. When a patch fails, t
 | L-051 | v0.6.8 recorded blocked execution in a continuity ledger. | A ledger can accumulate blocked states without explaining whether the block is still valid or stale. | Blocked-state trend review must classify persistent blocks before continuing toward another execution or approval layer. |
 | L-052 | v0.6.9 confirmed the governance block was still valid. | Continuing to add gates after a valid trend review risks ceremonial accumulation. | A completed approval-governance corridor should be packaged as a milestone before returning to core Tau mechanics. |
 | L-053 | v0.7.0 sealed the approval-governance corridor. | Once containment is sealed, further progress must return to the object being governed. | Tau mechanics reviews should examine tau vectors, gate algebra, TSEK thresholds, sensitivity behavior, and evidence-card design before adding any new governance gate. |
-| L-054 | v0.7.1 identified targeted Tau-mechanics gaps after the approval corridor was sealed. | The next repair should not mutate scoring; it should name and audit tau-vector semantics first. | Tau vector fields must be made explicit before gate algebra or TSEK thresholds are tightened. |
-| L-055 | v0.7.2 named tau-vector semantic gaps without changing scoring. | Tau semantics alone are not enough; the next layer must map which gates consume or expose those semantics. | Gate algebra must be mapped before TSEK thresholds or policy penalties are tightened. |
+| L-054 | v0.7.1 identified targeted Tau-mechanics gaps after the approval corridor was sealed. | The n``	ext repair should not mutate scoring; it should name and audit tau-vector semantics first. | Tau vector fields must be made explicit before gate algebra or TSEK thresholds are tightened. |
+| L-055 | v0.7.2 named tau-vector semantic gaps without changing scoring. | Tau semantics alone are not enough; the n``	ext layer must map which gates consume or expose those semantics. | Gate algebra must be mapped before TSEK thresholds or policy penalties are tightened. |
 | L-056 | v0.7.3 mapped gate-family visibility and found targeted gate gaps. | Gate mapping still does not authorize threshold changes. | TSEK threshold boundaries must be reviewed and explained before any classifier mutation or threshold tuning. |
 | L-057 | v0.7.4 reviewed TSEK threshold boundaries without changing thresholds. | Boundary review identifies visibility, but humans and agents need class-level explanation cards before pressure testing penalties. | TSEK class boundaries must be explained as cards before over/under-penalty controls or threshold dry-runs. |
 | L-058 | v0.7.5 generated boundary cards and flagged every class boundary for attention. | Explanation cards alone still do not test whether boundaries over-penalize or under-penalize claims. | TSEK boundary cards must be followed by report-only over/under-penalty controls before threshold dry-runs or classifier tuning. |
@@ -670,9 +627,6 @@ This section is part of the repository's operating memory. When a patch fails, t
 | L-060 | v0.7.7 dry-ran threshold sensitivity in report-only mode. | Dry-run pressure is not a decision by itself. | Threshold sensitivity outputs must be compiled into a decision record before any candidate branch or threshold tuning is considered. |
 | L-061 | v0.7.8 deferred threshold changes pending more evidence because high-attention pressure remained. | A deferral decision should become a stable summary before any further threshold work. | Threshold governance must be summarized as a milestone before candidate-branch or tuning discussions resume. |
 | L-062 | v0.7.9 locked threshold governance with a deferred threshold-change decision. | A locked governance summary should be promoted into a stable milestone before any new evidence-expansion path starts. | v0.8.0 must package v0.7.x as a stable no-mutation milestone and route future work to scenario evidence expansion. |
-| L-064 | v0.8.2 created the public Tau claim ledger, but README audit failed because the AI Rule em-dash anchor was mojibake-corrupted. | Encoding drift can make a semantically correct README fail exact audit anchors. | Audit-visible headings must be repaired with exact Unicode anchors, and high-value findings should be showcased near the top of the README. |
-| L-065 | v0.8.3 LogicFolding sweep succeeded, but README audit failed again on the em-dash AI Rule anchor. | Windows PowerShell read/write paths can reintroduce mojibake into UTF-8 README surfaces. | README repairs that must preserve Unicode audit anchors must use explicit UTF-8 patchers, then rerun release validator before commit. |
-| L-066 | v0.8.3a passed all validators but README rendering still showed mojibake and broken code fences. | Passing exact anchors is not the same as human-readable public rendering. | After validator repair, inspect rendered README for mojibake, broken fences, duplicate lesson headers, stale metrics, and directory-box drift. |
 
 ### Failure Response Protocol
 
@@ -697,8 +651,8 @@ v0.3.3e synchronizes the agent-facing contract with the Nexus geometry before v0
 
 The repo is treated as a navigable coherence field:
 
-`````text
-center  = source boundaries, non-claim locks, architecture, context indexes
+```t``	ext
+center  = source boundaries, non-claim locks, architecture, cont``	ext indexes
 inner   = claim cards, tau vectors, gates, schemas, classifier state
 middle  = CLI flows, tests, scripts, benchmarks, release validator
 outer   = reports, evidence packages, ledgers, visuals, release notes
@@ -706,7 +660,7 @@ outer   = reports, evidence packages, ledgers, visuals, release notes
 
 Every patch must preserve route coherence:
 
-`````text
+```t``	ext
 intent -> shell -> meridian -> sector -> files -> validation -> evidence -> lesson
 ```
 
@@ -714,13 +668,13 @@ intent -> shell -> meridian -> sector -> files -> validation -> evidence -> less
 
 A patch is coherent only when these surfaces agree:
 
-`````text
+```t``	ext
 README.md
 AGENTS.md
 rcc/nexus/task_routing_matrix.md
 rcc/nexus/route_map.json
-docs/context/repository_context_index.json
-docs/context/rcc_nexus_index.json
+docs/cont``	ext/repository_cont``	ext_index.json
+docs/cont``	ext/rcc_nexus_index.json
 target folder README.md
 latest validation reports
 ```
@@ -737,7 +691,7 @@ v0.4.0f pauses after the benchmark/chart/mini-README repair sequence and turns t
 
 Primary reflection surfaces:
 
-`````text
+```t``	ext
 docs/reflection/tau_scaling_reflection_v0_4_0f.md
 reports/reflection/latest_system_reflection.md
 reports/reflection/latest_system_reflection.json
@@ -746,13 +700,13 @@ visuals/reflection/v0_4_0f/
 
 Current reflection finding:
 
-`````text
+```t``	ext
 The repo is clean at the validation layer, but agent-facing contracts can still lag behind the root README after fast benchmark evolution.
 ```
 
 New rule:
 
-`````text
+```t``	ext
 Every release-like README or benchmark evolution must check AGENTS.md and rcc/nexus/task_routing_matrix.md for current-version alignment.
 ```
 
@@ -778,13 +732,13 @@ This layer keeps the repository synchronized after every evolution step.
 
 Before push, inspect the public README for:
 
-`````text
+```t``	ext
 - current checkpoint matches latest commit intent
 - release lineage is chronological
 - failure lessons are numerically ordered
 - directory box has no duplicate durable entries
 - Quick Start includes the release validator
-- next recommended version points to the actual next layer
+- n``	ext recommended version points to the actual n``	ext layer
 ```
 
 ### Pre-Experiment Checklist
@@ -797,7 +751,7 @@ python -m unittest discover -s tests
 
 Expected minimum state:
 
-`````text
+```t``	ext
 release_readiness: passed
 step_failures: 0
 README audit: passed
@@ -814,8 +768,8 @@ Any AI or human patch that adds, removes, renames, or repurposes a folder must u
 
 1. The root README Full Directory Box.
 2. The affected folder-level mini `README.md`.
-3. `docs/context/repository_context_index.json` if route meaning changes.
-4. `docs/context/rcc_nexus_index.json` if Nexus position changes.
+3. `docs/cont``	ext/repository_cont``	ext_index.json` if route meaning changes.
+4. `docs/cont``	ext/rcc_nexus_index.json` if Nexus position changes.
 5. `rcc/nexus/route_map.json` if task routing changes.
 6. Relevant validation reports after rerunning checks.
 
@@ -825,7 +779,7 @@ Non-claim lock: directory navigation is not correctness, but stale navigation is
 
 This box is a durable public repository map. Update it in the same commit whenever top-level folders or durable subfolders are added, removed, renamed, or repurposed. Generated timestamped runtime folders under `artifacts/runs/` are intentionally excluded.
 
-```text
+```t``	ext
 tau-scaling/
   .github/
     workflows/
@@ -842,25 +796,32 @@ tau-scaling/
     reports/
     runs/
       latest/
+        ledger/
+        reports/
+        scoring/
+        simulation/
+        state/
+        validation/
+        visuals/
+    tau_claim_ledger/
     visuals/
-  claims/
-    public_tau/
+    tau_claim_ledger/
   configs/
     seeds/
   docs/
+    feedback/
     architecture/
     architecture_changes/
     benchmarks/
-    context/
+    cont``	ext/
       drift/
-    feedback/
     future_architecture/
     injected_theory/
     injections/
     protocols/
     public_release/
-    reflection/
     release_notes/
+    reflection/
     software_architecture/
     theory/
   examples/
@@ -875,14 +836,7 @@ tau-scaling/
     nexus/
   releases/
   reports/
-    architecture/
-    benchmarks/
-    logicfolding_plausibility/
-    readme_anchor_repair/
-    readme_render_alignment/
-    readme_showcase/
-    release/
-    tau_claim_ledger/
+    nexus_feedback/
     stable_tau_threshold_governance/
     threshold_governance_summary/
     threshold_decision_record/
@@ -921,17 +875,26 @@ tau-scaling/
     policy/
     explanations/
     interactions/
+    architecture/
+    benchmarks/
+    cleanup/
     rcc_nexus/
+    readiness/
+    readme/
+      backups/
+    release/
     reflection/
+    repo_dump/
     runtime/
     status/
+      legacy_root_status/
   scripts/
-    benchmarks/
     feedback/
+    benchmarks/
     maintenance/
     rcc/
-    reflection/
     release/
+    reflection/
     validation/
   src/
     tau_scaling/
@@ -945,8 +908,8 @@ tau-scaling/
       utils/
   tests/
   visuals/
-    logicfolding_plausibility/
     tau_claim_ledger/
+    nexus_feedback/
     stable_tau_threshold_governance/
     threshold_governance_summary/
     threshold_decision_record/
@@ -1002,14 +965,14 @@ python scripts/release/validate_release.py
 
 Primary outputs:
 
-`````text
+```t``	ext
 reports/release/latest_release_readiness.json
 reports/release/latest_release_readiness.md
 ```
 
 Current expected state:
 
-`````text
+```t``	ext
 schema: tau-scaling-unified-release-readiness-v0.3.3
 passed: true
 step_failures: 0
@@ -1036,7 +999,7 @@ python scripts/benchmarks/run_synthetic_gate_suite.py
 
 Primary outputs:
 
-`````text
+```t``	ext
 configs/seeds/tests/synthetic_gate_manifest_v0_4_0.json
 reports/benchmarks/latest_synthetic_gate_suite.json
 reports/benchmarks/latest_synthetic_gate_suite.md
@@ -1050,7 +1013,7 @@ visuals/findings/v0_4_0/
 
 The suite emits charts for:
 
-`````text
+```t``	ext
 class distribution
 A_TSEK by scenario
 finding count by scenario
@@ -1071,7 +1034,7 @@ v0.5.1a is a documentation-alignment polish layer. It does not add runtime behav
 
 Repairs:
 
-`````text
+```t``	ext
 README public metrics now identify AGENTS.md as current / v0.5.1.
 README public metrics now identify task routing as v0.5.1-ready.
 AGENTS.md Required Validation now includes the current v0.4.6-v0.5.1 governance chain.
@@ -1091,7 +1054,7 @@ python scripts/benchmarks/generate_stable_tau_threshold_governance_milestone.py
 
 Primary outputs:
 
-`````text
+```t``	ext
 reports/stable_tau_threshold_governance/latest_stable_tau_threshold_governance_milestone.json
 reports/stable_tau_threshold_governance/latest_stable_tau_threshold_governance_milestone.md
 visuals/stable_tau_threshold_governance/v0_8_0/
@@ -1099,7 +1062,7 @@ visuals/stable_tau_threshold_governance/v0_8_0/
 
 Current lock:
 
-`````text
+```t``	ext
 threshold_decision: DEFER_THRESHOLD_CHANGE_PENDING_MORE_EVIDENCE
 thresholds_changed: false
 classifier_changed: false
@@ -1126,7 +1089,7 @@ python scripts/benchmarks/generate_threshold_governance_summary.py
 
 Primary outputs:
 
-`````text
+```t``	ext
 reports/threshold_governance_summary/latest_threshold_governance_summary.json
 reports/threshold_governance_summary/latest_threshold_governance_summary.md
 visuals/threshold_governance_summary/v0_7_9/
@@ -1134,7 +1097,7 @@ visuals/threshold_governance_summary/v0_7_9/
 
 Current lock:
 
-`````text
+```t``	ext
 thresholds_changed: false
 classifier_changed: false
 replay_allowed: false
@@ -1160,7 +1123,7 @@ python scripts/benchmarks/generate_threshold_decision_record.py
 
 Primary outputs:
 
-`````text
+```t``	ext
 reports/threshold_decision_record/latest_threshold_decision_record.json
 reports/threshold_decision_record/latest_threshold_decision_record.md
 visuals/threshold_decision_record/v0_7_8/
@@ -1168,7 +1131,7 @@ visuals/threshold_decision_record/v0_7_8/
 
 Current lock:
 
-`````text
+```t``	ext
 thresholds_changed: false
 classifier_changed: false
 replay_allowed: false
@@ -1194,7 +1157,7 @@ python scripts/benchmarks/run_threshold_sensitivity_dry_run.py
 
 Primary outputs:
 
-`````text
+```t``	ext
 reports/threshold_sensitivity_dry_run/latest_threshold_sensitivity_dry_run.json
 reports/threshold_sensitivity_dry_run/latest_threshold_sensitivity_dry_run.md
 reports/threshold_sensitivity_dry_run/scenarios/
@@ -1203,7 +1166,7 @@ visuals/threshold_sensitivity_dry_run/v0_7_7/
 
 Current lock:
 
-`````text
+```t``	ext
 thresholds_changed: false
 classifier_changed: false
 replay_allowed: false
@@ -1229,7 +1192,7 @@ python scripts/benchmarks/generate_over_under_penalty_controls.py
 
 Primary outputs:
 
-`````text
+```t``	ext
 reports/penalty_controls/latest_over_under_penalty_negative_controls.json
 reports/penalty_controls/latest_over_under_penalty_negative_controls.md
 reports/penalty_controls/controls/
@@ -1238,7 +1201,7 @@ visuals/penalty_controls/v0_7_6/
 
 Current lock:
 
-`````text
+```t``	ext
 thresholds_changed: false
 classifier_changed: false
 replay_allowed: false
@@ -1264,7 +1227,7 @@ python scripts/benchmarks/generate_tsek_boundary_explanation_cards.py
 
 Primary outputs:
 
-`````text
+```t``	ext
 reports/tsek_boundary_cards/latest_tsek_boundary_explanation_cards.json
 reports/tsek_boundary_cards/latest_tsek_boundary_explanation_cards.md
 reports/tsek_boundary_cards/cards/
@@ -1273,7 +1236,7 @@ visuals/tsek_boundary_cards/v0_7_5/
 
 Current lock:
 
-`````text
+```t``	ext
 thresholds_changed: false
 classifier_changed: false
 replay_allowed: false
@@ -1299,7 +1262,7 @@ python scripts/benchmarks/run_tsek_threshold_boundary_review.py
 
 Primary outputs:
 
-`````text
+```t``	ext
 reports/tsek_threshold_review/latest_tsek_threshold_boundary_review.json
 reports/tsek_threshold_review/latest_tsek_threshold_boundary_review.md
 visuals/tsek_threshold_review/v0_7_4/
@@ -1307,7 +1270,7 @@ visuals/tsek_threshold_review/v0_7_4/
 
 Current lock:
 
-`````text
+```t``	ext
 thresholds_changed: false
 classifier_changed: false
 replay_allowed: false
@@ -1333,7 +1296,7 @@ python scripts/benchmarks/generate_gate_algebra_map.py
 
 Primary outputs:
 
-`````text
+```t``	ext
 reports/gate_algebra/latest_gate_algebra_map.json
 reports/gate_algebra/latest_gate_algebra_map.md
 visuals/gate_algebra/v0_7_3/
@@ -1341,7 +1304,7 @@ visuals/gate_algebra/v0_7_3/
 
 Current lock:
 
-`````text
+```t``	ext
 replay_allowed: false
 executor_ran: false
 branch_created: false
@@ -1365,7 +1328,7 @@ python scripts/benchmarks/generate_tau_vector_semantics_ledger.py
 
 Primary outputs:
 
-`````text
+```t``	ext
 reports/tau_vector_semantics/latest_tau_vector_semantics_ledger.json
 reports/tau_vector_semantics/latest_tau_vector_semantics_ledger.md
 visuals/tau_vector_semantics/v0_7_2/
@@ -1373,7 +1336,7 @@ visuals/tau_vector_semantics/v0_7_2/
 
 Current lock:
 
-`````text
+```t``	ext
 replay_allowed: false
 executor_ran: false
 branch_created: false
@@ -1397,7 +1360,7 @@ python scripts/benchmarks/run_tau_mechanics_return_review.py
 
 Primary outputs:
 
-`````text
+```t``	ext
 reports/tau_mechanics_review/latest_tau_mechanics_return_review.json
 reports/tau_mechanics_review/latest_tau_mechanics_return_review.md
 visuals/tau_mechanics_review/v0_7_1/
@@ -1405,7 +1368,7 @@ visuals/tau_mechanics_review/v0_7_1/
 
 Current lock:
 
-`````text
+```t``	ext
 replay_allowed: false
 executor_ran: false
 branch_created: false
@@ -1429,7 +1392,7 @@ python scripts/benchmarks/generate_approval_governance_corridor.py
 
 Primary outputs:
 
-`````text
+```t``	ext
 reports/approval_corridor/latest_approval_governance_corridor_milestone.json
 reports/approval_corridor/latest_approval_governance_corridor_milestone.md
 visuals/approval_corridor/v0_7_0/
@@ -1437,7 +1400,7 @@ visuals/approval_corridor/v0_7_0/
 
 Current expected lock:
 
-`````text
+```t``	ext
 corridor_status: APPROVAL_CORRIDOR_MILESTONE_LOCKED__NO_EXECUTION_NO_MUTATION
 replay_allowed: false
 executor_ran: false
@@ -1462,7 +1425,7 @@ python scripts/benchmarks/run_blocked_state_trend_review.py
 
 Primary outputs:
 
-`````text
+```t``	ext
 reports/blocked_trend_review/latest_blocked_state_trend_review.json
 reports/blocked_trend_review/latest_blocked_state_trend_review.md
 visuals/blocked_trend_review/v0_6_9/
@@ -1470,7 +1433,7 @@ visuals/blocked_trend_review/v0_6_9/
 
 Current expected lock:
 
-`````text
+```t``	ext
 trend_status: TREND_REVIEW_CONFIRMED__GOVERNANCE_BLOCK_STILL_VALID
 replay_allowed: false
 executor_ran: false
@@ -1495,7 +1458,7 @@ python scripts/benchmarks/run_blocked_state_continuity_ledger.py
 
 Primary outputs:
 
-`````text
+```t``	ext
 reports/blocked_continuity/blocked_state_continuity_ledger.jsonl
 reports/blocked_continuity/latest_blocked_state_continuity.json
 reports/blocked_continuity/latest_blocked_state_continuity.md
@@ -1504,7 +1467,7 @@ visuals/blocked_continuity/v0_6_8/
 
 Current expected lock:
 
-`````text
+```t``	ext
 continuity_status: BLOCKED_STATE_RECORDED__NO_EXECUTION
 replay_allowed: false
 executor_ran: false
@@ -1529,7 +1492,7 @@ python scripts/benchmarks/run_approval_gated_replay_executor.py
 
 Primary outputs:
 
-`````text
+```t``	ext
 reports/replay_executor/latest_approval_gated_replay_executor.json
 reports/replay_executor/latest_approval_gated_replay_executor.md
 visuals/replay_executor/v0_6_7/
@@ -1537,7 +1500,7 @@ visuals/replay_executor/v0_6_7/
 
 Current expected lock when live approval handoff is invalid:
 
-`````text
+```t``	ext
 handoff_valid: false
 executor_allowed: false
 executor_ran: false
@@ -1562,7 +1525,7 @@ python scripts/benchmarks/run_live_approval_handoff_check.py
 
 Primary outputs:
 
-`````text
+```t``	ext
 reports/live_approval_handoff/latest_live_approval_handoff_check.json
 reports/live_approval_handoff/latest_live_approval_handoff_check.md
 visuals/live_approval_handoff/v0_6_6/
@@ -1570,7 +1533,7 @@ visuals/live_approval_handoff/v0_6_6/
 
 Current expected lock when no live approval artifact exists:
 
-`````text
+```t``	ext
 live_approval_present: false
 live_approval_valid: false
 replay_allowed: false
@@ -1595,7 +1558,7 @@ python scripts/benchmarks/validate_approval_fixtures.py
 
 Primary outputs:
 
-`````text
+```t``	ext
 reports/approval_fixtures/latest_approval_fixture_validator.json
 reports/approval_fixtures/latest_approval_fixture_validator.md
 reports/approval_fixtures/fixtures/v0_6_5/
@@ -1604,7 +1567,7 @@ visuals/approval_fixtures/v0_6_5/
 
 Current lock:
 
-`````text
+```t``	ext
 fixture_only: true
 live_approval_present: false
 branch_created: false
@@ -1628,7 +1591,7 @@ python scripts/benchmarks/run_approval_gated_replay_dry_run.py
 
 Primary outputs:
 
-`````text
+```t``	ext
 reports/approval_gated_replay/latest_approval_gated_replay_dry_run.json
 reports/approval_gated_replay/latest_approval_gated_replay_dry_run.md
 visuals/approval_gated_replay/v0_6_4/
@@ -1636,7 +1599,7 @@ visuals/approval_gated_replay/v0_6_4/
 
 Current expected lock while approval remains invalid/template-only:
 
-`````text
+```t``	ext
 approval_valid: false
 dry_run_allowed: false
 dry_run_executed: false
@@ -1661,7 +1624,7 @@ python scripts/benchmarks/validate_human_approval_artifact.py
 
 Primary outputs:
 
-`````text
+```t``	ext
 reports/approval_validator/latest_human_approval_validator.json
 reports/approval_validator/latest_human_approval_validator.md
 visuals/approval_validator/v0_6_3/
@@ -1669,7 +1632,7 @@ visuals/approval_validator/v0_6_3/
 
 Current expected lock when the artifact remains template-only:
 
-`````text
+```t``	ext
 approval_valid: false
 approval_decision: UNSET
 replay_allowed: false
@@ -1694,7 +1657,7 @@ python scripts/benchmarks/generate_human_approval_template.py
 
 Primary outputs:
 
-`````text
+```t``	ext
 reports/human_approval/human_approval_artifact_template_v0_6_2.json
 reports/human_approval/latest_human_approval_template_report.json
 reports/human_approval/latest_human_approval_template_report.md
@@ -1703,7 +1666,7 @@ visuals/human_approval/v0_6_2/
 
 Current lock:
 
-`````text
+```t``	ext
 human_approval_required: true
 human_approval_present: false
 approval_decision: UNSET
@@ -1729,7 +1692,7 @@ python scripts/benchmarks/run_candidate_branch_replay_harness.py
 
 Primary outputs:
 
-`````text
+```t``	ext
 reports/candidate_replay/latest_candidate_branch_replay_harness.json
 reports/candidate_replay/latest_candidate_branch_replay_harness.md
 visuals/candidate_replay/v0_6_1/
@@ -1737,7 +1700,7 @@ visuals/candidate_replay/v0_6_1/
 
 Current lock:
 
-`````text
+```t``	ext
 human_approval_required: true
 human_approval_present: false
 replay_allowed: false
@@ -1762,7 +1725,7 @@ python scripts/benchmarks/run_candidate_branch_gate.py
 
 Primary outputs:
 
-`````text
+```t``	ext
 reports/candidate_branch/latest_candidate_branch_gate.json
 reports/candidate_branch/latest_candidate_branch_gate.md
 visuals/candidate_branch/v0_6_0/
@@ -1770,7 +1733,7 @@ visuals/candidate_branch/v0_6_0/
 
 Current lock:
 
-`````text
+```t``	ext
 branch_created: false
 human_approval_required: true
 human_approval_present: false
@@ -1794,7 +1757,7 @@ python scripts/benchmarks/run_review_signoff_gate.py
 
 Primary outputs:
 
-`````text
+```t``	ext
 reports/review_signoff/latest_review_signoff_gate.json
 reports/review_signoff/latest_review_signoff_gate.md
 visuals/review_signoff/v0_5_9/
@@ -1802,7 +1765,7 @@ visuals/review_signoff/v0_5_9/
 
 Current lock:
 
-`````text
+```t``	ext
 mutation_allowed: false
 policy_enforced: false
 calibration_applied: false
@@ -1823,7 +1786,7 @@ python scripts/benchmarks/generate_review_package.py
 
 Primary outputs:
 
-`````text
+```t``	ext
 reports/review_package/latest_review_package.json
 reports/review_package/latest_review_package.md
 visuals/review_package/v0_5_8/
@@ -1833,7 +1796,7 @@ This layer bundles cause cards, remediation tasks, support-aware negative contro
 
 Current lock:
 
-`````text
+```t``	ext
 mutation_allowed: false
 policy_enforced: false
 calibration_applied: false
@@ -1854,7 +1817,7 @@ python scripts/benchmarks/generate_counterfactual_decision_record.py
 
 Primary outputs:
 
-`````text
+```t``	ext
 reports/counterfactual_decision/latest_counterfactual_decision_record.json
 reports/counterfactual_decision/latest_counterfactual_decision_record.md
 visuals/counterfactual_decision/v0_5_7/
@@ -1862,7 +1825,7 @@ visuals/counterfactual_decision/v0_5_7/
 
 Current lock:
 
-`````text
+```t``	ext
 mutation_allowed: false
 policy_enforced: false
 calibration_applied: false
@@ -1883,7 +1846,7 @@ python scripts/benchmarks/run_calibration_counterfactuals.py
 
 Primary outputs:
 
-`````text
+```t``	ext
 reports/calibration_counterfactuals/latest_calibration_counterfactuals.json
 reports/calibration_counterfactuals/latest_calibration_counterfactuals.md
 visuals/calibration_counterfactuals/v0_5_6/
@@ -1893,7 +1856,7 @@ This layer compares current behavior against proposed report-only calibrated beh
 
 Current lock:
 
-`````text
+```t``	ext
 mutation_allowed: false
 policy_enforced: false
 calibration_applied: false
@@ -1913,7 +1876,7 @@ python scripts/benchmarks/generate_disabled_calibration_plan.py
 
 Primary outputs:
 
-`````text
+```t``	ext
 reports/calibration_plan/latest_disabled_calibration_plan.json
 reports/calibration_plan/latest_disabled_calibration_plan.md
 visuals/calibration_plan/v0_5_5/
@@ -1923,7 +1886,7 @@ This layer compares candidate thresholds against high-support retention constrai
 
 Current lock:
 
-`````text
+```t``	ext
 mutation_allowed: false
 policy_enforced: false
 calibration_applied: false
@@ -1943,7 +1906,7 @@ python scripts/benchmarks/run_support_aware_negative_controls.py
 
 Primary outputs:
 
-`````text
+```t``	ext
 reports/negative_controls/latest_support_aware_negative_controls.json
 reports/negative_controls/latest_support_aware_negative_controls.md
 visuals/negative_controls/v0_5_4/
@@ -1953,7 +1916,7 @@ This layer checks whether high-support cases are safely retained and blocked fro
 
 Current lock:
 
-`````text
+```t``	ext
 mutation_allowed: false
 policy_enforced: false
 ```
@@ -1972,7 +1935,7 @@ python scripts/benchmarks/generate_cause_specific_remediation_plan.py
 
 Primary outputs:
 
-`````text
+```t``	ext
 reports/remediation_plan/latest_cause_specific_remediation_plan.json
 reports/remediation_plan/latest_cause_specific_remediation_plan.md
 reports/remediation_plan/tasks/v0_5_3/
@@ -1981,7 +1944,7 @@ visuals/remediation_plan/v0_5_3/
 
 Current lock:
 
-`````text
+```t``	ext
 mutation_allowed: false
 policy_enforced: false
 ```
@@ -2000,7 +1963,7 @@ python scripts/benchmarks/run_over_penalty_cause_decomposition.py
 
 Primary outputs:
 
-`````text
+```t``	ext
 reports/over_penalty_causes/latest_over_penalty_cause_decomposition.json
 reports/over_penalty_causes/latest_over_penalty_cause_decomposition.md
 reports/over_penalty_causes/cards/v0_5_2/
@@ -2009,7 +1972,7 @@ visuals/over_penalty_causes/v0_5_2/
 
 Current lock:
 
-`````text
+```t``	ext
 mutation_allowed: false
 policy_enforced: false
 ```
@@ -2028,7 +1991,7 @@ python scripts/feedback/run_nexus_target_refresh.py
 
 Primary outputs:
 
-`````text
+```t``	ext
 reports/nexus_target_refresh/latest_nexus_target_refresh.json
 reports/nexus_target_refresh/latest_nexus_target_refresh.md
 visuals/nexus_target_refresh/v0_5_1/
@@ -2036,16 +1999,16 @@ visuals/nexus_target_refresh/v0_5_1/
 
 This layer answers:
 
-`````text
+```t``	ext
 which old Nexus priorities are completed
 which stale recommendations should retire
 what the current active blocker is
-what the next current target should be
+what the n``	ext current target should be
 ```
 
 Current active blocker:
 
-`````text
+```t``	ext
 all_controlled_downgrades_blocked
 ```
 
@@ -2063,7 +2026,7 @@ python scripts/benchmarks/run_enforcement_readiness_gate.py
 
 Primary outputs:
 
-`````text
+```t``	ext
 reports/enforcement_readiness/latest_enforcement_readiness_gate.json
 reports/enforcement_readiness/latest_enforcement_readiness_gate.md
 visuals/enforcement_readiness/v0_5_0/
@@ -2071,7 +2034,7 @@ visuals/enforcement_readiness/v0_5_0/
 
 This layer answers:
 
-`````text
+```t``	ext
 which policy candidates remain blocked
 which cases stay human-review only
 whether disabled enforcement-candidate design is allowed
@@ -2080,7 +2043,7 @@ whether any classifier mutation is permitted
 
 Current lock:
 
-`````text
+```t``	ext
 enforcement_candidate_enabled: false
 mutation_allowed: false
 policy_enforced: false
@@ -2100,7 +2063,7 @@ python scripts/benchmarks/run_regression_over_penalty_review.py
 
 Primary outputs:
 
-`````text
+```t``	ext
 reports/regression_review/latest_regression_over_penalty_review.json
 reports/regression_review/latest_regression_over_penalty_review.md
 visuals/regression_review/v0_4_9/
@@ -2108,16 +2071,16 @@ visuals/regression_review/v0_4_9/
 
 This layer checks:
 
-`````text
+```t``	ext
 whether controlled downgrades pass regression review
 whether ordinary incomplete evidence is over-penalized
 whether human-review cases remain human-review only
-whether any classifier mutation may be designed next
+whether any classifier mutation may be designed n``	ext
 ```
 
 Current lock:
 
-`````text
+```t``	ext
 mutation_allowed: false
 policy_enforced: false
 ```
@@ -2136,7 +2099,7 @@ python scripts/benchmarks/generate_policy_decision_record.py
 
 Primary outputs:
 
-`````text
+```t``	ext
 reports/policy_decision/latest_policy_decision_record.json
 reports/policy_decision/latest_policy_decision_record.md
 visuals/policy_decision/v0_4_8/
@@ -2144,7 +2107,7 @@ visuals/policy_decision/v0_4_8/
 
 This layer decides:
 
-`````text
+```t``	ext
 which simulated downgrades are approved for regression review
 which cases must defer to human review
 which cases must not be enforced
@@ -2153,7 +2116,7 @@ whether classifier mutation is allowed
 
 Current lock:
 
-`````text
+```t``	ext
 mutation_allowed: false
 policy_enforced: false
 ```
@@ -2172,7 +2135,7 @@ python scripts/benchmarks/generate_policy_impact_cards.py
 
 Primary outputs:
 
-`````text
+```t``	ext
 reports/policy_impact/latest_policy_impact_cards.json
 reports/policy_impact/latest_policy_impact_cards.md
 reports/policy_impact/cards/v0_4_7/
@@ -2181,7 +2144,7 @@ visuals/policy_impact/v0_4_7/
 
 This layer explains:
 
-`````text
+```t``	ext
 which dry-run pairs drifted
 why each drift happened
 whether the drift is a controlled downgrade or human-review case
@@ -2202,7 +2165,7 @@ python scripts/benchmarks/run_pair_policy_dry_run.py
 
 Primary outputs:
 
-`````text
+```t``	ext
 reports/policy_dry_run/latest_pair_policy_dry_run.json
 reports/policy_dry_run/latest_pair_policy_dry_run.md
 visuals/policy_dry_run/v0_4_6/
@@ -2210,7 +2173,7 @@ visuals/policy_dry_run/v0_4_6/
 
 The simulator compares:
 
-`````text
+```t``	ext
 current_classification
 vs
 simulated_policy_classification
@@ -2218,7 +2181,7 @@ simulated_policy_classification
 
 It answers:
 
-`````text
+```t``	ext
 How many pairs drift if policy is enforced?
 How many TSEK-C cases become TSEK-D?
 How many require human review?
@@ -2233,7 +2196,7 @@ v0.4.5d repairs the final feedback-health mismatch.
 
 Cause found:
 
-`````text
+```t``	ext
 v0.4.5c normalized findings and step_failures correctly.
 The remaining failed check was sensitivity_sweep.
 The sensitivity report stores chart evidence as chart_paths, not always chart_count.
@@ -2241,13 +2204,13 @@ The sensitivity report stores chart evidence as chart_paths, not always chart_co
 
 Repair:
 
-`````text
+```t``	ext
 sensitivity_chart_count = chart_count if present else len(chart_paths)
 ```
 
 Expected result:
 
-`````text
+```t``	ext
 health_score: 1.0
 health_passed: true
 schema: tau-scaling-nexus-reflective-feedback-v0.4.5d
@@ -2261,14 +2224,14 @@ v0.4.5c repairs the actual `health_score` function body.
 
 Cause found:
 
-`````text
+```t``	ext
 v0.4.5b updated schema labels and docs,
 but the old health_score logic remained active.
 ```
 
 Repair:
 
-`````text
+```t``	ext
 replace health_score by explicit function block
 normalize list-valued findings and step_failures
 derive sensitivity_points from total_points or len(results)
@@ -2277,7 +2240,7 @@ emit health.details for auditability
 
 Expected result:
 
-`````text
+```t``	ext
 health_score: 1.0
 health_passed: true
 schema: tau-scaling-nexus-reflective-feedback-v0.4.5c
@@ -2291,14 +2254,14 @@ v0.4.5b repairs the feedback health scorer, not the runtime.
 
 Cause found:
 
-`````text
+```t``	ext
 release readiness writes findings and step_failures as lists.
 sensitivity sweep stores point count in results, not always as top-level total_points.
 ```
 
 Repair:
 
-`````text
+```t``	ext
 [] counts as zero findings.
 [] counts as zero step failures.
 sensitivity_points = total_points if present, else len(results).
@@ -2312,7 +2275,7 @@ python scripts/feedback/run_nexus_feedback.py
 
 Expected result after fresh validators:
 
-`````text
+```t``	ext
 health_score: 1.0
 health_passed: true
 ```
@@ -2382,7 +2345,7 @@ python scripts/feedback/run_nexus_feedback.py
 
 Primary outputs:
 
-`````text
+```t``	ext
 reports/nexus_feedback/latest_nexus_feedback.json
 reports/nexus_feedback/latest_nexus_feedback.md
 visuals/nexus_feedback/v0_4_5/
@@ -2390,7 +2353,7 @@ visuals/nexus_feedback/v0_4_5/
 
 The feedback loop reads:
 
-`````text
+```t``	ext
 release readiness
 README audit
 RCC-N checker
@@ -2403,10 +2366,10 @@ pair policy review
 
 The purpose is to answer:
 
-`````text
+```t``	ext
 What is healthy?
 What is producing policy pressure?
-What should be improved next?
+What should be improved n``	ext?
 What should not be mutated yet?
 ```
 
@@ -2426,7 +2389,7 @@ python scripts/benchmarks/run_pair_policy_review.py
 
 Primary outputs:
 
-`````text
+```t``	ext
 reports/policy/latest_pair_policy_review.json
 reports/policy/latest_pair_policy_review.md
 visuals/policy/v0_4_4/
@@ -2434,7 +2397,7 @@ visuals/policy/v0_4_4/
 
 The purpose is to answer:
 
-`````text
+```t``	ext
 Which paired failures should remain TSEK-C?
 Which paired failures are TSEK-D candidates?
 Which paired failures require human review?
@@ -2457,7 +2420,7 @@ python scripts/benchmarks/generate_threshold_explanation_cards.py
 
 Primary outputs:
 
-`````text
+```t``	ext
 reports/explanations/latest_threshold_explanation_cards.json
 reports/explanations/latest_threshold_explanation_cards.md
 reports/explanations/cards/v0_4_3/
@@ -2466,7 +2429,7 @@ visuals/explanations/v0_4_3/
 
 The purpose is to answer:
 
-`````text
+```t``	ext
 Why did this claim receive its class?
 Which gates caused downgrade?
 What minimum repair would promote it?
@@ -2475,7 +2438,7 @@ Which classifier behaviors should be reviewed before hardening?
 
 Current design question:
 
-`````text
+```t``	ext
 v0.4.2 showed all paired gate failures remained TSEK-C.
 v0.4.3 marks those cases as review_pair_policy instead of changing classifier rules prematurely.
 ```
@@ -2494,7 +2457,7 @@ python scripts/benchmarks/run_gate_interaction_matrix.py
 
 Primary outputs:
 
-`````text
+```t``	ext
 configs/seeds/interactions/gate_interaction_manifest_v0_4_2.json
 reports/interactions/latest_gate_interaction_matrix.json
 reports/interactions/latest_gate_interaction_matrix.md
@@ -2503,7 +2466,7 @@ visuals/interactions/v0_4_2/
 
 The purpose is to answer:
 
-`````text
+```t``	ext
 Which gates compound each other?
 Which paired failures force hard downgrades?
 Which pairs remain diagnostic rather than catastrophic?
@@ -2524,7 +2487,7 @@ python scripts/benchmarks/run_sensitivity_sweep.py
 
 Primary outputs:
 
-`````text
+```t``	ext
 configs/seeds/sweeps/sensitivity_sweep_manifest_v0_4_1.json
 reports/sensitivity/latest_sensitivity_sweep.json
 reports/sensitivity/latest_sensitivity_sweep.md
@@ -2533,7 +2496,7 @@ visuals/sensitivity/v0_4_1/
 
 Current sweep families:
 
-`````text
+```t``	ext
 logicfolding_vertical_penalty
 gamma_tau_etp_tau_gain
 overclaim_pressure
@@ -2541,7 +2504,7 @@ overclaim_pressure
 
 The purpose is to answer:
 
-`````text
+```t``	ext
 Where does the gate flip?
 Where does A_TSEK collapse?
 Where does diagnostic_average remain stable?
@@ -2556,13 +2519,13 @@ v0.4.0c adds a stable benchmark atlas so every benchmark layer has a public char
 
 Primary atlas:
 
-`````text
+```t``	ext
 docs/benchmarks/benchmark_atlas.md
 ```
 
 Atlas surfaces:
 
-`````text
+```t``	ext
 reports/benchmarks/README.md
 reports/benchmarks/v0_4_0/README.md
 reports/gates/README.md
@@ -2575,7 +2538,7 @@ visuals/findings/v0_4_0/README.md
 
 Current synthetic-suite seal:
 
-`````text
+```t``	ext
 total_scenarios: 10
 passed_scenarios: 10
 failed_scenarios: 0
@@ -2586,7 +2549,7 @@ class_counts: TSEK-B=1, TSEK-C=7, TSEK-E=2
 
 Every future benchmark version must add or update:
 
-`````text
+```t``	ext
 benchmark summary
 finding summary
 chart registry
@@ -2608,7 +2571,7 @@ python scripts/benchmarks/run_tau_scaling_benchmarks.py
 
 Latest benchmark proof:
 
-`````text
+```t``	ext
 schema: tau-scaling-benchmark-summary-v0.3.2
 total_runs: 12
 unique_run_ids: 12
@@ -2619,7 +2582,7 @@ class_counts: { TSEK-B: 6, TSEK-C: 6 }
 
 Benchmark outputs:
 
-`````text
+```t``	ext
 reports/benchmarks/latest_benchmark_summary.json
 reports/benchmarks/latest_benchmark_summary.md
 ```
@@ -2640,20 +2603,20 @@ Human-readable locks:
 - Navigation is not validation.
 - Density equivalence is not node equivalence.
 - Local path win is not full-chip win.
-- Context reconstruction is not correctness proof.
+- Cont``	ext reconstruction is not correctness proof.
 - Evidence packages are task-bounded artifacts, not universal proof.
 - Tau Scaling runtime outputs do not independently validate silicon, product metrics, manufacturing capability, benchmark superiority, process-node equivalence, or universal physical law.
 - Validation remains required.
 
 Machine-readable lock IDs:
 
-`````text
+```t``	ext
 roadmap_coherence_is_not_validation
 simulation_is_not_silicon_validation
 simulation_is_not_silicon_evidence
 documentation_is_not_correctness
 navigation_is_not_validation
-context_reconstruction_is_not_correctness_proof
+cont``	ext_reconstruction_is_not_correctness_proof
 density_equivalence_is_not_node_equivalence
 local_path_win_is_not_full_chip_win
 validation_remains_required
@@ -2736,7 +2699,7 @@ validation_remains_required
 | v0.7.9 | Threshold governance summary; summarizes v0.7.x and freezes threshold mutation pending more evidence. |
 | v0.8.0 | Stable Tau threshold governance milestone; packages v0.7.x and routes future work to evidence expansion. |
 
-## N``````text Recommended Version
+## N``	ext Recommended Version
 
 **TAU-SCALING-SA v0.8.3 - LogicFolding Plausibility Sweep**
 
@@ -2752,7 +2715,7 @@ Recommended goals:
 
 This layer begins proof/falsification work on the core LogicFolding claim by testing the TSEK survivability inequality under synthetic priors.
 
-`````text
+```text
 rho_c * E[delta_tau_wire] >
 E[tau_vertical] + tau_route + tau_sync + tau_variation + tau_closure
 
@@ -2761,7 +2724,7 @@ gamma_tau_ETP > 1
 
 Primary outputs:
 
-`````text
+```text
 reports/logicfolding_plausibility/latest_logicfolding_plausibility_sweep.md
 reports/logicfolding_plausibility/latest_logicfolding_plausibility_sweep.json
 visuals/logicfolding_plausibility/v0_8_3/
@@ -2769,26 +2732,14 @@ visuals/logicfolding_plausibility/v0_8_3/
 
 Research interpretation:
 
-`````text
+```text
 LogicFolding is conditionally plausible when critical-path coverage and wire-delay savings are high enough to dominate vertical, routing, sync, variation, and closure costs, and when energy/thermal/PDN-normalized tau gain remains above one.
 ```
 
 Falsification pressure:
 
-`````text
+```text
 Thermal-stressed and closure-stressed priors test whether apparent timing gains collapse when companion gates dominate.
 ```
 
 Boundary: this is synthetic plausibility testing only. It does not validate Huawei silicon, products, manufacturing capability, process-node equivalence, benchmark superiority, or universal Tau Scaling law.
-
-## Next Recommended Version
-
-**TAU-SCALING-SA v0.8.4 - Evidence Sufficiency Matrix**
-
-Recommended goals:
-
-- Convert public Tau claim classes into explicit evidence sufficiency requirements.
-- Define what evidence would promote TSEK-C to TSEK-B and TSEK-B to TSEK-A.
-- Preserve downgrade discipline and non-claim locks.
-- Keep threshold and classifier mutation disabled.
-- Preserve `mutation_allowed: false`.

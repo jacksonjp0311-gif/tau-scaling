@@ -1,6 +1,6 @@
 # AGENTS.md Ã¢â‚¬â€ Tau Scaling Agent Operating Contract
 
-Current contract: **TAU-SCALING-SA v0.8.3a - README UTF-8 Anchor Repair after LogicFolding Sweep**
+Current contract: **TAU-SCALING-SA v0.8.3b - README Render and Alignment Repair**
 
 ## Mission
 
