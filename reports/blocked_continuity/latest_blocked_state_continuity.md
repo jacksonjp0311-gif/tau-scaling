@@ -1,6 +1,6 @@
 # Tau Scaling v0.6.8 Blocked-State Continuity Ledger
 
-Generated: `2026-05-28T08:03:02.887159+00:00`
+Generated: `2026-05-28T08:04:52.287049+00:00`
 
 ## Continuity Result
 
@@ -8,7 +8,7 @@ Generated: `2026-05-28T08:03:02.887159+00:00`
 - Executor status: `EXECUTOR_BLOCKED__LIVE_APPROVAL_HANDOFF_NOT_VALID`
 - Handoff status: `HANDOFF_BLOCKED__NO_LIVE_APPROVAL`
 - Ledger path: `reports/blocked_continuity/blocked_state_continuity_ledger.jsonl`
-- Ledger entries: `1`
+- Ledger entries: `2`
 - Executor blocked: `True`
 - Handoff blocked: `True`
 - Mutation allowed: `False`
@@ -23,6 +23,7 @@ Live approval handoff is not valid for replay. Executor remains blocked.
 | Index | Version | Executor status | Handoff status | Replay allowed |
 |---:|---|---|---|---|
 | 1 | `v0.6.8` | `EXECUTOR_BLOCKED__LIVE_APPROVAL_HANDOFF_NOT_VALID` | `HANDOFF_BLOCKED__NO_LIVE_APPROVAL` | `False` |
+| 2 | `v0.6.8` | `EXECUTOR_BLOCKED__LIVE_APPROVAL_HANDOFF_NOT_VALID` | `HANDOFF_BLOCKED__NO_LIVE_APPROVAL` | `False` |
 
 ## Charts
 

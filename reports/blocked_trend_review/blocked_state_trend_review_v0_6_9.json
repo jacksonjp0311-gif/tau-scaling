@@ -1,0 +1,40 @@
+{
+  "application_allowed": false,
+  "boundary": "Blocked-state trend reviews are local classifier-governance analysis artifacts. They review blocked execution continuity. They do not create live approval, execute replay commands, create branches, mutate classifier behavior, apply calibration, or validate silicon, products, manufacturing, process nodes, benchmark superiority, or universal Tau Scaling law.",
+  "branch_count": 0,
+  "branch_created": false,
+  "branch_creation_allowed": false,
+  "calibration_applied": false,
+  "chart_paths": [
+    "visuals/blocked_trend_review/v0_6_9/blocked_trend_executor_status_counts.png",
+    "visuals/blocked_trend_review/v0_6_9/blocked_trend_handoff_status_counts.png",
+    "visuals/blocked_trend_review/v0_6_9/blocked_trend_risk_counters.png"
+  ],
+  "continuation_recommendation": "continue_blocked_observability_or_create_live_approval_preparation_layer",
+  "current_executor_status": "EXECUTOR_BLOCKED__LIVE_APPROVAL_HANDOFF_NOT_VALID",
+  "current_handoff_status": "HANDOFF_BLOCKED__NO_LIVE_APPROVAL",
+  "entry_count": 2,
+  "execution_count": 0,
+  "executor_ran": false,
+  "executor_status_counts": {
+    "EXECUTOR_BLOCKED__LIVE_APPROVAL_HANDOFF_NOT_VALID": 2
+  },
+  "generated_at": "2026-05-28T08:04:53.605511+00:00",
+  "handoff_status_counts": {
+    "HANDOFF_BLOCKED__NO_LIVE_APPROVAL": 2
+  },
+  "input_blocked_continuity": "reports/blocked_continuity/latest_blocked_state_continuity.json",
+  "input_blocked_ledger": "reports/blocked_continuity/blocked_state_continuity_ledger.jsonl",
+  "live_approval_present_count": 0,
+  "mutation_allowed": false,
+  "mutation_allowed_count": 0,
+  "next_recommendation": "v0.7.0 should package the approval-governance corridor as a stable governance milestone, not continue adding gates indefinitely.",
+  "policy_enforced": false,
+  "recommendation": "Continue only with blocked-state observability or live-approval preparation; do not replay.",
+  "replay_allowed": false,
+  "replay_allowed_count": 0,
+  "retirement_recommendation": "do_not_retire_approval_pathway_yet",
+  "runtime_behavior_changed": false,
+  "schema": "tau-scaling-blocked-state-trend-review-v0.6.9",
+  "trend_status": "TREND_REVIEW_CONFIRMED__GOVERNANCE_BLOCK_STILL_VALID"
+}

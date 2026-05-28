@@ -15,15 +15,15 @@
   "executor_ran": false,
   "executor_status": "EXECUTOR_BLOCKED__LIVE_APPROVAL_HANDOFF_NOT_VALID",
   "final_recommendation": "Preserve blocked state as evidence. Do not replay, create branches, or mutate behavior without a valid live approval handoff.",
-  "generated_at": "2026-05-28T08:03:02.887159+00:00",
+  "generated_at": "2026-05-28T08:04:52.287049+00:00",
   "handoff_blocked": true,
   "handoff_status": "HANDOFF_BLOCKED__NO_LIVE_APPROVAL",
   "input_live_approval_handoff": "reports/live_approval_handoff/latest_live_approval_handoff_check.json",
   "input_replay_executor": "reports/replay_executor/latest_approval_gated_replay_executor.json",
-  "ledger_entry_count": 1,
+  "ledger_entry_count": 2,
   "ledger_path": "reports/blocked_continuity/blocked_state_continuity_ledger.jsonl",
   "ledger_status_counts": {
-    "EXECUTOR_BLOCKED__LIVE_APPROVAL_HANDOFF_NOT_VALID": 1
+    "EXECUTOR_BLOCKED__LIVE_APPROVAL_HANDOFF_NOT_VALID": 2
   },
   "ledger_tail": [
     {
@@ -35,6 +35,24 @@
       "executor_ran": false,
       "executor_status": "EXECUTOR_BLOCKED__LIVE_APPROVAL_HANDOFF_NOT_VALID",
       "generated_at": "2026-05-28T08:03:02.878583+00:00",
+      "handoff_blocked": true,
+      "handoff_status": "HANDOFF_BLOCKED__NO_LIVE_APPROVAL",
+      "live_approval_present": false,
+      "live_approval_valid": false,
+      "mutation_allowed": false,
+      "replay_allowed": false,
+      "schema": "tau-scaling-blocked-state-continuity-ledger-entry-v0.6.8",
+      "version": "v0.6.8"
+    },
+    {
+      "application_allowed": false,
+      "block_reason": "Live approval handoff is not valid for replay. Executor remains blocked.",
+      "branch_created": false,
+      "calibration_applied": false,
+      "executor_blocked": true,
+      "executor_ran": false,
+      "executor_status": "EXECUTOR_BLOCKED__LIVE_APPROVAL_HANDOFF_NOT_VALID",
+      "generated_at": "2026-05-28T08:04:52.279014+00:00",
       "handoff_blocked": true,
       "handoff_status": "HANDOFF_BLOCKED__NO_LIVE_APPROVAL",
       "live_approval_present": false,

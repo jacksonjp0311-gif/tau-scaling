@@ -1,6 +1,6 @@
 # AGENTS.md — Tau Scaling Agent Operating Contract
 
-Current contract: **TAU-SCALING-SA v0.6.9 - Blocked-State Trend Review**
+Current contract: **TAU-SCALING-SA v0.6.8 - Blocked-State Continuity Ledger**
 
 ## Mission
 
@@ -76,7 +76,6 @@ python scripts/benchmarks/validate_approval_fixtures.py
 python scripts/benchmarks/run_live_approval_handoff_check.py
 python scripts/benchmarks/run_approval_gated_replay_executor.py
 python scripts/benchmarks/run_blocked_state_continuity_ledger.py
-python scripts/benchmarks/run_blocked_state_trend_review.py
 python -m unittest discover -s tests
 ```
 
@@ -119,7 +118,6 @@ python -m unittest discover -s tests
 | Live approval handoff patch | `reports/live_approval_handoff/`, `visuals/live_approval_handoff/`, approval fixtures | handoff check + release validator; fixtures refused as live approval |
 | Replay executor patch | `reports/replay_executor/`, `visuals/replay_executor/`, live approval handoff | executor gate + release validator; refuses execution when handoff invalid |
 | Blocked continuity patch | `reports/blocked_continuity/`, `visuals/blocked_continuity/`, replay executor | continuity ledger + release validator; no execution |
-| Blocked trend patch | `reports/blocked_trend_review/`, `visuals/blocked_trend_review/`, blocked continuity | trend review + release validator; no execution |
 | Public claim replay patch | source boundary docs, `configs/seeds/public_claims/`, claim reports | release validator + claim replay report |
 | Directory structure patch | Full Directory Box, affected mini READMEs, context indexes | README audit + RCC-N + release validator |
 
