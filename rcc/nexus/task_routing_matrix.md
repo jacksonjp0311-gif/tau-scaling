@@ -1,6 +1,6 @@
 # Task Routing Matrix
 
-Current contract: **TAU-SCALING-SA v0.9.4 - External Review Checklist and Publication Routing**
+Current contract: **TAU-SCALING-SA v1.0.0 - Public Release Candidate**
 
 ## Geometry Route
 

@@ -1,0 +1,36 @@
+{
+  "checks": [
+    {
+      "check": "claim_promotion_allowed_false",
+      "id": "L1",
+      "passed": true
+    },
+    {
+      "check": "source_validation_claimed_false",
+      "id": "L2",
+      "passed": true
+    },
+    {
+      "check": "primary_source_confirmed_count_zero",
+      "id": "L3",
+      "passed": true
+    },
+    {
+      "check": "independent_source_confirmed_count_zero",
+      "id": "L4",
+      "passed": true
+    },
+    {
+      "check": "release_findings_zero",
+      "id": "L5",
+      "passed": true
+    },
+    {
+      "check": "preprint_not_ready_without_review",
+      "id": "L6",
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "passed": true
+}

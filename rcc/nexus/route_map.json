@@ -70,7 +70,7 @@
                                       ]
                },
     "schema":  "rcc-nexus-route-map-v1.7",
-    "updated_at":  "2026-05-28T16:17:15.9969147Z",
+    "updated_at":  "2026-05-28T16:37:24.9051999Z",
     "v0_4_routes":  {
                         "feedback_chart_path_health_repair":  {
                                                                   "evidence":  [
@@ -1057,7 +1057,7 @@
                        "runtime":  "python -m tau_scaling run-claim --seed configs/seeds/logicfolding_claim_card.json",
                        "tests":  "python -m unittest discover -s tests"
                    },
-    "version":  "v0.9.4",
+    "version":  "v1.0.0",
     "v0_9_routes":  {
                         "manuscript_draft_scaffold":  {
                                                           "read_first":  [
@@ -1139,5 +1139,8 @@
                                                                                  ],
                                                                     "mutation_lock":  "External review and publication routing only; no source validation, classifier change, threshold change, claim promotion, branch creation, or mutation."
                                                                 }
+                    },
+    "v1_0_routes":  {
+
                     }
 }

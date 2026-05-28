@@ -1,0 +1,3 @@
+# Public Abstract v1.0.0
+
+Public semiconductor narratives often blur the line between roadmap claims, media interpretation, methodology proposals, and validated technical results. This release treats Tau Scaling as an evidence-governance problem. It converts public Tau Scaling claims into a reproducible repository artifact with claim ledgers, source-provenance records, source-population manifests, validation-gap matrices, manuscript materials, and publication-routing checks. In the current repository state, `8` of `8` public claims are source-populated, while `0` are primary-source confirmed and `0` are independently confirmed. The result is publishable as source-provenance and validation-gap research, not as semiconductor validation.

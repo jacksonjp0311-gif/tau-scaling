@@ -3,7 +3,7 @@
   "boundary": "v0.9.4 creates external review and publication routing artifacts. It does not validate sources, promote claims, validate silicon, validate products, prove benchmark superiority, or establish a universal Tau Scaling law.",
   "claim_promotion_allowed": false,
   "classifier_changed": false,
-  "generated_at": "2026-05-28T16:17:18.074364+00:00",
+  "generated_at": "2026-05-28T16:37:26.705797+00:00",
   "metrics": {
     "average_gap_count": 14.75,
     "average_source_confidence": 0.5837,

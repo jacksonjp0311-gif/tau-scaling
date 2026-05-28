@@ -1,0 +1,12 @@
+{
+  "application_allowed": false,
+  "boundary": "README/public-release-candidate patch is release routing only. It does not validate or promote claims.",
+  "checkpoint": "TAU-SCALING-SA v1.0.0 - Public Release Candidate",
+  "claim_promotion_allowed": false,
+  "classifier_changed": false,
+  "generated_at": "2026-05-28T16:37:24.659197+00:00",
+  "mutation_allowed": false,
+  "schema": "tau-scaling-v1.0.0-readme-public-release-candidate-patch",
+  "source_validation_claimed": false,
+  "thresholds_changed": false
+}

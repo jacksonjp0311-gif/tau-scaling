@@ -1,0 +1,139 @@
+{
+  "application_allowed": false,
+  "boundary": "v1.0.0 freezes a public evidence-governance release candidate. It does not validate sources, promote claims, validate silicon, validate products, prove benchmark superiority, or establish a universal Tau Scaling law.",
+  "claim_promotion_allowed": false,
+  "classifier_changed": false,
+  "final_lock_audit": {
+    "checks": [
+      {
+        "check": "claim_promotion_allowed_false",
+        "id": "L1",
+        "passed": true
+      },
+      {
+        "check": "source_validation_claimed_false",
+        "id": "L2",
+        "passed": true
+      },
+      {
+        "check": "primary_source_confirmed_count_zero",
+        "id": "L3",
+        "passed": true
+      },
+      {
+        "check": "independent_source_confirmed_count_zero",
+        "id": "L4",
+        "passed": true
+      },
+      {
+        "check": "release_findings_zero",
+        "id": "L5",
+        "passed": true
+      },
+      {
+        "check": "preprint_not_ready_without_review",
+        "id": "L6",
+        "passed": true
+      }
+    ],
+    "failures": [],
+    "passed": true
+  },
+  "generated_at": "2026-05-28T16:37:26.841711+00:00",
+  "metrics": {
+    "average_gap_count": 14.75,
+    "average_source_confidence": 0.5837,
+    "claim_count": 8,
+    "high_gap_claim_count": 8,
+    "independent_source_confirmed_count": 0,
+    "primary_source_confirmed_count": 0,
+    "release_findings": 0,
+    "release_passed": true,
+    "source_populated_count": 8
+  },
+  "mutation_allowed": false,
+  "packaged_artifacts": [
+    {
+      "exists": true,
+      "packaged_as": "releases\\public_release_candidate_v1_0_0\\artifacts\\README.md",
+      "source": "README.md"
+    },
+    {
+      "exists": true,
+      "packaged_as": "releases\\public_release_candidate_v1_0_0\\artifacts\\docs\\manuscript\\tau_scaling_public_claim_system_v0_9_3.md",
+      "source": "docs/manuscript/tau_scaling_public_claim_system_v0_9_3.md"
+    },
+    {
+      "exists": true,
+      "packaged_as": "releases\\public_release_candidate_v1_0_0\\artifacts\\docs\\manuscript\\tau_scaling_public_claim_system_v0_9_3.tex",
+      "source": "docs/manuscript/tau_scaling_public_claim_system_v0_9_3.tex"
+    },
+    {
+      "exists": true,
+      "packaged_as": "releases\\public_release_candidate_v1_0_0\\artifacts\\docs\\review\\external_review_checklist_v0_9_4.md",
+      "source": "docs/review/external_review_checklist_v0_9_4.md"
+    },
+    {
+      "exists": true,
+      "packaged_as": "releases\\public_release_candidate_v1_0_0\\artifacts\\docs\\review\\publication_routing_v0_9_4.md",
+      "source": "docs/review/publication_routing_v0_9_4.md"
+    },
+    {
+      "exists": true,
+      "packaged_as": "releases\\public_release_candidate_v1_0_0\\artifacts\\reports\\public_research_milestone\\latest_public_research_milestone.md",
+      "source": "reports/public_research_milestone/latest_public_research_milestone.md"
+    },
+    {
+      "exists": true,
+      "packaged_as": "releases\\public_release_candidate_v1_0_0\\artifacts\\reports\\manuscript_submission_package\\latest_manuscript_submission_package.md",
+      "source": "reports/manuscript_submission_package/latest_manuscript_submission_package.md"
+    },
+    {
+      "exists": true,
+      "packaged_as": "releases\\public_release_candidate_v1_0_0\\artifacts\\reports\\external_review_publication_routing\\latest_external_review_publication_routing.md",
+      "source": "reports/external_review_publication_routing/latest_external_review_publication_routing.md"
+    },
+    {
+      "exists": true,
+      "packaged_as": "releases\\public_release_candidate_v1_0_0\\artifacts\\reports\\release\\latest_release_readiness.md",
+      "source": "reports/release/latest_release_readiness.md"
+    },
+    {
+      "exists": true,
+      "packaged_as": "releases\\public_release_candidate_v1_0_0\\artifacts\\releases\\manuscript_submission_package_v0_9_3\\README.md",
+      "source": "releases/manuscript_submission_package_v0_9_3/README.md"
+    },
+    {
+      "exists": true,
+      "packaged_as": "releases\\public_release_candidate_v1_0_0\\artifacts\\releases\\publication_routing_v0_9_4\\publication_routing_manifest_v0_9_4.json",
+      "source": "releases/publication_routing_v0_9_4/publication_routing_manifest_v0_9_4.json"
+    }
+  ],
+  "readiness": {
+    "lock_score": 1.0,
+    "preprint_hold_reason": "External review required before preprint because primary and independent confirmations are zero.",
+    "ready_for_gist_summary": true,
+    "ready_for_github_release": true,
+    "ready_for_preprint": false,
+    "ready_for_technical_note": true,
+    "release_score": 1.0,
+    "review_score": 0.75,
+    "source_score": 1.0,
+    "submission_readiness_score": 0.9375
+  },
+  "recommended_tag": "v1.0.0-public-release-candidate",
+  "release_candidate_claims_silicon_validation": false,
+  "release_dir": "releases\\public_release_candidate_v1_0_0",
+  "release_title": "Tau Scaling as an Evidence-Gated Public Claim System",
+  "release_type": "public_release_candidate",
+  "route_decision": {
+    "claim_promotion": "BLOCKED",
+    "gist_summary": "READY",
+    "github_release": "READY",
+    "preprint": "HOLD_FOR_EXTERNAL_REVIEW",
+    "technical_note": "READY_WITH_BOUNDARY"
+  },
+  "schema": "tau-scaling-public-release-candidate-v1.0.0",
+  "source_validation_claimed": false,
+  "thresholds_changed": false
+}
