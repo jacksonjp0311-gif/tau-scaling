@@ -70,7 +70,7 @@
                                       ]
                },
     "schema":  "rcc-nexus-route-map-v1.7",
-    "updated_at":  "2026-05-28T15:12:08.5945197Z",
+    "updated_at":  "2026-05-28T15:21:19.9978004Z",
     "v0_4_routes":  {
                         "feedback_chart_path_health_repair":  {
                                                                   "evidence":  [
@@ -1057,8 +1057,26 @@
                        "runtime":  "python -m tau_scaling run-claim --seed configs/seeds/logicfolding_claim_card.json",
                        "tests":  "python -m unittest discover -s tests"
                    },
-    "version":  "v0.9.0",
+    "version":  "v0.9.1",
     "v0_9_routes":  {
-
+                        "manuscript_draft_scaffold":  {
+                                                          "read_first":  [
+                                                                             "docs/manuscript/tau_scaling_public_claim_system_v0_9_1.md",
+                                                                             "docs/manuscript/tau_scaling_public_claim_system_v0_9_1.tex",
+                                                                             "reports/manuscript_draft/latest_manuscript_draft_scaffold.md",
+                                                                             "README.md"
+                                                                         ],
+                                                          "validate":  [
+                                                                           "python scripts/release/build_manuscript_draft_scaffold_v0_9_1.py",
+                                                                           "python scripts/release/validate_release.py",
+                                                                           "python scripts/rcc/audit_readme_surface.py"
+                                                                       ],
+                                                          "evidence":  [
+                                                                           "docs/manuscript/",
+                                                                           "reports/manuscript_draft/latest_manuscript_draft_scaffold.md",
+                                                                           "visuals/manuscript_draft/v0_9_1/"
+                                                                       ],
+                                                          "mutation_lock":  "Manuscript draft scaffold only; no source validation, classifier change, threshold change, claim promotion, branch creation, or mutation."
+                                                      }
                     }
 }

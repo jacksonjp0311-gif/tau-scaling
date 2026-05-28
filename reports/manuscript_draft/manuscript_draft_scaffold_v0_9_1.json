@@ -1,0 +1,40 @@
+{
+  "application_allowed": false,
+  "boundary": "v0.9.1 creates a manuscript draft scaffold from the v0.9.0 package. It does not validate sources, promote claims, validate silicon, validate products, or prove a universal Tau Scaling law.",
+  "claim_promotion_allowed": false,
+  "classifier_changed": false,
+  "generated_at": "2026-05-28T15:21:21.708120+00:00",
+  "latex": "docs\\manuscript\\tau_scaling_public_claim_system_v0_9_1.tex",
+  "manuscript_claims_silicon_validation": false,
+  "markdown": "docs\\manuscript\\tau_scaling_public_claim_system_v0_9_1.md",
+  "metrics": {
+    "average_gap_count": 14.75,
+    "average_source_confidence": 0.5837,
+    "claim_count": 8,
+    "high_gap_claim_count": 8,
+    "independent_source_confirmed_count": 0,
+    "primary_source_confirmed_count": 0,
+    "release_findings": 0,
+    "release_passed": true,
+    "source_populated_count": 8
+  },
+  "mutation_allowed": false,
+  "schema": "tau-scaling-manuscript-draft-scaffold-v0.9.1",
+  "sections": [
+    "abstract",
+    "introduction",
+    "research question",
+    "method",
+    "repository artifacts",
+    "results",
+    "interpretation",
+    "limitations",
+    "reproducibility",
+    "non-claim locks",
+    "future work"
+  ],
+  "source_milestone": "reports\\public_research_milestone\\latest_public_research_milestone.json",
+  "source_validation_claimed": false,
+  "thresholds_changed": false,
+  "title": "Tau Scaling as an Evidence-Gated Public Claim System"
+}

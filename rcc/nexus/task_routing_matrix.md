@@ -1,6 +1,6 @@
 # Task Routing Matrix
 
-Current contract: **TAU-SCALING-SA v0.9.0 - Public Research Milestone Package**
+Current contract: **TAU-SCALING-SA v0.9.1 - Manuscript Draft Scaffold**
 
 ## Geometry Route
 

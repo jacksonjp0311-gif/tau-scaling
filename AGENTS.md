@@ -1,6 +1,6 @@
 # AGENTS.md Ã¢â‚¬â€ Tau Scaling Agent Operating Contract
 
-Current contract: **TAU-SCALING-SA v0.9.0 - Public Research Milestone Package**
+Current contract: **TAU-SCALING-SA v0.9.1 - Manuscript Draft Scaffold**
 
 ## Mission
 
