@@ -1,0 +1,59 @@
+{
+  "application_allowed": false,
+  "approval_decision": "UNSET",
+  "approval_valid": false,
+  "block_reason": "Approval validator did not produce approval_valid=true. Replay remains blocked.",
+  "boundary": "Approval-gated replay dry-runs are local classifier-governance planning artifacts. They do not create branches by default, do not mutate classifier behavior, do not apply calibration, and do not validate silicon, products, manufacturing, process nodes, benchmark superiority, or universal Tau Scaling law.",
+  "branch_created": false,
+  "branch_creation_allowed": false,
+  "calibration_applied": false,
+  "chart_paths": [
+    "visuals/approval_gated_replay/v0_6_4/approval_gated_replay_state.png",
+    "visuals/approval_gated_replay/v0_6_4/approval_gated_replay_steps.png",
+    "visuals/approval_gated_replay/v0_6_4/approval_gated_replay_status.png"
+  ],
+  "dry_run_allowed": false,
+  "dry_run_executed": false,
+  "dry_run_status": "DRY_RUN_BLOCKED__APPROVAL_NOT_VALID",
+  "dry_run_steps": [
+    {
+      "command": "python -m tau_scaling run-claim --seed configs/seeds/logicfolding_claim_card.json",
+      "eligible": false,
+      "executed": false,
+      "step_id": "baseline_claim_replay"
+    },
+    {
+      "command": "python -m tau_scaling run-claim --seed configs/seeds/logicfolding_promotion_path_claim_card.json",
+      "eligible": false,
+      "executed": false,
+      "step_id": "promotion_path_replay"
+    },
+    {
+      "command": "python scripts/benchmarks/run_support_aware_negative_controls.py",
+      "eligible": false,
+      "executed": false,
+      "step_id": "support_control_replay"
+    },
+    {
+      "command": "python scripts/benchmarks/run_calibration_counterfactuals.py",
+      "eligible": false,
+      "executed": false,
+      "step_id": "counterfactual_replay"
+    },
+    {
+      "command": "python scripts/benchmarks/run_review_signoff_gate.py",
+      "eligible": false,
+      "executed": false,
+      "step_id": "review_signoff_replay"
+    }
+  ],
+  "final_recommendation": "Keep replay blocked until approval_valid is true.",
+  "generated_at": "2026-05-28T07:52:48.060919+00:00",
+  "input_approval_validator": "reports/approval_validator/latest_human_approval_validator.json",
+  "input_candidate_replay": "reports/candidate_replay/latest_candidate_branch_replay_harness.json",
+  "mutation_allowed": false,
+  "next_recommendation": "v0.6.5 should add an explicit approval fixture or denial fixture validator before any executable replay path.",
+  "policy_enforced": false,
+  "runtime_behavior_changed": false,
+  "schema": "tau-scaling-approval-gated-replay-dry-run-v0.6.4"
+}

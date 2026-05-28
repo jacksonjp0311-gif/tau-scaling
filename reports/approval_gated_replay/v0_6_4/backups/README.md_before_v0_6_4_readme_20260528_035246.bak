@@ -10,8 +10,8 @@
 
 Repository: `tau-scaling`  
 Package / CLI: `tau_scaling` / `tau-scaling`  
-Current checkpoint: **TAU-SCALING-SA v0.6.4 - Approval-Gated Replay Dry-Run**  
-Previous seal: **TAU-SCALING-SA v0.6.3 - Human Approval Artifact Validator**
+Current checkpoint: **TAU-SCALING-SA v0.6.3 - Human Approval Artifact Validator**  
+Previous seal: **TAU-SCALING-SA v0.6.2 - Human Approval Artifact Template**
 
 Tau Scaling is a local-first, evidence-gated Python runtime for evaluating tau-scaling claims through structured claim cards, workload declarations, tau vectors, LogicFolding survivability checks, edge-to-surface boundary algebra, energy / thermal / PDN / PVT gates, Monte Carlo checker stress, TSEK classification, evidence packages, and RCC-N / OMN-style repository navigation.
 
@@ -55,7 +55,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | TAU-SCALING-SA v0.6.4 |
+| Current checkpoint | TAU-SCALING-SA v0.6.3 |
 | Synthetic gate suite | v0.4.0 / benchmark + finding charts |
 | Package version | 0.2.0 |
 | Baseline seed | TSEK-C / A_TSEK 0.0000 |
@@ -64,7 +64,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 | README mini repo audit | passing / 0 warnings |
 | Unified release validator | passing / step failures 0 |
 | AGENTS.md contract | synchronized with release validator |
-| Task routing matrix | geometry-aware / v0.6.4-ready |
+| Task routing matrix | geometry-aware / v0.6.3-ready |
 | Release warning findings | 0 expected after v0.3.3d validator scan repair |
 | Architecture validator | passing / 0 warnings |
 | Unit tests | 8 OK |
@@ -124,9 +124,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 | Human approval charts | `visuals/human_approval/v0_6_2/` |
 | Human approval validator | `reports/approval_validator/latest_human_approval_validator.md` |
 | Human approval validator charts | `visuals/approval_validator/v0_6_3/` |
-| Approval-gated replay dry-run | `reports/approval_gated_replay/latest_approval_gated_replay_dry_run.md` |
-| Approval-gated replay charts | `visuals/approval_gated_replay/v0_6_4/` |
-| Agent contract version sync | current / v0.6.4 |
+| Agent contract version sync | current / v0.6.3 |
 | Release readiness report | `reports/release/latest_release_readiness.md` |
 | Collision-proof run identity | passed |
 | Mini README coverage | 1.0 |
@@ -174,7 +172,6 @@ python scripts/benchmarks/run_candidate_branch_gate.py
 python scripts/benchmarks/run_candidate_branch_replay_harness.py
 python scripts/benchmarks/generate_human_approval_template.py
 python scripts/benchmarks/validate_human_approval_artifact.py
-python scripts/benchmarks/run_approval_gated_replay_dry_run.py
 python scripts/release/validate_release.py
 ```
 
@@ -485,7 +482,6 @@ This section is part of the repository's operating memory. When a patch fails, t
 | L-043 | v0.6.0 allowed a branch proposal but confirmed human approval was absent. | Proposal-readiness can be mistaken for replay-readiness unless replay is separately blocked. | Candidate replay harnesses must remain blocked until an explicit human approval artifact exists. |
 | L-044 | v0.6.1 correctly blocked replay because no human approval artifact existed. | Blocking replay is useful only if the system provides an explicit approval/denial artifact format. | Approval templates must be created before approval validation; templates alone do not authorize replay, branching, or mutation. |
 | L-045 | v0.6.2 created a template, but a template is not approval. | Approval artifacts must be validated before replay can proceed. | Approval validators must reject UNSET/template-only artifacts and keep replay blocked until explicit approval fields pass. |
-| L-046 | v0.6.3 rejected template-only approval. | A failed approval validator should produce a blocked replay dry-run rather than silently stopping the lineage. | Approval-gated replay layers must emit explicit blocked reports when approval is invalid, preserving audit continuity without execution. |
 
 ### Failure Response Protocol
 
@@ -694,7 +690,6 @@ tau-scaling/
   releases/
   reports/
     nexus_feedback/
-    approval_gated_replay/
     approval_validator/
     human_approval/
     candidate_replay/
@@ -750,7 +745,6 @@ tau-scaling/
   tests/
   visuals/
     nexus_feedback/
-    approval_gated_replay/
     approval_validator/
     human_approval/
     candidate_replay/
@@ -865,39 +859,6 @@ AGENTS.md Required Validation now includes the current v0.4.6-v0.5.1 governance 
 ```
 
 Boundary: alignment polish is repository hygiene only. It is not code correctness, silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.
-
-## Approval-Gated Replay Dry-Run v0.6.4
-
-v0.6.4 attempts the replay gate but keeps replay blocked unless the approval validator reports `approval_valid: true`.
-
-Primary command:
-
-```powershell
-python scripts/benchmarks/run_approval_gated_replay_dry_run.py
-```
-
-Primary outputs:
-
-```text
-reports/approval_gated_replay/latest_approval_gated_replay_dry_run.json
-reports/approval_gated_replay/latest_approval_gated_replay_dry_run.md
-visuals/approval_gated_replay/v0_6_4/
-```
-
-Current expected lock while approval remains invalid/template-only:
-
-```text
-approval_valid: false
-dry_run_allowed: false
-dry_run_executed: false
-branch_created: false
-mutation_allowed: false
-policy_enforced: false
-calibration_applied: false
-application_allowed: false
-```
-
-Boundary: approval-gated replay dry-runs are local classifier-governance planning artifacts. They do not create branches by default, do not mutate classifier behavior, do not apply calibration, and do not validate silicon, product performance, manufacturing capability, process-node equivalence, benchmark superiority, AI understanding, or universal Tau Scaling law.
 
 ## Human Approval Artifact Validator v0.6.3
 
@@ -1593,7 +1554,6 @@ python scripts/benchmarks/run_candidate_branch_gate.py
 python scripts/benchmarks/run_candidate_branch_replay_harness.py
 python scripts/benchmarks/generate_human_approval_template.py
 python scripts/benchmarks/validate_human_approval_artifact.py
-python scripts/benchmarks/run_approval_gated_replay_dry_run.py
 python scripts/release/validate_release.py
 python scripts/rcc/audit_readme_surface.py
 python scripts/rcc/check_rcc_nexus.py
@@ -1952,15 +1912,14 @@ validation_remains_required
 | v0.6.1 | Candidate branch replay harness; replay blocked until explicit approval artifact exists. |
 | v0.6.2 | Human approval artifact template; template only, no approval by default. |
 | v0.6.3 | Human approval artifact validator; rejects UNSET/template-only approval by default. |
-| v0.6.4 | Approval-gated replay dry-run; emits blocked report unless approval validates. |
 
 ## Next Recommended Version
 
-**TAU-SCALING-SA v0.6.5 - Approval Fixture and Denial Fixture Validator**
+**TAU-SCALING-SA v0.6.4 - Approval-Gated Replay Dry-Run**
 
 Recommended goals:
 
-- Add explicit fixture examples for APPROVE_REPLAY_ONLY, DENY, and REQUEST_MORE_EVIDENCE.
-- Validate that denied/template-only states block replay.
-- Validate that approval only enables replay planning, not mutation.
+- Run only when `approval_valid: true`.
+- If approval remains invalid/template-only, emit a blocked dry-run report.
+- Keep branch creation disabled by default.
 - Keep `mutation_allowed: false`.

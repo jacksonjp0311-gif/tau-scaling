@@ -82,7 +82,7 @@
     }
   ],
   "final_recommendation": "Approval is not valid for replay. Keep replay blocked.",
-  "generated_at": "2026-05-28T07:49:45.189682+00:00",
+  "generated_at": "2026-05-28T07:52:46.527838+00:00",
   "input_approval_artifact": "reports/human_approval/human_approval_artifact_template_v0_6_2.json",
   "input_candidate_replay": "reports/candidate_replay/latest_candidate_branch_replay_harness.json",
   "mutation_allowed": false,
