@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<rect width="1600" height="900" fill="#020617"/>
+<text x="800" y="82" text-anchor="middle" fill="#67e8f9" font-size="46" font-family="Segoe UI" font-weight="700">External Review + Publication Routing v0.9.4</text>
+<text x="800" y="130" text-anchor="middle" fill="#cbd5e1" font-size="24" font-family="Segoe UI">Route the manuscript without weakening its non-claim boundary</text>
+<text x="180" y="240" fill="#f8fafc" font-size="30" font-family="Segoe UI">Readiness score: 0.9375</text>
+<text x="180" y="310" fill="#f8fafc" font-size="30" font-family="Segoe UI">GitHub release ready: True</text>
+<text x="180" y="380" fill="#f8fafc" font-size="30" font-family="Segoe UI">Technical note ready: True</text>
+<text x="180" y="450" fill="#f8fafc" font-size="30" font-family="Segoe UI">Preprint ready: False</text>
+<text x="180" y="520" fill="#f8fafc" font-size="30" font-family="Segoe UI">Primary confirmed: 0</text>
+<text x="180" y="590" fill="#f8fafc" font-size="30" font-family="Segoe UI">Independent confirmed: 0</text>
+<rect x="930" y="245" width="430" height="76" rx="18" fill="#0f172a" stroke="#22c55e"/>
+<text x="1145" y="293" text-anchor="middle" fill="#e2e8f0" font-size="24" font-family="Segoe UI">Release / Gist: READY</text>
+<rect x="930" y="375" width="430" height="76" rx="18" fill="#0f172a" stroke="#f59e0b"/>
+<text x="1145" y="423" text-anchor="middle" fill="#e2e8f0" font-size="24" font-family="Segoe UI">Technical note: BOUNDED</text>
+<rect x="930" y="505" width="430" height="76" rx="18" fill="#0f172a" stroke="#ef4444"/>
+<text x="1145" y="553" text-anchor="middle" fill="#e2e8f0" font-size="24" font-family="Segoe UI">Preprint: HOLD</text>
+<text x="800" y="820" text-anchor="middle" fill="#94a3b8" font-size="22" font-family="Segoe UI">Publication routing is ready; claim validation remains blocked.</text>
+</svg>

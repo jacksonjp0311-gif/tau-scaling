@@ -1,0 +1,92 @@
+{
+  "application_allowed": false,
+  "boundary": "v0.9.4 creates external review and publication routing artifacts. It does not validate sources, promote claims, validate silicon, validate products, prove benchmark superiority, or establish a universal Tau Scaling law.",
+  "claim_promotion_allowed": false,
+  "classifier_changed": false,
+  "generated_at": "2026-05-28T16:17:18.074364+00:00",
+  "metrics": {
+    "average_gap_count": 14.75,
+    "average_source_confidence": 0.5837,
+    "claim_count": 8,
+    "claim_promotion_allowed": false,
+    "high_gap_claim_count": 8,
+    "independent_source_confirmed_count": 0,
+    "primary_source_confirmed_count": 0,
+    "release_findings": 0,
+    "release_passed": true,
+    "source_populated_count": 8,
+    "source_validation_claimed": false
+  },
+  "mutation_allowed": false,
+  "publication_route_count": 5,
+  "publication_routing_claims_silicon_validation": false,
+  "readiness": {
+    "lock_score": 1.0,
+    "preprint_hold_reason": "External review required before preprint because primary and independent confirmations are zero.",
+    "ready_for_gist_summary": true,
+    "ready_for_github_release": true,
+    "ready_for_preprint": false,
+    "ready_for_technical_note": true,
+    "release_score": 1.0,
+    "review_score": 0.75,
+    "source_score": 1.0,
+    "submission_readiness_score": 0.9375
+  },
+  "review_checklist_count": 7,
+  "reviewer_question_count": 5,
+  "routes": [
+    {
+      "reason": "Repository artifacts, release checks, manifests, reports, and non-claim locks are present.",
+      "required_before_publish": [
+        "tag release",
+        "attach release notes",
+        "link manuscript package"
+      ],
+      "route": "GitHub Release",
+      "status": "READY"
+    },
+    {
+      "reason": "Evidence-governance result is bounded and reproducible; should avoid validation claims.",
+      "required_before_publish": [
+        "shorten abstract",
+        "include table and limitation summary",
+        "state non-claim lock early"
+      ],
+      "route": "Technical Note",
+      "status": "READY_WITH_BOUNDARY"
+    },
+    {
+      "reason": "Gist can present the publishable finding and link the repo package.",
+      "required_before_publish": [
+        "include repo link",
+        "include result statement",
+        "include limitations"
+      ],
+      "route": "Gist Summary",
+      "status": "READY"
+    },
+    {
+      "reason": "Preprint should wait for external review because primary and independent confirmations are zero.",
+      "required_before_publish": [
+        "external review checklist complete",
+        "reviewer comments addressed",
+        "preprint framing audited"
+      ],
+      "route": "Preprint Draft",
+      "status": "HOLD_FOR_REVIEW"
+    },
+    {
+      "reason": "No primary-source confirmation and no independent confirmation in current state.",
+      "required_before_publish": [
+        "first-party evidence",
+        "independent reproduction",
+        "workload/baseline/energy/thermal/yield gates"
+      ],
+      "route": "Claim Promotion / Technical Validation",
+      "status": "BLOCKED"
+    }
+  ],
+  "schema": "tau-scaling-external-review-publication-routing-v0.9.4",
+  "source_validation_claimed": false,
+  "thresholds_changed": false
+}

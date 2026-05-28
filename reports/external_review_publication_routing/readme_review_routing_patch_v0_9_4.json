@@ -1,0 +1,12 @@
+{
+  "application_allowed": false,
+  "boundary": "README/review-routing patch is publication routing only. It does not validate or promote claims.",
+  "checkpoint": "TAU-SCALING-SA v0.9.4 - External Review Checklist and Publication Routing",
+  "claim_promotion_allowed": false,
+  "classifier_changed": false,
+  "generated_at": "2026-05-28T16:17:15.726851+00:00",
+  "mutation_allowed": false,
+  "schema": "tau-scaling-v0.9.4-readme-review-routing-patch",
+  "source_validation_claimed": false,
+  "thresholds_changed": false
+}

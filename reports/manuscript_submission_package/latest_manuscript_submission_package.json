@@ -3,7 +3,7 @@
   "boundary": "v0.9.3 packages a submission-facing manuscript. It does not validate sources, promote claims, validate silicon, validate products, prove benchmark superiority, or establish a universal Tau Scaling law.",
   "claim_promotion_allowed": false,
   "classifier_changed": false,
-  "generated_at": "2026-05-28T16:06:34.324811+00:00",
+  "generated_at": "2026-05-28T16:17:17.939698+00:00",
   "latex": "docs\\manuscript\\tau_scaling_public_claim_system_v0_9_3.tex",
   "markdown": "docs\\manuscript\\tau_scaling_public_claim_system_v0_9_3.md",
   "metrics": {

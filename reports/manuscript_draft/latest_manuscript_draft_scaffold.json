@@ -3,7 +3,7 @@
   "boundary": "v0.9.1 creates a manuscript draft scaffold from the v0.9.0 package. It does not validate sources, promote claims, validate silicon, validate products, or prove a universal Tau Scaling law.",
   "claim_promotion_allowed": false,
   "classifier_changed": false,
-  "generated_at": "2026-05-28T16:06:34.090795+00:00",
+  "generated_at": "2026-05-28T16:17:17.631290+00:00",
   "latex": "docs\\manuscript\\tau_scaling_public_claim_system_v0_9_1.tex",
   "manuscript_claims_silicon_validation": false,
   "markdown": "docs\\manuscript\\tau_scaling_public_claim_system_v0_9_1.md",

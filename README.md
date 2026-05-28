@@ -10,8 +10,8 @@
 
 Repository: `tau-scaling`  
 Package / CLI: `tau_scaling` / `tau-scaling`  
-Current checkpoint: **TAU-SCALING-SA v0.9.3 - Manuscript Polish and Submission Package**  
-Previous seal: **TAU-SCALING-SA v0.9.2 - Manuscript Evidence Table and Figure Pack**
+Current checkpoint: **TAU-SCALING-SA v0.9.4 - External Review Checklist and Publication Routing**  
+Previous seal: **TAU-SCALING-SA v0.9.3 - Manuscript Polish and Submission Package**
 
 Tau Scaling is a local-first, evidence-gated Python runtime for evaluating Tau Scaling claims through structured claim cards, workload declarations, tau vectors, LogicFolding survivability checks, energy / thermal / PDN / PVT gates, TSEK classification, evidence packages, and RCC-N / OMN-style repository navigation.
 
@@ -44,6 +44,7 @@ This repository is now in the **v0.8 public Tau research spine**.
 | v0.9.1 Manuscript Draft Scaffold | What paper-style draft is generated from the public research package? | `docs/manuscript/tau_scaling_public_claim_system_v0_9_1.md` |
 | v0.9.2 Manuscript Evidence Table and Figure Pack | What tables, captions, limitations, and artifact maps support the manuscript? | `reports/manuscript_evidence_pack/latest_manuscript_evidence_pack.md` |
 | v0.9.3 Manuscript Polish and Submission Package | What submission-facing manuscript bundle is ready for review? | `reports/manuscript_submission_package/latest_manuscript_submission_package.md` |
+| v0.9.4 External Review Checklist and Publication Routing | Which publication route is appropriate and what review gates remain? | `reports/external_review_publication_routing/latest_external_review_publication_routing.md` |
 
 Current public finding: Tau Scaling can be studied as an evidence-gated claim system. Public claims can be separated into methodology, reported metrics, roadmap projections, topology arguments, and independent evidence.
 
@@ -216,6 +217,23 @@ Primary outputs:
 - `visuals/manuscript_submission_package/v0_9_3/manuscript_submission_package.svg`
 
 Submission boundary: this is a manuscript communication package for evidence-governance findings. It does not validate sources, promote claims, validate silicon, validate products, or prove a universal Tau Scaling law.
+
+## External Review Checklist and Publication Routing v0.9.4
+
+This layer adds external-review and publication-routing surfaces around the submission package.
+
+Primary outputs:
+
+- `docs/review/external_review_checklist_v0_9_4.md`
+- `docs/review/reviewer_questions_v0_9_4.md`
+- `docs/review/reviewer_response_template_v0_9_4.md`
+- `docs/review/publication_routing_v0_9_4.md`
+- `docs/review/github_release_checklist_v0_9_4.md`
+- `docs/review/gist_technical_note_summary_v0_9_4.md`
+- `releases/publication_routing_v0_9_4/`
+- `reports/external_review_publication_routing/latest_external_review_publication_routing.md`
+
+Routing decision: GitHub release, Gist summary, and bounded technical note are ready. Preprint is held for external review because primary and independent confirmations remain zero. Claim promotion remains blocked.
 ## Tau Doctrine Alignment
 
 - Time is the shared metric, not automatic proof.
@@ -253,7 +271,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | TAU-SCALING-SA v0.9.3 |
+| Current checkpoint | TAU-SCALING-SA v0.9.4 |
 | Release validator | passing / findings 0 / step failures 0 |
 | README mini repo audit | passing / 0 warnings |
 | RCC-N checker | passing / 0 warnings |
@@ -287,6 +305,10 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 | Polished manuscript LaTeX | `docs/manuscript/tau_scaling_public_claim_system_v0_9_3.tex` |
 | Polished manuscript Markdown | `docs/manuscript/tau_scaling_public_claim_system_v0_9_3.md` |
 | Manuscript submission package | `reports/manuscript_submission_package/latest_manuscript_submission_package.md` |
+| Reviewer response template | `docs/review/reviewer_response_template_v0_9_4.md` |
+| Publication routing | `docs/review/publication_routing_v0_9_4.md` |
+| External review checklist | `docs/review/external_review_checklist_v0_9_4.md` |
+| External review routing | `reports/external_review_publication_routing/latest_external_review_publication_routing.md` |
 | Primary source gap review | `reports/primary_source_gap_review/latest_primary_source_gap_review.md` |
 | README render spacing polish | `reports/readme_render_spacing/latest_readme_render_spacing_polish.md` |
 | Evidence sufficiency visual | `visuals/evidence_sufficiency/v0_8_4/evidence_sufficiency_matrix.svg` |
@@ -324,6 +346,7 @@ python scripts/release/build_public_research_milestone_v0_9_0.py
 python scripts/release/build_manuscript_draft_scaffold_v0_9_1.py
 python scripts/release/build_manuscript_evidence_pack_v0_9_2.py
 python scripts/release/build_manuscript_submission_package_v0_9_3.py
+python scripts/release/build_external_review_publication_routing_v0_9_4.py
 ```
 
 ### Baseline claim checks
@@ -413,6 +436,7 @@ The full historical chain remains available, but the root README now keeps only 
 | `reports/manuscript_draft/latest_manuscript_draft_scaffold.md` | Manuscript draft scaffold report |
 | `reports/manuscript_evidence_pack/latest_manuscript_evidence_pack.md` | Manuscript evidence table and figure pack report |
 | `reports/manuscript_submission_package/latest_manuscript_submission_package.md` | Manuscript polish and submission package report |
+| `reports/external_review_publication_routing/latest_external_review_publication_routing.md` | External review checklist and publication routing report |
 | `reports/primary_source_gap_review/latest_primary_source_gap_review.md` | Primary source validation gap review |
 | `reports/readme_render_spacing/latest_readme_render_spacing_polish.md` | README render spacing polish report |
 | `reports/readme_information_architecture/latest_readme_information_architecture_compression.md` | README IA compression report |
@@ -760,6 +784,8 @@ This section is part of the repository's operating memory. When a patch fails, t
 
 | L-081 | v0.9.3 creates a submission-facing manuscript package. | Submission packaging must make the claim boundary easier to see, not easier to bypass. | Keep data availability, ethics/non-claim statement, release checks, and evidence tables beside the manuscript. |
 
+| L-082 | v0.9.4 routes publication while blocking claim promotion. | A publication route is not a validation route. | Route GitHub/Gist/technical-note publication before preprint, and keep preprint held until external review confirms the claim boundary. |
+
 ### Failure Response Protocol
 
 When a failure occurs:
@@ -906,6 +932,7 @@ This section is intentionally compact. The full repository is validated by RCC-N
 | `reports/manuscript_draft/` | Manuscript draft scaffold reports |
 | `reports/manuscript_evidence_pack/` | Manuscript evidence table and figure-pack reports |
 | `reports/manuscript_submission_package/` | Manuscript polish and submission package reports |
+| `reports/external_review_publication_routing/` | External review and publication routing reports |
 | `reports/release_finding_repair/` | Release warning inspection and zero-finding repair reports |
 | `visuals/logicfolding_plausibility/` | LogicFolding sweep charts |
 | `visuals/evidence_sufficiency/` | Evidence sufficiency charts |
@@ -918,6 +945,7 @@ This section is intentionally compact. The full repository is validated by RCC-N
 | `visuals/manuscript_draft/` | Manuscript draft charts |
 | `visuals/manuscript_evidence_pack/` | Manuscript evidence-pack charts |
 | `visuals/manuscript_submission_package/` | Manuscript submission-package charts |
+| `visuals/external_review_publication_routing/` | External review and publication routing charts |
 | `visuals/stable_tau_threshold_governance/` | Stable threshold governance charts |
 | `reports/readme_information_architecture/` | README information architecture compression reports |
 | `reports/readme_render_spacing/` | README render-spacing polish reports |
@@ -1094,16 +1122,17 @@ validation_remains_required
 | v0.9.1 | Manuscript Draft Scaffold; converts the public research milestone package into Markdown and LaTeX manuscript drafts. |
 | v0.9.2 | Manuscript Evidence Table and Figure Pack; adds paper-ready evidence tables, captions, limitations, artifact map, and result summary. |
 | v0.9.3 | Manuscript Polish and Submission Package; integrates the manuscript, evidence pack, data availability, ethics/non-claim statement, and submission release folder. |
+| v0.9.4 | External Review Checklist and Publication Routing; adds review gates, reviewer questions, response template, GitHub/Gist/technical-note routing, and preprint hold logic. |
 
 ## Next Recommended Version
 
-**TAU-SCALING-SA v0.9.4 - External Review Checklist and Publication Routing**
+**TAU-SCALING-SA v1.0.0 - Public Release Candidate**
 
 Recommended goals:
 
-- Add external review checklist.
-- Add publication routing options: GitHub release, gist, preprint draft, technical note.
-- Add reviewer questions and response template.
-- Preserve source-fidelity and non-claim locks.
+- Freeze the evidence-governance public release candidate.
+- Generate final changelog, version tag notes, and release announcement.
+- Confirm all non-claim locks.
+- Preserve source-fidelity and no-promotion discipline.
 - Keep threshold and classifier mutation disabled.
 - Preserve `mutation_allowed: false`.

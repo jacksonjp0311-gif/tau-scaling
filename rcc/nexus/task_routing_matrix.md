@@ -1,6 +1,6 @@
 # Task Routing Matrix
 
-Current contract: **TAU-SCALING-SA v0.9.3 - Manuscript Polish and Submission Package**
+Current contract: **TAU-SCALING-SA v0.9.4 - External Review Checklist and Publication Routing**
 
 ## Geometry Route
 
