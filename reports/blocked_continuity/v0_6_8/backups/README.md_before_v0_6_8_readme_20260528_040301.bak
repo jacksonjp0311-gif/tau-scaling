@@ -10,8 +10,8 @@
 
 Repository: `tau-scaling`  
 Package / CLI: `tau_scaling` / `tau-scaling`  
-Current checkpoint: **TAU-SCALING-SA v0.6.8 - Blocked-State Continuity Ledger**  
-Previous seal: **TAU-SCALING-SA v0.6.7 - Approval-Gated Replay Executor**
+Current checkpoint: **TAU-SCALING-SA v0.6.7 - Approval-Gated Replay Executor**  
+Previous seal: **TAU-SCALING-SA v0.6.6 - Live Approval Handoff Check**
 
 Tau Scaling is a local-first, evidence-gated Python runtime for evaluating tau-scaling claims through structured claim cards, workload declarations, tau vectors, LogicFolding survivability checks, edge-to-surface boundary algebra, energy / thermal / PDN / PVT gates, Monte Carlo checker stress, TSEK classification, evidence packages, and RCC-N / OMN-style repository navigation.
 
@@ -55,7 +55,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | TAU-SCALING-SA v0.6.8 |
+| Current checkpoint | TAU-SCALING-SA v0.6.7 |
 | Synthetic gate suite | v0.4.0 / benchmark + finding charts |
 | Package version | 0.2.0 |
 | Baseline seed | TSEK-C / A_TSEK 0.0000 |
@@ -64,7 +64,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 | README mini repo audit | passing / 0 warnings |
 | Unified release validator | passing / step failures 0 |
 | AGENTS.md contract | synchronized with release validator |
-| Task routing matrix | geometry-aware / v0.6.8-ready |
+| Task routing matrix | geometry-aware / v0.6.7-ready |
 | Release warning findings | 0 expected after v0.3.3d validator scan repair |
 | Architecture validator | passing / 0 warnings |
 | Unit tests | 8 OK |
@@ -132,9 +132,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 | Live approval handoff charts | `visuals/live_approval_handoff/v0_6_6/` |
 | Replay executor | `reports/replay_executor/latest_approval_gated_replay_executor.md` |
 | Replay executor charts | `visuals/replay_executor/v0_6_7/` |
-| Blocked-state continuity | `reports/blocked_continuity/latest_blocked_state_continuity.md` |
-| Blocked-state continuity charts | `visuals/blocked_continuity/v0_6_8/` |
-| Agent contract version sync | current / v0.6.8 |
+| Agent contract version sync | current / v0.6.7 |
 | Release readiness report | `reports/release/latest_release_readiness.md` |
 | Collision-proof run identity | passed |
 | Mini README coverage | 1.0 |
@@ -186,7 +184,6 @@ python scripts/benchmarks/run_approval_gated_replay_dry_run.py
 python scripts/benchmarks/validate_approval_fixtures.py
 python scripts/benchmarks/run_live_approval_handoff_check.py
 python scripts/benchmarks/run_approval_gated_replay_executor.py
-python scripts/benchmarks/run_blocked_state_continuity_ledger.py
 python scripts/release/validate_release.py
 ```
 
@@ -501,7 +498,6 @@ This section is part of the repository's operating memory. When a patch fails, t
 | L-047 | v0.6.4 emitted a blocked replay report because approval was invalid. | The system needs fixtures to prove approval, denial, and more-evidence decisions have distinct replay semantics. | Approval fixture validation must prove fixture semantics without treating fixtures as live approvals. |
 | L-048 | v0.6.5 validated fixture semantics but fixtures are still not live approval. | Fixture-validity can be mistaken for live-approval validity unless handoff checks enforce path separation. | Live approval handoff must refuse fixtures and require a separate non-fixture live approval artifact before replay is considered. |
 | L-049 | v0.6.6 confirmed no live approval existed. | A missing live approval should still reach the executor boundary and prove execution is blocked. | Replay executors must refuse to run when live approval handoff is invalid, emitting a blocked executor report instead of silently stopping. |
-| L-050 | v0.6.7 blocked the executor because live approval handoff was invalid. | Repeated blocked execution states should be preserved as continuity evidence, not treated as no-op failures. | Blocked executor states must append to a continuity ledger so future agents can see why execution remained blocked across versions. |
 
 ### Failure Response Protocol
 
@@ -710,7 +706,6 @@ tau-scaling/
   releases/
   reports/
     nexus_feedback/
-    blocked_continuity/
     replay_executor/
     live_approval_handoff/
     approval_fixtures/
@@ -770,7 +765,6 @@ tau-scaling/
   tests/
   visuals/
     nexus_feedback/
-    blocked_continuity/
     replay_executor/
     live_approval_handoff/
     approval_fixtures/
@@ -889,40 +883,6 @@ AGENTS.md Required Validation now includes the current v0.4.6-v0.5.1 governance 
 ```
 
 Boundary: alignment polish is repository hygiene only. It is not code correctness, silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.
-
-## Blocked-State Continuity Ledger v0.6.8
-
-v0.6.8 records blocked executor state as durable continuity evidence.
-
-Primary command:
-
-```powershell
-python scripts/benchmarks/run_blocked_state_continuity_ledger.py
-```
-
-Primary outputs:
-
-```text
-reports/blocked_continuity/blocked_state_continuity_ledger.jsonl
-reports/blocked_continuity/latest_blocked_state_continuity.json
-reports/blocked_continuity/latest_blocked_state_continuity.md
-visuals/blocked_continuity/v0_6_8/
-```
-
-Current expected lock:
-
-```text
-continuity_status: BLOCKED_STATE_RECORDED__NO_EXECUTION
-replay_allowed: false
-executor_ran: false
-branch_created: false
-mutation_allowed: false
-policy_enforced: false
-calibration_applied: false
-application_allowed: false
-```
-
-Boundary: blocked-state continuity ledgers are local classifier-governance memory artifacts. They preserve why execution was blocked. They do not create live approval, execute replay commands, create branches, mutate classifier behavior, apply calibration, or validate silicon, product performance, manufacturing capability, process-node equivalence, benchmark superiority, AI understanding, or universal Tau Scaling law.
 
 ## Approval-Gated Replay Executor v0.6.7
 
@@ -1754,7 +1714,6 @@ python scripts/benchmarks/run_approval_gated_replay_dry_run.py
 python scripts/benchmarks/validate_approval_fixtures.py
 python scripts/benchmarks/run_live_approval_handoff_check.py
 python scripts/benchmarks/run_approval_gated_replay_executor.py
-python scripts/benchmarks/run_blocked_state_continuity_ledger.py
 python scripts/release/validate_release.py
 python scripts/rcc/audit_readme_surface.py
 python scripts/rcc/check_rcc_nexus.py
@@ -2117,15 +2076,14 @@ validation_remains_required
 | v0.6.5 | Approval fixture and denial fixture validator; fixtures only, no live approval. |
 | v0.6.6 | Live approval handoff check; refuses fixtures as live approval. |
 | v0.6.7 | Approval-gated replay executor; refuses execution when handoff is invalid. |
-| v0.6.8 | Blocked-state continuity ledger; records blocked execution as evidence. |
 
 ## Next Recommended Version
 
-**TAU-SCALING-SA v0.6.9 - Blocked-State Trend Review**
+**TAU-SCALING-SA v0.6.8 - Blocked-State Continuity Ledger**
 
 Recommended goals:
 
-- Review blocked-state ledger trend.
-- Distinguish persistent governance block from stale target.
-- Define retirement or continuation criteria for the approval-gated pathway.
+- Append blocked executor state to a durable continuity ledger.
+- Track approval-chain state across versions.
+- Preserve blocked execution as evidence, not failure.
 - Keep `mutation_allowed: false`.

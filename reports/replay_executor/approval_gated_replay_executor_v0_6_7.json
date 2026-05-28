@@ -52,7 +52,7 @@
     }
   ],
   "final_recommendation": "Keep executor blocked until live approval handoff is valid.",
-  "generated_at": "2026-05-28T07:59:49.853360+00:00",
+  "generated_at": "2026-05-28T08:03:01.492005+00:00",
   "handoff_status": "HANDOFF_BLOCKED__NO_LIVE_APPROVAL",
   "handoff_valid": false,
   "input_live_approval_handoff": "reports/live_approval_handoff/latest_live_approval_handoff_check.json",

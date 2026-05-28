@@ -48,7 +48,6 @@ This atlas gives humans and AI agents one stable place to understand benchmark e
 | v0.6.5 | Approval fixture and denial fixture validator | `python scripts/benchmarks/validate_approval_fixtures.py` | Validates approval/denial/more-evidence fixture semantics without live approval | `reports/approval_fixtures/latest_approval_fixture_validator.md` | `visuals/approval_fixtures/v0_6_5/` |
 | v0.6.6 | Live approval handoff check | `python scripts/benchmarks/run_live_approval_handoff_check.py` | Refuses fixtures as live approval and requires separate live artifact | `reports/live_approval_handoff/latest_live_approval_handoff_check.md` | `visuals/live_approval_handoff/v0_6_6/` |
 | v0.6.7 | Approval-gated replay executor | `python scripts/benchmarks/run_approval_gated_replay_executor.py` | Refuses execution when live approval handoff is invalid | `reports/replay_executor/latest_approval_gated_replay_executor.md` | `visuals/replay_executor/v0_6_7/` |
-| v0.6.8 | Blocked-state continuity ledger | `python scripts/benchmarks/run_blocked_state_continuity_ledger.py` | Records blocked executor state as continuity evidence | `reports/blocked_continuity/latest_blocked_state_continuity.md` | `visuals/blocked_continuity/v0_6_8/` |
 
 ## Current Synthetic Suite Summary
 

@@ -1,0 +1,56 @@
+{
+  "application_allowed": false,
+  "block_reason": "Live approval handoff is not valid for replay. Executor remains blocked.",
+  "boundary": "Blocked-state continuity ledgers are local classifier-governance memory artifacts. They preserve why execution was blocked. They do not create live approval, execute replay commands, create branches, mutate classifier behavior, apply calibration, or validate silicon, products, manufacturing, process nodes, benchmark superiority, or universal Tau Scaling law.",
+  "branch_created": false,
+  "branch_creation_allowed": false,
+  "calibration_applied": false,
+  "chart_paths": [
+    "visuals/blocked_continuity/v0_6_8/blocked_continuity_snapshot.png",
+    "visuals/blocked_continuity/v0_6_8/blocked_continuity_ledger_counts.png",
+    "visuals/blocked_continuity/v0_6_8/blocked_continuity_tail.png"
+  ],
+  "continuity_status": "BLOCKED_STATE_RECORDED__NO_EXECUTION",
+  "executor_blocked": true,
+  "executor_ran": false,
+  "executor_status": "EXECUTOR_BLOCKED__LIVE_APPROVAL_HANDOFF_NOT_VALID",
+  "final_recommendation": "Preserve blocked state as evidence. Do not replay, create branches, or mutate behavior without a valid live approval handoff.",
+  "generated_at": "2026-05-28T08:03:02.887159+00:00",
+  "handoff_blocked": true,
+  "handoff_status": "HANDOFF_BLOCKED__NO_LIVE_APPROVAL",
+  "input_live_approval_handoff": "reports/live_approval_handoff/latest_live_approval_handoff_check.json",
+  "input_replay_executor": "reports/replay_executor/latest_approval_gated_replay_executor.json",
+  "ledger_entry_count": 1,
+  "ledger_path": "reports/blocked_continuity/blocked_state_continuity_ledger.jsonl",
+  "ledger_status_counts": {
+    "EXECUTOR_BLOCKED__LIVE_APPROVAL_HANDOFF_NOT_VALID": 1
+  },
+  "ledger_tail": [
+    {
+      "application_allowed": false,
+      "block_reason": "Live approval handoff is not valid for replay. Executor remains blocked.",
+      "branch_created": false,
+      "calibration_applied": false,
+      "executor_blocked": true,
+      "executor_ran": false,
+      "executor_status": "EXECUTOR_BLOCKED__LIVE_APPROVAL_HANDOFF_NOT_VALID",
+      "generated_at": "2026-05-28T08:03:02.878583+00:00",
+      "handoff_blocked": true,
+      "handoff_status": "HANDOFF_BLOCKED__NO_LIVE_APPROVAL",
+      "live_approval_present": false,
+      "live_approval_valid": false,
+      "mutation_allowed": false,
+      "replay_allowed": false,
+      "schema": "tau-scaling-blocked-state-continuity-ledger-entry-v0.6.8",
+      "version": "v0.6.8"
+    }
+  ],
+  "live_approval_present": false,
+  "live_approval_valid": false,
+  "mutation_allowed": false,
+  "next_recommendation": "v0.6.9 should add blocked-state trend review and retirement criteria before continuing toward any live approval pathway.",
+  "policy_enforced": false,
+  "replay_allowed": false,
+  "runtime_behavior_changed": false,
+  "schema": "tau-scaling-blocked-state-continuity-ledger-v0.6.8"
+}
