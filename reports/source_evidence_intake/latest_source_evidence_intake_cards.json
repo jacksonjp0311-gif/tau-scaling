@@ -1,0 +1,89 @@
+{
+  "application_allowed": false,
+  "average_todo_fields": 5,
+  "boundary": "Source evidence intake cards are templates for source discipline. They do not promote claims, validate silicon, validate products, prove benchmark superiority, or establish a universal Tau Scaling law.",
+  "calibration_applied": false,
+  "claim_count": 8,
+  "claim_promotion_allowed": false,
+  "classifier_changed": false,
+  "generated_at": "2026-05-28T14:09:09.666618+00:00",
+  "mutation_allowed": false,
+  "ready_for_promotion_review_count": 0,
+  "schema": "tau-scaling-source-evidence-intake-cards-v0.8.6",
+  "scores": [
+    {
+      "claim_id": "tau-public-001-methodology",
+      "intake_status": "TEMPLATE_NEEDS_SOURCE",
+      "promotion_blocker_count": 3,
+      "ready_for_promotion_review": false,
+      "source_category": "methodology_claim",
+      "source_complete": false,
+      "todo_fields": 5
+    },
+    {
+      "claim_id": "tau-public-002-logicfolding",
+      "intake_status": "TEMPLATE_NEEDS_SOURCE",
+      "promotion_blocker_count": 3,
+      "ready_for_promotion_review": false,
+      "source_category": "architecture_interpretation",
+      "source_complete": false,
+      "todo_fields": 5
+    },
+    {
+      "claim_id": "tau-public-003-density-equivalent",
+      "intake_status": "TEMPLATE_NEEDS_SOURCE",
+      "promotion_blocker_count": 3,
+      "ready_for_promotion_review": false,
+      "source_category": "reported_metric",
+      "source_complete": false,
+      "todo_fields": 5
+    },
+    {
+      "claim_id": "tau-public-004-roadmap-1p4nm-class",
+      "intake_status": "TEMPLATE_NEEDS_SOURCE",
+      "promotion_blocker_count": 4,
+      "ready_for_promotion_review": false,
+      "source_category": "roadmap_projection",
+      "source_complete": false,
+      "todo_fields": 5
+    },
+    {
+      "claim_id": "tau-public-005-unified-bus",
+      "intake_status": "TEMPLATE_NEEDS_SOURCE",
+      "promotion_blocker_count": 3,
+      "ready_for_promotion_review": false,
+      "source_category": "architecture_interpretation",
+      "source_complete": false,
+      "todo_fields": 5
+    },
+    {
+      "claim_id": "tau-public-006-hione-optical-io",
+      "intake_status": "TEMPLATE_NEEDS_SOURCE",
+      "promotion_blocker_count": 3,
+      "ready_for_promotion_review": false,
+      "source_category": "reported_metric",
+      "source_complete": false,
+      "todo_fields": 5
+    },
+    {
+      "claim_id": "tau-public-007-3d-folding",
+      "intake_status": "TEMPLATE_NEEDS_SOURCE",
+      "promotion_blocker_count": 3,
+      "ready_for_promotion_review": false,
+      "source_category": "architecture_interpretation",
+      "source_complete": false,
+      "todo_fields": 5
+    },
+    {
+      "claim_id": "tau-public-008-ai-gap-closure",
+      "intake_status": "TEMPLATE_NEEDS_SOURCE",
+      "promotion_blocker_count": 4,
+      "ready_for_promotion_review": false,
+      "source_category": "media_interpretation",
+      "source_complete": false,
+      "todo_fields": 5
+    }
+  ],
+  "source_complete_count": 0,
+  "thresholds_changed": false
+}

@@ -1,6 +1,6 @@
 # Task Routing Matrix
 
-Current contract: **TAU-SCALING-SA v0.8.5 - Public Source Ledger / Claim Provenance Map**
+Current contract: **TAU-SCALING-SA v0.8.6 - Source Evidence Intake Cards**
 
 ## Geometry Route
 

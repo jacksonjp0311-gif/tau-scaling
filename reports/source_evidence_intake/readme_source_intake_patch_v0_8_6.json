@@ -1,0 +1,18 @@
+{
+  "application_allowed": false,
+  "boundary": "README/source-intake patch is source discipline only. It does not validate silicon or promote claims.",
+  "checkpoint": "TAU-SCALING-SA v0.8.6 - Source Evidence Intake Cards",
+  "classifier_changed": false,
+  "generated_at": "2026-05-28T14:09:08.784009+00:00",
+  "mutation_allowed": false,
+  "repairs": [
+    "added Source Evidence Intake Cards section",
+    "updated current research snapshot",
+    "updated metrics and quick start",
+    "updated directory box and archive pointers",
+    "updated release lineage and next-version target",
+    "added L-073 source-intake lesson"
+  ],
+  "schema": "tau-scaling-v0.8.6-readme-source-intake-patch",
+  "thresholds_changed": false
+}

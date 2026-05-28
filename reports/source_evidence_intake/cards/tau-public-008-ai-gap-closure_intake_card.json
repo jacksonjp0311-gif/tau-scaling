@@ -1,0 +1,43 @@
+{
+  "allowed_carry": "public narrative requiring source separation",
+  "application_allowed": false,
+  "blocked_carry": [
+    "independent validation",
+    "product superiority",
+    "investment or market proof"
+  ],
+  "boundary": "Source intake cards collect provenance requirements only. They do not promote claims, validate silicon, validate products, prove benchmark superiority, or establish a universal Tau Scaling law.",
+  "claim_excerpt_or_paraphrase": "TODO: add short quote or bounded paraphrase; avoid unsupported expansion",
+  "claim_id": "tau-public-008-ai-gap-closure",
+  "claim_title": "Tau Scaling materially closes AI-chip performance gap",
+  "classifier_changed": false,
+  "current_class": "TSEK-C",
+  "generated_at": "2026-05-28T14:09:09.661614+00:00",
+  "independent_evidence_required": true,
+  "intake_status": "TEMPLATE_NEEDS_SOURCE",
+  "measurement_package_required": [
+    "primary_source_trace",
+    "independent",
+    "benchmark_method",
+    "uncertainty"
+  ],
+  "missing_required_fields": [],
+  "mutation_allowed": false,
+  "paraphrase_boundary": "May record narrative framing only; must not treat narrative as independent technical validation.",
+  "promotion_blockers": [
+    "source category cannot carry achieved-result claims",
+    "primary source URL / citation required",
+    "independent corroboration required before promotion",
+    "current evidence class remains bounded"
+  ],
+  "ready_for_promotion_review": false,
+  "schema": "tau-scaling-source-evidence-intake-card-v0.8.6",
+  "source_author_or_org": "TODO: add author or organization",
+  "source_category": "media_interpretation",
+  "source_complete": false,
+  "source_date": "TODO: add publication/disclosure date",
+  "source_title": "TODO: add source title",
+  "source_type": "media_or_public_interpretation",
+  "source_url": "TODO: add primary source URL",
+  "thresholds_changed": false
+}

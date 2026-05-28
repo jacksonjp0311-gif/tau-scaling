@@ -70,7 +70,7 @@
                                       ]
                },
     "schema":  "rcc-nexus-route-map-v1.7",
-    "updated_at":  "2026-05-28T13:54:09.5756943Z",
+    "updated_at":  "2026-05-28T14:09:08.9851605Z",
     "v0_4_routes":  {
                         "feedback_chart_path_health_repair":  {
                                                                   "evidence":  [
@@ -960,7 +960,26 @@
                                                                       "docs/reflection/law_of_sufficient_form_v0_8_5.md"
                                                                   ],
                                                      "mutation_lock":  "Public source ledger and reflection only; no classifier change, threshold change, branch creation, or mutation."
-                                                 }
+                                                 },
+                        "source_evidence_intake_cards":  {
+                                                             "read_first":  [
+                                                                                "reports/public_source_ledger/latest_public_source_ledger.md",
+                                                                                "reports/source_evidence_intake/latest_source_evidence_intake_cards.md",
+                                                                                "reports/source_evidence_intake/cards/",
+                                                                                "README.md"
+                                                                            ],
+                                                             "validate":  [
+                                                                              "python scripts/benchmarks/generate_source_evidence_intake_cards.py",
+                                                                              "python scripts/release/validate_release.py",
+                                                                              "python scripts/rcc/audit_readme_surface.py"
+                                                                          ],
+                                                             "evidence":  [
+                                                                              "reports/source_evidence_intake/latest_source_evidence_intake_cards.md",
+                                                                              "reports/source_evidence_intake/cards/",
+                                                                              "visuals/source_evidence_intake/v0_8_6/"
+                                                                          ],
+                                                             "mutation_lock":  "Source evidence intake cards only; no classifier change, threshold change, claim promotion, branch creation, or mutation."
+                                                         }
                     },
     "validation":  {
                        "architecture":  "python scripts/validation/validate_architecture_contracts.py",
@@ -968,5 +987,5 @@
                        "runtime":  "python -m tau_scaling run-claim --seed configs/seeds/logicfolding_claim_card.json",
                        "tests":  "python -m unittest discover -s tests"
                    },
-    "version":  "v0.8.5"
+    "version":  "v0.8.6"
 }

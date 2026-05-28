@@ -1,0 +1,46 @@
+{
+  "allowed_carry": "architecture hypothesis",
+  "application_allowed": false,
+  "blocked_carry": [
+    "end-to-end speedup proof",
+    "energy-normalized improvement",
+    "product validation"
+  ],
+  "boundary": "Source intake cards collect provenance requirements only. They do not promote claims, validate silicon, validate products, prove benchmark superiority, or establish a universal Tau Scaling law.",
+  "claim_excerpt_or_paraphrase": "TODO: add short quote or bounded paraphrase; avoid unsupported expansion",
+  "claim_id": "tau-public-005-unified-bus",
+  "claim_title": "Unified Bus reduces remote-access latency",
+  "classifier_changed": false,
+  "current_class": "TSEK-C",
+  "generated_at": "2026-05-28T14:09:09.661614+00:00",
+  "independent_evidence_required": true,
+  "intake_status": "TEMPLATE_NEEDS_SOURCE",
+  "measurement_package_required": [
+    "workload",
+    "baseline",
+    "route_length_or_latency",
+    "energy",
+    "thermal",
+    "closure",
+    "yield",
+    "independent"
+  ],
+  "missing_required_fields": [],
+  "mutation_allowed": false,
+  "paraphrase_boundary": "May motivate an architecture hypothesis; must not claim measured speedup without workload and method evidence.",
+  "promotion_blockers": [
+    "primary source URL / citation required",
+    "independent corroboration required before promotion",
+    "current evidence class remains bounded"
+  ],
+  "ready_for_promotion_review": false,
+  "schema": "tau-scaling-source-evidence-intake-card-v0.8.6",
+  "source_author_or_org": "TODO: add author or organization",
+  "source_category": "architecture_interpretation",
+  "source_complete": false,
+  "source_date": "TODO: add publication/disclosure date",
+  "source_title": "TODO: add source title",
+  "source_type": "architecture_inference_or_interpretation",
+  "source_url": "TODO: add primary source URL",
+  "thresholds_changed": false
+}
