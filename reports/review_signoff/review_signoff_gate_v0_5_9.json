@@ -1,0 +1,101 @@
+{
+  "application_allowed": false,
+  "boundary": "Review signoff gates are local classifier-governance signoff artifacts. They do not change classifier behavior and do not validate silicon, products, manufacturing, process nodes, benchmark superiority, or universal Tau Scaling law.",
+  "calibration_applied": false,
+  "chart_paths": [
+    "visuals/review_signoff/v0_5_9/review_signoff_check_counts.png",
+    "visuals/review_signoff/v0_5_9/review_signoff_lock_states.png",
+    "visuals/review_signoff/v0_5_9/review_signoff_class_counts.png"
+  ],
+  "check_counts": {
+    "failed": 0,
+    "passed": 10
+  },
+  "check_fail_count": 0,
+  "check_pass_count": 10,
+  "checklist": [
+    {
+      "check_id": "evidence_bundle_complete",
+      "description": "All v0.5.2-v0.5.7 evidence inputs are present.",
+      "observed": "missing_inputs=0",
+      "passed": true,
+      "required_for_signoff": true
+    },
+    {
+      "check_id": "review_status_ready",
+      "description": "Review package status is READY_FOR_HUMAN_REVIEW_NOT_APPLICATION.",
+      "observed": "READY_FOR_HUMAN_REVIEW_NOT_APPLICATION",
+      "passed": true,
+      "required_for_signoff": true
+    },
+    {
+      "check_id": "decision_safe_for_review",
+      "description": "Decision class is SAFE_FOR_REVIEW_NOT_APPLICATION.",
+      "observed": "SAFE_FOR_REVIEW_NOT_APPLICATION",
+      "passed": true,
+      "required_for_signoff": true
+    },
+    {
+      "check_id": "review_allowed_true",
+      "description": "Review is allowed.",
+      "observed": "True",
+      "passed": true,
+      "required_for_signoff": true
+    },
+    {
+      "check_id": "application_allowed_false",
+      "description": "Application is not allowed.",
+      "observed": "False",
+      "passed": true,
+      "required_for_signoff": true
+    },
+    {
+      "check_id": "mutation_allowed_false",
+      "description": "Classifier mutation is not allowed.",
+      "observed": "False",
+      "passed": true,
+      "required_for_signoff": true
+    },
+    {
+      "check_id": "policy_enforced_false",
+      "description": "Policy is not enforced.",
+      "observed": "False",
+      "passed": true,
+      "required_for_signoff": true
+    },
+    {
+      "check_id": "calibration_applied_false",
+      "description": "Calibration is not applied.",
+      "observed": "False",
+      "passed": true,
+      "required_for_signoff": true
+    },
+    {
+      "check_id": "threshold_present",
+      "description": "A selected report-only threshold is present.",
+      "observed": "0.8",
+      "passed": true,
+      "required_for_signoff": true
+    },
+    {
+      "check_id": "non_claim_boundary_present",
+      "description": "Boundary/non-claim language is present.",
+      "observed": "boundary_present",
+      "passed": true,
+      "required_for_signoff": true
+    }
+  ],
+  "final_recommendation": "Human review may begin. Application and mutation remain blocked.",
+  "generated_at": "2026-05-28T07:35:36.589236+00:00",
+  "input_review_package": "reports/review_package/latest_review_package.json",
+  "mutation_allowed": false,
+  "next_recommendation": "v0.6.0 should create a human-approved candidate branch only after explicit external signoff, still non-mutating by default.",
+  "policy_enforced": false,
+  "review_allowed": true,
+  "schema": "tau-scaling-review-checklist-signoff-gate-v0.5.9",
+  "selected_report_only_threshold": 0.8,
+  "signoff_class_counts": {
+    "REVIEW_SIGNOFF_READY_NOT_APPLICATION": 1
+  },
+  "signoff_status": "REVIEW_SIGNOFF_READY_NOT_APPLICATION"
+}

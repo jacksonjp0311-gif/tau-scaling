@@ -44,7 +44,7 @@
     "SAFE_FOR_REVIEW_NOT_APPLICATION": 1
   },
   "final_recommendation": "Send this package to review. Do not apply calibration, mutate classifier behavior, or enforce policy from this package alone.",
-  "generated_at": "2026-05-28T07:32:53.928487+00:00",
+  "generated_at": "2026-05-28T07:35:35.254172+00:00",
   "missing_inputs": [],
   "mutation_allowed": false,
   "next_recommendation": "v0.5.9 should create a review checklist / signoff gate, still with mutation disabled.",

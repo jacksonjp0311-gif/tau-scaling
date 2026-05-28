@@ -1,6 +1,6 @@
 # Tau Scaling v0.5.8 Review Package and Evidence Bundle
 
-Generated: `2026-05-28T07:32:53.928487+00:00`
+Generated: `2026-05-28T07:35:35.254172+00:00`
 
 ## Review Decision
 
