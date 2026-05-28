@@ -1,6 +1,6 @@
 # Task Routing Matrix
 
-Current contract: **TAU-SCALING-SA v0.6.0 - Human-Approved Candidate Branch Gate**
+Current contract: **TAU-SCALING-SA v0.5.9 - Review Checklist and Signoff Gate**
 
 ## Geometry Route
 
@@ -42,7 +42,6 @@ intent -> shell -> meridian -> sector -> files -> validation -> evidence -> less
 | Counterfactual decision patch | outer | validation | governance | calibration counterfactuals + decision criteria | decision record + charts + release validator | `reports/counterfactual_decision/latest_counterfactual_decision_record.md` |
 | Review package patch | outer | evidence | governance | v0.5.2-v0.5.7 evidence surfaces | review package + charts + release validator | `reports/review_package/latest_review_package.md` |
 | Review signoff patch | outer | validation | governance | review package + signoff checks | signoff gate + charts + release validator | `reports/review_signoff/latest_review_signoff_gate.md` |
-| Candidate branch gate patch | outer | governance | review | signoff gate + human approval requirement | candidate branch gate + charts + release validator | `reports/candidate_branch/latest_candidate_branch_gate.md` |
 | Public claim replay patch | outer | evidence | release | source boundary docs, `configs/seeds/public_claims/` | release validator + claim replay report | `reports/public_claims/latest_claim_replay_report.md` |
 | Agent contract patch | center | agent | rcc | `AGENTS.md`, route map, task matrix, README | README audit + release validator | `reports/agent/latest_agent_contract_sync.md` |
 | Reflection patch | center | drift | documentation | `docs/reflection/`, `reports/reflection/`, README, AGENTS | README audit + release validator | `reports/reflection/latest_system_reflection.md` |

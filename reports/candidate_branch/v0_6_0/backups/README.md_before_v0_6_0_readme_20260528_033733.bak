@@ -10,8 +10,8 @@
 
 Repository: `tau-scaling`  
 Package / CLI: `tau_scaling` / `tau-scaling`  
-Current checkpoint: **TAU-SCALING-SA v0.6.0 - Human-Approved Candidate Branch Gate**  
-Previous seal: **TAU-SCALING-SA v0.5.9 - Review Checklist and Signoff Gate**
+Current checkpoint: **TAU-SCALING-SA v0.5.9 - Review Checklist and Signoff Gate**  
+Previous seal: **TAU-SCALING-SA v0.5.8 - Review Package and Evidence Bundle**
 
 Tau Scaling is a local-first, evidence-gated Python runtime for evaluating tau-scaling claims through structured claim cards, workload declarations, tau vectors, LogicFolding survivability checks, edge-to-surface boundary algebra, energy / thermal / PDN / PVT gates, Monte Carlo checker stress, TSEK classification, evidence packages, and RCC-N / OMN-style repository navigation.
 
@@ -55,7 +55,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | TAU-SCALING-SA v0.6.0 |
+| Current checkpoint | TAU-SCALING-SA v0.5.9 |
 | Synthetic gate suite | v0.4.0 / benchmark + finding charts |
 | Package version | 0.2.0 |
 | Baseline seed | TSEK-C / A_TSEK 0.0000 |
@@ -64,7 +64,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 | README mini repo audit | passing / 0 warnings |
 | Unified release validator | passing / step failures 0 |
 | AGENTS.md contract | synchronized with release validator |
-| Task routing matrix | geometry-aware / v0.6.0-ready |
+| Task routing matrix | geometry-aware / v0.5.9-ready |
 | Release warning findings | 0 expected after v0.3.3d validator scan repair |
 | Architecture validator | passing / 0 warnings |
 | Unit tests | 8 OK |
@@ -116,9 +116,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 | Review package charts | `visuals/review_package/v0_5_8/` |
 | Review signoff gate | `reports/review_signoff/latest_review_signoff_gate.md` |
 | Review signoff charts | `visuals/review_signoff/v0_5_9/` |
-| Candidate branch gate | `reports/candidate_branch/latest_candidate_branch_gate.md` |
-| Candidate branch charts | `visuals/candidate_branch/v0_6_0/` |
-| Agent contract version sync | current / v0.6.0 |
+| Agent contract version sync | current / v0.5.9 |
 | Release readiness report | `reports/release/latest_release_readiness.md` |
 | Collision-proof run identity | passed |
 | Mini README coverage | 1.0 |
@@ -162,7 +160,6 @@ python scripts/benchmarks/run_calibration_counterfactuals.py
 python scripts/benchmarks/generate_counterfactual_decision_record.py
 python scripts/benchmarks/generate_review_package.py
 python scripts/benchmarks/run_review_signoff_gate.py
-python scripts/benchmarks/run_candidate_branch_gate.py
 python scripts/release/validate_release.py
 ```
 
@@ -469,7 +466,6 @@ This section is part of the repository's operating memory. When a patch fails, t
 | L-039 | v0.5.6 counterfactuals passed, but a passing counterfactual is not an applied policy. | Successful simulations still need an explicit decision record to prevent silent promotion. | A successful counterfactual must become a decision record before any implementation pathway can be discussed. |
 | L-040 | v0.5.7 produced SAFE_FOR_REVIEW_NOT_APPLICATION. | Safe-for-review can be mistaken for safe-for-application unless bundled explicitly. | A candidate that reaches SAFE_FOR_REVIEW_NOT_APPLICATION must be bundled into a review package before any implementation pathway is discussed. |
 | L-041 | v0.5.8 produced a review-ready evidence bundle. | Review-ready bundles still require explicit signoff gates to prevent review from being mistaken for application. | A review package must pass a signoff checklist before a candidate branch or implementation pathway is discussed. |
-| L-042 | v0.5.9 passed the signoff gate, but signoff readiness is still not branch creation. | A signoff-ready candidate needs an explicit human approval artifact before branch creation or implementation. | Candidate-branch gates must prepare proposals only; branches require explicit human approval and remain non-mutating by default. |
 
 ### Failure Response Protocol
 
@@ -678,7 +674,6 @@ tau-scaling/
   releases/
   reports/
     nexus_feedback/
-    candidate_branch/
     review_signoff/
     review_package/
     counterfactual_decision/
@@ -730,7 +725,6 @@ tau-scaling/
   tests/
   visuals/
     nexus_feedback/
-    candidate_branch/
     review_signoff/
     review_package/
     counterfactual_decision/
@@ -841,38 +835,6 @@ AGENTS.md Required Validation now includes the current v0.4.6-v0.5.1 governance 
 ```
 
 Boundary: alignment polish is repository hygiene only. It is not code correctness, silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.
-
-## Human-Approved Candidate Branch Gate v0.6.0
-
-v0.6.0 prepares a non-mutating candidate branch proposal after v0.5.9 signoff.
-
-Primary command:
-
-```powershell
-python scripts/benchmarks/run_candidate_branch_gate.py
-```
-
-Primary outputs:
-
-```text
-reports/candidate_branch/latest_candidate_branch_gate.json
-reports/candidate_branch/latest_candidate_branch_gate.md
-visuals/candidate_branch/v0_6_0/
-```
-
-Current lock:
-
-```text
-branch_created: false
-human_approval_required: true
-human_approval_present: false
-mutation_allowed: false
-policy_enforced: false
-calibration_applied: false
-application_allowed: false
-```
-
-Boundary: candidate branch gates are local classifier-governance proposal artifacts. They do not create a branch by default, do not change classifier behavior, and do not validate silicon, product performance, manufacturing capability, process-node equivalence, benchmark superiority, AI understanding, or universal Tau Scaling law.
 
 ## Review Checklist and Signoff Gate v0.5.9
 
@@ -1431,7 +1393,6 @@ python scripts/benchmarks/run_calibration_counterfactuals.py
 python scripts/benchmarks/generate_counterfactual_decision_record.py
 python scripts/benchmarks/generate_review_package.py
 python scripts/benchmarks/run_review_signoff_gate.py
-python scripts/benchmarks/run_candidate_branch_gate.py
 python scripts/release/validate_release.py
 python scripts/rcc/audit_readme_surface.py
 python scripts/rcc/check_rcc_nexus.py
@@ -1786,15 +1747,14 @@ validation_remains_required
 | v0.5.7 | Counterfactual decision record for safe-review classification without application. |
 | v0.5.8 | Review package and evidence bundle for v0.5.2-v0.5.7. |
 | v0.5.9 | Review checklist and signoff gate for the evidence bundle. |
-| v0.6.0 | Human-approved candidate branch gate; proposal only, no branch by default. |
 
 ## Next Recommended Version
 
-**TAU-SCALING-SA v0.6.1 - Candidate Branch Replay Harness**
+**TAU-SCALING-SA v0.6.0 - Human-Approved Candidate Branch**
 
 Recommended goals:
 
-- Only run after explicit human approval artifact exists.
-- Replay the candidate proposal against baseline evidence.
+- Create a non-mutating candidate branch package only after explicit human disposition.
+- Preserve all review-package and signoff evidence.
 - Keep default runtime behavior unchanged.
 - Keep `mutation_allowed: false` unless a separate explicit human approval artifact exists.

@@ -1,0 +1,30 @@
+{
+  "application_allowed": false,
+  "boundary": "Human-approved candidate branch gates are local classifier-governance proposal artifacts. They do not create a branch by default, do not change classifier behavior, and do not validate silicon, products, manufacturing, process nodes, benchmark superiority, or universal Tau Scaling law.",
+  "branch_created": false,
+  "branch_proposal_allowed": true,
+  "calibration_applied": false,
+  "candidate_branch_status": "CANDIDATE_BRANCH_PROPOSAL_READY__HUMAN_APPROVAL_REQUIRED",
+  "chart_paths": [
+    "visuals/candidate_branch/v0_6_0/candidate_branch_gate_state.png",
+    "visuals/candidate_branch/v0_6_0/candidate_branch_signoff_counts.png",
+    "visuals/candidate_branch/v0_6_0/candidate_branch_status.png"
+  ],
+  "final_recommendation": "Prepare human review disposition. Do not create branch, apply calibration, or mutate classifier behavior from this report alone.",
+  "generated_at": "2026-05-28T07:37:34.626150+00:00",
+  "human_approval_present": false,
+  "human_approval_required": true,
+  "human_approval_requirement": "A human approval artifact must be added before creating any candidate branch or implementation pathway. This gate only prepares a proposal.",
+  "input_review_package": "reports/review_package/latest_review_package.json",
+  "input_review_signoff": "reports/review_signoff/latest_review_signoff_gate.json",
+  "mutation_allowed": false,
+  "next_recommendation": "v0.6.1 should replay a candidate branch only after explicit human approval artifact exists.",
+  "policy_enforced": false,
+  "proposed_branch_name": "candidate/v0.6.0-threshold-0.8-review-only",
+  "runtime_behavior_changed": false,
+  "schema": "tau-scaling-human-approved-candidate-branch-gate-v0.6.0",
+  "selected_report_only_threshold": 0.8,
+  "signoff_check_fail_count": 0,
+  "signoff_check_pass_count": 10,
+  "signoff_ready": true
+}

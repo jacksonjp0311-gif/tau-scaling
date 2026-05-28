@@ -40,7 +40,6 @@ This atlas gives humans and AI agents one stable place to understand benchmark e
 | v0.5.7 | Counterfactual decision record | `python scripts/benchmarks/generate_counterfactual_decision_record.py` | Classifies counterfactual candidate for review without application | `reports/counterfactual_decision/latest_counterfactual_decision_record.md` | `visuals/counterfactual_decision/v0_5_7/` |
 | v0.5.8 | Review package and evidence bundle | `python scripts/benchmarks/generate_review_package.py` | Bundles v0.5.2-v0.5.7 evidence for review without application | `reports/review_package/latest_review_package.md` | `visuals/review_package/v0_5_8/` |
 | v0.5.9 | Review checklist and signoff gate | `python scripts/benchmarks/run_review_signoff_gate.py` | Converts review package into explicit signoff checklist | `reports/review_signoff/latest_review_signoff_gate.md` | `visuals/review_signoff/v0_5_9/` |
-| v0.6.0 | Human-approved candidate branch gate | `python scripts/benchmarks/run_candidate_branch_gate.py` | Prepares candidate branch proposal only; no branch by default | `reports/candidate_branch/latest_candidate_branch_gate.md` | `visuals/candidate_branch/v0_6_0/` |
 
 ## Current Synthetic Suite Summary
 

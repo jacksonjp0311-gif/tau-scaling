@@ -86,7 +86,7 @@
     }
   ],
   "final_recommendation": "Human review may begin. Application and mutation remain blocked.",
-  "generated_at": "2026-05-28T07:35:36.589236+00:00",
+  "generated_at": "2026-05-28T07:37:33.347706+00:00",
   "input_review_package": "reports/review_package/latest_review_package.json",
   "mutation_allowed": false,
   "next_recommendation": "v0.6.0 should create a human-approved candidate branch only after explicit external signoff, still non-mutating by default.",
