@@ -1,0 +1,12 @@
+{
+  "application_allowed": false,
+  "boundary": "README/source population patch is source-population scaffold only. It does not validate or promote claims.",
+  "checkpoint": "TAU-SCALING-SA v0.8.8 - Public Source Population Pass",
+  "claim_promotion_allowed": false,
+  "classifier_changed": false,
+  "generated_at": "2026-05-28T14:56:15.200339+00:00",
+  "mutation_allowed": false,
+  "schema": "tau-scaling-v0.8.8-readme-public-source-population-patch",
+  "source_validation_claimed": false,
+  "thresholds_changed": false
+}

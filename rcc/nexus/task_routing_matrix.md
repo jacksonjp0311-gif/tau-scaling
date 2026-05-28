@@ -1,6 +1,6 @@
 # Task Routing Matrix
 
-Current contract: **TAU-SCALING-SA v0.8.7 - Primary Source Intake Queue / Source Population Scaffold**
+Current contract: **TAU-SCALING-SA v0.8.8 - Public Source Population Pass**
 
 ## Geometry Route
 

@@ -70,7 +70,7 @@
                                       ]
                },
     "schema":  "rcc-nexus-route-map-v1.7",
-    "updated_at":  "2026-05-28T14:24:42.3896564Z",
+    "updated_at":  "2026-05-28T14:56:15.4709913Z",
     "v0_4_routes":  {
                         "feedback_chart_path_health_repair":  {
                                                                   "evidence":  [
@@ -1013,7 +1013,25 @@
                                                                              "visuals/primary_source_intake/v0_8_7/"
                                                                          ],
                                                             "mutation_lock":  "Primary source intake queue only; no source validation, classifier change, threshold change, claim promotion, branch creation, or mutation."
-                                                        }
+                                                        },
+                        "public_source_population_pass":  {
+                                                              "read_first":  [
+                                                                                 "sources/primary_source_intake/source_population_manifest_v0_8_8.json",
+                                                                                 "reports/public_source_population/latest_public_source_population_pass.md",
+                                                                                 "README.md"
+                                                                             ],
+                                                              "validate":  [
+                                                                               "python scripts/benchmarks/populate_public_source_intake_v0_8_8.py",
+                                                                               "python scripts/release/validate_release.py",
+                                                                               "python scripts/rcc/audit_readme_surface.py"
+                                                                           ],
+                                                              "evidence":  [
+                                                                               "sources/primary_source_intake/source_population_manifest_v0_8_8.json",
+                                                                               "reports/public_source_population/latest_public_source_population_pass.md",
+                                                                               "visuals/public_source_population/v0_8_8/"
+                                                                           ],
+                                                              "mutation_lock":  "Public source population only; no source validation, classifier change, threshold change, claim promotion, branch creation, or mutation."
+                                                          }
                     },
     "validation":  {
                        "architecture":  "python scripts/validation/validate_architecture_contracts.py",
@@ -1021,5 +1039,5 @@
                        "runtime":  "python -m tau_scaling run-claim --seed configs/seeds/logicfolding_claim_card.json",
                        "tests":  "python -m unittest discover -s tests"
                    },
-    "version":  "v0.8.7"
+    "version":  "v0.8.8"
 }

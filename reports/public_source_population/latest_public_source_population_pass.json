@@ -1,0 +1,17 @@
+{
+  "application_allowed": false,
+  "average_source_confidence": 0.5837,
+  "boundary": "v0.8.8 populates source records from public secondary sources. It does not claim primary-source validation, source validation, claim promotion, silicon validation, product validation, benchmark superiority, or universal Tau Scaling proof.",
+  "claim_count": 8,
+  "claim_promotion_allowed": false,
+  "classifier_changed": false,
+  "generated_at": "2026-05-28T14:56:16.512911+00:00",
+  "independent_source_confirmed_count": 0,
+  "manifest": "sources\\primary_source_intake\\source_population_manifest_v0_8_8.json",
+  "mutation_allowed": false,
+  "primary_source_confirmed_count": 0,
+  "schema": "tau-scaling-public-source-population-pass-v0.8.8",
+  "source_populated_count": 8,
+  "source_validation_claimed": false,
+  "thresholds_changed": false
+}

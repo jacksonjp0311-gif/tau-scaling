@@ -6,7 +6,7 @@
   "claim_count": 8,
   "claim_promotion_allowed": false,
   "classifier_changed": false,
-  "generated_at": "2026-05-28T14:24:43.237485+00:00",
+  "generated_at": "2026-05-28T14:56:16.406743+00:00",
   "manifest": "sources\\primary_source_intake\\source_seed_manifest_v0_8_7.json",
   "mutation_allowed": false,
   "ready_for_claim_review_count": 0,
