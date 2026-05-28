@@ -1,6 +1,6 @@
-# AGENTS.md â€” Tau Scaling Agent Operating Contract
+# AGENTS.md Ã¢â‚¬â€ Tau Scaling Agent Operating Contract
 
-Current contract: **TAU-SCALING-SA v0.8.2a - README Showcase and Audit Anchor Repair**
+Current contract: **TAU-SCALING-SA v0.8.3 - LogicFolding Plausibility Sweep**
 
 ## Mission
 

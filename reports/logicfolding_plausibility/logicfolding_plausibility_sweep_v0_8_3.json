@@ -1,0 +1,112 @@
+{
+  "application_allowed": false,
+  "boundary": "This sweep tests synthetic plausibility of a TSEK inequality. It does not validate Huawei silicon, products, manufacturing, process nodes, benchmark superiority, or universal Tau Scaling law.",
+  "calibration_applied": false,
+  "classifier_changed": false,
+  "falsification_pressure": "Thermal-stressed and closure-stressed priors show how plausible timing gains can collapse when companion gates dominate.",
+  "generated_at": "2026-05-28T10:05:29.324446+00:00",
+  "mutation_allowed": false,
+  "research_finding": "LogicFolding is conditionally plausible when critical-path coverage and wire-delay savings are high enough to dominate vertical, routing, synchronization, variation, and closure costs, and when energy/thermal/PDN-normalized tau gain remains above one.",
+  "results": [
+    {
+      "joint_pass_pct": 0.0,
+      "label": "Conservative public",
+      "mean_gamma_tau_etp": 0.7087,
+      "mean_margin_ps": -63.899,
+      "pass_gamma_pct": 4.28,
+      "pass_margin_pct": 0.0,
+      "post_route_closure_proxy_pass_pct": 4.42,
+      "samples": 5000,
+      "scenario_id": "conservative_public",
+      "verdict": "not_plausible_under_declared_priors"
+    },
+    {
+      "joint_pass_pct": 5.98,
+      "label": "Balanced engineering",
+      "mean_gamma_tau_etp": 1.2578,
+      "mean_margin_ps": -18.949,
+      "pass_gamma_pct": 82.18,
+      "pass_margin_pct": 7.6,
+      "post_route_closure_proxy_pass_pct": 83.18,
+      "samples": 5000,
+      "scenario_id": "balanced_engineering",
+      "verdict": "narrow_plausibility_window"
+    },
+    {
+      "joint_pass_pct": 99.16,
+      "label": "Optimistic reported path",
+      "mean_gamma_tau_etp": 2.1046,
+      "mean_margin_ps": 35.766,
+      "pass_gamma_pct": 100.0,
+      "pass_margin_pct": 99.16,
+      "post_route_closure_proxy_pass_pct": 100.0,
+      "samples": 5000,
+      "scenario_id": "optimistic_reported_path",
+      "verdict": "plausible_under_declared_priors"
+    },
+    {
+      "joint_pass_pct": 100.0,
+      "label": "Aggressive best-case",
+      "mean_gamma_tau_etp": 3.3571,
+      "mean_margin_ps": 96.797,
+      "pass_gamma_pct": 100.0,
+      "pass_margin_pct": 100.0,
+      "post_route_closure_proxy_pass_pct": 100.0,
+      "samples": 5000,
+      "scenario_id": "aggressive_best_case",
+      "verdict": "plausible_under_declared_priors"
+    },
+    {
+      "joint_pass_pct": 15.84,
+      "label": "Thermal stressed",
+      "mean_gamma_tau_etp": 0.8033,
+      "mean_margin_ps": 24.561,
+      "pass_gamma_pct": 17.24,
+      "pass_margin_pct": 92.38,
+      "post_route_closure_proxy_pass_pct": 100.0,
+      "samples": 5000,
+      "scenario_id": "thermal_stressed",
+      "verdict": "narrow_plausibility_window"
+    },
+    {
+      "joint_pass_pct": 1.72,
+      "label": "Closure stressed",
+      "mean_gamma_tau_etp": 1.2423,
+      "mean_margin_ps": -38.973,
+      "pass_gamma_pct": 78.34,
+      "pass_margin_pct": 2.2,
+      "post_route_closure_proxy_pass_pct": 37.1,
+      "samples": 5000,
+      "scenario_id": "closure_stressed",
+      "verdict": "narrow_plausibility_window"
+    }
+  ],
+  "samples_per_scenario": 5000,
+  "scenario_count": 6,
+  "schema": "tau-scaling-logicfolding-plausibility-sweep-v0.8.3",
+  "strongest_scenario": {
+    "joint_pass_pct": 100.0,
+    "label": "Aggressive best-case",
+    "mean_gamma_tau_etp": 3.3571,
+    "mean_margin_ps": 96.797,
+    "pass_gamma_pct": 100.0,
+    "pass_margin_pct": 100.0,
+    "post_route_closure_proxy_pass_pct": 100.0,
+    "samples": 5000,
+    "scenario_id": "aggressive_best_case",
+    "verdict": "plausible_under_declared_priors"
+  },
+  "thresholds_changed": false,
+  "weakest_scenario": {
+    "joint_pass_pct": 0.0,
+    "label": "Conservative public",
+    "mean_gamma_tau_etp": 0.7087,
+    "mean_margin_ps": -63.899,
+    "pass_gamma_pct": 4.28,
+    "pass_margin_pct": 0.0,
+    "post_route_closure_proxy_pass_pct": 4.42,
+    "samples": 5000,
+    "scenario_id": "conservative_public",
+    "verdict": "not_plausible_under_declared_priors"
+  }
+}

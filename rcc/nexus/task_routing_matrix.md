@@ -1,6 +1,6 @@
 # Task Routing Matrix
 
-Current contract: **TAU-SCALING-SA v0.8.2a - README Showcase and Audit Anchor Repair**
+Current contract: **TAU-SCALING-SA v0.8.3 - LogicFolding Plausibility Sweep**
 
 ## Geometry Route
 

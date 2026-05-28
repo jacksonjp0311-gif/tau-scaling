@@ -1,10 +1,17 @@
 {
   "durable_dirs_checked": 38,
-  "errors": 0,
-  "findings": [],
-  "generated_at": "2026-05-28T10:01:52.017902+00:00",
+  "errors": 1,
+  "findings": [
+    {
+      "code": "root_readme_section_missing",
+      "detail": "Missing section/token: AI Rule \u2014 Directory Box and Mini README Synchronization",
+      "path": "README.md",
+      "severity": "error"
+    }
+  ],
+  "generated_at": "2026-05-28T10:05:31.322348+00:00",
   "non_claim_lock": "README/mini-repo audit is context alignment, not code correctness or silicon validation.",
-  "passed": true,
+  "passed": false,
   "repository": "tau-scaling",
   "required_root_sections": [
     "# Tau Scaling",

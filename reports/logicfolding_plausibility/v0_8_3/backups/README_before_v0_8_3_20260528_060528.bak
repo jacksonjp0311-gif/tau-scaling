@@ -1,4 +1,4 @@
-# Tau Scaling ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â Evidence-Gated Tau-Claim Runtime
+# Tau Scaling ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Evidence-Gated Tau-Claim Runtime
 
 ![RCC-N](https://img.shields.io/badge/RCC--N-passing-brightgreen)
 ![Architecture](https://img.shields.io/badge/architecture-passing-brightgreen)
@@ -10,8 +10,8 @@
 
 Repository: `tau-scaling`  
 Package / CLI: `tau_scaling` / `tau-scaling`  
-Current checkpoint: **TAU-SCALING-SA v0.8.3 - LogicFolding Plausibility Sweep**  
-Previous seal: **TAU-SCALING-SA v0.8.2a - README Showcase and Audit Anchor Repair**
+Current checkpoint: **TAU-SCALING-SA v0.8.2a - README Showcase and Audit Anchor Repair**  
+Previous seal: **TAU-SCALING-SA v0.8.2 - Public Tau Claim Ledger**
 
 Tau Scaling is a local-first, evidence-gated Python runtime for evaluating tau-scaling claims through structured claim cards, workload declarations, tau vectors, LogicFolding survivability checks, edge-to-surface boundary algebra, energy / thermal / PDN / PVT gates, Monte Carlo checker stress, TSEK classification, evidence packages, and RCC-N / OMN-style repository navigation.
 
@@ -127,7 +127,7 @@ What evidence is sufficient to move a Tau Scaling claim from roadmap coherence t
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | TAU-SCALING-SA v0.8.3 |
+| Current checkpoint | TAU-SCALING-SA v0.8.2a |
 | Synthetic gate suite | v0.4.0 / benchmark + finding charts |
 | Package version | 0.2.0 |
 | Baseline seed | TSEK-C / A_TSEK 0.0000 |
@@ -136,7 +136,7 @@ What evidence is sufficient to move a Tau Scaling claim from roadmap coherence t
 | README mini repo audit | passing / 0 warnings |
 | Unified release validator | passing / step failures 0 |
 | AGENTS.md contract | synchronized with release validator |
-| Task routing matrix | geometry-aware / v0.8.3-ready |
+| Task routing matrix | geometry-aware / v0.8.2a-ready |
 | Release warning findings | 0 expected after v0.3.3d validator scan repair |
 | Architecture validator | passing / 0 warnings |
 | Unit tests | 8 OK |
@@ -230,7 +230,7 @@ What evidence is sufficient to move a Tau Scaling claim from roadmap coherence t
 | Threshold governance charts | `visuals/threshold_governance_summary/v0_7_9/` |
 | Stable Tau threshold governance | `reports/stable_tau_threshold_governance/latest_stable_tau_threshold_governance_milestone.md` |
 | Stable Tau threshold charts | `visuals/stable_tau_threshold_governance/v0_8_0/` |
-| Agent contract version sync | current / v0.8.3 |
+| Agent contract version sync | current / v0.8.2a |
 | Release readiness report | `reports/release/latest_release_readiness.md` |
 | Collision-proof run identity | passed |
 | Mini README coverage | 1.0 |
@@ -757,7 +757,7 @@ README audit: passed
 unit_tests: OK
 ```
 
-## AI Rule â€” Directory Box and Mini README Synchronization
+## AI Rule — Directory Box and Mini README Synchronization
 
 This exact heading uses a Unicode em dash (U+2014) because `scripts/rcc/audit_readme_surface.py` checks this anchor literally.
 
@@ -2709,36 +2709,3 @@ Recommended goals:
 - Keep public claims classified by disclosed evidence.
 - Keep threshold and classifier mutation disabled.
 - Preserve `mutation_allowed: false`.
-
-## LogicFolding Plausibility Sweep v0.8.3
-
-This layer begins proof/falsification work on the core LogicFolding claim by testing the TSEK survivability inequality under synthetic priors.
-
-```text
-rho_c * E[delta_tau_wire] >
-E[tau_vertical] + tau_route + tau_sync + tau_variation + tau_closure
-
-gamma_tau_ETP > 1
-```
-
-Primary outputs:
-
-```text
-reports/logicfolding_plausibility/latest_logicfolding_plausibility_sweep.md
-reports/logicfolding_plausibility/latest_logicfolding_plausibility_sweep.json
-visuals/logicfolding_plausibility/v0_8_3/
-```
-
-Research interpretation:
-
-```text
-LogicFolding is conditionally plausible when critical-path coverage and wire-delay savings are high enough to dominate vertical, routing, sync, variation, and closure costs, and when energy/thermal/PDN-normalized tau gain remains above one.
-```
-
-Falsification pressure:
-
-```text
-Thermal-stressed and closure-stressed priors test whether apparent timing gains collapse when companion gates dominate.
-```
-
-Boundary: this is synthetic plausibility testing only. It does not validate Huawei silicon, products, manufacturing capability, process-node equivalence, benchmark superiority, or universal Tau Scaling law.
