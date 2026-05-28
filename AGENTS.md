@@ -1,6 +1,6 @@
-# AGENTS.md — Tau Scaling Agent Operating Contract
+# AGENTS.md â€” Tau Scaling Agent Operating Contract
 
-Current contract: **TAU-SCALING-SA v0.8.0 - Stable Tau Threshold Governance Milestone**
+Current contract: **TAU-SCALING-SA v0.8.2a - README Showcase and Audit Anchor Repair**
 
 ## Mission
 

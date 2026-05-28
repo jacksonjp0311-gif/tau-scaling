@@ -1,0 +1,21 @@
+{
+    "schema":  "tau-scaling-readme-showcase-audit-anchor-repair-v0.8.2a",
+    "generated_at":  "2026-05-28T10:01:49.7792680Z",
+    "checkpoint":  "TAU-SCALING-SA v0.8.2a - README Showcase and Audit Anchor Repair",
+    "repaired_anchor":  "AI Rule — Directory Box and Mini README Synchronization",
+    "showcase_added":  true,
+    "tau_claim_ledger_status":  {
+                                    "tsek_a":  0,
+                                    "tsek_b":  0,
+                                    "tsek_c":  6,
+                                    "tsek_d":  2,
+                                    "tsek_e":  0,
+                                    "average_missing_evidence_gates":  6.375
+                                },
+    "thresholds_changed":  false,
+    "classifier_changed":  false,
+    "mutation_allowed":  false,
+    "application_allowed":  false,
+    "calibration_applied":  false,
+    "boundary":  "README showcase and audit-anchor repair improves public orientation only. It does not validate silicon, products, manufacturing, process nodes, benchmark superiority, or universal Tau Scaling law."
+}
