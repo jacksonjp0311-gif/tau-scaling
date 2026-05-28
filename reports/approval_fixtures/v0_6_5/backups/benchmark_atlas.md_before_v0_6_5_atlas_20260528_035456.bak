@@ -45,7 +45,6 @@ This atlas gives humans and AI agents one stable place to understand benchmark e
 | v0.6.2 | Human approval artifact template | `python scripts/benchmarks/generate_human_approval_template.py` | Creates approval/denial template only; no approval by default | `reports/human_approval/latest_human_approval_template_report.md` | `visuals/human_approval/v0_6_2/` |
 | v0.6.3 | Human approval artifact validator | `python scripts/benchmarks/validate_human_approval_artifact.py` | Rejects template-only approval and keeps replay blocked unless explicit approval validates | `reports/approval_validator/latest_human_approval_validator.md` | `visuals/approval_validator/v0_6_3/` |
 | v0.6.4 | Approval-gated replay dry-run | `python scripts/benchmarks/run_approval_gated_replay_dry_run.py` | Emits blocked replay report unless approval_valid is true | `reports/approval_gated_replay/latest_approval_gated_replay_dry_run.md` | `visuals/approval_gated_replay/v0_6_4/` |
-| v0.6.5 | Approval fixture and denial fixture validator | `python scripts/benchmarks/validate_approval_fixtures.py` | Validates approval/denial/more-evidence fixture semantics without live approval | `reports/approval_fixtures/latest_approval_fixture_validator.md` | `visuals/approval_fixtures/v0_6_5/` |
 
 ## Current Synthetic Suite Summary
 

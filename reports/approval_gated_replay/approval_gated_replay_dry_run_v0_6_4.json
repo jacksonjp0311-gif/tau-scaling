@@ -48,7 +48,7 @@
     }
   ],
   "final_recommendation": "Keep replay blocked until approval_valid is true.",
-  "generated_at": "2026-05-28T07:52:48.060919+00:00",
+  "generated_at": "2026-05-28T07:54:56.899437+00:00",
   "input_approval_validator": "reports/approval_validator/latest_human_approval_validator.json",
   "input_candidate_replay": "reports/candidate_replay/latest_candidate_branch_replay_harness.json",
   "mutation_allowed": false,

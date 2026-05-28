@@ -1,6 +1,6 @@
 # AGENTS.md — Tau Scaling Agent Operating Contract
 
-Current contract: **TAU-SCALING-SA v0.6.5 - Approval Fixture and Denial Fixture Validator**
+Current contract: **TAU-SCALING-SA v0.6.4 - Approval-Gated Replay Dry-Run**
 
 ## Mission
 
@@ -72,7 +72,6 @@ python scripts/benchmarks/run_candidate_branch_replay_harness.py
 python scripts/benchmarks/generate_human_approval_template.py
 python scripts/benchmarks/validate_human_approval_artifact.py
 python scripts/benchmarks/run_approval_gated_replay_dry_run.py
-python scripts/benchmarks/validate_approval_fixtures.py
 python -m unittest discover -s tests
 ```
 
@@ -111,7 +110,6 @@ python -m unittest discover -s tests
 | Human approval template patch | `reports/human_approval/`, `visuals/human_approval/`, replay harness | approval template + release validator; no approval by default |
 | Human approval validator patch | `reports/approval_validator/`, `visuals/approval_validator/`, approval artifact | approval validator + release validator; replay blocked unless valid |
 | Approval-gated replay patch | `reports/approval_gated_replay/`, `visuals/approval_gated_replay/`, approval validator | blocked replay dry-run + release validator; no mutation |
-| Approval fixture patch | `reports/approval_fixtures/`, `visuals/approval_fixtures/`, approval template | fixture validator + release validator; fixtures are not approval |
 | Public claim replay patch | source boundary docs, `configs/seeds/public_claims/`, claim reports | release validator + claim replay report |
 | Directory structure patch | Full Directory Box, affected mini READMEs, context indexes | README audit + RCC-N + release validator |
 

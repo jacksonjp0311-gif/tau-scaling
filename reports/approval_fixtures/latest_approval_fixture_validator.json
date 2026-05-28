@@ -1,0 +1,68 @@
+{
+  "application_allowed": false,
+  "boundary": "Approval fixtures are local classifier-governance test fixtures. They are not live approvals, do not create branches, do not mutate classifier behavior, do not apply calibration, and do not validate silicon, products, manufacturing, process nodes, benchmark superiority, or universal Tau Scaling law.",
+  "branch_created": false,
+  "branch_creation_allowed": false,
+  "calibration_applied": false,
+  "chart_paths": [
+    "visuals/approval_fixtures/v0_6_5/approval_fixture_validity.png",
+    "visuals/approval_fixtures/v0_6_5/approval_fixture_replay_semantics.png",
+    "visuals/approval_fixtures/v0_6_5/approval_fixture_lock_state.png"
+  ],
+  "final_recommendation": "Fixture semantics are validated. A future live approval artifact may be validated separately, but fixtures do not authorize replay.",
+  "fixture_count": 3,
+  "fixture_only": true,
+  "fixture_paths": [
+    "reports/approval_fixtures/fixtures/v0_6_5/approve_replay_only_fixture.json",
+    "reports/approval_fixtures/fixtures/v0_6_5/deny_fixture.json",
+    "reports/approval_fixtures/fixtures/v0_6_5/request_more_evidence_fixture.json"
+  ],
+  "fixture_results": [
+    {
+      "application_allowed": false,
+      "approval_decision": "APPROVE_REPLAY_ONLY",
+      "branch_creation_allowed": false,
+      "calibration_applied": false,
+      "expected_outcome": "VALID_FOR_REPLAY_ONLY_FIXTURE",
+      "fixture_name": "approve_replay_only_fixture",
+      "fixture_only": true,
+      "fixture_valid": true,
+      "mutation_allowed": false,
+      "replay_allowed_if_live": true
+    },
+    {
+      "application_allowed": false,
+      "approval_decision": "DENY",
+      "branch_creation_allowed": false,
+      "calibration_applied": false,
+      "expected_outcome": "DENIAL_FIXTURE_BLOCKS_REPLAY",
+      "fixture_name": "deny_fixture",
+      "fixture_only": true,
+      "fixture_valid": true,
+      "mutation_allowed": false,
+      "replay_allowed_if_live": false
+    },
+    {
+      "application_allowed": false,
+      "approval_decision": "REQUEST_MORE_EVIDENCE",
+      "branch_creation_allowed": false,
+      "calibration_applied": false,
+      "expected_outcome": "MORE_EVIDENCE_FIXTURE_BLOCKS_REPLAY",
+      "fixture_name": "request_more_evidence_fixture",
+      "fixture_only": true,
+      "fixture_valid": true,
+      "mutation_allowed": false,
+      "replay_allowed_if_live": false
+    }
+  ],
+  "fixture_status": "FIXTURES_VALIDATED__NO_LIVE_APPROVAL_CREATED",
+  "generated_at": "2026-05-28T07:54:58.265792+00:00",
+  "input_template": "reports/human_approval/human_approval_artifact_template_v0_6_2.json",
+  "live_approval_present": false,
+  "mutation_allowed": false,
+  "next_recommendation": "v0.6.6 should add a live-approval handoff check that refuses to treat fixtures as approvals.",
+  "policy_enforced": false,
+  "runtime_behavior_changed": false,
+  "schema": "tau-scaling-approval-fixture-denial-fixture-validator-v0.6.5",
+  "valid_fixture_count": 3
+}

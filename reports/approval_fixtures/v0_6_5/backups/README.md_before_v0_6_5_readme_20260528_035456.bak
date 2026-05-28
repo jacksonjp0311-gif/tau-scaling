@@ -10,8 +10,8 @@
 
 Repository: `tau-scaling`  
 Package / CLI: `tau_scaling` / `tau-scaling`  
-Current checkpoint: **TAU-SCALING-SA v0.6.5 - Approval Fixture and Denial Fixture Validator**  
-Previous seal: **TAU-SCALING-SA v0.6.4 - Approval-Gated Replay Dry-Run**
+Current checkpoint: **TAU-SCALING-SA v0.6.4 - Approval-Gated Replay Dry-Run**  
+Previous seal: **TAU-SCALING-SA v0.6.3 - Human Approval Artifact Validator**
 
 Tau Scaling is a local-first, evidence-gated Python runtime for evaluating tau-scaling claims through structured claim cards, workload declarations, tau vectors, LogicFolding survivability checks, edge-to-surface boundary algebra, energy / thermal / PDN / PVT gates, Monte Carlo checker stress, TSEK classification, evidence packages, and RCC-N / OMN-style repository navigation.
 
@@ -55,7 +55,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 
 | Surface | Result |
 |---|---:|
-| Current checkpoint | TAU-SCALING-SA v0.6.5 |
+| Current checkpoint | TAU-SCALING-SA v0.6.4 |
 | Synthetic gate suite | v0.4.0 / benchmark + finding charts |
 | Package version | 0.2.0 |
 | Baseline seed | TSEK-C / A_TSEK 0.0000 |
@@ -64,7 +64,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 | README mini repo audit | passing / 0 warnings |
 | Unified release validator | passing / step failures 0 |
 | AGENTS.md contract | synchronized with release validator |
-| Task routing matrix | geometry-aware / v0.6.5-ready |
+| Task routing matrix | geometry-aware / v0.6.4-ready |
 | Release warning findings | 0 expected after v0.3.3d validator scan repair |
 | Architecture validator | passing / 0 warnings |
 | Unit tests | 8 OK |
@@ -126,9 +126,7 @@ This repo does **not** independently validate silicon, Huawei product metrics, m
 | Human approval validator charts | `visuals/approval_validator/v0_6_3/` |
 | Approval-gated replay dry-run | `reports/approval_gated_replay/latest_approval_gated_replay_dry_run.md` |
 | Approval-gated replay charts | `visuals/approval_gated_replay/v0_6_4/` |
-| Approval fixture validator | `reports/approval_fixtures/latest_approval_fixture_validator.md` |
-| Approval fixture charts | `visuals/approval_fixtures/v0_6_5/` |
-| Agent contract version sync | current / v0.6.5 |
+| Agent contract version sync | current / v0.6.4 |
 | Release readiness report | `reports/release/latest_release_readiness.md` |
 | Collision-proof run identity | passed |
 | Mini README coverage | 1.0 |
@@ -177,7 +175,6 @@ python scripts/benchmarks/run_candidate_branch_replay_harness.py
 python scripts/benchmarks/generate_human_approval_template.py
 python scripts/benchmarks/validate_human_approval_artifact.py
 python scripts/benchmarks/run_approval_gated_replay_dry_run.py
-python scripts/benchmarks/validate_approval_fixtures.py
 python scripts/release/validate_release.py
 ```
 
@@ -489,7 +486,6 @@ This section is part of the repository's operating memory. When a patch fails, t
 | L-044 | v0.6.1 correctly blocked replay because no human approval artifact existed. | Blocking replay is useful only if the system provides an explicit approval/denial artifact format. | Approval templates must be created before approval validation; templates alone do not authorize replay, branching, or mutation. |
 | L-045 | v0.6.2 created a template, but a template is not approval. | Approval artifacts must be validated before replay can proceed. | Approval validators must reject UNSET/template-only artifacts and keep replay blocked until explicit approval fields pass. |
 | L-046 | v0.6.3 rejected template-only approval. | A failed approval validator should produce a blocked replay dry-run rather than silently stopping the lineage. | Approval-gated replay layers must emit explicit blocked reports when approval is invalid, preserving audit continuity without execution. |
-| L-047 | v0.6.4 emitted a blocked replay report because approval was invalid. | The system needs fixtures to prove approval, denial, and more-evidence decisions have distinct replay semantics. | Approval fixture validation must prove fixture semantics without treating fixtures as live approvals. |
 
 ### Failure Response Protocol
 
@@ -698,7 +694,6 @@ tau-scaling/
   releases/
   reports/
     nexus_feedback/
-    approval_fixtures/
     approval_gated_replay/
     approval_validator/
     human_approval/
@@ -755,7 +750,6 @@ tau-scaling/
   tests/
   visuals/
     nexus_feedback/
-    approval_fixtures/
     approval_gated_replay/
     approval_validator/
     human_approval/
@@ -871,39 +865,6 @@ AGENTS.md Required Validation now includes the current v0.4.6-v0.5.1 governance 
 ```
 
 Boundary: alignment polish is repository hygiene only. It is not code correctness, silicon validation, product validation, manufacturing validation, process-node equivalence, benchmark superiority proof, or universal Tau Scaling proof.
-
-## Approval Fixture and Denial Fixture Validator v0.6.5
-
-v0.6.5 creates and validates approval, denial, and more-evidence fixtures without creating any live approval.
-
-Primary command:
-
-```powershell
-python scripts/benchmarks/validate_approval_fixtures.py
-```
-
-Primary outputs:
-
-```text
-reports/approval_fixtures/latest_approval_fixture_validator.json
-reports/approval_fixtures/latest_approval_fixture_validator.md
-reports/approval_fixtures/fixtures/v0_6_5/
-visuals/approval_fixtures/v0_6_5/
-```
-
-Current lock:
-
-```text
-fixture_only: true
-live_approval_present: false
-branch_created: false
-mutation_allowed: false
-policy_enforced: false
-calibration_applied: false
-application_allowed: false
-```
-
-Boundary: approval fixtures are local classifier-governance test fixtures. They are not live approvals, do not create branches, do not mutate classifier behavior, do not apply calibration, and do not validate silicon, product performance, manufacturing capability, process-node equivalence, benchmark superiority, AI understanding, or universal Tau Scaling law.
 
 ## Approval-Gated Replay Dry-Run v0.6.4
 
@@ -1633,7 +1594,6 @@ python scripts/benchmarks/run_candidate_branch_replay_harness.py
 python scripts/benchmarks/generate_human_approval_template.py
 python scripts/benchmarks/validate_human_approval_artifact.py
 python scripts/benchmarks/run_approval_gated_replay_dry_run.py
-python scripts/benchmarks/validate_approval_fixtures.py
 python scripts/release/validate_release.py
 python scripts/rcc/audit_readme_surface.py
 python scripts/rcc/check_rcc_nexus.py
@@ -1993,15 +1953,14 @@ validation_remains_required
 | v0.6.2 | Human approval artifact template; template only, no approval by default. |
 | v0.6.3 | Human approval artifact validator; rejects UNSET/template-only approval by default. |
 | v0.6.4 | Approval-gated replay dry-run; emits blocked report unless approval validates. |
-| v0.6.5 | Approval fixture and denial fixture validator; fixtures only, no live approval. |
 
 ## Next Recommended Version
 
-**TAU-SCALING-SA v0.6.6 - Live Approval Handoff Check**
+**TAU-SCALING-SA v0.6.5 - Approval Fixture and Denial Fixture Validator**
 
 Recommended goals:
 
-- Refuse to treat fixtures as live approval artifacts.
-- Require a separate live approval path outside fixture directories.
-- Validate live approval presence without mutating classifier behavior.
+- Add explicit fixture examples for APPROVE_REPLAY_ONLY, DENY, and REQUEST_MORE_EVIDENCE.
+- Validate that denied/template-only states block replay.
+- Validate that approval only enables replay planning, not mutation.
 - Keep `mutation_allowed: false`.

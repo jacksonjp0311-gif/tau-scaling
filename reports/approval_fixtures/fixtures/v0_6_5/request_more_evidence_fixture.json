@@ -1,0 +1,29 @@
+{
+  "allowed_values": [
+    "APPROVE_REPLAY_ONLY",
+    "DENY",
+    "REQUEST_MORE_EVIDENCE"
+  ],
+  "approval_decision": "REQUEST_MORE_EVIDENCE",
+  "approval_timestamp": "2026-05-28T07:54:58.265792+00:00",
+  "approver": "fixture-only",
+  "artifact_status": "FIXTURE_ONLY_NOT_LIVE_APPROVAL",
+  "candidate_branch": "candidate/v0.6.0-threshold-0.8-review-only",
+  "explicit_locks": {
+    "application_allowed": false,
+    "branch_creation_allowed": false,
+    "calibration_applied": false,
+    "classifier_mutation_allowed": false,
+    "policy_enforced": false,
+    "runtime_mutation_allowed": false
+  },
+  "fixture_boundary": "This fixture tests validator behavior only. It is not a live human approval artifact.",
+  "fixture_name": "request_more_evidence_fixture",
+  "fixture_only": true,
+  "generated_at": "2026-05-28T07:49:43.680289+00:00",
+  "notes": "",
+  "required_statement": "I understand this approval, if set to APPROVE_REPLAY_ONLY, authorizes replay only and does not authorize classifier mutation, runtime mutation, calibration application, production use, silicon validation, or product claims.",
+  "schema": "tau-scaling-human-approval-artifact-v0.6.2",
+  "scope": "candidate_branch_replay_only",
+  "selected_report_only_threshold": 0.8
+}

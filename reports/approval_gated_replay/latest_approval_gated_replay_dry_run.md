@@ -1,6 +1,6 @@
 # Tau Scaling v0.6.4 Approval-Gated Replay Dry-Run
 
-Generated: `2026-05-28T07:52:48.060919+00:00`
+Generated: `2026-05-28T07:54:56.899437+00:00`
 
 ## Dry-Run Result
 
